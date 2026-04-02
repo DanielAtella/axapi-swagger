@@ -1,0 +1,1994 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ROUTE-MAP",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the route-map category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/route-map/{tag}+{action}+{sequence}/match": {
+      "parameters": [
+        {
+          "name": "tag",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for tag"
+        },
+        {
+          "name": "action",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for action"
+        },
+        {
+          "name": "sequence",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for sequence"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Match values from routing table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-match"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Match values from routing table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-match"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/route-map-match"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Match values from routing table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-match"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/route-map-match"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Match values from routing table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-match"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/route-map/{tag}+{action}+{sequence}/set": {
+      "parameters": [
+        {
+          "name": "tag",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for tag"
+        },
+        {
+          "name": "action",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for action"
+        },
+        {
+          "name": "sequence",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for sequence"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Set values in destination routing protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-set"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Set values in destination routing protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-set"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/route-map-set"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Set values in destination routing protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-set"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/route-map-set"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Set values in destination routing protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map-set"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/route-map/{tag}+{action}+{sequence}": {
+      "parameters": [
+        {
+          "name": "tag",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for tag"
+        },
+        {
+          "name": "action",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for action"
+        },
+        {
+          "name": "sequence",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for sequence"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Configure route-map",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Configure route-map",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/route-map"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Configure route-map",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/route-map"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ROUTE-MAP"
+        ],
+        "description": "Configure route-map",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/route-map"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "route-map-match": {
+        "type": "object",
+        "properties": {
+          "as-path": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "AS path access-list name",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "community": {
+            "type": "object",
+            "properties": {
+              "name-cfg": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "One or more Community Lists (numbered or named)"
+                  },
+                  "exact-match": {
+                    "type": "number",
+                    "description": "Do exact matching of communities",
+                    "default": 0
+                  }
+                }
+              }
+            }
+          },
+          "extcommunity": {
+            "type": "object",
+            "properties": {
+              "extcommunity-l-name": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "One or more Extended Community Lists (numbered or named)"
+                  },
+                  "exact-match": {
+                    "type": "number",
+                    "description": "Do exact matching of ecommunities",
+                    "default": 0
+                  }
+                }
+              }
+            }
+          },
+          "large-community": {
+            "type": "object",
+            "properties": {
+              "l-name-cfg": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "One or more Large Community Lists (numbered or named)"
+                  },
+                  "exact-match": {
+                    "type": "number",
+                    "description": "Do exact matching of large-communities",
+                    "default": 0
+                  }
+                }
+              }
+            }
+          },
+          "group": {
+            "type": "object",
+            "properties": {
+              "group-id": {
+                "type": "number",
+                "description": "HA or VRRP-A group id",
+                "minimum": 0,
+                "maximum": 31
+              },
+              "ha-state": {
+                "type": "string",
+                "description": "'active': HA or VRRP-A in Active State; 'standby': HA or VRRP-A in Standby State; ",
+                "enum": [
+                  "active",
+                  "standby"
+                ]
+              }
+            }
+          },
+          "scaleout": {
+            "type": "object",
+            "properties": {
+              "cluster-id": {
+                "type": "number",
+                "description": "Scaleout Cluster-id",
+                "minimum": 1,
+                "maximum": 64
+              },
+              "operational-state": {
+                "type": "string",
+                "description": "'up': Scaleout is up and running; 'down': Scaleout is down or disabled; ",
+                "enum": [
+                  "up",
+                  "down"
+                ]
+              }
+            }
+          },
+          "interface": {
+            "type": "object",
+            "properties": {
+              "ethernet": {
+                "type": "number",
+                "description": "Ethernet interface (Port number)",
+                "minimum": 49,
+                "maximum": 176
+              },
+              "loopback": {
+                "type": "number",
+                "description": "Loopback interface (Port number)",
+                "minimum": 0,
+                "maximum": 10
+              },
+              "trunk": {
+                "type": "number",
+                "description": "Trunk Interface (Trunk interface number)",
+                "minimum": 1,
+                "maximum": 4096
+              },
+              "ve": {
+                "type": "number",
+                "description": "Virtual ethernet interface (Virtual ethernet interface number)",
+                "minimum": 2,
+                "maximum": 4094
+              }
+            }
+          },
+          "local-preference": {
+            "type": "object",
+            "properties": {
+              "val": {
+                "type": "number",
+                "description": "Preference value",
+                "minimum": 0,
+                "maximum": 4294967295
+              }
+            }
+          },
+          "origin": {
+            "type": "object",
+            "properties": {
+              "egp": {
+                "type": "number",
+                "description": "remote EGP",
+                "default": 0
+              },
+              "igp": {
+                "type": "number",
+                "description": "local IGP",
+                "default": 0
+              },
+              "incomplete": {
+                "type": "number",
+                "description": "unknown heritage",
+                "default": 0
+              }
+            }
+          },
+          "ip": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "object",
+                "properties": {
+                  "acl1": {
+                    "type": "number",
+                    "description": "IP access-list number",
+                    "minimum": 1,
+                    "maximum": 199
+                  },
+                  "acl2": {
+                    "type": "number",
+                    "description": "IP access-list number (expanded range)",
+                    "minimum": 1300,
+                    "maximum": 2699
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "IP access-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "prefix-list": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "IP prefix-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  }
+                }
+              },
+              "next-hop": {
+                "type": "object",
+                "properties": {
+                  "acl1": {
+                    "type": "number",
+                    "description": "IP access-list number",
+                    "minimum": 1,
+                    "maximum": 199
+                  },
+                  "acl2": {
+                    "type": "number",
+                    "description": "IP access-list number (expanded range)",
+                    "minimum": 1300,
+                    "maximum": 2699
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "IP access-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "prefix-list-1": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "IP prefix-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  }
+                }
+              },
+              "peer": {
+                "type": "object",
+                "properties": {
+                  "acl1": {
+                    "type": "number",
+                    "description": "IP access-list number",
+                    "minimum": 1,
+                    "maximum": 199
+                  },
+                  "acl2": {
+                    "type": "number",
+                    "description": "IP access-list number (expanded range)",
+                    "minimum": 1300,
+                    "maximum": 2699
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "IP access-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                }
+              },
+              "rib": {
+                "type": "object",
+                "properties": {
+                  "exact": {
+                    "type": "string",
+                    "description": "Exact match a prefix (Prefix IPv4 address)"
+                  },
+                  "reachable": {
+                    "type": "string",
+                    "description": "IP address is reachable"
+                  },
+                  "unreachable": {
+                    "type": "string",
+                    "description": "IP address is unreachable"
+                  }
+                }
+              }
+            }
+          },
+          "ipv6": {
+            "type": "object",
+            "properties": {
+              "address-1": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "IPv6 access-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "prefix-list-2": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "IPv6 prefix-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  }
+                }
+              },
+              "next-hop-1": {
+                "type": "object",
+                "properties": {
+                  "next-hop-acl-name": {
+                    "type": "string",
+                    "description": "IPv6 access-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "v6-addr": {
+                    "type": "string",
+                    "description": "IPv6 address of next hop"
+                  },
+                  "prefix-list-name": {
+                    "type": "string",
+                    "description": "IPv6 prefix-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                }
+              },
+              "peer-1": {
+                "type": "object",
+                "properties": {
+                  "acl1": {
+                    "type": "number",
+                    "description": "IPv6 access-list number",
+                    "minimum": 1,
+                    "maximum": 199
+                  },
+                  "acl2": {
+                    "type": "number",
+                    "description": "IP access-list number (expanded range)",
+                    "minimum": 1300,
+                    "maximum": 2699
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "IP access-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                }
+              },
+              "rib": {
+                "type": "object",
+                "properties": {
+                  "exact": {
+                    "type": "string",
+                    "description": "Exact match a prefix (Prefix IPv6 address)"
+                  },
+                  "reachable": {
+                    "type": "string",
+                    "description": "IPv6 address is reachable"
+                  },
+                  "unreachable": {
+                    "type": "string",
+                    "description": "IPv6 address is unreachable"
+                  }
+                }
+              }
+            }
+          },
+          "metric": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "description": "Metric value",
+                "minimum": 0,
+                "maximum": 4294967295
+              }
+            }
+          },
+          "route-type": {
+            "type": "object",
+            "properties": {
+              "external": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "description": "'type-1': Match OSPF External Type 1 metrics; 'type-2': Match OSPF External Type 2 metrics; ",
+                    "enum": [
+                      "type-1",
+                      "type-2"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "tag": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "description": "Tag value",
+                "minimum": 0,
+                "maximum": 4294967295
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "route-map-set": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "object",
+            "properties": {
+              "next-hop": {
+                "type": "object",
+                "properties": {
+                  "address": {
+                    "type": "string",
+                    "description": "IP address of next hop"
+                  }
+                }
+              }
+            }
+          },
+          "ddos": {
+            "type": "object",
+            "properties": {
+              "class-list-name": {
+                "type": "string",
+                "description": "Class-List Name",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "zone": {
+                "type": "string",
+                "description": "Zone Name",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "ipv6": {
+            "type": "object",
+            "properties": {
+              "next-hop-1": {
+                "type": "object",
+                "properties": {
+                  "address": {
+                    "type": "string",
+                    "description": "global address of next hop"
+                  },
+                  "local": {
+                    "type": "object",
+                    "properties": {
+                      "address": {
+                        "type": "string",
+                        "description": "IPv6 address of next hop"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "level": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string",
+                "description": "'level-1': Export into a level-1 area; 'level-1-2': Export into level-1 and level-2; 'level-2': Export into level-2 sub-domain; ",
+                "enum": [
+                  "level-1",
+                  "level-1-2",
+                  "level-2"
+                ]
+              }
+            }
+          },
+          "metric": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string",
+                "description": "Metric Value (from -4294967295 to 4294967295)",
+                "minLength": 1,
+                "maxLength": 11
+              }
+            }
+          },
+          "metric-type": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string",
+                "description": "'external': IS-IS external metric type; 'internal': IS-IS internal metric type; 'type-1': OSPF external type 1 metric; 'type-2': OSPF external type 2 metric; ",
+                "enum": [
+                  "external",
+                  "internal",
+                  "type-1",
+                  "type-2"
+                ]
+              }
+            }
+          },
+          "tag": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "description": "Tag value",
+                "minimum": 0,
+                "maximum": 4294967295
+              }
+            }
+          },
+          "aggregator": {
+            "type": "object",
+            "properties": {
+              "aggregator-as": {
+                "type": "object",
+                "properties": {
+                  "asn": {
+                    "type": "number",
+                    "description": "AS number",
+                    "minimum": 1,
+                    "maximum": 4294967295
+                  },
+                  "ip": {
+                    "type": "string",
+                    "description": "IP address of aggregator"
+                  }
+                }
+              }
+            }
+          },
+          "as-path": {
+            "type": "object",
+            "properties": {
+              "prepend": {
+                "type": "string",
+                "description": "Prepend to the as-path (AS number)"
+              },
+              "num": {
+                "type": "number",
+                "description": "AS number",
+                "minimum": 1,
+                "maximum": 4294967295
+              },
+              "num2": {
+                "type": "number",
+                "description": "AS number",
+                "minimum": 1,
+                "maximum": 4294967295
+              }
+            }
+          },
+          "atomic-aggregate": {
+            "type": "number",
+            "description": "BGP atomic aggregate attribute",
+            "default": 0
+          },
+          "comm-list": {
+            "type": "object",
+            "properties": {
+              "v-std": {
+                "type": "number",
+                "description": "Community-list number (standard)",
+                "minimum": 1,
+                "maximum": 99
+              },
+              "delete": {
+                "type": "number",
+                "description": "Delete matching communities",
+                "default": 0
+              },
+              "v-exp": {
+                "type": "number",
+                "description": "Community-list number (expanded)",
+                "minimum": 100,
+                "maximum": 199
+              },
+              "v-exp-delete": {
+                "type": "number",
+                "description": "Delete matching communities",
+                "default": 0
+              },
+              "name": {
+                "type": "string",
+                "description": "Community-list name",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "name-delete": {
+                "type": "number",
+                "description": "Delete matching communities",
+                "default": 0
+              }
+            }
+          },
+          "community": {
+            "type": "string",
+            "description": "BGP community attribute"
+          },
+          "dampening-cfg": {
+            "type": "object",
+            "properties": {
+              "dampening": {
+                "type": "number",
+                "description": "Enable route-flap dampening",
+                "default": 0
+              },
+              "dampening-half-time": {
+                "type": "number",
+                "description": "Reachability Half-life time for the penalty(minutes)",
+                "minimum": 1,
+                "maximum": 45
+              },
+              "dampening-reuse": {
+                "type": "number",
+                "description": "Value to start reusing a route",
+                "minimum": 1,
+                "maximum": 20000
+              },
+              "dampening-supress": {
+                "type": "number",
+                "description": "Value to start suppressing a route",
+                "minimum": 1,
+                "maximum": 20000
+              },
+              "dampening-max-supress": {
+                "type": "number",
+                "description": "Maximum duration to suppress a stable route(minutes)",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "dampening-penalty": {
+                "type": "number",
+                "description": "Un-reachability Half-life time for the penalty(minutes)",
+                "minimum": 1,
+                "maximum": 45
+              }
+            }
+          },
+          "extcommunity": {
+            "type": "object",
+            "properties": {
+              "rt": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "description": "VPN extended community"
+                  }
+                }
+              },
+              "soo": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "description": "VPN extended community"
+                  }
+                }
+              }
+            }
+          },
+          "local-preference": {
+            "type": "object",
+            "properties": {
+              "val": {
+                "type": "number",
+                "description": "Preference value",
+                "minimum": 0,
+                "maximum": 4294967295
+              }
+            }
+          },
+          "originator-id": {
+            "type": "object",
+            "properties": {
+              "originator-ip": {
+                "type": "string",
+                "description": "IP address of originator"
+              }
+            }
+          },
+          "weight": {
+            "type": "object",
+            "properties": {
+              "weight-val": {
+                "type": "number",
+                "description": "Weight value",
+                "minimum": 0,
+                "maximum": 4294967295
+              }
+            }
+          },
+          "origin": {
+            "type": "object",
+            "properties": {
+              "egp": {
+                "type": "number",
+                "description": "remote EGP",
+                "default": 0
+              },
+              "igp": {
+                "type": "number",
+                "description": "local IGP",
+                "default": 0
+              },
+              "incomplete": {
+                "type": "number",
+                "description": "unknown heritage",
+                "default": 0
+              }
+            }
+          },
+          "large-comm-list": {
+            "type": "object",
+            "properties": {
+              "l-v-std": {
+                "type": "number",
+                "description": "Large Community-list number (standard)",
+                "minimum": 1,
+                "maximum": 99
+              },
+              "l-v-std-delete": {
+                "type": "number",
+                "description": "Delete matching large communities",
+                "default": 0
+              },
+              "l-v-exp": {
+                "type": "number",
+                "description": "Large Community-list number (expanded)",
+                "minimum": 100,
+                "maximum": 199
+              },
+              "l-v-exp-delete": {
+                "type": "number",
+                "description": "Delete matching large communities",
+                "default": 0
+              },
+              "l-name": {
+                "type": "string",
+                "description": "Large Community-list name",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "large-name-delete": {
+                "type": "number",
+                "description": "Delete matching large communities",
+                "default": 0
+              }
+            }
+          },
+          "large-community": {
+            "type": "string",
+            "description": "BGP large community attribute"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "route-map": {
+        "type": "object",
+        "properties": {
+          "tag": {
+            "type": "string",
+            "description": "Route map tag",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "action": {
+            "type": "string",
+            "description": "'permit': Route map permits set operations; 'deny': Route map denies set operations; ",
+            "enum": [
+              "permit",
+              "deny"
+            ]
+          },
+          "sequence": {
+            "type": "number",
+            "description": "Sequence to insert to/delete from existing route-map entry",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "match": {
+            "type": "object",
+            "properties": {
+              "as-path": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "AS path access-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                }
+              },
+              "community": {
+                "type": "object",
+                "properties": {
+                  "name-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "One or more Community Lists (numbered or named)"
+                      },
+                      "exact-match": {
+                        "type": "number",
+                        "description": "Do exact matching of communities",
+                        "default": 0
+                      }
+                    }
+                  }
+                }
+              },
+              "extcommunity": {
+                "type": "object",
+                "properties": {
+                  "extcommunity-l-name": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "One or more Extended Community Lists (numbered or named)"
+                      },
+                      "exact-match": {
+                        "type": "number",
+                        "description": "Do exact matching of ecommunities",
+                        "default": 0
+                      }
+                    }
+                  }
+                }
+              },
+              "large-community": {
+                "type": "object",
+                "properties": {
+                  "l-name-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "One or more Large Community Lists (numbered or named)"
+                      },
+                      "exact-match": {
+                        "type": "number",
+                        "description": "Do exact matching of large-communities",
+                        "default": 0
+                      }
+                    }
+                  }
+                }
+              },
+              "group": {
+                "type": "object",
+                "properties": {
+                  "group-id": {
+                    "type": "number",
+                    "description": "HA or VRRP-A group id",
+                    "minimum": 0,
+                    "maximum": 31
+                  },
+                  "ha-state": {
+                    "type": "string",
+                    "description": "'active': HA or VRRP-A in Active State; 'standby': HA or VRRP-A in Standby State; ",
+                    "enum": [
+                      "active",
+                      "standby"
+                    ]
+                  }
+                }
+              },
+              "scaleout": {
+                "type": "object",
+                "properties": {
+                  "cluster-id": {
+                    "type": "number",
+                    "description": "Scaleout Cluster-id",
+                    "minimum": 1,
+                    "maximum": 64
+                  },
+                  "operational-state": {
+                    "type": "string",
+                    "description": "'up': Scaleout is up and running; 'down': Scaleout is down or disabled; ",
+                    "enum": [
+                      "up",
+                      "down"
+                    ]
+                  }
+                }
+              },
+              "interface": {
+                "type": "object",
+                "properties": {
+                  "ethernet": {
+                    "type": "number",
+                    "description": "Ethernet interface (Port number)",
+                    "minimum": 49,
+                    "maximum": 176
+                  },
+                  "loopback": {
+                    "type": "number",
+                    "description": "Loopback interface (Port number)",
+                    "minimum": 0,
+                    "maximum": 10
+                  },
+                  "trunk": {
+                    "type": "number",
+                    "description": "Trunk Interface (Trunk interface number)",
+                    "minimum": 1,
+                    "maximum": 4096
+                  },
+                  "ve": {
+                    "type": "number",
+                    "description": "Virtual ethernet interface (Virtual ethernet interface number)",
+                    "minimum": 2,
+                    "maximum": 4094
+                  }
+                }
+              },
+              "local-preference": {
+                "type": "object",
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "description": "Preference value",
+                    "minimum": 0,
+                    "maximum": 4294967295
+                  }
+                }
+              },
+              "origin": {
+                "type": "object",
+                "properties": {
+                  "egp": {
+                    "type": "number",
+                    "description": "remote EGP",
+                    "default": 0
+                  },
+                  "igp": {
+                    "type": "number",
+                    "description": "local IGP",
+                    "default": 0
+                  },
+                  "incomplete": {
+                    "type": "number",
+                    "description": "unknown heritage",
+                    "default": 0
+                  }
+                }
+              },
+              "ip": {
+                "type": "object",
+                "properties": {
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "acl1": {
+                        "type": "number",
+                        "description": "IP access-list number",
+                        "minimum": 1,
+                        "maximum": 199
+                      },
+                      "acl2": {
+                        "type": "number",
+                        "description": "IP access-list number (expanded range)",
+                        "minimum": 1300,
+                        "maximum": 2699
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "IP access-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      },
+                      "prefix-list": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": "IP prefix-list name",
+                            "minLength": 1,
+                            "maxLength": 128
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next-hop": {
+                    "type": "object",
+                    "properties": {
+                      "acl1": {
+                        "type": "number",
+                        "description": "IP access-list number",
+                        "minimum": 1,
+                        "maximum": 199
+                      },
+                      "acl2": {
+                        "type": "number",
+                        "description": "IP access-list number (expanded range)",
+                        "minimum": 1300,
+                        "maximum": 2699
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "IP access-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      },
+                      "prefix-list-1": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": "IP prefix-list name",
+                            "minLength": 1,
+                            "maxLength": 128
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "peer": {
+                    "type": "object",
+                    "properties": {
+                      "acl1": {
+                        "type": "number",
+                        "description": "IP access-list number",
+                        "minimum": 1,
+                        "maximum": 199
+                      },
+                      "acl2": {
+                        "type": "number",
+                        "description": "IP access-list number (expanded range)",
+                        "minimum": 1300,
+                        "maximum": 2699
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "IP access-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  },
+                  "rib": {
+                    "type": "object",
+                    "properties": {
+                      "exact": {
+                        "type": "string",
+                        "description": "Exact match a prefix (Prefix IPv4 address)"
+                      },
+                      "reachable": {
+                        "type": "string",
+                        "description": "IP address is reachable"
+                      },
+                      "unreachable": {
+                        "type": "string",
+                        "description": "IP address is unreachable"
+                      }
+                    }
+                  }
+                }
+              },
+              "ipv6": {
+                "type": "object",
+                "properties": {
+                  "address-1": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "IPv6 access-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      },
+                      "prefix-list-2": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": "IPv6 prefix-list name",
+                            "minLength": 1,
+                            "maxLength": 128
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next-hop-1": {
+                    "type": "object",
+                    "properties": {
+                      "next-hop-acl-name": {
+                        "type": "string",
+                        "description": "IPv6 access-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      },
+                      "v6-addr": {
+                        "type": "string",
+                        "description": "IPv6 address of next hop"
+                      },
+                      "prefix-list-name": {
+                        "type": "string",
+                        "description": "IPv6 prefix-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  },
+                  "peer-1": {
+                    "type": "object",
+                    "properties": {
+                      "acl1": {
+                        "type": "number",
+                        "description": "IPv6 access-list number",
+                        "minimum": 1,
+                        "maximum": 199
+                      },
+                      "acl2": {
+                        "type": "number",
+                        "description": "IP access-list number (expanded range)",
+                        "minimum": 1300,
+                        "maximum": 2699
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "IP access-list name",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  },
+                  "rib": {
+                    "type": "object",
+                    "properties": {
+                      "exact": {
+                        "type": "string",
+                        "description": "Exact match a prefix (Prefix IPv6 address)"
+                      },
+                      "reachable": {
+                        "type": "string",
+                        "description": "IPv6 address is reachable"
+                      },
+                      "unreachable": {
+                        "type": "string",
+                        "description": "IPv6 address is unreachable"
+                      }
+                    }
+                  }
+                }
+              },
+              "metric": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number",
+                    "description": "Metric value",
+                    "minimum": 0,
+                    "maximum": 4294967295
+                  }
+                }
+              },
+              "route-type": {
+                "type": "object",
+                "properties": {
+                  "external": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string",
+                        "description": "'type-1': Match OSPF External Type 1 metrics; 'type-2': Match OSPF External Type 2 metrics; ",
+                        "enum": [
+                          "type-1",
+                          "type-2"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "tag": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number",
+                    "description": "Tag value",
+                    "minimum": 0,
+                    "maximum": 4294967295
+                  }
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "set": {
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "object",
+                "properties": {
+                  "next-hop": {
+                    "type": "object",
+                    "properties": {
+                      "address": {
+                        "type": "string",
+                        "description": "IP address of next hop"
+                      }
+                    }
+                  }
+                }
+              },
+              "ddos": {
+                "type": "object",
+                "properties": {
+                  "class-list-name": {
+                    "type": "string",
+                    "description": "Class-List Name",
+                    "minLength": 1,
+                    "maxLength": 63
+                  },
+                  "zone": {
+                    "type": "string",
+                    "description": "Zone Name",
+                    "minLength": 1,
+                    "maxLength": 63
+                  }
+                }
+              },
+              "ipv6": {
+                "type": "object",
+                "properties": {
+                  "next-hop-1": {
+                    "type": "object",
+                    "properties": {
+                      "address": {
+                        "type": "string",
+                        "description": "global address of next hop"
+                      },
+                      "local": {
+                        "type": "object",
+                        "properties": {
+                          "address": {
+                            "type": "string",
+                            "description": "IPv6 address of next hop"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "level": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "description": "'level-1': Export into a level-1 area; 'level-1-2': Export into level-1 and level-2; 'level-2': Export into level-2 sub-domain; ",
+                    "enum": [
+                      "level-1",
+                      "level-1-2",
+                      "level-2"
+                    ]
+                  }
+                }
+              },
+              "metric": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "description": "Metric Value (from -4294967295 to 4294967295)",
+                    "minLength": 1,
+                    "maxLength": 11
+                  }
+                }
+              },
+              "metric-type": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "description": "'external': IS-IS external metric type; 'internal': IS-IS internal metric type; 'type-1': OSPF external type 1 metric; 'type-2': OSPF external type 2 metric; ",
+                    "enum": [
+                      "external",
+                      "internal",
+                      "type-1",
+                      "type-2"
+                    ]
+                  }
+                }
+              },
+              "tag": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number",
+                    "description": "Tag value",
+                    "minimum": 0,
+                    "maximum": 4294967295
+                  }
+                }
+              },
+              "aggregator": {
+                "type": "object",
+                "properties": {
+                  "aggregator-as": {
+                    "type": "object",
+                    "properties": {
+                      "asn": {
+                        "type": "number",
+                        "description": "AS number",
+                        "minimum": 1,
+                        "maximum": 4294967295
+                      },
+                      "ip": {
+                        "type": "string",
+                        "description": "IP address of aggregator"
+                      }
+                    }
+                  }
+                }
+              },
+              "as-path": {
+                "type": "object",
+                "properties": {
+                  "prepend": {
+                    "type": "string",
+                    "description": "Prepend to the as-path (AS number)"
+                  },
+                  "num": {
+                    "type": "number",
+                    "description": "AS number",
+                    "minimum": 1,
+                    "maximum": 4294967295
+                  },
+                  "num2": {
+                    "type": "number",
+                    "description": "AS number",
+                    "minimum": 1,
+                    "maximum": 4294967295
+                  }
+                }
+              },
+              "atomic-aggregate": {
+                "type": "number",
+                "description": "BGP atomic aggregate attribute",
+                "default": 0
+              },
+              "comm-list": {
+                "type": "object",
+                "properties": {
+                  "v-std": {
+                    "type": "number",
+                    "description": "Community-list number (standard)",
+                    "minimum": 1,
+                    "maximum": 99
+                  },
+                  "delete": {
+                    "type": "number",
+                    "description": "Delete matching communities",
+                    "default": 0
+                  },
+                  "v-exp": {
+                    "type": "number",
+                    "description": "Community-list number (expanded)",
+                    "minimum": 100,
+                    "maximum": 199
+                  },
+                  "v-exp-delete": {
+                    "type": "number",
+                    "description": "Delete matching communities",
+                    "default": 0
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "Community-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "name-delete": {
+                    "type": "number",
+                    "description": "Delete matching communities",
+                    "default": 0
+                  }
+                }
+              },
+              "community": {
+                "type": "string",
+                "description": "BGP community attribute"
+              },
+              "dampening-cfg": {
+                "type": "object",
+                "properties": {
+                  "dampening": {
+                    "type": "number",
+                    "description": "Enable route-flap dampening",
+                    "default": 0
+                  },
+                  "dampening-half-time": {
+                    "type": "number",
+                    "description": "Reachability Half-life time for the penalty(minutes)",
+                    "minimum": 1,
+                    "maximum": 45
+                  },
+                  "dampening-reuse": {
+                    "type": "number",
+                    "description": "Value to start reusing a route",
+                    "minimum": 1,
+                    "maximum": 20000
+                  },
+                  "dampening-supress": {
+                    "type": "number",
+                    "description": "Value to start suppressing a route",
+                    "minimum": 1,
+                    "maximum": 20000
+                  },
+                  "dampening-max-supress": {
+                    "type": "number",
+                    "description": "Maximum duration to suppress a stable route(minutes)",
+                    "minimum": 1,
+                    "maximum": 255
+                  },
+                  "dampening-penalty": {
+                    "type": "number",
+                    "description": "Un-reachability Half-life time for the penalty(minutes)",
+                    "minimum": 1,
+                    "maximum": 45
+                  }
+                }
+              },
+              "extcommunity": {
+                "type": "object",
+                "properties": {
+                  "rt": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string",
+                        "description": "VPN extended community"
+                      }
+                    }
+                  },
+                  "soo": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string",
+                        "description": "VPN extended community"
+                      }
+                    }
+                  }
+                }
+              },
+              "local-preference": {
+                "type": "object",
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "description": "Preference value",
+                    "minimum": 0,
+                    "maximum": 4294967295
+                  }
+                }
+              },
+              "originator-id": {
+                "type": "object",
+                "properties": {
+                  "originator-ip": {
+                    "type": "string",
+                    "description": "IP address of originator"
+                  }
+                }
+              },
+              "weight": {
+                "type": "object",
+                "properties": {
+                  "weight-val": {
+                    "type": "number",
+                    "description": "Weight value",
+                    "minimum": 0,
+                    "maximum": 4294967295
+                  }
+                }
+              },
+              "origin": {
+                "type": "object",
+                "properties": {
+                  "egp": {
+                    "type": "number",
+                    "description": "remote EGP",
+                    "default": 0
+                  },
+                  "igp": {
+                    "type": "number",
+                    "description": "local IGP",
+                    "default": 0
+                  },
+                  "incomplete": {
+                    "type": "number",
+                    "description": "unknown heritage",
+                    "default": 0
+                  }
+                }
+              },
+              "large-comm-list": {
+                "type": "object",
+                "properties": {
+                  "l-v-std": {
+                    "type": "number",
+                    "description": "Large Community-list number (standard)",
+                    "minimum": 1,
+                    "maximum": 99
+                  },
+                  "l-v-std-delete": {
+                    "type": "number",
+                    "description": "Delete matching large communities",
+                    "default": 0
+                  },
+                  "l-v-exp": {
+                    "type": "number",
+                    "description": "Large Community-list number (expanded)",
+                    "minimum": 100,
+                    "maximum": 199
+                  },
+                  "l-v-exp-delete": {
+                    "type": "number",
+                    "description": "Delete matching large communities",
+                    "default": 0
+                  },
+                  "l-name": {
+                    "type": "string",
+                    "description": "Large Community-list name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "large-name-delete": {
+                    "type": "number",
+                    "description": "Delete matching large communities",
+                    "default": 0
+                  }
+                }
+              },
+              "large-community": {
+                "type": "string",
+                "description": "BGP large community attribute"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - PARTITION",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the partition category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/partition/{partition-name}/shared-vlan": {
+      "parameters": [
+        {
+          "name": "partition-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for partition-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Enable shared-vlan feature in Network partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-shared-vlan"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Enable shared-vlan feature in Network partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-shared-vlan"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition-shared-vlan"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Enable shared-vlan feature in Network partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-shared-vlan"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition-shared-vlan"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Enable shared-vlan feature in Network partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-shared-vlan"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/partition/{partition-name}/stats": {
+      "parameters": [
+        {
+          "name": "partition-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for partition-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Statistics for the object partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/partition/{partition-name}/template": {
+      "parameters": [
+        {
+          "name": "partition-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for partition-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Attach a template to the partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Attach a template to the partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Attach a template to the partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Attach a template to the partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/partition/{partition-name}": {
+      "parameters": [
+        {
+          "name": "partition-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for partition-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Create/unload a Network partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Create/unload a Network partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PARTITION"
+        ],
+        "description": "Create/unload a Network partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "partition-shared-vlan": {
+        "type": "object",
+        "properties": {
+          "vlan": {
+            "type": "number",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "allowable-ip-range": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "allowable-ipv6-range": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "mgmt-floating-ip-address": {
+            "type": "string",
+            "description": "IPv4 Address for Shared VLAN Mgmt IP Address"
+          },
+          "vrid": {
+            "type": "number",
+            "description": "Specify VRRP-A vrid",
+            "minimum": 0,
+            "maximum": 31
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "partition-stats": {
+        "type": "object",
+        "properties": {
+          "partition-name": {
+            "type": "string",
+            "description": "Object partition name",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "stats": {
+            "type": "object",
+            "properties": {}
+          }
+        }
+      },
+      "partition-template": {
+        "type": "object",
+        "properties": {
+          "resource-accounting": {
+            "type": "string",
+            "description": "Attach a resource accounting template (Name of the template)",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "partition": {
+        "type": "object",
+        "properties": {
+          "partition-name": {
+            "type": "string",
+            "description": "Object partition name",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "id": {
+            "type": "number",
+            "description": "Specify unique Partition id"
+          },
+          "application-type": {
+            "type": "string",
+            "description": "'adc': Application type ADC; 'cgnv6': Application type CGNv6; ",
+            "enum": [
+              "adc",
+              "cgnv6"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "shared-vlan": {
+            "type": "object",
+            "properties": {
+              "vlan": {
+                "type": "number",
+                "minimum": 2,
+                "maximum": 4094
+              },
+              "allowable-ip-range": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "allowable-ipv6-range": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mgmt-floating-ip-address": {
+                "type": "string",
+                "description": "IPv4 Address for Shared VLAN Mgmt IP Address"
+              },
+              "vrid": {
+                "type": "number",
+                "description": "Specify VRRP-A vrid",
+                "minimum": 0,
+                "maximum": 31
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "template": {
+            "type": "object",
+            "properties": {
+              "resource-accounting": {
+                "type": "string",
+                "description": "Attach a resource accounting template (Name of the template)",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

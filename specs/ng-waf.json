@@ -1,0 +1,1267 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - NG-WAF",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the ng-waf category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/ng-waf/custom-page/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Operational Status for the object custom-page",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-page-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/custom-page": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf-custom-page"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf-custom-page"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/custom-signals/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Operational Status for the object custom-signals",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-signals-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/custom-signals": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF custom signals",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-signals"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF custom signals",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-signals"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf-custom-signals"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF custom signals",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-signals"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf-custom-signals"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF custom signals",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-custom-signals"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Operational Status for the object ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/stats/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Statistics for the object stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-stats-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/stats/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/status/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "Operational Status for the object status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-status-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf/status": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-status"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-status"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf-status"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-status"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf-status"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf-status"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ng-waf": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF related commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF related commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF related commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ng-waf"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NG-WAF"
+        ],
+        "description": "NGWAF related commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ng-waf"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ng-waf-custom-page-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "file-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ng-waf-custom-page": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ng-waf-custom-signals-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "signal-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ng-waf-custom-signals": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ng-waf-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ngwaf-stats-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "vserver": {
+                "type": "string"
+              },
+              "vport": {
+                "type": "string"
+              },
+              "cache-vserver": {
+                "type": "string"
+              },
+              "cache-vport": {
+                "type": "string"
+              },
+              "clear-all": {
+                "type": "number"
+              }
+            }
+          },
+          "status": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "ngwaf-version": {
+                    "type": "string"
+                  },
+                  "partition-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "custom-page": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "file-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "custom-signals": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "signal-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ng-waf-stats-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "ng-waf name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "req-received": {
+                "type": "number",
+                "description": "Requests Received"
+              },
+              "req-forward": {
+                "type": "number",
+                "description": "Requests Forwarded"
+              },
+              "req-blocked": {
+                "type": "number",
+                "description": "Requests Blocked"
+              },
+              "req-marked": {
+                "type": "number",
+                "description": "Requests Marked"
+              },
+              "req-bypass": {
+                "type": "number",
+                "description": "Requests Bypassed"
+              },
+              "error": {
+                "type": "number",
+                "description": "Error Happened"
+              },
+              "useragent": {
+                "type": "number",
+                "description": "Attack Tooling"
+              },
+              "aws-ssrf": {
+                "type": "number",
+                "description": "AWS SSRF"
+              },
+              "backdoor": {
+                "type": "number",
+                "description": "Backdoor"
+              },
+              "cmdexe": {
+                "type": "number",
+                "description": "Command Execution"
+              },
+              "xss": {
+                "type": "number",
+                "description": "Cross Site Scripting"
+              },
+              "traversal": {
+                "type": "number",
+                "description": "Directory Traversal"
+              },
+              "graphql-depth": {
+                "type": "number",
+                "description": "GraphQL Max Depth"
+              },
+              "log4j-jndi": {
+                "type": "number",
+                "description": "Log4J JNDI"
+              },
+              "sqli": {
+                "type": "number",
+                "description": "SQL Injection"
+              },
+              "abnormalpath": {
+                "type": "number",
+                "description": "Abnormal Path"
+              },
+              "bhh": {
+                "type": "number",
+                "description": "Bad Hop Headers"
+              },
+              "block": {
+                "type": "number",
+                "description": "Blocked Requests"
+              },
+              "codei": {
+                "type": "number",
+                "description": "Code Injection PHP"
+              },
+              "datacenter": {
+                "type": "number",
+                "description": "Datacenter Traffic"
+              },
+              "doubleenc": {
+                "type": "number",
+                "description": "Double Encoding"
+              },
+              "duplicate-headers": {
+                "type": "number",
+                "description": "Duplicate Header Names"
+              },
+              "fbrowing": {
+                "type": "number",
+                "description": "Forceful Browsing"
+              },
+              "graphql-ide": {
+                "type": "number",
+                "description": "GraphQL IDE"
+              },
+              "graphql-introspection": {
+                "type": "number",
+                "description": "GraphQL Introspection"
+              },
+              "graphql-unused-variables": {
+                "type": "number",
+                "description": "GRAPHQL-UNUSED-VARIABLES"
+              },
+              "http403": {
+                "type": "number",
+                "description": "HTTP 403 Errors"
+              },
+              "http404": {
+                "type": "number",
+                "description": "HTTP 404 Errors"
+              },
+              "http429": {
+                "type": "number",
+                "description": "HTTP 429 Errors"
+              },
+              "http4xx": {
+                "type": "number",
+                "description": "HTTP 4xx Errors"
+              },
+              "http500": {
+                "type": "number",
+                "description": "HTTP 500 Errors"
+              },
+              "http503": {
+                "type": "number",
+                "description": "HTTP 503 Errors"
+              },
+              "http5xx": {
+                "type": "number",
+                "description": "HTTP 5xx Errors"
+              },
+              "respsplit": {
+                "type": "number",
+                "description": "HTTP Response Splitting"
+              },
+              "notutf8": {
+                "type": "number",
+                "description": "Invalid Encoding"
+              },
+              "json-error": {
+                "type": "number",
+                "description": "JSON Encoding Error"
+              },
+              "malformed": {
+                "type": "number",
+                "description": "Malformed Data in the Request Body"
+              },
+              "sans": {
+                "type": "number",
+                "description": "Malicious IP Traffic"
+              },
+              "sigsci-ip": {
+                "type": "number",
+                "description": "Network Effect"
+              },
+              "no-ctype": {
+                "type": "number",
+                "description": "Missing Content-Type Request Header"
+              },
+              "noua": {
+                "type": "number",
+                "description": "No User Agent"
+              },
+              "nullbyte": {
+                "type": "number",
+                "description": "Null Byte"
+              },
+              "privatefile": {
+                "type": "number",
+                "description": "Private File"
+              },
+              "scanner": {
+                "type": "number",
+                "description": "Scanner"
+              },
+              "impostor": {
+                "type": "number",
+                "description": "SearchBot Impostor"
+              },
+              "site-flagged-ip": {
+                "type": "number",
+                "description": "Site Flagged IP"
+              },
+              "tornode": {
+                "type": "number",
+                "description": "Tor Traffic"
+              },
+              "weaktls": {
+                "type": "number",
+                "description": "Weak TLS"
+              },
+              "xml-error": {
+                "type": "number",
+                "description": "XML Encoding Error"
+              },
+              "other": {
+                "type": "number",
+                "description": "Unknown Attack"
+              },
+              "custom1": {
+                "type": "number",
+                "description": "Custom signal 1"
+              },
+              "custom2": {
+                "type": "number",
+                "description": "Custom signal 2"
+              },
+              "custom3": {
+                "type": "number",
+                "description": "Custom signal 3"
+              },
+              "custom4": {
+                "type": "number",
+                "description": "Custom signal 4"
+              },
+              "custom5": {
+                "type": "number",
+                "description": "Custom signal 5"
+              },
+              "custom6": {
+                "type": "number",
+                "description": "Custom signal 6"
+              },
+              "custom7": {
+                "type": "number",
+                "description": "Custom signal 7"
+              },
+              "custom8": {
+                "type": "number",
+                "description": "Custom signal 8"
+              },
+              "custom9": {
+                "type": "number",
+                "description": "Custom signal 9"
+              },
+              "custom10": {
+                "type": "number",
+                "description": "Custom signal 10"
+              },
+              "custom11": {
+                "type": "number",
+                "description": "Custom signal 11"
+              },
+              "custom12": {
+                "type": "number",
+                "description": "Custom signal 12"
+              },
+              "custom13": {
+                "type": "number",
+                "description": "Custom signal 13"
+              },
+              "custom14": {
+                "type": "number",
+                "description": "Custom signal 14"
+              },
+              "custom15": {
+                "type": "number",
+                "description": "Custom signal 15"
+              },
+              "custom16": {
+                "type": "number",
+                "description": "Custom signal 16"
+              },
+              "custom17": {
+                "type": "number",
+                "description": "Custom signal 17"
+              },
+              "custom18": {
+                "type": "number",
+                "description": "Custom signal 18"
+              },
+              "custom19": {
+                "type": "number",
+                "description": "Custom signal 19"
+              },
+              "custom20": {
+                "type": "number",
+                "description": "Custom signal 20"
+              },
+              "custom21": {
+                "type": "number",
+                "description": "Custom signal 21"
+              },
+              "custom22": {
+                "type": "number",
+                "description": "Custom signal 22"
+              },
+              "custom23": {
+                "type": "number",
+                "description": "Custom signal 23"
+              },
+              "custom24": {
+                "type": "number",
+                "description": "Custom signal 24"
+              },
+              "custom25": {
+                "type": "number",
+                "description": "Custom signal 25"
+              },
+              "custom26": {
+                "type": "number",
+                "description": "Custom signal 26"
+              },
+              "custom27": {
+                "type": "number",
+                "description": "Custom signal 27"
+              },
+              "custom28": {
+                "type": "number",
+                "description": "Custom signal 28"
+              },
+              "custom29": {
+                "type": "number",
+                "description": "Custom signal 29"
+              },
+              "custom30": {
+                "type": "number",
+                "description": "Custom signal 30"
+              },
+              "custom31": {
+                "type": "number",
+                "description": "Custom signal 31"
+              },
+              "custom32": {
+                "type": "number",
+                "description": "Custom signal 32"
+              },
+              "custom33": {
+                "type": "number",
+                "description": "Custom signal 33"
+              },
+              "custom34": {
+                "type": "number",
+                "description": "Custom signal 34"
+              },
+              "custom35": {
+                "type": "number",
+                "description": "Custom signal 35"
+              },
+              "custom36": {
+                "type": "number",
+                "description": "Custom signal 36"
+              },
+              "custom37": {
+                "type": "number",
+                "description": "Custom signal 37"
+              },
+              "custom38": {
+                "type": "number",
+                "description": "Custom signal 38"
+              },
+              "custom39": {
+                "type": "number",
+                "description": "Custom signal 39"
+              },
+              "custom40": {
+                "type": "number",
+                "description": "Custom signal 40"
+              },
+              "custom41": {
+                "type": "number",
+                "description": "Custom signal 41"
+              },
+              "custom42": {
+                "type": "number",
+                "description": "Custom signal 42"
+              },
+              "custom43": {
+                "type": "number",
+                "description": "Custom signal 43"
+              },
+              "custom44": {
+                "type": "number",
+                "description": "Custom signal 44"
+              },
+              "custom45": {
+                "type": "number",
+                "description": "Custom signal 45"
+              },
+              "custom46": {
+                "type": "number",
+                "description": "Custom signal 46"
+              },
+              "custom47": {
+                "type": "number",
+                "description": "Custom signal 47"
+              },
+              "custom48": {
+                "type": "number",
+                "description": "Custom signal 48"
+              },
+              "custom49": {
+                "type": "number",
+                "description": "Custom signal 49"
+              },
+              "custom50": {
+                "type": "number",
+                "description": "Custom signal 50"
+              },
+              "custom51": {
+                "type": "number",
+                "description": "Custom signal 51"
+              },
+              "custom52": {
+                "type": "number",
+                "description": "Custom signal 52"
+              },
+              "custom53": {
+                "type": "number",
+                "description": "Custom signal 53"
+              },
+              "custom54": {
+                "type": "number",
+                "description": "Custom signal 54"
+              },
+              "custom55": {
+                "type": "number",
+                "description": "Custom signal 55"
+              },
+              "custom56": {
+                "type": "number",
+                "description": "Custom signal 56"
+              },
+              "custom57": {
+                "type": "number",
+                "description": "Custom signal 57"
+              },
+              "custom58": {
+                "type": "number",
+                "description": "Custom signal 58"
+              },
+              "custom59": {
+                "type": "number",
+                "description": "Custom signal 59"
+              },
+              "custom60": {
+                "type": "number",
+                "description": "Custom signal 60"
+              },
+              "custom61": {
+                "type": "number",
+                "description": "Custom signal 61"
+              },
+              "custom62": {
+                "type": "number",
+                "description": "Custom signal 62"
+              },
+              "custom63": {
+                "type": "number",
+                "description": "Custom signal 63"
+              },
+              "custom64": {
+                "type": "number",
+                "description": "Custom signal 64"
+              }
+            }
+          }
+        }
+      },
+      "ng-waf-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "ng-waf name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "ng-waf-status-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ngwaf-version": {
+                "type": "string"
+              },
+              "partition-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ng-waf-status": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ng-waf": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "stats-list": {
+            "type": "array",
+            "items": {
+              "type": "stats"
+            }
+          },
+          "status": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "custom-page": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "custom-signals": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

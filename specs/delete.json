@@ -1,0 +1,2406 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - DELETE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the delete category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/delete/auth-jwks": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "JWK file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-jwks"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "JWK file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-jwks"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-auth-jwks"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "JWK file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-jwks"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/auth-portal-image": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Image file for default portal",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-portal-image"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Image file for default portal",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-portal-image"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-auth-portal-image"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Image file for default portal",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-portal-image"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/auth-portal": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Portal file for http authentication",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-portal"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Portal file for http authentication",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-portal"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-auth-portal"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Portal file for http authentication",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-portal"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/auth-saml-idp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "SAML metadata of identity provider",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-saml-idp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "SAML metadata of identity provider",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-saml-idp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-auth-saml-idp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "SAML metadata of identity provider",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-auth-saml-idp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/bw-list": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Blacklist/whitelist",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-bw-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Blacklist/whitelist",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-bw-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-bw-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Blacklist/whitelist",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-bw-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/cgnv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete cgnv6 related files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-cgnv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete cgnv6 related files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-cgnv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-cgnv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete cgnv6 related files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-cgnv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/ddos": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ddos file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ddos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ddos file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ddos"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-ddos"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ddos file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ddos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/debug-monitor": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Debug File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-debug-monitor"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Debug File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-debug-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-debug-monitor"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Debug File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-debug-monitor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/domain-list": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ddos file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-domain-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ddos file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-domain-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-domain-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ddos file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-domain-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/geo-location": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete geo-location file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-geo-location"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete geo-location file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-geo-location"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-geo-location"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete geo-location file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-geo-location"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/glm-license": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Remove glm license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-glm-license"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Remove glm license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-glm-license"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-glm-license"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Remove glm license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-glm-license"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/guest-file": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete guest-file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-guest-file"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete guest-file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-guest-file"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-guest-file"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete guest-file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-guest-file"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/health-external": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Address the External Script Program",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-health-external"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Address the External Script Program",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-health-external"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-health-external"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Address the External Script Program",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-health-external"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/health-postfile": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Address the HTTP Post data file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-health-postfile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Address the HTTP Post data file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-health-postfile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-health-postfile"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Address the HTTP Post data file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-health-postfile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/ips": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ips related file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ips"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ips related file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ips"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-ips"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete ips related file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ips"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/license": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Remove softax license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-license"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Remove softax license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-license"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-license"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Remove softax license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-license"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/local-uri-file": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Local URI files for http response",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-local-uri-file"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Local URI files for http response",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-local-uri-file"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-local-uri-file"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Local URI files for http response",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-local-uri-file"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/ng-waf-custom-page": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-ng-waf-custom-page"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/partition": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "hard delete a partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "hard delete a partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "hard delete a partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/rpz": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete Response Policy Zone file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-rpz"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete Response Policy Zone file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-rpz"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-rpz"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete Response Policy Zone file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-rpz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/service-partition": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Hard delete a service partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-service-partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Hard delete a service partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-service-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-service-partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Hard delete a service partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-service-partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/ssl": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "SSL cert/key file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ssl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "SSL cert/key file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ssl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-ssl"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "SSL cert/key file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-ssl"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/startup-config": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Startup Configuration profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-startup-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Startup Configuration profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-startup-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-startup-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Startup Configuration profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-startup-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/threat-intel": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete threat-intel files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-threat-intel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete threat-intel files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-threat-intel"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-threat-intel"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete threat-intel files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-threat-intel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/tsig": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete Transaction SIGnatures Key file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-tsig"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete Transaction SIGnatures Key file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-tsig"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-tsig"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete Transaction SIGnatures Key file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-tsig"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete/web-category": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete web-category database",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-web-category"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete web-category database",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-web-category"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/delete-web-category"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete web-category database",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete-web-category"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/delete": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DELETE"
+        ],
+        "description": "Delete Configuration file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/delete"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "delete-auth-jwks": {
+        "type": "object",
+        "properties": {
+          "jwk-name": {
+            "type": "string",
+            "description": "Local File Name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-auth-portal-image": {
+        "type": "object",
+        "properties": {
+          "image-name": {
+            "type": "string",
+            "description": "Local File Name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-auth-portal": {
+        "type": "object",
+        "properties": {
+          "portal-name": {
+            "type": "string",
+            "description": "Local File Name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-auth-saml-idp": {
+        "type": "object",
+        "properties": {
+          "saml-idp-name": {
+            "type": "string",
+            "description": "Local IDP metadata name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-bw-list": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Blacklist/whitelist Name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-cgnv6": {
+        "type": "object",
+        "properties": {
+          "fixed-nat": {
+            "type": "number",
+            "description": "Delete fixed-nat port-mapping-file",
+            "default": 0
+          },
+          "lw-4o6-binding-table-validation-log": {
+            "type": "number",
+            "description": "LW-4O6 Binding Table validation log File",
+            "default": 0
+          },
+          "filename": {
+            "type": "string",
+            "description": "Specify the port-mapping-file to be deleted",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "lw-filename": {
+            "type": "string",
+            "description": "LW-4O6 Binding Table Validation Log File Name",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "delete-ddos": {
+        "type": "object",
+        "properties": {
+          "ddos-script": {
+            "type": "string",
+            "description": "Specify file to be deleted",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-debug-monitor": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Local File Name",
+            "minLength": 1,
+            "maxLength": 31
+          }
+        }
+      },
+      "delete-domain-list": {
+        "type": "object",
+        "properties": {
+          "domain-list-name": {
+            "type": "string",
+            "description": "Specify file to be deleted",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-geo-location": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Specify file to be deleted",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "all": {
+            "type": "number",
+            "description": "Delete all files",
+            "default": 0
+          }
+        }
+      },
+      "delete-glm-license": {
+        "type": "object",
+        "properties": {
+          "cylance": {
+            "type": "number",
+            "description": "only remove Cylance license",
+            "default": 0
+          },
+          "threatstop": {
+            "type": "number",
+            "description": "only remove ThreatSTOP license",
+            "default": 0
+          },
+          "qosmos": {
+            "type": "number",
+            "description": "only remove QOSMOS license",
+            "default": 0
+          },
+          "webroot-ti": {
+            "type": "number",
+            "description": "only remove Webroot Threat Intel license",
+            "default": 0
+          },
+          "ipsec-vpn": {
+            "type": "number",
+            "description": "only remove IPSEC VPN license",
+            "default": 0
+          }
+        }
+      },
+      "delete-guest-file": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Guest-File Name",
+            "minLength": 1,
+            "maxLength": 31
+          }
+        }
+      },
+      "delete-health-external": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Specify the Program Name",
+            "minLength": 1,
+            "maxLength": 31
+          }
+        }
+      },
+      "delete-health-postfile": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Specify the File Name",
+            "minLength": 1,
+            "maxLength": 31
+          }
+        }
+      },
+      "delete-ips": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "description": "Specify profile to be deleted",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "signature": {
+            "type": "number",
+            "description": "Specify custom signature sid to be deleted",
+            "minimum": 10000000,
+            "maximum": 19000000
+          }
+        }
+      },
+      "delete-license": {
+        "type": "object",
+        "properties": {}
+      },
+      "delete-local-uri-file": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Local File Name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-ng-waf-custom-page": {
+        "type": "object",
+        "properties": {
+          "page-name": {
+            "type": "string",
+            "description": "Local File Name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-partition": {
+        "type": "object",
+        "properties": {
+          "partition-name": {
+            "type": "string",
+            "description": "Object partition name",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "id": {
+            "type": "number",
+            "description": "Specify unique Partition id"
+          }
+        }
+      },
+      "delete-rpz": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Response Policy Zone File",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-service-partition": {
+        "type": "object",
+        "properties": {
+          "partition-name": {
+            "type": "string",
+            "description": "Object service partition name",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "id": {
+            "type": "number",
+            "description": "Specify unique service partition id"
+          }
+        }
+      },
+      "delete-ssl": {
+        "type": "object",
+        "properties": {
+          "ssl-cert-key": {
+            "type": "string",
+            "description": "'cert': Cert Name; 'key': Key Name; ",
+            "enum": [
+              "cert",
+              "key"
+            ]
+          },
+          "ssl-file-name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "delete-startup-config": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Local Configuration Profile Name",
+            "minLength": 1,
+            "maxLength": 31
+          }
+        }
+      },
+      "delete-threat-intel": {
+        "type": "object",
+        "properties": {
+          "database": {
+            "type": "string",
+            "description": "'webroot': Delete webroot module database; ",
+            "enum": [
+              "webroot"
+            ]
+          }
+        }
+      },
+      "delete-tsig": {
+        "type": "object",
+        "properties": {
+          "file-name": {
+            "type": "string",
+            "description": "Transaction SIGnatures Key File",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "delete-web-category": {
+        "type": "object",
+        "properties": {
+          "database": {
+            "type": "number",
+            "description": "Delete web-category database",
+            "default": 0
+          }
+        }
+      },
+      "delete": {
+        "type": "object",
+        "properties": {
+          "partition": {
+            "type": "object",
+            "properties": {
+              "partition-name": {
+                "type": "string",
+                "description": "Object partition name",
+                "minLength": 1,
+                "maxLength": 14
+              },
+              "id": {
+                "type": "number",
+                "description": "Specify unique Partition id"
+              }
+            }
+          },
+          "service-partition": {
+            "type": "object",
+            "properties": {
+              "partition-name": {
+                "type": "string",
+                "description": "Object service partition name",
+                "minLength": 1,
+                "maxLength": 14
+              },
+              "id": {
+                "type": "number",
+                "description": "Specify unique service partition id"
+              }
+            }
+          },
+          "ssl": {
+            "type": "object",
+            "properties": {
+              "ssl-cert-key": {
+                "type": "string",
+                "description": "'cert': Cert Name; 'key': Key Name; ",
+                "enum": [
+                  "cert",
+                  "key"
+                ]
+              },
+              "ssl-file-name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "glm-license": {
+            "type": "object",
+            "properties": {
+              "cylance": {
+                "type": "number",
+                "description": "only remove Cylance license",
+                "default": 0
+              },
+              "threatstop": {
+                "type": "number",
+                "description": "only remove ThreatSTOP license",
+                "default": 0
+              },
+              "qosmos": {
+                "type": "number",
+                "description": "only remove QOSMOS license",
+                "default": 0
+              },
+              "webroot-ti": {
+                "type": "number",
+                "description": "only remove Webroot Threat Intel license",
+                "default": 0
+              },
+              "ipsec-vpn": {
+                "type": "number",
+                "description": "only remove IPSEC VPN license",
+                "default": 0
+              }
+            }
+          },
+          "startup-config": {
+            "type": "object",
+            "properties": {
+              "file-name": {
+                "type": "string",
+                "description": "Local Configuration Profile Name",
+                "minLength": 1,
+                "maxLength": 31
+              }
+            }
+          },
+          "debug-monitor": {
+            "type": "object",
+            "properties": {
+              "file-name": {
+                "type": "string",
+                "description": "Local File Name",
+                "minLength": 1,
+                "maxLength": 31
+              }
+            }
+          },
+          "local-uri-file": {
+            "type": "object",
+            "properties": {
+              "file-name": {
+                "type": "string",
+                "description": "Local File Name",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "bw-list": {
+            "type": "object",
+            "properties": {
+              "file-name": {
+                "type": "string",
+                "description": "Blacklist/whitelist Name",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "health-postfile": {
+            "type": "object",
+            "properties": {
+              "file-name": {
+                "type": "string",
+                "description": "Specify the File Name",
+                "minLength": 1,
+                "maxLength": 31
+              }
+            }
+          },
+          "health-external": {
+            "type": "object",
+            "properties": {
+              "file-name": {
+                "type": "string",
+                "description": "Specify the Program Name",
+                "minLength": 1,
+                "maxLength": 31
+              }
+            }
+          },
+          "geo-location": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string",
+                "description": "Specify file to be deleted",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "all": {
+                "type": "number",
+                "description": "Delete all files",
+                "default": 0
+              }
+            }
+          },
+          "ddos": {
+            "type": "object",
+            "properties": {
+              "ddos-script": {
+                "type": "string",
+                "description": "Specify file to be deleted",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "domain-list": {
+            "type": "object",
+            "properties": {
+              "domain-list-name": {
+                "type": "string",
+                "description": "Specify file to be deleted",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "web-category": {
+            "type": "object",
+            "properties": {
+              "database": {
+                "type": "number",
+                "description": "Delete web-category database",
+                "default": 0
+              }
+            }
+          },
+          "threat-intel": {
+            "type": "object",
+            "properties": {
+              "database": {
+                "type": "string",
+                "description": "'webroot': Delete webroot module database; ",
+                "enum": [
+                  "webroot"
+                ]
+              }
+            }
+          },
+          "guest-file": {
+            "type": "object",
+            "properties": {
+              "file-name": {
+                "type": "string",
+                "description": "Guest-File Name",
+                "minLength": 1,
+                "maxLength": 31
+              }
+            }
+          },
+          "auth-portal": {
+            "type": "object",
+            "properties": {
+              "portal-name": {
+                "type": "string",
+                "description": "Local File Name",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "auth-portal-image": {
+            "type": "object",
+            "properties": {
+              "image-name": {
+                "type": "string",
+                "description": "Local File Name",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "auth-saml-idp": {
+            "type": "object",
+            "properties": {
+              "saml-idp-name": {
+                "type": "string",
+                "description": "Local IDP metadata name",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "auth-jwks": {
+            "type": "object",
+            "properties": {
+              "jwk-name": {
+                "type": "string",
+                "description": "Local File Name",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "cgnv6": {
+            "type": "object",
+            "properties": {
+              "fixed-nat": {
+                "type": "number",
+                "description": "Delete fixed-nat port-mapping-file",
+                "default": 0
+              },
+              "lw-4o6-binding-table-validation-log": {
+                "type": "number",
+                "description": "LW-4O6 Binding Table validation log File",
+                "default": 0
+              },
+              "filename": {
+                "type": "string",
+                "description": "Specify the port-mapping-file to be deleted",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "lw-filename": {
+                "type": "string",
+                "description": "LW-4O6 Binding Table Validation Log File Name",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

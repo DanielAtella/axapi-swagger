@@ -1,0 +1,1318 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - THREAT-INTEL",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the threat-intel category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/threat-intel/threat-feed/{type}": {
+      "parameters": [
+        {
+          "name": "type",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for type"
+        }
+      ],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Configure vendor specific module control options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-feed"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Configure vendor specific module control options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-feed"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-threat-feed"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Configure vendor specific module control options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-feed"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-threat-feed"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Configure vendor specific module control options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-feed"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/threat-list/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Statistics for the object threat-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-list-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/threat-list/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Threat Categories for malicious IPs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Threat Categories for malicious IPs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-threat-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Threat Categories for malicious IPs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-threat-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Threat Categories for malicious IPs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-threat-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-database/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Operational Status for the object webroot-database",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-database-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-database": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "webroot database information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-database"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "webroot database information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-database"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-webroot-database"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "webroot database information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-database"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-webroot-database"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "webroot database information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-database"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-global/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Statistics for the object webroot-global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-global-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Global counters for webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Global counters for webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-webroot-global"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Global counters for webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-webroot-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Global counters for webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-ip-category/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Operational Status for the object webroot-ip-category",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-ip-category-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-ip-category": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "IP Category from webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-ip-category"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "IP Category from webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-ip-category"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-webroot-ip-category"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "IP Category from webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-ip-category"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-webroot-ip-category"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "IP Category from webroot module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-ip-category"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-log/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Operational Status for the object webroot-log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-log-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel/webroot-log": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "webroot log information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-log"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "webroot log information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-log"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/threat-intel-webroot-log"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "webroot log information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel-webroot-log"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/threat-intel": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "THREAT-INTEL"
+        ],
+        "description": "Threat Intelligence module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/threat-intel"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "threat-intel-threat-feed": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "'webroot': Configure Webroot module options; ",
+            "enum": [
+              "webroot"
+            ]
+          },
+          "server": {
+            "type": "string",
+            "description": "Server IP or Hostname",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "port": {
+            "type": "number",
+            "description": "Port to query server(default 443)",
+            "default": 443,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "server-timeout": {
+            "type": "number",
+            "description": "Server Timeout in seconds (default: 15s)",
+            "default": 15,
+            "minimum": 1,
+            "maximum": 30
+          },
+          "rtu-update-disable": {
+            "type": "number",
+            "description": "Disables real time updates(default enable)",
+            "default": 0
+          },
+          "update-interval": {
+            "type": "number",
+            "description": "Interval to check for database or RTU updates(default 120 mins)",
+            "default": 120,
+            "minimum": 10,
+            "maximum": 14400
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management interface for all communication with threat-intel server",
+            "default": 0
+          },
+          "log-level": {
+            "type": "string",
+            "description": "'disable': Disable all logging; 'error': Log error events; 'warning': Log warning events and above; 'info': Log info events and above; 'debug': Log debug events and above; 'trace': enable all logs; ",
+            "default": "warning",
+            "enum": [
+              "disable",
+              "error",
+              "warning",
+              "info",
+              "debug",
+              "trace"
+            ]
+          },
+          "proxy-host": {
+            "type": "string",
+            "description": "Proxy server hostname or IP address",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "proxy-port": {
+            "type": "number",
+            "description": "Port to connect on proxy server",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "proxy-auth-type": {
+            "type": "string",
+            "description": "'ntlm': NTLM authentication(default); 'basic': Basic authentication; ",
+            "default": "ntlm",
+            "enum": [
+              "ntlm",
+              "basic"
+            ]
+          },
+          "domain": {
+            "type": "string",
+            "description": "Realm for NTLM authentication",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "proxy-username": {
+            "type": "string",
+            "description": "Username for proxy authentication",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "proxy-password": {
+            "type": "number",
+            "description": "Password for proxy authentication",
+            "default": 0
+          },
+          "secret-string": {
+            "type": "string",
+            "description": "password value",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "enable": {
+            "type": "number",
+            "description": "Enable module",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "threat-intel-threat-list-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Threat category List name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "spam-sources": {
+                "type": "number",
+                "description": "Hits for spam sources"
+              },
+              "windows-exploits": {
+                "type": "number",
+                "description": "Hits for windows exploits"
+              },
+              "web-attacks": {
+                "type": "number",
+                "description": "Hits for web attacks"
+              },
+              "botnets": {
+                "type": "number",
+                "description": "Hits for botnets"
+              },
+              "scanners": {
+                "type": "number",
+                "description": "Hits for scanners"
+              },
+              "dos-attacks": {
+                "type": "number",
+                "description": "Hits for dos attacks"
+              },
+              "reputation": {
+                "type": "number",
+                "description": "Hits for reputation"
+              },
+              "phishing": {
+                "type": "number",
+                "description": "Hits for phishing"
+              },
+              "proxy": {
+                "type": "number",
+                "description": "Hits for proxy"
+              },
+              "mobile-threats": {
+                "type": "number",
+                "description": "Hits for mobile threats"
+              },
+              "tor-proxy": {
+                "type": "number",
+                "description": "Hits for tor-proxy"
+              },
+              "total-hits": {
+                "type": "number",
+                "description": "Total hits for threat-list"
+              }
+            }
+          }
+        }
+      },
+      "threat-intel-threat-list": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Threat category List name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "type": {
+            "type": "string",
+            "description": "'webroot': Configure Webroot threat categories; ",
+            "enum": [
+              "webroot"
+            ]
+          },
+          "all-categories": {
+            "type": "number",
+            "description": "Enable all categories",
+            "default": 0
+          },
+          "spam-sources": {
+            "type": "number",
+            "description": "IP's tunneling spam messages through a proxy, anomalous SMTP activities, and forum spam activities",
+            "default": 0
+          },
+          "windows-exploits": {
+            "type": "number",
+            "description": "IP's associated with malware, shell code, rootkits, worms or viruses",
+            "default": 0
+          },
+          "web-attacks": {
+            "type": "number",
+            "description": "IP's associated with cross site scripting, iFrame injection, SQL injection, cross domain injection, or domain password brute fo",
+            "default": 0
+          },
+          "botnets": {
+            "type": "number",
+            "description": "Botnet C&C channels, and infected zombie machines controlled by Bot master",
+            "default": 0
+          },
+          "scanners": {
+            "type": "number",
+            "description": "IP's associated with probes, host scan, domain scan, and password brute force attack",
+            "default": 0
+          },
+          "dos-attacks": {
+            "type": "number",
+            "description": "IP's participating in DOS, DDOS, anomalous sync flood, and anomalous traffic detection",
+            "default": 0
+          },
+          "reputation": {
+            "type": "number",
+            "description": "IP addresses currently known to be infected with malware",
+            "default": 0
+          },
+          "phishing": {
+            "type": "number",
+            "description": "IP addresses hosting phishing sites, ad click fraud or gaming fraud",
+            "default": 0
+          },
+          "proxy": {
+            "type": "number",
+            "description": "IP addresses providing proxy services",
+            "default": 0
+          },
+          "mobile-threats": {
+            "type": "number",
+            "description": "IP's associated with mobile threats",
+            "default": 0
+          },
+          "tor-proxy": {
+            "type": "number",
+            "description": "IP's providing tor proxy services",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "threat-intel-webroot-database-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "size": {
+                "type": "string"
+              },
+              "version": {
+                "type": "number"
+              },
+              "last-update-time": {
+                "type": "string"
+              },
+              "next-update-time": {
+                "type": "string"
+              },
+              "connection-status": {
+                "type": "string"
+              },
+              "failure-reason": {
+                "type": "string"
+              },
+              "last-successful-connection": {
+                "type": "string"
+              },
+              "spam-sources": {
+                "type": "number"
+              },
+              "windows-exploits": {
+                "type": "number"
+              },
+              "web-attacks": {
+                "type": "number"
+              },
+              "botnets": {
+                "type": "number"
+              },
+              "scanners": {
+                "type": "number"
+              },
+              "dos-attacks": {
+                "type": "number"
+              },
+              "reputation": {
+                "type": "number"
+              },
+              "phishing": {
+                "type": "number"
+              },
+              "proxy": {
+                "type": "number"
+              },
+              "mobile-threats": {
+                "type": "number"
+              },
+              "tor-proxy": {
+                "type": "number"
+              },
+              "total-entries": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "threat-intel-webroot-database": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "threat-intel-webroot-global-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "spam-sources": {
+                "type": "number",
+                "description": "Hits for spam sources"
+              },
+              "windows-exploits": {
+                "type": "number",
+                "description": "Hits for windows exploits"
+              },
+              "web-attacks": {
+                "type": "number",
+                "description": "Hits for web attacks"
+              },
+              "botnets": {
+                "type": "number",
+                "description": "Hits for botnets"
+              },
+              "scanners": {
+                "type": "number",
+                "description": "Hits for scanners"
+              },
+              "dos-attacks": {
+                "type": "number",
+                "description": "Hits for dos attacks"
+              },
+              "reputation": {
+                "type": "number",
+                "description": "Hits for reputation"
+              },
+              "phishing": {
+                "type": "number",
+                "description": "Hits for phishing"
+              },
+              "proxy": {
+                "type": "number",
+                "description": "Hits for proxy"
+              },
+              "mobile-threats": {
+                "type": "number",
+                "description": "Hits for mobile threats"
+              },
+              "tor-proxy": {
+                "type": "number",
+                "description": "Hits for tor-proxy"
+              },
+              "rtu-lookup": {
+                "type": "number",
+                "description": "Number of lookups in RTU cache"
+              },
+              "database-lookup": {
+                "type": "number",
+                "description": "Number of lookups in database"
+              },
+              "non-malicious-ips": {
+                "type": "number",
+                "description": "IP's not found in database or RTU cache"
+              }
+            }
+          }
+        }
+      },
+      "threat-intel-webroot-global": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "threat-intel-webroot-ip-category-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "category-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ip": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "threat-intel-webroot-ip-category": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "threat-intel-webroot-log-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "webroot-log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "webroot-log-offset": {
+                "type": "number"
+              },
+              "webroot-log-over": {
+                "type": "number"
+              },
+              "follow": {
+                "type": "number"
+              },
+              "from-start": {
+                "type": "number"
+              },
+              "num-lines": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "threat-intel-webroot-log": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "threat-intel": {
+        "type": "object",
+        "properties": {
+          "threat-feed-list": {
+            "type": "array",
+            "items": {
+              "type": "threat-feed"
+            }
+          },
+          "threat-list-list": {
+            "type": "array",
+            "items": {
+              "type": "threat-list"
+            }
+          },
+          "webroot-global": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "sampling-enable": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "webroot-ip-category": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "webroot-database": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "webroot-log": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

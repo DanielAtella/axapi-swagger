@@ -1,0 +1,5105 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - TEMPLATE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the template category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/template/apps/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Operational Status for the object apps",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-apps-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/apps": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "axAPI to get available ACT and installed ACT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-apps"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "axAPI to get available ACT and installed ACT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-apps"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-apps"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "axAPI to get available ACT and installed ACT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-apps"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/csv/{csv-name}": {
+      "parameters": [
+        {
+          "name": "csv-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for csv-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Specify csv template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-csv"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Specify csv template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-csv"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-csv"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Specify csv template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-csv"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-csv"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Specify csv template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-csv"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/apn-imsi-list/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP APN IMSI list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-apn-imsi-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP APN IMSI list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-apn-imsi-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-apn-imsi-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP APN IMSI list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-apn-imsi-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-apn-imsi-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP APN IMSI list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-apn-imsi-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/filtering-policy/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-filtering-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-filtering-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-filtering-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-filtering-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-filtering-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-filtering-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/general-policy/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP General Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-general-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP General Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-general-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-general-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP General Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-general-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-general-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP General Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-general-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/logging-policy/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Logging Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-logging-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Logging Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-logging-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-logging-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Logging Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-logging-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-logging-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Logging Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-logging-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/message-filtering-policy/{name}/version-v0": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv0 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v0"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv0 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v0"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v0"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv0 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v0"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v0"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv0 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v0"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/message-filtering-policy/{name}/version-v1": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv1 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v1"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv1 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v1"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v1"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv1 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v1"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v1"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv1 Control Messages,",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/message-filtering-policy/{name}/version-v2": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv2 Control Messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v2"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv2 Control Messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v2"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v2"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv2 Control Messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v2"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v2"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure Message Filtering Policy for GTPv2 Control Messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy-version-v2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/message-filtering-policy/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Message Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Message Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Message Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-message-filtering-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Message Filtering Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-message-filtering-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/msisdn-list/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP MSISDN list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-msisdn-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP MSISDN list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-msisdn-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-msisdn-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP MSISDN list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-msisdn-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-msisdn-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP MSISDN list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-msisdn-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp-policy/{policy-template-name}/stats": {
+      "parameters": [
+        {
+          "name": "policy-template-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for policy-template-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Statistics for the object gtp-policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-policy-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp-policy/{policy-template-name}": {
+      "parameters": [
+        {
+          "name": "policy-template-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for policy-template-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/rate-limit-policy/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Rate Limit policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-rate-limit-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Rate Limit policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-rate-limit-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-rate-limit-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Rate Limit policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-rate-limit-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-rate-limit-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Rate Limit policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-rate-limit-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp/validation-policy/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Validation Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-validation-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Validation Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-validation-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-validation-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Validation Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-validation-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-gtp-validation-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Configure GTP Validation Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp-validation-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/gtp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a GTP template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-gtp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/ip-threat-action/{template-number}": {
+      "parameters": [
+        {
+          "name": "template-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for template-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an IP Threat Action Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-ip-threat-action"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an IP Threat Action Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-ip-threat-action"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-ip-threat-action"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an IP Threat Action Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-ip-threat-action"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-ip-threat-action"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an IP Threat Action Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-ip-threat-action"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/lid/{lid-number}": {
+      "parameters": [
+        {
+          "name": "lid-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for lid-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an Lid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-lid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an Lid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-lid"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-lid"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an Lid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-lid"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-lid"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create an Lid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-lid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/limit-policy/{policy-number}/limit-cps": {
+      "parameters": [
+        {
+          "name": "policy-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for policy-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Connections Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-cps"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Connections Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-cps"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy-limit-cps"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Connections Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-cps"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy-limit-cps"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Connections Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-cps"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/limit-policy/{policy-number}/limit-pps": {
+      "parameters": [
+        {
+          "name": "policy-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for policy-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Packets Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-pps"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Packets Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-pps"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy-limit-pps"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Packets Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-pps"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy-limit-pps"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Packets Per Second Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-pps"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/limit-policy/{policy-number}/limit-throughput": {
+      "parameters": [
+        {
+          "name": "policy-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for policy-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Throughput Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-throughput"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Throughput Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-throughput"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy-limit-throughput"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Throughput Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-throughput"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy-limit-throughput"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Enable Throughput Rate Limit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy-limit-throughput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/limit-policy/{policy-number}": {
+      "parameters": [
+        {
+          "name": "policy-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for policy-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create a Limit Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create a Limit Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create a Limit Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-limit-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Create a Limit Policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-limit-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/sctp/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a SCTP template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-sctp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a SCTP template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-sctp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-sctp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a SCTP template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-sctp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-sctp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a SCTP template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-sctp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template/syslog-over-tls": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a syslog over TLS template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-syslog-over-tls"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a syslog over TLS template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-syslog-over-tls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-syslog-over-tls"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a syslog over TLS template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-syslog-over-tls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/template-syslog-over-tls"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a syslog over TLS template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template-syslog-over-tls"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/template": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TEMPLATE"
+        ],
+        "description": "Define a Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/template"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "template-apps-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "installed": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "available": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "template-apps": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template-csv": {
+        "type": "object",
+        "properties": {
+          "csv-name": {
+            "type": "string",
+            "description": "Specify name of csv template",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "delim-num": {
+            "type": "number",
+            "description": "enter a delimiter number, default 44 (\",\")",
+            "default": 44,
+            "minimum": 0,
+            "maximum": 255
+          },
+          "delim-char": {
+            "type": "string",
+            "description": "enter a delimiter character, default \",\"",
+            "default": ",",
+            "minLength": 1,
+            "maxLength": 1
+          },
+          "ipv6-enable": {
+            "type": "number",
+            "description": "Support IPv6 IP ranges",
+            "default": 0
+          },
+          "multiple-fields": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-apn-imsi-list": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP APN IMSI list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "action": {
+            "type": "string",
+            "description": "'permit': Create a whitelist to permit the packets that match APN IMSI filters; 'deny': Create a blacklist to deny the packets that match APN IMSI filters (default); ",
+            "default": "deny",
+            "enum": [
+              "permit",
+              "deny"
+            ]
+          },
+          "str-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-filtering-policy": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP Filtering Policy",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "gtp-in-gtp-filtering": {
+            "type": "string",
+            "description": "'enable': Enable GTP-in-GTP Filtering; 'disable': Disable GTP-in-GTP Filtering; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "rat-type-filtering": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "apn-imsi-filtering": {
+            "type": "string",
+            "description": "Specify the APN IMSI Inspection Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "msisdn-filtering": {
+            "type": "string",
+            "description": "Specify the MSISDN Inspection Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "message-filtering-policy-name": {
+            "type": "string",
+            "description": "Specify the Message Filtering Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-general-policy": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP General Policy",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "tunnel-timeout": {
+            "type": "number",
+            "description": "Tunnel Inactivity Timeout in minutes (default: 1440 minutes)",
+            "default": 1440,
+            "minimum": 5,
+            "maximum": 60000
+          },
+          "handover-timeout": {
+            "type": "number",
+            "description": "Tunnel Inactivity Timeout during Handover in minutes (default: 2 mins)",
+            "default": 2,
+            "minimum": 1,
+            "maximum": 63
+          },
+          "maximum-message-length": {
+            "type": "number",
+            "description": "Maximum message length for a GTP message in bytes",
+            "default": 1500,
+            "minimum": 64,
+            "maximum": 1500
+          },
+          "v0-action": {
+            "type": "string",
+            "description": "'permit': Permit GTP-C version 0; 'drop': Drop GTP-C version 0(Default); ",
+            "default": "drop",
+            "enum": [
+              "permit",
+              "drop"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-logging-policy": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP Logging Policy",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "log": {
+            "type": "object",
+            "properties": {
+              "mandatory-ie-check": {
+                "type": "number",
+                "description": "Logging Packet Drop due to Missing Mandatory Information Element",
+                "default": 0
+              },
+              "out-of-state-ie-check": {
+                "type": "number",
+                "description": "Logging Packet Drop due to Out of State Information Elements",
+                "default": 0
+              },
+              "out-of-order-ie-check": {
+                "type": "number",
+                "description": "Logging Packet Drop due to Out of Order Information Elements for GTPv1-C",
+                "default": 0
+              },
+              "invalid-teid-check": {
+                "type": "number",
+                "description": "Logging Packet Drop due to Invalid Tunnel Endpoint Identifier",
+                "default": 0
+              },
+              "reserved-ie-check": {
+                "type": "number",
+                "description": "Logging Packet Drop due to Presence of Reserved Information Element",
+                "default": 0
+              },
+              "message-filtering": {
+                "type": "number",
+                "description": "Logging Packet Drop due to Message Filtering",
+                "default": 0
+              },
+              "apn-imsi-filtering": {
+                "type": "number",
+                "description": "Logging Packet Drop due to APN IMSI filtering",
+                "default": 0
+              },
+              "rat-type-filtering": {
+                "type": "number",
+                "description": "Logging Packet Drop due to RAT type filtering",
+                "default": 0
+              },
+              "msisdn-filtering": {
+                "type": "number",
+                "description": "Logging Packet Drop due to MSISDN Filtering",
+                "default": 0
+              },
+              "crosslayer-correlation": {
+                "type": "number",
+                "description": "Logging Packet Drop due to mismatch in IP address and GTP FTEID/GSN address",
+                "default": 0
+              },
+              "anti-spoofing-check": {
+                "type": "number",
+                "description": "Logging Packet Drop due to End User IP Address Spoofing",
+                "default": 0
+              },
+              "msisdn-imsi-correlation": {
+                "type": "number",
+                "description": "Logging Packet Drop due to mismatch in Country Code and Mobile Country Code",
+                "default": 0
+              },
+              "max-message-length-check": {
+                "type": "number",
+                "description": "Logging Packet Drop due to Max Message Length Filtering",
+                "default": 0
+              },
+              "gtp-in-gtp-filtering": {
+                "type": "number",
+                "description": "Logging Packet Drop due to GTP in GTP filtering",
+                "default": 0
+              },
+              "sequence-num-correlation": {
+                "type": "number",
+                "description": "Logging Packet Drop due to mismatch in Sequence number between GTP request and response",
+                "default": 0
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-message-filtering-policy-version-v0": {
+        "type": "object",
+        "properties": {
+          "enable-disable-action": {
+            "type": "string",
+            "description": "'enable': Enable Message Filtering on version; 'disable': Disable Message Filtering on version; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "message-type": {
+            "type": "number",
+            "description": "Specify the Message Type",
+            "default": 0
+          },
+          "create-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "update-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "pdu-notification": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "gtp-pdu": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "create-aa-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-aa-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "reserved-messages": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template-gtp-message-filtering-policy-version-v1": {
+        "type": "object",
+        "properties": {
+          "enable-disable-action": {
+            "type": "string",
+            "description": "'enable': Enable Message Filtering on version; 'disable': Disable Message Filtering on version; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "message-type": {
+            "type": "number",
+            "description": "Specify the Message Type",
+            "default": 0
+          },
+          "create-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "update-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "initiate-pdp": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "pdu-notification": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "ms-info-change": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "gtp-pdu": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "mbms-session": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "mbms-notification": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "mbms-registration": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "mbms-deregistration": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "create-mbms": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-mbms": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "update-mbms": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "reserved-messages": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template-gtp-message-filtering-policy-version-v2": {
+        "type": "object",
+        "properties": {
+          "enable-disable-action": {
+            "type": "string",
+            "description": "'enable': Enable Message Filtering on version; 'disable': Disable Message Filtering on version; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "message-type": {
+            "type": "number",
+            "description": "Specify the Message Type",
+            "default": 0
+          },
+          "change-notification": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "create-session": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-session": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "modify-bearer": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "remote-ue-report": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "modify-command": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-command": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "bearer-resource": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "create-bearer": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "update-bearer": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-bearer": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "delete-pdn": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "update-pdn": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "suspend": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "resume": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "pgw-downlink-trigger": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "trace-session": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "reserved-messages": {
+            "type": "string",
+            "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template-gtp-message-filtering-policy": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP Message Filtering Policy",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "interface-type": {
+            "type": "string",
+            "description": "'roaming': Roaming Interface(S8/Gp); 'non-roaming': Non-Roaming Interface(S5/Gn); ",
+            "enum": [
+              "roaming",
+              "non-roaming"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "version-v2": {
+            "type": "object",
+            "properties": {
+              "enable-disable-action": {
+                "type": "string",
+                "description": "'enable': Enable Message Filtering on version; 'disable': Disable Message Filtering on version; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "message-type": {
+                "type": "number",
+                "description": "Specify the Message Type",
+                "default": 0
+              },
+              "change-notification": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "create-session": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-session": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "modify-bearer": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "remote-ue-report": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "modify-command": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-command": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "bearer-resource": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "create-bearer": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "update-bearer": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-bearer": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-pdn": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "update-pdn": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "suspend": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "resume": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "pgw-downlink-trigger": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "trace-session": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "reserved-messages": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "version-v1": {
+            "type": "object",
+            "properties": {
+              "enable-disable-action": {
+                "type": "string",
+                "description": "'enable': Enable Message Filtering on version; 'disable': Disable Message Filtering on version; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "message-type": {
+                "type": "number",
+                "description": "Specify the Message Type",
+                "default": 0
+              },
+              "create-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "update-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "initiate-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "pdu-notification": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "ms-info-change": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "gtp-pdu": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "mbms-session": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "mbms-notification": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "mbms-registration": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "mbms-deregistration": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "create-mbms": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-mbms": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "update-mbms": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "reserved-messages": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "version-v0": {
+            "type": "object",
+            "properties": {
+              "enable-disable-action": {
+                "type": "string",
+                "description": "'enable': Enable Message Filtering on version; 'disable': Disable Message Filtering on version; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "message-type": {
+                "type": "number",
+                "description": "Specify the Message Type",
+                "default": 0
+              },
+              "create-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "update-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "pdu-notification": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "gtp-pdu": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "create-aa-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "delete-aa-pdp": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "reserved-messages": {
+                "type": "string",
+                "description": "'enable': Enable the Message Type; 'disable': Disable the Message Type; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "template-gtp-msisdn-list": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP MSISDN list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "action": {
+            "type": "string",
+            "description": "'permit': Create a whitelist to permit the packets that match MSISDN filters; 'deny': Create a blacklist to deny the packets that match MSISDN filters; ",
+            "default": "deny",
+            "enum": [
+              "permit",
+              "deny"
+            ]
+          },
+          "str-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-policy-stats": {
+        "type": "object",
+        "properties": {
+          "policy-template-name": {
+            "type": "string",
+            "description": "Configure the GTP Policy Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "gtp-v0-c-tunnel-created": {
+                "type": "number",
+                "description": "GTPv0-C Tunnel Created"
+              },
+              "gtp-v0-c-tunnel-half-open": {
+                "type": "number",
+                "description": "GTPv0-C Half open tunnel created"
+              },
+              "gtp-v0-c-tunnel-half-closed": {
+                "type": "number",
+                "description": "GTPv0-C Tunnel Delete Request"
+              },
+              "gtp-v0-c-tunnel-closed": {
+                "type": "number",
+                "description": "GTPv0-C Tunnel Marked Deleted"
+              },
+              "gtp-v0-c-tunnel-deleted": {
+                "type": "number",
+                "description": "GTPv0-C Tunnel Deleted"
+              },
+              "gtp-v0-c-half-open-tunnel-closed": {
+                "type": "number",
+                "description": "GTPv0-C Half open tunnel closed"
+              },
+              "gtp-v1-c-tunnel-created": {
+                "type": "number",
+                "description": "GTPv1-C Tunnel Created"
+              },
+              "gtp-v1-c-tunnel-half-open": {
+                "type": "number",
+                "description": "GTPv1-C Half open tunnel created"
+              },
+              "gtp-v1-c-tunnel-half-closed": {
+                "type": "number",
+                "description": "GTPv1-C Tunnel Delete Request"
+              },
+              "gtp-v1-c-tunnel-closed": {
+                "type": "number",
+                "description": "GTPv1-C Tunnel Marked Deleted"
+              },
+              "gtp-v1-c-tunnel-deleted": {
+                "type": "number",
+                "description": "GTPv1-C Tunnel Deleted"
+              },
+              "gtp-v1-c-half-open-tunnel-closed": {
+                "type": "number",
+                "description": "GTPv1-C Half open tunnel closed"
+              },
+              "gtp-v2-c-tunnel-created": {
+                "type": "number",
+                "description": "GTPv2-C Tunnel Created"
+              },
+              "gtp-v2-c-tunnel-half-open": {
+                "type": "number",
+                "description": "GTPv2-C Half open tunnel created"
+              },
+              "gtp-v2-c-tunnel-half-closed": {
+                "type": "number",
+                "description": "GTPv2-C Tunnel Delete Request"
+              },
+              "gtp-v2-c-tunnel-closed": {
+                "type": "number",
+                "description": "GTPv2-C Tunnel Marked Deleted"
+              },
+              "gtp-v2-c-tunnel-deleted": {
+                "type": "number",
+                "description": "GTPv2-C Tunnel Deleted"
+              },
+              "gtp-v2-c-half-open-tunnel-closed": {
+                "type": "number",
+                "description": "GTPv2-C Half open tunnel closed"
+              },
+              "gtp-u-tunnel-created": {
+                "type": "number",
+                "description": "GTP-U Tunnel Created"
+              },
+              "gtp-u-tunnel-deleted": {
+                "type": "number",
+                "description": "GTP-U Tunnel Deleted"
+              },
+              "gtp-v0-c-update-pdp-resp-unsuccess": {
+                "type": "number",
+                "description": "GTPv0-C Update PDP Context Response Unsuccessful"
+              },
+              "gtp-v1-c-update-pdp-resp-unsuccess": {
+                "type": "number",
+                "description": "GTPv1-C Update PDP Context Response Unsuccessful"
+              },
+              "gtp-v2-c-mod_bearer-resp-unsuccess": {
+                "type": "number",
+                "description": "GTPv2-C Modify Bearer Response Unsuccessful"
+              },
+              "gtp-v0-c-create-pdp-resp-unsuccess": {
+                "type": "number",
+                "description": "GTPv0-C Create PDP Context Response Unsuccessful"
+              },
+              "gtp-v1-c-create-pdp-resp-unsuccess": {
+                "type": "number",
+                "description": "GTPv1-C Create PDP Context Response Unsuccessful"
+              },
+              "gtp-v2-c-create-sess-resp-unsuccess": {
+                "type": "number",
+                "description": "GTPv2-C Create Session Response Unsuccessful"
+              },
+              "gtp-v2-c-piggyback-message": {
+                "type": "number",
+                "description": "GTPv2-C Piggyback Message"
+              },
+              "gtp-path-management-message": {
+                "type": "number",
+                "description": "GTP Path Management Messages Received"
+              },
+              "gtp-v0-c-tunnel-deleted-restart": {
+                "type": "number",
+                "description": "GTPv0-C Tunnel Deleted with Restart/failure"
+              },
+              "gtp-v1-c-tunnel-deleted-restart": {
+                "type": "number",
+                "description": "GTPv1-C Tunnel Deleted with Restart/failure"
+              },
+              "gtp-v2-c-tunnel-deleted-restart": {
+                "type": "number",
+                "description": "GTPv2-C Tunnel Deleted with Restart/failure"
+              },
+              "gtp-v0-c-reserved-message-allow": {
+                "type": "number",
+                "description": "Permit GTPv0-C Reserved Messages"
+              },
+              "gtp-v1-c-reserved-message-allow": {
+                "type": "number",
+                "description": "Permit GTPv1-C Reserved Messages"
+              },
+              "gtp-v2-c-reserved-message-allow": {
+                "type": "number",
+                "description": "Permit GTPv2-C Reserved Messages"
+              },
+              "gtp-v2-c-load-contr-info-exceed": {
+                "type": "number",
+                "description": "GTPv2-C Load Control Info IEs in message exceeded 2"
+              },
+              "gtp-v1-c-pdu-notification-request-forward": {
+                "type": "number",
+                "description": "GTPv1-C PDU Notification Request Forward"
+              },
+              "gtp-v1-c-pdu-notification-reject-request-forward": {
+                "type": "number",
+                "description": "GTPv1-C PDU Notification Reject Request Forward"
+              },
+              "gtp-v0-c-pdu-notification-request-forward": {
+                "type": "number",
+                "description": "GTPv0-C PDU Notification Request Forward"
+              },
+              "gtp-v0-c-pdu-notification-reject-request-forward": {
+                "type": "number",
+                "description": "GTPv0-C PDU Notification Reject Request Forward"
+              },
+              "gtp-v0-c-message-skipped-apn-filtering-no-imsi": {
+                "type": "number",
+                "description": "GTPv0-C APN/IMSI Filtering Skipped (No IMSI)"
+              },
+              "gtp-v1-c-message-skipped-apn-filtering-no-imsi": {
+                "type": "number",
+                "description": "GTPv1-C APN/IMSI Filtering Skipped (No IMSI)"
+              },
+              "gtp-v2-c-message-skipped-apn-filtering-no-imsi": {
+                "type": "number",
+                "description": "GTPv2-C APN/IMSI Filtering Skipped (No IMSI)"
+              },
+              "gtp-v0-c-message-skipped-msisdn-filtering-no-imsi": {
+                "type": "number",
+                "description": "GTPv0-C MSISDN Filtering Skipped (No MSISDN)"
+              },
+              "gtp-v1-c-message-skipped-msisdn-filtering-no-imsi": {
+                "type": "number",
+                "description": "GTPv1-C MSISDN Filtering Skipped (No MSISDN)"
+              },
+              "gtp-v2-c-message-skipped-msisdn-filtering-no-imsi": {
+                "type": "number",
+                "description": "GTPv2-C MSISDN Filtering Skipped (No MSISDN)"
+              },
+              "gtp-v0-c-packet-dummy-msisdn": {
+                "type": "number",
+                "description": "GTPv0-C Packet With Dummy MSISDN Forwarded"
+              },
+              "gtp-v1-c-packet-dummy-msisdn": {
+                "type": "number",
+                "description": "GTPv1-C Packet With Dummy MSISDN Forwarded"
+              },
+              "gtp-v2-c-packet-dummy-msisdn": {
+                "type": "number",
+                "description": "GTPv2-C Packet With Dummy MSISDN Forwarded"
+              },
+              "drop-vld-sanity-gtp-v2-c-message-with-teid-zero-expected": {
+                "type": "number",
+                "description": "Validation Drop: GTPv2-C Create Session Request with TEID"
+              },
+              "drop-vld-sanity-gtp-v1-c-message-with-teid-zero-expected": {
+                "type": "number",
+                "description": "Validation Drop: GTPv1-C PDU Notification Request with TEID"
+              },
+              "drop-vld-sanity-gtp-v0-c-message-with-teid-zero-expected": {
+                "type": "number",
+                "description": "Validation Drop: GTPv0-C PDU Notification Request with TEID"
+              },
+              "drop-vld-gtp-ie-repeat-count-exceed": {
+                "type": "number",
+                "description": "Validation Drop: GTP repeated IE count exceeded"
+              },
+              "drop-vld-reserved-field-set": {
+                "type": "number",
+                "description": "Validation Drop: Reserved Header Field Set"
+              },
+              "drop-vld-tunnel-id-flag": {
+                "type": "number",
+                "description": "Validation Drop: Tunnel Header Flag Not Set"
+              },
+              "drop-vld-invalid-flow-label-v0": {
+                "type": "number",
+                "description": "Validation Drop: Invalid Flow Label in GTPv0-C Header"
+              },
+              "drop-vld-invalid-teid": {
+                "type": "number",
+                "description": "Validation Drop: Invalid TEID Value"
+              },
+              "drop-vld-out-of-state": {
+                "type": "number",
+                "description": "Validation Drop: Out Of State GTP Message"
+              },
+              "drop-vld-mandatory-information-element": {
+                "type": "number",
+                "description": "Validation Drop: Mandatory IE Not Present"
+              },
+              "drop-vld-mandatory-ie-in-grouped-ie": {
+                "type": "number",
+                "description": "Validation Drop: Mandatory IE in Grouped IE Not Present"
+              },
+              "drop-vld-out-of-order-ie": {
+                "type": "number",
+                "description": "Validation Drop: GTPv1-C Message Out of Order IE"
+              },
+              "drop-vld-out-of-state-ie": {
+                "type": "number",
+                "description": "Validation Drop: Unexpected IE Present in Message"
+              },
+              "drop-vld-reserved-information-element": {
+                "type": "number",
+                "description": "Validation Drop: Reserved IE Field Present"
+              },
+              "drop-vld-version-not-supported": {
+                "type": "number",
+                "description": "Validation Drop: Invalid GTP version"
+              },
+              "drop-vld-message-length": {
+                "type": "number",
+                "description": "Validation Drop: Message Length Exceeded"
+              },
+              "drop-vld-cross-layer-correlation": {
+                "type": "number",
+                "description": "Validation Drop: Cross Layer IP Address Mismatch"
+              },
+              "drop-vld-country-code-mismatch": {
+                "type": "number",
+                "description": "Validation Drop: Country Code Mismatch in IMSI and MSISDN"
+              },
+              "drop-vld-gtp-u-spoofed-source-address": {
+                "type": "number",
+                "description": "Validation Drop: GTP-U IP Address Spoofed"
+              },
+              "drop-vld-gtp-bearer-count-exceed": {
+                "type": "number",
+                "description": "Validation Drop: GTP Bearer count exceeded max (11)"
+              },
+              "drop-vld-gtp-v2-wrong-lbi-create-bearer-req": {
+                "type": "number",
+                "description": "Validation Drop: GTPV2-C Wrong LBI in Create Bearer Request"
+              },
+              "drop-vld-gtp-c-handover-in-progress": {
+                "type": "number",
+                "description": "Validation Drop: GTP-C Drop Since Handover In Progress"
+              },
+              "drop-vld-v0-reserved-message-drop": {
+                "type": "number",
+                "description": "Validation Drop: GTPv0-C Reserved Message Drop"
+              },
+              "drop-vld-v1-reserved-message-drop": {
+                "type": "number",
+                "description": "Validation Drop: GTPv1-C Reserved Message Drop"
+              },
+              "drop-vld-v2-reserved-message-drop": {
+                "type": "number",
+                "description": "Validation Drop: GTPv2-C Reserved Message Drop"
+              },
+              "drop-vld-invalid-pkt-len-piggyback": {
+                "type": "number",
+                "description": "Validation Drop: Piggyback message invalid packet length"
+              },
+              "drop-vld-sanity-failed-piggyback": {
+                "type": "number",
+                "description": "Validation Drop: piggyback message anomaly failed"
+              },
+              "drop-vld-sequence-num-correlation": {
+                "type": "number",
+                "description": "Validation Drop: GTP-C Sequence number Mismatch"
+              },
+              "drop-vld-gtpv0-seqnum-buffer-full": {
+                "type": "number",
+                "description": "Validation Drop: GTPV0-C conn Sequence number Buffer Full"
+              },
+              "drop-vld-gtpv1-seqnum-buffer-full": {
+                "type": "number",
+                "description": "Validation Drop: GTPV1-C conn Sequence number Buffer Full"
+              },
+              "drop-vld-gtpv2-seqnum-buffer-full": {
+                "type": "number",
+                "description": "Validation Drop: GTPV2-C conn Sequence number Buffer Full"
+              },
+              "drop-vld-gtp-invalid-imsi-len-drop": {
+                "type": "number",
+                "description": "Validation Drop: GTP-C Invalid IMSI Length Drop"
+              },
+              "drop-vld-gtp-invalid-apn-len-drop": {
+                "type": "number",
+                "description": "Validation Drop: GTP-C Invalid APN Length Drop"
+              },
+              "drop-vld-protocol-flag-unset": {
+                "type": "number",
+                "description": "Validation Drop: Protocol flag in Header Field not Set"
+              },
+              "drop-vld-gtpv0-subscriber-attr-miss": {
+                "type": "number",
+                "description": "Validation Drop: GTPV0-c Subscriber Attributes Missing"
+              },
+              "drop-vld-gtpv1-subscriber-attr-miss": {
+                "type": "number",
+                "description": "Validation Drop: GTPV1-c Subscriber Attributes Missing"
+              },
+              "drop-vld-gtpv2-subscriber-attr-miss": {
+                "type": "number",
+                "description": "Validation Drop: GTPV2-c Subscriber Attributes Missing"
+              },
+              "drop-vld-gtp-v0-c-ie-len-exceed-msg-len": {
+                "type": "number",
+                "description": "GTPv0-C IE Length Exceeds Message Length"
+              },
+              "drop-vld-gtp-v1-c-ie-len-exceed-msg-len": {
+                "type": "number",
+                "description": "GTPv1-C IE Length Exceeds Message Length"
+              },
+              "drop-vld-gtp-v2-c-ie-len-exceed-msg-len": {
+                "type": "number",
+                "description": "GTPv2-C IE Length Exceeds Message Length"
+              },
+              "drop-vld-gtp-v0-c-message-length-mismatch": {
+                "type": "number",
+                "description": "GTPv0-C Message Length Mismatch Across Layers"
+              },
+              "drop-vld-gtp-v1-c-message-length-mismatch": {
+                "type": "number",
+                "description": "GTPv1-C Message Length Mismatch Across Layers"
+              },
+              "drop-vld-gtp-v2-c-message-length-mismatch": {
+                "type": "number",
+                "description": "GTPv2-C Message Length Mismatch Across Layers"
+              },
+              "drop-vld-gtp-v0-c-message-skipped-apn-filtering-no-apn": {
+                "type": "number",
+                "description": "Validation Drop: GTPv0-C APN/IMSI Filtering Dropped (No APN)"
+              },
+              "drop-vld-gtp-v1-c-message-skipped-apn-filtering-no-apn": {
+                "type": "number",
+                "description": "Validation Drop: GTPv1-C APN/IMSI Filtering Dropped (No APN)"
+              },
+              "drop-vld-gtp-v2-c-message-skipped-apn-filtering-no-apn": {
+                "type": "number",
+                "description": "Validation Drop: GTPv2-C APN/IMSI Filtering Dropped (No APN)"
+              },
+              "drop-flt-message-filtering": {
+                "type": "number",
+                "description": "Filtering Drop: Message Type Not Permitted on Interface"
+              },
+              "drop-flt-apn-filtering": {
+                "type": "number",
+                "description": "Filtering Drop: APN IMSI Filtering"
+              },
+              "drop-flt-msisdn-filtering": {
+                "type": "number",
+                "description": "Filtering Drop: MSISDN Filtering"
+              },
+              "drop-flt-rat-type-filtering": {
+                "type": "number",
+                "description": "Filtering Drop: RAT Type Filtering"
+              },
+              "drop-flt-gtp-in-gtp": {
+                "type": "number",
+                "description": "Filtering Drop: GTP in GTP Tunnel Present"
+              },
+              "drop-rl-gtp-v0-c-agg": {
+                "type": "number",
+                "description": "Rate-limit Drop: Maximum GTPv0-C Message rate"
+              },
+              "drop-rl-gtp-v1-c-agg": {
+                "type": "number",
+                "description": "Rate-limit Drop: Maximum GTPv1-C Message rate"
+              },
+              "drop-rl-gtp-v2-c-agg": {
+                "type": "number",
+                "description": "Rate-limit Drop: Maximum GTPv2-C Message rate"
+              },
+              "drop-rl-gtp-v1-c-create-pdp-request": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTPv1-C Create PDP Request rate"
+              },
+              "drop-rl-gtp-v2-c-create-session-request": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTPv2-C Create Session Request rate"
+              },
+              "drop-rl-gtp-v1-c-update-pdp-request": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTPv1-C Update PDP Request rate"
+              },
+              "drop-rl-gtp-v2-c-modify-bearer-request": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTPv2-C Modify Bearer Request rate"
+              },
+              "drop-rl-gtp-u-tunnel-create": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Tunnel Creation rate"
+              },
+              "drop-rl-gtp-u-uplink-byte": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Uplink byte rate"
+              },
+              "drop-rl-gtp-u-uplink-packet": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Uplink packet rate"
+              },
+              "drop-rl-gtp-u-downlink-byte": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Downlink byte rate"
+              },
+              "drop-rl-gtp-u-downlink-packet": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Downlink packet rate"
+              },
+              "drop-rl-gtp-u-total-byte": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Total byte rate"
+              },
+              "drop-rl-gtp-u-total-packet": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Total packet rate"
+              },
+              "drop-rl-gtp-u-max-concurrent-tunnels": {
+                "type": "number",
+                "description": "Rate-limit Drop: GTP-U Concurrent Tunnels"
+              }
+            }
+          }
+        }
+      },
+      "template-gtp-policy": {
+        "type": "object",
+        "properties": {
+          "policy-template-name": {
+            "type": "string",
+            "description": "Configure the GTP Policy Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "general-policy-name": {
+            "type": "string",
+            "description": "Specify GTP General Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "validation-policy-name": {
+            "type": "string",
+            "description": "Specify GTP Validation Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "logging-policy-name": {
+            "type": "string",
+            "description": "Specify GTP Logging Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "filtering-policy-name": {
+            "type": "string",
+            "description": "Specify GTP Filtering Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "rate-limit-policy-name": {
+            "type": "string",
+            "description": "Specify Rate Limit Policy",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-rate-limit-policy": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP Rate Limit Policy",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "v0-agg-message-type-rate": {
+            "type": "number",
+            "description": "Maximum allowed GTPv0-C message rate of all types",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "v1-agg-message-type-rate": {
+            "type": "number",
+            "description": "Maximum allowed GTPv1-C message rate of all types",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "v2-agg-message-type-rate": {
+            "type": "number",
+            "description": "Maximum allowed GTPv2-C message rate of all types",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "v1-create-pdp-request-rate": {
+            "type": "number",
+            "description": "Maximum allowed rate of GTPv1-C Create PDP Request message type",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "v2-create-session-request-rate": {
+            "type": "number",
+            "description": "Maximum allowed rate of GTPv2-C Create Session Request message type",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "v1-update-pdp-request-rate": {
+            "type": "number",
+            "description": "Maximum allowed rate of GTPv1-C Update PDP Request message type",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "v2-modify-bearer-request-rate": {
+            "type": "number",
+            "description": "Maximum allowed rate of GTPv2-C Modify Bearer Request message type",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "gtp-u-tunnel-create-rate": {
+            "type": "number",
+            "description": "Maximum allowed of rate of GTP-U tunnels",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "gtp-u-uplink-byte-rate": {
+            "type": "number",
+            "description": "Maximum allowed of rate of GTP-U bytes in uplink direction",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "gtp-u-uplink-packet-rate": {
+            "type": "number",
+            "description": "Maximum allowed of rate of GTP-U packets in uplink direction",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "gtp-u-downlink-byte-rate": {
+            "type": "number",
+            "description": "Maximum allowed of rate of GTP-U bytes in downlink direction",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "gtp-u-downlink-packet-rate": {
+            "type": "number",
+            "description": "Maximum allowed of rate of GTP-U packets in downlink direction",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "gtp-u-total-byte-rate": {
+            "type": "number",
+            "description": "Maximum allowed of rate of GTP-U bytes total in both directions",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "gtp-u-total-packet-rate": {
+            "type": "number",
+            "description": "Maximum allowed of rate of GTP-U packets total in both directions",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "lockout": {
+            "type": "number",
+            "description": "Lockout traffic from the source for a certain time period after rate exceeded (Lockout duration in minutes)",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "gtp-u-max-concurrent-tunnels": {
+            "type": "number",
+            "description": "Maximum allowed GTP-U tunnels per Peer/APN Filter",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp-validation-policy": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify name of the GTP Validation Policy",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "anomaly-checks": {
+            "type": "string",
+            "description": "'enable': Enable Anomaly Checks for GTP Messages; 'disable': Disable Anomaly Checks for GTP Messages; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "mandatory-ie-check": {
+            "type": "string",
+            "description": "'enable': Enable Mandatory IE Check for GTP Messages; 'disable': Disable Mandatory IE Check for GTP Messages; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "reserved-ie-check": {
+            "type": "string",
+            "description": "'enable': Enable Reserved IE Check for GTP Messages; 'disable': Disable Reserved IE Check for GTP Messages; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "out-of-state-ie-check": {
+            "type": "string",
+            "description": "'enable': Enable Out of State IE Check for GTP Messages; 'disable': Disable Out of State IE Check for GTP Messages; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "out-of-order-ie-check": {
+            "type": "string",
+            "description": "'enable': Enable Out of Order IE Check for GTP Messages; 'disable': Disable Out of Order IE Check for GTP Messages; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "anti-spoofing-check": {
+            "type": "string",
+            "description": "'enable': Enable Spoofed IP Address Check for GTP-U Messages; 'disable': Disable Spoofed IP Address Check for GTP Messages; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "crosslayer-correlation": {
+            "type": "string",
+            "description": "'enable': Enable Cross Layer Correlation for GTP Messages; 'disable': Disable Cross Layer Correlation for GTP Messages; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "msisdn-imsi-correlation": {
+            "type": "string",
+            "description": "'enable': Enable Country Code Correlation in MSISDN and IMSI for GTP Messages; 'disable': Disable Country Code Correlation in MSISDN and IMSI for GTP Messages; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "sequence-num-correlation": {
+            "type": "string",
+            "description": "'enable': Enable Sequence number correlation between GTP Request and Responses; 'disable': Disable Sequence number correlation between GTP Request and Responses; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-gtp": {
+        "type": "object",
+        "properties": {
+          "general-policy-list": {
+            "type": "array",
+            "items": {
+              "type": "general-policy"
+            }
+          },
+          "validation-policy-list": {
+            "type": "array",
+            "items": {
+              "type": "validation-policy"
+            }
+          },
+          "logging-policy-list": {
+            "type": "array",
+            "items": {
+              "type": "logging-policy"
+            }
+          },
+          "apn-imsi-list-list": {
+            "type": "array",
+            "items": {
+              "type": "apn-imsi-list"
+            }
+          },
+          "msisdn-list-list": {
+            "type": "array",
+            "items": {
+              "type": "msisdn-list"
+            }
+          },
+          "message-filtering-policy-list": {
+            "type": "array",
+            "items": {
+              "type": "message-filtering-policy"
+            }
+          },
+          "filtering-policy-list": {
+            "type": "array",
+            "items": {
+              "type": "filtering-policy"
+            }
+          },
+          "rate-limit-policy-list": {
+            "type": "array",
+            "items": {
+              "type": "rate-limit-policy"
+            }
+          }
+        }
+      },
+      "template-ip-threat-action": {
+        "type": "object",
+        "properties": {
+          "template-number": {
+            "type": "number",
+            "description": "Template Number",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "idle-timeout": {
+            "type": "number",
+            "description": "Idle timeout in minutes(default:5)",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 1440
+          },
+          "log": {
+            "type": "string",
+            "description": "'enable': Enable logging; 'disable': Disable logging (Default); ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-lid": {
+        "type": "object",
+        "properties": {
+          "lid-number": {
+            "type": "number",
+            "description": "Lid Number",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "respond-to-user-mac": {
+            "type": "number",
+            "description": "Use the user's source MAC for the next hop rather than the routing table (default:off)",
+            "default": 0
+          },
+          "src-ip": {
+            "type": "object",
+            "properties": {
+              "concurrent-sessions": {
+                "type": "number",
+                "description": "Concurrent Session Limit per Source IP Address (Number of Concurrent Sessions)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "log": {
+                "type": "number",
+                "description": "Log when Session Limit is exceeded",
+                "default": 0
+              },
+              "prefix-length": {
+                "type": "number",
+                "description": "Source prefix length",
+                "minimum": 1,
+                "maximum": 128
+              },
+              "enable-high-perf": {
+                "type": "number",
+                "description": "Enable High Perf",
+                "default": 0
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-limit-policy-limit-cps": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "description": "Connections Per Second Rate Limit (Number of Connections per second)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "burstsize": {
+            "type": "number",
+            "description": "CPS Token Bucket Size (Must Exceed Configured Rate) (In Connections per second)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "relaxed": {
+            "type": "number",
+            "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template-limit-policy-limit-pps": {
+        "type": "object",
+        "properties": {
+          "uplink": {
+            "type": "number",
+            "description": "Uplink PPS limit (Number of Packets per second)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "uplink-burstsize": {
+            "type": "number",
+            "description": "PPS Token Bucket Size (Must Exceed Configured Rate) (In Packets)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "uplink-relaxed": {
+            "type": "number",
+            "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+            "default": 0
+          },
+          "downlink": {
+            "type": "number",
+            "description": "Downlink PPS limit (Number of Packets per second)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "ddos-protection-factor": {
+            "type": "number",
+            "description": "Enable DDoS Protection (Multiplier of the downlink PPS)",
+            "minimum": 1,
+            "maximum": 50
+          },
+          "downlink-burstsize": {
+            "type": "number",
+            "description": "PPS Token Bucket Size (Must Exceed Configured Rate) (In Packets)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "downlink-relaxed": {
+            "type": "number",
+            "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+            "default": 0
+          },
+          "total": {
+            "type": "number",
+            "description": "Total PPS limit (Number of Packets per second)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "total-burstsize": {
+            "type": "number",
+            "description": "PPS Token Bucket Size (Must Exceed Configured Rate) (In Packets)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "total-relaxed": {
+            "type": "number",
+            "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template-limit-policy-limit-throughput": {
+        "type": "object",
+        "properties": {
+          "uplink": {
+            "type": "number",
+            "description": "Uplink Throughput limit (Mega Bits per second)",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "uplink-burstsize": {
+            "type": "number",
+            "description": "Token Bucket Size (Must Exceed Configured Rate) (In Mega Bits per second)",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "uplink-relaxed": {
+            "type": "number",
+            "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+            "default": 0
+          },
+          "downlink": {
+            "type": "number",
+            "description": "Downlink Throughput limit (Mega Bits per second)",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "downlink-burstsize": {
+            "type": "number",
+            "description": "Token Bucket Size (Must Exceed Configured Rate) (In Mega Bits per second)",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "downlink-relaxed": {
+            "type": "number",
+            "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+            "default": 0
+          },
+          "total": {
+            "type": "number",
+            "description": "Total Throughput limit (Mega Bits per second)",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "total-burstsize": {
+            "type": "number",
+            "description": "Token Bucket Size (Must Exceed Configured Rate) (In Mega Bits per second)",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "total-relaxed": {
+            "type": "number",
+            "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template-limit-policy": {
+        "type": "object",
+        "properties": {
+          "policy-number": {
+            "type": "number",
+            "description": "Limit Policy Number",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "parent": {
+            "type": "number",
+            "description": "Specify the parent of limit-policy",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "max-min-fair": {
+            "type": "number",
+            "description": "Enable max-min-fairness",
+            "default": 0
+          },
+          "limit-concurrent-sessions": {
+            "type": "number",
+            "description": "Enable Concurrent Session Limit (Number of Concurrent Sessions)",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "log": {
+            "type": "number",
+            "description": "Log when Session Limit is exceeded",
+            "default": 0
+          },
+          "limit-scope": {
+            "type": "string",
+            "description": "'aggregate': Rule Level; 'subscriber-ip': Subscriber IP Level; 'subscriber-prefix': Subscriber Prefix Level; ",
+            "default": "subscriber-ip",
+            "enum": [
+              "aggregate",
+              "subscriber-ip",
+              "subscriber-prefix"
+            ]
+          },
+          "prefix-length": {
+            "type": "number",
+            "description": "Prefix length",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "limit-pps": {
+            "type": "object",
+            "properties": {
+              "uplink": {
+                "type": "number",
+                "description": "Uplink PPS limit (Number of Packets per second)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "uplink-burstsize": {
+                "type": "number",
+                "description": "PPS Token Bucket Size (Must Exceed Configured Rate) (In Packets)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "uplink-relaxed": {
+                "type": "number",
+                "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+                "default": 0
+              },
+              "downlink": {
+                "type": "number",
+                "description": "Downlink PPS limit (Number of Packets per second)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "ddos-protection-factor": {
+                "type": "number",
+                "description": "Enable DDoS Protection (Multiplier of the downlink PPS)",
+                "minimum": 1,
+                "maximum": 50
+              },
+              "downlink-burstsize": {
+                "type": "number",
+                "description": "PPS Token Bucket Size (Must Exceed Configured Rate) (In Packets)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "downlink-relaxed": {
+                "type": "number",
+                "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+                "default": 0
+              },
+              "total": {
+                "type": "number",
+                "description": "Total PPS limit (Number of Packets per second)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "total-burstsize": {
+                "type": "number",
+                "description": "PPS Token Bucket Size (Must Exceed Configured Rate) (In Packets)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "total-relaxed": {
+                "type": "number",
+                "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "limit-throughput": {
+            "type": "object",
+            "properties": {
+              "uplink": {
+                "type": "number",
+                "description": "Uplink Throughput limit (Mega Bits per second)",
+                "minimum": 1,
+                "maximum": 100000
+              },
+              "uplink-burstsize": {
+                "type": "number",
+                "description": "Token Bucket Size (Must Exceed Configured Rate) (In Mega Bits per second)",
+                "minimum": 1,
+                "maximum": 100000
+              },
+              "uplink-relaxed": {
+                "type": "number",
+                "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+                "default": 0
+              },
+              "downlink": {
+                "type": "number",
+                "description": "Downlink Throughput limit (Mega Bits per second)",
+                "minimum": 1,
+                "maximum": 100000
+              },
+              "downlink-burstsize": {
+                "type": "number",
+                "description": "Token Bucket Size (Must Exceed Configured Rate) (In Mega Bits per second)",
+                "minimum": 1,
+                "maximum": 100000
+              },
+              "downlink-relaxed": {
+                "type": "number",
+                "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+                "default": 0
+              },
+              "total": {
+                "type": "number",
+                "description": "Total Throughput limit (Mega Bits per second)",
+                "minimum": 1,
+                "maximum": 100000
+              },
+              "total-burstsize": {
+                "type": "number",
+                "description": "Token Bucket Size (Must Exceed Configured Rate) (In Mega Bits per second)",
+                "minimum": 1,
+                "maximum": 100000
+              },
+              "total-relaxed": {
+                "type": "number",
+                "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "limit-cps": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "description": "Connections Per Second Rate Limit (Number of Connections per second)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "burstsize": {
+                "type": "number",
+                "description": "CPS Token Bucket Size (Must Exceed Configured Rate) (In Connections per second)",
+                "minimum": 1,
+                "maximum": 2147483647
+              },
+              "relaxed": {
+                "type": "number",
+                "description": "Relax the limitation when the policy has more tokens from the parent of policy",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "template-sctp": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "SCTP Template Name",
+            "default": "default",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "sctp-half-open-idle-timeout": {
+            "type": "number",
+            "description": "Set SCTP half-open timeout (SCTP half-open timeout in seconds (default 4))",
+            "default": 4,
+            "minimum": 2,
+            "maximum": 30
+          },
+          "sctp-idle-timeout": {
+            "type": "number",
+            "description": "SCTP idle timeout in minutes (default 5)",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 63
+          },
+          "permit-payload-protocol": {
+            "type": "object",
+            "properties": {
+              "permit-config-id": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "permit-config-name": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "checksum-check": {
+            "type": "string",
+            "description": "'enable': Enable Checksum check; ",
+            "enum": [
+              "enable"
+            ]
+          },
+          "log": {
+            "type": "object",
+            "properties": {
+              "payload-proto-filtering": {
+                "type": "number",
+                "description": "Log Payload Protocol IDs Filtered",
+                "default": 0
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "template-syslog-over-tls": {
+        "type": "object",
+        "properties": {
+          "ca-str": {
+            "type": "string",
+            "description": "CA Certificate Name",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "template": {
+        "type": "object",
+        "properties": {
+          "sctp-list": {
+            "type": "array",
+            "items": {
+              "type": "sctp"
+            }
+          },
+          "gtp": {
+            "type": "object",
+            "properties": {
+              "general-policy-list": {
+                "type": "array",
+                "items": {
+                  "type": "general-policy"
+                }
+              },
+              "validation-policy-list": {
+                "type": "array",
+                "items": {
+                  "type": "validation-policy"
+                }
+              },
+              "logging-policy-list": {
+                "type": "array",
+                "items": {
+                  "type": "logging-policy"
+                }
+              },
+              "apn-imsi-list-list": {
+                "type": "array",
+                "items": {
+                  "type": "apn-imsi-list"
+                }
+              },
+              "msisdn-list-list": {
+                "type": "array",
+                "items": {
+                  "type": "msisdn-list"
+                }
+              },
+              "message-filtering-policy-list": {
+                "type": "array",
+                "items": {
+                  "type": "message-filtering-policy"
+                }
+              },
+              "filtering-policy-list": {
+                "type": "array",
+                "items": {
+                  "type": "filtering-policy"
+                }
+              },
+              "rate-limit-policy-list": {
+                "type": "array",
+                "items": {
+                  "type": "rate-limit-policy"
+                }
+              }
+            }
+          },
+          "gtp-policy-list": {
+            "type": "array",
+            "items": {
+              "type": "gtp-policy"
+            }
+          },
+          "lid-list": {
+            "type": "array",
+            "items": {
+              "type": "lid"
+            }
+          },
+          "csv-list": {
+            "type": "array",
+            "items": {
+              "type": "csv"
+            }
+          },
+          "ip-threat-action-list": {
+            "type": "array",
+            "items": {
+              "type": "ip-threat-action"
+            }
+          },
+          "syslog-over-tls": {
+            "type": "object",
+            "properties": {
+              "ca-str": {
+                "type": "string",
+                "description": "CA Certificate Name",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

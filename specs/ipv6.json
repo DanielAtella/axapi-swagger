@@ -1,0 +1,4789 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - IPV6",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the ipv6 category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/ipv6/access-list/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure a IPv6 Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-access-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure a IPv6 Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-access-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-access-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure a IPv6 Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-access-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-access-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure a IPv6 Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-access-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/address": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Transparent mode IPv6 Address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Transparent mode IPv6 Address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Transparent mode IPv6 Address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Transparent mode IPv6 Address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/default-gateway": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Default gateway address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-default-gateway"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Default gateway address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-default-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-default-gateway"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Default gateway address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-default-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-default-gateway"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Default gateway address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-default-gateway"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/fib/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Operational Status for the object fib",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/fib-summary/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Operational Status for the object fib-summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib-summary-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/fib-summary": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "show ipv6 fib summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib-summary"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "show ipv6 fib summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib-summary"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-fib-summary"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "show ipv6 fib summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib-summary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/fib": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "show ipv6 fib",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "show ipv6 fib",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-fib"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "show ipv6 fib",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-fib"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/frag/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Statistics for the object frag",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-frag-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/frag": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 fragmentation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-frag"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 fragmentation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-frag"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-frag"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 fragmentation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-frag"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-frag"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 fragmentation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-frag"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/icmpv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Global ICMPv6 commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-icmpv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Global ICMPv6 commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-icmpv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-icmpv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Global ICMPv6 commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-icmpv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-icmpv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Global ICMPv6 commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-icmpv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/icmpv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "ICMPv6 configuration for IPv6 NAT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-icmpv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "ICMPv6 configuration for IPv6 NAT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-icmpv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-icmpv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "ICMPv6 configuration for IPv6 NAT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-icmpv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-icmpv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "ICMPv6 configuration for IPv6 NAT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-icmpv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/inside/source/list/{list-name}": {
+      "parameters": [
+        {
+          "name": "list-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for list-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 Access-List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-inside-source-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 Access-List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-inside-source-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-inside-source-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 Access-List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-inside-source-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-inside-source-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 Access-List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-inside-source-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/inside/source": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source Association",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-inside-source"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/inside": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Inside configuration for IPv6 NAT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-inside"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/pool-group/{pool-group-name}/member/{pool-name}": {
+      "parameters": [
+        {
+          "name": "pool-group-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-group-name"
+        },
+        {
+          "name": "pool-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Add a NAT pool to this pool-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group-member"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Add a NAT pool to this pool-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group-member"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-pool-group-member"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Add a NAT pool to this pool-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group-member"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-pool-group-member"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Add a NAT pool to this pool-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group-member"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/pool-group/{pool-group-name}/stats": {
+      "parameters": [
+        {
+          "name": "pool-group-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-group-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Statistics for the object pool-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/pool-group/{pool-group-name}": {
+      "parameters": [
+        {
+          "name": "pool-group-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-group-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool group name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool group name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-pool-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool group name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-pool-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool group name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/pool/{pool-name}/oper": {
+      "parameters": [
+        {
+          "name": "pool-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Operational Status for the object pool",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/pool/{pool-name}/stats": {
+      "parameters": [
+        {
+          "name": "pool-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Statistics for the object pool",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat/pool/{pool-name}": {
+      "parameters": [
+        {
+          "name": "pool-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-pool"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-nat-pool"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 pool name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat-pool"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/nat": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure IPv6 NAT",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-nat"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/neighbor/dynamic/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Operational Status for the object dynamic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-dynamic-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/neighbor/dynamic": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "dynamic IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-dynamic"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "dynamic IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-dynamic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-neighbor-dynamic"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "dynamic IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-dynamic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-neighbor-dynamic"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "dynamic IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-dynamic"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/neighbor/static/{ipv6-addr}+{vlan}": {
+      "parameters": [
+        {
+          "name": "ipv6-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-addr"
+        },
+        {
+          "name": "vlan",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "static IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-static"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "static IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-static"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-neighbor-static"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "static IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-static"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-neighbor-static"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "static IPv6 Neighbor commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor-static"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/neighbor": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Static IPv6 Neighbor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-neighbor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/ospf": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Open Shortest Path First (OSPFv3)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-ospf"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Open Shortest Path First (OSPFv3)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-ospf"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-ospf"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Open Shortest Path First (OSPFv3)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-ospf"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-ospf"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Open Shortest Path First (OSPFv3)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-ospf"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/prefix-list/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure Prefix-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-prefix-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure Prefix-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-prefix-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-prefix-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure Prefix-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-prefix-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-prefix-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Configure Prefix-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-prefix-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/reroute/suppress-protocols": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "suppress protocols",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute-suppress-protocols"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "suppress protocols",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute-suppress-protocols"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-reroute-suppress-protocols"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "suppress protocols",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute-suppress-protocols"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-reroute-suppress-protocols"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "suppress protocols",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute-suppress-protocols"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/reroute": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "reroute sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "reroute sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-reroute"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "reroute sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-reroute"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "reroute sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-reroute"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/rib/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Operational Status for the object rib",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-rib-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/rib": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-rib"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-rib"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-rib"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-rib"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-rib"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-rib"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/rib/{ipv6-address}": {
+      "parameters": [
+        {
+          "name": "ipv6-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-rib"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-rib"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-rib"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-rib"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-rib"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-rib"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/source/ve/{ve-num}+{nexthop-ip}": {
+      "parameters": [
+        {
+          "name": "ve-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ve-num"
+        },
+        {
+          "name": "nexthop-ip",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for nexthop-ip"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source ve",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-source-ve"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source ve",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-source-ve"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-source-ve"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source ve",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-source-ve"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-source-ve"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source ve",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-source-ve"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/source": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "allow source routing",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-source"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/static/bfd/bfd-ipv6/{local-ipv6}+{nexthop-ipv6}": {
+      "parameters": [
+        {
+          "name": "local-ipv6",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for local-ipv6"
+        },
+        {
+          "name": "nexthop-ipv6",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for nexthop-ipv6"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Bidirectional Forwarding Detection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-bfd-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Bidirectional Forwarding Detection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-bfd-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-bfd-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Bidirectional Forwarding Detection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-bfd-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-bfd-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Bidirectional Forwarding Detection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-bfd-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/static/bfd/ethernet/{eth-num}+{nexthop-ipv6-ll}": {
+      "parameters": [
+        {
+          "name": "eth-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for eth-num"
+        },
+        {
+          "name": "nexthop-ipv6-ll",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for nexthop-ipv6-ll"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ethernet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ethernet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/static/bfd/trunk/{trunk-num}+{nexthop-ipv6-ll}": {
+      "parameters": [
+        {
+          "name": "trunk-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for trunk-num"
+        },
+        {
+          "name": "nexthop-ipv6-ll",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for nexthop-ipv6-ll"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Trunk interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-trunk"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Trunk interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-trunk"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Trunk interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-trunk"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Trunk interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-trunk"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/static/bfd/ve/{ve-num}+{nexthop-ipv6-ll}": {
+      "parameters": [
+        {
+          "name": "ve-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ve-num"
+        },
+        {
+          "name": "nexthop-ipv6-ll",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for nexthop-ipv6-ll"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Virtual ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ve"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Virtual ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ve"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-ve"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Virtual ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ve"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-route-static-bfd-ve"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Virtual ethernet interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd-ve"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/static/bfd": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Bidirectional Forwarding Detection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static-bfd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route/static": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Allow static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route-static"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/route": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Establish static routes",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-route"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/telemetry/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Operational Status for the object telemetry",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-telemetry-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/telemetry": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 telemetry table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-telemetry"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 telemetry table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-telemetry"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-telemetry"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 telemetry table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-telemetry"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-telemetry"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "IPv6 telemetry table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-telemetry"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/unnumbered/use-source-ipv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source IPv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered-use-source-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source IPv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered-use-source-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-unnumbered-use-source-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source IPv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered-use-source-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-unnumbered-use-source-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Source IPv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered-use-source-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6/unnumbered": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "unnumbered feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "unnumbered feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-unnumbered"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "unnumbered feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ipv6-unnumbered"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "unnumbered feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6-unnumbered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ipv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPV6"
+        ],
+        "description": "Global IP configuration subcommands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ipv6-access-list": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Named Access List",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "ipv6-address": {
+        "type": "object",
+        "properties": {
+          "ipv6-address": {
+            "type": "string",
+            "description": "IPV6 address"
+          },
+          "link-local": {
+            "type": "number",
+            "description": "Configure an IPv6 link local address",
+            "default": 0
+          },
+          "anycast": {
+            "type": "number",
+            "description": "Configure an IPv6 anycast address",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-default-gateway": {
+        "type": "object",
+        "properties": {
+          "ipv6-default-gateway": {
+            "type": "string",
+            "description": "Default gateway address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-fib-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "Total": {
+                "type": "number"
+              },
+              "Total Paths": {
+                "type": "number"
+              },
+              "IPv6-fib": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ipv6-fib-summary-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "connected_routes": {
+                "type": "number"
+              },
+              "static_routes": {
+                "type": "number"
+              },
+              "dynamic_routes": {
+                "type": "number"
+              },
+              "other_routes": {
+                "type": "number"
+              },
+              "total_routes": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "ipv6-fib-summary": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-fib": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-frag-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "session-inserted": {
+                "type": "number",
+                "description": "Session Inserted"
+              },
+              "session-expired": {
+                "type": "number",
+                "description": "Session Expired"
+              },
+              "icmp-rcv": {
+                "type": "number",
+                "description": "ICMP Received"
+              },
+              "icmpv6-rcv": {
+                "type": "number",
+                "description": "ICMPv6 Received"
+              },
+              "udp-rcv": {
+                "type": "number",
+                "description": "UDP Received"
+              },
+              "tcp-rcv": {
+                "type": "number",
+                "description": "TCP Received"
+              },
+              "ipip-rcv": {
+                "type": "number",
+                "description": "IP-in-IP Received"
+              },
+              "ipv6ip-rcv": {
+                "type": "number",
+                "description": "IPv6-in-IP Received"
+              },
+              "other-rcv": {
+                "type": "number",
+                "description": "Other Received"
+              },
+              "icmp-dropped": {
+                "type": "number",
+                "description": "ICMP Dropped"
+              },
+              "icmpv6-dropped": {
+                "type": "number",
+                "description": "ICMPv6 Dropped"
+              },
+              "udp-dropped": {
+                "type": "number",
+                "description": "UDP Dropped"
+              },
+              "tcp-dropped": {
+                "type": "number",
+                "description": "TCP Dropped"
+              },
+              "ipip-dropped": {
+                "type": "number",
+                "description": "IP-in-IP Dropped"
+              },
+              "ipv6ip-dropped": {
+                "type": "number",
+                "description": "IPv6-in-IP Dropped"
+              },
+              "other-dropped": {
+                "type": "number",
+                "description": "Other Dropped"
+              },
+              "overlap-error": {
+                "type": "number",
+                "description": "Overlapping Fragment Dropped"
+              },
+              "bad-ip-len": {
+                "type": "number",
+                "description": "Bad IP Length"
+              },
+              "too-small": {
+                "type": "number",
+                "description": "Fragment Too Small Drop"
+              },
+              "first-tcp-too-small": {
+                "type": "number",
+                "description": "First TCP Fragment Too Small Drop"
+              },
+              "first-l4-too-small": {
+                "type": "number",
+                "description": "First L4 Fragment Too Small Drop"
+              },
+              "total-sessions-exceeded": {
+                "type": "number",
+                "description": "Total Sessions Exceeded Drop"
+              },
+              "no-session-memory": {
+                "type": "number",
+                "description": "Out of Session Memory"
+              },
+              "fast-aging-set": {
+                "type": "number",
+                "description": "Fragmentation Fast Aging Set"
+              },
+              "fast-aging-unset": {
+                "type": "number",
+                "description": "Fragmentation Fast Aging Unset"
+              },
+              "fragment-queue-success": {
+                "type": "number",
+                "description": "Fragment Queue Success"
+              },
+              "unaligned-len": {
+                "type": "number",
+                "description": "Payload Length Unaligned"
+              },
+              "exceeded-len": {
+                "type": "number",
+                "description": "Payload Length Out of Bounds"
+              },
+              "duplicate-first-frag": {
+                "type": "number",
+                "description": "Duplicate First Fragment"
+              },
+              "duplicate-last-frag": {
+                "type": "number",
+                "description": "Duplicate Last Fragment"
+              },
+              "total-fragments-exceeded": {
+                "type": "number",
+                "description": "Total Queued Fragments Exceeded"
+              },
+              "fragment-queue-failure": {
+                "type": "number",
+                "description": "Fragment Queue Failure"
+              },
+              "reassembly-success": {
+                "type": "number",
+                "description": "Fragment Reassembly Success"
+              },
+              "max-len-exceeded": {
+                "type": "number",
+                "description": "Fragment Max Data Length Exceeded"
+              },
+              "reassembly-failure": {
+                "type": "number",
+                "description": "Fragment Reassembly Failure"
+              },
+              "policy-drop": {
+                "type": "number",
+                "description": "MTU Exceeded Policy Drop"
+              },
+              "error-drop": {
+                "type": "number",
+                "description": "Fragment Processing Drop"
+              },
+              "max-packets-exceeded": {
+                "type": "number",
+                "description": "Too Many Packets Per Reassembly Drop"
+              },
+              "session-packets-exceeded": {
+                "type": "number",
+                "description": "Session Max Packets Exceeded"
+              },
+              "high-cpu-threshold": {
+                "type": "number",
+                "description": "High CPU Threshold Reached"
+              },
+              "low-cpu-threshold": {
+                "type": "number",
+                "description": "Low CPU Threshold Reached"
+              },
+              "cpu-threshold-drop": {
+                "type": "number",
+                "description": "High CPU Drop"
+              },
+              "ipd-entry-drop": {
+                "type": "number",
+                "description": "DDoS Protection Drop"
+              },
+              "sctp-rcv": {
+                "type": "number",
+                "description": "SCTP Received"
+              },
+              "sctp-dropped": {
+                "type": "number",
+                "description": "SCTP Dropped"
+              },
+              "first-gtp-packet-too-small": {
+                "type": "number",
+                "description": "First GTP Fragment Too Small Drop"
+              }
+            }
+          }
+        }
+      },
+      "ipv6-frag": {
+        "type": "object",
+        "properties": {
+          "frag-timeout": {
+            "type": "number",
+            "description": "in milliseconds 4 - 16000 (default is 1000)",
+            "minimum": 4,
+            "maximum": 16000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-icmpv6": {
+        "type": "object",
+        "properties": {
+          "redirect": {
+            "type": "number",
+            "description": "Disable outbound ICMPv6 redirect messages",
+            "default": 0
+          },
+          "unreachable": {
+            "type": "number",
+            "description": "Disable outbound ICMPv6 unreachable messages",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-nat-icmpv6": {
+        "type": "object",
+        "properties": {
+          "respond-to-ping": {
+            "type": "number",
+            "description": "Respond to ICMPv6 echo requests to NAT pool IPs (default: disabled)",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-nat-inside-source-list": {
+        "type": "object",
+        "properties": {
+          "list-name": {
+            "type": "string",
+            "description": "IPv6 access-list name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "pool": {
+            "type": "string",
+            "description": "IPv6 NAT Pool (Pool Name)",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-nat-inside-source": {
+        "type": "object",
+        "properties": {
+          "list-list": {
+            "type": "array",
+            "items": {
+              "type": "list"
+            }
+          }
+        }
+      },
+      "ipv6-nat-inside": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "object",
+            "properties": {
+              "list-list": {
+                "type": "array",
+                "items": {
+                  "type": "list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ipv6-nat-pool-group-member": {
+        "type": "object",
+        "properties": {
+          "pool-name": {
+            "type": "string",
+            "description": "Specify NAT pool name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-nat-pool-group-stats": {
+        "type": "object",
+        "properties": {
+          "pool-group-name": {
+            "type": "string",
+            "description": "Specify pool group name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "Failed": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "ipv6-nat-pool-group": {
+        "type": "object",
+        "properties": {
+          "pool-group-name": {
+            "type": "string",
+            "description": "Specify pool group name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "vrid": {
+            "type": "number",
+            "description": "Specify VRRP-A vrid (Specify ha VRRP-A vrid)",
+            "minimum": 1,
+            "maximum": 31
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "member-list": {
+            "type": "array",
+            "items": {
+              "type": "member"
+            }
+          }
+        }
+      },
+      "ipv6-nat-pool-oper": {
+        "type": "object",
+        "properties": {
+          "pool-name": {
+            "type": "string",
+            "description": "Specify pool name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "nat-pool-addr-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ipv6-nat-pool-stats": {
+        "type": "object",
+        "properties": {
+          "pool-name": {
+            "type": "string",
+            "description": "Specify pool name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "Port-Usage": {
+                "type": "number"
+              },
+              "Total-Used": {
+                "type": "number"
+              },
+              "Total-Freed": {
+                "type": "number"
+              },
+              "Failed": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "ipv6-nat-pool": {
+        "type": "object",
+        "properties": {
+          "pool-name": {
+            "type": "string",
+            "description": "Specify pool name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "start-address": {
+            "type": "string",
+            "description": "Configure start IP address of NAT pool"
+          },
+          "end-address": {
+            "type": "string",
+            "description": "Configure end IP address of NAT pool"
+          },
+          "netmask": {
+            "type": "number",
+            "description": "Configure mask for pool",
+            "minimum": 64,
+            "maximum": 128
+          },
+          "gateway": {
+            "type": "string",
+            "description": "Configure gateway IP"
+          },
+          "vrid": {
+            "type": "number",
+            "description": "Specify VRRP-A vrid (Specify ha VRRP-A vrid)",
+            "minimum": 1,
+            "maximum": 31
+          },
+          "scaleout-device-id": {
+            "type": "number",
+            "description": "Configure Scaleout device id to which this NAT pool is to be bound (Specify Scaleout device id)",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "ip-rr": {
+            "type": "number",
+            "description": "Use IP address round-robin behavior",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-nat": {
+        "type": "object",
+        "properties": {
+          "pool-list": {
+            "type": "array",
+            "items": {
+              "type": "pool"
+            }
+          },
+          "pool-group-list": {
+            "type": "array",
+            "items": {
+              "type": "pool-group"
+            }
+          },
+          "inside": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "object",
+                "properties": {
+                  "list-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "list"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "icmpv6": {
+            "type": "object",
+            "properties": {
+              "respond-to-ping": {
+                "type": "number",
+                "description": "Respond to ICMPv6 echo requests to NAT pool IPs (default: disabled)",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "ipv6-neighbor-dynamic-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "v6neighbor-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ipv6-neighbor-dynamic": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-neighbor-static": {
+        "type": "object",
+        "properties": {
+          "ipv6-addr": {
+            "type": "string",
+            "description": "IPV6 address"
+          },
+          "mac": {
+            "type": "string",
+            "description": "MAC Address"
+          },
+          "ethernet": {
+            "type": "number",
+            "description": "Ethernet port (Port Value)",
+            "minimum": 7,
+            "maximum": 103
+          },
+          "trunk": {
+            "type": "number",
+            "description": "Trunk group",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "vlan": {
+            "type": "number",
+            "description": "VLAN ID",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-neighbor": {
+        "type": "object",
+        "properties": {
+          "static-list": {
+            "type": "array",
+            "items": {
+              "type": "static"
+            }
+          },
+          "dynamic": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "ipv6-ospf": {
+        "type": "object",
+        "properties": {
+          "display-route-single-line": {
+            "type": "number",
+            "description": "Print an entry in single line",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-prefix-list": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of a prefix list",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-reroute-suppress-protocols": {
+        "type": "object",
+        "properties": {
+          "ospf": {
+            "type": "number",
+            "description": "OSPF",
+            "default": 0
+          },
+          "ebgp": {
+            "type": "number",
+            "description": "EBGP",
+            "default": 0
+          },
+          "ibgp": {
+            "type": "number",
+            "description": "IBGP",
+            "default": 0
+          },
+          "static": {
+            "type": "number",
+            "default": 0
+          },
+          "isis": {
+            "type": "number",
+            "description": "ISIS",
+            "default": 0
+          },
+          "rip": {
+            "type": "number",
+            "description": "RIP",
+            "default": 0
+          },
+          "connected": {
+            "type": "number",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-reroute": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "suppress-protocols": {
+            "type": "object",
+            "properties": {
+              "ospf": {
+                "type": "number",
+                "description": "OSPF",
+                "default": 0
+              },
+              "ebgp": {
+                "type": "number",
+                "description": "EBGP",
+                "default": 0
+              },
+              "ibgp": {
+                "type": "number",
+                "description": "IBGP",
+                "default": 0
+              },
+              "static": {
+                "type": "number",
+                "default": 0
+              },
+              "isis": {
+                "type": "number",
+                "description": "ISIS",
+                "default": 0
+              },
+              "rip": {
+                "type": "number",
+                "description": "RIP",
+                "default": 0
+              },
+              "connected": {
+                "type": "number",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "ipv6-rib-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "Description": {
+                "type": "string"
+              },
+              "Total": {
+                "type": "number"
+              },
+              "Total Paths": {
+                "type": "number"
+              },
+              "Limit": {
+                "type": "number"
+              },
+              "IPv6-routes": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ipv6-rib": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-route-rib": {
+        "type": "object",
+        "properties": {
+          "ipv6-address": {
+            "type": "string",
+            "description": "IPV6 address"
+          },
+          "ipv6-nexthop-ipv6": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ipv6-nexthop-tunnel": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-route-source-ve": {
+        "type": "object",
+        "properties": {
+          "ve-num": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 4094
+          },
+          "nexthop-ip": {
+            "type": "string",
+            "description": "Nexthop IPv6 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-route-source": {
+        "type": "object",
+        "properties": {
+          "ve-list": {
+            "type": "array",
+            "items": {
+              "type": "ve"
+            }
+          }
+        }
+      },
+      "ipv6-route-static-bfd-bfd-ipv6": {
+        "type": "object",
+        "properties": {
+          "local-ipv6": {
+            "type": "string",
+            "description": "Local IPv6 address"
+          },
+          "nexthop-ipv6": {
+            "type": "string",
+            "description": "Nexthop IPv6 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-route-static-bfd-ethernet": {
+        "type": "object",
+        "properties": {
+          "eth-num": {
+            "type": "number",
+            "description": "Ethernet (not a member of vlan or trunk)",
+            "minimum": 0,
+            "maximum": 2147483647
+          },
+          "nexthop-ipv6-ll": {
+            "type": "string",
+            "description": "Nexthop IPv6 address (Link-local)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-route-static-bfd-trunk": {
+        "type": "object",
+        "properties": {
+          "trunk-num": {
+            "type": "number",
+            "description": "Trunk interface",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "nexthop-ipv6-ll": {
+            "type": "string",
+            "description": "Nexthop IPv6 address (Link-local)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-route-static-bfd-ve": {
+        "type": "object",
+        "properties": {
+          "ve-num": {
+            "type": "number",
+            "description": "Virtual ethernet interface",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "nexthop-ipv6-ll": {
+            "type": "string",
+            "description": "Nexthop IPv6 address (Link-local)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-route-static-bfd": {
+        "type": "object",
+        "properties": {
+          "bfd-ipv6-list": {
+            "type": "array",
+            "items": {
+              "type": "bfd-ipv6"
+            }
+          },
+          "ve-list": {
+            "type": "array",
+            "items": {
+              "type": "ve"
+            }
+          },
+          "trunk-list": {
+            "type": "array",
+            "items": {
+              "type": "trunk"
+            }
+          },
+          "ethernet-list": {
+            "type": "array",
+            "items": {
+              "type": "ethernet"
+            }
+          }
+        }
+      },
+      "ipv6-route-static": {
+        "type": "object",
+        "properties": {
+          "bfd": {
+            "type": "object",
+            "properties": {
+              "bfd-ipv6-list": {
+                "type": "array",
+                "items": {
+                  "type": "bfd-ipv6"
+                }
+              },
+              "ve-list": {
+                "type": "array",
+                "items": {
+                  "type": "ve"
+                }
+              },
+              "trunk-list": {
+                "type": "array",
+                "items": {
+                  "type": "trunk"
+                }
+              },
+              "ethernet-list": {
+                "type": "array",
+                "items": {
+                  "type": "ethernet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ipv6-route": {
+        "type": "object",
+        "properties": {
+          "static": {
+            "type": "object",
+            "properties": {
+              "bfd": {
+                "type": "object",
+                "properties": {
+                  "bfd-ipv6-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "bfd-ipv6"
+                    }
+                  },
+                  "ve-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "ve"
+                    }
+                  },
+                  "trunk-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "trunk"
+                    }
+                  },
+                  "ethernet-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "ethernet"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "ve-list": {
+                "type": "array",
+                "items": {
+                  "type": "ve"
+                }
+              }
+            }
+          },
+          "rib-list": {
+            "type": "array",
+            "items": {
+              "type": "rib"
+            }
+          }
+        }
+      },
+      "ipv6-telemetry-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "Total": {
+                "type": "number"
+              },
+              "db": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ipv6-telemetry": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-unnumbered-use-source-ipv6": {
+        "type": "object",
+        "properties": {
+          "update-source-ipv6": {
+            "type": "string",
+            "description": "IPv6 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ipv6-unnumbered": {
+        "type": "object",
+        "properties": {
+          "use-source-acl": {
+            "type": "string",
+            "description": "Access List, Upon deny packet's source address will be NATed (ACL Name)",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "use-source-ipv6": {
+            "type": "object",
+            "properties": {
+              "update-source-ipv6": {
+                "type": "string",
+                "description": "IPv6 address"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "ipv6": {
+        "type": "object",
+        "properties": {
+          "access-list-list": {
+            "type": "array",
+            "items": {
+              "type": "access-list"
+            }
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "ipv6-address": {
+                "type": "string",
+                "description": "IPV6 address"
+              },
+              "link-local": {
+                "type": "number",
+                "description": "Configure an IPv6 link local address",
+                "default": 0
+              },
+              "anycast": {
+                "type": "number",
+                "description": "Configure an IPv6 anycast address",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "default-gateway": {
+            "type": "object",
+            "properties": {
+              "ipv6-default-gateway": {
+                "type": "string",
+                "description": "Default gateway address"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "frag": {
+            "type": "object",
+            "properties": {
+              "frag-timeout": {
+                "type": "number",
+                "description": "in milliseconds 4 - 16000 (default is 1000)",
+                "minimum": 4,
+                "maximum": 16000
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "icmpv6": {
+            "type": "object",
+            "properties": {
+              "redirect": {
+                "type": "number",
+                "description": "Disable outbound ICMPv6 redirect messages",
+                "default": 0
+              },
+              "unreachable": {
+                "type": "number",
+                "description": "Disable outbound ICMPv6 unreachable messages",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "neighbor": {
+            "type": "object",
+            "properties": {
+              "static-list": {
+                "type": "array",
+                "items": {
+                  "type": "static"
+                }
+              },
+              "dynamic": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "fib": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "fib-summary": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "route": {
+            "type": "object",
+            "properties": {
+              "static": {
+                "type": "object",
+                "properties": {
+                  "bfd": {
+                    "type": "object",
+                    "properties": {
+                      "bfd-ipv6-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "bfd-ipv6"
+                        }
+                      },
+                      "ve-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "ve"
+                        }
+                      },
+                      "trunk-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "trunk"
+                        }
+                      },
+                      "ethernet-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "ethernet"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "source": {
+                "type": "object",
+                "properties": {
+                  "ve-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "ve"
+                    }
+                  }
+                }
+              },
+              "rib-list": {
+                "type": "array",
+                "items": {
+                  "type": "rib"
+                }
+              }
+            }
+          },
+          "nat": {
+            "type": "object",
+            "properties": {
+              "pool-list": {
+                "type": "array",
+                "items": {
+                  "type": "pool"
+                }
+              },
+              "pool-group-list": {
+                "type": "array",
+                "items": {
+                  "type": "pool-group"
+                }
+              },
+              "inside": {
+                "type": "object",
+                "properties": {
+                  "source": {
+                    "type": "object",
+                    "properties": {
+                      "list-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "list"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "icmpv6": {
+                "type": "object",
+                "properties": {
+                  "respond-to-ping": {
+                    "type": "number",
+                    "description": "Respond to ICMPv6 echo requests to NAT pool IPs (default: disabled)",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "reroute": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "suppress-protocols": {
+                "type": "object",
+                "properties": {
+                  "ospf": {
+                    "type": "number",
+                    "description": "OSPF",
+                    "default": 0
+                  },
+                  "ebgp": {
+                    "type": "number",
+                    "description": "EBGP",
+                    "default": 0
+                  },
+                  "ibgp": {
+                    "type": "number",
+                    "description": "IBGP",
+                    "default": 0
+                  },
+                  "static": {
+                    "type": "number",
+                    "default": 0
+                  },
+                  "isis": {
+                    "type": "number",
+                    "description": "ISIS",
+                    "default": 0
+                  },
+                  "rip": {
+                    "type": "number",
+                    "description": "RIP",
+                    "default": 0
+                  },
+                  "connected": {
+                    "type": "number",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "telemetry": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "prefix-list-list": {
+            "type": "array",
+            "items": {
+              "type": "prefix-list"
+            }
+          },
+          "rib": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ospf": {
+            "type": "object",
+            "properties": {
+              "display-route-single-line": {
+                "type": "number",
+                "description": "Print an entry in single line",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

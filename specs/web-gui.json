@@ -1,0 +1,329 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - WEB-GUI",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the web-gui category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/web-gui/tps/wizard": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS Wizard",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps-wizard"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS Wizard",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps-wizard"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-gui-tps-wizard"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS Wizard",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps-wizard"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-gui-tps-wizard"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS Wizard",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps-wizard"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-gui/tps": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-gui-tps"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-gui-tps"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure TPS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui-tps"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-gui": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure Web GUI",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure Web GUI",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-gui"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure Web GUI",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-gui"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-GUI"
+        ],
+        "description": "Configure Web GUI",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-gui"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "web-gui-tps-wizard": {
+        "type": "object",
+        "properties": {}
+      },
+      "web-gui-tps": {
+        "type": "object",
+        "properties": {}
+      },
+      "web-gui": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

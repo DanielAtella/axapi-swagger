@@ -1,0 +1,170 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - PARTITION-GROUP",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the partition-group category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/partition-group/{partition-group-name}": {
+      "parameters": [
+        {
+          "name": "partition-group-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for partition-group-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PARTITION-GROUP"
+        ],
+        "description": "Modify a partition group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PARTITION-GROUP"
+        ],
+        "description": "Modify a partition group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PARTITION-GROUP"
+        ],
+        "description": "Modify a partition group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PARTITION-GROUP"
+        ],
+        "description": "Modify a partition group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "partition-group": {
+        "type": "object",
+        "properties": {
+          "partition-group-name": {
+            "type": "string",
+            "description": "Partition Group Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "member-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

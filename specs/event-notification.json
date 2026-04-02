@@ -1,0 +1,618 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - EVENT-NOTIFICATION",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the event-notification category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/event-notification/kafka/server/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Operational Status for the object server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification-kafka-server-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/event-notification/kafka/server/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Statistics for the object server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification-kafka-server-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/event-notification/kafka/server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Set remote kafka server ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification-kafka-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Set remote kafka server ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification-kafka-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/event-notification-kafka-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Set remote kafka server ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification-kafka-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/event-notification-kafka-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Set remote kafka server ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification-kafka-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/event-notification/kafka": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Set parameters for kafka server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification-kafka"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/event-notification": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EVENT-NOTIFICATION"
+        ],
+        "description": "Event notification type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event-notification"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "event-notification-kafka-server-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "kafka-broker-state": {
+                "type": "string",
+                "enum": [
+                  "Up",
+                  "Down"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "event-notification-kafka-server-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "pr-acos-harmony-topic": {
+                "type": "number",
+                "description": "L7 PR logs sent"
+              },
+              "avro-device-status-topic": {
+                "type": "number",
+                "description": "Device Status Metrics sent"
+              },
+              "avro-partition-metrics-topic": {
+                "type": "number",
+                "description": "Partition Metrics sent"
+              },
+              "avro-generic-sent": {
+                "type": "number",
+                "description": "Generic Metrics sent"
+              },
+              "pr-acos-harmony-topic-enqueue-err": {
+                "type": "number",
+                "description": "L7 PR dropped,enq error on acos queues"
+              },
+              "pr-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "L7 PR dropped,enq error analytics queues"
+              },
+              "avro-generic-failed-encoding": {
+                "type": "number",
+                "description": "Generic Metrics dropped,encoding error"
+              },
+              "avro-generic-failed-sending": {
+                "type": "number",
+                "description": "Generic Metrics dropped,sending failure"
+              },
+              "avro-device-status-topic-enqueue-err": {
+                "type": "number",
+                "description": "Device Status dropped,enq error on acos queues"
+              },
+              "avro-device-status-topic-dequeue-err": {
+                "type": "number",
+                "description": "Device Status dropped,enq error analytics queues"
+              },
+              "avro-partition-metrics-topic-enqueue-err": {
+                "type": "number",
+                "description": "Part metrics dropped,enq error on acos queues"
+              },
+              "avro-partition-metrics-topic-dequeue-err": {
+                "type": "number",
+                "description": "Part metrics dropped,enq error analytics queues"
+              },
+              "kafka-unknown-topic-dequeue-err": {
+                "type": "number",
+                "description": "Unknown type dropped,enq error analytics queues"
+              },
+              "kafka-broker-down": {
+                "type": "number",
+                "description": "Messages dropped,analytics down"
+              },
+              "kafka-queue-full-err": {
+                "type": "number",
+                "description": "Messages dropped,acos analytics queue full"
+              },
+              "pr-throttle-drop": {
+                "type": "number",
+                "description": "L7 PR dropped,log throttling"
+              },
+              "pr-not-allowed-drop": {
+                "type": "number",
+                "description": "L7 PR dropped, not allowed to be sent"
+              },
+              "pr-be-ttfb-anomaly": {
+                "type": "number",
+                "description": "L7 PR back-end ttfb is negative"
+              },
+              "pr-be-ttlb-anomaly": {
+                "type": "number",
+                "description": "L7 PR back-end ttlb is negative"
+              },
+              "pr-in-latency-threshold-exceed": {
+                "type": "number",
+                "description": "L7 PR on latency threshold exceeded"
+              },
+              "pr-out-latency-threshold-exceed": {
+                "type": "number",
+                "description": "L7 PR out latency threshold exceeded"
+              },
+              "pr-out-latency-anomaly": {
+                "type": "number",
+                "description": "L7 PR out latency negative"
+              },
+              "pr-in-latency-anomaly": {
+                "type": "number",
+                "description": "L7 PR on latency negative"
+              },
+              "kafka-topic-error": {
+                "type": "number",
+                "description": "Module not supported by analytics"
+              },
+              "pc-encoding-failed": {
+                "type": "number",
+                "description": "L4 PC logs dropped,encoding error"
+              },
+              "pc-acos-harmony-topic": {
+                "type": "number",
+                "description": "L4 PC logs sent"
+              },
+              "pc-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "L4 PC logs dropped,enq error analytics queues"
+              },
+              "cgn-pc-acos-harmony-topic": {
+                "type": "number",
+                "description": "CGN PC logs sent"
+              },
+              "cgn-pc-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "CGN PC logs dropped,enq error analytics queues"
+              },
+              "cgn-pe-acos-harmony-topic": {
+                "type": "number",
+                "description": "CGN PE logs sent"
+              },
+              "cgn-pe-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "CGN PE logs dropped,enq error analytics queues"
+              },
+              "fw-pc-acos-harmony-topic": {
+                "type": "number",
+                "description": "FW PC logs sent"
+              },
+              "fw-pc-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "FW PC logs dropped,enq error analytics queues"
+              },
+              "fw-deny-pc-acos-harmony-topic": {
+                "type": "number",
+                "description": "FW DENY PC logs sent"
+              },
+              "fw-deny-pc-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "FW DENY PC logs dropped,enq error analytics queues"
+              },
+              "fw-rst-pc-acos-harmony-topic": {
+                "type": "number",
+                "description": "FW RST PC logs sent"
+              },
+              "fw-rst-pc-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "FW RST PC logs dropped,enq error analytics queues"
+              },
+              "cgn-summary-error-acos-harmony-topic": {
+                "type": "number",
+                "description": "CGN PE logs sent"
+              },
+              "cgn-summary-error-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "CGN PE logs dropped,enq error analytics queues"
+              },
+              "rule-set-application-metrics-topic": {
+                "type": "number",
+                "description": "AppFW metrics sent"
+              },
+              "rule-set-application-metrics-topic-dequeue-err": {
+                "type": "number",
+                "description": "AppFW metrics dropped,enq error analytics queues"
+              },
+              "slb-ssl-stats-metrics-topic": {
+                "type": "number",
+                "description": "SSL metrics sent"
+              },
+              "slb-ssl-stats-metrics-topic-dequeue-err": {
+                "type": "number",
+                "description": "SSL metrics dropped,enq error analytics queues"
+              },
+              "slb-client-ssl-counters-metrics-topic": {
+                "type": "number",
+                "description": "Client SSL metrics sent"
+              },
+              "slb-client-ssl-counters-metrics-topic-dequeue-err": {
+                "type": "number",
+                "description": "Cilent SSL metrics dropped,enq error analytics qs"
+              },
+              "slb-server-ssl-counters-metrics-topic": {
+                "type": "number",
+                "description": "Server SSL metrics sent"
+              },
+              "slb-server-ssl-counters-metrics-topic-dequeue-err": {
+                "type": "number",
+                "description": "Server SSL metrics dropped,enq error analytics qs"
+              },
+              "pc-throttle-drop": {
+                "type": "number",
+                "description": "L4 PC logs dropped,throttling"
+              },
+              "metrics-dropped-pt-missing": {
+                "type": "number",
+                "description": "Metrics dropped,missing partition tenant mapping"
+              },
+              "ssli-pc-acos-harmony-topic": {
+                "type": "number",
+                "description": "SSLi PC topic counter from acos to harmony"
+              },
+              "ssli-pc-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "SSLi PC topic to harmony dequeue error"
+              },
+              "ssli-pe-acos-harmony-topic": {
+                "type": "number",
+                "description": "SSLi PE topic counter from acos to harmony"
+              },
+              "ssli-pe-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "SSLi PE topic to harmony dequeue error"
+              },
+              "analytics-bus-restart": {
+                "type": "number",
+                "description": "Analytics bus restart count"
+              },
+              "waf-learn-pr-topic": {
+                "type": "number",
+                "description": "WAF learn topic counter"
+              },
+              "waf-learn-pr-topic-dequeue-err": {
+                "type": "number",
+                "description": "WAF learn metrics dropped,enq error analytics qs"
+              },
+              "waf-events-topic": {
+                "type": "number",
+                "description": "WAF events topic counter"
+              },
+              "waf-events-topic-dequeue-err": {
+                "type": "number",
+                "description": "WAF events metrics dropped,enq error analytics qs"
+              },
+              "visibility-topn-harmony-topic": {
+                "type": "number",
+                "description": "Visibility TopN sent"
+              },
+              "visibility-topn-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "Visibility TopN metrics dropped,enq error analytics qs"
+              },
+              "hc-logs-sent-to-master": {
+                "type": "number",
+                "description": "HC logs sent to master"
+              },
+              "hc-logs-received-from-blade": {
+                "type": "number",
+                "description": "HC logs received from blade"
+              },
+              "hc-oper-sent-to-master": {
+                "type": "number",
+                "description": "HC oper to master"
+              },
+              "hc-oper-received-from-blade": {
+                "type": "number",
+                "description": "HC oper received from blade"
+              },
+              "hc-counters-sent-to-master": {
+                "type": "number",
+                "description": "HC counters sent to master"
+              },
+              "hc-counters-received-from-blade": {
+                "type": "number",
+                "description": "HC counters received from blade"
+              },
+              "hc-counters-dropped-from-blade": {
+                "type": "number",
+                "description": "HC counters dropped from blade (uuid or size mismatch)"
+              },
+              "pe-acos-harmony-topic": {
+                "type": "number",
+                "description": "L7 PE logs sent"
+              },
+              "pe-acos-harmony-topic-enqueue-err": {
+                "type": "number",
+                "description": "L7 PE dropped,enq error on acos queues"
+              },
+              "pe-acos-harmony-topic-dequeue-err": {
+                "type": "number",
+                "description": "L7 PE dropped,enq error analytics queues"
+              }
+            }
+          }
+        }
+      },
+      "event-notification-kafka-server": {
+        "type": "object",
+        "properties": {
+          "host-ipv4": {
+            "type": "string",
+            "description": "Set kafka Broker ip address or hostname"
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port for connections",
+            "default": 0
+          },
+          "port": {
+            "type": "number",
+            "description": "Set remote kafka port number (Remote kafka port number 1-32767, default is 9092)",
+            "default": 9092,
+            "minimum": 1,
+            "maximum": 32767
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "event-notification-kafka": {
+        "type": "object",
+        "properties": {
+          "server": {
+            "type": "object",
+            "properties": {
+              "host-ipv4": {
+                "type": "string",
+                "description": "Set kafka Broker ip address or hostname"
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port for connections",
+                "default": 0
+              },
+              "port": {
+                "type": "number",
+                "description": "Set remote kafka port number (Remote kafka port number 1-32767, default is 9092)",
+                "default": 9092,
+                "minimum": 1,
+                "maximum": 32767
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "event-notification": {
+        "type": "object",
+        "properties": {
+          "kafka": {
+            "type": "object",
+            "properties": {
+              "server": {
+                "type": "object",
+                "properties": {
+                  "host-ipv4": {
+                    "type": "string",
+                    "description": "Set kafka Broker ip address or hostname"
+                  },
+                  "use-mgmt-port": {
+                    "type": "number",
+                    "description": "Use management port for connections",
+                    "default": 0
+                  },
+                  "port": {
+                    "type": "number",
+                    "description": "Set remote kafka port number (Remote kafka port number 1-32767, default is 9092)",
+                    "default": 9092,
+                    "minimum": 1,
+                    "maximum": 32767
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

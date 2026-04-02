@@ -1,0 +1,1382 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - HARMONY-CONTROLLER",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the harmony-controller category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/harmony-controller/config-replace": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Enable config-replace-mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-config-replace"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Enable config-replace-mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-config-replace"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-config-replace"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Enable config-replace-mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-config-replace"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-config-replace"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/partition-tenant-info/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Operational Status for the object partition-tenant-info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-partition-tenant-info-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/partition-tenant-info": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-partition-tenant-info"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-partition-tenant-info"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-partition-tenant-info"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-partition-tenant-info"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-partition-tenant-info"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-partition-tenant-info"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/profile/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Operational Status for the object profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/profile/re-sync": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "re sync some options to harmony controller",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-re-sync"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "re sync some options to harmony controller",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-re-sync"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-profile-re-sync"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "re sync some options to harmony controller",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-re-sync"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/profile/thunder-mgmt-ip": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "thunder management ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-thunder-mgmt-ip"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "thunder management ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-thunder-mgmt-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-profile-thunder-mgmt-ip"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "thunder management ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-thunder-mgmt-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-profile-thunder-mgmt-ip"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "thunder management ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-thunder-mgmt-ip"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/profile/tunnel": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "tunnel status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-tunnel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "tunnel status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-tunnel"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-profile-tunnel"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "tunnel status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-tunnel"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-profile-tunnel"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "tunnel status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile-tunnel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/profile": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-profile"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-profile"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-profile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/telemetry": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller telemetry config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-telemetry"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller telemetry config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-telemetry"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-telemetry"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller telemetry config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-telemetry"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-telemetry"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller telemetry config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-telemetry"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/tunnel-stats/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Operational Status for the object tunnel-stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-tunnel-stats-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller/tunnel-stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller tunnel statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-tunnel-stats"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller tunnel statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-tunnel-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-tunnel-stats"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller tunnel statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-tunnel-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/harmony-controller-tunnel-stats"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller tunnel statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller-tunnel-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/harmony-controller": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HARMONY-CONTROLLER"
+        ],
+        "description": "Harmony controller information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/harmony-controller"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "harmony-controller-config-replace": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "'enable': enable config replace mode; 'disable': disable config replace mode; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "harmony-controller-partition-tenant-info-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "partition-name": {
+                "type": "string"
+              },
+              "tenant-name": {
+                "type": "string"
+              },
+              "tenant-id": {
+                "type": "string"
+              },
+              "cluster-name": {
+                "type": "string"
+              },
+              "cluster-id": {
+                "type": "string"
+              },
+              "log-rate-per-sec": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "harmony-controller-partition-tenant-info": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "harmony-controller-profile-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "overall-status": {
+                "type": "string"
+              },
+              "heartbeat-status": {
+                "type": "string"
+              },
+              "heartbeat-error-message": {
+                "type": "string"
+              },
+              "service-registry": {
+                "type": "string"
+              },
+              "service-registry-error-message": {
+                "type": "string"
+              },
+              "registration-status": {
+                "type": "string"
+              },
+              "registration-status-code": {
+                "type": "number"
+              },
+              "registration-error-message": {
+                "type": "string"
+              },
+              "deregistration-status": {
+                "type": "string"
+              },
+              "deregistration-status-code": {
+                "type": "number"
+              },
+              "deregistration-error-message": {
+                "type": "string"
+              },
+              "schema-registry-status": {
+                "type": "string"
+              },
+              "broker_info": {
+                "type": "string"
+              },
+              "kafka-broker-state": {
+                "type": "string",
+                "enum": [
+                  "Up",
+                  "Down"
+                ]
+              },
+              "Number-of-tenant-mapped-partitions": {
+                "type": "number"
+              },
+              "Number-of-tenant-unmapped-partitions": {
+                "type": "number"
+              },
+              "tunnel-status": {
+                "type": "string"
+              },
+              "tunnel-error-message": {
+                "type": "string"
+              },
+              "peer-device-info": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "harmony-controller-profile-re-sync": {
+        "type": "object",
+        "properties": {
+          "schema-registry": {
+            "type": "number",
+            "description": "re-sync the schema registry",
+            "default": 0
+          },
+          "analytics-bus": {
+            "type": "number",
+            "description": "re-sync analtyics bus connections",
+            "default": 0
+          }
+        }
+      },
+      "harmony-controller-profile-thunder-mgmt-ip": {
+        "type": "object",
+        "properties": {
+          "ip-address": {
+            "type": "string",
+            "description": "IP address (IPv4 address)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "harmony-controller-profile-tunnel": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "'enable': Tunnel Enable; 'disable': Tunnel Disable; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "harmony-controller-profile": {
+        "type": "object",
+        "properties": {
+          "host": {
+            "type": "string",
+            "description": "Set harmony controller host adddress"
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port for connections",
+            "default": 0
+          },
+          "port": {
+            "type": "number",
+            "description": "Set port for remote Harmony Controller, default is 8443",
+            "default": 8443,
+            "minimum": 1,
+            "maximum": 32767
+          },
+          "provider": {
+            "type": "string",
+            "description": "provider for the harmony-controller",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "user-name": {
+            "type": "string",
+            "description": "user-name for the tenant",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "secret-value": {
+            "type": "string",
+            "description": "Specify the password for the user",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "password-encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "region": {
+            "type": "string",
+            "description": "region of the thunder-device",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "auto-restart-action": {
+            "type": "string",
+            "description": "'enable': enable auto analytics bus restart, default behavior is enable; 'disable': disable auto analytics bus restart; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "interval": {
+            "type": "number",
+            "description": "auto analytics bus restart time interval in mins, default is 3 mins",
+            "default": 3,
+            "minimum": 1,
+            "maximum": 15
+          },
+          "availability-zone": {
+            "type": "string",
+            "description": "availablity zone of the thunder-device",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "action": {
+            "type": "string",
+            "description": "'register': Register the device to the controller; 'deregister': Deregister the device from controller; ",
+            "enum": [
+              "register",
+              "deregister"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "re-sync": {
+            "type": "object",
+            "properties": {
+              "schema-registry": {
+                "type": "number",
+                "description": "re-sync the schema registry",
+                "default": 0
+              },
+              "analytics-bus": {
+                "type": "number",
+                "description": "re-sync analtyics bus connections",
+                "default": 0
+              }
+            }
+          },
+          "thunder-mgmt-ip": {
+            "type": "object",
+            "properties": {
+              "ip-address": {
+                "type": "string",
+                "description": "IP address (IPv4 address)"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "tunnel": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "description": "'enable': Tunnel Enable; 'disable': Tunnel Disable; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "harmony-controller-telemetry": {
+        "type": "object",
+        "properties": {
+          "log-rate": {
+            "type": "number",
+            "description": "Max number of session logs sent by the partition per second",
+            "default": 10,
+            "minimum": 0,
+            "maximum": 10000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "harmony-controller-tunnel-stats-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string"
+              },
+              "bytes-sent": {
+                "type": "number"
+              },
+              "bytes-recieved": {
+                "type": "number"
+              },
+              "number-of-errors": {
+                "type": "number"
+              },
+              "uptime": {
+                "type": "string"
+              },
+              "error-message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "harmony-controller-tunnel-stats": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "harmony-controller": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "object",
+            "properties": {
+              "host": {
+                "type": "string",
+                "description": "Set harmony controller host adddress"
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port for connections",
+                "default": 0
+              },
+              "port": {
+                "type": "number",
+                "description": "Set port for remote Harmony Controller, default is 8443",
+                "default": 8443,
+                "minimum": 1,
+                "maximum": 32767
+              },
+              "provider": {
+                "type": "string",
+                "description": "provider for the harmony-controller",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "user-name": {
+                "type": "string",
+                "description": "user-name for the tenant",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "secret-value": {
+                "type": "string",
+                "description": "Specify the password for the user",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "password-encrypted": {
+                "type": "encrypted",
+                "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+              },
+              "region": {
+                "type": "string",
+                "description": "region of the thunder-device",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "auto-restart-action": {
+                "type": "string",
+                "description": "'enable': enable auto analytics bus restart, default behavior is enable; 'disable': disable auto analytics bus restart; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "interval": {
+                "type": "number",
+                "description": "auto analytics bus restart time interval in mins, default is 3 mins",
+                "default": 3,
+                "minimum": 1,
+                "maximum": 15
+              },
+              "availability-zone": {
+                "type": "string",
+                "description": "availablity zone of the thunder-device",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "action": {
+                "type": "string",
+                "description": "'register': Register the device to the controller; 'deregister': Deregister the device from controller; ",
+                "enum": [
+                  "register",
+                  "deregister"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "re-sync": {
+                "type": "object",
+                "properties": {
+                  "schema-registry": {
+                    "type": "number",
+                    "description": "re-sync the schema registry",
+                    "default": 0
+                  },
+                  "analytics-bus": {
+                    "type": "number",
+                    "description": "re-sync analtyics bus connections",
+                    "default": 0
+                  }
+                }
+              },
+              "thunder-mgmt-ip": {
+                "type": "object",
+                "properties": {
+                  "ip-address": {
+                    "type": "string",
+                    "description": "IP address (IPv4 address)"
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "tunnel": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "description": "'enable': Tunnel Enable; 'disable': Tunnel Disable; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "partition-tenant-info": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "telemetry": {
+            "type": "object",
+            "properties": {
+              "log-rate": {
+                "type": "number",
+                "description": "Max number of session logs sent by the partition per second",
+                "default": 10,
+                "minimum": 0,
+                "maximum": 10000
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "config-replace": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "description": "'enable': enable config replace mode; 'disable': disable config replace mode; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

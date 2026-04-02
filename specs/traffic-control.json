@@ -1,0 +1,1024 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - TRAFFIC-CONTROL",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the traffic-control category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/traffic-control/active-rule-set": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Active traffic-control policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-active-rule-set"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Active traffic-control policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-active-rule-set"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-active-rule-set"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Active traffic-control policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-active-rule-set"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-active-rule-set"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Active traffic-control policy",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-active-rule-set"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control/rule-set/{name}/oper": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Operational Status for the object rule-set",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control/rule-set/{name}/rule/{name}/action-group": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure action-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule-action-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure action-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule-action-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-rule-set-rule-action-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure action-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule-action-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-rule-set-rule-action-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure action-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule-action-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control/rule-set/{name}/rule/{name}/oper": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Operational Status for the object rule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control/rule-set/{name}/rule/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Statistics for the object rule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control/rule-set/{name}/rule/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control rule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control rule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-rule-set-rule"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control rule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-rule-set-rule"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control rule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-rule"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control/rule-set/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Statistics for the object rule-set",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control/rule-set/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control policy rule set",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control policy rule set",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-rule-set"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control policy rule set",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/traffic-control-rule-set"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Configure traffic control policy rule set",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control-rule-set"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/traffic-control": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TRAFFIC-CONTROL"
+        ],
+        "description": "Contains all commands for traffic control options.",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/traffic-control"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "traffic-control-active-rule-set": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Rule set name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "traffic-control-rule-set-oper": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Rule set name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "policy-status": {
+                "type": "string"
+              },
+              "policy-rule-count": {
+                "type": "number"
+              },
+              "rule-stats": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "rule-list": {
+            "type": "array",
+            "items": {
+              "type": "rule"
+            }
+          }
+        }
+      },
+      "traffic-control-rule-set-rule-action-group": {
+        "type": "object",
+        "properties": {
+          "limit-policy": {
+            "type": "number",
+            "description": "Limit policy Template",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "traffic-control-rule-set-rule-oper": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Rule name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string"
+              },
+              "hitcount": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "traffic-control-rule-set-rule-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Rule name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "hit-count": {
+                "type": "number",
+                "description": "Hit counts"
+              }
+            }
+          }
+        }
+      },
+      "traffic-control-rule-set-rule": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Rule name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "remark": {
+            "type": "string",
+            "description": "Rule entry comment (Notes for this rule)",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "status": {
+            "type": "string",
+            "description": "'enable': Enable rule; 'disable': Disable rule; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "ip-version": {
+            "type": "string",
+            "description": "'v4': IPv4 rule; 'v6': IPv6 rule; ",
+            "default": "v4",
+            "enum": [
+              "v4",
+              "v6"
+            ]
+          },
+          "src-geoloc-name": {
+            "type": "string",
+            "description": "Single geolocation name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "src-geoloc-list": {
+            "type": "string",
+            "description": "Geolocation name list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "src-geoloc-list-shared": {
+            "type": "number",
+            "description": "Use Geolocation list from shared partition",
+            "default": 0
+          },
+          "src-ipv4-any": {
+            "type": "string",
+            "description": "'any': Any IPv4 address; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "src-ipv6-any": {
+            "type": "string",
+            "description": "'any': Any IPv6 address; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "src-class-list": {
+            "type": "string",
+            "description": "Match source IP against class-list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "source-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "src-zone": {
+            "type": "string",
+            "description": "Zone name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "src-zone-any": {
+            "type": "string",
+            "description": "'any': any; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "src-threat-list": {
+            "type": "string",
+            "description": "Bind threat-list for source IP based filtering",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "dst-geoloc-name": {
+            "type": "string",
+            "description": "Single geolocation name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "dst-geoloc-list": {
+            "type": "string",
+            "description": "Geolocation name list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "dst-geoloc-list-shared": {
+            "type": "number",
+            "description": "Use Geolocation list from shared partition",
+            "default": 0
+          },
+          "dst-ipv4-any": {
+            "type": "string",
+            "description": "'any': Any IPv4 address; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "dst-ipv6-any": {
+            "type": "string",
+            "description": "'any': Any IPv6 address; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "dst-class-list": {
+            "type": "string",
+            "description": "Match destination IP against class-list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "dest-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "dst-domain-list": {
+            "type": "string",
+            "description": "Match destination IP against domain-list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "dst-zone": {
+            "type": "string",
+            "description": "Zone name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "dst-zone-any": {
+            "type": "string",
+            "description": "'any': any; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "dst-threat-list": {
+            "type": "string",
+            "description": "Bind threat-list for destination IP based filtering",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "service-any": {
+            "type": "string",
+            "description": "'any': any; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "service-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "application-any": {
+            "type": "string",
+            "description": "'any': any; ",
+            "default": "any",
+            "enum": [
+              "any"
+            ]
+          },
+          "app-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "action-group": {
+            "type": "object",
+            "properties": {
+              "limit-policy": {
+                "type": "number",
+                "description": "Limit policy Template",
+                "minimum": 1,
+                "maximum": 1023
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "traffic-control-rule-set-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Rule set name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "hit-count": {
+                "type": "number",
+                "description": "Hit counts"
+              }
+            }
+          },
+          "rule-list": {
+            "type": "array",
+            "items": {
+              "type": "rule"
+            }
+          }
+        }
+      },
+      "traffic-control-rule-set": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Rule set name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "remark": {
+            "type": "string",
+            "description": "Rule set entry comment (Notes for this rule set)",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "rule-list": {
+            "type": "array",
+            "items": {
+              "type": "rule"
+            }
+          }
+        }
+      },
+      "traffic-control": {
+        "type": "object",
+        "properties": {
+          "rule-set-list": {
+            "type": "array",
+            "items": {
+              "type": "rule-set"
+            }
+          },
+          "active-rule-set": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Rule set name",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

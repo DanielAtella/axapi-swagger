@@ -1,0 +1,277 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - CALL-HOME",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the call-home category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/call-home/profile": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "CALL-HOME"
+        ],
+        "description": "Call home profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/call-home-profile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CALL-HOME"
+        ],
+        "description": "Call home profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/call-home-profile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/call-home-profile"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CALL-HOME"
+        ],
+        "description": "Call home profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/call-home-profile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/call-home-profile"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CALL-HOME"
+        ],
+        "description": "Call home profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/call-home-profile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/call-home": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "CALL-HOME"
+        ],
+        "description": "Call home information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/call-home"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "call-home-profile": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "set hostname url for the host",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "ipv4": {
+            "type": "string",
+            "description": "set IPV4 address for the host"
+          },
+          "ipv6": {
+            "type": "string",
+            "description": "set IPV6 address for the host"
+          },
+          "port": {
+            "type": "number",
+            "description": "Set port for the call home portal",
+            "minimum": 1,
+            "maximum": 32767
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port for connections",
+            "default": 0
+          },
+          "export-policy": {
+            "type": "string",
+            "description": "'restrictive': Export minimal information about system and config, default policy; 'permissive': Export as much as possible information about system, config and solution data; ",
+            "default": "restrictive",
+            "enum": [
+              "restrictive",
+              "permissive"
+            ]
+          },
+          "time": {
+            "type": "number",
+            "description": "Set export time of the data. default 0 (12 AM), default 0",
+            "minimum": 0,
+            "maximum": 23
+          },
+          "action": {
+            "type": "string",
+            "description": "'register': Register the device to the portal; 'deregister': Deregister the device from the portal; ",
+            "default": "deregister",
+            "enum": [
+              "register",
+              "deregister"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "call-home": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "set hostname url for the host",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "ipv4": {
+                "type": "string",
+                "description": "set IPV4 address for the host"
+              },
+              "ipv6": {
+                "type": "string",
+                "description": "set IPV6 address for the host"
+              },
+              "port": {
+                "type": "number",
+                "description": "Set port for the call home portal",
+                "minimum": 1,
+                "maximum": 32767
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port for connections",
+                "default": 0
+              },
+              "export-policy": {
+                "type": "string",
+                "description": "'restrictive': Export minimal information about system and config, default policy; 'permissive': Export as much as possible information about system, config and solution data; ",
+                "default": "restrictive",
+                "enum": [
+                  "restrictive",
+                  "permissive"
+                ]
+              },
+              "time": {
+                "type": "number",
+                "description": "Set export time of the data. default 0 (12 AM), default 0",
+                "minimum": 0,
+                "maximum": 23
+              },
+              "action": {
+                "type": "string",
+                "description": "'register': Register the device to the portal; 'deregister': Deregister the device from the portal; ",
+                "default": "deregister",
+                "enum": [
+                  "register",
+                  "deregister"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

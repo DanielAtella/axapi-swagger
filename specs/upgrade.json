@@ -1,0 +1,522 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - UPGRADE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the upgrade category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/upgrade/cf": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Compact flash",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-cf"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Compact flash",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-cf"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/upgrade-cf"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Compact flash",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-cf"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/upgrade/gui": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Upgrade or Rollback GUI",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-gui"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Upgrade or Rollback GUI",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-gui"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/upgrade-gui"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Upgrade or Rollback GUI",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-gui"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/upgrade/hd": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Hard Disk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-hd"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Hard Disk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-hd"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/upgrade-hd"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Hard Disk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade-hd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/upgrade": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "UPGRADE"
+        ],
+        "description": "Upgrade System",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/upgrade"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "upgrade-cf": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "description": "'pri': Primary image; ",
+            "enum": [
+              "pri"
+            ]
+          },
+          "local": {
+            "type": "string",
+            "description": "Use image from local image repository (Specify an image name, format: aximage_XX_XX_XX_XX.tar.gz)",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          },
+          "staggered-upgrade-mode": {
+            "type": "number",
+            "description": "in staggered upgrade mode",
+            "default": 0
+          },
+          "Device": {
+            "type": "number"
+          },
+          "reboot-after-upgrade": {
+            "type": "number",
+            "description": "reboot system after upgrade is done",
+            "default": 0
+          }
+        }
+      },
+      "upgrade-gui": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "description": "'pri': Primary image; 'sec': Secondary image; ",
+            "enum": [
+              "pri",
+              "sec"
+            ]
+          },
+          "local": {
+            "type": "string",
+            "description": "Local GUI image name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "rollback": {
+            "type": "string",
+            "description": "Rollback to a specific local GUI image",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "delete": {
+            "type": "string",
+            "description": "Delete one local GUI image",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "source-ip-address": {
+            "type": "string",
+            "description": "Source IP address"
+          },
+          "upload": {
+            "type": "number",
+            "description": "Upload GUI image from remote",
+            "default": 0
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          }
+        }
+      },
+      "upgrade-hd": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "description": "'pri': Primary image; 'sec': Secondary image; ",
+            "enum": [
+              "pri",
+              "sec"
+            ]
+          },
+          "local": {
+            "type": "string",
+            "description": "Use image from local VCS image repository (Specify an image name, format: aximage_XX_XX_XX_XX.tar.gz)",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "rollback": {
+            "type": "number",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "source-ip-address": {
+            "type": "string",
+            "description": "Source ip address"
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          },
+          "reboot-after-upgrade": {
+            "type": "number",
+            "description": "reboot system after upgrade is done",
+            "default": 0
+          }
+        }
+      },
+      "upgrade": {
+        "type": "object",
+        "properties": {
+          "hd": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "description": "'pri': Primary image; 'sec': Secondary image; ",
+                "enum": [
+                  "pri",
+                  "sec"
+                ]
+              },
+              "local": {
+                "type": "string",
+                "description": "Use image from local VCS image repository (Specify an image name, format: aximage_XX_XX_XX_XX.tar.gz)",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "rollback": {
+                "type": "number",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "source-ip-address": {
+                "type": "string",
+                "description": "Source ip address"
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              },
+              "reboot-after-upgrade": {
+                "type": "number",
+                "description": "reboot system after upgrade is done",
+                "default": 0
+              }
+            }
+          },
+          "cf": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "description": "'pri': Primary image; ",
+                "enum": [
+                  "pri"
+                ]
+              },
+              "local": {
+                "type": "string",
+                "description": "Use image from local image repository (Specify an image name, format: aximage_XX_XX_XX_XX.tar.gz)",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              },
+              "staggered-upgrade-mode": {
+                "type": "number",
+                "description": "in staggered upgrade mode",
+                "default": 0
+              },
+              "Device": {
+                "type": "number"
+              },
+              "reboot-after-upgrade": {
+                "type": "number",
+                "description": "reboot system after upgrade is done",
+                "default": 0
+              }
+            }
+          },
+          "gui": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "description": "'pri': Primary image; 'sec': Secondary image; ",
+                "enum": [
+                  "pri",
+                  "sec"
+                ]
+              },
+              "local": {
+                "type": "string",
+                "description": "Local GUI image name",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "rollback": {
+                "type": "string",
+                "description": "Rollback to a specific local GUI image",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "delete": {
+                "type": "string",
+                "description": "Delete one local GUI image",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "source-ip-address": {
+                "type": "string",
+                "description": "Source IP address"
+              },
+              "upload": {
+                "type": "number",
+                "description": "Upload GUI image from remote",
+                "default": 0
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

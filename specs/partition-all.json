@@ -1,0 +1,158 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - PARTITION-ALL",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the partition-all category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/partition-all/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PARTITION-ALL"
+        ],
+        "description": "Operational Status for the object partition-all",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-all-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/partition-all": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PARTITION-ALL"
+        ],
+        "description": "Display all partitions in the system",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-all"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PARTITION-ALL"
+        ],
+        "description": "Display all partitions in the system",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-all"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/partition-all"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PARTITION-ALL"
+        ],
+        "description": "Display all partitions in the system",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/partition-all"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "partition-all-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "partition-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "active-partition-count": {
+                "type": "number"
+              },
+              "manageable": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "partition-all": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

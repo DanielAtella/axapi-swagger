@@ -1,0 +1,1380 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - AXDEBUG",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the axdebug category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/axdebug/apply-config": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Apply AXDebug config file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-apply-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Apply AXDebug config file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-apply-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-apply-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Apply AXDebug config file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-apply-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug/capture": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Dump packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-capture"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Dump packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-capture"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-capture"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Dump packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-capture"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug/delete": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "delete axdebug file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-delete"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "delete axdebug file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-delete"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-delete"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "delete axdebug file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-delete"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug/exit": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "exit from axdebug and stop capture",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-exit"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "exit from axdebug and stop capture",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-exit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-exit"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "exit from axdebug and stop capture",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-exit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug/filter-config": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Global debug filter",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-filter-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Global debug filter",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-filter-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-filter-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Global debug filter",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-filter-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug/pcapng-config": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Configure pacpng",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-pcapng-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Configure pacpng",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-pcapng-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-pcapng-config"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Configure pacpng",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-pcapng-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-pcapng-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Configure pacpng",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-pcapng-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug/save-config": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "save AXDebug config file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-save-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "save AXDebug config file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-save-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-save-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "save AXDebug config file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-save-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug/tcpdump": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Use tcpdump to display & filter packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-tcpdump"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Use tcpdump to display & filter packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug-tcpdump"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug-tcpdump"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/axdebug": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Packet Trace Options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Packet Trace Options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/axdebug"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AXDEBUG"
+        ],
+        "description": "Packet Trace Options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axdebug"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "axdebug-apply-config": {
+        "type": "object",
+        "properties": {
+          "config-file": {
+            "type": "string",
+            "description": "config file name",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "axdebug-capture": {
+        "type": "object",
+        "properties": {
+          "incoming": {
+            "type": "number",
+            "description": "Incoming interface",
+            "default": 0
+          },
+          "outgoing": {
+            "type": "number",
+            "description": "Outgoing interface",
+            "default": 0
+          },
+          "port-num": {
+            "type": "string",
+            "description": "Port Numbers separated by commas(,) and hyphens(-) without spaces (ex: 4,5,10-30), or separated by spaces and double-quoted(\")",
+            "minLength": 1,
+            "maxLength": 511
+          },
+          "brief": {
+            "type": "number",
+            "description": "Print basic packet information",
+            "default": 0
+          },
+          "detail": {
+            "type": "number",
+            "description": "Include packet payload",
+            "default": 0
+          },
+          "non-display": {
+            "type": "number",
+            "description": "Do not print to screen",
+            "default": 0
+          },
+          "save": {
+            "type": "string",
+            "description": "Save packets into file (Specify filename to save packets)",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "max-packets": {
+            "type": "number",
+            "description": "Maximum packets to capture for each data cpu.",
+            "minimum": 0,
+            "maximum": 65535
+          },
+          "current-slot": {
+            "type": "number",
+            "description": "Only for current-slot of chassis",
+            "default": 0
+          }
+        }
+      },
+      "axdebug-delete": {
+        "type": "object",
+        "properties": {
+          "capture-file": {
+            "type": "string",
+            "description": "Delete a capture file (Specify target filename to change)",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "config-file": {
+            "type": "string",
+            "description": "Delete AXDebug config file (Specify target filename to change)",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "axdebug-exit": {
+        "type": "object",
+        "properties": {
+          "stop-capture": {
+            "type": "number",
+            "description": "stop capture traffic",
+            "default": 0
+          }
+        }
+      },
+      "axdebug-filter-config": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "number",
+            "description": "Specify filter id",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "dst": {
+            "type": "number",
+            "description": "Destination",
+            "default": 0
+          },
+          "ip": {
+            "type": "number",
+            "description": "IP",
+            "default": 0
+          },
+          "ipv4-address": {
+            "type": "string",
+            "description": "ip address"
+          },
+          "mac": {
+            "type": "number",
+            "description": "mac address",
+            "default": 0
+          },
+          "mac-addr": {
+            "type": "string",
+            "description": "mac address"
+          },
+          "port": {
+            "type": "number",
+            "description": "port number",
+            "default": 0
+          },
+          "port-num": {
+            "type": "number",
+            "description": "Port number",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "port-num-min": {
+            "type": "number",
+            "description": "min port number",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "port-num-max": {
+            "type": "number",
+            "description": "max port number",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "ipv4-netmask": {
+            "type": "string",
+            "description": "IP subnet mask"
+          },
+          "ipv6": {
+            "type": "number",
+            "description": "IPV6",
+            "default": 0
+          },
+          "ipv6-adddress": {
+            "type": "string",
+            "description": "ipv6 address"
+          },
+          "l3-proto": {
+            "type": "number",
+            "description": "Layer 3 protocol",
+            "default": 0
+          },
+          "arp": {
+            "type": "number",
+            "description": "ARP",
+            "default": 0
+          },
+          "neighbor": {
+            "type": "number",
+            "description": "IPv6 Neighbor/Router",
+            "default": 0
+          },
+          "proto": {
+            "type": "number",
+            "description": "ip protocol number",
+            "default": 0
+          },
+          "icmp": {
+            "type": "number",
+            "default": 0
+          },
+          "icmpv6": {
+            "type": "number",
+            "default": 0
+          },
+          "tcp": {
+            "type": "number",
+            "default": 0
+          },
+          "udp": {
+            "type": "number",
+            "default": 0
+          },
+          "prot-num": {
+            "type": "number",
+            "description": "protocol number",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "src": {
+            "type": "number",
+            "description": "Source",
+            "default": 0
+          },
+          "offset": {
+            "type": "number",
+            "description": "byte offset",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "length": {
+            "type": "number",
+            "description": "byte length",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "oper-range": {
+            "type": "string",
+            "description": "'gt': greater than; 'gte': greater than or equal to; 'se': smaller than or equal to; 'st': smaller than; 'eq': equal to; ",
+            "enum": [
+              "gt",
+              "gte",
+              "se",
+              "st",
+              "eq"
+            ]
+          },
+          "hex": {
+            "type": "number",
+            "description": "Define hex value",
+            "default": 0
+          },
+          "min-hex": {
+            "type": "string",
+            "description": "min value",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "max-hex": {
+            "type": "string",
+            "description": "max value",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "comp-hex": {
+            "type": "string",
+            "description": "value to compare",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "integer": {
+            "type": "number",
+            "description": "Define decimal value",
+            "default": 0
+          },
+          "integer-min": {
+            "type": "number",
+            "description": "min value",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "integer-max": {
+            "type": "number",
+            "description": "max value",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "integer-comp": {
+            "type": "number",
+            "description": "value to compare",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "WORD": {
+            "type": "string",
+            "description": "WORD to compare",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "WORD1": {
+            "type": "string",
+            "description": "WORD min value",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "WORD2": {
+            "type": "string",
+            "description": "WORD max value",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "range": {
+            "type": "number",
+            "description": "select a range",
+            "default": 0
+          },
+          "exit": {
+            "type": "number",
+            "description": "Exit from axdebug mode",
+            "default": 0
+          }
+        }
+      },
+      "axdebug-pcapng-config": {
+        "type": "object",
+        "properties": {
+          "pcapng-enable": {
+            "type": "number",
+            "description": "Enable pcapng",
+            "default": 0
+          },
+          "ssl-key-enable": {
+            "type": "number",
+            "description": "Enable ssl key tracking",
+            "default": 0
+          },
+          "exit": {
+            "type": "number",
+            "description": "Exit from axdebug pcapng mode",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "axdebug-save-config": {
+        "type": "object",
+        "properties": {
+          "config-file": {
+            "type": "string",
+            "description": "config file name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "default": {
+            "type": "number",
+            "description": "save to default config file",
+            "default": 0
+          }
+        }
+      },
+      "axdebug-tcpdump": {
+        "type": "object",
+        "properties": {
+          "current-slot": {
+            "type": "number",
+            "description": "Only for current-slot of chassis",
+            "default": 0
+          },
+          "tcp-opt": {
+            "type": "string",
+            "description": "Specify tcpdump in quotes ex: \"[ -AefNqRStuvxX ] [ expression ]\"",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        }
+      },
+      "axdebug": {
+        "type": "object",
+        "properties": {
+          "apply-config": {
+            "type": "string",
+            "description": "Apply AXDebug config file",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "count": {
+            "type": "number",
+            "description": "Maximum packets to capture. Default is 3000. (Maximum packets to capture. For umlimited, specify 0)",
+            "default": 3000,
+            "minimum": 0,
+            "maximum": 65535
+          },
+          "delete-file-list": {
+            "type": "object",
+            "properties": {
+              "delete": {
+                "type": "number",
+                "description": "Delete AXDebug capture / config file",
+                "default": 0
+              },
+              "delete-capture": {
+                "type": "string",
+                "description": "Delete a capture file (Specify target filename to change)",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "delete-config": {
+                "type": "string",
+                "description": "Delete AXDebug config file (Specify target filename to change)",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "incoming-list": {
+            "type": "object",
+            "properties": {
+              "incoming": {
+                "type": "number",
+                "description": "Incoming interface. (For all ports, don't specify port number.)",
+                "default": 0
+              },
+              "inc-port-num": {
+                "type": "string",
+                "description": "Port Numbers separated by commas(,) and hyphens(-) without spaces. ex: 4,5,10-30, or separated by spaces and double-quoted(\")",
+                "minLength": 1,
+                "maxLength": 511
+              }
+            }
+          },
+          "outgoing-list": {
+            "type": "object",
+            "properties": {
+              "outgoing": {
+                "type": "number",
+                "description": "Outgoing interface (For all ports, don't specify port number.)",
+                "default": 0
+              },
+              "out-port-num": {
+                "type": "string",
+                "description": "Port Numbers separated by commas(,) and hyphens(-) without spaces. ex: 4,5,10-30, or separated by spaces and double-quoted(\")",
+                "minLength": 1,
+                "maxLength": 511
+              }
+            }
+          },
+          "length": {
+            "type": "number",
+            "description": "Packet length to capture, enable jumbo to capture more than 1518 bytes",
+            "default": 1518,
+            "minimum": 64,
+            "maximum": 12000
+          },
+          "maxfile": {
+            "type": "number",
+            "description": "Maximum number of debug packet files. Default is 100",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "save-config": {
+            "type": "string",
+            "description": "Save AXDebug config file to target filename",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "sess-filter-dis": {
+            "type": "number",
+            "description": "Disable session based filter",
+            "default": 0
+          },
+          "timeout": {
+            "type": "number",
+            "description": "Maximum number of minutes for a capture. Default is 5 minutes. For unlimited, specify 0",
+            "default": 5,
+            "minimum": 0,
+            "maximum": 65535
+          },
+          "exit": {
+            "type": "number",
+            "description": "Exit from axdebug mode",
+            "default": 0
+          },
+          "capture": {
+            "type": "object",
+            "properties": {
+              "incoming": {
+                "type": "number",
+                "description": "Incoming interface",
+                "default": 0
+              },
+              "outgoing": {
+                "type": "number",
+                "description": "Outgoing interface",
+                "default": 0
+              },
+              "port-num": {
+                "type": "string",
+                "description": "Port Numbers separated by commas(,) and hyphens(-) without spaces (ex: 4,5,10-30), or separated by spaces and double-quoted(\")",
+                "minLength": 1,
+                "maxLength": 511
+              },
+              "brief": {
+                "type": "number",
+                "description": "Print basic packet information",
+                "default": 0
+              },
+              "detail": {
+                "type": "number",
+                "description": "Include packet payload",
+                "default": 0
+              },
+              "non-display": {
+                "type": "number",
+                "description": "Do not print to screen",
+                "default": 0
+              },
+              "save": {
+                "type": "string",
+                "description": "Save packets into file (Specify filename to save packets)",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "max-packets": {
+                "type": "number",
+                "description": "Maximum packets to capture for each data cpu.",
+                "minimum": 0,
+                "maximum": 65535
+              },
+              "current-slot": {
+                "type": "number",
+                "description": "Only for current-slot of chassis",
+                "default": 0
+              }
+            }
+          },
+          "filter-config": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "number",
+                "description": "Specify filter id",
+                "minimum": 1,
+                "maximum": 32
+              },
+              "dst": {
+                "type": "number",
+                "description": "Destination",
+                "default": 0
+              },
+              "ip": {
+                "type": "number",
+                "description": "IP",
+                "default": 0
+              },
+              "ipv4-address": {
+                "type": "string",
+                "description": "ip address"
+              },
+              "mac": {
+                "type": "number",
+                "description": "mac address",
+                "default": 0
+              },
+              "mac-addr": {
+                "type": "string",
+                "description": "mac address"
+              },
+              "port": {
+                "type": "number",
+                "description": "port number",
+                "default": 0
+              },
+              "port-num": {
+                "type": "number",
+                "description": "Port number",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "port-num-min": {
+                "type": "number",
+                "description": "min port number",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "port-num-max": {
+                "type": "number",
+                "description": "max port number",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "ipv4-netmask": {
+                "type": "string",
+                "description": "IP subnet mask"
+              },
+              "ipv6": {
+                "type": "number",
+                "description": "IPV6",
+                "default": 0
+              },
+              "ipv6-adddress": {
+                "type": "string",
+                "description": "ipv6 address"
+              },
+              "l3-proto": {
+                "type": "number",
+                "description": "Layer 3 protocol",
+                "default": 0
+              },
+              "arp": {
+                "type": "number",
+                "description": "ARP",
+                "default": 0
+              },
+              "neighbor": {
+                "type": "number",
+                "description": "IPv6 Neighbor/Router",
+                "default": 0
+              },
+              "proto": {
+                "type": "number",
+                "description": "ip protocol number",
+                "default": 0
+              },
+              "icmp": {
+                "type": "number",
+                "default": 0
+              },
+              "icmpv6": {
+                "type": "number",
+                "default": 0
+              },
+              "tcp": {
+                "type": "number",
+                "default": 0
+              },
+              "udp": {
+                "type": "number",
+                "default": 0
+              },
+              "prot-num": {
+                "type": "number",
+                "description": "protocol number",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "src": {
+                "type": "number",
+                "description": "Source",
+                "default": 0
+              },
+              "offset": {
+                "type": "number",
+                "description": "byte offset",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "length": {
+                "type": "number",
+                "description": "byte length",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "oper-range": {
+                "type": "string",
+                "description": "'gt': greater than; 'gte': greater than or equal to; 'se': smaller than or equal to; 'st': smaller than; 'eq': equal to; ",
+                "enum": [
+                  "gt",
+                  "gte",
+                  "se",
+                  "st",
+                  "eq"
+                ]
+              },
+              "hex": {
+                "type": "number",
+                "description": "Define hex value",
+                "default": 0
+              },
+              "min-hex": {
+                "type": "string",
+                "description": "min value",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "max-hex": {
+                "type": "string",
+                "description": "max value",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "comp-hex": {
+                "type": "string",
+                "description": "value to compare",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "integer": {
+                "type": "number",
+                "description": "Define decimal value",
+                "default": 0
+              },
+              "integer-min": {
+                "type": "number",
+                "description": "min value",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "integer-max": {
+                "type": "number",
+                "description": "max value",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "integer-comp": {
+                "type": "number",
+                "description": "value to compare",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "WORD": {
+                "type": "string",
+                "description": "WORD to compare",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "WORD1": {
+                "type": "string",
+                "description": "WORD min value",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "WORD2": {
+                "type": "string",
+                "description": "WORD max value",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "range": {
+                "type": "number",
+                "description": "select a range",
+                "default": 0
+              },
+              "exit": {
+                "type": "number",
+                "description": "Exit from axdebug mode",
+                "default": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

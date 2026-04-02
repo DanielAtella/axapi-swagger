@@ -1,0 +1,5753 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - VPN",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the vpn category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/vpn/crl/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object crl",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-crl-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/crl": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Certificate Revocation List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-crl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Certificate Revocation List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-crl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-crl"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Certificate Revocation List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-crl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-crl"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Certificate Revocation List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-crl"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/default/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object default",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-default-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/default": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Default",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-default"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Default",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-default"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-default"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Default",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-default"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/error/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Statistics for the object error",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-error-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/error": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Error counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Error counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-error"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Error counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/errordump/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object errordump",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-errordump-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/errordump": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Error dump",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-errordump"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Error dump",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-errordump"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-errordump"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Error dump",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-errordump"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/group-list/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object group-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-group-list-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/group-list": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-group-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-group-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-group-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-group-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-group-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-group-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-gateway/{name}/oper": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ike-gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-gateway-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-gateway/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Statistics for the object ike-gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-gateway-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-gateway/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-gateway settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-gateway"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-gateway settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-gateway"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-gateway settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-gateway"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-gateway settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-gateway"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-sa-brief/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ike-sa-brief",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-brief-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-sa-brief": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE SA brief",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-brief"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE SA brief",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-brief"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-sa-brief"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE SA brief",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-brief"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-sa-clients/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ike-sa-clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-clients-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-sa-clients": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE SA clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-clients"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE SA clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-clients"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-sa-clients"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE SA clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-clients"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-sa/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ike-sa",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-sa": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IKE SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IKE SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-sa"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IKE SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-sa"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IKE SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-sa"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-stats-by-gw/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ike-stats-by-gw",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-by-gw-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-stats-by-gw": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE Stats by gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-by-gw"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE Stats by gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-by-gw"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-stats-by-gw"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE Stats by gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-by-gw"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-stats-global/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Statistics for the object ike-stats-global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-global-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ike-stats-global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-stats-global statistic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-stats-global statistic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-stats-global"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-stats-global statistic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ike-stats-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IKE-stats-global statistic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ike-stats-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec/{name}/bind-tunnel": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Binds tunnel interface to the IPsec connection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-bind-tunnel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Binds tunnel interface to the IPsec connection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-bind-tunnel"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-bind-tunnel"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Binds tunnel interface to the IPsec connection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-bind-tunnel"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-bind-tunnel"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Binds tunnel interface to the IPsec connection",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-bind-tunnel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-group/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec tunnel Groupings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec/{name}/ipsec-gateway": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Configure IKE gateway to use for IPsec",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-ipsec-gateway"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Configure IKE gateway to use for IPsec",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-ipsec-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-ipsec-gateway"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Configure IKE gateway to use for IPsec",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-ipsec-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-ipsec-gateway"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Configure IKE gateway to use for IPsec",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-ipsec-gateway"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec/{name}/oper": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ipsec",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa-by-gw/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ipsec-sa-by-gw",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-by-gw-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa-by-gw": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs by IKE Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-by-gw"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs by IKE Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-by-gw"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-sa-by-gw"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs by IKE Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-by-gw"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-sa-by-gw"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs by IKE Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-by-gw"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa-clients/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ipsec-sa-clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-clients-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa-clients": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec SA clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-clients"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec SA clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-clients"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-sa-clients"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec SA clients",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-clients"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ipsec-sa",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa-stats/{sampling-enable}/stats": {
+      "parameters": [
+        {
+          "name": "sampling-enable",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for sampling-enable"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Statistics for the object ipsec-sa-stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-stats-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa-stats/{sampling-enable}": {
+      "parameters": [
+        {
+          "name": "sampling-enable",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for sampling-enable"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec sa statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-stats"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec sa statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-sa-stats"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec sa statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec-sa": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-sa"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec-sa"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Get IPsec SAs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-sa"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Statistics for the object ipsec",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ipsec/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ipsec"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ipsec"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/log/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-log-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/log": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-log"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-log"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-log"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-log"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ocsp/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object ocsp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ocsp-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/ocsp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Online Certificate Status Protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ocsp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Online Certificate Status Protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ocsp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ocsp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Online Certificate Status Protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ocsp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-ocsp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Online Certificate Status Protocol",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-ocsp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Operational Status for the object vpn",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/revocation/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec VPN revocation settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-revocation"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec VPN revocation settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-revocation"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-revocation"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec VPN revocation settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-revocation"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn-revocation"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "IPsec VPN revocation settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-revocation"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "Statistics for the object vpn",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vpn": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vpn"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VPN"
+        ],
+        "description": "VPN Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vpn"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "vpn-crl-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "crl-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "total-crls": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "vpn-crl": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-default-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ike-version": {
+                "type": "string"
+              },
+              "ike-mode": {
+                "type": "string"
+              },
+              "ike-dh-group": {
+                "type": "string"
+              },
+              "ike-auth-method": {
+                "type": "string"
+              },
+              "ike-encryption": {
+                "type": "string"
+              },
+              "ike-hash": {
+                "type": "string"
+              },
+              "ike-priority": {
+                "type": "number"
+              },
+              "ike-lifetime": {
+                "type": "number"
+              },
+              "ike-nat-traversal": {
+                "type": "string"
+              },
+              "ike-local-address": {
+                "type": "string"
+              },
+              "ike-remote-address": {
+                "type": "string"
+              },
+              "ike-dpd-interval": {
+                "type": "number"
+              },
+              "IPsec-mode": {
+                "type": "string"
+              },
+              "IPsec-protocol": {
+                "type": "string"
+              },
+              "IPsec-dh-group": {
+                "type": "string"
+              },
+              "IPsec-encryption": {
+                "type": "string"
+              },
+              "IPsec-hash": {
+                "type": "string"
+              },
+              "IPsec-priority": {
+                "type": "number"
+              },
+              "IPsec-lifetime": {
+                "type": "number"
+              },
+              "IPsec-lifebytes": {
+                "type": "number"
+              },
+              "IPsec-traffic-selector": {
+                "type": "string"
+              },
+              "IPsec-local-subnet": {
+                "type": "string"
+              },
+              "IPsec-local-port": {
+                "type": "number"
+              },
+              "IPsec-local-protocol": {
+                "type": "number"
+              },
+              "IPsec-remote-subnet": {
+                "type": "string"
+              },
+              "IPsec-remote-port": {
+                "type": "number"
+              },
+              "IPsec-remote-protocol": {
+                "type": "number"
+              },
+              "IPsec-anti-replay-window": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "vpn-default": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-error-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "bad_opcode": {
+                "type": "number"
+              },
+              "bad_sg_write_len": {
+                "type": "number"
+              },
+              "bad_len": {
+                "type": "number"
+              },
+              "bad_ipsec_protocol": {
+                "type": "number"
+              },
+              "bad_ipsec_auth": {
+                "type": "number"
+              },
+              "bad_ipsec_padding": {
+                "type": "number"
+              },
+              "bad_ip_version": {
+                "type": "number"
+              },
+              "bad_auth_type": {
+                "type": "number"
+              },
+              "bad_encrypt_type": {
+                "type": "number"
+              },
+              "bad_ipsec_spi": {
+                "type": "number"
+              },
+              "bad_checksum": {
+                "type": "number"
+              },
+              "bad_ipsec_context": {
+                "type": "number"
+              },
+              "bad_ipsec_context_direction": {
+                "type": "number"
+              },
+              "bad_ipsec_context_flag_mismatch": {
+                "type": "number"
+              },
+              "ipcomp_payload": {
+                "type": "number"
+              },
+              "bad_selector_match": {
+                "type": "number"
+              },
+              "bad_fragment_size": {
+                "type": "number"
+              },
+              "bad_inline_data": {
+                "type": "number"
+              },
+              "bad_frag_size_configuration": {
+                "type": "number"
+              },
+              "dummy_payload": {
+                "type": "number"
+              },
+              "bad_ip_payload_type": {
+                "type": "number"
+              },
+              "bad_min_frag_size_auth_sha384_512": {
+                "type": "number"
+              },
+              "bad_esp_next_header": {
+                "type": "number"
+              },
+              "bad_gre_header": {
+                "type": "number"
+              },
+              "bad_gre_protocol": {
+                "type": "number"
+              },
+              "ipv6_extension_headers_too_big": {
+                "type": "number"
+              },
+              "ipv6_hop_by_hop_error": {
+                "type": "number"
+              },
+              "error_ipv6_decrypt_rh_segs_left_error": {
+                "type": "number"
+              },
+              "ipv6_rh_length_error": {
+                "type": "number"
+              },
+              "ipv6_outbound_rh_copy_addr_error": {
+                "type": "number"
+              },
+              "error_IPv6_extension_header_bad": {
+                "type": "number"
+              },
+              "bad_encrypt_type_ctr_gcm": {
+                "type": "number"
+              },
+              "ah_not_supported_with_gcm_gmac_sha2": {
+                "type": "number"
+              },
+              "tfc_padding_with_prefrag_not_supported": {
+                "type": "number"
+              },
+              "bad_srtp_auth_tag": {
+                "type": "number"
+              },
+              "bad_ipcomp_configuration": {
+                "type": "number"
+              },
+              "dsiv_incorrect_param": {
+                "type": "number"
+              },
+              "bad_ipsec_unknown": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "vpn-error": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-errordump-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "IPsec-error-dump-path": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "vpn-errordump": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-group-list-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "group-name": {
+                "type": "string"
+              },
+              "group-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-group-list": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ike-gateway-oper": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "IKE-gateway name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "remote-ip-filter": {
+                "type": "string"
+              },
+              "remote-id-filter": {
+                "type": "string"
+              },
+              "brief-filter": {
+                "type": "string"
+              },
+              "SA-List": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ike-gateway-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "IKE-gateway name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "v2-init-rekey": {
+                "type": "number",
+                "description": "Initiate Rekey"
+              },
+              "v2-rsp-rekey": {
+                "type": "number",
+                "description": "Respond Rekey"
+              },
+              "v2-child-sa-rekey": {
+                "type": "number",
+                "description": "Child SA Rekey"
+              },
+              "v2-in-invalid": {
+                "type": "number",
+                "description": "Incoming Invalid"
+              },
+              "v2-in-invalid-spi": {
+                "type": "number",
+                "description": "Incoming Invalid SPI"
+              },
+              "v2-in-init-req": {
+                "type": "number",
+                "description": "Incoming Init Request"
+              },
+              "v2-in-init-rsp": {
+                "type": "number",
+                "description": "Incoming Init Response"
+              },
+              "v2-out-init-req": {
+                "type": "number",
+                "description": "Outgoing Init Request"
+              },
+              "v2-out-init-rsp": {
+                "type": "number",
+                "description": "Outgoing Init Response"
+              },
+              "v2-in-auth-req": {
+                "type": "number",
+                "description": "Incoming Auth Request"
+              },
+              "v2-in-auth-rsp": {
+                "type": "number",
+                "description": "Incoming Auth Response"
+              },
+              "v2-out-auth-req": {
+                "type": "number",
+                "description": "Outgoing Auth Request"
+              },
+              "v2-out-auth-rsp": {
+                "type": "number",
+                "description": "Outgoing Auth Response"
+              },
+              "v2-in-create-child-req": {
+                "type": "number",
+                "description": "Incoming Create Child Request"
+              },
+              "v2-in-create-child-rsp": {
+                "type": "number",
+                "description": "Incoming Create Child Response"
+              },
+              "v2-out-create-child-req": {
+                "type": "number",
+                "description": "Outgoing Create Child Request"
+              },
+              "v2-out-create-child-rsp": {
+                "type": "number",
+                "description": "Outgoing Create Child Response"
+              },
+              "v2-in-info-req": {
+                "type": "number",
+                "description": "Incoming Info Request"
+              },
+              "v2-in-info-rsp": {
+                "type": "number",
+                "description": "Incoming Info Response"
+              },
+              "v2-out-info-req": {
+                "type": "number",
+                "description": "Outgoing Info Request"
+              },
+              "v2-out-info-rsp": {
+                "type": "number",
+                "description": "Outgoing Info Response"
+              },
+              "v1-in-id-prot-req": {
+                "type": "number",
+                "description": "Incoming ID Protection Request"
+              },
+              "v1-in-id-prot-rsp": {
+                "type": "number",
+                "description": "Incoming ID Protection Response"
+              },
+              "v1-out-id-prot-req": {
+                "type": "number",
+                "description": "Outgoing ID Protection Request"
+              },
+              "v1-out-id-prot-rsp": {
+                "type": "number",
+                "description": "Outgoing ID Protection Response"
+              },
+              "v1-in-auth-only-req": {
+                "type": "number",
+                "description": "Incoming Auth Only Request"
+              },
+              "v1-in-auth-only-rsp": {
+                "type": "number",
+                "description": "Incoming Auth Only Response"
+              },
+              "v1-out-auth-only-req": {
+                "type": "number",
+                "description": "Outgoing Auth Only Request"
+              },
+              "v1-out-auth-only-rsp": {
+                "type": "number",
+                "description": "Outgoing Auth Only Response"
+              },
+              "v1-in-aggressive-req": {
+                "type": "number",
+                "description": "Incoming Aggressive Request"
+              },
+              "v1-in-aggressive-rsp": {
+                "type": "number",
+                "description": "Incoming Aggressive Response"
+              },
+              "v1-out-aggressive-req": {
+                "type": "number",
+                "description": "Outgoing Aggressive Request"
+              },
+              "v1-out-aggressive-rsp": {
+                "type": "number",
+                "description": "Outgoing Aggressive Response"
+              },
+              "v1-in-info-v1-req": {
+                "type": "number",
+                "description": "Incoming Info Request"
+              },
+              "v1-in-info-v1-rsp": {
+                "type": "number",
+                "description": "Incoming Info Response"
+              },
+              "v1-out-info-v1-req": {
+                "type": "number",
+                "description": "Outgoing Info Request"
+              },
+              "v1-out-info-v1-rsp": {
+                "type": "number",
+                "description": "Outgoing Info Response"
+              },
+              "v1-in-transaction-req": {
+                "type": "number",
+                "description": "Incoming Transaction Request"
+              },
+              "v1-in-transaction-rsp": {
+                "type": "number",
+                "description": "Incoming Transaction Response"
+              },
+              "v1-out-transaction-req": {
+                "type": "number",
+                "description": "Outgoing Transaction Request"
+              },
+              "v1-out-transaction-rsp": {
+                "type": "number",
+                "description": "Outgoing Transaction Response"
+              },
+              "v1-in-quick-mode-req": {
+                "type": "number",
+                "description": "Incoming Quick Mode Request"
+              },
+              "v1-in-quick-mode-rsp": {
+                "type": "number",
+                "description": "Incoming Quick Mode Response"
+              },
+              "v1-out-quick-mode-req": {
+                "type": "number",
+                "description": "Outgoing Quick Mode Request"
+              },
+              "v1-out-quick-mode-rsp": {
+                "type": "number",
+                "description": "Outgoing Quick Mode Response"
+              },
+              "v1-in-new-group-mode-req": {
+                "type": "number",
+                "description": "Incoming New Group Mode Request"
+              },
+              "v1-in-new-group-mode-rsp": {
+                "type": "number",
+                "description": "Incoming New Group Mode Response"
+              },
+              "v1-out-new-group-mode-req": {
+                "type": "number",
+                "description": "Outgoing New Group Mode Request"
+              },
+              "v1-out-new-group-mode-rsp": {
+                "type": "number",
+                "description": "Outgoing New Group Mode Response"
+              },
+              "v1-child-sa-invalid-spi": {
+                "type": "number",
+                "description": "Invalid SPI for Child SAs"
+              },
+              "v2-child-sa-invalid-spi": {
+                "type": "number",
+                "description": "Invalid SPI for Child SAs"
+              },
+              "ike-current-version": {
+                "type": "number",
+                "description": "IKE version"
+              }
+            }
+          }
+        }
+      },
+      "vpn-ike-gateway": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "IKE-gateway name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "ike-version": {
+            "type": "string",
+            "description": "'v1': IKEv1 key exchange; 'v2': IKEv2 key exchange; ",
+            "default": "v2",
+            "enum": [
+              "v1",
+              "v2"
+            ]
+          },
+          "mode": {
+            "type": "string",
+            "description": "'main': Negotiate Main mode (Default); 'aggressive': Negotiate Aggressive mode; ",
+            "default": "main",
+            "enum": [
+              "main",
+              "aggressive"
+            ]
+          },
+          "auth-method": {
+            "type": "string",
+            "description": "'preshare-key': Authenticate the remote gateway using a pre-shared key (Default); 'rsa-signature': Authenticate the remote gateway using an RSA certificate; 'ecdsa-signature': Authenticate the remote gateway using an ECDSA certificate; 'eap-radius': Authenticate the remote gateway using an EAP Radius server; 'eap-tls': Authenticate the remote gateway using EAP TLS; ",
+            "default": "preshare-key",
+            "enum": [
+              "preshare-key",
+              "rsa-signature",
+              "ecdsa-signature",
+              "eap-radius",
+              "eap-tls"
+            ]
+          },
+          "preshare-key-value": {
+            "type": "string",
+            "description": "pre-shared key",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "preshare-key-encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED pre-shared key string)"
+          },
+          "interface-management": {
+            "type": "number",
+            "description": "only handle traffic on management interface, share partition only",
+            "default": 0
+          },
+          "key": {
+            "type": "string",
+            "description": "Private Key",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "key-passphrase": {
+            "type": "string",
+            "description": "Private Key Pass Phrase",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "key-passphrase-encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED key string)"
+          },
+          "vrid": {
+            "type": "object",
+            "properties": {
+              "default": {
+                "type": "number",
+                "description": "Default VRRP-A vrid",
+                "default": 0
+              },
+              "vrid-num": {
+                "type": "number",
+                "description": "Specify ha VRRP-A vrid",
+                "minimum": 0,
+                "maximum": 31
+              }
+            }
+          },
+          "local-cert": {
+            "type": "object",
+            "properties": {
+              "local-cert-name": {
+                "type": "string",
+                "description": "Certificate File Name",
+                "minLength": 1,
+                "maxLength": 255
+              }
+            }
+          },
+          "remote-ca-cert": {
+            "type": "object",
+            "properties": {
+              "remote-cert-name": {
+                "type": "string",
+                "description": "Remote CA certificate DN (C=, ST=, L=, O=, CN=) without emailAddress",
+                "minLength": 1,
+                "maxLength": 127
+              }
+            }
+          },
+          "local-id": {
+            "type": "string",
+            "description": "Local Gateway Identity",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "remote-id": {
+            "type": "string",
+            "description": "Remote Gateway Identity",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "enc-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "dh-group": {
+            "type": "string",
+            "description": "'1': Diffie-Hellman group 1 - 768-bit(Default); '2': Diffie-Hellman group 2 - 1024-bit; '5': Diffie-Hellman group 5 - 1536-bit; '14': Diffie-Hellman group 14 - 2048-bit; '15': Diffie-Hellman group 15 - 3072-bit; '16': Diffie-Hellman group 16 - 4096-bit; '18': Diffie-Hellman group 18 - 8192-bit; '19': Diffie-Hellman group 19 - 256-bit Elliptic Curve; '20': Diffie-Hellman group 20 - 384-bit Elliptic Curve; ",
+            "default": "1",
+            "enum": [
+              "1",
+              "2",
+              "5",
+              "14",
+              "15",
+              "16",
+              "18",
+              "19",
+              "20"
+            ]
+          },
+          "local-address": {
+            "type": "object",
+            "properties": {
+              "local-ip": {
+                "type": "string",
+                "description": "Ipv4 address"
+              },
+              "local-ipv6": {
+                "type": "string",
+                "description": "Ipv6 address"
+              }
+            }
+          },
+          "remote-address": {
+            "type": "object",
+            "properties": {
+              "remote-ip": {
+                "type": "string",
+                "description": "Ipv4 address"
+              },
+              "dns": {
+                "type": "string",
+                "description": "Remote IP based on Domain name",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "remote-ipv6": {
+                "type": "string",
+                "description": "Ipv6 address"
+              }
+            }
+          },
+          "lifetime": {
+            "type": "number",
+            "description": "IKE SA age in seconds",
+            "default": 86400,
+            "minimum": 300,
+            "maximum": 86400
+          },
+          "fragment-size": {
+            "type": "number",
+            "description": "Enable IKE message fragment and set fragment size",
+            "minimum": 576,
+            "maximum": 1280
+          },
+          "nat-traversal": {
+            "type": "number",
+            "default": 0
+          },
+          "dpd": {
+            "type": "object",
+            "properties": {
+              "interval": {
+                "type": "number",
+                "description": "Interval time in seconds",
+                "minimum": 1,
+                "maximum": 3600
+              },
+              "retry": {
+                "type": "number",
+                "description": "Retry times",
+                "minimum": 1,
+                "maximum": 10
+              }
+            }
+          },
+          "disable-rekey": {
+            "type": "number",
+            "description": "Disable initiating rekey",
+            "default": 0
+          },
+          "configuration-payload": {
+            "type": "string",
+            "description": "'dhcp': Enable DHCP configuration-payload; 'radius': Enable RADIUS configuration-payload; ",
+            "enum": [
+              "dhcp",
+              "radius"
+            ]
+          },
+          "dhcp-server": {
+            "type": "object",
+            "properties": {
+              "pri": {
+                "type": "object",
+                "properties": {
+                  "dhcp-pri-ipv4": {
+                    "type": "string",
+                    "description": "Primary DHCP Server IP Address"
+                  }
+                }
+              },
+              "sec": {
+                "type": "object",
+                "properties": {
+                  "dhcp-sec-ipv4": {
+                    "type": "string",
+                    "description": "Secondary DHCP Server IP Address"
+                  }
+                }
+              }
+            }
+          },
+          "radius-server": {
+            "type": "object",
+            "properties": {
+              "radius-pri": {
+                "type": "string",
+                "description": "Primary RADIUS Authentication Server",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "radius-sec": {
+                "type": "string",
+                "description": "Secondary RADIUS Authentication Server",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "vpn-ike-sa-brief-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "local-ip": {
+                "type": "string"
+              },
+              "ike-sa-brief-remote-gw": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ike-sa-brief": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ike-sa-clients-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "ike-sa-clients-local-ip": {
+                "type": "string"
+              },
+              "ike-sa-clients-remote-gw": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ike-sa-clients": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ike-sa-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ike-sa-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ike-sa": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ike-stats-by-gw-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "gateway-name-filter": {
+                "type": "string"
+              },
+              "remote-ip-filter": {
+                "type": "string"
+              },
+              "remote-id-filter": {
+                "type": "string"
+              },
+              "display-all-filter": {
+                "type": "number"
+              },
+              "ike-stats-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ike-stats-by-gw": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ike-stats-global-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "v2-init-rekey": {
+                "type": "number",
+                "description": "Initiate Rekey"
+              },
+              "v2-rsp-rekey": {
+                "type": "number",
+                "description": "Respond Rekey"
+              },
+              "v2-child-sa-rekey": {
+                "type": "number",
+                "description": "Child SA Rekey"
+              },
+              "v2-in-invalid": {
+                "type": "number",
+                "description": "Incoming Invalid"
+              },
+              "v2-in-invalid-spi": {
+                "type": "number",
+                "description": "Incoming Invalid SPI"
+              },
+              "v2-in-init-req": {
+                "type": "number",
+                "description": "Incoming Init Request"
+              },
+              "v2-in-init-rsp": {
+                "type": "number",
+                "description": "Incoming Init Response"
+              },
+              "v2-out-init-req": {
+                "type": "number",
+                "description": "Outgoing Init Request"
+              },
+              "v2-out-init-rsp": {
+                "type": "number",
+                "description": "Outgoing Init Response"
+              },
+              "v2-in-auth-req": {
+                "type": "number",
+                "description": "Incoming Auth Request"
+              },
+              "v2-in-auth-rsp": {
+                "type": "number",
+                "description": "Incoming Auth Response"
+              },
+              "v2-out-auth-req": {
+                "type": "number",
+                "description": "Outgoing Auth Request"
+              },
+              "v2-out-auth-rsp": {
+                "type": "number",
+                "description": "Outgoing Auth Response"
+              },
+              "v2-in-create-child-req": {
+                "type": "number",
+                "description": "Incoming Create Child Request"
+              },
+              "v2-in-create-child-rsp": {
+                "type": "number",
+                "description": "Incoming Create Child Response"
+              },
+              "v2-out-create-child-req": {
+                "type": "number",
+                "description": "Outgoing Create Child Request"
+              },
+              "v2-out-create-child-rsp": {
+                "type": "number",
+                "description": "Outgoing Create Child Response"
+              },
+              "v2-in-info-req": {
+                "type": "number",
+                "description": "Incoming Info Request"
+              },
+              "v2-in-info-rsp": {
+                "type": "number",
+                "description": "Incoming Info Response"
+              },
+              "v2-out-info-req": {
+                "type": "number",
+                "description": "Outgoing Info Request"
+              },
+              "v2-out-info-rsp": {
+                "type": "number",
+                "description": "Outgoing Info Response"
+              },
+              "v1-in-id-prot-req": {
+                "type": "number",
+                "description": "Incoming ID Protection Request"
+              },
+              "v1-in-id-prot-rsp": {
+                "type": "number",
+                "description": "Incoming ID Protection Response"
+              },
+              "v1-out-id-prot-req": {
+                "type": "number",
+                "description": "Outgoing ID Protection Request"
+              },
+              "v1-out-id-prot-rsp": {
+                "type": "number",
+                "description": "Outgoing ID Protection Response"
+              },
+              "v1-in-auth-only-req": {
+                "type": "number",
+                "description": "Incoming Auth Only Request"
+              },
+              "v1-in-auth-only-rsp": {
+                "type": "number",
+                "description": "Incoming Auth Only Response"
+              },
+              "v1-out-auth-only-req": {
+                "type": "number",
+                "description": "Outgoing Auth Only Request"
+              },
+              "v1-out-auth-only-rsp": {
+                "type": "number",
+                "description": "Outgoing Auth Only Response"
+              },
+              "v1-in-aggressive-req": {
+                "type": "number",
+                "description": "Incoming Aggressive Request"
+              },
+              "v1-in-aggressive-rsp": {
+                "type": "number",
+                "description": "Incoming Aggressive Response"
+              },
+              "v1-out-aggressive-req": {
+                "type": "number",
+                "description": "Outgoing Aggressive Request"
+              },
+              "v1-out-aggressive-rsp": {
+                "type": "number",
+                "description": "Outgoing Aggressive Response"
+              },
+              "v1-in-info-v1-req": {
+                "type": "number",
+                "description": "Incoming Info Request"
+              },
+              "v1-in-info-v1-rsp": {
+                "type": "number",
+                "description": "Incoming Info Response"
+              },
+              "v1-out-info-v1-req": {
+                "type": "number",
+                "description": "Outgoing Info Request"
+              },
+              "v1-out-info-v1-rsp": {
+                "type": "number",
+                "description": "Outgoing Info Response"
+              },
+              "v1-in-transaction-req": {
+                "type": "number",
+                "description": "Incoming Transaction Request"
+              },
+              "v1-in-transaction-rsp": {
+                "type": "number",
+                "description": "Incoming Transaction Response"
+              },
+              "v1-out-transaction-req": {
+                "type": "number",
+                "description": "Outgoing Transaction Request"
+              },
+              "v1-out-transaction-rsp": {
+                "type": "number",
+                "description": "Outgoing Transaction Response"
+              },
+              "v1-in-quick-mode-req": {
+                "type": "number",
+                "description": "Incoming Quick Mode Request"
+              },
+              "v1-in-quick-mode-rsp": {
+                "type": "number",
+                "description": "Incoming Quick Mode Response"
+              },
+              "v1-out-quick-mode-req": {
+                "type": "number",
+                "description": "Outgoing Quick Mode Request"
+              },
+              "v1-out-quick-mode-rsp": {
+                "type": "number",
+                "description": "Outgoing Quick Mode Response"
+              },
+              "v1-in-new-group-mode-req": {
+                "type": "number",
+                "description": "Incoming New Group Mode Request"
+              },
+              "v1-in-new-group-mode-rsp": {
+                "type": "number",
+                "description": "Incoming New Group Mode Response"
+              },
+              "v1-out-new-group-mode-req": {
+                "type": "number",
+                "description": "Outgoing New Group Mode Request"
+              },
+              "v1-out-new-group-mode-rsp": {
+                "type": "number",
+                "description": "Outgoing New Group Mode Response"
+              }
+            }
+          }
+        }
+      },
+      "vpn-ike-stats-global": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "vpn-ipsec-bind-tunnel": {
+        "type": "object",
+        "properties": {
+          "tunnel": {
+            "type": "number",
+            "description": "Tunnel interface index",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "next-hop": {
+            "type": "string",
+            "description": "IPsec Next Hop IP Address"
+          },
+          "next-hop-v6": {
+            "type": "string",
+            "description": "IPsec Next Hop IPv6 Address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ipsec-group": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Group name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "ipsecgroup-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "vpn-ipsec-ipsec-gateway": {
+        "type": "object",
+        "properties": {
+          "ike-gateway": {
+            "type": "string",
+            "description": "Gateway to use for IPsec SA",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ipsec-oper": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "IPsec name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "remote-ts-filter": {
+                "type": "string"
+              },
+              "remote-ts-v6-filter": {
+                "type": "string"
+              },
+              "in-spi-filter": {
+                "type": "string"
+              },
+              "out-spi-filter": {
+                "type": "string"
+              },
+              "SA-List": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ipsec-sa-by-gw-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ike-gateway-name": {
+                "type": "string"
+              },
+              "local-ip": {
+                "type": "string"
+              },
+              "peer-ip": {
+                "type": "string"
+              },
+              "ipsec-sa-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ipsec-sa-by-gw": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ipsec-sa-clients-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ipsec-clients": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ipsec-sa-clients": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ipsec-sa-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ipsec-sa-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-ipsec-sa-stats-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "packets-encrypted": {
+                "type": "number",
+                "description": "Encrypted Packets"
+              },
+              "packets-decrypted": {
+                "type": "number",
+                "description": "Decrypted Packets"
+              },
+              "anti-replay-num": {
+                "type": "number",
+                "description": "Anti-Replay Failure"
+              },
+              "rekey-num": {
+                "type": "number",
+                "description": "Rekey Times"
+              },
+              "packets-err-inactive": {
+                "type": "number",
+                "description": "Inactive Error"
+              },
+              "packets-err-encryption": {
+                "type": "number",
+                "description": "Encryption Error"
+              },
+              "packets-err-pad-check": {
+                "type": "number",
+                "description": "Pad Check Error"
+              },
+              "packets-err-pkt-sanity": {
+                "type": "number",
+                "description": "Packets Sanity Error"
+              },
+              "packets-err-icv-check": {
+                "type": "number",
+                "description": "ICV Check Error"
+              },
+              "packets-err-lifetime-lifebytes": {
+                "type": "number",
+                "description": "Lifetime Lifebytes Error"
+              },
+              "bytes-encrypted": {
+                "type": "number",
+                "description": "Encrypted Bytes"
+              },
+              "bytes-decrypted": {
+                "type": "number",
+                "description": "Decrypted Bytes"
+              },
+              "prefrag-success": {
+                "type": "number",
+                "description": "Pre-frag Success"
+              },
+              "prefrag-error": {
+                "type": "number",
+                "description": "Pre-frag Error"
+              },
+              "cavium-bytes-encrypted": {
+                "type": "number",
+                "description": "CAVIUM Encrypted Bytes"
+              },
+              "cavium-bytes-decrypted": {
+                "type": "number",
+                "description": "CAVIUM Decrypted Bytes"
+              },
+              "cavium-packets-encrypted": {
+                "type": "number",
+                "description": "CAVIUM Encrypted Packets"
+              },
+              "cavium-packets-decrypted": {
+                "type": "number",
+                "description": "CAVIUM Decrypted Packets"
+              },
+              "qat-bytes-encrypted": {
+                "type": "number",
+                "description": "QAT Encrypted Bytes"
+              },
+              "qat-bytes-decrypted": {
+                "type": "number",
+                "description": "QAT Decrypted Bytes"
+              },
+              "qat-packets-encrypted": {
+                "type": "number",
+                "description": "QAT Encrypted Packets"
+              },
+              "qat-packets-decrypted": {
+                "type": "number",
+                "description": "QAT Decrypted Packets"
+              },
+              "tunnel-intf-down": {
+                "type": "number",
+                "description": "Packet dropped: Tunnel Interface Down"
+              },
+              "pkt-fail-prep-to-send": {
+                "type": "number",
+                "description": "Packet dropped: Failed in prepare to send"
+              },
+              "no-next-hop": {
+                "type": "number",
+                "description": "Packet dropped: No next hop"
+              },
+              "invalid-tunnel-id": {
+                "type": "number",
+                "description": "Packet dropped: Invalid tunnel ID"
+              },
+              "no-tunnel-found": {
+                "type": "number",
+                "description": "Packet dropped: No tunnel found"
+              },
+              "pkt-fail-to-send": {
+                "type": "number",
+                "description": "Packet dropped: Failed to send"
+              },
+              "frag-after-encap-frag-packets": {
+                "type": "number",
+                "description": "Frag-after-encap Fragment Generated"
+              },
+              "frag-received": {
+                "type": "number",
+                "description": "Fragment Received"
+              },
+              "sequence-num": {
+                "type": "number",
+                "description": "Sequence Number"
+              },
+              "sequence-num-rollover": {
+                "type": "number",
+                "description": "Sequence Number Rollover"
+              },
+              "packets-err-nh-check": {
+                "type": "number",
+                "description": "Next Header Check Error"
+              }
+            }
+          }
+        }
+      },
+      "vpn-ipsec-sa-stats": {
+        "type": "object",
+        "properties": {
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "vpn-ipsec-sa": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ipsec-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "IPsec name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "packets-encrypted": {
+                "type": "number",
+                "description": "Encrypted Packets"
+              },
+              "packets-decrypted": {
+                "type": "number",
+                "description": "Decrypted Packets"
+              },
+              "anti-replay-num": {
+                "type": "number",
+                "description": "Anti-Replay Failure"
+              },
+              "rekey-num": {
+                "type": "number",
+                "description": "Rekey Times"
+              },
+              "packets-err-inactive": {
+                "type": "number",
+                "description": "Inactive Error"
+              },
+              "packets-err-encryption": {
+                "type": "number",
+                "description": "Encryption Error"
+              },
+              "packets-err-pad-check": {
+                "type": "number",
+                "description": "Pad Check Error"
+              },
+              "packets-err-pkt-sanity": {
+                "type": "number",
+                "description": "Packets Sanity Error"
+              },
+              "packets-err-icv-check": {
+                "type": "number",
+                "description": "ICV Check Error"
+              },
+              "packets-err-lifetime-lifebytes": {
+                "type": "number",
+                "description": "Lifetime Lifebytes Error"
+              },
+              "bytes-encrypted": {
+                "type": "number",
+                "description": "Encrypted Bytes"
+              },
+              "bytes-decrypted": {
+                "type": "number",
+                "description": "Decrypted Bytes"
+              },
+              "prefrag-success": {
+                "type": "number",
+                "description": "Pre-frag Success"
+              },
+              "prefrag-error": {
+                "type": "number",
+                "description": "Pre-frag Error"
+              },
+              "cavium-bytes-encrypted": {
+                "type": "number",
+                "description": "CAVIUM Encrypted Bytes"
+              },
+              "cavium-bytes-decrypted": {
+                "type": "number",
+                "description": "CAVIUM Decrypted Bytes"
+              },
+              "cavium-packets-encrypted": {
+                "type": "number",
+                "description": "CAVIUM Encrypted Packets"
+              },
+              "cavium-packets-decrypted": {
+                "type": "number",
+                "description": "CAVIUM Decrypted Packets"
+              },
+              "qat-bytes-encrypted": {
+                "type": "number",
+                "description": "QAT Encrypted Bytes"
+              },
+              "qat-bytes-decrypted": {
+                "type": "number",
+                "description": "QAT Decrypted Bytes"
+              },
+              "qat-packets-encrypted": {
+                "type": "number",
+                "description": "QAT Encrypted Packets"
+              },
+              "qat-packets-decrypted": {
+                "type": "number",
+                "description": "QAT Decrypted Packets"
+              },
+              "tunnel-intf-down": {
+                "type": "number",
+                "description": "Packet dropped: Tunnel Interface Down"
+              },
+              "pkt-fail-prep-to-send": {
+                "type": "number",
+                "description": "Packet dropped: Failed in prepare to send"
+              },
+              "no-next-hop": {
+                "type": "number",
+                "description": "Packet dropped: No next hop"
+              },
+              "invalid-tunnel-id": {
+                "type": "number",
+                "description": "Packet dropped: Invalid tunnel ID"
+              },
+              "no-tunnel-found": {
+                "type": "number",
+                "description": "Packet dropped: No tunnel found"
+              },
+              "pkt-fail-to-send": {
+                "type": "number",
+                "description": "Packet dropped: Failed to send"
+              },
+              "frag-after-encap-frag-packets": {
+                "type": "number",
+                "description": "Frag-after-encap Fragment Generated"
+              },
+              "frag-received": {
+                "type": "number",
+                "description": "Fragment Received"
+              },
+              "sequence-num": {
+                "type": "number",
+                "description": "Sequence Number"
+              },
+              "sequence-num-rollover": {
+                "type": "number",
+                "description": "Sequence Number Rollover"
+              },
+              "packets-err-nh-check": {
+                "type": "number",
+                "description": "Next Header Check Error"
+              }
+            }
+          }
+        }
+      },
+      "vpn-ipsec": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "IPsec name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "mode": {
+            "type": "string",
+            "description": "'tunnel': Encapsulating the packet in IPsec tunnel mode (Default); ",
+            "default": "tunnel",
+            "enum": [
+              "tunnel"
+            ]
+          },
+          "dscp": {
+            "type": "string",
+            "description": "'default': Default dscp (000000); 'af11': AF11 (001010); 'af12': AF12 (001100); 'af13': AF13 (001110); 'af21': AF21 (010010); 'af22': AF22 (010100); 'af23': AF23 (010110); 'af31': AF31 (011010); 'af32': AF32 (011100); 'af33': AF33 (011110); 'af41': AF41 (100010); 'af42': AF42 (100100); 'af43': AF43 (100110); 'cs1': CS1 (001000); 'cs2': CS2 (010000); 'cs3': CS3 (011000); 'cs4': CS4 (100000); 'cs5': CS5 (101000); 'cs6': CS6 (110000); 'cs7': CS7 (111000); 'ef': EF (101110); '0': 000000; '1': 000001; '2': 000010; '3': 000011; '4': 000100; '5': 000101; '6': 000110; '7': 000111; '8': 001000; '9': 001001; '10': 001010; '11': 001011; '12': 001100; '13': 001101; '14': 001110; '15': 001111; '16': 010000; '17': 010001; '18': 010010; '19': 010011; '20': 010100; '21': 010101; '22': 010110; '23': 010111; '24': 011000; '25': 011001; '26': 011010; '27': 011011; '28': 011100; '29': 011101; '30': 011110; '31': 011111; '32': 100000; '33': 100001; '34': 100010; '35': 100011; '36': 100100; '37': 100101; '38': 100110; '39': 100111; '40': 101000; '41': 101001; '42': 101010; '43': 101011; '44': 101100; '45': 101101; '46': 101110; '47': 101111; '48': 110000; '49': 110001; '50': 110010; '51': 110011; '52': 110100; '53': 110101; '54': 110110; '55': 110111; '56': 111000; '57': 111001; '58': 111010; '59': 111011; '60': 111100; '61': 111101; '62': 111110; '63': 111111; ",
+            "enum": [
+              "default",
+              "af11",
+              "af12",
+              "af13",
+              "af21",
+              "af22",
+              "af23",
+              "af31",
+              "af32",
+              "af33",
+              "af41",
+              "af42",
+              "af43",
+              "cs1",
+              "cs2",
+              "cs3",
+              "cs4",
+              "cs5",
+              "cs6",
+              "cs7",
+              "ef",
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "41",
+              "42",
+              "43",
+              "44",
+              "45",
+              "46",
+              "47",
+              "48",
+              "49",
+              "50",
+              "51",
+              "52",
+              "53",
+              "54",
+              "55",
+              "56",
+              "57",
+              "58",
+              "59",
+              "60",
+              "61",
+              "62",
+              "63"
+            ]
+          },
+          "proto": {
+            "type": "string",
+            "description": "'esp': Encapsulating security protocol (Default); ",
+            "default": "esp",
+            "enum": [
+              "esp"
+            ]
+          },
+          "dh-group": {
+            "type": "string",
+            "description": "'0': Diffie-Hellman group 0 (Default); '1': Diffie-Hellman group 1 - 768-bits; '2': Diffie-Hellman group 2 - 1024-bits; '5': Diffie-Hellman group 5 - 1536-bits; '14': Diffie-Hellman group 14 - 2048-bits; '15': Diffie-Hellman group 15 - 3072-bits; '16': Diffie-Hellman group 16 - 4096-bits; '18': Diffie-Hellman group 18 - 8192-bits; '19': Diffie-Hellman group 19 - 256-bit Elliptic Curve; '20': Diffie-Hellman group 20 - 384-bit Elliptic Curve; ",
+            "default": "0",
+            "enum": [
+              "0",
+              "1",
+              "2",
+              "5",
+              "14",
+              "15",
+              "16",
+              "18",
+              "19",
+              "20"
+            ]
+          },
+          "enc-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lifetime": {
+            "type": "number",
+            "description": "IPsec SA age in seconds",
+            "default": 28800,
+            "minimum": 300,
+            "maximum": 28800
+          },
+          "lifebytes": {
+            "type": "number",
+            "description": "IPsec SA age in megabytes (0 indicates unlimited bytes)",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 8000000
+          },
+          "anti-replay-window": {
+            "type": "string",
+            "description": "'0': Disable Anti-Replay Window Check; '32': Window size of 32; '64': Window size of 64; '128': Window size of 128; '256': Window size of 256; '512': Window size of 512; '1024': Window size of 1024; '2048': Window size of 2048; '3072': Window size of 3072; '4096': Window size of 4096; '8192': Window size of 8192; ",
+            "default": "0",
+            "enum": [
+              "0",
+              "32",
+              "64",
+              "128",
+              "256",
+              "512",
+              "1024",
+              "2048",
+              "3072",
+              "4096",
+              "8192"
+            ]
+          },
+          "up": {
+            "type": "number",
+            "description": "Initiates SA negotiation to bring the IPsec connection up",
+            "default": 0
+          },
+          "sequence-number-disable": {
+            "type": "number",
+            "description": "Do not use incremental sequence number in the ESP header",
+            "default": 0
+          },
+          "traffic-selector": {
+            "type": "object",
+            "properties": {
+              "ipv4": {
+                "type": "object",
+                "properties": {
+                  "local": {
+                    "type": "string",
+                    "description": "Local Traffic Selector"
+                  },
+                  "local_netmask": {
+                    "type": "string",
+                    "description": "IPv4 Address Network Mask"
+                  },
+                  "local_port": {
+                    "type": "number",
+                    "description": "Port Number",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "remote-ipv4-assigned": {
+                    "type": "number",
+                    "description": "Remote IP address assigned",
+                    "default": 0
+                  },
+                  "remote-ip": {
+                    "type": "string",
+                    "description": "IPv4 Address"
+                  },
+                  "remote_netmask": {
+                    "type": "string",
+                    "description": "IPv4 Address Network Mask"
+                  },
+                  "remote_port": {
+                    "type": "number",
+                    "description": "Port Number",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "protocol": {
+                    "type": "number",
+                    "description": "IP Protocol Number (0-255)",
+                    "minimum": 0,
+                    "maximum": 255
+                  }
+                }
+              },
+              "ipv6": {
+                "type": "object",
+                "properties": {
+                  "localv6": {
+                    "type": "string",
+                    "description": "Local Traffic Selector"
+                  },
+                  "local_portv6": {
+                    "type": "number",
+                    "description": "Port Number",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "remote-ipv6-assigned": {
+                    "type": "number",
+                    "description": "Remote IPv6 address assigned",
+                    "default": 0
+                  },
+                  "remote-ipv6": {
+                    "type": "string",
+                    "description": "IPv6 Address"
+                  },
+                  "remote_portv6": {
+                    "type": "number",
+                    "description": "Port Number",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "protocolv6": {
+                    "type": "number",
+                    "description": "IP Protocol Number (0-255)",
+                    "minimum": 0,
+                    "maximum": 255
+                  }
+                }
+              }
+            }
+          },
+          "enforce-traffic-selector": {
+            "type": "number",
+            "description": "Enforce Traffic Selector",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "bind-tunnel": {
+            "type": "object",
+            "properties": {
+              "tunnel": {
+                "type": "number",
+                "description": "Tunnel interface index",
+                "minimum": 1,
+                "maximum": 128
+              },
+              "next-hop": {
+                "type": "string",
+                "description": "IPsec Next Hop IP Address"
+              },
+              "next-hop-v6": {
+                "type": "string",
+                "description": "IPsec Next Hop IPv6 Address"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ipsec-gateway": {
+            "type": "object",
+            "properties": {
+              "ike-gateway": {
+                "type": "string",
+                "description": "Gateway to use for IPsec SA",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "vpn-log-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "vpn-log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "vpn-log-offset": {
+                "type": "number"
+              },
+              "vpn-log-over": {
+                "type": "number"
+              },
+              "follow": {
+                "type": "number"
+              },
+              "from-start": {
+                "type": "number"
+              },
+              "num-lines": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "vpn-log": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-ocsp-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ocsp-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "total-ocsps": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "vpn-ocsp": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vpn-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "IKE-Gateway-total": {
+                "type": "number"
+              },
+              "IPsec-total": {
+                "type": "number"
+              },
+              "IKE-SA-total": {
+                "type": "number"
+              },
+              "IPsec-SA-total": {
+                "type": "number"
+              },
+              "IPsec-mode": {
+                "type": "string"
+              },
+              "Num-hardware-devices": {
+                "type": "number"
+              },
+              "Crypto-cores-total": {
+                "type": "number"
+              },
+              "Crypto-cores-assigned-to-IPsec": {
+                "type": "number"
+              },
+              "Crypto-mem": {
+                "type": "number"
+              },
+              "all-partition-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "all-partitions": {
+                "type": "number"
+              },
+              "shared": {
+                "type": "number"
+              },
+              "specific-partition": {
+                "type": "string"
+              }
+            }
+          },
+          "errordump": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "IPsec-error-dump-path": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "ike-version": {
+                    "type": "string"
+                  },
+                  "ike-mode": {
+                    "type": "string"
+                  },
+                  "ike-dh-group": {
+                    "type": "string"
+                  },
+                  "ike-auth-method": {
+                    "type": "string"
+                  },
+                  "ike-encryption": {
+                    "type": "string"
+                  },
+                  "ike-hash": {
+                    "type": "string"
+                  },
+                  "ike-priority": {
+                    "type": "number"
+                  },
+                  "ike-lifetime": {
+                    "type": "number"
+                  },
+                  "ike-nat-traversal": {
+                    "type": "string"
+                  },
+                  "ike-local-address": {
+                    "type": "string"
+                  },
+                  "ike-remote-address": {
+                    "type": "string"
+                  },
+                  "ike-dpd-interval": {
+                    "type": "number"
+                  },
+                  "IPsec-mode": {
+                    "type": "string"
+                  },
+                  "IPsec-protocol": {
+                    "type": "string"
+                  },
+                  "IPsec-dh-group": {
+                    "type": "string"
+                  },
+                  "IPsec-encryption": {
+                    "type": "string"
+                  },
+                  "IPsec-hash": {
+                    "type": "string"
+                  },
+                  "IPsec-priority": {
+                    "type": "number"
+                  },
+                  "IPsec-lifetime": {
+                    "type": "number"
+                  },
+                  "IPsec-lifebytes": {
+                    "type": "number"
+                  },
+                  "IPsec-traffic-selector": {
+                    "type": "string"
+                  },
+                  "IPsec-local-subnet": {
+                    "type": "string"
+                  },
+                  "IPsec-local-port": {
+                    "type": "number"
+                  },
+                  "IPsec-local-protocol": {
+                    "type": "number"
+                  },
+                  "IPsec-remote-subnet": {
+                    "type": "string"
+                  },
+                  "IPsec-remote-port": {
+                    "type": "number"
+                  },
+                  "IPsec-remote-protocol": {
+                    "type": "number"
+                  },
+                  "IPsec-anti-replay-window": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "log": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "vpn-log-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "vpn-log-offset": {
+                    "type": "number"
+                  },
+                  "vpn-log-over": {
+                    "type": "number"
+                  },
+                  "follow": {
+                    "type": "number"
+                  },
+                  "from-start": {
+                    "type": "number"
+                  },
+                  "num-lines": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "ike-gateway-list": {
+            "type": "array",
+            "items": {
+              "type": "ike-gateway"
+            }
+          },
+          "ipsec-list": {
+            "type": "array",
+            "items": {
+              "type": "ipsec"
+            }
+          },
+          "group-list": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "group-name": {
+                    "type": "string"
+                  },
+                  "group-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "crl": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "crl-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "total-crls": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "ocsp": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "ocsp-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "total-ocsps": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "ipsec-sa-by-gw": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "ike-gateway-name": {
+                    "type": "string"
+                  },
+                  "local-ip": {
+                    "type": "string"
+                  },
+                  "peer-ip": {
+                    "type": "string"
+                  },
+                  "ipsec-sa-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ike-sa": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "ike-sa-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ipsec-sa": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "ipsec-sa-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ike-sa-brief": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "local-ip": {
+                    "type": "string"
+                  },
+                  "ike-sa-brief-remote-gw": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ike-sa-clients": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "ike-sa-clients-local-ip": {
+                    "type": "string"
+                  },
+                  "ike-sa-clients-remote-gw": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ipsec-sa-clients": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "ipsec-clients": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ike-stats-by-gw": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "gateway-name-filter": {
+                    "type": "string"
+                  },
+                  "remote-ip-filter": {
+                    "type": "string"
+                  },
+                  "remote-id-filter": {
+                    "type": "string"
+                  },
+                  "display-all-filter": {
+                    "type": "number"
+                  },
+                  "ike-stats-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "vpn-revocation": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Revocation name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "ca": {
+            "type": "string",
+            "description": "Certificate Authority file name",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "crl": {
+            "type": "object",
+            "properties": {
+              "crl-pri": {
+                "type": "string",
+                "description": "Primary CRL URL (http://www.example.com/ocsp) (only .der filetypes)",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "crl-sec": {
+                "type": "string",
+                "description": "Secondary CRL URL (http://www.example.com/ocsp) (only .der filetypes)",
+                "minLength": 1,
+                "maxLength": 255
+              }
+            }
+          },
+          "ocsp": {
+            "type": "object",
+            "properties": {
+              "ocsp-pri": {
+                "type": "string",
+                "description": "Primary OCSP Authentication Server",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "ocsp-sec": {
+                "type": "string",
+                "description": "Secondary OCSP Authentication Server",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "vpn-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "passthrough": {
+                "type": "number"
+              },
+              "ha-standby-drop": {
+                "type": "number"
+              }
+            }
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "stats": {
+                "type": "object",
+                "properties": {
+                  "bad_opcode": {
+                    "type": "number"
+                  },
+                  "bad_sg_write_len": {
+                    "type": "number"
+                  },
+                  "bad_len": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_protocol": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_auth": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_padding": {
+                    "type": "number"
+                  },
+                  "bad_ip_version": {
+                    "type": "number"
+                  },
+                  "bad_auth_type": {
+                    "type": "number"
+                  },
+                  "bad_encrypt_type": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_spi": {
+                    "type": "number"
+                  },
+                  "bad_checksum": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_context": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_context_direction": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_context_flag_mismatch": {
+                    "type": "number"
+                  },
+                  "ipcomp_payload": {
+                    "type": "number"
+                  },
+                  "bad_selector_match": {
+                    "type": "number"
+                  },
+                  "bad_fragment_size": {
+                    "type": "number"
+                  },
+                  "bad_inline_data": {
+                    "type": "number"
+                  },
+                  "bad_frag_size_configuration": {
+                    "type": "number"
+                  },
+                  "dummy_payload": {
+                    "type": "number"
+                  },
+                  "bad_ip_payload_type": {
+                    "type": "number"
+                  },
+                  "bad_min_frag_size_auth_sha384_512": {
+                    "type": "number"
+                  },
+                  "bad_esp_next_header": {
+                    "type": "number"
+                  },
+                  "bad_gre_header": {
+                    "type": "number"
+                  },
+                  "bad_gre_protocol": {
+                    "type": "number"
+                  },
+                  "ipv6_extension_headers_too_big": {
+                    "type": "number"
+                  },
+                  "ipv6_hop_by_hop_error": {
+                    "type": "number"
+                  },
+                  "error_ipv6_decrypt_rh_segs_left_error": {
+                    "type": "number"
+                  },
+                  "ipv6_rh_length_error": {
+                    "type": "number"
+                  },
+                  "ipv6_outbound_rh_copy_addr_error": {
+                    "type": "number"
+                  },
+                  "error_IPv6_extension_header_bad": {
+                    "type": "number"
+                  },
+                  "bad_encrypt_type_ctr_gcm": {
+                    "type": "number"
+                  },
+                  "ah_not_supported_with_gcm_gmac_sha2": {
+                    "type": "number"
+                  },
+                  "tfc_padding_with_prefrag_not_supported": {
+                    "type": "number"
+                  },
+                  "bad_srtp_auth_tag": {
+                    "type": "number"
+                  },
+                  "bad_ipcomp_configuration": {
+                    "type": "number"
+                  },
+                  "dsiv_incorrect_param": {
+                    "type": "number"
+                  },
+                  "bad_ipsec_unknown": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "ike-stats-global": {
+            "type": "object",
+            "properties": {
+              "stats": {
+                "type": "object",
+                "properties": {
+                  "v2-init-rekey": {
+                    "type": "number",
+                    "description": "Initiate Rekey"
+                  },
+                  "v2-rsp-rekey": {
+                    "type": "number",
+                    "description": "Respond Rekey"
+                  },
+                  "v2-child-sa-rekey": {
+                    "type": "number",
+                    "description": "Child SA Rekey"
+                  },
+                  "v2-in-invalid": {
+                    "type": "number",
+                    "description": "Incoming Invalid"
+                  },
+                  "v2-in-invalid-spi": {
+                    "type": "number",
+                    "description": "Incoming Invalid SPI"
+                  },
+                  "v2-in-init-req": {
+                    "type": "number",
+                    "description": "Incoming Init Request"
+                  },
+                  "v2-in-init-rsp": {
+                    "type": "number",
+                    "description": "Incoming Init Response"
+                  },
+                  "v2-out-init-req": {
+                    "type": "number",
+                    "description": "Outgoing Init Request"
+                  },
+                  "v2-out-init-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Init Response"
+                  },
+                  "v2-in-auth-req": {
+                    "type": "number",
+                    "description": "Incoming Auth Request"
+                  },
+                  "v2-in-auth-rsp": {
+                    "type": "number",
+                    "description": "Incoming Auth Response"
+                  },
+                  "v2-out-auth-req": {
+                    "type": "number",
+                    "description": "Outgoing Auth Request"
+                  },
+                  "v2-out-auth-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Auth Response"
+                  },
+                  "v2-in-create-child-req": {
+                    "type": "number",
+                    "description": "Incoming Create Child Request"
+                  },
+                  "v2-in-create-child-rsp": {
+                    "type": "number",
+                    "description": "Incoming Create Child Response"
+                  },
+                  "v2-out-create-child-req": {
+                    "type": "number",
+                    "description": "Outgoing Create Child Request"
+                  },
+                  "v2-out-create-child-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Create Child Response"
+                  },
+                  "v2-in-info-req": {
+                    "type": "number",
+                    "description": "Incoming Info Request"
+                  },
+                  "v2-in-info-rsp": {
+                    "type": "number",
+                    "description": "Incoming Info Response"
+                  },
+                  "v2-out-info-req": {
+                    "type": "number",
+                    "description": "Outgoing Info Request"
+                  },
+                  "v2-out-info-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Info Response"
+                  },
+                  "v1-in-id-prot-req": {
+                    "type": "number",
+                    "description": "Incoming ID Protection Request"
+                  },
+                  "v1-in-id-prot-rsp": {
+                    "type": "number",
+                    "description": "Incoming ID Protection Response"
+                  },
+                  "v1-out-id-prot-req": {
+                    "type": "number",
+                    "description": "Outgoing ID Protection Request"
+                  },
+                  "v1-out-id-prot-rsp": {
+                    "type": "number",
+                    "description": "Outgoing ID Protection Response"
+                  },
+                  "v1-in-auth-only-req": {
+                    "type": "number",
+                    "description": "Incoming Auth Only Request"
+                  },
+                  "v1-in-auth-only-rsp": {
+                    "type": "number",
+                    "description": "Incoming Auth Only Response"
+                  },
+                  "v1-out-auth-only-req": {
+                    "type": "number",
+                    "description": "Outgoing Auth Only Request"
+                  },
+                  "v1-out-auth-only-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Auth Only Response"
+                  },
+                  "v1-in-aggressive-req": {
+                    "type": "number",
+                    "description": "Incoming Aggressive Request"
+                  },
+                  "v1-in-aggressive-rsp": {
+                    "type": "number",
+                    "description": "Incoming Aggressive Response"
+                  },
+                  "v1-out-aggressive-req": {
+                    "type": "number",
+                    "description": "Outgoing Aggressive Request"
+                  },
+                  "v1-out-aggressive-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Aggressive Response"
+                  },
+                  "v1-in-info-v1-req": {
+                    "type": "number",
+                    "description": "Incoming Info Request"
+                  },
+                  "v1-in-info-v1-rsp": {
+                    "type": "number",
+                    "description": "Incoming Info Response"
+                  },
+                  "v1-out-info-v1-req": {
+                    "type": "number",
+                    "description": "Outgoing Info Request"
+                  },
+                  "v1-out-info-v1-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Info Response"
+                  },
+                  "v1-in-transaction-req": {
+                    "type": "number",
+                    "description": "Incoming Transaction Request"
+                  },
+                  "v1-in-transaction-rsp": {
+                    "type": "number",
+                    "description": "Incoming Transaction Response"
+                  },
+                  "v1-out-transaction-req": {
+                    "type": "number",
+                    "description": "Outgoing Transaction Request"
+                  },
+                  "v1-out-transaction-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Transaction Response"
+                  },
+                  "v1-in-quick-mode-req": {
+                    "type": "number",
+                    "description": "Incoming Quick Mode Request"
+                  },
+                  "v1-in-quick-mode-rsp": {
+                    "type": "number",
+                    "description": "Incoming Quick Mode Response"
+                  },
+                  "v1-out-quick-mode-req": {
+                    "type": "number",
+                    "description": "Outgoing Quick Mode Request"
+                  },
+                  "v1-out-quick-mode-rsp": {
+                    "type": "number",
+                    "description": "Outgoing Quick Mode Response"
+                  },
+                  "v1-in-new-group-mode-req": {
+                    "type": "number",
+                    "description": "Incoming New Group Mode Request"
+                  },
+                  "v1-in-new-group-mode-rsp": {
+                    "type": "number",
+                    "description": "Incoming New Group Mode Response"
+                  },
+                  "v1-out-new-group-mode-req": {
+                    "type": "number",
+                    "description": "Outgoing New Group Mode Request"
+                  },
+                  "v1-out-new-group-mode-rsp": {
+                    "type": "number",
+                    "description": "Outgoing New Group Mode Response"
+                  }
+                }
+              }
+            }
+          },
+          "ike-gateway-list": {
+            "type": "array",
+            "items": {
+              "type": "ike-gateway"
+            }
+          },
+          "ipsec-list": {
+            "type": "array",
+            "items": {
+              "type": "ipsec"
+            }
+          },
+          "ipsec-sa-stats-list": {
+            "type": "array",
+            "items": {
+              "type": "ipsec-sa-stats"
+            }
+          }
+        }
+      },
+      "vpn": {
+        "type": "object",
+        "properties": {
+          "asymmetric-flow-support": {
+            "type": "number",
+            "description": "Support asymmetric flows pass through IPsec tunnel",
+            "default": 0
+          },
+          "stateful-mode": {
+            "type": "number",
+            "description": "VPN module will work in stateful mode and create sessions",
+            "default": 0
+          },
+          "fragment-after-encap": {
+            "type": "number",
+            "description": "Fragment after adding IPsec headers",
+            "default": 0
+          },
+          "nat-traversal-flow-affinity": {
+            "type": "number",
+            "description": "Choose IPsec UDP source port based on port of inner flow (only for A10 to A10)",
+            "default": 0
+          },
+          "tcp-mss-adjust-disable": {
+            "type": "number",
+            "description": "Disable TCP MSS adjustment in SYN packet",
+            "default": 0
+          },
+          "jumbo-fragment": {
+            "type": "number",
+            "description": "Support IKE jumbo fragment packet",
+            "default": 0
+          },
+          "ike-sa-timeout": {
+            "type": "number",
+            "description": "Timeout IKE-SA in connecting state in seconds (default 600s)",
+            "default": 600,
+            "minimum": 300,
+            "maximum": 86400
+          },
+          "ike-acc-enable": {
+            "type": "number",
+            "description": "Enable IKE Acceleration by Cavium Nitrox card",
+            "default": 0
+          },
+          "ike-logging-enable": {
+            "type": "number",
+            "description": "Enable IKE negotiation logging",
+            "default": 0
+          },
+          "ipsec-error-dump": {
+            "type": "number",
+            "description": "Support record the error ipsec cavium information in dump file",
+            "default": 0
+          },
+          "ipsec-mgmt-default-policy-drop": {
+            "type": "number",
+            "description": "Drop MGMT traffic that is not match ipsec tunnel, share partition only",
+            "default": 0
+          },
+          "extended-matching": {
+            "type": "number",
+            "description": "Enable session extended matching for packet comes from IPsec tunnel",
+            "default": 0
+          },
+          "enable-vpn-metrics": {
+            "type": "number",
+            "description": "Enable exporting vpn statstics to Harmony",
+            "default": 0
+          },
+          "ipsec-cipher-check": {
+            "type": "number",
+            "description": "Enable cipher check, IPsec SA cipher must weaker than IKE gateway cipher, and DES/3DES/MD5/null will not work.",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "errordump": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "default": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "log": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ike-stats-global": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "sampling-enable": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "ike-gateway-list": {
+            "type": "array",
+            "items": {
+              "type": "ike-gateway"
+            }
+          },
+          "ipsec-list": {
+            "type": "array",
+            "items": {
+              "type": "ipsec"
+            }
+          },
+          "ipsec-group-list": {
+            "type": "array",
+            "items": {
+              "type": "ipsec-group"
+            }
+          },
+          "group-list": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ipsec-sa-stats-list": {
+            "type": "array",
+            "items": {
+              "type": "ipsec-sa-stats"
+            }
+          },
+          "revocation-list": {
+            "type": "array",
+            "items": {
+              "type": "revocation"
+            }
+          },
+          "crl": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ocsp": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ipsec-sa-by-gw": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ike-sa": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ipsec-sa": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ike-sa-brief": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ike-sa-clients": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ipsec-sa-clients": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ike-stats-by-gw": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

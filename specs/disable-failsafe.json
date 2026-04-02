@@ -1,0 +1,162 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - DISABLE-FAILSAFE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the disable-failsafe category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/disable-failsafe": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-FAILSAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-failsafe"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DISABLE-FAILSAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-failsafe"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-failsafe"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DISABLE-FAILSAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-failsafe"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-failsafe"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DISABLE-FAILSAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-failsafe"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "disable-failsafe": {
+        "type": "object",
+        "properties": {
+          "io-buffer": {
+            "type": "number",
+            "description": "Disable I/O Buffer",
+            "default": 0
+          },
+          "session-memory": {
+            "type": "number",
+            "description": "Disable Session Memory",
+            "default": 0
+          },
+          "system-memory": {
+            "type": "number",
+            "description": "Disable System Memory",
+            "default": 0
+          },
+          "all": {
+            "type": "number",
+            "description": "Disable all",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

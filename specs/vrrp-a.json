@@ -1,0 +1,5434 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - VRRP-A",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the vrrp-a category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/vrrp-a/common/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Statistics for the object common",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-common-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/common": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-common"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-common"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-common"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-common"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-common"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-common"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/detail/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object detail",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-detail-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/detail": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrrp-a peer detail status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-detail"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrrp-a peer detail status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-detail"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-detail"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrrp-a peer detail status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-detail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/fail-over-policy-template/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a VRRP-A failover policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-fail-over-policy-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a VRRP-A failover policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-fail-over-policy-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-fail-over-policy-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a VRRP-A failover policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-fail-over-policy-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-fail-over-policy-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a VRRP-A failover policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-fail-over-policy-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/force-self-standby-persistent/{vrid}": {
+      "parameters": [
+        {
+          "name": "vrid",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Configured  Command to force the unit or a group to HA standby state",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-force-self-standby-persistent"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Configured  Command to force the unit or a group to HA standby state",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-force-self-standby-persistent"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-force-self-standby-persistent"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Configured  Command to force the unit or a group to HA standby state",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-force-self-standby-persistent"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-force-self-standby-persistent"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Configured  Command to force the unit or a group to HA standby state",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-force-self-standby-persistent"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/force-self-standby": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Operational Command to force the unit or a group to HA standby state",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-force-self-standby"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Operational Command to force the unit or a group to HA standby state",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-force-self-standby"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-force-self-standby"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/hostid/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object hostid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-hostid-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/hostid": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "vrrp-a device serial number or softax UUID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-hostid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "vrrp-a device serial number or softax UUID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-hostid"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-hostid"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "vrrp-a device serial number or softax UUID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-hostid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/interface/ethernet/{ethernet-val}": {
+      "parameters": [
+        {
+          "name": "ethernet-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ethernet-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-ethernet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-interface-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-interface-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-ethernet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/interface/trunk/{trunk-val}": {
+      "parameters": [
+        {
+          "name": "trunk-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for trunk-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-trunk"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-interface-trunk"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-interface-trunk"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface-trunk"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/interface": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-interface"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/l2-inline-peer-ip/{ip-address}": {
+      "parameters": [
+        {
+          "name": "ip-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Peer IP for Layer 2 inline mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l2-inline-peer-ip"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Peer IP for Layer 2 inline mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l2-inline-peer-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-l2-inline-peer-ip"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Peer IP for Layer 2 inline mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l2-inline-peer-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-l2-inline-peer-ip"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Peer IP for Layer 2 inline mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l2-inline-peer-ip"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/l3-inline-mode-flag": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l3-inline-mode-flag"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l3-inline-mode-flag"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-l3-inline-mode-flag"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l3-inline-mode-flag"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-l3-inline-mode-flag"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-l3-inline-mode-flag"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/mac/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-mac-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/mac": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "corresponding virtual mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-mac"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "corresponding virtual mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-mac"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-mac"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "corresponding virtual mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-mac"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/ospf-inline/{vlan}": {
+      "parameters": [
+        {
+          "name": "vlan",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-ospf-inline"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-ospf-inline"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-ospf-inline"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-ospf-inline"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-ospf-inline"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable OSPF under Layer 3 Inline Hot Standby Mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-ospf-inline"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/partition-vrid-all-status/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object partition-vrid-all-status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-all-status-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/partition-vrid-all-status": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrid all status for all partitions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-all-status"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrid all status for all partitions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-all-status"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-partition-vrid-all-status"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrid all status for all partitions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-all-status"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/partition-vrid-status/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object partition-vrid-status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-status-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/partition-vrid-status": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrrp-a status for all partitions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-status"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrrp-a status for all partitions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-status"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-partition-vrid-status"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "display vrrp-a status for all partitions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-partition-vrid-status"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/peer-group": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A peer group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-peer-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A peer group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-peer-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-peer-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A peer group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-peer-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-peer-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A peer group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-peer-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/preferred-session-sync-port/ethernet/{pre-eth}": {
+      "parameters": [
+        {
+          "name": "pre-eth",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pre-eth"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-ethernet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-ethernet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/preferred-session-sync-port/trunk/{pre-trunk}": {
+      "parameters": [
+        {
+          "name": "pre-trunk",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pre-trunk"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-trunk"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-trunk"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-trunk"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "preferred-session-sync-port trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port-trunk"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/preferred-session-sync-port": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A preferred-session-sync-port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-preferred-session-sync-port"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/restart-port-list/vrid/{vrid-val}": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-restart-port-list-vrid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-restart-port-list-vrid"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-restart-port-list-vrid"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-restart-port-list-vrid"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-restart-port-list-vrid"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-restart-port-list-vrid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/restart-port-list": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Ports to be restarted on standby system after transition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-restart-port-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Ports to be restarted on standby system after transition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-restart-port-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-restart-port-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Ports to be restarted on standby system after transition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-restart-port-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-restart-port-list"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/session-sync": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable/Disable vrrp-a session sync",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-session-sync"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable/Disable vrrp-a session sync",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-session-sync"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-session-sync"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable/Disable vrrp-a session sync",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-session-sync"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-session-sync"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Enable/Disable vrrp-a session sync",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-session-sync"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/setid-monitor/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object setid-monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-setid-monitor-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/setid-monitor": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "monitor set id that has been used",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-setid-monitor"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "monitor set id that has been used",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-setid-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-setid-monitor"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "monitor set id that has been used",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-setid-monitor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/state-cpu/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object state-cpu",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state-cpu-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/state-cpu": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state-cpu"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state-cpu"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-state-cpu"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state-cpu"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/state/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Statistics for the object state",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/state": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-state"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-state"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-state"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/te-mac/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object te-mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-te-mac-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/te-mac": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "corresponding virtual te-mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-te-mac"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "corresponding virtual te-mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-te-mac"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-te-mac"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "corresponding virtual te-mac",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-te-mac"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}/blade-parameters/tracking-options/gateway/ipv4-gateway/{ip-address}": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        },
+        {
+          "name": "ip-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv4 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv4-gateway"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv4 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv4-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv4-gateway"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv4 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv4-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv4-gateway"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv4 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv4-gateway"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}/blade-parameters/tracking-options/gateway/ipv6-gateway/{ipv6-address}": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        },
+        {
+          "name": "ipv6-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv6 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv6-gateway"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv6 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv6-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv6-gateway"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv6 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv6-gateway"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv6-gateway"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "IPv6 Gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv6-gateway"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}/blade-parameters/tracking-options/gateway": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A tracking gateway",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options-gateway"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}/blade-parameters/tracking-options": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A tracking",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A tracking",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "VRRP-A tracking",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters-tracking-options"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}/blade-parameters": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "blade parameters of VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "blade parameters of VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "blade parameters of VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "blade parameters of VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-blade-parameters"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid-lead/{vrid-lead-str}": {
+      "parameters": [
+        {
+          "name": "vrid-lead-str",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-lead-str"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a vrid-lead",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-lead"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a vrid-lead",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-lead"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-lead"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a vrid-lead",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-lead"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid-lead"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Define a vrid-lead",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-lead"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}/oper": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Operational Status for the object vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}/stats": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Statistics for the object vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a/vrid/{vrid-val}": {
+      "parameters": [
+        {
+          "name": "vrid-val",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vrid-val"
+        }
+      ],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vrrp-a-vrid"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "Specify VRRP-A vrid",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a-vrid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vrrp-a": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VRRP-A"
+        ],
+        "description": "HA VRRP-A Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vrrp-a"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "vrrp-a-common-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "vrrp_common_dummy": {
+                "type": "number",
+                "description": "dummy counter"
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-common": {
+        "type": "object",
+        "properties": {
+          "device-id": {
+            "type": "number",
+            "description": "Unique ID for each VRRP-A box (Device-id number)"
+          },
+          "set-id": {
+            "type": "number",
+            "description": "Set-ID for HA configuration (Set id from 1 to 15)",
+            "minimum": 1,
+            "maximum": 15
+          },
+          "disable-default-vrid": {
+            "type": "number",
+            "description": "Disable default vrid",
+            "default": 0
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': enable vrrp-a; 'disable': disable vrrp-a; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "hello-interval": {
+            "type": "number",
+            "description": "VRRP-A Hello Interval (1-255, in unit of 100millisec, default is 2)",
+            "default": 2,
+            "minimum": 1,
+            "maximum": 255
+          },
+          "preemption-delay": {
+            "type": "number",
+            "description": "Delay before changing state from Active to Standby (1-255, in unit of 100millisec, default is 60)",
+            "default": 60,
+            "minimum": 1,
+            "maximum": 255
+          },
+          "dead-timer": {
+            "type": "number",
+            "description": "VRRP-A dead timer in terms of how many hello messages missed, default is 5 (2-255, default is 5)",
+            "default": 5,
+            "minimum": 2,
+            "maximum": 255
+          },
+          "arp-retry": {
+            "type": "number",
+            "description": "Number of additional gratuitous ARPs sent out after HA failover (1-255, default is 4)",
+            "default": 4,
+            "minimum": 1,
+            "maximum": 255
+          },
+          "track-event-delay": {
+            "type": "number",
+            "description": "Delay before changing state after up/down event (Units of 100 milliseconds (default 30))",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 100
+          },
+          "get-ready-time": {
+            "type": "number",
+            "description": "set get ready time after ax starting up (60-1200, in unit of 100millisec, default is 60)",
+            "default": 60,
+            "minimum": 60,
+            "maximum": 1200
+          },
+          "inline-mode-cfg": {
+            "type": "object",
+            "properties": {
+              "inline-mode": {
+                "type": "number",
+                "description": "Enable Layer 2 Inline Hot Standby Mode",
+                "default": 0
+              },
+              "preferred-port": {
+                "type": "number",
+                "description": "Preferred ethernet Port",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "preferred-trunk": {
+                "type": "number",
+                "description": "Preferred trunk Port",
+                "minimum": 1,
+                "maximum": 4096
+              }
+            }
+          },
+          "restart-time": {
+            "type": "number",
+            "description": "Time between restarting ports on standby system after transition",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 100
+          },
+          "hostid-append-to-vrid": {
+            "type": "object",
+            "properties": {
+              "hostid-append-to-vrid-default": {
+                "type": "number",
+                "description": "hostid append to vrid default",
+                "default": 0
+              },
+              "hostid-append-to-vrid-value": {
+                "type": "number",
+                "description": "hostid append to vrid num",
+                "minimum": 1,
+                "maximum": 31
+              }
+            }
+          },
+          "forward-l4-packet-on-standby": {
+            "type": "number",
+            "description": "Enables Layer 2/3 forwarding of Layer 4 traffic on the Standby ACOS device",
+            "default": 0
+          },
+          "enable-sync-session-seq-number": {
+            "type": "number",
+            "description": "enable monitoring sending and receiving sync packets with sequence number",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-detail-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "dup_id_rcv": {
+                "type": "number"
+              },
+              "bad_group_rcv": {
+                "type": "number"
+              },
+              "set_id_mismatch": {
+                "type": "number"
+              },
+              "vrrp_version_mismatch": {
+                "type": "number"
+              },
+              "time_inaccurate_count": {
+                "type": "number"
+              },
+              "ip_pools_exceeded": {
+                "type": "number"
+              },
+              "ip6_pools_exceeded": {
+                "type": "number"
+              },
+              "err_port": {
+                "type": "number"
+              },
+              "err_devid": {
+                "type": "number"
+              },
+              "err_parid": {
+                "type": "number"
+              },
+              "lock_try": {
+                "type": "number"
+              },
+              "l2_no_route": {
+                "type": "number"
+              },
+              "peer_info_list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "local_info_list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-detail": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-fail-over-policy-template": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "VRRP-A fail over policy template name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "interface": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "gateway": {
+            "type": "object",
+            "properties": {
+              "gw-ipv4-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "gw-ipv6-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "bgp": {
+            "type": "object",
+            "properties": {
+              "bgp-ipv4-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "bgp-ipv6-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "trunk-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "route": {
+            "type": "object",
+            "properties": {
+              "ip-destination-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv6-destination-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "vlan-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "vrrp-a-force-self-standby-persistent": {
+        "type": "object",
+        "properties": {
+          "vrid": {
+            "type": "number",
+            "description": "Specify one VRRP-A vrid to force into standby state",
+            "minimum": 0,
+            "maximum": 31
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-force-self-standby": {
+        "type": "object",
+        "properties": {
+          "vrid": {
+            "type": "number",
+            "description": "Specify one VRRP-A vrid to force into standby state",
+            "minimum": 0,
+            "maximum": 31
+          },
+          "all-partitions": {
+            "type": "number",
+            "description": "force all partitions in standby state",
+            "default": 0
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': enable vrrp-a force-self-standby; 'disable': disable vrrp-a force-self-standby; ",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          }
+        }
+      },
+      "vrrp-a-hostid-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "set_ID": {
+                "type": "number"
+              },
+              "hostid-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-hostid": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-interface-ethernet": {
+        "type": "object",
+        "properties": {
+          "ethernet-val": {
+            "type": "number",
+            "description": "Ethernet Interface",
+            "minimum": 8,
+            "maximum": 128
+          },
+          "router-interface": {
+            "type": "number",
+            "description": "interface to upstream router",
+            "default": 0
+          },
+          "server-interface": {
+            "type": "number",
+            "description": "interface to real server",
+            "default": 0
+          },
+          "both": {
+            "type": "number",
+            "description": "both a router and server interface",
+            "default": 0
+          },
+          "vlan-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "no-heartbeat": {
+            "type": "number",
+            "description": "do not send out heartbeat packet from this interface",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "vrrp-a-interface-trunk": {
+        "type": "object",
+        "properties": {
+          "trunk-val": {
+            "type": "number",
+            "description": "Ethernet Interface",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "router-interface": {
+            "type": "number",
+            "description": "interface to upstream router",
+            "default": 0
+          },
+          "server-interface": {
+            "type": "number",
+            "description": "interface to real server",
+            "default": 0
+          },
+          "both": {
+            "type": "number",
+            "description": "both a router and server interface",
+            "default": 0
+          },
+          "vlan-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "no-heartbeat": {
+            "type": "number",
+            "description": "do not send out heartbeat packet from this interface",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "vrrp-a-interface": {
+        "type": "object",
+        "properties": {
+          "ethernet-list": {
+            "type": "array",
+            "items": {
+              "type": "ethernet"
+            }
+          },
+          "trunk-list": {
+            "type": "array",
+            "items": {
+              "type": "trunk"
+            }
+          }
+        }
+      },
+      "vrrp-a-l2-inline-peer-ip": {
+        "type": "object",
+        "properties": {
+          "ip-address": {
+            "type": "string",
+            "description": "IP address (IPv4 address)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-l3-inline-mode-flag": {
+        "type": "object",
+        "properties": {
+          "l3-inline-mode": {
+            "type": "number",
+            "description": "Enable Layer 3 Inline Hot Standby Mode",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-mac-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "vrid-mac-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-mac": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-ospf-inline": {
+        "type": "object",
+        "properties": {
+          "vlan": {
+            "type": "number",
+            "description": "Do not filter OSPF packet on specific vlan (Vlan number)",
+            "minimum": 1,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-partition-vrid-all-status-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "all-partition-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-partition-vrid-all-status": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-partition-vrid-status-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "all-partition-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-partition-vrid-status": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-peer-group": {
+        "type": "object",
+        "properties": {
+          "peer": {
+            "type": "object",
+            "properties": {
+              "ip-peer-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv6-peer-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-preferred-session-sync-port-ethernet": {
+        "type": "object",
+        "properties": {
+          "pre-eth": {
+            "type": "number",
+            "description": "Ethernet interface number",
+            "minimum": 8,
+            "maximum": 15
+          },
+          "pre-vlan": {
+            "type": "number",
+            "description": "Interface VLAN (VLAN ID)",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-preferred-session-sync-port-trunk": {
+        "type": "object",
+        "properties": {
+          "pre-trunk": {
+            "type": "number",
+            "description": "Trunk Interface number",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "pre-vlan": {
+            "type": "number",
+            "description": "Interface VLAN (VLAN ID)",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-preferred-session-sync-port": {
+        "type": "object",
+        "properties": {
+          "ethernet-list": {
+            "type": "array",
+            "items": {
+              "type": "ethernet"
+            }
+          },
+          "trunk-list": {
+            "type": "array",
+            "items": {
+              "type": "trunk"
+            }
+          }
+        }
+      },
+      "vrrp-a-restart-port-list-vrid": {
+        "type": "object",
+        "properties": {
+          "vrid-val": {
+            "type": "number",
+            "description": "Specify ha VRRP-A vrid",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 31
+          },
+          "ethernet-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "vrrp-a-restart-port-list": {
+        "type": "object",
+        "properties": {
+          "ethernet-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "vrid-list": {
+            "type": "array",
+            "items": {
+              "type": "vrid"
+            }
+          }
+        }
+      },
+      "vrrp-a-session-sync": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "'enable': enable vrrp-a session sync (default); 'disable': disable vrrp-a session sync; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-setid-monitor-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "set-id": {
+                "type": "number"
+              },
+              "setid-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-setid-monitor": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-state-cpu-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "cpu-usage": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-state-cpu": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-state-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "sync_pkt_tx_counter": {
+                "type": "number",
+                "description": "Conn Sync Sent counter"
+              },
+              "sync_pkt_rcv_counter": {
+                "type": "number",
+                "description": "Conn Sync Received counter"
+              },
+              "sync_rx_create_counter": {
+                "type": "number",
+                "description": "Conn Sync Create Session Received counter"
+              },
+              "sync_rx_del_counter": {
+                "type": "number",
+                "description": "Conn Sync Del Session Received counter"
+              },
+              "sync_rx_update_age_counter": {
+                "type": "number",
+                "description": "Conn Sync Update Age Received counter"
+              },
+              "sync_tx_create_counter": {
+                "type": "number",
+                "description": "Conn Sync Create Session Sent counter"
+              },
+              "sync_tx_del_counter": {
+                "type": "number",
+                "description": "Conn Sync Del Session Sent counter"
+              },
+              "sync_tx_update_age_counter": {
+                "type": "number",
+                "description": "Conn Sync Update Age Sent counter"
+              },
+              "sync_rx_persist_create_counter": {
+                "type": "number",
+                "description": "Conn Sync Create Persist Session Pkts Received counter"
+              },
+              "sync_rx_persist_del_counter": {
+                "type": "number",
+                "description": "Conn Sync Delete Persist Session Pkts Received counter"
+              },
+              "sync_rx_persist_update_age_counter": {
+                "type": "number",
+                "description": "Conn Sync Update Persist Age Pkts Received counter"
+              },
+              "sync_tx_persist_create_counter": {
+                "type": "number",
+                "description": "Conn Sync Create Persist Session Pkts Sent counter"
+              },
+              "sync_tx_persist_del_counter": {
+                "type": "number",
+                "description": "Conn Sync Delete Persist Session Pkts Sent counter"
+              },
+              "sync_tx_persist_update_age_counter": {
+                "type": "number",
+                "description": "Conn Sync Update Persist Age Pkts Sent counter"
+              },
+              "query_pkt_tx_counter": {
+                "type": "number",
+                "description": "Conn Query sent counter"
+              },
+              "query_pkt_rcv_counter": {
+                "type": "number",
+                "description": "Conn Query Received counter"
+              },
+              "sync_tx_smp_radius_table_counter": {
+                "type": "number",
+                "description": "Conn Sync Update LSN RADIUS Sent counter"
+              },
+              "sync_rx_smp_radius_table_counter": {
+                "type": "number",
+                "description": "Conn Sync Update LSN RADIUS Received counter"
+              },
+              "query_tx_max_packed": {
+                "type": "number",
+                "description": "Max Query Msg Per Packet"
+              },
+              "query_tx_min_packed": {
+                "type": "number",
+                "description": "Min Query Msg Per Packet"
+              },
+              "query_pkt_invalid_idx_counter": {
+                "type": "number",
+                "description": "Conn Query Invalid Interface"
+              },
+              "query_tx_get_buff_failed": {
+                "type": "number",
+                "description": "Conn Query Get Buff Failure"
+              },
+              "query_rx_zero_info_counter": {
+                "type": "number",
+                "description": "Conn Query Packet Empty"
+              },
+              "query_rx_full_info_counter": {
+                "type": "number",
+                "description": "Conn Query Packet Full"
+              },
+              "query_rx_unk_counter": {
+                "type": "number",
+                "description": "Conn Query Unknown Type"
+              },
+              "sync_pkt_invalid_idx_counter": {
+                "type": "number",
+                "description": "Conn Sync Invalid Interface"
+              },
+              "sync_tx_get_buff_failed": {
+                "type": "number",
+                "description": "Conn Sync Get Buff Failure"
+              },
+              "sync_tx_total_info_counter": {
+                "type": "number",
+                "description": "Conn Sync Total Info Pkts Sent counter"
+              },
+              "sync_tx_create_ext_bit_counter": {
+                "type": "number",
+                "description": "Conn Sync Create with Ext Sent counter"
+              },
+              "sync_tx_update_seqnos_counter": {
+                "type": "number",
+                "description": "Conn Sync Update Seq Num Sent counter"
+              },
+              "sync_tx_min_packed": {
+                "type": "number",
+                "description": "Max Sync Msg Per Packet"
+              },
+              "sync_tx_max_packed": {
+                "type": "number",
+                "description": "Min Sync Msg Per Packet"
+              },
+              "sync_rx_len_invalid": {
+                "type": "number",
+                "description": "Conn Sync Length Invalid"
+              },
+              "sync_persist_rx_len_invalid": {
+                "type": "number",
+                "description": "Persist Conn Sync Length Invalid"
+              },
+              "sync_persist_rx_proto_not_supported": {
+                "type": "number",
+                "description": "Persist Conn Sync Protocol Invalid"
+              },
+              "sync_persist_rx_type_invalid": {
+                "type": "number",
+                "description": "Persist Conn Sync Type Invalid"
+              },
+              "sync_persist_rx_cannot_process_mandatory": {
+                "type": "number",
+                "description": "Persist Conn Sync Process Mandatory Invalid"
+              },
+              "sync_persist_rx_ext_bit_process_error": {
+                "type": "number",
+                "description": "Persist Conn Sync Proc Ext Bit Failure"
+              },
+              "sync_persist_rx_no_such_vport": {
+                "type": "number",
+                "description": "Persist Conn Sync Virt Port Not Found"
+              },
+              "sync_persist_rx_vporttype_not_supported": {
+                "type": "number",
+                "description": "Persist Conn Sync Virt Port Type Invalid"
+              },
+              "sync_persist_rx_no_such_rport": {
+                "type": "number",
+                "description": "Persist Conn Sync Real Port Not Found"
+              },
+              "sync_persist_rx_no_such_sg_group": {
+                "type": "number",
+                "description": "Persist Conn Sync No Service Group Found"
+              },
+              "sync_persist_rx_no_sg_group_info": {
+                "type": "number",
+                "description": "Persist Conn Sync No Service Group Info Found"
+              },
+              "sync_persist_rx_conn_get_failed": {
+                "type": "number",
+                "description": "Persist Conn Sync Get Conn Failure"
+              },
+              "sync_rx_no_such_vport": {
+                "type": "number",
+                "description": "Conn Sync Virt Port Not Found"
+              },
+              "sync_rx_no_such_rport": {
+                "type": "number",
+                "description": "Conn Sync Real Port Not Found"
+              },
+              "sync_rx_cannot_process_mandatory": {
+                "type": "number",
+                "description": "Conn Sync Process Mandatory Invalid"
+              },
+              "sync_rx_ext_bit_process_error": {
+                "type": "number",
+                "description": "Conn Sync Proc Ext Bit Failure"
+              },
+              "sync_rx_create_ext_bit_counter": {
+                "type": "number",
+                "description": "Conn Sync Create with Ext Received counter"
+              },
+              "sync_rx_conn_exists": {
+                "type": "number",
+                "description": "Conn Sync Create Conn Exists"
+              },
+              "sync_rx_conn_get_failed": {
+                "type": "number",
+                "description": "Conn Sync Get Conn Failure"
+              },
+              "sync_rx_proto_not_supported": {
+                "type": "number",
+                "description": "Conn Sync Protocol Invalid"
+              },
+              "sync_rx_no_dst_for_vport_inline": {
+                "type": "number",
+                "description": "Conn Sync 'dst' not found for vport inline"
+              },
+              "sync_rx_no_such_nat_pool": {
+                "type": "number",
+                "description": "Conn Sync NAT Pool Error"
+              },
+              "sync_rx_no_such_sg_node": {
+                "type": "number",
+                "description": "Conn Sync no SG node found"
+              },
+              "sync_rx_del_no_such_session": {
+                "type": "number",
+                "description": "Conn Sync Del Conn not Found"
+              },
+              "sync_rx_type_invalid": {
+                "type": "number",
+                "description": "Conn Sync Type Invalid"
+              },
+              "sync_rx_zero_info_counter": {
+                "type": "number",
+                "description": "Conn Sync Packet Empty"
+              },
+              "sync_rx_dcmsg_counter": {
+                "type": "number",
+                "description": "Conn Sync forward CPU"
+              },
+              "sync_rx_total_info_counter": {
+                "type": "number",
+                "description": "Conn Sync Total Info Pkts Received counter"
+              },
+              "sync_rx_update_seqnos_counter": {
+                "type": "number",
+                "description": "Conn Sync Update Seq Num Received counter"
+              },
+              "sync_rx_unk_counter": {
+                "type": "number",
+                "description": "Conn Sync Unknown Type"
+              },
+              "sync_rx_apptype_not_supported": {
+                "type": "number",
+                "description": "Conn Sync App Type Invalid"
+              },
+              "sync_query_dcmsg_counter": {
+                "type": "number",
+                "description": "Conn Sync query forward CPU"
+              },
+              "sync_get_buff_failed_rt": {
+                "type": "number",
+                "description": "Conn Sync Get Buff Failure No Route"
+              },
+              "sync_get_buff_failed_port": {
+                "type": "number",
+                "description": "Conn Sync Get Buff Failure Wrong Port"
+              },
+              "sync_rx_lsn_create_sby": {
+                "type": "number",
+                "description": "Conn Sync LSN Create Standby"
+              },
+              "sync_rx_nat_create_sby": {
+                "type": "number",
+                "description": "Conn Sync NAT Create Standby"
+              },
+              "sync_rx_nat_alloc_sby": {
+                "type": "number",
+                "description": "Conn Sync NAT Alloc Standby"
+              },
+              "sync_rx_insert_tuple": {
+                "type": "number",
+                "description": "Conn Sync Insert Tuple"
+              },
+              "sync_rx_sfw": {
+                "type": "number",
+                "description": "Conn Sync SFW"
+              },
+              "sync_rx_create_static_sby": {
+                "type": "number",
+                "description": "Conn Sync Create Static Standby"
+              },
+              "sync_rx_ext_pptp": {
+                "type": "number",
+                "description": "Conn Sync Ext PPTP"
+              },
+              "sync_rx_ext_rtsp": {
+                "type": "number",
+                "description": "Conn Sync Ext RTSP"
+              },
+              "sync_rx_reserve_ha": {
+                "type": "number",
+                "description": "Conn Sync Reserve HA Conn"
+              },
+              "sync_rx_seq_deltas": {
+                "type": "number",
+                "description": "Conn Sync Seq Deltas Failure"
+              },
+              "sync_rx_ftp_control": {
+                "type": "number",
+                "description": "Conn Sync FTP Control Failure"
+              },
+              "sync_rx_ext_lsn_acl": {
+                "type": "number",
+                "description": "Conn Sync LSN ACL Failure"
+              },
+              "sync_rx_ext_lsn_ac_idle_timeout": {
+                "type": "number",
+                "description": "Conn Sync LSN ACL Idle Timeout Failure"
+              },
+              "sync_rx_ext_sip_alg": {
+                "type": "number",
+                "description": "Conn Sync SIP TCP ALG Failure"
+              },
+              "sync_rx_ext_h323_alg": {
+                "type": "number",
+                "description": "Conn Sync H323 TCP ALG Failure"
+              },
+              "sync_rx_ext_nat_mac": {
+                "type": "number",
+                "description": "Conn Sync NAT MAC Failure"
+              },
+              "sync_tx_lsn_fullcone": {
+                "type": "number",
+                "description": "Conn Sync Update LSN Fullcone Sent counter"
+              },
+              "sync_rx_lsn_fullcone": {
+                "type": "number",
+                "description": "Conn Sync Update LSN Fullcone Received counter"
+              },
+              "sync_err_lsn_fullcone": {
+                "type": "number",
+                "description": "Conn Sync LSN Fullcone Failure"
+              },
+              "sync_tx_update_sctp_conn_addr": {
+                "type": "number",
+                "description": "Update SCTP Addresses Sent"
+              },
+              "sync_rx_update_sctp_conn_addr": {
+                "type": "number",
+                "description": "Update SCTP Addresses Received"
+              },
+              "sync_rx_ext_nat_alg_tcp_info": {
+                "type": "number",
+                "description": "Conn Sync NAT ALG TCP Information"
+              },
+              "sync_rx_ext_dcfw_rule_id": {
+                "type": "number",
+                "description": "Conn Sync FIREWALL session rule ID information Failure"
+              },
+              "sync_rx_ext_dcfw_log": {
+                "type": "number",
+                "description": "Conn Sync FIREWALL session logging information Failure"
+              },
+              "sync_rx_estab_counter": {
+                "type": "number",
+                "description": "Conn Sync rcv established state"
+              },
+              "sync_tx_estab_counter": {
+                "type": "number",
+                "description": "Conn Sync send established state"
+              },
+              "sync_rx_zone_failure_counter": {
+                "type": "number",
+                "description": "Conn Sync Zone Failure"
+              },
+              "sync_rx_ext_fw_http_logging": {
+                "type": "number",
+                "description": "FW HTTP Logging Sync Failures"
+              },
+              "sync_rx_ext_dcfw_rule_idle_timeout": {
+                "type": "number",
+                "description": "Conn Sync FIREWALL session rule idle timeout information Failure"
+              },
+              "sync_rx_ext_fw_gtp_info": {
+                "type": "number",
+                "description": "FW GTP Info Received"
+              },
+              "sync_rx_not_expect_sync_pkt": {
+                "type": "number",
+                "description": "unexpected session sync packets"
+              },
+              "sync_rx_ext_fw_apps": {
+                "type": "number",
+                "description": "Conn Sync FIREWALL application information Failure"
+              },
+              "sync_tx_mon_entity": {
+                "type": "number",
+                "description": "Acos Monitoring Entities Sync Messages Sent"
+              },
+              "sync_rx_mon_entity": {
+                "type": "number",
+                "description": "Acos monitoring Entities Sync Messages Received"
+              },
+              "sync_rx_ext_fw_gtp_log_info": {
+                "type": "number",
+                "description": "FW GTP Log Info Received"
+              },
+              "sync_rx_ext_fw_gtp_u_info": {
+                "type": "number",
+                "description": "FW GTP U Info Received"
+              },
+              "sync_rx_ext_fw_gtp_ext_info": {
+                "type": "number",
+                "description": "FW GTP Ext Info Received"
+              },
+              "sync_rx_ext_fw_gtp_log_ext_info": {
+                "type": "number",
+                "description": "FW GTP Ext Log Info Received"
+              },
+              "sync_rx_ddos_drop_counter": {
+                "type": "number",
+                "description": "Conn Sync receive ddos protect packet"
+              },
+              "sync_rx_invalid_sync_packet_counter": {
+                "type": "number",
+                "description": "Conn Sync receive invalid packet"
+              },
+              "sync_pkt_empty_buff_counter": {
+                "type": "number",
+                "description": "Conn Sync drop sending packet for empty buffer"
+              },
+              "sync_pkt_no_sending_vgrp_counter": {
+                "type": "number",
+                "description": "Conn Sync drop sending packet for invalid sending virtual group"
+              },
+              "sync_pkt_no_receiving_vgrp_counter": {
+                "type": "number",
+                "description": "Conn Sync drop sending packet for invalid receiving virtual group"
+              },
+              "query_pkt_no_receiving_ip_counter": {
+                "type": "number",
+                "description": "Conn Sync drop sending packet for invalid receiving ip"
+              },
+              "sync_pkt_failed_buff_copy_counter": {
+                "type": "number",
+                "description": "Conn Sync drop sending packet for failure in sending buffer copy"
+              },
+              "sync_rx_bad_protocol_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with bad protocol"
+              },
+              "sync_rx_no_vgrp_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with no virtual group"
+              },
+              "sync_rx_by_inactive_peer_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet by inactive peer"
+              },
+              "sync_rx_table_entry_update_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with table entry update"
+              },
+              "sync_rx_table_entry_create_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with table entry create"
+              },
+              "sync_rx_table_entry_del_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with table entry delete"
+              },
+              "sync_rx_aflex_update_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with aflex update"
+              },
+              "sync_rx_aflex_create_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with aflex create"
+              },
+              "sync_rx_aflex_del_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with aflex delete"
+              },
+              "sync_rx_aflex_frag_counter": {
+                "type": "number",
+                "description": "Conn Sync receive packet with aflex fragment"
+              },
+              "query_rx_invalid_partition_counter": {
+                "type": "number",
+                "description": "Conn Sync receive query packet with invalid partition"
+              },
+              "query_rx_invalid_ha_group_counter": {
+                "type": "number",
+                "description": "Conn Sync receive query packet with invalid ha group"
+              },
+              "query_rx_invalid_sync_version_counter": {
+                "type": "number",
+                "description": "Conn Sync receive query packet with invalid sync version"
+              },
+              "query_rx_invalid_msg_dir_counter": {
+                "type": "number",
+                "description": "Conn Sync receive query packet with invalid message dir"
+              },
+              "sync_rx_out_of_order_pkt_counter": {
+                "type": "number",
+                "description": "total number of out of order packets received"
+              },
+              "sync_rx_unreached_pkt_counter": {
+                "type": "number",
+                "description": "total number of unreached packets"
+              },
+              "sync_rx_ext_fw_gtp_echo_ext_info": {
+                "type": "number",
+                "description": "FW GTP Echo Ext Info Received"
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-state": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "vrrp-a-te-mac-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "invalid-flag": {
+                "type": "number"
+              },
+              "vrid-mac-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-te-mac": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv4-gateway": {
+        "type": "object",
+        "properties": {
+          "ip-address": {
+            "type": "string",
+            "description": "IP Address"
+          },
+          "priority-cost": {
+            "type": "number",
+            "description": "The amount the priority will decrease",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-vrid-blade-parameters-tracking-options-gateway-ipv6-gateway": {
+        "type": "object",
+        "properties": {
+          "ipv6-address": {
+            "type": "string",
+            "description": "IPV6 address"
+          },
+          "priority-cost": {
+            "type": "number",
+            "description": "The amount the priority will decrease",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vrrp-a-vrid-blade-parameters-tracking-options-gateway": {
+        "type": "object",
+        "properties": {
+          "ipv4-gateway-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv4-gateway"
+            }
+          },
+          "ipv6-gateway-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv6-gateway"
+            }
+          }
+        }
+      },
+      "vrrp-a-vrid-blade-parameters-tracking-options": {
+        "type": "object",
+        "properties": {
+          "interface": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "route": {
+            "type": "object",
+            "properties": {
+              "ip-destination-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv6-destination-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "trunk-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "bgp": {
+            "type": "object",
+            "properties": {
+              "bgp-ipv4-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "bgp-ipv6-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "vlan-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "gateway": {
+            "type": "object",
+            "properties": {
+              "ipv4-gateway-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv4-gateway"
+                }
+              },
+              "ipv6-gateway-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv6-gateway"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-vrid-blade-parameters": {
+        "type": "object",
+        "properties": {
+          "priority": {
+            "type": "number",
+            "description": "VRRP-A priorty (Priority, default is 150)",
+            "default": 150,
+            "minimum": 1,
+            "maximum": 255
+          },
+          "fail-over-policy-template": {
+            "type": "string",
+            "description": "Apply a fail over policy template (VRRP-A fail over policy template name)",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "tracking-options": {
+            "type": "object",
+            "properties": {
+              "interface": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "route": {
+                "type": "object",
+                "properties": {
+                  "ip-destination-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ipv6-destination-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              },
+              "trunk-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "bgp": {
+                "type": "object",
+                "properties": {
+                  "bgp-ipv4-address-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "bgp-ipv6-address-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              },
+              "vlan-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "gateway": {
+                "type": "object",
+                "properties": {
+                  "ipv4-gateway-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "ipv4-gateway"
+                    }
+                  },
+                  "ipv6-gateway-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "ipv6-gateway"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-vrid-lead": {
+        "type": "object",
+        "properties": {
+          "vrid-lead-str": {
+            "type": "string",
+            "description": "VRRP-A VRID leader name",
+            "default": "default-vrid-lead",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "partition": {
+            "type": "object",
+            "properties": {
+              "partition": {
+                "type": "number",
+                "description": "Partition name",
+                "default": 0
+              },
+              "shared-cfg": {
+                "type": "object",
+                "properties": {
+                  "shared": {
+                    "type": "number",
+                    "description": "Shared partition",
+                    "default": 0
+                  },
+                  "vrid": {
+                    "type": "number",
+                    "description": "VRRP-A id",
+                    "default": 0
+                  },
+                  "vrid-value": {
+                    "type": "number",
+                    "description": "Specify ha VRRP-A vrid",
+                    "minimum": 0,
+                    "maximum": 31
+                  }
+                }
+              },
+              "name-cfg": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Partition name",
+                    "minLength": 1,
+                    "maxLength": 14
+                  },
+                  "vrid": {
+                    "type": "number",
+                    "description": "VRRP-A id",
+                    "default": 0
+                  },
+                  "vrid-value": {
+                    "type": "number",
+                    "description": "Specify ha VRRP-A vrid",
+                    "minimum": 0,
+                    "maximum": 7
+                  }
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "vrrp-a-vrid-oper": {
+        "type": "object",
+        "properties": {
+          "vrid-val": {
+            "type": "number",
+            "description": "Specify ha VRRP-A vrid",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 31
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "number"
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "Active",
+                  "Standby"
+                ]
+              },
+              "weight": {
+                "type": "number"
+              },
+              "priority": {
+                "type": "number"
+              },
+              "force_standby": {
+                "type": "number"
+              },
+              "became_active": {
+                "type": "string"
+              },
+              "peer-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-vrid-stats": {
+        "type": "object",
+        "properties": {
+          "vrid-val": {
+            "type": "number",
+            "description": "Specify ha VRRP-A vrid",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 31
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "associated_vip_count": {
+                "type": "number",
+                "description": "Number of vips associated to vrid"
+              },
+              "associated_vport_count": {
+                "type": "number",
+                "description": "Number of vports associated to vrid"
+              },
+              "associated_natpool_count": {
+                "type": "number",
+                "description": "Number of nat pools associated to vrid"
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a-vrid": {
+        "type": "object",
+        "properties": {
+          "vrid-val": {
+            "type": "number",
+            "description": "Specify ha VRRP-A vrid",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 31
+          },
+          "floating-ip": {
+            "type": "object",
+            "properties": {
+              "ip-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ip-address-part-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv6-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv6-address-part-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "preempt-mode": {
+            "type": "object",
+            "properties": {
+              "threshold": {
+                "type": "number",
+                "description": "preemption threshold (preemption threshhold (0-255), default 0)",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 255
+              },
+              "disable": {
+                "type": "number",
+                "description": "disable preemption",
+                "default": 0
+              }
+            }
+          },
+          "follow": {
+            "type": "object",
+            "properties": {
+              "vrid-lead": {
+                "type": "string",
+                "description": "Define a VRRP-A VRID leader",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "pair-follow": {
+            "type": "object",
+            "properties": {
+              "pair-follow": {
+                "type": "number",
+                "description": "Follow other VRRP-A vrid",
+                "default": 0
+              },
+              "vrid-lead": {
+                "type": "string",
+                "description": "Define a VRRP-A VRID leader",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "blade-parameters": {
+            "type": "object",
+            "properties": {
+              "priority": {
+                "type": "number",
+                "description": "VRRP-A priorty (Priority, default is 150)",
+                "default": 150,
+                "minimum": 1,
+                "maximum": 255
+              },
+              "fail-over-policy-template": {
+                "type": "string",
+                "description": "Apply a fail over policy template (VRRP-A fail over policy template name)",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "tracking-options": {
+                "type": "object",
+                "properties": {
+                  "interface": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "route": {
+                    "type": "object",
+                    "properties": {
+                      "ip-destination-cfg": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      },
+                      "ipv6-destination-cfg": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "trunk-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "bgp": {
+                    "type": "object",
+                    "properties": {
+                      "bgp-ipv4-address-cfg": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      },
+                      "bgp-ipv6-address-cfg": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "vlan-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "gateway": {
+                    "type": "object",
+                    "properties": {
+                      "ipv4-gateway-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "ipv4-gateway"
+                        }
+                      },
+                      "ipv6-gateway-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "ipv6-gateway"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "vrrp-a": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "state-cpu": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "common": {
+            "type": "object",
+            "properties": {
+              "device-id": {
+                "type": "number",
+                "description": "Unique ID for each VRRP-A box (Device-id number)"
+              },
+              "set-id": {
+                "type": "number",
+                "description": "Set-ID for HA configuration (Set id from 1 to 15)",
+                "minimum": 1,
+                "maximum": 15
+              },
+              "disable-default-vrid": {
+                "type": "number",
+                "description": "Disable default vrid",
+                "default": 0
+              },
+              "action": {
+                "type": "string",
+                "description": "'enable': enable vrrp-a; 'disable': disable vrrp-a; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "hello-interval": {
+                "type": "number",
+                "description": "VRRP-A Hello Interval (1-255, in unit of 100millisec, default is 2)",
+                "default": 2,
+                "minimum": 1,
+                "maximum": 255
+              },
+              "preemption-delay": {
+                "type": "number",
+                "description": "Delay before changing state from Active to Standby (1-255, in unit of 100millisec, default is 60)",
+                "default": 60,
+                "minimum": 1,
+                "maximum": 255
+              },
+              "dead-timer": {
+                "type": "number",
+                "description": "VRRP-A dead timer in terms of how many hello messages missed, default is 5 (2-255, default is 5)",
+                "default": 5,
+                "minimum": 2,
+                "maximum": 255
+              },
+              "arp-retry": {
+                "type": "number",
+                "description": "Number of additional gratuitous ARPs sent out after HA failover (1-255, default is 4)",
+                "default": 4,
+                "minimum": 1,
+                "maximum": 255
+              },
+              "track-event-delay": {
+                "type": "number",
+                "description": "Delay before changing state after up/down event (Units of 100 milliseconds (default 30))",
+                "default": 30,
+                "minimum": 1,
+                "maximum": 100
+              },
+              "get-ready-time": {
+                "type": "number",
+                "description": "set get ready time after ax starting up (60-1200, in unit of 100millisec, default is 60)",
+                "default": 60,
+                "minimum": 60,
+                "maximum": 1200
+              },
+              "inline-mode-cfg": {
+                "type": "object",
+                "properties": {
+                  "inline-mode": {
+                    "type": "number",
+                    "description": "Enable Layer 2 Inline Hot Standby Mode",
+                    "default": 0
+                  },
+                  "preferred-port": {
+                    "type": "number",
+                    "description": "Preferred ethernet Port",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "preferred-trunk": {
+                    "type": "number",
+                    "description": "Preferred trunk Port",
+                    "minimum": 1,
+                    "maximum": 4096
+                  }
+                }
+              },
+              "restart-time": {
+                "type": "number",
+                "description": "Time between restarting ports on standby system after transition",
+                "default": 20,
+                "minimum": 1,
+                "maximum": 100
+              },
+              "hostid-append-to-vrid": {
+                "type": "object",
+                "properties": {
+                  "hostid-append-to-vrid-default": {
+                    "type": "number",
+                    "description": "hostid append to vrid default",
+                    "default": 0
+                  },
+                  "hostid-append-to-vrid-value": {
+                    "type": "number",
+                    "description": "hostid append to vrid num",
+                    "minimum": 1,
+                    "maximum": 31
+                  }
+                }
+              },
+              "forward-l4-packet-on-standby": {
+                "type": "number",
+                "description": "Enables Layer 2/3 forwarding of Layer 4 traffic on the Standby ACOS device",
+                "default": 0
+              },
+              "enable-sync-session-seq-number": {
+                "type": "number",
+                "description": "enable monitoring sending and receiving sync packets with sequence number",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "l2-inline-peer-ip-list": {
+            "type": "array",
+            "items": {
+              "type": "l2-inline-peer-ip"
+            }
+          },
+          "l3-inline-mode-flag": {
+            "type": "object",
+            "properties": {
+              "l3-inline-mode": {
+                "type": "number",
+                "description": "Enable Layer 3 Inline Hot Standby Mode",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "session-sync": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "description": "'enable': enable vrrp-a session sync (default); 'disable': disable vrrp-a session sync; ",
+                "default": "enable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ospf-inline-list": {
+            "type": "array",
+            "items": {
+              "type": "ospf-inline"
+            }
+          },
+          "force-self-standby": {
+            "type": "object",
+            "properties": {
+              "vrid": {
+                "type": "number",
+                "description": "Specify one VRRP-A vrid to force into standby state",
+                "minimum": 0,
+                "maximum": 31
+              },
+              "all-partitions": {
+                "type": "number",
+                "description": "force all partitions in standby state",
+                "default": 0
+              },
+              "action": {
+                "type": "string",
+                "description": "'enable': enable vrrp-a force-self-standby; 'disable': disable vrrp-a force-self-standby; ",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              }
+            }
+          },
+          "force-self-standby-persistent-list": {
+            "type": "array",
+            "items": {
+              "type": "force-self-standby-persistent"
+            }
+          },
+          "fail-over-policy-template-list": {
+            "type": "array",
+            "items": {
+              "type": "fail-over-policy-template"
+            }
+          },
+          "vrid-lead-list": {
+            "type": "array",
+            "items": {
+              "type": "vrid-lead"
+            }
+          },
+          "vrid-list": {
+            "type": "array",
+            "items": {
+              "type": "vrid"
+            }
+          },
+          "partition-vrid-status": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "partition-vrid-all-status": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "interface": {
+            "type": "object",
+            "properties": {
+              "ethernet-list": {
+                "type": "array",
+                "items": {
+                  "type": "ethernet"
+                }
+              },
+              "trunk-list": {
+                "type": "array",
+                "items": {
+                  "type": "trunk"
+                }
+              }
+            }
+          },
+          "preferred-session-sync-port": {
+            "type": "object",
+            "properties": {
+              "ethernet-list": {
+                "type": "array",
+                "items": {
+                  "type": "ethernet"
+                }
+              },
+              "trunk-list": {
+                "type": "array",
+                "items": {
+                  "type": "trunk"
+                }
+              }
+            }
+          },
+          "restart-port-list": {
+            "type": "object",
+            "properties": {
+              "ethernet-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "vrid-list": {
+                "type": "array",
+                "items": {
+                  "type": "vrid"
+                }
+              }
+            }
+          },
+          "peer-group": {
+            "type": "object",
+            "properties": {
+              "peer": {
+                "type": "object",
+                "properties": {
+                  "ip-peer-address-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ipv6-peer-address-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,3625 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - IMPORT-PERIODIC",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the import-periodic category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/import-periodic/aflex/{aflex}": {
+      "parameters": [
+        {
+          "name": "aflex",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for aflex"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "aFleX Script Source File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-aflex"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "aFleX Script Source File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-aflex"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-aflex"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "aFleX Script Source File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-aflex"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-aflex"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "aFleX Script Source File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-aflex"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/auth-jwks/{auth-jwks}": {
+      "parameters": [
+        {
+          "name": "auth-jwks",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for auth-jwks"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "JSON web key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-jwks"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "JSON web key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-jwks"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-auth-jwks"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "JSON web key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-jwks"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-auth-jwks"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "JSON web key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-jwks"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/auth-portal/{auth-portal}": {
+      "parameters": [
+        {
+          "name": "auth-portal",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for auth-portal"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Portal file for http authentication",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-portal"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Portal file for http authentication",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-portal"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-auth-portal"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Portal file for http authentication",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-portal"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-auth-portal"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Portal file for http authentication",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-auth-portal"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/bw-list/{bw-list}": {
+      "parameters": [
+        {
+          "name": "bw-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for bw-list"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-bw-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-bw-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-bw-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-bw-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-bw-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-bw-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/ca-cert/{ca-cert}": {
+      "parameters": [
+        {
+          "name": "ca-cert",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ca-cert"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL CA Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ca-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL CA Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ca-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ca-cert"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL CA Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ca-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ca-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL CA Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ca-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/class-list-convert/{class-list-convert}": {
+      "parameters": [
+        {
+          "name": "class-list-convert",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for class-list-convert"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Convert Class List File to A10 format",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list-convert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Convert Class List File to A10 format",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list-convert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-class-list-convert"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Convert Class List File to A10 format",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list-convert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-class-list-convert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Convert Class List File to A10 format",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list-convert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/class-list/{class-list}": {
+      "parameters": [
+        {
+          "name": "class-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for class-list"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-class-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-class-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-class-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/dnssec-dnskey/{dnssec-dnskey}": {
+      "parameters": [
+        {
+          "name": "dnssec-dnskey",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for dnssec-dnskey"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DNSKEY(KSK) file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-dnskey"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DNSKEY(KSK) file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-dnskey"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-dnssec-dnskey"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DNSKEY(KSK) file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-dnskey"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-dnssec-dnskey"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DNSKEY(KSK) file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-dnskey"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/dnssec-ds/{dnssec-ds}": {
+      "parameters": [
+        {
+          "name": "dnssec-ds",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for dnssec-ds"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DS file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-ds"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DS file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-ds"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-dnssec-ds"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DS file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-ds"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-dnssec-ds"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "DNSSEC DS file for child zone",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-dnssec-ds"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/domain-list/{domain-list}": {
+      "parameters": [
+        {
+          "name": "domain-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for domain-list"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-domain-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-domain-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-domain-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-domain-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-domain-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-domain-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/file-inspection-bw-list/{file-inspection-bw-list}": {
+      "parameters": [
+        {
+          "name": "file-inspection-bw-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for file-inspection-bw-list"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "File Inspection Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-file-inspection-bw-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "File Inspection Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-file-inspection-bw-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-file-inspection-bw-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "File Inspection Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-file-inspection-bw-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-file-inspection-bw-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "File Inspection Black white list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-file-inspection-bw-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/geo-location/{geo-location}": {
+      "parameters": [
+        {
+          "name": "geo-location",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for geo-location"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-geo-location"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-geo-location"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-geo-location"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-geo-location"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-geo-location"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-geo-location"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/license/{license}": {
+      "parameters": [
+        {
+          "name": "license",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for license"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "License File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-license"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "License File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-license"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-license"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "License File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-license"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-license"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "License File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-license"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/local-uri-file/{local-uri-file}": {
+      "parameters": [
+        {
+          "name": "local-uri-file",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for local-uri-file"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Local URI files for http response",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-local-uri-file"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Local URI files for http response",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-local-uri-file"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-local-uri-file"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Local URI files for http response",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-local-uri-file"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-local-uri-file"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Local URI files for http response",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-local-uri-file"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/policy/{policy}": {
+      "parameters": [
+        {
+          "name": "policy",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for policy"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "WAF policy File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-policy"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "WAF policy File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-policy"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "WAF policy File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-policy"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-policy"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "WAF policy File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-policy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/rpz/{rpz}": {
+      "parameters": [
+        {
+          "name": "rpz",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for rpz"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Response Policy Zone File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-rpz"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Response Policy Zone File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-rpz"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-rpz"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Response Policy Zone File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-rpz"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-rpz"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Response Policy Zone File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-rpz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/ssl-cert-key/{ssl-cert-key}": {
+      "parameters": [
+        {
+          "name": "ssl-cert-key",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ssl-cert-key"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-cert-key"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-cert-key"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/ssl-cert/{ssl-cert}": {
+      "parameters": [
+        {
+          "name": "ssl-cert",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ssl-cert"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-cert"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/ssl-crl/{ssl-crl}": {
+      "parameters": [
+        {
+          "name": "ssl-crl",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ssl-crl"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Crl File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-crl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Crl File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-crl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-crl"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Crl File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-crl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-crl"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Crl File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-crl"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/ssl-key/{ssl-key}": {
+      "parameters": [
+        {
+          "name": "ssl-key",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ssl-key"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Key File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Key File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-key"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Key File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-ssl-key"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "SSL Key File(enter bulk when import an archive file)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/thales-kmdata/{thales-kmdata}": {
+      "parameters": [
+        {
+          "name": "thales-kmdata",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for thales-kmdata"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales Kmdata files ",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-kmdata"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales Kmdata files ",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-kmdata"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-thales-kmdata"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales Kmdata files ",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-kmdata"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-thales-kmdata"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales Kmdata files ",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-kmdata"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/thales-secworld/{thales-secworld}": {
+      "parameters": [
+        {
+          "name": "thales-secworld",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for thales-secworld"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales security world files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-secworld"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales security world files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-secworld"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-thales-secworld"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales security world files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-secworld"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-thales-secworld"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "import Thales security world files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-thales-secworld"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/tsig/{tsig}": {
+      "parameters": [
+        {
+          "name": "tsig",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for tsig"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Transaction SIGnatures Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-tsig"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Transaction SIGnatures Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-tsig"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-tsig"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Transaction SIGnatures Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-tsig"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-tsig"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Transaction SIGnatures Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-tsig"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/wsdl/{wsdl}": {
+      "parameters": [
+        {
+          "name": "wsdl",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for wsdl"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Web Services Definition Language File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-wsdl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Web Services Definition Language File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-wsdl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-wsdl"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Web Services Definition Language File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-wsdl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-wsdl"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Web Services Definition Language File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-wsdl"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic/xml-schema/{xml-schema}": {
+      "parameters": [
+        {
+          "name": "xml-schema",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for xml-schema"
+        }
+      ],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "XML-Schema File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-xml-schema"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "XML-Schema File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-xml-schema"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-xml-schema"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "XML-Schema File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-xml-schema"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-periodic-xml-schema"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "XML-Schema File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic-xml-schema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import-periodic": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT-PERIODIC"
+        ],
+        "description": "Get files from remote site periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-periodic"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "import-periodic-aflex": {
+        "type": "object",
+        "properties": {
+          "aflex": {
+            "type": "string",
+            "description": "aFleX Script Source File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-auth-jwks": {
+        "type": "object",
+        "properties": {
+          "auth-jwks": {
+            "type": "string",
+            "description": "JSON web key",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-auth-portal": {
+        "type": "object",
+        "properties": {
+          "auth-portal": {
+            "type": "string",
+            "description": "Portal file for http authentication",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-bw-list": {
+        "type": "object",
+        "properties": {
+          "bw-list": {
+            "type": "string",
+            "description": "Black white List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-ca-cert": {
+        "type": "object",
+        "properties": {
+          "ca-cert": {
+            "type": "string",
+            "description": "SSL CA Cert File(enter bulk when import an archive file)",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-class-list-convert": {
+        "type": "object",
+        "properties": {
+          "class-list-convert": {
+            "type": "string",
+            "description": "Class List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "class-list-type": {
+            "type": "string",
+            "description": "'ac': ac; 'ipv4': ipv4; 'ipv6': ipv6; 'string': string; 'string-case-insensitive': string-case-insensitive; ",
+            "enum": [
+              "ac",
+              "ipv4",
+              "ipv6",
+              "string",
+              "string-case-insensitive"
+            ]
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-class-list": {
+        "type": "object",
+        "properties": {
+          "class-list": {
+            "type": "string",
+            "description": "Class List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "background": {
+            "type": "number",
+            "description": "background mode for importing class-list",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-dnssec-dnskey": {
+        "type": "object",
+        "properties": {
+          "dnssec-dnskey": {
+            "type": "string",
+            "description": "DNSSEC DNSKEY(KSK) file for child zone",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-dnssec-ds": {
+        "type": "object",
+        "properties": {
+          "dnssec-ds": {
+            "type": "string",
+            "description": "DNSSEC DS file for child zone",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-domain-list": {
+        "type": "object",
+        "properties": {
+          "domain-list": {
+            "type": "string",
+            "description": "Domain List Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-file-inspection-bw-list": {
+        "type": "object",
+        "properties": {
+          "file-inspection-bw-list": {
+            "type": "string",
+            "description": "Black white List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-geo-location": {
+        "type": "object",
+        "properties": {
+          "geo-location": {
+            "type": "string",
+            "description": "Geo-location CSV File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-license": {
+        "type": "object",
+        "properties": {
+          "license": {
+            "type": "string",
+            "description": "License File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-local-uri-file": {
+        "type": "object",
+        "properties": {
+          "local-uri-file": {
+            "type": "string",
+            "description": "Local URI files for http response",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-policy": {
+        "type": "object",
+        "properties": {
+          "policy": {
+            "type": "string",
+            "description": "WAF policy File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-rpz": {
+        "type": "object",
+        "properties": {
+          "rpz": {
+            "type": "string",
+            "description": "Response Policy Zone File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "zone-transfer": {
+            "type": "string",
+            "description": "'zone-transfer': zone-transfer; ",
+            "enum": [
+              "zone-transfer"
+            ]
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "remote-file-zone-transfer": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-ssl-cert-key": {
+        "type": "object",
+        "properties": {
+          "ssl-cert-key": {
+            "type": "string",
+            "description": "'bulk': import an archive file; ",
+            "enum": [
+              "bulk"
+            ]
+          },
+          "secured": {
+            "type": "number",
+            "description": "Mark keys as non-exportable",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-ssl-cert": {
+        "type": "object",
+        "properties": {
+          "ssl-cert": {
+            "type": "string",
+            "description": "SSL Cert File(enter bulk when import an archive file)",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-ssl-crl": {
+        "type": "object",
+        "properties": {
+          "ssl-crl": {
+            "type": "string",
+            "description": "SSL Crl File",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-ssl-key": {
+        "type": "object",
+        "properties": {
+          "ssl-key": {
+            "type": "string",
+            "description": "SSL Key File(enter bulk when import an archive file)",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "secured": {
+            "type": "number",
+            "description": "Mark as non-exportable",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-thales-kmdata": {
+        "type": "object",
+        "properties": {
+          "thales-kmdata": {
+            "type": "string",
+            "description": "import Thales Kmdata files - in .tgz format that has all files needed by AX",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-thales-secworld": {
+        "type": "object",
+        "properties": {
+          "thales-secworld": {
+            "type": "string",
+            "description": "import Thales security world files - in .tgz format that has all files needed by AX",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-tsig": {
+        "type": "object",
+        "properties": {
+          "tsig": {
+            "type": "string",
+            "description": "Transaction SIGnatures Key File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-wsdl": {
+        "type": "object",
+        "properties": {
+          "wsdl": {
+            "type": "string",
+            "description": "Web Services Definition Language File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic-xml-schema": {
+        "type": "object",
+        "properties": {
+          "xml-schema": {
+            "type": "string",
+            "description": "XML-Schema File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "import-periodic": {
+        "type": "object",
+        "properties": {
+          "ssl-cert-list": {
+            "type": "array",
+            "items": {
+              "type": "ssl-cert"
+            }
+          },
+          "ca-cert-list": {
+            "type": "array",
+            "items": {
+              "type": "ca-cert"
+            }
+          },
+          "ssl-key-list": {
+            "type": "array",
+            "items": {
+              "type": "ssl-key"
+            }
+          },
+          "ssl-crl-list": {
+            "type": "array",
+            "items": {
+              "type": "ssl-crl"
+            }
+          },
+          "ssl-cert-key-list": {
+            "type": "array",
+            "items": {
+              "type": "ssl-cert-key"
+            }
+          },
+          "aflex-list": {
+            "type": "array",
+            "items": {
+              "type": "aflex"
+            }
+          },
+          "xml-schema-list": {
+            "type": "array",
+            "items": {
+              "type": "xml-schema"
+            }
+          },
+          "wsdl-list": {
+            "type": "array",
+            "items": {
+              "type": "wsdl"
+            }
+          },
+          "policy-list": {
+            "type": "array",
+            "items": {
+              "type": "policy"
+            }
+          },
+          "bw-list-list": {
+            "type": "array",
+            "items": {
+              "type": "bw-list"
+            }
+          },
+          "file-inspection-bw-list-list": {
+            "type": "array",
+            "items": {
+              "type": "file-inspection-bw-list"
+            }
+          },
+          "class-list-list": {
+            "type": "array",
+            "items": {
+              "type": "class-list"
+            }
+          },
+          "class-list-convert-list": {
+            "type": "array",
+            "items": {
+              "type": "class-list-convert"
+            }
+          },
+          "domain-list-list": {
+            "type": "array",
+            "items": {
+              "type": "domain-list"
+            }
+          },
+          "geo-location-list": {
+            "type": "array",
+            "items": {
+              "type": "geo-location"
+            }
+          },
+          "thales-secworld-list": {
+            "type": "array",
+            "items": {
+              "type": "thales-secworld"
+            }
+          },
+          "thales-kmdata-list": {
+            "type": "array",
+            "items": {
+              "type": "thales-kmdata"
+            }
+          },
+          "dnssec-dnskey-list": {
+            "type": "array",
+            "items": {
+              "type": "dnssec-dnskey"
+            }
+          },
+          "dnssec-ds-list": {
+            "type": "array",
+            "items": {
+              "type": "dnssec-ds"
+            }
+          },
+          "auth-portal-list": {
+            "type": "array",
+            "items": {
+              "type": "auth-portal"
+            }
+          },
+          "auth-jwks-list": {
+            "type": "array",
+            "items": {
+              "type": "auth-jwks"
+            }
+          },
+          "local-uri-file-list": {
+            "type": "array",
+            "items": {
+              "type": "local-uri-file"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - OBJECT-GROUP",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the object-group category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/object-group/application/{app-name}": {
+      "parameters": [
+        {
+          "name": "app-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for app-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Application Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-application"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Application Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-application"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/object-group-application"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Application Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-application"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/object-group-application"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Application Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-application"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/object-group/network/{net-name}": {
+      "parameters": [
+        {
+          "name": "net-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for net-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Network Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-network"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Network Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-network"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/object-group-network"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Network Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-network"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/object-group-network"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Network Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-network"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/object-group/service/{svc-name}": {
+      "parameters": [
+        {
+          "name": "svc-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for svc-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Service Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-service"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Service Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-service"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/object-group-service"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Service Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-service"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/object-group-service"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Service Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group-service"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/object-group": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "OBJECT-GROUP"
+        ],
+        "description": "Configure Object Group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/object-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "object-group-application": {
+        "type": "object",
+        "properties": {
+          "app-name": {
+            "type": "string",
+            "description": "Application Object Group Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "app-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "object-group-network": {
+        "type": "object",
+        "properties": {
+          "net-name": {
+            "type": "string",
+            "description": "Network Object Group Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "usage": {
+            "type": "string",
+            "description": "'acl': Use for access-lists (default).; 'fw': Use for Firewall rule-set; ",
+            "default": "acl",
+            "enum": [
+              "acl",
+              "fw"
+            ]
+          },
+          "ip-version": {
+            "type": "string",
+            "description": "'v4': IPv4 rule; 'v6': IPv6 rule; ",
+            "enum": [
+              "v4",
+              "v6"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the object-group instance",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "object-group-service": {
+        "type": "object",
+        "properties": {
+          "svc-name": {
+            "type": "string",
+            "description": "Service Object Group Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the object-group instance",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "object-group": {
+        "type": "object",
+        "properties": {
+          "network-list": {
+            "type": "array",
+            "items": {
+              "type": "network"
+            }
+          },
+          "service-list": {
+            "type": "array",
+            "items": {
+              "type": "service"
+            }
+          },
+          "application-list": {
+            "type": "array",
+            "items": {
+              "type": "application"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

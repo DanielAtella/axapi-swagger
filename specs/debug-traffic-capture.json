@@ -1,0 +1,204 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - DEBUG-TRAFFIC-CAPTURE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the debug-traffic-capture category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/debug-traffic-capture/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DEBUG-TRAFFIC-CAPTURE"
+        ],
+        "description": "Operational Status for the object debug-traffic-capture",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/debug-traffic-capture-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/debug-traffic-capture": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DEBUG-TRAFFIC-CAPTURE"
+        ],
+        "description": "Debug Traffic Capture Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/debug-traffic-capture"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DEBUG-TRAFFIC-CAPTURE"
+        ],
+        "description": "Debug Traffic Capture Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/debug-traffic-capture"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/debug-traffic-capture"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DEBUG-TRAFFIC-CAPTURE"
+        ],
+        "description": "Debug Traffic Capture Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/debug-traffic-capture"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/debug-traffic-capture"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DEBUG-TRAFFIC-CAPTURE"
+        ],
+        "description": "Debug Traffic Capture Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/debug-traffic-capture"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "debug-traffic-capture-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "status-info": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "debug-traffic-capture": {
+        "type": "object",
+        "properties": {
+          "maximum-file-size": {
+            "type": "number",
+            "description": "Specify pcapng filesize in MB (default 100)",
+            "minimum": 1,
+            "maximum": 150
+          },
+          "maximum-history-recordings": {
+            "type": "number",
+            "description": "Number of crashed samples (default 5)",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "record-direction-type": {
+            "type": "string",
+            "description": "'ingress-only': Record all ingress traffic; 'all-direction': Record all ingress and egress traffic; ",
+            "enum": [
+              "ingress-only",
+              "all-direction"
+            ]
+          },
+          "enable": {
+            "type": "number",
+            "description": "Enable Debug Traffic Capture",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

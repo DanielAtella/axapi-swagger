@@ -1,0 +1,3337 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - SFLOW",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the sflow category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/sflow/agent/address": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure agent address used in sFlow datagram, default use management IP address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-agent-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure agent address used in sFlow datagram, default use management IP address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-agent-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-agent-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure agent address used in sFlow datagram, default use management IP address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-agent-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-agent-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure agent address used in sFlow datagram, default use management IP address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-agent-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/agent": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow agent",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-agent"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/collector/custom/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure Custom sFlow collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-custom"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure Custom sFlow collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-custom"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-custom"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure Custom sFlow collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-custom"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-custom"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure Custom sFlow collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-custom"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/collector/ip/{addr}+{port}/customized-setting": {
+      "parameters": [
+        {
+          "name": "addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for addr"
+        },
+        {
+          "name": "port",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for port"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip-customized-setting"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip-customized-setting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ip-customized-setting"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip-customized-setting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ip-customized-setting"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip-customized-setting"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/collector/ip/{addr}+{port}": {
+      "parameters": [
+        {
+          "name": "addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for addr"
+        },
+        {
+          "name": "port",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for port"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv4 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv4 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ip"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv4 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ip"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv4 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ip"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/collector/ipv6/{addr}+{port}/customized-setting": {
+      "parameters": [
+        {
+          "name": "addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for addr"
+        },
+        {
+          "name": "port",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for port"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize export settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6-customized-setting"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize export settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6-customized-setting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ipv6-customized-setting"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize export settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6-customized-setting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ipv6-customized-setting"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Customize export settings for collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6-customized-setting"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/collector/ipv6/{addr}+{port}": {
+      "parameters": [
+        {
+          "name": "addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for addr"
+        },
+        {
+          "name": "port",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for port"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv6 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv6 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv6 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-collector-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow IPv6 collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/collector": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow collector (a.k.a. receiver)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-collector"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/event-notification/ddos": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Send notification of DDoS events",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-event-notification-ddos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Send notification of DDoS events",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-event-notification-ddos"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-event-notification-ddos"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Send notification of DDoS events",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-event-notification-ddos"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-event-notification-ddos"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Send notification of DDoS events",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-event-notification-ddos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/event-notification": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow event notification on specified source",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-event-notification"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/global/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Operational Status for the object global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-global-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/global/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Statistics for the object global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-global-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "sFlow global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "sFlow global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-global"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "sFlow global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "sFlow global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/a10-proprietary": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "A10 proprietary counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-a10-proprietary"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "A10 proprietary counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-a10-proprietary"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-a10-proprietary"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "A10 proprietary counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-a10-proprietary"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-a10-proprietary"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "A10 proprietary counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-a10-proprietary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/acos-info": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll ACOS Information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-acos-info"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll ACOS Information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-acos-info"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-acos-info"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll ACOS Information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-acos-info"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-acos-info"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/cpu-usage": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll cpu-usage counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-cpu-usage"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll cpu-usage counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-cpu-usage"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-cpu-usage"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll cpu-usage counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-cpu-usage"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-cpu-usage"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/ddos": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll DDoS counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ddos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll DDoS counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ddos"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-ddos"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll DDoS counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ddos"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-ddos"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll DDoS counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ddos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/ethernet-ext/{start}": {
+      "parameters": [
+        {
+          "name": "start",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for start"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow extended counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet-ext"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow extended counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet-ext"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-ethernet-ext"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow extended counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet-ext"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-ethernet-ext"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow extended counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet-ext"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/ethernet/{start}": {
+      "parameters": [
+        {
+          "name": "start",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for start"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow counter polling on ethernet interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-ethernet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/http": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll HTTP counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-http"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll HTTP counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-http"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll HTTP counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-http"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling/system-health": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll system-health counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-system-health"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll system-health counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-system-health"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-system-health"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll system-health counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-system-health"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-polling-system-health"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Poll system-health counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling-system-health"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/polling": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow counter polling on specified source",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-polling"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/sampling": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow sampling on specified interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-sampling"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow sampling on specified interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-sampling"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-sampling"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow sampling on specified interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-sampling"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-sampling"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow sampling on specified interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-sampling"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/setting": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-setting"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-setting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-setting"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-setting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-setting"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-setting"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow/source-address": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Specify source address of sFlow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-source-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Specify source address of sFlow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-source-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-source-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Specify source address of sFlow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-source-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sflow-source-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Specify source address of sFlow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow-source-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sflow": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SFLOW"
+        ],
+        "description": "Configure sFlow",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sflow"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "sflow-agent-address": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "description": "Configure sFlow agent IP address"
+          },
+          "ipv6": {
+            "type": "string",
+            "description": "Configure sFlow agent IPv6 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-agent": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "string",
+                "description": "Configure sFlow agent IP address"
+              },
+              "ipv6": {
+                "type": "string",
+                "description": "Configure sFlow agent IPv6 address"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "sflow-collector-custom": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Configure name of sFlow Receiver",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "ipv4_addr": {
+            "type": "string",
+            "description": "Configure IP address of the sFlow Receiver"
+          },
+          "ipv6_addr": {
+            "type": "string",
+            "description": "Configure IPv6 address of the sFlow Receiver"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "sflow-collector-ip-customized-setting": {
+        "type": "object",
+        "properties": {
+          "export-enable": {
+            "type": "string",
+            "description": "'export': Export settings; ",
+            "enum": [
+              "export"
+            ]
+          },
+          "packet-sampling": {
+            "type": "number",
+            "description": "Enable packet sampling",
+            "default": 0
+          },
+          "counter-polling": {
+            "type": "number",
+            "description": "Enable counter polling",
+            "default": 0
+          },
+          "a10-proprietary-polling": {
+            "type": "number",
+            "description": "Enable counters for ACOS control blocks",
+            "default": 0
+          },
+          "event-notification": {
+            "type": "number",
+            "description": "Enable event notification",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-collector-ip": {
+        "type": "object",
+        "properties": {
+          "addr": {
+            "type": "string",
+            "description": "Configure sFlow collector IP address"
+          },
+          "port": {
+            "type": "number",
+            "description": "Port number (default is 6343)",
+            "default": 6343,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "sFlow collector is through out-of-band management",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "customized-setting": {
+            "type": "object",
+            "properties": {
+              "export-enable": {
+                "type": "string",
+                "description": "'export': Export settings; ",
+                "enum": [
+                  "export"
+                ]
+              },
+              "packet-sampling": {
+                "type": "number",
+                "description": "Enable packet sampling",
+                "default": 0
+              },
+              "counter-polling": {
+                "type": "number",
+                "description": "Enable counter polling",
+                "default": 0
+              },
+              "a10-proprietary-polling": {
+                "type": "number",
+                "description": "Enable counters for ACOS control blocks",
+                "default": 0
+              },
+              "event-notification": {
+                "type": "number",
+                "description": "Enable event notification",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "sflow-collector-ipv6-customized-setting": {
+        "type": "object",
+        "properties": {
+          "export-enable": {
+            "type": "string",
+            "description": "'export': Customizes export settings for collector; ",
+            "enum": [
+              "export"
+            ]
+          },
+          "packet-sampling": {
+            "type": "number",
+            "description": "Enable packet sampling",
+            "default": 0
+          },
+          "counter-polling": {
+            "type": "number",
+            "description": "Enable counter polling",
+            "default": 0
+          },
+          "a10-proprietary-polling": {
+            "type": "number",
+            "description": "Enable counters for ACOS control blocks",
+            "default": 0
+          },
+          "event-notification": {
+            "type": "number",
+            "description": "Enable event notification",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-collector-ipv6": {
+        "type": "object",
+        "properties": {
+          "addr": {
+            "type": "string",
+            "description": "Configure sFlow collector IPv6 address"
+          },
+          "port": {
+            "type": "number",
+            "description": "Port number (default is 6343)",
+            "default": 6343,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "sFlow collector is through out-of-band management",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "customized-setting": {
+            "type": "object",
+            "properties": {
+              "export-enable": {
+                "type": "string",
+                "description": "'export': Customizes export settings for collector; ",
+                "enum": [
+                  "export"
+                ]
+              },
+              "packet-sampling": {
+                "type": "number",
+                "description": "Enable packet sampling",
+                "default": 0
+              },
+              "counter-polling": {
+                "type": "number",
+                "description": "Enable counter polling",
+                "default": 0
+              },
+              "a10-proprietary-polling": {
+                "type": "number",
+                "description": "Enable counters for ACOS control blocks",
+                "default": 0
+              },
+              "event-notification": {
+                "type": "number",
+                "description": "Enable event notification",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "sflow-collector": {
+        "type": "object",
+        "properties": {
+          "ip-list": {
+            "type": "array",
+            "items": {
+              "type": "ip"
+            }
+          },
+          "custom-list": {
+            "type": "array",
+            "items": {
+              "type": "custom"
+            }
+          },
+          "ipv6-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv6"
+            }
+          }
+        }
+      },
+      "sflow-event-notification-ddos": {
+        "type": "object",
+        "properties": {
+          "toggle": {
+            "type": "string",
+            "description": "'enable': Enable sflow notification for DDOS events; 'disable': Disable sflow notification for DDOS events; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-event-notification": {
+        "type": "object",
+        "properties": {
+          "ddos": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "string",
+                "description": "'enable': Enable sflow notification for DDOS events; 'disable': Disable sflow notification for DDOS events; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "sflow-global-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "if-stats-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "sflow-global-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "total-packet-sample-records": {
+                "type": "number",
+                "description": "Total packet sample records"
+              },
+              "total-counter-sample-records": {
+                "type": "number",
+                "description": "Total counter sample records"
+              },
+              "total-sflow-packets-sent": {
+                "type": "number",
+                "description": "Total sflow packets sent"
+              },
+              "total-sflow-local-packets-sent": {
+                "type": "number",
+                "description": "Total sflow packets sent"
+              },
+              "total-sflow-packets-sent-mgmt": {
+                "type": "number",
+                "description": "Total sflow packets sent via Mgmt Interface"
+              },
+              "total-sflow-packets-drop-mgmt": {
+                "type": "number",
+                "description": "sflow packets dropped because of rate limit via Mgmt Interface"
+              }
+            }
+          }
+        }
+      },
+      "sflow-global": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "sflow-polling-a10-proprietary": {
+        "type": "object",
+        "properties": {
+          "export-deprecated-counters": {
+            "type": "number",
+            "description": "Export deprecated counters",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling-acos-info": {
+        "type": "object",
+        "properties": {
+          "toggle": {
+            "type": "string",
+            "description": "'enable': Enable polling ACOS Information; 'disable': Disable polling ACOS Information; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling-cpu-usage": {
+        "type": "object",
+        "properties": {
+          "toggle": {
+            "type": "string",
+            "description": "'enable': Enable polling CPU usage; 'disable': Disable polling CPU usage; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling-ddos": {
+        "type": "object",
+        "properties": {
+          "toggle": {
+            "type": "string",
+            "description": "'enable': Enable sflow polling for DDOS statistics; 'disable': Disable sflow polling for DDOS statistics; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "3_0-compatibility": {
+            "type": "number",
+            "description": "Enable DDOS sflow polling 3.0/3.1 compatibility mode",
+            "default": 0
+          },
+          "address-byte-order-host": {
+            "type": "number",
+            "description": "Export sflow address field in host byte order",
+            "default": 0
+          },
+          "dns-cache-zone-stats": {
+            "type": "number",
+            "description": "Enable polling for dns cache per instance and per zone statistics",
+            "default": 0
+          },
+          "enable-anomaly-stats": {
+            "type": "number",
+            "description": "Enable Polling for system wide anomaly statistics",
+            "default": 0
+          },
+          "dyn-entry-stats": {
+            "type": "number",
+            "description": "Enable polling for dynamic entry statistics",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling-ethernet-ext": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "description": "Ethernet interface to poll",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling-ethernet": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "number",
+            "description": "Ethernet interface to poll",
+            "minimum": 4,
+            "maximum": 1
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling-http": {
+        "type": "object",
+        "properties": {
+          "toggle": {
+            "type": "string",
+            "description": "'enable': Enable polling HTTP counters; 'disable': Disable polling HTTP counters; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling-system-health": {
+        "type": "object",
+        "properties": {
+          "system-health-usage": {
+            "type": "string",
+            "description": "'enable': Enable polling system health information; 'disable': Disable polling system health information; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "per-control-cpu-usage": {
+            "type": "string",
+            "description": "'enable': Enable polling control cpu; 'disable': Disable polling control cpu usage; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "per-data-cpu-usage": {
+            "type": "string",
+            "description": "'enable': Enable polling data cpu; 'disable': Disable polling data cpu usage; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "license-statistics": {
+            "type": "string",
+            "description": "'enable': Enable polling license statistics; 'disable': Disable polling license statistics; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-polling": {
+        "type": "object",
+        "properties": {
+          "http": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "string",
+                "description": "'enable': Enable polling HTTP counters; 'disable': Disable polling HTTP counters; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "cpu-usage": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "string",
+                "description": "'enable': Enable polling CPU usage; 'disable': Disable polling CPU usage; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "system-health": {
+            "type": "object",
+            "properties": {
+              "system-health-usage": {
+                "type": "string",
+                "description": "'enable': Enable polling system health information; 'disable': Disable polling system health information; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "per-control-cpu-usage": {
+                "type": "string",
+                "description": "'enable': Enable polling control cpu; 'disable': Disable polling control cpu usage; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "per-data-cpu-usage": {
+                "type": "string",
+                "description": "'enable': Enable polling data cpu; 'disable': Disable polling data cpu usage; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "license-statistics": {
+                "type": "string",
+                "description": "'enable': Enable polling license statistics; 'disable': Disable polling license statistics; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ddos": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "string",
+                "description": "'enable': Enable sflow polling for DDOS statistics; 'disable': Disable sflow polling for DDOS statistics; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "3_0-compatibility": {
+                "type": "number",
+                "description": "Enable DDOS sflow polling 3.0/3.1 compatibility mode",
+                "default": 0
+              },
+              "address-byte-order-host": {
+                "type": "number",
+                "description": "Export sflow address field in host byte order",
+                "default": 0
+              },
+              "dns-cache-zone-stats": {
+                "type": "number",
+                "description": "Enable polling for dns cache per instance and per zone statistics",
+                "default": 0
+              },
+              "enable-anomaly-stats": {
+                "type": "number",
+                "description": "Enable Polling for system wide anomaly statistics",
+                "default": 0
+              },
+              "dyn-entry-stats": {
+                "type": "number",
+                "description": "Enable polling for dynamic entry statistics",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "a10-proprietary": {
+            "type": "object",
+            "properties": {
+              "export-deprecated-counters": {
+                "type": "number",
+                "description": "Export deprecated counters",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ethernet-list": {
+            "type": "array",
+            "items": {
+              "type": "ethernet"
+            }
+          },
+          "ethernet-ext-list": {
+            "type": "array",
+            "items": {
+              "type": "ethernet-ext"
+            }
+          },
+          "acos-info": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "string",
+                "description": "'enable': Enable polling ACOS Information; 'disable': Disable polling ACOS Information; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "sflow-sampling": {
+        "type": "object",
+        "properties": {
+          "eth-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-setting": {
+        "type": "object",
+        "properties": {
+          "max-header": {
+            "type": "number",
+            "description": "Configure maximum number of bytes that should be copied from a sampled packet (default: 128) (The maximum number of bytes (Default: 128))",
+            "minimum": 14,
+            "maximum": 512
+          },
+          "packet-sampling-rate": {
+            "type": "number",
+            "description": "sFlow packet sampling rate, default is 1000",
+            "minimum": 10,
+            "maximum": 10000
+          },
+          "counter-polling-interval": {
+            "type": "number",
+            "description": "sFlow counter polling interval, default is 20",
+            "minimum": 1,
+            "maximum": 200
+          },
+          "management-link-utilization-percentage": {
+            "type": "number",
+            "description": "percentage limit of the management link speed (Default is 30%)",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 100
+          },
+          "management-link-utilization": {
+            "type": "number",
+            "description": "limit management link speed in (Mbps)",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "randomize-source-port": {
+            "type": "string",
+            "description": "'enable': Randomize source port; 'disable': Fix source port 6343; 'packet-sampling-only': Only randomized source port for packet-sampling (Default); ",
+            "default": "packet-sampling-only",
+            "enum": [
+              "enable",
+              "disable",
+              "packet-sampling-only"
+            ]
+          },
+          "port-range-start": {
+            "type": "number",
+            "description": "Source port-range",
+            "minimum": 2049,
+            "maximum": 63640
+          },
+          "port-range-end": {
+            "type": "number",
+            "description": "Source port-range end",
+            "minimum": 2049,
+            "maximum": 63640
+          },
+          "default-counter-polling-mtu": {
+            "type": "number",
+            "description": "Default MTU for counter-polling packets - DDoS 3.2 format only (Default: 1500)",
+            "default": 1500,
+            "minimum": 1200,
+            "maximum": 1500
+          },
+          "append-mapping-info": {
+            "type": "number",
+            "description": "Allow TPS to always send mapping ctr block (260, 271, and 272)",
+            "default": 0
+          },
+          "enlarge-zone-name": {
+            "type": "number",
+            "description": "Allow TPS to packet up to 127 character zone names",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow-source-address": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "description": "Source IPv4 address"
+          },
+          "ipv6": {
+            "type": "string",
+            "description": "Source IPv6 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sflow": {
+        "type": "object",
+        "properties": {
+          "setting": {
+            "type": "object",
+            "properties": {
+              "max-header": {
+                "type": "number",
+                "description": "Configure maximum number of bytes that should be copied from a sampled packet (default: 128) (The maximum number of bytes (Default: 128))",
+                "minimum": 14,
+                "maximum": 512
+              },
+              "packet-sampling-rate": {
+                "type": "number",
+                "description": "sFlow packet sampling rate, default is 1000",
+                "minimum": 10,
+                "maximum": 10000
+              },
+              "counter-polling-interval": {
+                "type": "number",
+                "description": "sFlow counter polling interval, default is 20",
+                "minimum": 1,
+                "maximum": 200
+              },
+              "management-link-utilization-percentage": {
+                "type": "number",
+                "description": "percentage limit of the management link speed (Default is 30%)",
+                "default": 30,
+                "minimum": 1,
+                "maximum": 100
+              },
+              "management-link-utilization": {
+                "type": "number",
+                "description": "limit management link speed in (Mbps)",
+                "minimum": 1,
+                "maximum": 10000
+              },
+              "randomize-source-port": {
+                "type": "string",
+                "description": "'enable': Randomize source port; 'disable': Fix source port 6343; 'packet-sampling-only': Only randomized source port for packet-sampling (Default); ",
+                "default": "packet-sampling-only",
+                "enum": [
+                  "enable",
+                  "disable",
+                  "packet-sampling-only"
+                ]
+              },
+              "port-range-start": {
+                "type": "number",
+                "description": "Source port-range",
+                "minimum": 2049,
+                "maximum": 63640
+              },
+              "port-range-end": {
+                "type": "number",
+                "description": "Source port-range end",
+                "minimum": 2049,
+                "maximum": 63640
+              },
+              "default-counter-polling-mtu": {
+                "type": "number",
+                "description": "Default MTU for counter-polling packets - DDoS 3.2 format only (Default: 1500)",
+                "default": 1500,
+                "minimum": 1200,
+                "maximum": 1500
+              },
+              "append-mapping-info": {
+                "type": "number",
+                "description": "Allow TPS to always send mapping ctr block (260, 271, and 272)",
+                "default": 0
+              },
+              "enlarge-zone-name": {
+                "type": "number",
+                "description": "Allow TPS to packet up to 127 character zone names",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "collector": {
+            "type": "object",
+            "properties": {
+              "ip-list": {
+                "type": "array",
+                "items": {
+                  "type": "ip"
+                }
+              },
+              "custom-list": {
+                "type": "array",
+                "items": {
+                  "type": "custom"
+                }
+              },
+              "ipv6-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv6"
+                }
+              }
+            }
+          },
+          "agent": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "object",
+                "properties": {
+                  "ip": {
+                    "type": "string",
+                    "description": "Configure sFlow agent IP address"
+                  },
+                  "ipv6": {
+                    "type": "string",
+                    "description": "Configure sFlow agent IPv6 address"
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "source-address": {
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "string",
+                "description": "Source IPv4 address"
+              },
+              "ipv6": {
+                "type": "string",
+                "description": "Source IPv6 address"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "polling": {
+            "type": "object",
+            "properties": {
+              "http": {
+                "type": "object",
+                "properties": {
+                  "toggle": {
+                    "type": "string",
+                    "description": "'enable': Enable polling HTTP counters; 'disable': Disable polling HTTP counters; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "cpu-usage": {
+                "type": "object",
+                "properties": {
+                  "toggle": {
+                    "type": "string",
+                    "description": "'enable': Enable polling CPU usage; 'disable': Disable polling CPU usage; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "system-health": {
+                "type": "object",
+                "properties": {
+                  "system-health-usage": {
+                    "type": "string",
+                    "description": "'enable': Enable polling system health information; 'disable': Disable polling system health information; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "per-control-cpu-usage": {
+                    "type": "string",
+                    "description": "'enable': Enable polling control cpu; 'disable': Disable polling control cpu usage; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "per-data-cpu-usage": {
+                    "type": "string",
+                    "description": "'enable': Enable polling data cpu; 'disable': Disable polling data cpu usage; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "license-statistics": {
+                    "type": "string",
+                    "description": "'enable': Enable polling license statistics; 'disable': Disable polling license statistics; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "ddos": {
+                "type": "object",
+                "properties": {
+                  "toggle": {
+                    "type": "string",
+                    "description": "'enable': Enable sflow polling for DDOS statistics; 'disable': Disable sflow polling for DDOS statistics; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "3_0-compatibility": {
+                    "type": "number",
+                    "description": "Enable DDOS sflow polling 3.0/3.1 compatibility mode",
+                    "default": 0
+                  },
+                  "address-byte-order-host": {
+                    "type": "number",
+                    "description": "Export sflow address field in host byte order",
+                    "default": 0
+                  },
+                  "dns-cache-zone-stats": {
+                    "type": "number",
+                    "description": "Enable polling for dns cache per instance and per zone statistics",
+                    "default": 0
+                  },
+                  "enable-anomaly-stats": {
+                    "type": "number",
+                    "description": "Enable Polling for system wide anomaly statistics",
+                    "default": 0
+                  },
+                  "dyn-entry-stats": {
+                    "type": "number",
+                    "description": "Enable polling for dynamic entry statistics",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "a10-proprietary": {
+                "type": "object",
+                "properties": {
+                  "export-deprecated-counters": {
+                    "type": "number",
+                    "description": "Export deprecated counters",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "ethernet-list": {
+                "type": "array",
+                "items": {
+                  "type": "ethernet"
+                }
+              },
+              "ethernet-ext-list": {
+                "type": "array",
+                "items": {
+                  "type": "ethernet-ext"
+                }
+              },
+              "acos-info": {
+                "type": "object",
+                "properties": {
+                  "toggle": {
+                    "type": "string",
+                    "description": "'enable': Enable polling ACOS Information; 'disable': Disable polling ACOS Information; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "sampling": {
+            "type": "object",
+            "properties": {
+              "eth-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ve-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "event-notification": {
+            "type": "object",
+            "properties": {
+              "ddos": {
+                "type": "object",
+                "properties": {
+                  "toggle": {
+                    "type": "string",
+                    "description": "'enable': Enable sflow notification for DDOS events; 'disable': Disable sflow notification for DDOS events; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "global": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

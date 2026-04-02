@@ -1,0 +1,359 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - AUTHENTICATION",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the authentication category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/authentication/console": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure console authentication type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication-console"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure console authentication type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication-console"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/authentication-console"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure console authentication type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication-console"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/authentication-console"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure console authentication type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication-console"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/authentication": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure authentication feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure authentication feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/authentication"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure authentication feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/authentication"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTHENTICATION"
+        ],
+        "description": "Configure authentication feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authentication"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "authentication-console": {
+        "type": "object",
+        "properties": {
+          "type-cfg": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "number",
+                "description": "The login authentication type",
+                "default": 0
+              },
+              "console-type": {
+                "type": "string",
+                "enum": [
+                  "ldap",
+                  "local",
+                  "radius",
+                  "tacplus"
+                ]
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "authentication": {
+        "type": "object",
+        "properties": {
+          "type-cfg": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "The login authentication type",
+                "default": "local",
+                "enum": [
+                  "ldap",
+                  "local",
+                  "radius",
+                  "tacplus"
+                ]
+              }
+            }
+          },
+          "enable-cfg": {
+            "type": "object",
+            "properties": {
+              "enable-auth-type": {
+                "type": "string",
+                "description": "The enable-password authentication type",
+                "default": "local",
+                "enum": [
+                  "local",
+                  "tacplus"
+                ]
+              }
+            }
+          },
+          "login-cfg": {
+            "type": "object",
+            "properties": {
+              "privilege-mode": {
+                "type": "number",
+                "description": "Configure to enter privilege-mode",
+                "default": 0
+              },
+              "local": {
+                "type": "number",
+                "description": "Configure local user to enter privilege-mode",
+                "default": 0
+              }
+            }
+          },
+          "mode-cfg": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string",
+                "description": "'multiple': Multiple authentication mode. If an authentication method rejected, try next one; 'single': Single authentication mode. If an authentication method rejected, don't try next one; ",
+                "default": "single",
+                "enum": [
+                  "multiple",
+                  "single"
+                ]
+              }
+            }
+          },
+          "multiple-auth-reject": {
+            "type": "number",
+            "description": "Multiple same user login reject",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "console": {
+            "type": "object",
+            "properties": {
+              "type-cfg": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "number",
+                    "description": "The login authentication type",
+                    "default": 0
+                  },
+                  "console-type": {
+                    "type": "string",
+                    "enum": [
+                      "ldap",
+                      "local",
+                      "radius",
+                      "tacplus"
+                    ]
+                  }
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

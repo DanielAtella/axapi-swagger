@@ -1,0 +1,415 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - NET-MGMT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the net-mgmt category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/net-mgmt/snmp/engineID/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "Operational Status for the object engineID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp-engineID-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/net-mgmt/snmp/engineID": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "SNMP engineID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp-engineID"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "SNMP engineID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp-engineID"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/net-mgmt-snmp-engineID"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "SNMP engineID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp-engineID"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/net-mgmt-snmp-engineID"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "SNMP engineID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp-engineID"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/net-mgmt/snmp/stats/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "Operational Status for the object stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp-stats-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/net-mgmt/snmp/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "SNMP stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/net-mgmt/snmp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "SNMP data",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt-snmp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/net-mgmt": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "Network Management",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "Network Management",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/net-mgmt"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "Network Management",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/net-mgmt"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NET-MGMT"
+        ],
+        "description": "Network Management",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/net-mgmt"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "net-mgmt-snmp-engineID-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "engineid": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "net-mgmt-snmp-engineID": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "net-mgmt-snmp-stats-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "bad-version": {
+                "type": "number"
+              },
+              "unknown-community": {
+                "type": "number"
+              },
+              "illegal-operation": {
+                "type": "number"
+              },
+              "encoding-error": {
+                "type": "number"
+              },
+              "unknown-security-models": {
+                "type": "number"
+              },
+              "invalid-id": {
+                "type": "number"
+              },
+              "input-packets": {
+                "type": "number"
+              },
+              "number-of-req-var": {
+                "type": "number"
+              },
+              "get-req-pdu": {
+                "type": "number"
+              },
+              "get-next-pdu": {
+                "type": "number"
+              },
+              "packet-drop": {
+                "type": "number"
+              },
+              "too-big-errors": {
+                "type": "number"
+              },
+              "no-such-name-errors": {
+                "type": "number"
+              },
+              "bad-values-errors": {
+                "type": "number"
+              },
+              "general-errors": {
+                "type": "number"
+              },
+              "output-packets": {
+                "type": "number"
+              },
+              "get-resp-pdu": {
+                "type": "number"
+              },
+              "output-traps": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "net-mgmt-snmp-stats": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "net-mgmt-snmp": {
+        "type": "object",
+        "properties": {}
+      },
+      "net-mgmt": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

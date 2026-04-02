@@ -1,0 +1,199 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - BOOTIMAGE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the bootimage category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/bootimage/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BOOTIMAGE"
+        ],
+        "description": "Operational Status for the object bootimage",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bootimage-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/bootimage": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BOOTIMAGE"
+        ],
+        "description": "Set next Boot Image",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bootimage"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BOOTIMAGE"
+        ],
+        "description": "Set next Boot Image",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bootimage"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bootimage"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BOOTIMAGE"
+        ],
+        "description": "Set next Boot Image",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bootimage"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "bootimage-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "hd-pri": {
+                "type": "string"
+              },
+              "hd-sec": {
+                "type": "string"
+              },
+              "cf-pri": {
+                "type": "string"
+              },
+              "cf-sec": {
+                "type": "string"
+              },
+              "hd-default": {
+                "type": "string"
+              },
+              "cf-default": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "bootimage": {
+        "type": "object",
+        "properties": {
+          "cf-cfg": {
+            "type": "object",
+            "properties": {
+              "cf": {
+                "type": "number",
+                "description": "Compact flash",
+                "default": 0
+              },
+              "cf-pri": {
+                "type": "number",
+                "description": "Primary image",
+                "default": 0
+              }
+            }
+          },
+          "hd-cfg": {
+            "type": "object",
+            "properties": {
+              "hd": {
+                "type": "number",
+                "description": "Hard disk",
+                "default": 0
+              },
+              "pri": {
+                "type": "number",
+                "description": "Primary image",
+                "default": 0
+              },
+              "sec": {
+                "type": "number",
+                "description": "Secondary image",
+                "default": 0
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - EXPORT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the export category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/export/geo-location-archive": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Geo-location Archive File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-geo-location-archive"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Geo-location Archive File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-geo-location-archive"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-geo-location-archive"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Geo-location Archive File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-geo-location-archive"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export/store": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Create store name for remote url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-store"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Create store name for remote url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-store"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-store"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Create store name for remote url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-store"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Put files to remote site",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT"
+        ],
+        "description": "Put files to remote site",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "export-geo-location-archive": {
+        "type": "object",
+        "properties": {
+          "geo-location-archive-name": {
+            "type": "string",
+            "description": "'GeoLite2-ASN-Archive': GeoLite2-ASN CSV Zipped File; 'GeoLite2-City-Archive': GeoLite2-City CSV Zipped File; 'GeoLite2-Country-Archive': GeoLite2-Country CSV Zipped File; ",
+            "enum": [
+              "GeoLite2-ASN-Archive",
+              "GeoLite2-City-Archive",
+              "GeoLite2-Country-Archive"
+            ]
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          }
+        }
+      },
+      "export-store": {
+        "type": "object",
+        "properties": {
+          "delete": {
+            "type": "number",
+            "description": "Delete an export store profile",
+            "default": 0
+          },
+          "create": {
+            "type": "number",
+            "description": "Create an export store profile",
+            "default": 0
+          },
+          "name": {
+            "type": "string",
+            "description": "profile name to store remote url",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "remote-file": {
+            "type": "string"
+          }
+        }
+      },
+      "export": {
+        "type": "object",
+        "properties": {
+          "capture-config": {
+            "type": "string",
+            "description": "Capture-config pcapng file",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "pkt-count": {
+            "type": "number",
+            "description": "Specify number of latest packets to export",
+            "minimum": 1,
+            "maximum": 1000
+          },
+          "debug-traffic-capture-chassis-slot": {
+            "type": "number",
+            "description": "specify slot id in chassis",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "axdebug": {
+            "type": "string",
+            "description": "AX Debug Packet File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "ssl-key": {
+            "type": "string",
+            "description": "SSL Key File",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "ssl-crl": {
+            "type": "string",
+            "description": "SSL Crl File",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "ssl-cert-key": {
+            "type": "string",
+            "description": "Local SSL Key/Certificate file name",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "aflex": {
+            "type": "string",
+            "description": "aFleX Script Source File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "xml-schema": {
+            "type": "string",
+            "description": "XML-Schema File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "wsdl": {
+            "type": "string",
+            "description": "Web Services Definition Language File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "policy": {
+            "type": "string",
+            "description": "WAF policy File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "bw-list": {
+            "type": "string",
+            "description": "Black white List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "file-inspection-bw-list": {
+            "type": "string",
+            "description": "Black white List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "class-list": {
+            "type": "string",
+            "description": "Class List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "domain-list": {
+            "type": "string",
+            "description": "Domain List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "lw-4o6": {
+            "type": "string",
+            "description": "LW-4over6 Binding Table File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "lw-4o6-binding-table-validation-log": {
+            "type": "string",
+            "description": "LW-4over6 Binding Table Validation Log File",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "fixed-nat": {
+            "type": "string",
+            "description": "Fixed NAT Port Mapping File",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "fixed-nat-archive": {
+            "type": "string",
+            "description": "Fixed NAT Port Mapping Archive File",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "geo-location": {
+            "type": "string",
+            "description": "Geo-location CSV File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "dnssec-dnskey": {
+            "type": "string",
+            "description": "DNSSEC DNSKEY(KSK) file for child zone",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "dnssec-ds": {
+            "type": "string",
+            "description": "DNSSEC DS file for child zone",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "thales-secworld": {
+            "type": "string",
+            "description": "Thales security world files",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "auth-portal": {
+            "type": "string",
+            "description": "Portal file for http authentication",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "auth-portal-image": {
+            "type": "string",
+            "description": "Image file for default portal",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "saml-idp-name": {
+            "type": "string",
+            "description": "SAML metadata of identity provider",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "auth-jwks": {
+            "type": "string",
+            "description": "Json web key",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "local-uri-file": {
+            "type": "string",
+            "description": "Local URI files for http response",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "ssl-cert": {
+            "type": "string",
+            "description": "SSL Cert File",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "ca-cert": {
+            "type": "string",
+            "description": "CA Cert File",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "csr": {
+            "type": "string",
+            "description": "Certificate Signing Request",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "debug-monitor": {
+            "type": "string",
+            "description": "Debug Monitor Output",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "syslog": {
+            "type": "string",
+            "description": "Enter \"messages\" as the default syslog file name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "running-config": {
+            "type": "number",
+            "description": "Running Config",
+            "default": 0
+          },
+          "startup-config": {
+            "type": "number",
+            "description": "Startup Config",
+            "default": 0
+          },
+          "visibility": {
+            "type": "number",
+            "description": "Export Visibility module related files",
+            "default": 0
+          },
+          "mon-entity-debug-file": {
+            "type": "string",
+            "description": "Enter Mon entity debug file name",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "profile": {
+            "type": "string",
+            "description": "Startup-config Profile",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "status-check": {
+            "type": "number",
+            "description": "check export task status",
+            "default": 0
+          },
+          "merged-pcap": {
+            "type": "number",
+            "description": "Export the merged pcap file when there are multiple Export sessions",
+            "default": 0
+          },
+          "per-cpu": {
+            "type": "number",
+            "description": "Export the per-cpu files along with the merged pcap file in .tgz format",
+            "default": 0
+          },
+          "tgz": {
+            "type": "number",
+            "description": "Export the merged pcap in .tgz format",
+            "default": 0
+          },
+          "externalfilename": {
+            "type": "string",
+            "description": "Export the External Program from the System",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "store-name": {
+            "type": "string",
+            "description": "Export store name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "store": {
+            "type": "object",
+            "properties": {
+              "delete": {
+                "type": "number",
+                "description": "Delete an export store profile",
+                "default": 0
+              },
+              "create": {
+                "type": "number",
+                "description": "Create an export store profile",
+                "default": 0
+              },
+              "name": {
+                "type": "string",
+                "description": "profile name to store remote url",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "remote-file": {
+                "type": "string"
+              }
+            }
+          },
+          "geo-location-archive": {
+            "type": "object",
+            "properties": {
+              "geo-location-archive-name": {
+                "type": "string",
+                "description": "'GeoLite2-ASN-Archive': GeoLite2-ASN CSV Zipped File; 'GeoLite2-City-Archive': GeoLite2-City CSV Zipped File; 'GeoLite2-Country-Archive': GeoLite2-Country CSV Zipped File; ",
+                "enum": [
+                  "GeoLite2-ASN-Archive",
+                  "GeoLite2-City-Archive",
+                  "GeoLite2-Country-Archive"
+                ]
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Profile name for remote url"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

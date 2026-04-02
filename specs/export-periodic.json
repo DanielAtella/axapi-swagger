@@ -1,0 +1,1474 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - EXPORT-PERIODIC",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the export-periodic category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/export-periodic/{axdebug}/axdebug/{axdebug}": {
+      "parameters": [
+        {
+          "name": "axdebug",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for axdebug"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "AX Debug Packet File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-axdebug"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "AX Debug Packet File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-axdebug"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-axdebug"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "AX Debug Packet File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-axdebug"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-axdebug"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "AX Debug Packet File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-axdebug"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{class-list}/class-list/{class-list}": {
+      "parameters": [
+        {
+          "name": "class-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for class-list"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-class-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-class-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-class-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-class-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-class-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Class list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-class-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{axdebug}/debug-monitor/{debug-monitor}": {
+      "parameters": [
+        {
+          "name": "axdebug",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for axdebug"
+        },
+        {
+          "name": "debug-monitor",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for debug-monitor"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Debug Monitor Output",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-debug-monitor"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Debug Monitor Output",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-debug-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-debug-monitor"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Debug Monitor Output",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-debug-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-debug-monitor"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Debug Monitor Output",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-debug-monitor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{class-list}/domain-list/{domain-list}": {
+      "parameters": [
+        {
+          "name": "class-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for class-list"
+        },
+        {
+          "name": "domain-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for domain-list"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-domain-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-domain-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-domain-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-domain-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-domain-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Domain list files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-domain-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{class-list}/geo-location/{geo-location}": {
+      "parameters": [
+        {
+          "name": "class-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for class-list"
+        },
+        {
+          "name": "geo-location",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for geo-location"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-geo-location"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-geo-location"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-geo-location"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-geo-location"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-geo-location"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Geo-location CSV File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-geo-location"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{axdebug}/ssl-cert-key/{ssl-cert-key}": {
+      "parameters": [
+        {
+          "name": "axdebug",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for axdebug"
+        },
+        {
+          "name": "ssl-cert-key",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ssl-cert-key"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-ssl-cert-key"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-ssl-cert-key"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Bulk file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert-key"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{axdebug}/ssl-cert/{ssl-cert}": {
+      "parameters": [
+        {
+          "name": "axdebug",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for axdebug"
+        },
+        {
+          "name": "ssl-cert",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ssl-cert"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-ssl-cert"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-ssl-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Cert File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{axdebug}/ssl-key/{ssl-key}": {
+      "parameters": [
+        {
+          "name": "axdebug",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for axdebug"
+        },
+        {
+          "name": "ssl-key",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ssl-key"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-ssl-key"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-ssl-key"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "SSL Key File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-ssl-key"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{axdebug}/syslog/{syslog}": {
+      "parameters": [
+        {
+          "name": "axdebug",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for axdebug"
+        },
+        {
+          "name": "syslog",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for syslog"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Syslog File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-syslog"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Syslog File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-syslog"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-syslog"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Syslog File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-syslog"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic-syslog"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Syslog File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic-syslog"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/export-periodic/{class-list}": {
+      "parameters": [
+        {
+          "name": "class-list",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for class-list"
+        }
+      ],
+      "get": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Put files to remote site periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Put files to remote site periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Put files to remote site periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/export-periodic"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EXPORT-PERIODIC"
+        ],
+        "description": "Put files to remote site periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/export-periodic"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "export-periodic-axdebug": {
+        "type": "object",
+        "properties": {
+          "axdebug": {
+            "type": "string",
+            "description": "AX Debug Packet File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "merged-pcap": {
+            "type": "number",
+            "description": "Export the merged pcap file when there are multiple Export sessions",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-class-list": {
+        "type": "object",
+        "properties": {
+          "class-list": {
+            "type": "string",
+            "description": "Class List Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-debug-monitor": {
+        "type": "object",
+        "properties": {
+          "debug-monitor": {
+            "type": "string",
+            "description": "Debug Monitor Output",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-domain-list": {
+        "type": "object",
+        "properties": {
+          "domain-list": {
+            "type": "string",
+            "description": "Domain List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-geo-location": {
+        "type": "object",
+        "properties": {
+          "geo-location": {
+            "type": "string",
+            "description": "Geo-location CSV File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-ssl-cert-key": {
+        "type": "object",
+        "properties": {
+          "ssl-cert-key": {
+            "type": "string",
+            "description": "Local SSL Key/Certificate file name",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-ssl-cert": {
+        "type": "object",
+        "properties": {
+          "ssl-cert": {
+            "type": "string",
+            "description": "SSL Cert File",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-ssl-key": {
+        "type": "object",
+        "properties": {
+          "ssl-key": {
+            "type": "string",
+            "description": "SSL Key File",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic-syslog": {
+        "type": "object",
+        "properties": {
+          "syslog": {
+            "type": "string",
+            "description": "Syslog file",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "export-periodic": {
+        "type": "object",
+        "properties": {
+          "class-list": {
+            "type": "string",
+            "description": "Class List Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify the period in second",
+            "minimum": 60,
+            "maximum": 31536000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "class-list-list": {
+            "type": "array",
+            "items": {
+              "type": "class-list"
+            }
+          },
+          "domain-list-list": {
+            "type": "array",
+            "items": {
+              "type": "domain-list"
+            }
+          },
+          "geo-location-list": {
+            "type": "array",
+            "items": {
+              "type": "geo-location"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

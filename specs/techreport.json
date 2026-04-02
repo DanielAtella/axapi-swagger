@@ -1,0 +1,660 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - TECHREPORT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the techreport category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/techreport/interval": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure polling techreport interval",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-interval"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure polling techreport interval",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-interval"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-interval"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure polling techreport interval",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-interval"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-interval"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure polling techreport interval",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-interval"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/techreport/max-logfile-size": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum logfile size for periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-logfile-size"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum logfile size for periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-logfile-size"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-max-logfile-size"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum logfile size for periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-logfile-size"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-max-logfile-size"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum logfile size for periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-logfile-size"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/techreport/max-partitions": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum partitions to show in per periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-partitions"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum partitions to show in per periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-partitions"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-max-partitions"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum partitions to show in per periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-partitions"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-max-partitions"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Maximum partitions to show in per periodic techsupport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-max-partitions"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/techreport/priority-partition/{part-name}": {
+      "parameters": [
+        {
+          "name": "part-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for part-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure partition to always poll for techreport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-priority-partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure partition to always poll for techreport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-priority-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-priority-partition"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure partition to always poll for techreport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-priority-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport-priority-partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure partition to always poll for techreport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport-priority-partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/techreport": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure show tech",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure show tech",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure show tech",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/techreport"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TECHREPORT"
+        ],
+        "description": "Configure show tech",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/techreport"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "techreport-interval": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "description": "Showtech interval in minutes (default is 15)",
+            "default": 15,
+            "minimum": 15,
+            "maximum": 120
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "techreport-max-logfile-size": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "description": "Log file size for periodic techsupport (default is 1)",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 10
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "techreport-max-partitions": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "description": "Maximum partions to show in per periodic techsupport (default is 30)",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 120
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "techreport-priority-partition": {
+        "type": "object",
+        "properties": {
+          "part-name": {
+            "type": "string",
+            "description": "Name of partition always want to show in showtech (shared is always shown by default)",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "techreport": {
+        "type": "object",
+        "properties": {
+          "disable": {
+            "type": "number",
+            "description": "Disable the polling techreport",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "interval": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "description": "Showtech interval in minutes (default is 15)",
+                "default": 15,
+                "minimum": 15,
+                "maximum": 120
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "max-partitions": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "description": "Maximum partions to show in per periodic techsupport (default is 30)",
+                "default": 30,
+                "minimum": 1,
+                "maximum": 120
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "max-logfile-size": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "description": "Log file size for periodic techsupport (default is 1)",
+                "default": 1,
+                "minimum": 1,
+                "maximum": 10
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "priority-partition-list": {
+            "type": "array",
+            "items": {
+              "type": "priority-partition"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

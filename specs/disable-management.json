@@ -1,0 +1,1016 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - DISABLE-MANAGEMENT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the disable-management category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/disable-management/service/http": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-http"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-http"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-http"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-http"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/disable-management/service/https": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-https"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-https"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-https"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-https"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-https"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-https"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/disable-management/service/ntp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ntp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ntp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-ntp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ntp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-ntp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ntp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/disable-management/service/ping": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ping"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ping"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-ping"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ping"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-ping"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ping"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/disable-management/service/snmp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-snmp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-snmp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-snmp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-snmp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-snmp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-snmp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/disable-management/service/ssh": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ssh"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ssh"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-ssh"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ssh"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/disable-management-service-ssh"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service-ssh"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/disable-management/service": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "Disable management services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management-service"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/disable-management": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DISABLE-MANAGEMENT"
+        ],
+        "description": "Disable management services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/disable-management"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "disable-management-service-http": {
+        "type": "object",
+        "properties": {
+          "management": {
+            "type": "number",
+            "description": "Management port",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "disable-management-service-https": {
+        "type": "object",
+        "properties": {
+          "management": {
+            "type": "number",
+            "description": "Management port",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "disable-management-service-ntp": {
+        "type": "object",
+        "properties": {
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "tunnel-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "disable-management-service-ping": {
+        "type": "object",
+        "properties": {
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "disable-management-service-snmp": {
+        "type": "object",
+        "properties": {
+          "management": {
+            "type": "number",
+            "description": "Management port",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "disable-management-service-ssh": {
+        "type": "object",
+        "properties": {
+          "management": {
+            "type": "number",
+            "description": "Management port",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "disable-management-service": {
+        "type": "object",
+        "properties": {
+          "ping": {
+            "type": "object",
+            "properties": {
+              "management": {
+                "type": "number",
+                "description": "Management Interface",
+                "default": 0
+              },
+              "eth-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ve-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "lif-cfg": {
+                "type": "object",
+                "properties": {
+                  "lif": {
+                    "type": "string",
+                    "description": "Lif name (Lif interface name)",
+                    "minLength": 1,
+                    "maxLength": 15
+                  }
+                }
+              },
+              "all-data-intf": {
+                "type": "number",
+                "description": "All Data Interfaces",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ssh": {
+            "type": "object",
+            "properties": {
+              "management": {
+                "type": "number",
+                "description": "Management port",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "http": {
+            "type": "object",
+            "properties": {
+              "management": {
+                "type": "number",
+                "description": "Management port",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "https": {
+            "type": "object",
+            "properties": {
+              "management": {
+                "type": "number",
+                "description": "Management port",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "snmp": {
+            "type": "object",
+            "properties": {
+              "management": {
+                "type": "number",
+                "description": "Management port",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "disable-management": {
+        "type": "object",
+        "properties": {
+          "service": {
+            "type": "object",
+            "properties": {
+              "ping": {
+                "type": "object",
+                "properties": {
+                  "management": {
+                    "type": "number",
+                    "description": "Management Interface",
+                    "default": 0
+                  },
+                  "eth-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ve-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "lif-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "lif": {
+                        "type": "string",
+                        "description": "Lif name (Lif interface name)",
+                        "minLength": 1,
+                        "maxLength": 15
+                      }
+                    }
+                  },
+                  "all-data-intf": {
+                    "type": "number",
+                    "description": "All Data Interfaces",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "ssh": {
+                "type": "object",
+                "properties": {
+                  "management": {
+                    "type": "number",
+                    "description": "Management port",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "http": {
+                "type": "object",
+                "properties": {
+                  "management": {
+                    "type": "number",
+                    "description": "Management port",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "https": {
+                "type": "object",
+                "properties": {
+                  "management": {
+                    "type": "number",
+                    "description": "Management port",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "snmp": {
+                "type": "object",
+                "properties": {
+                  "management": {
+                    "type": "number",
+                    "description": "Management port",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

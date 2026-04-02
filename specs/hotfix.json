@@ -1,0 +1,216 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - HOTFIX",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the hotfix category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/hotfix/apply": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HOTFIX"
+        ],
+        "description": "apply a hotfix",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/hotfix-apply"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HOTFIX"
+        ],
+        "description": "apply a hotfix",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/hotfix-apply"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/hotfix-apply"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HOTFIX"
+        ],
+        "description": "apply a hotfix",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/hotfix-apply"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/hotfix": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "HOTFIX"
+        ],
+        "description": "hotfix System",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/hotfix"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HOTFIX"
+        ],
+        "description": "hotfix System",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/hotfix"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/hotfix"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HOTFIX"
+        ],
+        "description": "hotfix System",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/hotfix"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "hotfix-apply": {
+        "type": "object",
+        "properties": {
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "source-ip-address": {
+            "type": "string",
+            "description": "Source ip address"
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          }
+        }
+      },
+      "hotfix": {
+        "type": "object",
+        "properties": {
+          "revoke": {
+            "type": "number",
+            "description": "revoke a hotfix",
+            "default": 0
+          },
+          "apply": {
+            "type": "object",
+            "properties": {
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "source-ip-address": {
+                "type": "string",
+                "description": "Source ip address"
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

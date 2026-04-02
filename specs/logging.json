@@ -1,0 +1,5119 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - LOGGING",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the logging category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/logging/auditlog": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set send auditlog to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-auditlog"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set send auditlog to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-auditlog"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-auditlog"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set send auditlog to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-auditlog"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-auditlog"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set send auditlog to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-auditlog"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/buffered": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set buffered logging parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-buffered"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set buffered logging parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-buffered"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-buffered"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set buffered logging parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-buffered"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-buffered"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set buffered logging parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-buffered"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/configure": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-configure"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-configure"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-configure"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-configure"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-configure"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-configure"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/console": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to console",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-console"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to console",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-console"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-console"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to console",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-console"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-console"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to console",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-console"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/disable-partition-name": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/disable-partition-name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-disable-partition-name"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/disable-partition-name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-disable-partition-name"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-disable-partition-name"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/disable-partition-name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-disable-partition-name"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-disable-partition-name"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/disable-partition-name",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-disable-partition-name"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/email-address": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set the recipients address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set the recipients address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set the recipients address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set the recipients address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/email/buffer": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email buffering settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-buffer"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email buffering settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-buffer"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-buffer"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email buffering settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-buffer"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-buffer"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email buffering settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-buffer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/email/filter/{filter-id}": {
+      "parameters": [
+        {
+          "name": "filter-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for filter-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email filter settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-filter"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email filter settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-filter"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-filter"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email filter settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-filter"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-filter"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Logging via email filter settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-filter"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/email/level": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to email address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-level"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to email address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-level"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-level"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to email address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-level"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-email-level"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to email address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email-level"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/email": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to email address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-email"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/enable-partition-id": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/enable-partition-id",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-enable-partition-id"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/enable-partition-id",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-enable-partition-id"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-enable-partition-id"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/enable-partition-id",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-enable-partition-id"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-enable-partition-id"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/enable-partition-id",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-enable-partition-id"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/export": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Export cached log items to the specified destination",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-export"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Export cached log items to the specified destination",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-export"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-export"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Export cached log items to the specified destination",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-export"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/facility": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Facility parameter for syslog messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-facility"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Facility parameter for syslog messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-facility"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-facility"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Facility parameter for syslog messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-facility"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-facility"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Facility parameter for syslog messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-facility"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/host/ipv4addr/{host-ipv4}": {
+      "parameters": [
+        {
+          "name": "host-ipv4",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for host-ipv4"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "host DNS name or ipv4 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv4addr"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "host DNS name or ipv4 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv4addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-host-ipv4addr"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "host DNS name or ipv4 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv4addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-host-ipv4addr"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "host DNS name or ipv4 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv4addr"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/host/ipv6addr/{host-ipv6}": {
+      "parameters": [
+        {
+          "name": "host-ipv6",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for host-ipv6"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "ipv6 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv6addr"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "ipv6 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv6addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-host-ipv6addr"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "ipv6 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv6addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-host-ipv6addr"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "ipv6 address of remote syslog server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-ipv6addr"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/host/partition": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Specify preferred partition configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Specify preferred partition configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-host-partition"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Specify preferred partition configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-host-partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Specify preferred partition configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host-partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/host": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set remote syslog host DNS name or ip address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-host"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/access/log/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-log-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/access/log": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Access Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-log"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Access Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-log"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-access-log"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Access Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-log"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/access/top-n/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object top-n",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-top-n-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/access/top-n": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Access Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-top-n"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Access Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-top-n"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-access-top-n"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Access Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access-top-n"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/access": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "EP access log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-access"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/app-fw/dot-plot/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object dot-plot",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-dot-plot-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/app-fw/dot-plot": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall dot plot",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-dot-plot"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall dot plot",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-dot-plot"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-app-fw-dot-plot"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall dot plot",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-dot-plot"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/app-fw/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object app-fw",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/app-fw/top-n/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object top-n",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-top-n-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/app-fw/top-n": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-top-n"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-top-n"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-app-fw-top-n"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw-top-n"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/app-fw": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-app-fw"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Application firewall",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-app-fw"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/authentication/log/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-log-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/authentication/log": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Authentication Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-log"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Authentication Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-log"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-authentication-log"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Authentication Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-log"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/authentication/top-n/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object top-n",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-top-n-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/authentication/top-n": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Authentication Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-top-n"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Authentication Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-top-n"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-authentication-top-n"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Authentication Log Info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication-top-n"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/authentication": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "authentication log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-authentication"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/file-category/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object file-category",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-file-category-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/file-category/top-n/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Operational Status for the object top-n",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-file-category-top-n-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/global/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Statistics for the object global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-global-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log/global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/local-log/global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/local-log/global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-global"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/local-log/global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-local-log-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Endpoint for /axapi/v3/logging/local-log/global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/local-log": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "local log",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-local-log"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/lsn/log-suppression": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log generation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-log-suppression"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log generation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-log-suppression"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-lsn-log-suppression"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log generation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-log-suppression"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-lsn-log-suppression"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log generation parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-log-suppression"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/lsn/port-unavailable": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log policy when port unavailable occur",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-port-unavailable"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log policy when port unavailable occur",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-port-unavailable"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-lsn-port-unavailable"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log policy when port unavailable occur",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-port-unavailable"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-lsn-port-unavailable"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN system log policy when port unavailable occur",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-port-unavailable"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/lsn/quota-exceeded": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN quota exceeded log parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-quota-exceeded"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN quota exceeded log parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-quota-exceeded"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-lsn-quota-exceeded"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN quota exceeded log parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-quota-exceeded"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-lsn-quota-exceeded"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN quota exceeded log parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn-quota-exceeded"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/lsn": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set LSN logging parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-lsn"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/monitor": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set terminal monitor logging level",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-monitor"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set terminal monitor logging level",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-monitor"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set terminal monitor logging level",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-monitor"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set terminal monitor logging level",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-monitor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/single-priority/{levelname}": {
+      "parameters": [
+        {
+          "name": "levelname",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for levelname"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set single-priority logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-single-priority"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set single-priority logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-single-priority"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-single-priority"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set single-priority logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-single-priority"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-single-priority"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set single-priority logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-single-priority"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/syslog": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-syslog"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-syslog"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-syslog"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-syslog"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-syslog"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to syslog host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-syslog"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging/trap": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to snmp trap host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-trap"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to snmp trap host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-trap"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-trap"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to snmp trap host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-trap"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/logging-trap"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "Set logging level which sent to snmp trap host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging-trap"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/logging": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOGGING"
+        ],
+        "description": "System logging configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/logging"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "logging-auditlog": {
+        "type": "object",
+        "properties": {
+          "shared": {
+            "type": "number",
+            "description": "Select shared partition",
+            "default": 0
+          },
+          "partition-name": {
+            "type": "string",
+            "description": "Select partition name for logging",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "host6": {
+            "type": "string",
+            "description": "Configure the auditlog host"
+          },
+          "host4": {
+            "type": "string",
+            "description": "Configure the auditlog host",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "audit-facility": {
+            "type": "string",
+            "description": "'local0': Local use; 'local1': Local use; 'local2': Local use; 'local3': Local use; 'local4': Local use; 'local5': Local use; 'local6': Local use; 'local7': Local use;  (Configure the facility of auditlog)",
+            "enum": [
+              "local0",
+              "local1",
+              "local2",
+              "local3",
+              "local4",
+              "local5",
+              "local6",
+              "local7"
+            ]
+          },
+          "port": {
+            "type": "number",
+            "description": "Set remote audit log port number(Default 514)",
+            "default": 514,
+            "minimum": 1,
+            "maximum": 32767
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-buffered": {
+        "type": "object",
+        "properties": {
+          "buffersize": {
+            "type": "number",
+            "description": "Logging buffer size (in items), default 30000",
+            "default": 30000,
+            "minimum": 10000,
+            "maximum": 50000
+          },
+          "levelname": {
+            "type": "string",
+            "description": "'disable': Do not send log to buffer; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+            "default": "debugging",
+            "enum": [
+              "disable",
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-configure": {
+        "type": "object",
+        "properties": {
+          "line-feed-in-udp-syslog": {
+            "type": "number",
+            "description": "Add newline for syslog over UDP",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-console": {
+        "type": "object",
+        "properties": {
+          "console-levelname": {
+            "type": "string",
+            "description": "'disable': Do not send log to console; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+            "default": "error",
+            "enum": [
+              "disable",
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-disable-partition-name": {
+        "type": "object",
+        "properties": {
+          "disable-partition-name": {
+            "type": "number",
+            "description": "Disable partition name in logs",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-email-address": {
+        "type": "object",
+        "properties": {
+          "email-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-email-buffer": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "number",
+            "description": "Number of log messages that can be buffered (Number of log messages that can be buffered, default 50)",
+            "default": 50,
+            "minimum": 16,
+            "maximum": 256
+          },
+          "time": {
+            "type": "number",
+            "description": "Number of minutes a log message can stay in buffer (Number of minutes a log message can stay in buffer, default 10)",
+            "default": 10,
+            "minimum": 10,
+            "maximum": 1440
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-email-filter": {
+        "type": "object",
+        "properties": {
+          "filter-id": {
+            "type": "number",
+            "description": "Logging via email filter settings",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "expression": {
+            "type": "string",
+            "description": "Reverse Polish Notation, consists of level 0-7, module AFLEX/HMON/..., pattern log-content-pattern, and or/and/not",
+            "minLength": 1,
+            "maxLength": 511
+          },
+          "trigger": {
+            "type": "number",
+            "description": "Trigger email, override buffer settings",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-email-level": {
+        "type": "object",
+        "properties": {
+          "email-levelname": {
+            "type": "string",
+            "description": "'disable': Do not send log to email address; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately   (severity=1); 'critical': Critical conditions      (severity=2); 'notification': Normal but significant conditions (severity=5); ",
+            "default": "disable",
+            "enum": [
+              "disable",
+              "emergency",
+              "alert",
+              "critical",
+              "notification"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-email": {
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "object",
+            "properties": {
+              "email-levelname": {
+                "type": "string",
+                "description": "'disable': Do not send log to email address; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately   (severity=1); 'critical': Critical conditions      (severity=2); 'notification': Normal but significant conditions (severity=5); ",
+                "default": "disable",
+                "enum": [
+                  "disable",
+                  "emergency",
+                  "alert",
+                  "critical",
+                  "notification"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "buffer": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "number",
+                "description": "Number of log messages that can be buffered (Number of log messages that can be buffered, default 50)",
+                "default": 50,
+                "minimum": 16,
+                "maximum": 256
+              },
+              "time": {
+                "type": "number",
+                "description": "Number of minutes a log message can stay in buffer (Number of minutes a log message can stay in buffer, default 10)",
+                "default": 10,
+                "minimum": 10,
+                "maximum": 1440
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "filter-list": {
+            "type": "array",
+            "items": {
+              "type": "filter"
+            }
+          }
+        }
+      },
+      "logging-enable-partition-id": {
+        "type": "object",
+        "properties": {
+          "enable-partition-id": {
+            "type": "number",
+            "description": "Enable partition id in logs",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-export": {
+        "type": "object",
+        "properties": {
+          "all": {
+            "type": "number",
+            "description": "System support messages",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "logging-facility": {
+        "type": "object",
+        "properties": {
+          "facilityname": {
+            "type": "string",
+            "description": "'local0': Local use; 'local1': Local use; 'local2': Local use; 'local3': Local use; 'local4': Local use; 'local5': Local use; 'local6': Local use; 'local7': Local use;  (Facility parameter for syslog messages)",
+            "default": "local0",
+            "enum": [
+              "local0",
+              "local1",
+              "local2",
+              "local3",
+              "local4",
+              "local5",
+              "local6",
+              "local7"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-host-ipv4addr": {
+        "type": "object",
+        "properties": {
+          "host-ipv4": {
+            "type": "string",
+            "description": "Set syslog host ip address"
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port for connections",
+            "default": 0
+          },
+          "port": {
+            "type": "number",
+            "description": "Set remote syslog port number",
+            "default": 514,
+            "minimum": 1,
+            "maximum": 32767
+          },
+          "tcp": {
+            "type": "number",
+            "description": "Use TCP as transport protocol",
+            "default": 0
+          },
+          "over-tls": {
+            "type": "number",
+            "description": "Enable remote logging over TLS session",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-host-ipv6addr": {
+        "type": "object",
+        "properties": {
+          "host-ipv6": {
+            "type": "string",
+            "description": "Set syslog host ipv6 address"
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port for connections",
+            "default": 0
+          },
+          "port": {
+            "type": "number",
+            "description": "Set remote syslog port number",
+            "default": 514,
+            "minimum": 1,
+            "maximum": 32767
+          },
+          "tcp": {
+            "type": "number",
+            "description": "Use TCP as transport protocol",
+            "default": 0
+          },
+          "over-tls": {
+            "type": "number",
+            "description": "Enable remote logging over TLS session",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-host-partition": {
+        "type": "object",
+        "properties": {
+          "shared": {
+            "type": "number",
+            "description": "Select shared partition",
+            "default": 0
+          },
+          "partition-name": {
+            "type": "string",
+            "description": "Select partition name for logging",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-host": {
+        "type": "object",
+        "properties": {
+          "ipv4addr-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv4addr"
+            }
+          },
+          "ipv6addr-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv6addr"
+            }
+          },
+          "partition": {
+            "type": "object",
+            "properties": {
+              "shared": {
+                "type": "number",
+                "description": "Select shared partition",
+                "default": 0
+              },
+              "partition-name": {
+                "type": "string",
+                "description": "Select partition name for logging",
+                "minLength": 1,
+                "maxLength": 14
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-access-log-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-access-log": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-local-log-access-top-n-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "top": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-access-top-n": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-local-log-access": {
+        "type": "object",
+        "properties": {}
+      },
+      "logging-local-log-app-fw-dot-plot-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "application-name": {
+                "type": "string"
+              },
+              "client-ip": {
+                "type": "string"
+              },
+              "data": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-app-fw-dot-plot": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-local-log-app-fw-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "top-n": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "max-entries": {
+                    "type": "number"
+                  },
+                  "start-time": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  },
+                  "interval-position": {
+                    "type": "string"
+                  },
+                  "top": {
+                    "type": "string"
+                  },
+                  "application-name": {
+                    "type": "string"
+                  },
+                  "category": {
+                    "type": "string"
+                  },
+                  "client-ip": {
+                    "type": "string"
+                  },
+                  "action": {
+                    "type": "string"
+                  },
+                  "total": {
+                    "type": "number"
+                  },
+                  "log-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "dot-plot": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "start-time": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  },
+                  "interval-position": {
+                    "type": "string"
+                  },
+                  "application-name": {
+                    "type": "string"
+                  },
+                  "client-ip": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "string"
+                  },
+                  "total": {
+                    "type": "number"
+                  },
+                  "log-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-app-fw-top-n-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "top": {
+                "type": "string"
+              },
+              "application-name": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "client-ip": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-app-fw-top-n": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-local-log-app-fw": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "top-n": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "dot-plot": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-authentication-log-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-authentication-log": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-local-log-authentication-top-n-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "top": {
+                "type": "string"
+              },
+              "auth-result": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-authentication-top-n": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-local-log-authentication": {
+        "type": "object",
+        "properties": {}
+      },
+      "logging-local-log-file-category-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "top-n": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "max-entries": {
+                    "type": "number"
+                  },
+                  "start-time": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  },
+                  "interval-position": {
+                    "type": "string"
+                  },
+                  "top": {
+                    "type": "string"
+                  },
+                  "file-category": {
+                    "type": "string"
+                  },
+                  "total": {
+                    "type": "number"
+                  },
+                  "log-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-file-category-top-n-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "max-entries": {
+                "type": "number"
+              },
+              "start-time": {
+                "type": "string"
+              },
+              "interval": {
+                "type": "string"
+              },
+              "interval-position": {
+                "type": "string"
+              },
+              "top": {
+                "type": "string"
+              },
+              "file-category": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "log-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-global-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "enqueue": {
+                "type": "number",
+                "description": "Total local-log enqueue"
+              },
+              "enqueue-full": {
+                "type": "number",
+                "description": "Total local-log queue full"
+              },
+              "enqueue-error": {
+                "type": "number",
+                "description": "Total local-log enqueue error"
+              },
+              "dequeue": {
+                "type": "number",
+                "description": "Total local-log dequeue"
+              },
+              "dequeue-error": {
+                "type": "number",
+                "description": "Total local-log dequeue processing error"
+              },
+              "raw-log": {
+                "type": "number",
+                "description": "Total local-log raw logs"
+              },
+              "raw-log-error": {
+                "type": "number",
+                "description": "Total raw log logging error"
+              },
+              "log-summarized": {
+                "type": "number",
+                "description": "Total raw log summarized"
+              },
+              "l1-log-summarized": {
+                "type": "number",
+                "description": "Total layer 1 log summarized"
+              },
+              "l2-log-summarized": {
+                "type": "number",
+                "description": "Total layer 2 log summarized"
+              },
+              "log-summarized-error": {
+                "type": "number",
+                "description": "Total local-log summarization error"
+              },
+              "aam-db": {
+                "type": "number",
+                "description": "Total local-log AAM raw database"
+              },
+              "ep-db": {
+                "type": "number",
+                "description": "Total local-log EP raw database"
+              },
+              "fi-db": {
+                "type": "number",
+                "description": "Total local-log File-Inspection raw database"
+              },
+              "fw-db": {
+                "type": "number",
+                "description": "Total local-log Firewall raw database"
+              },
+              "aam-top-user-db": {
+                "type": "number",
+                "description": "Total local-log AAM top user summary database"
+              },
+              "ep-top-user-db": {
+                "type": "number",
+                "description": "Total local-log EP top user summary database"
+              },
+              "ep-top-src-db": {
+                "type": "number",
+                "description": "Total local-log EP top client summary database"
+              },
+              "ep-top-dst-db": {
+                "type": "number",
+                "description": "Total local-log EP top destination summary database"
+              },
+              "ep-top-domain-db": {
+                "type": "number",
+                "description": "Total local-log EP top domain summary database"
+              },
+              "ep-top-web-category-db": {
+                "type": "number",
+                "description": "Total local-log EP top web-category summary database"
+              },
+              "ep-top-host-db": {
+                "type": "number",
+                "description": "Total local-log EP top host summary database"
+              },
+              "fi-top-src-db": {
+                "type": "number",
+                "description": "Total local-log File-Inspection top source summary database"
+              },
+              "fi-top-dst-db": {
+                "type": "number",
+                "description": "Total local-log File-Inspection top destination summary database"
+              },
+              "fi-top-filename-db": {
+                "type": "number",
+                "description": "Total local-log File-Inspection top file name summary database"
+              },
+              "fi-top-file-ext-db": {
+                "type": "number",
+                "description": "Total local-log File-Inspection top file extension summary database"
+              },
+              "fi-top-url-db": {
+                "type": "number",
+                "description": "Total local-log File-Inspection top URL summary database"
+              },
+              "fw-top-app-db": {
+                "type": "number",
+                "description": "Total local-log Friewall top application summary database"
+              },
+              "fw-top-src-db": {
+                "type": "number",
+                "description": "Total local-log Friewall top source summary database"
+              },
+              "fw-top-app-src-db": {
+                "type": "number",
+                "description": "Total local-log Friewall top application and source summary database"
+              },
+              "fw-top-category-db": {
+                "type": "number",
+                "description": "Total local-log Friewall top category summary database"
+              },
+              "db-erro": {
+                "type": "number",
+                "description": "Total local-log database create error"
+              },
+              "query": {
+                "type": "number",
+                "description": "Total local-log axapi query"
+              },
+              "response": {
+                "type": "number",
+                "description": "Total local-log axapi response"
+              },
+              "query-error": {
+                "type": "number",
+                "description": "Total local-log axapi query error"
+              }
+            }
+          }
+        }
+      },
+      "logging-local-log-global": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "logging-local-log": {
+        "type": "object",
+        "properties": {}
+      },
+      "logging-lsn-log-suppression": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "number",
+            "description": "Log generation timeout(default: 30 seconds)",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 300
+          },
+          "count": {
+            "type": "number",
+            "description": "Configure log suppression count (default: 100)",
+            "default": 100,
+            "minimum": 50,
+            "maximum": 500
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-lsn-port-unavailable": {
+        "type": "object",
+        "properties": {
+          "ip-based": {
+            "type": "number",
+            "description": "Log LSN port unavailable based on NAT IP (Default: disabled)",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-lsn-quota-exceeded": {
+        "type": "object",
+        "properties": {
+          "ip-based": {
+            "type": "number",
+            "description": "Log LSN user quota exceeded based on private IP(Default: disabled)",
+            "default": 0
+          },
+          "disable-pool-based": {
+            "type": "number",
+            "description": "Disable log LSN user quota exceeded based on LSN pool(Default: enabled)",
+            "default": 0
+          },
+          "with-radius-attribute": {
+            "type": "number",
+            "description": "Log with radius attribute",
+            "default": 0
+          },
+          "custom1": {
+            "type": "number",
+            "description": "Customized attribute No.1",
+            "default": 0
+          },
+          "custom2": {
+            "type": "number",
+            "description": "Customized attribute No.2",
+            "default": 0
+          },
+          "custom3": {
+            "type": "number",
+            "description": "Customized attribute No.3",
+            "default": 0
+          },
+          "imei": {
+            "type": "number",
+            "description": " International Mobile Equipment Identity (IMEI)",
+            "default": 0
+          },
+          "imsi": {
+            "type": "number",
+            "description": "International Mobile Subscriber Identity (IMSI)",
+            "default": 0
+          },
+          "msisdn": {
+            "type": "number",
+            "description": "Mobile Subscriber Integrated Services Digital Netwrok-Number (MSISDN)",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-lsn": {
+        "type": "object",
+        "properties": {
+          "quota-exceeded": {
+            "type": "object",
+            "properties": {
+              "ip-based": {
+                "type": "number",
+                "description": "Log LSN user quota exceeded based on private IP(Default: disabled)",
+                "default": 0
+              },
+              "disable-pool-based": {
+                "type": "number",
+                "description": "Disable log LSN user quota exceeded based on LSN pool(Default: enabled)",
+                "default": 0
+              },
+              "with-radius-attribute": {
+                "type": "number",
+                "description": "Log with radius attribute",
+                "default": 0
+              },
+              "custom1": {
+                "type": "number",
+                "description": "Customized attribute No.1",
+                "default": 0
+              },
+              "custom2": {
+                "type": "number",
+                "description": "Customized attribute No.2",
+                "default": 0
+              },
+              "custom3": {
+                "type": "number",
+                "description": "Customized attribute No.3",
+                "default": 0
+              },
+              "imei": {
+                "type": "number",
+                "description": " International Mobile Equipment Identity (IMEI)",
+                "default": 0
+              },
+              "imsi": {
+                "type": "number",
+                "description": "International Mobile Subscriber Identity (IMSI)",
+                "default": 0
+              },
+              "msisdn": {
+                "type": "number",
+                "description": "Mobile Subscriber Integrated Services Digital Netwrok-Number (MSISDN)",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "log-suppression": {
+            "type": "object",
+            "properties": {
+              "time": {
+                "type": "number",
+                "description": "Log generation timeout(default: 30 seconds)",
+                "default": 30,
+                "minimum": 1,
+                "maximum": 300
+              },
+              "count": {
+                "type": "number",
+                "description": "Configure log suppression count (default: 100)",
+                "default": 100,
+                "minimum": 50,
+                "maximum": 500
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "logging-monitor": {
+        "type": "object",
+        "properties": {
+          "monitor-levelname": {
+            "type": "string",
+            "description": "'disable': Do not send log to monitor; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+            "default": "disable",
+            "enum": [
+              "disable",
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-single-priority": {
+        "type": "object",
+        "properties": {
+          "levelname": {
+            "type": "string",
+            "description": "'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+            "enum": [
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-syslog": {
+        "type": "object",
+        "properties": {
+          "syslog-levelname": {
+            "type": "string",
+            "description": "'disable': Do not send log to syslog; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+            "default": "disable",
+            "enum": [
+              "disable",
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging-trap": {
+        "type": "object",
+        "properties": {
+          "trap-levelname": {
+            "type": "string",
+            "description": "'disable': Do not send trap to snmp host; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); ",
+            "default": "disable",
+            "enum": [
+              "disable",
+              "emergency",
+              "alert",
+              "critical"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "logging": {
+        "type": "object",
+        "properties": {
+          "auditlog": {
+            "type": "object",
+            "properties": {
+              "shared": {
+                "type": "number",
+                "description": "Select shared partition",
+                "default": 0
+              },
+              "partition-name": {
+                "type": "string",
+                "description": "Select partition name for logging",
+                "minLength": 1,
+                "maxLength": 14
+              },
+              "host6": {
+                "type": "string",
+                "description": "Configure the auditlog host"
+              },
+              "host4": {
+                "type": "string",
+                "description": "Configure the auditlog host",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "audit-facility": {
+                "type": "string",
+                "description": "'local0': Local use; 'local1': Local use; 'local2': Local use; 'local3': Local use; 'local4': Local use; 'local5': Local use; 'local6': Local use; 'local7': Local use;  (Configure the facility of auditlog)",
+                "enum": [
+                  "local0",
+                  "local1",
+                  "local2",
+                  "local3",
+                  "local4",
+                  "local5",
+                  "local6",
+                  "local7"
+                ]
+              },
+              "port": {
+                "type": "number",
+                "description": "Set remote audit log port number(Default 514)",
+                "default": 514,
+                "minimum": 1,
+                "maximum": 32767
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "email-address": {
+            "type": "object",
+            "properties": {
+              "email-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "facility": {
+            "type": "object",
+            "properties": {
+              "facilityname": {
+                "type": "string",
+                "description": "'local0': Local use; 'local1': Local use; 'local2': Local use; 'local3': Local use; 'local4': Local use; 'local5': Local use; 'local6': Local use; 'local7': Local use;  (Facility parameter for syslog messages)",
+                "default": "local0",
+                "enum": [
+                  "local0",
+                  "local1",
+                  "local2",
+                  "local3",
+                  "local4",
+                  "local5",
+                  "local6",
+                  "local7"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "monitor": {
+            "type": "object",
+            "properties": {
+              "monitor-levelname": {
+                "type": "string",
+                "description": "'disable': Do not send log to monitor; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+                "default": "disable",
+                "enum": [
+                  "disable",
+                  "emergency",
+                  "alert",
+                  "critical",
+                  "error",
+                  "warning",
+                  "notification",
+                  "information",
+                  "debugging"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "syslog": {
+            "type": "object",
+            "properties": {
+              "syslog-levelname": {
+                "type": "string",
+                "description": "'disable': Do not send log to syslog; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+                "default": "disable",
+                "enum": [
+                  "disable",
+                  "emergency",
+                  "alert",
+                  "critical",
+                  "error",
+                  "warning",
+                  "notification",
+                  "information",
+                  "debugging"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "trap": {
+            "type": "object",
+            "properties": {
+              "trap-levelname": {
+                "type": "string",
+                "description": "'disable': Do not send trap to snmp host; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); ",
+                "default": "disable",
+                "enum": [
+                  "disable",
+                  "emergency",
+                  "alert",
+                  "critical"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "export": {
+            "type": "object",
+            "properties": {
+              "all": {
+                "type": "number",
+                "description": "System support messages",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Remote url"
+              },
+              "password": {
+                "type": "string",
+                "description": "password for the remote site",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "console": {
+            "type": "object",
+            "properties": {
+              "console-levelname": {
+                "type": "string",
+                "description": "'disable': Do not send log to console; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+                "default": "error",
+                "enum": [
+                  "disable",
+                  "emergency",
+                  "alert",
+                  "critical",
+                  "error",
+                  "warning",
+                  "notification",
+                  "information",
+                  "debugging"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "email": {
+            "type": "object",
+            "properties": {
+              "level": {
+                "type": "object",
+                "properties": {
+                  "email-levelname": {
+                    "type": "string",
+                    "description": "'disable': Do not send log to email address; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately   (severity=1); 'critical': Critical conditions      (severity=2); 'notification': Normal but significant conditions (severity=5); ",
+                    "default": "disable",
+                    "enum": [
+                      "disable",
+                      "emergency",
+                      "alert",
+                      "critical",
+                      "notification"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "buffer": {
+                "type": "object",
+                "properties": {
+                  "number": {
+                    "type": "number",
+                    "description": "Number of log messages that can be buffered (Number of log messages that can be buffered, default 50)",
+                    "default": 50,
+                    "minimum": 16,
+                    "maximum": 256
+                  },
+                  "time": {
+                    "type": "number",
+                    "description": "Number of minutes a log message can stay in buffer (Number of minutes a log message can stay in buffer, default 10)",
+                    "default": 10,
+                    "minimum": 10,
+                    "maximum": 1440
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "filter-list": {
+                "type": "array",
+                "items": {
+                  "type": "filter"
+                }
+              }
+            }
+          },
+          "host": {
+            "type": "object",
+            "properties": {
+              "ipv4addr-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv4addr"
+                }
+              },
+              "ipv6addr-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv6addr"
+                }
+              },
+              "partition": {
+                "type": "object",
+                "properties": {
+                  "shared": {
+                    "type": "number",
+                    "description": "Select shared partition",
+                    "default": 0
+                  },
+                  "partition-name": {
+                    "type": "string",
+                    "description": "Select partition name for logging",
+                    "minLength": 1,
+                    "maxLength": 14
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "disable-partition-name": {
+            "type": "object",
+            "properties": {
+              "disable-partition-name": {
+                "type": "number",
+                "description": "Disable partition name in logs",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "enable-partition-id": {
+            "type": "object",
+            "properties": {
+              "enable-partition-id": {
+                "type": "number",
+                "description": "Enable partition id in logs",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "single-priority-list": {
+            "type": "array",
+            "items": {
+              "type": "single-priority"
+            }
+          },
+          "buffered": {
+            "type": "object",
+            "properties": {
+              "buffersize": {
+                "type": "number",
+                "description": "Logging buffer size (in items), default 30000",
+                "default": 30000,
+                "minimum": 10000,
+                "maximum": 50000
+              },
+              "levelname": {
+                "type": "string",
+                "description": "'disable': Do not send log to buffer; 'emergency': System unusable log messages      (severity=0); 'alert': Action must be taken immediately  (severity=1); 'critical': Critical conditions               (severity=2); 'error': Error conditions                  (severity=3); 'warning': Warning conditions                (severity=4); 'notification': Normal but significant conditions (severity=5); 'information': Informational messages            (severity=6); 'debugging': Debug level messages              (severity=7); ",
+                "default": "debugging",
+                "enum": [
+                  "disable",
+                  "emergency",
+                  "alert",
+                  "critical",
+                  "error",
+                  "warning",
+                  "notification",
+                  "information",
+                  "debugging"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "lsn": {
+            "type": "object",
+            "properties": {
+              "quota-exceeded": {
+                "type": "object",
+                "properties": {
+                  "ip-based": {
+                    "type": "number",
+                    "description": "Log LSN user quota exceeded based on private IP(Default: disabled)",
+                    "default": 0
+                  },
+                  "disable-pool-based": {
+                    "type": "number",
+                    "description": "Disable log LSN user quota exceeded based on LSN pool(Default: enabled)",
+                    "default": 0
+                  },
+                  "with-radius-attribute": {
+                    "type": "number",
+                    "description": "Log with radius attribute",
+                    "default": 0
+                  },
+                  "custom1": {
+                    "type": "number",
+                    "description": "Customized attribute No.1",
+                    "default": 0
+                  },
+                  "custom2": {
+                    "type": "number",
+                    "description": "Customized attribute No.2",
+                    "default": 0
+                  },
+                  "custom3": {
+                    "type": "number",
+                    "description": "Customized attribute No.3",
+                    "default": 0
+                  },
+                  "imei": {
+                    "type": "number",
+                    "description": " International Mobile Equipment Identity (IMEI)",
+                    "default": 0
+                  },
+                  "imsi": {
+                    "type": "number",
+                    "description": "International Mobile Subscriber Identity (IMSI)",
+                    "default": 0
+                  },
+                  "msisdn": {
+                    "type": "number",
+                    "description": "Mobile Subscriber Integrated Services Digital Netwrok-Number (MSISDN)",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "log-suppression": {
+                "type": "object",
+                "properties": {
+                  "time": {
+                    "type": "number",
+                    "description": "Log generation timeout(default: 30 seconds)",
+                    "default": 30,
+                    "minimum": 1,
+                    "maximum": 300
+                  },
+                  "count": {
+                    "type": "number",
+                    "description": "Configure log suppression count (default: 100)",
+                    "default": 100,
+                    "minimum": 50,
+                    "maximum": 500
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "local-log": {
+            "type": "object",
+            "properties": {
+              "authentication": {
+                "type": "object",
+                "properties": {
+                  "log": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  },
+                  "top-n": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  }
+                }
+              },
+              "access": {
+                "type": "object",
+                "properties": {
+                  "log": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  },
+                  "top-n": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  }
+                }
+              },
+              "file-category": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "top-n": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  }
+                }
+              },
+              "app-fw": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "top-n": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  },
+                  "dot-plot": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  }
+                }
+              },
+              "global": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

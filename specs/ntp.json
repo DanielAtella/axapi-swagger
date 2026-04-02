@@ -1,0 +1,649 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - NTP",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the ntp category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/ntp/auth-key/{key}": {
+      "parameters": [
+        {
+          "name": "key",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for key"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "authentication key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-auth-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "authentication key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-auth-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-auth-key"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "authentication key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-auth-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-auth-key"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "authentication key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-auth-key"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ntp/ntp-global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "ntp global settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-ntp-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "ntp global settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-ntp-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-ntp-global"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "ntp global settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-ntp-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-ntp-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "ntp global settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-ntp-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ntp/server/hostname/{host-servername}": {
+      "parameters": [
+        {
+          "name": "host-servername",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for host-servername"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "IPV4 address, IPV6 address or host name of NTP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-server-hostname"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "IPV4 address, IPV6 address or host name of NTP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-server-hostname"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-server-hostname"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "IPV4 address, IPV6 address or host name of NTP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-server-hostname"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-server-hostname"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "IPV4 address, IPV6 address or host name of NTP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-server-hostname"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ntp/server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "Set NTP time server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ntp/trusted-key/{key}": {
+      "parameters": [
+        {
+          "name": "key",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for key"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "trusted key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-trusted-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "trusted key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-trusted-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-trusted-key"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "trusted key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-trusted-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ntp-trusted-key"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "trusted key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp-trusted-key"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ntp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NTP"
+        ],
+        "description": "Network Time Protocol configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ntp"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ntp-auth-key": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "number",
+            "description": "authentication key",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "alg-type": {
+            "type": "string",
+            "description": "'M': encryption using MD5; 'SHA': encryption using SHA; 'SHA1': encryption using SHA1; ",
+            "enum": [
+              "M",
+              "SHA",
+              "SHA1"
+            ]
+          },
+          "key-type": {
+            "type": "string",
+            "description": "'ascii': key string in ASCII form; 'hex': key string in hex form; ",
+            "enum": [
+              "ascii",
+              "hex"
+            ]
+          },
+          "asc-key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED password string)"
+          },
+          "hex-key": {
+            "type": "string",
+            "minLength": 21,
+            "maxLength": 40
+          },
+          "hex-encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED password string)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ntp-ntp-global": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ntp-server-hostname": {
+        "type": "object",
+        "properties": {
+          "host-servername": {
+            "type": "string",
+            "description": "IPV4 address, IPV6 address or host name of NTP server(string1~63)",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "key": {
+            "type": "number",
+            "description": "Use trusted key to authenticate this NTP server (The trusted key number to use)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "prefer": {
+            "type": "number",
+            "description": "Set this NTP server as preferred",
+            "default": 0
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': Enable this NTP server; 'disable': Disable this NTP server; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ntp-server": {
+        "type": "object",
+        "properties": {
+          "hostname-list": {
+            "type": "array",
+            "items": {
+              "type": "hostname"
+            }
+          }
+        }
+      },
+      "ntp-trusted-key": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "number",
+            "description": "trusted key",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ntp": {
+        "type": "object",
+        "properties": {
+          "ntp-global": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "auth-key-list": {
+            "type": "array",
+            "items": {
+              "type": "auth-key"
+            }
+          },
+          "trusted-key-list": {
+            "type": "array",
+            "items": {
+              "type": "trusted-key"
+            }
+          },
+          "server": {
+            "type": "object",
+            "properties": {
+              "hostname-list": {
+                "type": "array",
+                "items": {
+                  "type": "hostname"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

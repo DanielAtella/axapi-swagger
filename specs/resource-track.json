@@ -1,0 +1,249 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - RESOURCE-TRACK",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the resource-track category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/resource-track/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "RESOURCE-TRACK"
+        ],
+        "description": "Define a resource track policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/resource-track"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RESOURCE-TRACK"
+        ],
+        "description": "Define a resource track policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/resource-track"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/resource-track"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RESOURCE-TRACK"
+        ],
+        "description": "Define a resource track policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/resource-track"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/resource-track"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RESOURCE-TRACK"
+        ],
+        "description": "Define a resource track policy template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/resource-track"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "resource-track": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "resource track policy template name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "interface": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "gateway": {
+            "type": "object",
+            "properties": {
+              "gw-ipv4-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "gw-ipv6-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "bgp": {
+            "type": "object",
+            "properties": {
+              "bgp-ipv4-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "bgp-ipv6-address-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "trunk-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "route": {
+            "type": "object",
+            "properties": {
+              "ip-destination-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv6-destination-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "vlan-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "scaleout-cfg": {
+            "type": "object",
+            "properties": {
+              "scaleout": {
+                "type": "number",
+                "description": "scaleout tracking",
+                "default": 0
+              },
+              "weight": {
+                "type": "number",
+                "description": "The failover event weight",
+                "minimum": 1,
+                "maximum": 255
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

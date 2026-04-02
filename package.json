@@ -1,0 +1,25 @@
+{
+  "name": "axapi-swagger",
+  "version": "1.0.0",
+  "description": "Generator for aXAPI Swagger documentation",
+  "main": "generate_openapi.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node --loader ts-node/esm generate_openapi.ts",
+    "start": "node server.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.12.7",
+    "vitest": "^4.1.2"
+  }
+}

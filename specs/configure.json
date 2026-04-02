@@ -1,0 +1,244 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - CONFIGURE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the configure category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/configure/sync": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "CONFIGURE"
+        ],
+        "description": "Sync operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/configure-sync"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CONFIGURE"
+        ],
+        "description": "Sync operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/configure-sync"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/configure-sync"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CONFIGURE"
+        ],
+        "description": "Sync operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/configure-sync"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/configure": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "CONFIGURE"
+        ],
+        "description": "Configure sync Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/configure"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "configure-sync": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "'running': Sync local running to peer's running configuration; 'all': Sync local running to peer's running configuration, and local startup to peer's startup configuration; ",
+            "enum": [
+              "running",
+              "all"
+            ]
+          },
+          "all-partitions": {
+            "type": "number",
+            "description": "All partition configurations",
+            "default": 0
+          },
+          "shared": {
+            "type": "number",
+            "description": "Shared partition",
+            "default": 0
+          },
+          "partition-name": {
+            "type": "string",
+            "description": "Partition name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "address": {
+            "type": "string",
+            "description": "Specify the destination ip address to sync"
+          },
+          "auto-authentication": {
+            "type": "number",
+            "description": "Authenticate with local username and password",
+            "default": 0
+          },
+          "private-key": {
+            "type": "string",
+            "description": "Use private key for authentication",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "usr": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "pwd": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "pwd-enc": {
+            "type": "encrypted"
+          }
+        }
+      },
+      "configure": {
+        "type": "object",
+        "properties": {
+          "sync": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "'running': Sync local running to peer's running configuration; 'all': Sync local running to peer's running configuration, and local startup to peer's startup configuration; ",
+                "enum": [
+                  "running",
+                  "all"
+                ]
+              },
+              "all-partitions": {
+                "type": "number",
+                "description": "All partition configurations",
+                "default": 0
+              },
+              "shared": {
+                "type": "number",
+                "description": "Shared partition",
+                "default": 0
+              },
+              "partition-name": {
+                "type": "string",
+                "description": "Partition name",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "address": {
+                "type": "string",
+                "description": "Specify the destination ip address to sync"
+              },
+              "auto-authentication": {
+                "type": "number",
+                "description": "Authenticate with local username and password",
+                "default": 0
+              },
+              "private-key": {
+                "type": "string",
+                "description": "Use private key for authentication",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "usr": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "pwd": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "pwd-enc": {
+                "type": "encrypted"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

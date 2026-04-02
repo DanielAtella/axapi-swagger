@@ -1,0 +1,734 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - GLM",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the glm category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/glm/create-license-request": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Create a GLM trial or license request",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-create-license-request"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Create a GLM trial or license request",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-create-license-request"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm-create-license-request"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Create a GLM trial or license request",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-create-license-request"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm-create-license-request"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Create a GLM trial or license request",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-create-license-request"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/glm/new-license": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Create license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-new-license"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Create license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-new-license"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm-new-license"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Create license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-new-license"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/glm/proxy-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Connect to GLM through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-proxy-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Connect to GLM through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-proxy-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm-proxy-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Connect to GLM through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-proxy-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm-proxy-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Connect to GLM through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-proxy-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/glm/send": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Trigger GLM Connect",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-send"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Trigger GLM Connect",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-send"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm-send"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Trigger GLM Connect",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm-send"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/glm": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Set GLM Connection values",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Set GLM Connection values",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Set GLM Connection values",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/glm"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "GLM"
+        ],
+        "description": "Set GLM Connection values",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/glm"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "glm-create-license-request": {
+        "type": "object",
+        "properties": {
+          "create-license-request": {
+            "type": "number",
+            "description": "Create a GLM trial or license request",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "glm-new-license": {
+        "type": "object",
+        "properties": {
+          "existing-org": {
+            "type": "number",
+            "description": "Use existing account with organization ID",
+            "default": 0
+          },
+          "org-id": {
+            "type": "number",
+            "description": "GLM organization id",
+            "minimum": 1,
+            "maximum": 899760
+          },
+          "existing-user": {
+            "type": "number",
+            "description": "Use an existing account with email and password",
+            "default": 0
+          },
+          "glm-email": {
+            "type": "string",
+            "description": "GLM email",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "glm-password": {
+            "type": "string",
+            "description": "GLM password",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "new-user": {
+            "type": "number",
+            "description": "Create a new account",
+            "default": 0
+          },
+          "new-email": {
+            "type": "string",
+            "description": "GLM email",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "new-password": {
+            "type": "string",
+            "description": "GLM password",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "account-name": {
+            "type": "string",
+            "description": "Account Name",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "first-name": {
+            "type": "string",
+            "description": "First Name",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "last-name": {
+            "type": "string",
+            "description": "Last Name",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "country": {
+            "type": "string",
+            "description": "Country",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "phone": {
+            "type": "string",
+            "description": "Phone",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "name": {
+            "type": "string",
+            "description": "License name (Configure license name)",
+            "minLength": 1,
+            "maxLength": 99
+          },
+          "type": {
+            "type": "string",
+            "description": "'webroot': webroot; 'webroot_trial': webroot_trial; 'webroot_ti': webroot_ti; 'webroot_ti_trial': webroot_ti_trial; 'qosmos': qosmos; 'qosmos_trial': qosmos_trial; 'ipsec_vpn': ipsec_vpn; ",
+            "enum": [
+              "webroot",
+              "webroot_trial",
+              "webroot_ti",
+              "webroot_ti_trial",
+              "qosmos",
+              "qosmos_trial",
+              "ipsec_vpn"
+            ]
+          }
+        }
+      },
+      "glm-proxy-server": {
+        "type": "object",
+        "properties": {
+          "host": {
+            "type": "string",
+            "description": "Proxy server hostname or IP address",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "port": {
+            "type": "number",
+            "description": "Proxy server port",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "username": {
+            "type": "string",
+            "description": "Username for proxy authentication",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "password": {
+            "type": "number",
+            "description": "Password for proxy authentication",
+            "default": 0
+          },
+          "secret-string": {
+            "type": "string",
+            "description": "password value",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "glm-send": {
+        "type": "object",
+        "properties": {
+          "license-request": {
+            "type": "number",
+            "description": "Immediately send a single GLM license request",
+            "default": 0
+          }
+        }
+      },
+      "glm": {
+        "type": "object",
+        "properties": {
+          "interval": {
+            "type": "number",
+            "description": "GLM license request interval (in hours)",
+            "minimum": 1,
+            "maximum": 8760
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port to connect to GLM",
+            "default": 0
+          },
+          "enable-requests": {
+            "type": "number",
+            "description": "Turn on periodic GLM license requests (default license retrieval interval is every 24 hours)",
+            "default": 0
+          },
+          "allocate-bandwidth": {
+            "type": "number",
+            "description": "Enter the requested bandwidth in Mbps for Capacity Pool",
+            "minimum": 2,
+            "maximum": 204800
+          },
+          "token": {
+            "type": "string",
+            "description": "License entitlement token",
+            "minLength": 8,
+            "maxLength": 60
+          },
+          "enterprise": {
+            "type": "string",
+            "description": "Enter the ELM hostname or IP",
+            "minLength": 4,
+            "maxLength": 60
+          },
+          "port": {
+            "type": "number",
+            "description": "License request port (default 443)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "appliance-name": {
+            "type": "string",
+            "description": "Helpful identifier for this appliance",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "burst": {
+            "type": "number",
+            "description": "Enable Burst License",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "send": {
+            "type": "object",
+            "properties": {
+              "license-request": {
+                "type": "number",
+                "description": "Immediately send a single GLM license request",
+                "default": 0
+              }
+            }
+          },
+          "proxy-server": {
+            "type": "object",
+            "properties": {
+              "host": {
+                "type": "string",
+                "description": "Proxy server hostname or IP address",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "port": {
+                "type": "number",
+                "description": "Proxy server port",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "username": {
+                "type": "string",
+                "description": "Username for proxy authentication",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "password": {
+                "type": "number",
+                "description": "Password for proxy authentication",
+                "default": 0
+              },
+              "secret-string": {
+                "type": "string",
+                "description": "password value",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

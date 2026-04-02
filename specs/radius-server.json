@@ -1,0 +1,708 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - RADIUS-SERVER",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the radius-server category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/radius-server/host/ipv4/{ipv4-addr}": {
+      "parameters": [
+        {
+          "name": "ipv4-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv4-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server-host-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server-host-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/radius-server/host/ipv6/{ipv6-addr}": {
+      "parameters": [
+        {
+          "name": "ipv6-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server-host-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server-host-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/radius-server/host/name/{hostname}": {
+      "parameters": [
+        {
+          "name": "hostname",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for hostname"
+        }
+      ],
+      "get": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-name"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-name"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server-host-name"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-name"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server-host-name"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the hostname of RADIUS server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host-name"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/radius-server/host": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Specify the RADIUS server's hostname or IP address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server-host"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/radius-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Configure RADIUS server information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Configure RADIUS server information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Configure RADIUS server information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/radius-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RADIUS-SERVER"
+        ],
+        "description": "Configure RADIUS server information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/radius-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "radius-server-host-ipv4": {
+        "type": "object",
+        "properties": {
+          "ipv4-addr": {
+            "type": "string",
+            "description": "IPV4 address of RADIUS server"
+          },
+          "secret": {
+            "type": "object",
+            "properties": {
+              "secret-value": {
+                "type": "string",
+                "description": "The RADIUS server's secret",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": " Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+              },
+              "port-cfg": {
+                "type": "object",
+                "properties": {
+                  "auth-port": {
+                    "type": "number",
+                    "description": "Specify the RADIUS server's authentication port (default 1812)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "acct-port": {
+                    "type": "number",
+                    "description": "Specify the RADIUS server's accounting port (default 1813)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "retransmit": {
+                    "type": "number",
+                    "description": "Specify the maximum times allowed for resending an request to the radius server (default 3)",
+                    "default": 3,
+                    "minimum": 0,
+                    "maximum": 5
+                  },
+                  "timeout": {
+                    "type": "number",
+                    "description": "Specify the maximum time allowed for waiting for a response from a radius server (default 3)",
+                    "default": 3,
+                    "minimum": 1,
+                    "maximum": 15
+                  }
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "radius-server-host-ipv6": {
+        "type": "object",
+        "properties": {
+          "ipv6-addr": {
+            "type": "string",
+            "description": "IPV6 address of RADIUS server"
+          },
+          "secret": {
+            "type": "object",
+            "properties": {
+              "secret-value": {
+                "type": "string",
+                "description": "The RADIUS server's secret",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": " Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+              },
+              "port-cfg": {
+                "type": "object",
+                "properties": {
+                  "auth-port": {
+                    "type": "number",
+                    "description": "Specify the RADIUS server's authentication port (default 1812)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "acct-port": {
+                    "type": "number",
+                    "description": "Specify the RADIUS server's accounting port (default 1813)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "retransmit": {
+                    "type": "number",
+                    "description": "Specify the maximum times allowed for resending an request to the radius server (default 3)",
+                    "default": 3,
+                    "minimum": 0,
+                    "maximum": 5
+                  },
+                  "timeout": {
+                    "type": "number",
+                    "description": "Specify the maximum time allowed for waiting for a response from a radius server (default 3)",
+                    "default": 3,
+                    "minimum": 1,
+                    "maximum": 15
+                  }
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "radius-server-host-name": {
+        "type": "object",
+        "properties": {
+          "hostname": {
+            "type": "string",
+            "description": "Hostname of RADIUS server",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "secret": {
+            "type": "object",
+            "properties": {
+              "secret-value": {
+                "type": "string",
+                "description": "The RADIUS server's secret",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": " Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+              },
+              "port-cfg": {
+                "type": "object",
+                "properties": {
+                  "auth-port": {
+                    "type": "number",
+                    "description": "Specify the RADIUS server's authentication port (default 1812)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "acct-port": {
+                    "type": "number",
+                    "description": "Specify the RADIUS server's accounting port (default 1813)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "retransmit": {
+                    "type": "number",
+                    "description": "Specify the maximum times allowed for resending an request to the radius server (default 3)",
+                    "default": 3,
+                    "minimum": 0,
+                    "maximum": 5
+                  },
+                  "timeout": {
+                    "type": "number",
+                    "description": "Specify the maximum time allowed for waiting for a response from a radius server (default 3)",
+                    "default": 3,
+                    "minimum": 1,
+                    "maximum": 15
+                  }
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "radius-server-host": {
+        "type": "object",
+        "properties": {
+          "ipv4-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv4"
+            }
+          },
+          "ipv6-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv6"
+            }
+          },
+          "name-list": {
+            "type": "array",
+            "items": {
+              "type": "name"
+            }
+          }
+        }
+      },
+      "radius-server": {
+        "type": "object",
+        "properties": {
+          "default-privilege-read-write": {
+            "type": "number",
+            "description": "Specify the RADIUS default privilege",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "host": {
+            "type": "object",
+            "properties": {
+              "ipv4-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv4"
+                }
+              },
+              "ipv6-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv6"
+                }
+              },
+              "name-list": {
+                "type": "array",
+                "items": {
+                  "type": "name"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

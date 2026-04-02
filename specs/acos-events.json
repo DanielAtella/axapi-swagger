@@ -1,0 +1,4140 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ACOS-EVENTS",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the acos-events category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/acos-events/active-template": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-active-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-active-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-active-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-active-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-active-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-active-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/collector-group/{name}/log-server/{name}+{port}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "port",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for port"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log server DNS Name/ip-address and optional port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group-log-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log server DNS Name/ip-address and optional port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group-log-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-collector-group-log-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log server DNS Name/ip-address and optional port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group-log-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-collector-group-log-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log server DNS Name/ip-address and optional port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group-log-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/collector-group/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Statistics for the object collector-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/collector-group/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log servers group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log servers group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-collector-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log servers group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-collector-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log servers group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-collector-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/local-logging/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Statistics for the object local-logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-local-logging-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/local-logging": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure local logging/persistant storage of FW logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-local-logging"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure local logging/persistant storage of FW logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-local-logging"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-local-logging"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure local logging/persistant storage of FW logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-local-logging"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-local-logging"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure local logging/persistant storage of FW logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-local-logging"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-parameterization/message-selector/rule/{index}": {
+      "parameters": [
+        {
+          "name": "index",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for index"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector-rule"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector-rule"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector-rule"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector-rule"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector-rule"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector-rule"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-parameterization/message-selector": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization-message-selector"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-parameterization": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Harmony controller log parameterization configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Harmony controller log parameterization configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-parameterization"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Harmony controller log parameterization configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-parameterization"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Harmony controller log parameterization configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-parameterization"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-properties": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Logging related properties",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-properties"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Logging related properties",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-properties"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-properties"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Logging related properties",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-properties"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-properties"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Logging related properties",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-properties"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-server/{name}/port/{port-number}+{protocol}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "port-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for port-number"
+        },
+        {
+          "name": "protocol",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for protocol"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Statistics for the object port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server-port-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-server/{name}/port/{port-number}+{protocol}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "port-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for port-number"
+        },
+        {
+          "name": "protocol",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for protocol"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Logging Server Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server-port"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Logging Server Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server-port"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-server-port"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Logging Server Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server-port"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-server-port"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Logging Server Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server-port"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-server/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Statistics for the object log-server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/log-server/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Acos logging Server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Acos logging Server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Acos logging Server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-log-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Acos logging Server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-log-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/logdb": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-logdb"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-logdb"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-logdb"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-logdb"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-logdb"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure global logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-logdb"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-id/{log-msg}+{message-id-scope-route}/property/log-route": {
+      "parameters": [
+        {
+          "name": "log-msg",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for log-msg"
+        },
+        {
+          "name": "message-id-scope-route",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for message-id-scope-route"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Log route of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-log-route"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Log route of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-log-route"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id-property-log-route"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Log route of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-log-route"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id-property-log-route"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Log route of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-log-route"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-id/{log-msg}+{message-id-scope-route}/property/rate-limit": {
+      "parameters": [
+        {
+          "name": "log-msg",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for log-msg"
+        },
+        {
+          "name": "message-id-scope-route",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for message-id-scope-route"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Enable/disable rate limiting of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-rate-limit"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Enable/disable rate limiting of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-rate-limit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id-property-rate-limit"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Enable/disable rate limiting of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-rate-limit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id-property-rate-limit"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Enable/disable rate limiting of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-rate-limit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-id/{log-msg}/property/severity": {
+      "parameters": [
+        {
+          "name": "log-msg",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for log-msg"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Serverity of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-severity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Serverity of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-severity"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id-property-severity"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Serverity of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-severity"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id-property-severity"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Serverity of log message(s)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property-severity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-id/{log-msg}/property": {
+      "parameters": [
+        {
+          "name": "log-msg",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for log-msg"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log message(list) properties",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id-property"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-id/{log-msg}": {
+      "parameters": [
+        {
+          "name": "log-msg",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for log-msg"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-id"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-id"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-info/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Operational Status for the object message-info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-info-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-selector/{name}/rule/{index}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "index",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for index"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector-rule"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector-rule"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-selector-rule"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector-rule"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-selector-rule"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rules to select messages for which logging is enabled/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector-rule"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/message-selector/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-selector"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-message-selector"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message selector to select messages to be logged/blocked",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-message-selector"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/messages/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Operational Status for the object messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-messages-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/messages": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Get information about log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-messages"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Get information about log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-messages"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-messages"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Get information about log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-messages"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-messages"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Get information about log message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-messages"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/rate-limit-local": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Rate Limit for Local logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-local"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Rate Limit for Local logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-local"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-rate-limit-local"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Rate Limit for Local logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-local"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-rate-limit-local"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Rate Limit for Local logs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-local"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/rate-limit-remote": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rate limit for logs sent to remote via classic logging config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-remote"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rate limit for logs sent to remote via classic logging config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-remote"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-rate-limit-remote"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rate limit for logs sent to remote via classic logging config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-remote"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-rate-limit-remote"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure rate limit for logs sent to remote via classic logging config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-rate-limit-remote"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/statistics/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Statistics for the object statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-statistics-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/statistics": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "acos events global statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-statistics"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "acos events global statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-statistics"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-statistics"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "acos events global statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-statistics"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-statistics"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "acos events global statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-statistics"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/template/{name}/message-selector/{name}/collector-group/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the log server group for receiving log messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector-collector-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the log server group for receiving log messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector-collector-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-template-message-selector-collector-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the log server group for receiving log messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector-collector-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-template-message-selector-collector-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the log server group for receiving log messages",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector-collector-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/template/{name}/message-selector/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the message selector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the message selector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-template-message-selector"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the message selector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-template-message-selector"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Specify the message selector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template-message-selector"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/template/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure logging template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events/use-partition": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Partition for Logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-use-partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Partition for Logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-use-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-use-partition"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Partition for Logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-use-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-events-use-partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure Partition for Logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events-use-partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-events": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-EVENTS"
+        ],
+        "description": "Configure message logging",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-events"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "acos-events-active-template": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify the logging template name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-collector-group-log-server": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Member name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "port": {
+            "type": "number",
+            "description": "Port number",
+            "default": 65534,
+            "minimum": 0,
+            "maximum": 65534
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-collector-group-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify log server group name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "msgs_sent": {
+                "type": "number",
+                "description": "Number of log messages sent"
+              },
+              "msgs_rate_limited": {
+                "type": "number",
+                "description": "Number of rate limited log messages"
+              },
+              "msgs_dropped": {
+                "type": "number",
+                "description": "Number of messages dropped for other reasons"
+              }
+            }
+          }
+        }
+      },
+      "acos-events-collector-group": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify log server group name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "protocol": {
+            "type": "string",
+            "description": "'udp': use udp syslog protocol to send messages to log collector; 'tcp': use tcp syslog protocol to send messages to log collector; ",
+            "enum": [
+              "udp",
+              "tcp"
+            ]
+          },
+          "format": {
+            "type": "string",
+            "description": "'syslog': log message format is syslog (Default); 'cef': log message format is cef; 'leef': log message format is leef; ",
+            "default": "syslog",
+            "enum": [
+              "syslog",
+              "cef",
+              "leef"
+            ]
+          },
+          "facility": {
+            "type": "string",
+            "description": "'local0': Local use(Default); 'local1': Local use; 'local2': Local use; 'local3': Local use; 'local4': Local use; 'local5': Local use; 'local6': Local use; 'local7': Local use;  (Facility parameter for syslog messages)",
+            "default": "local0",
+            "enum": [
+              "local0",
+              "local1",
+              "local2",
+              "local3",
+              "local4",
+              "local5",
+              "local6",
+              "local7"
+            ]
+          },
+          "health-check": {
+            "type": "string",
+            "description": "Health Check (Monitor Name)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "rate": {
+            "type": "number",
+            "description": "Specify the log message rate per second(Default 500)",
+            "default": 500,
+            "minimum": 0,
+            "maximum": 2147483647
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use managament port to connect to the log servers",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "log-server-list": {
+            "type": "array",
+            "items": {
+              "type": "log-server"
+            }
+          }
+        }
+      },
+      "acos-events-local-logging-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "init-pass": {
+                "type": "number",
+                "description": "Local logging Init Successful"
+              },
+              "init-fail": {
+                "type": "number",
+                "description": "Local logging Init Fail"
+              },
+              "freed": {
+                "type": "number",
+                "description": "Local logging Stopped"
+              },
+              "disk-over-thres": {
+                "type": "number",
+                "description": "Number of logs Dropped, Disk reached threshold"
+              },
+              "rate-limited": {
+                "type": "number",
+                "description": "Number of logs Dropped, Rate limited"
+              },
+              "not-inited": {
+                "type": "number",
+                "description": "Number of logs Dropped, Local logging not inited"
+              },
+              "sent-to-store": {
+                "type": "number",
+                "description": "Number of logs sent to be stored"
+              },
+              "sent-to-store-fail": {
+                "type": "number",
+                "description": "Number of Logs sent to be stored Failed"
+              },
+              "store-fail": {
+                "type": "number",
+                "description": "Number of logs failed to be stored"
+              },
+              "in-logs": {
+                "type": "number",
+                "description": "Number of logs successfully stored"
+              },
+              "in-bytes": {
+                "type": "number",
+                "description": "Number of bytes successfully stored"
+              },
+              "in-logs-backlog": {
+                "type": "number",
+                "description": "Number of backlogs loaded from disk"
+              },
+              "in-bytes-backlog": {
+                "type": "number",
+                "description": "Number of backlog bytes loaded from disk"
+              },
+              "in-store-fail-no-space": {
+                "type": "number",
+                "description": "Number of logs Dropped, failed without disk space"
+              },
+              "in-discard-logs": {
+                "type": "number",
+                "description": "Number of old logs discarded to fit in new logs"
+              },
+              "in-discard-bytes": {
+                "type": "number",
+                "description": "Number of old bytes discarded to fit in new logs"
+              },
+              "out-logs": {
+                "type": "number",
+                "description": "Number of logs sent to log servers"
+              },
+              "out-bytes": {
+                "type": "number",
+                "description": "Number of bytes sent to log-servers"
+              },
+              "out-error": {
+                "type": "number",
+                "description": "Number of errors during send"
+              },
+              "remaining-logs": {
+                "type": "number",
+                "description": "Total number of remaining logs yet to be sent"
+              },
+              "remaining-bytes": {
+                "type": "number",
+                "description": "Total number of remaining bytes yet to be sent"
+              }
+            }
+          }
+        }
+      },
+      "acos-events-local-logging": {
+        "type": "object",
+        "properties": {
+          "enable": {
+            "type": "number",
+            "description": "Enable local-logging when FW log servers are down (Default: Not enabled)",
+            "default": 0
+          },
+          "rate-limit": {
+            "type": "number",
+            "description": "Configure number of logs per second to be stored in disk (Default: 1000)",
+            "default": 1000,
+            "minimum": 1,
+            "maximum": 60000
+          },
+          "max-disk-space": {
+            "type": "number",
+            "description": "Configure Max disk space in MB to be used for storing the logs (Default: 100MB)",
+            "default": 100,
+            "minimum": 50,
+            "maximum": 20000
+          },
+          "delete-old-logs-in-disk": {
+            "type": "number",
+            "description": "Operational command to delete the old logs stored in disk",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "acos-events-log-parameterization-message-selector-rule": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "number",
+            "description": "Specify rule index - rules are applied in numeric order",
+            "minimum": 1,
+            "maximum": 256
+          },
+          "action": {
+            "type": "string",
+            "description": "'send': log messages selected by this rule will be sent (Default); 'drop': log messages selected by this rule will be dropped; ",
+            "default": "send",
+            "enum": [
+              "send",
+              "drop"
+            ]
+          },
+          "message-id": {
+            "type": "string",
+            "description": "Select a specific message by message-id and optionally severity",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "message-id-scope": {
+            "type": "string",
+            "description": "'all': Log messages at this level and all sub-trees; 'node-only': Log messages at this node only; 'children-only': Log messages at all sub-trees only; 'log-field-only': Log message for this Log Field only; ",
+            "enum": [
+              "all",
+              "node-only",
+              "children-only",
+              "log-field-only"
+            ]
+          },
+          "severity-oper": {
+            "type": "string",
+            "description": "'equal-and-higher': emergency is highest, debugging lowest; 'equal': single severity; ",
+            "enum": [
+              "equal-and-higher",
+              "equal"
+            ]
+          },
+          "severity-val": {
+            "type": "string",
+            "description": "'emergency': System unusable log messages (Most Important); 'alert': Action must be taken immediately; 'critical': Critical conditions; 'error': Error conditions; 'warning': Warning conditions; 'notification': Normal but significant conditions; 'information': Informational messages; 'debugging': Debug level messages (Least Important); ",
+            "enum": [
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "acos-events-log-parameterization-message-selector": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "rule-list": {
+            "type": "array",
+            "items": {
+              "type": "rule"
+            }
+          }
+        }
+      },
+      "acos-events-log-parameterization": {
+        "type": "object",
+        "properties": {
+          "log-rate": {
+            "type": "number",
+            "description": "Max number of parameterized logs sent per second",
+            "default": 10,
+            "minimum": 0,
+            "maximum": 10000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "message-selector": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "rule-list": {
+                "type": "array",
+                "items": {
+                  "type": "rule"
+                }
+              }
+            }
+          }
+        }
+      },
+      "acos-events-log-properties": {
+        "type": "object",
+        "properties": {
+          "add-msgid-in-header": {
+            "type": "number",
+            "description": "Add Message ID in log messages",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-log-server-port-stats": {
+        "type": "object",
+        "properties": {
+          "port-number": {
+            "type": "number",
+            "description": "Port Number",
+            "minimum": 0,
+            "maximum": 65534
+          },
+          "protocol": {
+            "type": "string",
+            "description": "'tcp': TCP Port; 'udp': UDP Port; ",
+            "enum": [
+              "tcp",
+              "udp"
+            ]
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "msgs_sent": {
+                "type": "number",
+                "description": "Number of log messages sent"
+              }
+            }
+          }
+        }
+      },
+      "acos-events-log-server-port": {
+        "type": "object",
+        "properties": {
+          "port-number": {
+            "type": "number",
+            "description": "Port Number",
+            "minimum": 0,
+            "maximum": 65534
+          },
+          "protocol": {
+            "type": "string",
+            "description": "'tcp': TCP Port; 'udp': UDP Port; ",
+            "enum": [
+              "tcp",
+              "udp"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': enable; 'disable': disable; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "health-check": {
+            "type": "string",
+            "description": "Health Check (Monitor Name)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "health-check-disable": {
+            "type": "number",
+            "description": "Disable health check",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "acos-events-log-server-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Server Name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "msgs_sent": {
+                "type": "number",
+                "description": "Number of log messages sent"
+              }
+            }
+          },
+          "port-list": {
+            "type": "array",
+            "items": {
+              "type": "port"
+            }
+          }
+        }
+      },
+      "acos-events-log-server": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Server Name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "server-ipv6-addr": {
+            "type": "string",
+            "description": "IPV6 address"
+          },
+          "host": {
+            "type": "string",
+            "description": "IP Address"
+          },
+          "resolve-as": {
+            "type": "string",
+            "description": "'resolve-to-ipv4': Use A Query only to resolve FQDN; 'resolve-to-ipv6': Use AAAA Query only to resolve FQDN; 'resolve-to-ipv4-and-ipv6': Use A as well as AAAA Query to resolve FQDN; ",
+            "default": "resolve-to-ipv4",
+            "enum": [
+              "resolve-to-ipv4",
+              "resolve-to-ipv6",
+              "resolve-to-ipv4-and-ipv6"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': Enable this Logging Server; 'disable': Disable this Logging Server; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "health-check": {
+            "type": "string",
+            "description": "Health Check Monitor (Health monitor name)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "health-check-disable": {
+            "type": "number",
+            "description": "Disable configured health check configuration",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "port-list": {
+            "type": "array",
+            "items": {
+              "type": "port"
+            }
+          }
+        }
+      },
+      "acos-events-logdb": {
+        "type": "object",
+        "properties": {
+          "enable-all": {
+            "type": "number",
+            "description": "Enable logging for all widgets",
+            "default": 0
+          },
+          "enable-smtp": {
+            "type": "number",
+            "description": "Enable SMTP logging",
+            "default": 0
+          },
+          "enable-mqtt": {
+            "type": "number",
+            "description": "Enable MQTT logging",
+            "default": 0
+          },
+          "enable-http-forward-proxy": {
+            "type": "number",
+            "description": "Enable HTTP forward proxy logging",
+            "default": 0
+          },
+          "enable-cgn": {
+            "type": "number",
+            "description": "Enable CGN logging",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-message-id-property-log-route": {
+        "type": "object",
+        "properties": {
+          "log-route-val": {
+            "type": "string",
+            "description": "'local-only': send logs to local-only; 'remote-only': send logs to remote-only; 'local-and-remote': send logs to both local and remote; ",
+            "enum": [
+              "local-only",
+              "remote-only",
+              "local-and-remote"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-message-id-property-rate-limit": {
+        "type": "object",
+        "properties": {
+          "rate-limit-val": {
+            "type": "string",
+            "description": "'enable': enable rate-limiting of logs; 'disable': disable rate-limiting of logs; ",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-message-id-property-severity": {
+        "type": "object",
+        "properties": {
+          "severity-val": {
+            "type": "string",
+            "description": "'emergency': System unusable log messages (Most Important); 'alert': Action must be taken immediately; 'critical': Critical conditions; 'error': Error conditions; 'warning': Warning conditions; 'notification': Normal but significant conditions; 'information': Informational messages; 'debugging': Debug level messages (Least Important); ",
+            "enum": [
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-message-id-property": {
+        "type": "object",
+        "properties": {
+          "severity": {
+            "type": "object",
+            "properties": {
+              "severity-val": {
+                "type": "string",
+                "description": "'emergency': System unusable log messages (Most Important); 'alert': Action must be taken immediately; 'critical': Critical conditions; 'error': Error conditions; 'warning': Warning conditions; 'notification': Normal but significant conditions; 'information': Informational messages; 'debugging': Debug level messages (Least Important); ",
+                "enum": [
+                  "emergency",
+                  "alert",
+                  "critical",
+                  "error",
+                  "warning",
+                  "notification",
+                  "information",
+                  "debugging"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "acos-events-message-id": {
+        "type": "object",
+        "properties": {
+          "log-msg": {
+            "type": "string",
+            "description": "Specify log message-id lineage",
+            "minLength": 1,
+            "maxLength": 512
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "property": {
+            "type": "object",
+            "properties": {
+              "severity": {
+                "type": "object",
+                "properties": {
+                  "severity-val": {
+                    "type": "string",
+                    "description": "'emergency': System unusable log messages (Most Important); 'alert': Action must be taken immediately; 'critical': Critical conditions; 'error': Error conditions; 'warning': Warning conditions; 'notification': Normal but significant conditions; 'information': Informational messages; 'debugging': Debug level messages (Least Important); ",
+                    "enum": [
+                      "emergency",
+                      "alert",
+                      "critical",
+                      "error",
+                      "warning",
+                      "notification",
+                      "information",
+                      "debugging"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "acos-events-message-info-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "msg-info-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "acos-events-message-selector-rule": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "number",
+            "description": "Specify rule index - rules are applied in numeric order",
+            "minimum": 1,
+            "maximum": 256
+          },
+          "action": {
+            "type": "string",
+            "description": "'send': log messages selected by this rule will be sent; 'drop': log messages selected by this rule will be dropped; ",
+            "default": "send",
+            "enum": [
+              "send",
+              "drop"
+            ]
+          },
+          "message-id": {
+            "type": "string",
+            "description": "Select a specific message by message-id and optionally severity",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "message-id-scope": {
+            "type": "string",
+            "description": "'all': Log messages at this level and all sub-trees; 'node-only': Log messages at this node only; 'children-only': Log messages at all sub-trees only; 'log-field-only': Log message for this Log Field only; ",
+            "enum": [
+              "all",
+              "node-only",
+              "children-only",
+              "log-field-only"
+            ]
+          },
+          "severity-oper": {
+            "type": "string",
+            "description": "'equal-and-higher': emergency is highest, debugging lowest; 'equal': single severity; ",
+            "enum": [
+              "equal-and-higher",
+              "equal"
+            ]
+          },
+          "severity-val": {
+            "type": "string",
+            "description": "'emergency': System unusable log messages (Most Important); 'alert': Action must be taken immediately; 'critical': Critical conditions; 'error': Error conditions; 'warning': Warning conditions; 'notification': Normal but significant conditions; 'information': Informational messages; 'debugging': Debug level messages (Least Important); ",
+            "enum": [
+              "emergency",
+              "alert",
+              "critical",
+              "error",
+              "warning",
+              "notification",
+              "information",
+              "debugging"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "acos-events-message-selector": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify message selector name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "rule-list": {
+            "type": "array",
+            "items": {
+              "type": "rule"
+            }
+          }
+        }
+      },
+      "acos-events-messages-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "all-msgs": {
+                "type": "number"
+              },
+              "active-msgs": {
+                "type": "number"
+              },
+              "debug-msgs": {
+                "type": "number"
+              },
+              "message-id": {
+                "type": "string"
+              },
+              "message-id-scope": {
+                "type": "string"
+              },
+              "total-log-count": {
+                "type": "number"
+              },
+              "active-log-count": {
+                "type": "number"
+              },
+              "messages-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "acos-events-messages": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-rate-limit-local": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "number",
+            "description": "Configure Rate Limit for Local logs",
+            "default": 32,
+            "minimum": 0,
+            "maximum": 100
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-rate-limit-remote": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "number",
+            "description": "Configure rate limit for logs sent to remote via classic logging config",
+            "default": 32,
+            "minimum": 0,
+            "maximum": 250
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events-statistics-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "msg_sent": {
+                "type": "number",
+                "description": "Messages sent, to Remote"
+              },
+              "msg_sent_logdb": {
+                "type": "number",
+                "description": "Messages sent, to LogDB"
+              },
+              "msg_dropped_format_not_defined": {
+                "type": "number",
+                "description": "Messages Dropped, format not defined"
+              },
+              "msg_dropped_malloc_failure": {
+                "type": "number",
+                "description": "Messages Dropped, malloc failure"
+              },
+              "msg_dropped_no_template": {
+                "type": "number",
+                "description": "Messages Dropped, no active template"
+              },
+              "msg_dropped_selector": {
+                "type": "number",
+                "description": "Messages Dropped, selector does not enable msg"
+              },
+              "msg_dropped_too_long": {
+                "type": "number",
+                "description": "Messages Dropped, invalid length"
+              },
+              "msg_dropped_craft_fail": {
+                "type": "number",
+                "description": "Messages Dropped, msg crafting failed"
+              },
+              "msg_dropped_local_log_ratelimit": {
+                "type": "number",
+                "description": "Messages Dropped, local log ratelimited"
+              },
+              "msg_dropped_remote_log_ratelimit": {
+                "type": "number",
+                "description": "Messages Dropped, remote log ratelimited"
+              },
+              "msg_dropped_send_failed": {
+                "type": "number",
+                "description": "Messages Dropped, send failed"
+              },
+              "msg_dropped_no_active_member": {
+                "type": "number",
+                "description": "Messages Dropped, no active member in collector grp"
+              },
+              "msg_dropped_route_fail": {
+                "type": "number",
+                "description": "Messages Dropped, Route lookup failed"
+              },
+              "msg_dropped_other": {
+                "type": "number",
+                "description": "Messages Dropped, unexpected error"
+              }
+            }
+          }
+        }
+      },
+      "acos-events-statistics": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "acos-events-template-message-selector-collector-group": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify the log server group for receiving log messages",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "acos-events-template-message-selector": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify the message selector name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "collector-group-list": {
+            "type": "array",
+            "items": {
+              "type": "collector-group"
+            }
+          }
+        }
+      },
+      "acos-events-template": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify logging template name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "message-selector-list": {
+            "type": "array",
+            "items": {
+              "type": "message-selector"
+            }
+          }
+        }
+      },
+      "acos-events-use-partition": {
+        "type": "object",
+        "properties": {
+          "partition-name": {
+            "type": "string",
+            "description": "Select partition name for logging",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-events": {
+        "type": "object",
+        "properties": {
+          "log-properties": {
+            "type": "object",
+            "properties": {
+              "add-msgid-in-header": {
+                "type": "number",
+                "description": "Add Message ID in log messages",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "use-partition": {
+            "type": "object",
+            "properties": {
+              "partition-name": {
+                "type": "string",
+                "description": "Select partition name for logging",
+                "minLength": 1,
+                "maxLength": 14
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "rate-limit-remote": {
+            "type": "object",
+            "properties": {
+              "limit": {
+                "type": "number",
+                "description": "Configure rate limit for logs sent to remote via classic logging config",
+                "default": 32,
+                "minimum": 0,
+                "maximum": 250
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "rate-limit-local": {
+            "type": "object",
+            "properties": {
+              "limit": {
+                "type": "number",
+                "description": "Configure Rate Limit for Local logs",
+                "default": 32,
+                "minimum": 0,
+                "maximum": 100
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "message-id-list": {
+            "type": "array",
+            "items": {
+              "type": "message-id"
+            }
+          },
+          "message-selector-list": {
+            "type": "array",
+            "items": {
+              "type": "message-selector"
+            }
+          },
+          "log-server-list": {
+            "type": "array",
+            "items": {
+              "type": "log-server"
+            }
+          },
+          "collector-group-list": {
+            "type": "array",
+            "items": {
+              "type": "collector-group"
+            }
+          },
+          "template-list": {
+            "type": "array",
+            "items": {
+              "type": "template"
+            }
+          },
+          "active-template": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Specify the logging template name",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "message-info": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "logdb": {
+            "type": "object",
+            "properties": {
+              "enable-all": {
+                "type": "number",
+                "description": "Enable logging for all widgets",
+                "default": 0
+              },
+              "enable-smtp": {
+                "type": "number",
+                "description": "Enable SMTP logging",
+                "default": 0
+              },
+              "enable-mqtt": {
+                "type": "number",
+                "description": "Enable MQTT logging",
+                "default": 0
+              },
+              "enable-http-forward-proxy": {
+                "type": "number",
+                "description": "Enable HTTP forward proxy logging",
+                "default": 0
+              },
+              "enable-cgn": {
+                "type": "number",
+                "description": "Enable CGN logging",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "statistics": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

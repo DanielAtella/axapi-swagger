@@ -1,0 +1,723 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - SESSIONS",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the sessions category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/sessions/ext/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Operational Status for the object ext",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-ext-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sessions/ext": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/ext",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-ext"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/ext",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-ext"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sessions-ext"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/ext",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-ext"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sessions/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Operational Status for the object sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sessions/smp/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Operational Status for the object smp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sessions/smp-table/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Operational Status for the object smp-table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp-table-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sessions/smp-table": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/smp-table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp-table"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/smp-table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp-table"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sessions-smp-table"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/smp-table",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp-table"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sessions/smp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/smp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/smp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sessions-smp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions/smp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions-smp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/sessions": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sessions"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SESSIONS"
+        ],
+        "description": "Endpoint for /axapi/v3/sessions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sessions"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "sessions-ext-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "session-ext-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "sessions-ext": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sessions-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "session-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "total-sessions": {
+                "type": "number"
+              },
+              "app-sessions": {
+                "type": "number"
+              },
+              "filter_type": {
+                "type": "string",
+                "enum": [
+                  "ipv4",
+                  "ipv6",
+                  "nat44",
+                  "nat64",
+                  "persist-ipv6-src-ip",
+                  "persist-ipv6-dst-ip",
+                  "persist-ipv6-ssl-id",
+                  "persist-dst-ip",
+                  "persist-src-ip",
+                  "persist-uie",
+                  "persist-ssl-id",
+                  "radius",
+                  "server",
+                  "virtual-server",
+                  "sip",
+                  "sixrd",
+                  "filter",
+                  "ds-lite",
+                  "dns-id-switch",
+                  "local",
+                  "fw",
+                  "clear-all",
+                  "full-width",
+                  "debug",
+                  "application",
+                  "ipsec",
+                  "diameter",
+                  "zone",
+                  "source-port-rate-limit",
+                  "source-port-rate-limitv4",
+                  "source-port-rate-limitv6",
+                  "gtp"
+                ]
+              },
+              "src-ipv4-addr": {
+                "type": "string"
+              },
+              "dst-ipv4-addr": {
+                "type": "string"
+              },
+              "nat-ipv4-addr": {
+                "type": "string"
+              },
+              "src-ipv6-addr": {
+                "type": "string"
+              },
+              "dst-ipv6-addr": {
+                "type": "string"
+              },
+              "name-str": {
+                "type": "string"
+              },
+              "dest-port": {
+                "type": "number"
+              },
+              "src-port": {
+                "type": "number"
+              },
+              "nat-port": {
+                "type": "number"
+              },
+              "app-category": {
+                "type": "string"
+              },
+              "app": {
+                "type": "string"
+              },
+              "l4-protocol": {
+                "type": "string",
+                "enum": [
+                  "udp",
+                  "tcp",
+                  "icmp",
+                  "icmpv6"
+                ]
+              },
+              "fw-helper-sessions": {
+                "type": "number"
+              },
+              "fw-ip-type": {
+                "type": "string",
+                "enum": [
+                  "ipv4",
+                  "ipv6"
+                ]
+              },
+              "fw-rule": {
+                "type": "string"
+              },
+              "fw-dest-zone": {
+                "type": "string"
+              },
+              "fw-src-zone": {
+                "type": "string"
+              },
+              "fw-dest-obj": {
+                "type": "string"
+              },
+              "fw-src-obj": {
+                "type": "string"
+              },
+              "fw-dest-obj-grp": {
+                "type": "string"
+              },
+              "fw-src-obj-grp": {
+                "type": "string"
+              },
+              "fw-dest-rserver": {
+                "type": "string"
+              },
+              "fw-src-rserver": {
+                "type": "string"
+              },
+              "fw-dest-vserver": {
+                "type": "string"
+              },
+              "application": {
+                "type": "string"
+              },
+              "session-id": {
+                "type": "string"
+              },
+              "zone-name": {
+                "type": "string"
+              },
+              "sport-rate-limit-exceed": {
+                "type": "number"
+              },
+              "sport-rate-limit-curr": {
+                "type": "number"
+              },
+              "src-ipv6-prefix": {
+                "type": "string"
+              },
+              "dst-ipv6-prefix": {
+                "type": "string"
+              },
+              "check-inside-user": {
+                "type": "number"
+              },
+              "rev-dest-teid": {
+                "type": "number"
+              },
+              "msisdn": {
+                "type": "number"
+              },
+              "msisdn-val": {
+                "type": "string"
+              },
+              "imsi": {
+                "type": "number"
+              },
+              "imsi-val": {
+                "type": "string"
+              }
+            }
+          },
+          "ext": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "session-ext-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "smp": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "session-smp-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "sessions-smp-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "session-smp-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "sessions-smp-table-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "entry-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "sessions-smp-table": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sessions-smp": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "sessions": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "ext": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "smp": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "smp-table": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

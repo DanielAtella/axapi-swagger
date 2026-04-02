@@ -1,0 +1,240 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - TERMINAL",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the terminal category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/terminal": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TERMINAL"
+        ],
+        "description": "Set Terminal Startup Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/terminal"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TERMINAL"
+        ],
+        "description": "Set Terminal Startup Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/terminal"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/terminal"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TERMINAL"
+        ],
+        "description": "Set Terminal Startup Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/terminal"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/terminal"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TERMINAL"
+        ],
+        "description": "Set Terminal Startup Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/terminal"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "terminal": {
+        "type": "object",
+        "properties": {
+          "auto-size": {
+            "type": "number",
+            "description": "Enable terminal length and width automatically (not work if width or length set to 0)",
+            "default": 1
+          },
+          "editing": {
+            "type": "number",
+            "description": "Enable command line editing",
+            "default": 0
+          },
+          "gslb-cfg": {
+            "type": "object",
+            "properties": {
+              "gslb-prompt": {
+                "type": "number",
+                "description": "The gslb status prompt function set",
+                "default": 0
+              },
+              "disable": {
+                "type": "number",
+                "description": "Group status show disable",
+                "default": 0
+              },
+              "group-role": {
+                "type": "number",
+                "description": "Show GSLB group role on CLI prompt",
+                "default": 0
+              },
+              "symbol": {
+                "type": "number",
+                "description": "Show \"gslb\" symbol on CLI prompt",
+                "default": 0
+              }
+            }
+          },
+          "history-cfg": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "number",
+                "description": "Enable terminal history",
+                "default": 1
+              },
+              "size": {
+                "type": "number",
+                "description": "Set history buffer size (Size of history buffer, default is 256)",
+                "default": 256,
+                "minimum": 0,
+                "maximum": 1000
+              }
+            }
+          },
+          "idle-timeout": {
+            "type": "number",
+            "description": "Set interval for closing connection when there is no input detected (Timeout in minutes, 0 means never timeout, default is 15)",
+            "default": 15,
+            "minimum": 0,
+            "maximum": 60
+          },
+          "length": {
+            "type": "number",
+            "description": "Set number of lines on a screen(0 for no pausing) (Number of lines on screen, 0 for no pausing, default is 24)",
+            "default": 24,
+            "minimum": 0,
+            "maximum": 512
+          },
+          "prompt-cfg": {
+            "type": "object",
+            "properties": {
+              "prompt": {
+                "type": "number",
+                "description": "Configure the normal prompt format",
+                "default": 0
+              },
+              "hostname": {
+                "type": "number",
+                "description": "Display hostname in prompt",
+                "default": 0
+              },
+              "vcs-cfg": {
+                "type": "object",
+                "properties": {
+                  "vcs-status": {
+                    "type": "number",
+                    "description": "Display VCS status in prompt, eg. vMaster, vBlade",
+                    "default": 0
+                  }
+                }
+              }
+            }
+          },
+          "width": {
+            "type": "number",
+            "description": "Set width of the display terminal (Number of characters on a screen line, 0 means infinite, default is 80)",
+            "default": 80,
+            "minimum": 0,
+            "maximum": 512
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

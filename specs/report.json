@@ -1,0 +1,336 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - REPORT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the report category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/report/debug/sflow": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report sFlow parser options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report-debug-sflow"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report sFlow parser options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report-debug-sflow"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/report-debug-sflow"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report sFlow parser options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report-debug-sflow"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/report/debug": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report debugging options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report-debug"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report debugging options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report-debug"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/report-debug"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report debugging options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report-debug"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/report": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report configurations",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report configurations",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/report"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report configurations",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/report"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "REPORT"
+        ],
+        "description": "Report configurations",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/report"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "report-debug-sflow": {
+        "type": "object",
+        "properties": {
+          "parser": {
+            "type": "number",
+            "description": "Enable logs by parser",
+            "default": 0
+          },
+          "stats-oid": {
+            "type": "number",
+            "description": "Specify stats-oid to dump raw packets, 0 to disable",
+            "minimum": 0,
+            "maximum": 9999
+          }
+        }
+      },
+      "report-debug": {
+        "type": "object",
+        "properties": {
+          "log": {
+            "type": "number",
+            "description": "Enable Report module's normal logs",
+            "default": 0
+          },
+          "sflow": {
+            "type": "object",
+            "properties": {
+              "parser": {
+                "type": "number",
+                "description": "Enable logs by parser",
+                "default": 0
+              },
+              "stats-oid": {
+                "type": "number",
+                "description": "Specify stats-oid to dump raw packets, 0 to disable",
+                "minimum": 0,
+                "maximum": 9999
+              }
+            }
+          }
+        }
+      },
+      "report": {
+        "type": "object",
+        "properties": {
+          "debug": {
+            "type": "object",
+            "properties": {
+              "log": {
+                "type": "number",
+                "description": "Enable Report module's normal logs",
+                "default": 0
+              },
+              "sflow": {
+                "type": "object",
+                "properties": {
+                  "parser": {
+                    "type": "number",
+                    "description": "Enable logs by parser",
+                    "default": 0
+                  },
+                  "stats-oid": {
+                    "type": "number",
+                    "description": "Specify stats-oid to dump raw packets, 0 to disable",
+                    "minimum": 0,
+                    "maximum": 9999
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

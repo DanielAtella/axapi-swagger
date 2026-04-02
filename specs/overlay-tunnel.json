@@ -1,0 +1,2479 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - OVERLAY-TUNNEL",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the overlay-tunnel category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/overlay-tunnel/options/src-port-range": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options-src-port-range"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options-src-port-range"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-options-src-port-range"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options-src-port-range"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-options-src-port-range"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options-src-port-range"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/options": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Global overlay-tunnel configuration options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Global overlay-tunnel configuration options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-options"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Global overlay-tunnel configuration options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-options"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Global overlay-tunnel configuration options",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-options"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/host/{ip-addr}+{overlay-mac-addr}+{vni}+{destination-vtep}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ip-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-addr"
+        },
+        {
+          "name": "overlay-mac-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for overlay-mac-addr"
+        },
+        {
+          "name": "vni",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vni"
+        },
+        {
+          "name": "destination-vtep",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for destination-vtep"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-host"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-host"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-host"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-host"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-host"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-host"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/local-ip-address/vni/{segment}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "segment",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for segment"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address-vni"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address-vni"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address-vni"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address-vni"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address-vni"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address-vni"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/local-ip-address": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ip-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/local-ipv6-address": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ipv6-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ipv6-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ipv6-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ipv6-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ipv6-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "IP Address of the local tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-local-ipv6-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/remote-ip-address/{ip-address}/gre-keepalive": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ip-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre keepalive",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-gre-keepalive"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre keepalive",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-gre-keepalive"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-gre-keepalive"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre keepalive",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-gre-keepalive"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-gre-keepalive"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre keepalive",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-gre-keepalive"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/remote-ip-address/{ip-address}/use-gre-key": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ip-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-gre-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-gre-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-gre-key"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-gre-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-gre-key"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the gre key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-gre-key"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/remote-ip-address/{ip-address}/use-lif": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ip-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-lif"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-lif"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-lif"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-lif"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-lif"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-use-lif"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/remote-ip-address/{ip-address}/vni/{segment}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ip-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-address"
+        },
+        {
+          "name": "segment",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for segment"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Segment Id configured on the remote VTEP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-vni"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Segment Id configured on the remote VTEP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-vni"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-vni"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Segment Id configured on the remote VTEP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-vni"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-vni"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Segment Id configured on the remote VTEP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address-vni"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/remote-ip-address/{ip-address}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ip-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ip-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/remote-ipv6-address/{ipv6-address}/use-lif": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ipv6-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address-use-lif"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address-use-lif"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address-use-lif"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address-use-lif"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address-use-lif"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Specify the interface lif",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address-use-lif"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/remote-ipv6-address/{ipv6-address}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        },
+        {
+          "name": "ipv6-address",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-address"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure remote tunnel end point parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-remote-ipv6-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/src-port-range": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Layer-4 Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-src-port-range"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Layer-4 Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-src-port-range"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-src-port-range"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Layer-4 Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-src-port-range"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep-src-port-range"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Layer-4 Source Port Range",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-src-port-range"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}/stats": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Statistics for the object vtep",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel/vtep/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Tunnel end point Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Tunnel end point Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Tunnel end point Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/overlay-tunnel-vtep"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Virtual Tunnel end point Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel-vtep"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/overlay-tunnel": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "OVERLAY-TUNNEL"
+        ],
+        "description": "Configure a Tunnel end point",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/overlay-tunnel"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "overlay-tunnel-options-src-port-range": {
+        "type": "object",
+        "properties": {
+          "min-port": {
+            "type": "number",
+            "description": "Minimum Port Number",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "max-port": {
+            "type": "number",
+            "description": "Maximum Port Number",
+            "default": 65535,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-options": {
+        "type": "object",
+        "properties": {
+          "ip-dscp-preserve": {
+            "type": "number",
+            "description": "Copy DSCP bits from inner IP to outer IP header",
+            "default": 0
+          },
+          "tcp-mss-adjust-disable": {
+            "type": "number",
+            "description": "Disable TCP MSS adjustment in SYN packet for tunnels",
+            "default": 0
+          },
+          "gateway-mac": {
+            "type": "string",
+            "description": "MAC to be used with Gateway segment Id (MAC Address for the Gateway segment)"
+          },
+          "fragmentation-mode-inner": {
+            "type": "number",
+            "description": "Enable the inner-fragmentation",
+            "default": 0
+          },
+          "vxlan-dest-port": {
+            "type": "number",
+            "description": "VXLAN UDP Destination Port (UDP Port Number (default 4789))",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "src-port-range": {
+            "type": "object",
+            "properties": {
+              "min-port": {
+                "type": "number",
+                "description": "Minimum Port Number",
+                "default": 1,
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "max-port": {
+                "type": "number",
+                "description": "Maximum Port Number",
+                "default": 65535,
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "overlay-tunnel-vtep-host": {
+        "type": "object",
+        "properties": {
+          "ip-addr": {
+            "type": "string",
+            "description": "IPv4 address of the overlay host"
+          },
+          "overlay-mac-addr": {
+            "type": "string",
+            "description": "MAC Address of the overlay host"
+          },
+          "vni": {
+            "type": "number",
+            "description": " Configure the segment id ( VNI of the remote host)",
+            "minimum": 1,
+            "maximum": 16777215
+          },
+          "destination-vtep": {
+            "type": "string",
+            "description": "Configure the VTEP IP address (IPv4 address of the VTEP for the remote host)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-local-ip-address-vni": {
+        "type": "object",
+        "properties": {
+          "segment": {
+            "type": "number",
+            "description": "Id of the segment that is being extended",
+            "minimum": 1,
+            "maximum": 16777215
+          },
+          "lif": {
+            "type": "string",
+            "description": "Logical interface (logical interface name)",
+            "minLength": 1,
+            "maxLength": 15
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-local-ip-address": {
+        "type": "object",
+        "properties": {
+          "ip-address": {
+            "type": "string",
+            "description": "Source Tunnel End Point IPv4 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "vni-list": {
+            "type": "array",
+            "items": {
+              "type": "vni"
+            }
+          }
+        }
+      },
+      "overlay-tunnel-vtep-local-ipv6-address": {
+        "type": "object",
+        "properties": {
+          "ipv6-address": {
+            "type": "string",
+            "description": "Source Tunnel End Point IPv6 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-remote-ip-address-gre-keepalive": {
+        "type": "object",
+        "properties": {
+          "retry-time": {
+            "type": "number",
+            "description": "Keepalive retry interval in seconds",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 60
+          },
+          "retry-count": {
+            "type": "number",
+            "description": "Keepalive multiplier",
+            "minimum": 2,
+            "maximum": 100
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-remote-ip-address-use-gre-key": {
+        "type": "object",
+        "properties": {
+          "gre-key": {
+            "type": "number",
+            "description": "key",
+            "minimum": 0,
+            "maximum": 4294967295
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-remote-ip-address-use-lif": {
+        "type": "object",
+        "properties": {
+          "lif": {
+            "type": "string",
+            "description": "Logical interface (logical interface name)",
+            "minLength": 1,
+            "maxLength": 15
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-remote-ip-address-vni": {
+        "type": "object",
+        "properties": {
+          "segment": {
+            "type": "number",
+            "description": "VNI configured for the remote VTEP",
+            "minimum": 1,
+            "maximum": 16777215
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-remote-ip-address": {
+        "type": "object",
+        "properties": {
+          "ip-address": {
+            "type": "string",
+            "description": "IP Address of the remote VTEP"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "use-lif": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Logical interface (logical interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "gre-keepalive": {
+            "type": "object",
+            "properties": {
+              "retry-time": {
+                "type": "number",
+                "description": "Keepalive retry interval in seconds",
+                "default": 10,
+                "minimum": 1,
+                "maximum": 60
+              },
+              "retry-count": {
+                "type": "number",
+                "description": "Keepalive multiplier",
+                "minimum": 2,
+                "maximum": 100
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "use-gre-key": {
+            "type": "object",
+            "properties": {
+              "gre-key": {
+                "type": "number",
+                "description": "key",
+                "minimum": 0,
+                "maximum": 4294967295
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "vni-list": {
+            "type": "array",
+            "items": {
+              "type": "vni"
+            }
+          }
+        }
+      },
+      "overlay-tunnel-vtep-remote-ipv6-address-use-lif": {
+        "type": "object",
+        "properties": {
+          "partition": {
+            "type": "string",
+            "description": "Name of the Partition with the L2 segment being extended (Name of the User Partition with the L2 segment being extended)",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "lif": {
+            "type": "string",
+            "description": "Logical interface (logical interface name)",
+            "minLength": 1,
+            "maxLength": 15
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-remote-ipv6-address": {
+        "type": "object",
+        "properties": {
+          "ipv6-address": {
+            "type": "string",
+            "description": "IPv6 Address of the remote VTEP"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "use-lif": {
+            "type": "object",
+            "properties": {
+              "partition": {
+                "type": "string",
+                "description": "Name of the Partition with the L2 segment being extended (Name of the User Partition with the L2 segment being extended)",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "lif": {
+                "type": "string",
+                "description": "Logical interface (logical interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "overlay-tunnel-vtep-src-port-range": {
+        "type": "object",
+        "properties": {
+          "min-port": {
+            "type": "number",
+            "description": "Minimum Port Number",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "max-port": {
+            "type": "number",
+            "description": "Maximum Port Number",
+            "default": 65535,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "overlay-tunnel-vtep-stats": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "VTEP Identifier",
+            "minimum": 1,
+            "maximum": 190
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "cfg_err_count": {
+                "type": "number",
+                "description": "Config errors"
+              },
+              "flooded_pkt_count": {
+                "type": "number",
+                "description": "Flooded packet count"
+              },
+              "encap_unresolved_count": {
+                "type": "number",
+                "description": "Encap unresolved failures"
+              },
+              "unknown_encap_rx_pkt": {
+                "type": "number",
+                "description": "Encap miss rx pkts"
+              },
+              "unknown_encap_tx_pkt": {
+                "type": "number",
+                "description": "Encap miss tx pkts"
+              },
+              "arp_req_sent": {
+                "type": "number",
+                "description": "Arp request sent"
+              },
+              "vtep_host_learned": {
+                "type": "number",
+                "description": "Hosts learned"
+              },
+              "vtep_host_learn_error": {
+                "type": "number",
+                "description": "Host learn error"
+              },
+              "invalid_lif_rx": {
+                "type": "number",
+                "description": "Invalid Lif pkts in"
+              },
+              "invalid_lif_tx": {
+                "type": "number",
+                "description": "Invalid Lif pkts out"
+              },
+              "unknown_vtep_tx": {
+                "type": "number",
+                "description": "Vtep unknown tx"
+              },
+              "unknown_vtep_rx": {
+                "type": "number",
+                "description": "Vtep Unkown rx"
+              },
+              "unhandled_pkt_rx": {
+                "type": "number",
+                "description": "Unhandled packets in"
+              },
+              "unhandled_pkt_tx": {
+                "type": "number",
+                "description": "Unhandled packets out"
+              },
+              "total_pkts_rx": {
+                "type": "number",
+                "description": "Total packets out"
+              },
+              "total_bytes_rx": {
+                "type": "number",
+                "description": "Total packet bytes in"
+              },
+              "unicast_pkt_rx": {
+                "type": "number",
+                "description": "Total unicast packets in"
+              },
+              "bcast_pkt_rx": {
+                "type": "number",
+                "description": "Total broadcast packets in"
+              },
+              "mcast_pkt_rx": {
+                "type": "number",
+                "description": "Total multicast packets in"
+              },
+              "dropped_pkt_rx": {
+                "type": "number",
+                "description": "Dropped received packets"
+              },
+              "encap_miss_pkts_rx": {
+                "type": "number",
+                "description": "Encap missed in received packets"
+              },
+              "bad_chksum_pks_rx": {
+                "type": "number",
+                "description": "Bad checksum in received packets"
+              },
+              "requeue_pkts_in": {
+                "type": "number",
+                "description": "Requeued packets in"
+              },
+              "pkts_out": {
+                "type": "number",
+                "description": "Packets out"
+              },
+              "total_bytes_tx": {
+                "type": "number",
+                "description": "Packet bytes out"
+              },
+              "unicast_pkt_tx": {
+                "type": "number",
+                "description": "Unicast packets out"
+              },
+              "bcast_pkt_tx": {
+                "type": "number",
+                "description": "Broadcast packets out"
+              },
+              "mcast_pkt_tx": {
+                "type": "number",
+                "description": "Multicast packets out"
+              },
+              "dropped_pkts_tx": {
+                "type": "number",
+                "description": "Dropped packets out"
+              },
+              "large_pkts_rx": {
+                "type": "number",
+                "description": "Too large packets in"
+              },
+              "dot1q_pkts_rx": {
+                "type": "number",
+                "description": "Dot1q packets in"
+              },
+              "frag_pkts_tx": {
+                "type": "number",
+                "description": "Frag packets out"
+              },
+              "reassembled_pkts_rx": {
+                "type": "number",
+                "description": "Reassembled packets in"
+              },
+              "bad_inner_ipv4_len_rx": {
+                "type": "number",
+                "description": "bad inner ipv4 packet len"
+              },
+              "bad_inner_ipv6_len_rx": {
+                "type": "number",
+                "description": "Bad inner ipv6 packet len"
+              },
+              "lif_un_init_rx": {
+                "type": "number",
+                "description": "Lif uninitialized packets in"
+              }
+            }
+          }
+        }
+      },
+      "overlay-tunnel-vtep": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "VTEP Identifier",
+            "minimum": 1,
+            "maximum": 190
+          },
+          "encap": {
+            "type": "string",
+            "description": "'gre': Tunnel encapsulation type is GRE; 'vxlan': Tunnel Encapsulation Type is VXLAN; ",
+            "enum": [
+              "gre",
+              "vxlan"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "src-port-range": {
+            "type": "object",
+            "properties": {
+              "min-port": {
+                "type": "number",
+                "description": "Minimum Port Number",
+                "default": 1,
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "max-port": {
+                "type": "number",
+                "description": "Maximum Port Number",
+                "default": 65535,
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "local-ip-address": {
+            "type": "object",
+            "properties": {
+              "ip-address": {
+                "type": "string",
+                "description": "Source Tunnel End Point IPv4 address"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "vni-list": {
+                "type": "array",
+                "items": {
+                  "type": "vni"
+                }
+              }
+            }
+          },
+          "remote-ip-address-list": {
+            "type": "array",
+            "items": {
+              "type": "remote-ip-address"
+            }
+          },
+          "host-list": {
+            "type": "array",
+            "items": {
+              "type": "host"
+            }
+          }
+        }
+      },
+      "overlay-tunnel": {
+        "type": "object",
+        "properties": {
+          "options": {
+            "type": "object",
+            "properties": {
+              "ip-dscp-preserve": {
+                "type": "number",
+                "description": "Copy DSCP bits from inner IP to outer IP header",
+                "default": 0
+              },
+              "tcp-mss-adjust-disable": {
+                "type": "number",
+                "description": "Disable TCP MSS adjustment in SYN packet for tunnels",
+                "default": 0
+              },
+              "gateway-mac": {
+                "type": "string",
+                "description": "MAC to be used with Gateway segment Id (MAC Address for the Gateway segment)"
+              },
+              "fragmentation-mode-inner": {
+                "type": "number",
+                "description": "Enable the inner-fragmentation",
+                "default": 0
+              },
+              "vxlan-dest-port": {
+                "type": "number",
+                "description": "VXLAN UDP Destination Port (UDP Port Number (default 4789))",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "src-port-range": {
+                "type": "object",
+                "properties": {
+                  "min-port": {
+                    "type": "number",
+                    "description": "Minimum Port Number",
+                    "default": 1,
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "max-port": {
+                    "type": "number",
+                    "description": "Maximum Port Number",
+                    "default": 65535,
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "vtep-list": {
+            "type": "array",
+            "items": {
+              "type": "vtep"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

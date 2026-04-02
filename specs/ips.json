@@ -1,0 +1,590 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - IPS",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the ips category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/ips/global/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "Statistics for the object global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-global-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips/global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ips-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips/profile/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "Operational Status for the object profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-profile-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips/profile": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-profile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-profile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ips-profile"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-profile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips/signature/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "Operational Status for the object signature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-signature-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips/signature": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS signature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-signature"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS signature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-signature"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ips-signature"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS signature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-signature"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips/summary/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "Operational Status for the object summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-summary-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips/summary": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-summary"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-summary"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ips-summary"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS profile",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips-summary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ips": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IPS"
+        ],
+        "description": "IPS feature",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ips"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ips-global-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "ips_matched_total": {
+                "type": "number",
+                "description": "IPS Matched Total"
+              },
+              "ips_matched_http": {
+                "type": "number",
+                "description": "IPS Matched HTTP"
+              },
+              "ips_matched_dns": {
+                "type": "number",
+                "description": "IPS Matched DNS"
+              },
+              "ips_matched_other": {
+                "type": "number",
+                "description": "IPS Matched Other"
+              },
+              "ips_matched_action_pass": {
+                "type": "number",
+                "description": "IPS Matched Action Pass"
+              },
+              "ips_matched_action_drop": {
+                "type": "number",
+                "description": "IPS Matched Action Drop"
+              },
+              "ips_matched_action_blacklist": {
+                "type": "number",
+                "description": "IPS Matched Action Blacklist"
+              },
+              "ips_matched_severity_high": {
+                "type": "number",
+                "description": "IPS Matched Severity High"
+              },
+              "ips_matched_severity_medium": {
+                "type": "number",
+                "description": "IPS Matched Severity Medium"
+              },
+              "ips_matched_severity_low": {
+                "type": "number",
+                "description": "IPS Matched Severity Low"
+              }
+            }
+          }
+        }
+      },
+      "ips-global": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "ips-profile-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "profile-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "sid": {
+                "type": "number"
+              },
+              "profile-detail": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "ips-profile": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ips-signature-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "signature-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "sid": {
+                "type": "number"
+              },
+              "category": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "ips-signature": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ips-summary-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "string"
+              },
+              "a10-signature-source": {
+                "type": "string"
+              },
+              "a10-signature-count": {
+                "type": "number"
+              },
+              "custom-signature-count": {
+                "type": "number"
+              },
+              "protection": {
+                "type": "string",
+                "enum": [
+                  "enabled",
+                  "disabled"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "ips-summary": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ips": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

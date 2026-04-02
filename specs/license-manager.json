@@ -1,0 +1,868 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - LICENSE-MANAGER",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the license-manager category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/license-manager/connect": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Connect to license manager to activate",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-connect"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Connect to license manager to activate",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-connect"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-connect"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Connect to license manager to activate",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-connect"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-connect"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Connect to license manager to activate",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-connect"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/license-manager/host/{host-ipv4}+{host-ipv6}": {
+      "parameters": [
+        {
+          "name": "host-ipv4",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for host-ipv4"
+        },
+        {
+          "name": "host-ipv6",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for host-ipv6"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-host"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-host"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-host"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-host"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-host"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager host",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-host"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/license-manager/ng-waf-module": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Enter WAF license-keys",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-ng-waf-module"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Enter WAF license-keys",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-ng-waf-module"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-ng-waf-module"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Enter WAF license-keys",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-ng-waf-module"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/license-manager/overage": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set overage parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-overage"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set overage parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-overage"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-overage"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set overage parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-overage"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-overage"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set overage parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-overage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/license-manager/reminder/{reminder-value}": {
+      "parameters": [
+        {
+          "name": "reminder-value",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for reminder-value"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set the reminder for grace time",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-reminder"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set the reminder for grace time",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-reminder"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-reminder"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set the reminder for grace time",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-reminder"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager-reminder"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Set the reminder for grace time",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager-reminder"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/license-manager": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/license-manager"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LICENSE-MANAGER"
+        ],
+        "description": "Configure license manager",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/license-manager"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "license-manager-connect": {
+        "type": "object",
+        "properties": {
+          "connect": {
+            "type": "number",
+            "description": "Connect to license manager to activate",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "license-manager-host": {
+        "type": "object",
+        "properties": {
+          "host-ipv4": {
+            "type": "string",
+            "description": "license server ip address (length:1-31)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "host-ipv6": {
+            "type": "string",
+            "description": "Configure license manager server ipv6-address",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "port": {
+            "type": "number",
+            "description": "Configure the license manager port, default is 443",
+            "default": 443,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "license-manager-ng-waf-module": {
+        "type": "object",
+        "properties": {
+          "access-key-id": {
+            "type": "string",
+            "description": "access-key",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "secret-access-key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "license-manager-overage": {
+        "type": "object",
+        "properties": {
+          "days": {
+            "type": "number",
+            "description": "Number of days",
+            "minimum": 0,
+            "maximum": 365
+          },
+          "hours": {
+            "type": "number",
+            "description": "Number of hours",
+            "minimum": 0,
+            "maximum": 23
+          },
+          "minutes": {
+            "type": "number",
+            "description": "Number of minutes",
+            "minimum": 0,
+            "maximum": 59
+          },
+          "seconds": {
+            "type": "number",
+            "description": "Number of seconds",
+            "minimum": 0,
+            "maximum": 59
+          },
+          "gb": {
+            "type": "number",
+            "description": "Number of GB",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "mb": {
+            "type": "number",
+            "description": "Number of MB",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "kb": {
+            "type": "number",
+            "description": "Number of KB",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "bytes": {
+            "type": "number",
+            "description": "Number of bytes",
+            "minimum": 1,
+            "maximum": 1023
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "license-manager-reminder": {
+        "type": "object",
+        "properties": {
+          "reminder-value": {
+            "type": "number",
+            "description": "Configure reminder for grace time (Hour)",
+            "minimum": 1,
+            "maximum": 1000000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "license-manager": {
+        "type": "object",
+        "properties": {
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port to connect license server",
+            "default": 0
+          },
+          "sn": {
+            "type": "string",
+            "description": "serial number",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "interval": {
+            "type": "number",
+            "description": "Configure interval profile (1 monthly, 2 daily, 3 hourly)",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "instance-name": {
+            "type": "string",
+            "description": "Configure instance name [format: (string).(string).(string).(string)]",
+            "minLength": 7,
+            "maxLength": 63
+          },
+          "bandwidth-base": {
+            "type": "number",
+            "description": "Configure feature bandwidth base (Mb)",
+            "minimum": 10,
+            "maximum": 102400
+          },
+          "bandwidth-unrestricted": {
+            "type": "number",
+            "description": "Set the bandwidth to maximum",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "host-list": {
+            "type": "array",
+            "items": {
+              "type": "host"
+            }
+          },
+          "reminder-list": {
+            "type": "array",
+            "items": {
+              "type": "reminder"
+            }
+          },
+          "overage": {
+            "type": "object",
+            "properties": {
+              "days": {
+                "type": "number",
+                "description": "Number of days",
+                "minimum": 0,
+                "maximum": 365
+              },
+              "hours": {
+                "type": "number",
+                "description": "Number of hours",
+                "minimum": 0,
+                "maximum": 23
+              },
+              "minutes": {
+                "type": "number",
+                "description": "Number of minutes",
+                "minimum": 0,
+                "maximum": 59
+              },
+              "seconds": {
+                "type": "number",
+                "description": "Number of seconds",
+                "minimum": 0,
+                "maximum": 59
+              },
+              "gb": {
+                "type": "number",
+                "description": "Number of GB",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "mb": {
+                "type": "number",
+                "description": "Number of MB",
+                "minimum": 1,
+                "maximum": 1023
+              },
+              "kb": {
+                "type": "number",
+                "description": "Number of KB",
+                "minimum": 1,
+                "maximum": 1023
+              },
+              "bytes": {
+                "type": "number",
+                "description": "Number of bytes",
+                "minimum": 1,
+                "maximum": 1023
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "connect": {
+            "type": "object",
+            "properties": {
+              "connect": {
+                "type": "number",
+                "description": "Connect to license manager to activate",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

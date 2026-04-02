@@ -1,0 +1,1061 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ACOS-CLOUD-INTEGRATION",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the acos-cloud-integration category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/acos-cloud-integration/ecosystem/consul": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the consul ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-consul"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the consul ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-consul"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-consul"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the consul ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-consul"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-consul"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the consul ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-consul"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-cloud-integration/ecosystem/k8s": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the kubernetes ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-k8s"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the kubernetes ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-k8s"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-k8s"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the kubernetes ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-k8s"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-k8s"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the kubernetes ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-k8s"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-cloud-integration/ecosystem/oracle": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the oracle ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-oracle"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the oracle ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-oracle"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-oracle"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the oracle ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-oracle"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-oracle"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Configure the oracle ecosystem for integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem-oracle"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-cloud-integration/ecosystem": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Ecosystem setting for heterogeneous cloud environment integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Ecosystem setting for heterogeneous cloud environment integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Ecosystem setting for heterogeneous cloud environment integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration-ecosystem"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration-ecosystem"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/acos-cloud-integration": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Setting for heterogeneous cloud environment integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Setting for heterogeneous cloud environment integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACOS-CLOUD-INTEGRATION"
+        ],
+        "description": "Setting for heterogeneous cloud environment integration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/acos-cloud-integration"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/acos-cloud-integration"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "acos-cloud-integration-ecosystem-consul": {
+        "type": "object",
+        "properties": {
+          "service-label": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ipv4-address": {
+            "type": "string",
+            "description": "Configure the bootstrap server's IPv4 address (the host IPv4 address)"
+          },
+          "ipv6-address": {
+            "type": "string",
+            "description": "Configure the bootstrap server's IPv6 address (the host IPv6 address)"
+          },
+          "host-name": {
+            "type": "string",
+            "description": "Configure the host name for bootstrap server(e.g www.a10networks.com)",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "port": {
+            "type": "number",
+            "description": "Configure the http port to use (port 8500)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "health-check-interval": {
+            "type": "string",
+            "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+            "enum": [
+              "5",
+              "10",
+              "15",
+              "20"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-cloud-integration-ecosystem-k8s": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "health-check-interval": {
+            "type": "string",
+            "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+            "enum": [
+              "5",
+              "10",
+              "15",
+              "20"
+            ]
+          },
+          "cluster-config-file": {
+            "type": "string",
+            "description": "Enter cluster config file name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "service-label": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-cloud-integration-ecosystem-oracle": {
+        "type": "object",
+        "properties": {
+          "service-label": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ipv4-address": {
+            "type": "string",
+            "description": "Configure the bootstrap server's IPv4 address (the host IPv4 address)"
+          },
+          "ipv6-address": {
+            "type": "string",
+            "description": "Configure the bootstrap server's IPv6 address (the host IPv6 address)"
+          },
+          "host-name": {
+            "type": "string",
+            "description": "Configure the host name for bootstrap server(e.g www.a10networks.com)",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "port": {
+            "type": "number",
+            "description": "Configure the http port to use (port 8500)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "health-check-interval": {
+            "type": "string",
+            "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+            "enum": [
+              "5",
+              "10",
+              "15",
+              "20"
+            ]
+          },
+          "compartment-id": {
+            "type": "string",
+            "description": "OCI compartment  id",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "tenancy-id": {
+            "type": "string",
+            "description": "OCI tenancy  id",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "user-id": {
+            "type": "string",
+            "description": "OCI user id",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "fingerprint": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "private-key-path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "acos-cloud-integration-ecosystem": {
+        "type": "object",
+        "properties": {
+          "dummy": {
+            "type": "number",
+            "description": "dummy to make intermediate obj to single",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "consul": {
+            "type": "object",
+            "properties": {
+              "service-label": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv4-address": {
+                "type": "string",
+                "description": "Configure the bootstrap server's IPv4 address (the host IPv4 address)"
+              },
+              "ipv6-address": {
+                "type": "string",
+                "description": "Configure the bootstrap server's IPv6 address (the host IPv6 address)"
+              },
+              "host-name": {
+                "type": "string",
+                "description": "Configure the host name for bootstrap server(e.g www.a10networks.com)",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "port": {
+                "type": "number",
+                "description": "Configure the http port to use (port 8500)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "health-check-interval": {
+                "type": "string",
+                "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+                "enum": [
+                  "5",
+                  "10",
+                  "15",
+                  "20"
+                ]
+              },
+              "action": {
+                "type": "string",
+                "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "oracle": {
+            "type": "object",
+            "properties": {
+              "service-label": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ipv4-address": {
+                "type": "string",
+                "description": "Configure the bootstrap server's IPv4 address (the host IPv4 address)"
+              },
+              "ipv6-address": {
+                "type": "string",
+                "description": "Configure the bootstrap server's IPv6 address (the host IPv6 address)"
+              },
+              "host-name": {
+                "type": "string",
+                "description": "Configure the host name for bootstrap server(e.g www.a10networks.com)",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "port": {
+                "type": "number",
+                "description": "Configure the http port to use (port 8500)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "health-check-interval": {
+                "type": "string",
+                "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+                "enum": [
+                  "5",
+                  "10",
+                  "15",
+                  "20"
+                ]
+              },
+              "compartment-id": {
+                "type": "string",
+                "description": "OCI compartment  id",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "tenancy-id": {
+                "type": "string",
+                "description": "OCI tenancy  id",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "user-id": {
+                "type": "string",
+                "description": "OCI user id",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "fingerprint": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "private-key-path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "action": {
+                "type": "string",
+                "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "k8s": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "health-check-interval": {
+                "type": "string",
+                "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+                "enum": [
+                  "5",
+                  "10",
+                  "15",
+                  "20"
+                ]
+              },
+              "cluster-config-file": {
+                "type": "string",
+                "description": "Enter cluster config file name",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "service-label": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "acos-cloud-integration": {
+        "type": "object",
+        "properties": {
+          "dummy": {
+            "type": "number",
+            "description": "dummy to make intermediate obj to single",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "ecosystem": {
+            "type": "object",
+            "properties": {
+              "dummy": {
+                "type": "number",
+                "description": "dummy to make intermediate obj to single",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "consul": {
+                "type": "object",
+                "properties": {
+                  "service-label": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ipv4-address": {
+                    "type": "string",
+                    "description": "Configure the bootstrap server's IPv4 address (the host IPv4 address)"
+                  },
+                  "ipv6-address": {
+                    "type": "string",
+                    "description": "Configure the bootstrap server's IPv6 address (the host IPv6 address)"
+                  },
+                  "host-name": {
+                    "type": "string",
+                    "description": "Configure the host name for bootstrap server(e.g www.a10networks.com)",
+                    "minLength": 1,
+                    "maxLength": 127
+                  },
+                  "port": {
+                    "type": "number",
+                    "description": "Configure the http port to use (port 8500)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "health-check-interval": {
+                    "type": "string",
+                    "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+                    "enum": [
+                      "5",
+                      "10",
+                      "15",
+                      "20"
+                    ]
+                  },
+                  "action": {
+                    "type": "string",
+                    "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "oracle": {
+                "type": "object",
+                "properties": {
+                  "service-label": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ipv4-address": {
+                    "type": "string",
+                    "description": "Configure the bootstrap server's IPv4 address (the host IPv4 address)"
+                  },
+                  "ipv6-address": {
+                    "type": "string",
+                    "description": "Configure the bootstrap server's IPv6 address (the host IPv6 address)"
+                  },
+                  "host-name": {
+                    "type": "string",
+                    "description": "Configure the host name for bootstrap server(e.g www.a10networks.com)",
+                    "minLength": 1,
+                    "maxLength": 127
+                  },
+                  "port": {
+                    "type": "number",
+                    "description": "Configure the http port to use (port 8500)",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "health-check-interval": {
+                    "type": "string",
+                    "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+                    "enum": [
+                      "5",
+                      "10",
+                      "15",
+                      "20"
+                    ]
+                  },
+                  "compartment-id": {
+                    "type": "string",
+                    "description": "OCI compartment  id",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "tenancy-id": {
+                    "type": "string",
+                    "description": "OCI tenancy  id",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "user-id": {
+                    "type": "string",
+                    "description": "OCI user id",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "fingerprint": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "private-key-path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "action": {
+                    "type": "string",
+                    "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "k8s": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "description": "'enable': Enable Configuration; 'disable': Disable Configuration; ",
+                    "default": "disable",
+                    "enum": [
+                      "enable",
+                      "disable"
+                    ]
+                  },
+                  "health-check-interval": {
+                    "type": "string",
+                    "description": "'5': 5 seconds; '10': 10 seconds; '15': 15 seconds; '20': 20 seconds; ",
+                    "enum": [
+                      "5",
+                      "10",
+                      "15",
+                      "20"
+                    ]
+                  },
+                  "cluster-config-file": {
+                    "type": "string",
+                    "description": "Enter cluster config file name",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "service-label": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

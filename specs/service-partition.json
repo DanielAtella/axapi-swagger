@@ -1,0 +1,155 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - SERVICE-PARTITION",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the service-partition category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/service-partition/{partition-name}": {
+      "parameters": [
+        {
+          "name": "partition-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for partition-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "SERVICE-PARTITION"
+        ],
+        "description": "Create/unload a service partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/service-partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SERVICE-PARTITION"
+        ],
+        "description": "Create/unload a service partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/service-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/service-partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SERVICE-PARTITION"
+        ],
+        "description": "Create/unload a service partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/service-partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "service-partition": {
+        "type": "object",
+        "properties": {
+          "partition-name": {
+            "type": "string",
+            "description": "Object service partition name",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "id": {
+            "type": "number",
+            "description": "Specify unique service partition id"
+          },
+          "application-type": {
+            "type": "string",
+            "description": "'adc': Application type ADC; ",
+            "enum": [
+              "adc"
+            ]
+          },
+          "follow-vrid": {
+            "type": "number",
+            "description": "Join a vrrp group (Specify ha VRRP-A vrid)",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 31
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

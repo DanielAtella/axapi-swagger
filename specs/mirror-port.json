@@ -1,0 +1,174 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - MIRROR-PORT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the mirror-port category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/mirror-port/{mirror-index}": {
+      "parameters": [
+        {
+          "name": "mirror-index",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for mirror-index"
+        }
+      ],
+      "get": {
+        "tags": [
+          "MIRROR-PORT"
+        ],
+        "description": "Enable a port to act as Mirror Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/mirror-port"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MIRROR-PORT"
+        ],
+        "description": "Enable a port to act as Mirror Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/mirror-port"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/mirror-port"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MIRROR-PORT"
+        ],
+        "description": "Enable a port to act as Mirror Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/mirror-port"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/mirror-port"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MIRROR-PORT"
+        ],
+        "description": "Enable a port to act as Mirror Port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/mirror-port"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "mirror-port": {
+        "type": "object",
+        "properties": {
+          "mirror-index": {
+            "type": "number",
+            "description": "Mirror index",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "ethernet": {
+            "type": "number",
+            "description": "Ethernet port as mirror port (Port Value)",
+            "minimum": 0,
+            "maximum": 103
+          },
+          "mirror-dir": {
+            "type": "string",
+            "description": "'input': Mirror incoming packets to this port; 'output': Mirror outgoing packets to this port; 'both': Mirror both incoming and outgoing packets to this port; ",
+            "default": "both",
+            "enum": [
+              "input",
+              "output",
+              "both"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

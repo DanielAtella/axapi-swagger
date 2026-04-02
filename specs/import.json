@@ -1,0 +1,1537 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - IMPORT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the import category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/import/auth-saml-idp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "SAML metadata of identity provider",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-auth-saml-idp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "SAML metadata of identity provider",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-auth-saml-idp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-auth-saml-idp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "SAML metadata of identity provider",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-auth-saml-idp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/geo-location-archive": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Geo-location Archive File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-geo-location-archive"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Geo-location Archive File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-geo-location-archive"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-geo-location-archive"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Geo-location Archive File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-geo-location-archive"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/health-external": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Address the External Script Program",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-health-external"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Address the External Script Program",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-health-external"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-health-external"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Address the External Script Program",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-health-external"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/health-postfile": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Address the HTTP Post data file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-health-postfile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Address the HTTP Post data file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-health-postfile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-health-postfile"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Address the HTTP Post data file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-health-postfile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/ips/a10-signature": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Update IPS A10 signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-a10-signature"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Update IPS A10 signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-a10-signature"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-ips-a10-signature"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Update IPS A10 signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-a10-signature"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/ips/profile": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Modify/Enable/Disable IPS signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-profile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Modify/Enable/Disable IPS signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-profile"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-ips-profile"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Modify/Enable/Disable IPS signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-profile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/ips/signature": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Add IPS custom signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-signature"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Add IPS custom signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-signature"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-ips-signature"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Add IPS custom signatures",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips-signature"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/ips": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "IPS Related File",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ips"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/ng-waf-custom-page": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-ng-waf-custom-page"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Custom html file for ng-waf",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ng-waf-custom-page"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/ng-waf-module": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "WAF module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ng-waf-module"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "WAF module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ng-waf-module"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-ng-waf-module"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "WAF module",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-ng-waf-module"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/store": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Create store name for remote url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-store"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Create store name for remote url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-store"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-store"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Create store name for remote url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-store"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import/to-device": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "specify the target device to import in aVCS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-to-device"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "specify the target device to import in aVCS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-to-device"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import-to-device"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "specify the target device to import in aVCS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import-to-device"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/import": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Get files from remote site",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IMPORT"
+        ],
+        "description": "Get files from remote site",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/import"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/import"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "import-auth-saml-idp": {
+        "type": "object",
+        "properties": {
+          "saml-idp-name": {
+            "type": "string",
+            "description": "Metadata name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "verify-xml-signature": {
+            "type": "number",
+            "description": "Verify metadata's XML signature",
+            "default": 0
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "import-geo-location-archive": {
+        "type": "object",
+        "properties": {
+          "geo-location-archive-format": {
+            "type": "string",
+            "description": "'GeoLite2-ASN': GeoLite2-ASN CSV Zipped File; 'GeoLite2-City': GeoLite2-City CSV Zipped File; 'GeoLite2-Country': GeoLite2-Country CSV Zipped File; ",
+            "enum": [
+              "GeoLite2-ASN",
+              "GeoLite2-City",
+              "GeoLite2-Country"
+            ]
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          }
+        }
+      },
+      "import-health-external": {
+        "type": "object",
+        "properties": {
+          "externalfilename": {
+            "type": "string",
+            "description": "Specify the Program Name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "description": {
+            "type": "string",
+            "description": "Describe the Program Function briefly",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "import-health-postfile": {
+        "type": "object",
+        "properties": {
+          "postfilename": {
+            "type": "string",
+            "description": "Specify the File Name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "import-ips-a10-signature": {
+        "type": "object",
+        "properties": {
+          "a10-signature-filename": {
+            "type": "string",
+            "description": "Specify A10 signature file",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          }
+        }
+      },
+      "import-ips-profile": {
+        "type": "object",
+        "properties": {
+          "profile-filename": {
+            "type": "string",
+            "description": "Specify profile",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          }
+        }
+      },
+      "import-ips-signature": {
+        "type": "object",
+        "properties": {
+          "signature-filename": {
+            "type": "string",
+            "description": "Specify signature file",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          }
+        }
+      },
+      "import-ips": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "object",
+            "properties": {
+              "profile-filename": {
+                "type": "string",
+                "description": "Specify profile",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "overwrite": {
+                "type": "number",
+                "description": "Overwrite existing file",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Profile name for remote url"
+              }
+            }
+          },
+          "signature": {
+            "type": "object",
+            "properties": {
+              "signature-filename": {
+                "type": "string",
+                "description": "Specify signature file",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Profile name for remote url"
+              }
+            }
+          },
+          "a10-signature": {
+            "type": "object",
+            "properties": {
+              "a10-signature-filename": {
+                "type": "string",
+                "description": "Specify A10 signature file",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Profile name for remote url"
+              }
+            }
+          }
+        }
+      },
+      "import-ng-waf-custom-page": {
+        "type": "object",
+        "properties": {
+          "custom-page": {
+            "type": "string",
+            "description": "Custom html file for ng-waf",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management interface for reachability",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "import-ng-waf-module": {
+        "type": "object",
+        "properties": {
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management interface for reachability",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "Profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "import-store": {
+        "type": "object",
+        "properties": {
+          "delete": {
+            "type": "number",
+            "description": "Delete an import store profile",
+            "default": 0
+          },
+          "create": {
+            "type": "number",
+            "description": "Create an import store profile",
+            "default": 0
+          },
+          "name": {
+            "type": "string",
+            "description": "profile name to store remote url",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "remote-file": {
+            "type": "string"
+          }
+        }
+      },
+      "import-to-device": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "number",
+            "description": "Device (Device ID)"
+          },
+          "glm-license": {
+            "type": "string",
+            "description": "License File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "glm-cert": {
+            "type": "string",
+            "description": "GLM certificate",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          }
+        }
+      },
+      "import": {
+        "type": "object",
+        "properties": {
+          "ddos-script": {
+            "type": "string",
+            "description": "Python/Perl/Bash/TCL script to be used with ddos action-list",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "ssl-cert": {
+            "type": "string",
+            "description": "SSL Cert File(enter bulk when import an archive file)",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "ssl-key": {
+            "type": "string",
+            "description": "SSL Key File(enter bulk when import an archive file)",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "ssl-cert-key": {
+            "type": "string",
+            "description": "'bulk': import an archive file; ",
+            "enum": [
+              "bulk"
+            ]
+          },
+          "domain-list": {
+            "type": "string",
+            "description": "Domain List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "class-list": {
+            "type": "string",
+            "description": "Class List File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "geo-location": {
+            "type": "string",
+            "description": "Geo-location CSV File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "license": {
+            "type": "string",
+            "description": "License File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "glm-license": {
+            "type": "string",
+            "description": "License File",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "certificate-type": {
+            "type": "string",
+            "description": "'pem': pem; 'der': der; 'pfx': pfx; 'p7b': p7b; ",
+            "enum": [
+              "pem",
+              "der",
+              "pfx",
+              "p7b"
+            ]
+          },
+          "class-list-type": {
+            "type": "string",
+            "description": "'ac': ac; 'ipv4': ipv4; 'ipv6': ipv6; 'string': string; 'string-case-insensitive': string-case-insensitive; ",
+            "enum": [
+              "ac",
+              "ipv4",
+              "ipv6",
+              "string",
+              "string-case-insensitive"
+            ]
+          },
+          "csr-generate": {
+            "type": "number",
+            "description": "Generate CSR file",
+            "default": 0
+          },
+          "digest": {
+            "type": "string",
+            "description": "'sha1': sha1; 'sha256': sha256; 'sha384': sha384; 'sha512': sha512; ",
+            "enum": [
+              "sha1",
+              "sha256",
+              "sha384",
+              "sha512"
+            ]
+          },
+          "pfx-password": {
+            "type": "string",
+            "description": "The password for certificate file (pfx type only)",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "secured": {
+            "type": "number",
+            "description": "Mark as non-exportable",
+            "default": 0
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "background": {
+            "type": "number",
+            "description": "Background mode for importing class-list",
+            "default": 0
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite existing file",
+            "default": 0
+          },
+          "use-ssh-key": {
+            "type": "number",
+            "description": "Use private key to authenticate",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "to-device": {
+            "type": "object",
+            "properties": {
+              "device": {
+                "type": "number",
+                "description": "Device (Device ID)"
+              },
+              "glm-license": {
+                "type": "string",
+                "description": "License File",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "glm-cert": {
+                "type": "string",
+                "description": "GLM certificate",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "overwrite": {
+                "type": "number",
+                "description": "Overwrite existing file",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "profile name for remote url"
+              }
+            }
+          },
+          "store": {
+            "type": "object",
+            "properties": {
+              "delete": {
+                "type": "number",
+                "description": "Delete an import store profile",
+                "default": 0
+              },
+              "create": {
+                "type": "number",
+                "description": "Create an import store profile",
+                "default": 0
+              },
+              "name": {
+                "type": "string",
+                "description": "profile name to store remote url",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "remote-file": {
+                "type": "string"
+              }
+            }
+          },
+          "auth-saml-idp": {
+            "type": "object",
+            "properties": {
+              "saml-idp-name": {
+                "type": "string",
+                "description": "Metadata name",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "verify-xml-signature": {
+                "type": "number",
+                "description": "Verify metadata's XML signature",
+                "default": 0
+              },
+              "overwrite": {
+                "type": "number",
+                "description": "Overwrite existing file",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Profile name for remote url"
+              },
+              "password": {
+                "type": "string",
+                "description": "password for the remote site",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "health-postfile": {
+            "type": "object",
+            "properties": {
+              "postfilename": {
+                "type": "string",
+                "description": "Specify the File Name",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "overwrite": {
+                "type": "number",
+                "description": "Overwrite existing file",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Profile name for remote url"
+              },
+              "password": {
+                "type": "string",
+                "description": "password for the remote site",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "health-external": {
+            "type": "object",
+            "properties": {
+              "externalfilename": {
+                "type": "string",
+                "description": "Specify the Program Name",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "description": {
+                "type": "string",
+                "description": "Describe the Program Function briefly",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "overwrite": {
+                "type": "number",
+                "description": "Overwrite existing file",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string",
+                "description": "password for the remote site",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "geo-location-archive": {
+            "type": "object",
+            "properties": {
+              "geo-location-archive-format": {
+                "type": "string",
+                "description": "'GeoLite2-ASN': GeoLite2-ASN CSV Zipped File; 'GeoLite2-City': GeoLite2-City CSV Zipped File; 'GeoLite2-Country': GeoLite2-Country CSV Zipped File; ",
+                "enum": [
+                  "GeoLite2-ASN",
+                  "GeoLite2-City",
+                  "GeoLite2-Country"
+                ]
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "Profile name for remote url"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

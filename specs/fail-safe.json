@@ -1,0 +1,658 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - FAIL-SAFE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the fail-safe category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/fail-safe/config/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Operational Status for the object config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-config-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/fail-safe/config": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fail-safe-config"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fail-safe-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/fail-safe/disable-failsafe": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-disable-failsafe"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-disable-failsafe"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fail-safe-disable-failsafe"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-disable-failsafe"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fail-safe-disable-failsafe"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Disable HA failover when resource depletion is detected",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-disable-failsafe"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/fail-safe/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Operational Status for the object fail-safe",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/fail-safe": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fail-safe"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/fail-safe"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "FAIL-SAFE"
+        ],
+        "description": "Fail Safe Global Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/fail-safe"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "fail-safe-config-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "sw_error_mon": {
+                "type": "string"
+              },
+              "hw_error_mon": {
+                "type": "string"
+              },
+              "sw_recovery_timeout": {
+                "type": "string"
+              },
+              "hw_recovery_timeout": {
+                "type": "string"
+              },
+              "fpga_mon_enable": {
+                "type": "string"
+              },
+              "fpga_mon_forced_reboot": {
+                "type": "string"
+              },
+              "fpga_mon_interval": {
+                "type": "string"
+              },
+              "fpga_mon_threshold": {
+                "type": "string"
+              },
+              "mem_mon": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "fail-safe-config": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "fail-safe-disable-failsafe": {
+        "type": "object",
+        "properties": {
+          "io-buffer": {
+            "type": "number",
+            "description": "Disable I/O Buffer",
+            "default": 0
+          },
+          "session-memory": {
+            "type": "number",
+            "description": "Disable Session Memory",
+            "default": 0
+          },
+          "system-memory": {
+            "type": "number",
+            "description": "Disable System Memory",
+            "default": 0
+          },
+          "all": {
+            "type": "number",
+            "description": "Disable all",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "fail-safe-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "free_session_memory": {
+                "type": "number"
+              },
+              "total_session_memory": {
+                "type": "number"
+              },
+              "sess_mem_recovery_threshold": {
+                "type": "number"
+              },
+              "total_fpga_buffers": {
+                "type": "number"
+              },
+              "avail_fpga_buff_domain1": {
+                "type": "number"
+              },
+              "avail_fpga_buff_domain2": {
+                "type": "number"
+              },
+              "total_free_fpga_buff": {
+                "type": "number"
+              },
+              "free_fpga_buffers": {
+                "type": "number"
+              },
+              "fpga_buff_recovery_threshold": {
+                "type": "number"
+              },
+              "total_system_memory": {
+                "type": "number"
+              },
+              "fpga_stats_num_cntrs": {
+                "type": "number"
+              },
+              "fpga_stats_iochan": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "config": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "sw_error_mon": {
+                    "type": "string"
+                  },
+                  "hw_error_mon": {
+                    "type": "string"
+                  },
+                  "sw_recovery_timeout": {
+                    "type": "string"
+                  },
+                  "hw_recovery_timeout": {
+                    "type": "string"
+                  },
+                  "fpga_mon_enable": {
+                    "type": "string"
+                  },
+                  "fpga_mon_forced_reboot": {
+                    "type": "string"
+                  },
+                  "fpga_mon_interval": {
+                    "type": "string"
+                  },
+                  "fpga_mon_threshold": {
+                    "type": "string"
+                  },
+                  "mem_mon": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "fail-safe": {
+        "type": "object",
+        "properties": {
+          "fpga-buff-recovery-threshold": {
+            "type": "number",
+            "description": "FPGA buffers recovery threshold (Units of 256 buffers (default 2))",
+            "default": 2,
+            "minimum": 1,
+            "maximum": 10
+          },
+          "fpga-monitor-enable": {
+            "type": "number",
+            "description": "FPGA monitor feature enable",
+            "default": 0
+          },
+          "fpga-monitor-forced-reboot": {
+            "type": "number",
+            "description": "FPGA monitor forced reboot in error condition",
+            "default": 0
+          },
+          "fpga-monitor-interval": {
+            "type": "number",
+            "description": "FPGA monitor packet interval (seconds) (Numbers of seconds between sending packets (default 1))",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 60
+          },
+          "fpga-monitor-threshold": {
+            "type": "number",
+            "description": "FPGA monitor packet missed for error condition (Numbers of missed monitor packets before setting error condition (default 3))",
+            "default": 3,
+            "minimum": 3,
+            "maximum": 60
+          },
+          "hw-error-monitor": {
+            "type": "string",
+            "description": "'hw-error-monitor-disable': Disable fail-safe hardware error monitor; 'hw-error-monitor-enable': Enable fail-safe hardware error monitor; ",
+            "default": "hw-error-monitor-enable",
+            "enum": [
+              "hw-error-monitor-disable",
+              "hw-error-monitor-enable"
+            ]
+          },
+          "hw-error-recovery-timeout": {
+            "type": "number",
+            "description": "Hardware error recovery timeout (minutes) (waiting time of recovery from hardware errors (default 0))",
+            "minimum": 1,
+            "maximum": 1440
+          },
+          "session-mem-recovery-threshold": {
+            "type": "number",
+            "description": "Session memory recovery threshold (percentage) (Percentage of available session memory (default 30%))",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 100
+          },
+          "sw-error-monitor-enable": {
+            "type": "number",
+            "description": "Enable fail-safe software error monitor",
+            "default": 0
+          },
+          "sw-error-recovery-timeout": {
+            "type": "number",
+            "description": "Software error recovery timeout (minutes) (waiting time of recovery from software errors (default 3))",
+            "default": 3,
+            "minimum": 1,
+            "maximum": 1440
+          },
+          "total-memory-size-check": {
+            "type": "number",
+            "description": "Check total memory size of current system (Size of memory (GB))",
+            "minimum": 1,
+            "maximum": 256
+          },
+          "log": {
+            "type": "number",
+            "description": "Log the event",
+            "default": 0
+          },
+          "kill": {
+            "type": "number",
+            "description": "Stop the traffic and log the event",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "config": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "disable-failsafe": {
+            "type": "object",
+            "properties": {
+              "io-buffer": {
+                "type": "number",
+                "description": "Disable I/O Buffer",
+                "default": 0
+              },
+              "session-memory": {
+                "type": "number",
+                "description": "Disable Session Memory",
+                "default": 0
+              },
+              "system-memory": {
+                "type": "number",
+                "description": "Disable System Memory",
+                "default": 0
+              },
+              "all": {
+                "type": "number",
+                "description": "Disable all",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

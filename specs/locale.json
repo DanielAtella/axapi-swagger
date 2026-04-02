@@ -1,0 +1,253 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - LOCALE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the locale category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/locale/test": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOCALE"
+        ],
+        "description": "To test current terminal encodings for specific locale",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/locale-test"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOCALE"
+        ],
+        "description": "To test current terminal encodings for specific locale",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/locale-test"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/locale-test"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOCALE"
+        ],
+        "description": "To test current terminal encodings for specific locale",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/locale-test"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/locale": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LOCALE"
+        ],
+        "description": "Set locale for the CLI startup",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/locale"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LOCALE"
+        ],
+        "description": "Set locale for the CLI startup",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/locale"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/locale"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LOCALE"
+        ],
+        "description": "Set locale for the CLI startup",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/locale"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/locale"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LOCALE"
+        ],
+        "description": "Set locale for the CLI startup",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/locale"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "locale-test": {
+        "type": "object",
+        "properties": {
+          "locale": {
+            "type": "string",
+            "description": "'zh_CN': Chinese locale for PRC; 'zh_TW': Chinese locale for Taiwan; 'ja_JP': Japanese locale for Japan; ",
+            "enum": [
+              "zh_CN",
+              "zh_TW",
+              "ja_JP"
+            ]
+          }
+        }
+      },
+      "locale": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "description": "'en_US.UTF-8': English locale for the USA, encoding with UTF-8 (default); 'zh_CN.UTF-8': Chinese locale for PRC, encoding with UTF-8; 'zh_CN.GB18030': Chinese locale for PRC, encoding with GB18030; 'zh_CN.GBK': Chinese locale for PRC, encoding with GBK; 'zh_CN.GB2312': Chinese locale for PRC, encoding with GB2312; 'zh_TW.UTF-8': Chinese locale for Taiwan, encoding with UTF-8; 'zh_TW.BIG5': Chinese locale for Taiwan, encoding with BIG5; 'zh_TW.EUCTW': Chinese locale for Taiwan, encoding with EUC-TW; 'ja_JP.UTF-8': Japanese locale for Japan, encoding with UTF-8; 'ja_JP.EUC-JP': Japanese locale for Japan, encoding with EUC-JP; ",
+            "default": "en_US.UTF-8",
+            "enum": [
+              "en_US.UTF-8",
+              "zh_CN.UTF-8",
+              "zh_CN.GB18030",
+              "zh_CN.GBK",
+              "zh_CN.GB2312",
+              "zh_TW.UTF-8",
+              "zh_TW.BIG5",
+              "zh_TW.EUCTW",
+              "ja_JP.UTF-8",
+              "ja_JP.EUC-JP"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "test": {
+            "type": "object",
+            "properties": {
+              "locale": {
+                "type": "string",
+                "description": "'zh_CN': Chinese locale for PRC; 'zh_TW': Chinese locale for Taiwan; 'ja_JP': Japanese locale for Japan; ",
+                "enum": [
+                  "zh_CN",
+                  "zh_TW",
+                  "ja_JP"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

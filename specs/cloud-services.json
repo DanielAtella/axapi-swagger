@@ -1,0 +1,293 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - CLOUD-SERVICES",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the cloud-services category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/cloud-services/meta-data": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "CLOUD-SERVICES"
+        ],
+        "description": "user-data Services configuration only works in shared partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cloud-services-meta-data"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CLOUD-SERVICES"
+        ],
+        "description": "user-data Services configuration only works in shared partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cloud-services-meta-data"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cloud-services-meta-data"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CLOUD-SERVICES"
+        ],
+        "description": "user-data Services configuration only works in shared partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cloud-services-meta-data"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cloud-services-meta-data"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CLOUD-SERVICES"
+        ],
+        "description": "user-data Services configuration only works in shared partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cloud-services-meta-data"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/cloud-services": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "CLOUD-SERVICES"
+        ],
+        "description": "Cloud Services configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cloud-services"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "cloud-services-meta-data": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "'enable': enable; 'disable': disable; ",
+            "default": "disable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "provider": {
+            "type": "string",
+            "description": "'aws': AWS user-data services; 'openstack': OpenStack user-data services; ",
+            "enum": [
+              "aws",
+              "openstack"
+            ]
+          },
+          "prevent-autofill": {
+            "type": "number",
+            "description": "prevents use of meta-data to complete user_data configuration",
+            "default": 0
+          },
+          "prevent-admin-passwd": {
+            "type": "number",
+            "description": "Prevents admin password from being changed if in YAML config",
+            "default": 0
+          },
+          "prevent-admin-ssh-key": {
+            "type": "number",
+            "description": "Prevents admin ssh-key from being added if in YAML config",
+            "default": 0
+          },
+          "prevent-user-ops": {
+            "type": "number",
+            "description": "Prevents user from being added command is in user-data",
+            "default": 0
+          },
+          "prevent-blob": {
+            "type": "number",
+            "description": "Prevents a10_blob from loading in YAML config",
+            "default": 0
+          },
+          "prevent-license": {
+            "type": "number",
+            "description": "Prevents a10_license configuration in YAML config",
+            "default": 0
+          },
+          "prevent-webservice": {
+            "type": "number",
+            "description": "Prevents a10_license configuration in YAML config",
+            "default": 0
+          },
+          "prevent-cloud-service": {
+            "type": "number",
+            "description": "Prevents cloud-service configuration in YAML config",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "cloud-services": {
+        "type": "object",
+        "properties": {
+          "meta-data": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "description": "'enable': enable; 'disable': disable; ",
+                "default": "disable",
+                "enum": [
+                  "enable",
+                  "disable"
+                ]
+              },
+              "provider": {
+                "type": "string",
+                "description": "'aws': AWS user-data services; 'openstack': OpenStack user-data services; ",
+                "enum": [
+                  "aws",
+                  "openstack"
+                ]
+              },
+              "prevent-autofill": {
+                "type": "number",
+                "description": "prevents use of meta-data to complete user_data configuration",
+                "default": 0
+              },
+              "prevent-admin-passwd": {
+                "type": "number",
+                "description": "Prevents admin password from being changed if in YAML config",
+                "default": 0
+              },
+              "prevent-admin-ssh-key": {
+                "type": "number",
+                "description": "Prevents admin ssh-key from being added if in YAML config",
+                "default": 0
+              },
+              "prevent-user-ops": {
+                "type": "number",
+                "description": "Prevents user from being added command is in user-data",
+                "default": 0
+              },
+              "prevent-blob": {
+                "type": "number",
+                "description": "Prevents a10_blob from loading in YAML config",
+                "default": 0
+              },
+              "prevent-license": {
+                "type": "number",
+                "description": "Prevents a10_license configuration in YAML config",
+                "default": 0
+              },
+              "prevent-webservice": {
+                "type": "number",
+                "description": "Prevents a10_license configuration in YAML config",
+                "default": 0
+              },
+              "prevent-cloud-service": {
+                "type": "number",
+                "description": "Prevents cloud-service configuration in YAML config",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

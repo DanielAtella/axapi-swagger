@@ -1,0 +1,142 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - REMOVE-UPGRADE-LOCK",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the remove-upgrade-lock category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/remove-upgrade-lock": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "REMOVE-UPGRADE-LOCK"
+        ],
+        "description": "removing upgrade lock file mgmt_is_upgrade",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/remove-upgrade-lock"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "REMOVE-UPGRADE-LOCK"
+        ],
+        "description": "removing upgrade lock file mgmt_is_upgrade",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/remove-upgrade-lock"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/remove-upgrade-lock"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "REMOVE-UPGRADE-LOCK"
+        ],
+        "description": "removing upgrade lock file mgmt_is_upgrade",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/remove-upgrade-lock"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/remove-upgrade-lock"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "REMOVE-UPGRADE-LOCK"
+        ],
+        "description": "removing upgrade lock file mgmt_is_upgrade",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/remove-upgrade-lock"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "remove-upgrade-lock": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

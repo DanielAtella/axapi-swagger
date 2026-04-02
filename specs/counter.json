@@ -1,0 +1,780 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - COUNTER",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the counter category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/counter/http_vport/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "COUNTER"
+        ],
+        "description": "Statistics for the object http_vport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/counter-http-vport-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/counter/port-diameter/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "COUNTER"
+        ],
+        "description": "Statistics for the object port-diameter",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/counter-port-diameter-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/counter/vtep/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "COUNTER"
+        ],
+        "description": "Statistics for the object vtep",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/counter-vtep-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/counter": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "COUNTER"
+        ],
+        "description": "Dummy counter object for T1 counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/counter"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "counter-http-vport-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "status_200": {
+                "type": "number",
+                "description": "Status code 200"
+              },
+              "status_201": {
+                "type": "number",
+                "description": "Status code 201"
+              },
+              "status_202": {
+                "type": "number",
+                "description": "Status code 202"
+              },
+              "status_203": {
+                "type": "number",
+                "description": "Status code 203"
+              },
+              "status_204": {
+                "type": "number",
+                "description": "Status code 204"
+              },
+              "status_205": {
+                "type": "number",
+                "description": "Status code 205"
+              },
+              "status_206": {
+                "type": "number",
+                "description": "Status code 206"
+              },
+              "status_207": {
+                "type": "number",
+                "description": "Status code 207"
+              },
+              "status_100": {
+                "type": "number",
+                "description": "Status code 100"
+              },
+              "status_101": {
+                "type": "number",
+                "description": "Status code 101"
+              },
+              "status_102": {
+                "type": "number",
+                "description": "Status code 102"
+              },
+              "status_103": {
+                "type": "number",
+                "description": "Status code 103"
+              },
+              "status_300": {
+                "type": "number",
+                "description": "Status code 300"
+              },
+              "status_301": {
+                "type": "number",
+                "description": "Status code 301"
+              },
+              "status_302": {
+                "type": "number",
+                "description": "Status code 302"
+              },
+              "status_303": {
+                "type": "number",
+                "description": "Status code 303"
+              },
+              "status_304": {
+                "type": "number",
+                "description": "Status code 304"
+              },
+              "status_305": {
+                "type": "number",
+                "description": "Status code 305"
+              },
+              "status_306": {
+                "type": "number",
+                "description": "Status code 306"
+              },
+              "status_307": {
+                "type": "number",
+                "description": "Status code 307"
+              },
+              "status_400": {
+                "type": "number",
+                "description": "Status code 400"
+              },
+              "status_401": {
+                "type": "number",
+                "description": "Status code 401"
+              },
+              "status_402": {
+                "type": "number",
+                "description": "Status code 402"
+              },
+              "status_403": {
+                "type": "number",
+                "description": "Status code 403"
+              },
+              "status_404": {
+                "type": "number",
+                "description": "Status code 404"
+              },
+              "status_405": {
+                "type": "number",
+                "description": "Status code 405"
+              },
+              "status_406": {
+                "type": "number",
+                "description": "Status code 406"
+              },
+              "status_407": {
+                "type": "number",
+                "description": "Status code 407"
+              },
+              "status_408": {
+                "type": "number",
+                "description": "Status code 408"
+              },
+              "status_409": {
+                "type": "number",
+                "description": "Status code 409"
+              },
+              "status_410": {
+                "type": "number",
+                "description": "Status code 410"
+              },
+              "status_411": {
+                "type": "number",
+                "description": "Status code 411"
+              },
+              "status_412": {
+                "type": "number",
+                "description": "Status code 412"
+              },
+              "status_413": {
+                "type": "number",
+                "description": "Status code 413"
+              },
+              "status_414": {
+                "type": "number",
+                "description": "Status code 414"
+              },
+              "status_415": {
+                "type": "number",
+                "description": "Status code 415"
+              },
+              "status_416": {
+                "type": "number",
+                "description": "Status code 416"
+              },
+              "status_417": {
+                "type": "number",
+                "description": "Status code 417"
+              },
+              "status_418": {
+                "type": "number",
+                "description": "Status code 418"
+              },
+              "status_422": {
+                "type": "number",
+                "description": "Status code 422"
+              },
+              "status_423": {
+                "type": "number",
+                "description": "Status code 423"
+              },
+              "status_424": {
+                "type": "number",
+                "description": "Status code 424"
+              },
+              "status_425": {
+                "type": "number",
+                "description": "Status code 425"
+              },
+              "status_426": {
+                "type": "number",
+                "description": "Status code 426"
+              },
+              "status_449": {
+                "type": "number",
+                "description": "Status code 449"
+              },
+              "status_450": {
+                "type": "number",
+                "description": "Status code 450"
+              },
+              "status_500": {
+                "type": "number",
+                "description": "Status code 500"
+              },
+              "status_501": {
+                "type": "number",
+                "description": "Status code 501"
+              },
+              "status_502": {
+                "type": "number",
+                "description": "Status code 502"
+              },
+              "status_503": {
+                "type": "number",
+                "description": "Status code 503"
+              },
+              "status_504": {
+                "type": "number",
+                "description": "Status code 504"
+              },
+              "status_504_ax": {
+                "type": "number",
+                "description": "Status code 504 AX-gen"
+              },
+              "status_505": {
+                "type": "number",
+                "description": "Status code 505"
+              },
+              "status_506": {
+                "type": "number",
+                "description": "Status code 506"
+              },
+              "status_507": {
+                "type": "number",
+                "description": "Status code 507"
+              },
+              "status_508": {
+                "type": "number",
+                "description": "Status code 508"
+              },
+              "status_509": {
+                "type": "number",
+                "description": "Status code 509"
+              },
+              "status_510": {
+                "type": "number",
+                "description": "Status code 510"
+              },
+              "status_1xx": {
+                "type": "number",
+                "description": "status code 1XX"
+              },
+              "status_2xx": {
+                "type": "number",
+                "description": "status code 2XX"
+              },
+              "status_3xx": {
+                "type": "number",
+                "description": "status code 3XX"
+              },
+              "status_4xx": {
+                "type": "number",
+                "description": "status code 4XX"
+              },
+              "status_5xx": {
+                "type": "number",
+                "description": "status code 5XX"
+              },
+              "status_6xx": {
+                "type": "number",
+                "description": "status code 6XX"
+              },
+              "status_unknown": {
+                "type": "number",
+                "description": "Status code unknown"
+              },
+              "ws_handshake_request": {
+                "type": "number",
+                "description": "WS Handshake Req"
+              },
+              "ws_handshake_success": {
+                "type": "number",
+                "description": "WS Handshake Res"
+              },
+              "ws_client_switch": {
+                "type": "number",
+                "description": "WS Client Pkts"
+              },
+              "ws_server_switch": {
+                "type": "number",
+                "description": "WS Server Pkts"
+              },
+              "REQ_10u": {
+                "type": "number",
+                "description": "Rsp time less than 10u"
+              },
+              "REQ_20u": {
+                "type": "number",
+                "description": "Rsp time less than 20u"
+              },
+              "REQ_50u": {
+                "type": "number",
+                "description": "Rsp time less than 50u"
+              },
+              "REQ_100u": {
+                "type": "number",
+                "description": "Rsp time less than 100u"
+              },
+              "REQ_200u": {
+                "type": "number",
+                "description": "Rsp time less than 200u"
+              },
+              "REQ_500u": {
+                "type": "number",
+                "description": "Rsp time less than 500u"
+              },
+              "REQ_1m": {
+                "type": "number",
+                "description": "Rsp time less than 1m"
+              },
+              "REQ_2m": {
+                "type": "number",
+                "description": "Rsp time less than 2m"
+              },
+              "REQ_5m": {
+                "type": "number",
+                "description": "Rsp time less than 5m"
+              },
+              "REQ_10m": {
+                "type": "number",
+                "description": "Rsp time less than 10m"
+              },
+              "REQ_20m": {
+                "type": "number",
+                "description": "Rsp time less than 20m"
+              },
+              "REQ_50m": {
+                "type": "number",
+                "description": "Rsp time less than 5m"
+              },
+              "REQ_100m": {
+                "type": "number",
+                "description": "Rsp time less than 100m"
+              },
+              "REQ_200m": {
+                "type": "number",
+                "description": "Rsp time less than 200m"
+              },
+              "REQ_500m": {
+                "type": "number",
+                "description": "Rsp time less than 500m"
+              },
+              "REQ_1s": {
+                "type": "number",
+                "description": "Rsp time less than 1s"
+              },
+              "REQ_2s": {
+                "type": "number",
+                "description": "Rsp time less than 2s"
+              },
+              "REQ_5s": {
+                "type": "number",
+                "description": "Rsp time less than 5s"
+              },
+              "REQ_OVER_5s": {
+                "type": "number",
+                "description": "Rsp time greater than equal to 5s"
+              }
+            }
+          }
+        }
+      },
+      "counter-port-diameter-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "num": {
+                "type": "number",
+                "description": "Number"
+              },
+              "curr": {
+                "type": "number",
+                "description": "Current"
+              },
+              "total": {
+                "type": "number",
+                "description": "Total"
+              },
+              "svrsel_fail": {
+                "type": "number",
+                "description": "Number of server selection failed"
+              },
+              "no_route": {
+                "type": "number",
+                "description": "Number of no routes"
+              },
+              "snat_fail": {
+                "type": "number",
+                "description": "Number of snat failures"
+              },
+              "client_fail": {
+                "type": "number",
+                "description": "Number of client failures"
+              },
+              "server_fail": {
+                "type": "number",
+                "description": "Number of server failures"
+              },
+              "no_sess": {
+                "type": "number",
+                "description": "Number of no sessions"
+              },
+              "user_session": {
+                "type": "number",
+                "description": "Number of user sessions"
+              },
+              "acr_out": {
+                "type": "number",
+                "description": "Number of ACRs out"
+              },
+              "acr_in": {
+                "type": "number",
+                "description": "Number of ACRs in"
+              },
+              "aca_out": {
+                "type": "number",
+                "description": "Number of ACAs out"
+              },
+              "aca_in": {
+                "type": "number",
+                "description": "Number of ACAs in"
+              },
+              "cea_out": {
+                "type": "number",
+                "description": "Number of CEAs out"
+              },
+              "cea_in": {
+                "type": "number",
+                "description": "Number of CEAs in"
+              },
+              "cer_out": {
+                "type": "number",
+                "description": "Number of CERs out"
+              },
+              "cer_in": {
+                "type": "number",
+                "description": "Number of CERs in"
+              },
+              "dwr_out": {
+                "type": "number",
+                "description": "Number of DWRs out"
+              },
+              "dwr_in": {
+                "type": "number",
+                "description": "Number of DWRs in"
+              },
+              "dwa_out": {
+                "type": "number",
+                "description": "Number of DWAs out"
+              },
+              "dwa_in": {
+                "type": "number",
+                "description": "Number of DWAs in"
+              },
+              "str_out": {
+                "type": "number",
+                "description": "Number of STRs out"
+              },
+              "str_in": {
+                "type": "number",
+                "description": "Number of STRs in"
+              },
+              "sta_out": {
+                "type": "number",
+                "description": "Number of STAs out"
+              },
+              "sta_in": {
+                "type": "number",
+                "description": "Number of STAs in"
+              },
+              "asr_out": {
+                "type": "number",
+                "description": "Number of ASRs out"
+              },
+              "asr_in": {
+                "type": "number",
+                "description": "Number of ASRs in"
+              },
+              "asa_out": {
+                "type": "number",
+                "description": "Number of ASAs out"
+              },
+              "asa_in": {
+                "type": "number",
+                "description": "Number of ASAs in"
+              },
+              "other_out": {
+                "type": "number",
+                "description": "Number of other messages out"
+              },
+              "other_in": {
+                "type": "number",
+                "description": "Number of other messages in"
+              }
+            }
+          }
+        }
+      },
+      "counter-vtep-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "cfg_vtep_error": {
+                "type": "number",
+                "description": "Config Error: Drop Packet"
+              },
+              "tx_flood_pkts": {
+                "type": "number",
+                "description": "Out Flooded Packets"
+              },
+              "tx_encap_unresolved_pkts": {
+                "type": "number",
+                "description": "Remote Vtep unreachable: Drop Tx"
+              },
+              "tx_encap_missing_pkts": {
+                "type": "number",
+                "description": "Remote Vtep unreachable: Drop Tx"
+              },
+              "tx_encap_bad_pkts": {
+                "type": "number",
+                "description": "Remote Vtep unreachable: Drop Tx"
+              },
+              "tx_arp_req_sent_pkts": {
+                "type": "number",
+                "description": "Number of Arp Requests Sent"
+              },
+              "rx_host_learned": {
+                "type": "number",
+                "description": "Number of Host ="
+              },
+              "rx_host_learn_error": {
+                "type": "number",
+                "description": "Number of Host ="
+              },
+              "rx_lif_invalid": {
+                "type": "number",
+                "description": "Invalid Lif: Drop Rx"
+              },
+              "tx_lif_invalid": {
+                "type": "number",
+                "description": "Invalid Lif: Drop Tx"
+              },
+              "tx_vtep_unknown": {
+                "type": "number",
+                "description": "Vtep unknown: Drop Tx"
+              },
+              "rx_vtep_unknown": {
+                "type": "number",
+                "description": "Vtep unknown: Drop Rx"
+              },
+              "rx_unhandled_pkts": {
+                "type": "number",
+                "description": "Unhandled Packets: Drop Rx"
+              },
+              "tx_unhandled_pkts": {
+                "type": "number",
+                "description": "Unhandled Packets: Drop Tx"
+              },
+              "rx_pkts": {
+                "type": "number",
+                "description": "In Total Packets"
+              },
+              "rx_bytes": {
+                "type": "number",
+                "description": "In Total Octets"
+              },
+              "rx_ucast_pkts": {
+                "type": "number",
+                "description": "In Unicast Packets"
+              },
+              "rx_bcast_pkts": {
+                "type": "number",
+                "description": "In Broadcast Packets"
+              },
+              "rx_mcast_pkts": {
+                "type": "number",
+                "description": "Out Multicast Packets"
+              },
+              "rx_dropped_pkts": {
+                "type": "number",
+                "description": "In Dropped Packets"
+              },
+              "rx_encap_miss_pkts": {
+                "type": "number",
+                "description": "Remote Vtep unreachable: Drop Tx"
+              },
+              "rx_bad_checksum_pkts": {
+                "type": "number",
+                "description": "Packet reveived with Bad Inner checksum"
+              },
+              "rx_requeued_pkts": {
+                "type": "number",
+                "description": "Packets requeued to another CPU"
+              },
+              "tx_pkts": {
+                "type": "number",
+                "description": "Out Total Packets"
+              },
+              "tx_bytes": {
+                "type": "number",
+                "description": "Out Total Octets"
+              },
+              "tx_ucast_pkts": {
+                "type": "number",
+                "description": "Out Unicast Packets"
+              },
+              "tx_bcast_pkts": {
+                "type": "number",
+                "description": "Out Broadcast Packets"
+              },
+              "tx_mcast_pkts": {
+                "type": "number",
+                "description": "Out Multicast Packets"
+              },
+              "tx_dropped_pkts": {
+                "type": "number",
+                "description": "Out Dropped Packets"
+              },
+              "rx_pkts_too_large": {
+                "type": "number",
+                "description": "Packet too large: Drop Rx"
+              },
+              "rx_dot1q_ptks": {
+                "type": "number",
+                "description": "Dot1q Packet: Drop Rx"
+              },
+              "tx_fragmented_pkts": {
+                "type": "number",
+                "description": "Fragmented Packets"
+              },
+              "rx_reassembled_pkts": {
+                "type": "number",
+                "description": "Reassembled Packets"
+              },
+              "rx_bad_inner_ipv4_len_pkts": {
+                "type": "number",
+                "description": "Packets received with Bad Inner IPv4 Payload length"
+              },
+              "rx_bad_inner_ipv6_len_pkts": {
+                "type": "number",
+                "description": "Packets received with Bad Inner IPv6 Payload length"
+              },
+              "rx_lif_uninit": {
+                "type": "number",
+                "description": "Lif not UP: Drop Rx"
+              }
+            }
+          }
+        }
+      },
+      "counter": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

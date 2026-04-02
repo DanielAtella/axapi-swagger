@@ -1,0 +1,169 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - AUTHORIZATION",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the authorization category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/authorization": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTHORIZATION"
+        ],
+        "description": "Configuration for command authorization",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authorization"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTHORIZATION"
+        ],
+        "description": "Configuration for command authorization",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authorization"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/authorization"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AUTHORIZATION"
+        ],
+        "description": "Configuration for command authorization",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authorization"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/authorization"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTHORIZATION"
+        ],
+        "description": "Configuration for command authorization",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/authorization"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "authorization": {
+        "type": "object",
+        "properties": {
+          "commands": {
+            "type": "number",
+            "description": "Commands level for authorization",
+            "minimum": 0,
+            "maximum": 15
+          },
+          "method": {
+            "type": "object",
+            "properties": {
+              "tacplus": {
+                "type": "number",
+                "description": "Using TACACS+ protocol",
+                "default": 0
+              },
+              "none": {
+                "type": "number",
+                "description": "No command authorization",
+                "default": 0
+              }
+            }
+          },
+          "debug": {
+            "type": "number",
+            "description": "Specify the debug level for authorization (Debug level for command authorization. bitwise OR of the following: 1(common), 2(packet),4(packet detail), 8(md5))",
+            "minimum": 1,
+            "maximum": 15
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

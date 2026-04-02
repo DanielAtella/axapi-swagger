@@ -1,0 +1,903 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ADMIN",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the admin category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/admin/{user}/access": {
+      "parameters": [
+        {
+          "name": "user",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for user"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config access type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-access"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config access type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-access"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin-access"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config access type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-access"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin-access"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config access type",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-access"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/admin/{user}/aws-accesskey": {
+      "parameters": [
+        {
+          "name": "user",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for user"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config AWS authorized access key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-aws-accesskey"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config AWS authorized access key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-aws-accesskey"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin-aws-accesskey"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config AWS authorized access key",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-aws-accesskey"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/admin/{user}/azure-cred": {
+      "parameters": [
+        {
+          "name": "user",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for user"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config Azure credentials",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-azure-cred"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config Azure credentials",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-azure-cred"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin-azure-cred"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config Azure credentials",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-azure-cred"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/admin/{user}/password": {
+      "parameters": [
+        {
+          "name": "user",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for user"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config admin user password",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-password"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config admin user password",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-password"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin-password"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config admin user password",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-password"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin-password"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config admin user password",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-password"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/admin/{user}/ssh-pubkey": {
+      "parameters": [
+        {
+          "name": "user",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for user"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config openssh authorized public keys management",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-ssh-pubkey"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config openssh authorized public keys management",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-ssh-pubkey"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin-ssh-pubkey"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "Config openssh authorized public keys management",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin-ssh-pubkey"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/admin/{user}": {
+      "parameters": [
+        {
+          "name": "user",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for user"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "System admin user configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "System admin user configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "System admin user configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/admin"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ADMIN"
+        ],
+        "description": "System admin user configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/admin"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "admin-access": {
+        "type": "object",
+        "properties": {
+          "access-type": {
+            "type": "string",
+            "default": "axapi,cli,web",
+            "enum": [
+              "axapi",
+              "cli",
+              "web"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "admin-aws-accesskey": {
+        "type": "object",
+        "properties": {
+          "import": {
+            "type": "number",
+            "description": "Import an aws-accesskey",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          },
+          "delete": {
+            "type": "number",
+            "description": "Delete an authorized aws accesskey",
+            "default": 0
+          },
+          "show": {
+            "type": "number",
+            "description": "Show authorized aws accesskey",
+            "default": 0
+          }
+        }
+      },
+      "admin-azure-cred": {
+        "type": "object",
+        "properties": {
+          "import": {
+            "type": "number",
+            "description": "Import an azure-credentials",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          },
+          "delete": {
+            "type": "number",
+            "description": "Delete an authorized Azure credentials",
+            "default": 0
+          },
+          "show": {
+            "type": "number",
+            "description": "Show authorized azure credentials",
+            "default": 0
+          }
+        }
+      },
+      "admin-password": {
+        "type": "object",
+        "properties": {
+          "password-in-module": {
+            "type": "string",
+            "description": "Config admin user password"
+          },
+          "encrypted-in-module": {
+            "type": "encrypted",
+            "description": "Specify an ENCRYPTED password string (System admin user password)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "admin-ssh-pubkey": {
+        "type": "object",
+        "properties": {
+          "import": {
+            "type": "number",
+            "description": "Import an authorized public key",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          },
+          "delete": {
+            "type": "number",
+            "description": "Delete an authorized public key (SSH key index)",
+            "minimum": 1,
+            "maximum": 1000000
+          },
+          "list": {
+            "type": "number",
+            "description": "List all authorized public keys",
+            "default": 0
+          }
+        }
+      },
+      "admin": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "string",
+            "description": "System admin user name",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "password-key": {
+            "type": "number",
+            "description": "Config admin user password"
+          },
+          "passwd-string": {
+            "type": "string",
+            "description": "Config admin user password"
+          },
+          "action": {
+            "type": "string",
+            "description": "'enable': Enable user; 'disable': Disable user; ",
+            "default": "enable",
+            "enum": [
+              "enable",
+              "disable"
+            ]
+          },
+          "unlock": {
+            "type": "number",
+            "description": "Unlock admin user",
+            "default": 0
+          },
+          "trusted-host": {
+            "type": "number",
+            "description": "Set trusted network administrator can login in",
+            "default": 0
+          },
+          "trusted-host-cidr": {
+            "type": "string",
+            "description": "Trusted IP Address with network mask"
+          },
+          "access-list": {
+            "type": "number",
+            "description": "Specify an ACL to classify a trusted host",
+            "default": 0
+          },
+          "trusted-host-acl-id": {
+            "type": "number",
+            "description": "ACL ID",
+            "minimum": 1,
+            "maximum": 99
+          },
+          "privilege-global": {
+            "type": "string",
+            "description": "'read': Set read privilege; 'write': Set write privilege; 'hm': Set external health monitor script content operations privilege; ",
+            "enum": [
+              "read",
+              "write",
+              "hm"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "aws-accesskey": {
+            "type": "object",
+            "properties": {
+              "import": {
+                "type": "number",
+                "description": "Import an aws-accesskey",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              },
+              "delete": {
+                "type": "number",
+                "description": "Delete an authorized aws accesskey",
+                "default": 0
+              },
+              "show": {
+                "type": "number",
+                "description": "Show authorized aws accesskey",
+                "default": 0
+              }
+            }
+          },
+          "azure-cred": {
+            "type": "object",
+            "properties": {
+              "import": {
+                "type": "number",
+                "description": "Import an azure-credentials",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              },
+              "delete": {
+                "type": "number",
+                "description": "Delete an authorized Azure credentials",
+                "default": 0
+              },
+              "show": {
+                "type": "number",
+                "description": "Show authorized azure credentials",
+                "default": 0
+              }
+            }
+          },
+          "ssh-pubkey": {
+            "type": "object",
+            "properties": {
+              "import": {
+                "type": "number",
+                "description": "Import an authorized public key",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              },
+              "delete": {
+                "type": "number",
+                "description": "Delete an authorized public key (SSH key index)",
+                "minimum": 1,
+                "maximum": 1000000
+              },
+              "list": {
+                "type": "number",
+                "description": "List all authorized public keys",
+                "default": 0
+              }
+            }
+          },
+          "access": {
+            "type": "object",
+            "properties": {
+              "access-type": {
+                "type": "string",
+                "default": "axapi,cli,web",
+                "enum": [
+                  "axapi",
+                  "cli",
+                  "web"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "password": {
+            "type": "object",
+            "properties": {
+              "password-in-module": {
+                "type": "string",
+                "description": "Config admin user password"
+              },
+              "encrypted-in-module": {
+                "type": "encrypted",
+                "description": "Specify an ENCRYPTED password string (System admin user password)"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,857 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - TACACS-SERVER",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the tacacs-server category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/tacacs-server/host/ipv4/{ipv4-addr}": {
+      "parameters": [
+        {
+          "name": "ipv4-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv4-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server-host-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server-host-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/tacacs-server/host/ipv6/{ipv6-addr}": {
+      "parameters": [
+        {
+          "name": "ipv6-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server-host-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server-host-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/tacacs-server/host/tacacs-hostname/{hostname}": {
+      "parameters": [
+        {
+          "name": "hostname",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for hostname"
+        }
+      ],
+      "get": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-tacacs-hostname"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-tacacs-hostname"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server-host-tacacs-hostname"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-tacacs-hostname"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server-host-tacacs-hostname"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host-tacacs-hostname"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/tacacs-server/host": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Specify the hostname of TACACS+ server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server-host"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/tacacs-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Configure TACACS+ servers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Configure TACACS+ servers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Configure TACACS+ servers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tacacs-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TACACS-SERVER"
+        ],
+        "description": "Configure TACACS+ servers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/tacacs-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "tacacs-server-host-ipv4": {
+        "type": "object",
+        "properties": {
+          "ipv4-addr": {
+            "type": "string",
+            "description": "IPV4 address of TACACS+ server"
+          },
+          "secret": {
+            "type": "object",
+            "properties": {
+              "secret-value": {
+                "type": "string",
+                "description": "The TACACS+ server's secret",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) help-val The ENCRYPTED secret string",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "source-ip": {
+                "type": "string",
+                "description": "IP address"
+              },
+              "source-loopback": {
+                "type": "number",
+                "description": "Loopback interface (Port number)"
+              },
+              "source-eth": {
+                "type": "number",
+                "description": "Ethernet interface (Port number)",
+                "minimum": 6,
+                "maximum": 103
+              },
+              "source-ve": {
+                "type": "number",
+                "description": "Virtual ethernet interface (Virtual ethernet interface number)"
+              },
+              "source-trunk": {
+                "type": "number",
+                "description": "Trunk interface (Trunk interface number)"
+              },
+              "source-lif": {
+                "type": "number",
+                "description": "Logical interface (Lif interface number)",
+                "minimum": 1,
+                "maximum": 128
+              },
+              "port-cfg": {
+                "type": "object",
+                "properties": {
+                  "port": {
+                    "type": "number",
+                    "description": "Specify the port number used by TACACS+ server.( default port is 49) (Port number (default 49))",
+                    "default": 49,
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "timeout": {
+                    "type": "number",
+                    "description": "Specify the maximum time allowed for setting up a connection with the TACACS+ server. (default timeout is 12 seconds) (Maximum time allowed for setting up a connection with the TACACS+ server, in seconds (default 12))",
+                    "default": 12,
+                    "minimum": 1,
+                    "maximum": 12
+                  },
+                  "monitor": {
+                    "type": "number",
+                    "description": "Specify monitor TACACS+ server",
+                    "default": 0
+                  },
+                  "username": {
+                    "type": "string",
+                    "description": "Specify the username",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "password": {
+                    "type": "number",
+                    "description": "Specify the user password",
+                    "default": 0
+                  },
+                  "password-value": {
+                    "type": "string",
+                    "description": "The user password",
+                    "minLength": 1,
+                    "maxLength": 31
+                  },
+                  "encrypted": {
+                    "type": "encrypted",
+                    "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)",
+                    "minLength": 1,
+                    "maxLength": 255
+                  }
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "tacacs-server-host-ipv6": {
+        "type": "object",
+        "properties": {
+          "ipv6-addr": {
+            "type": "string",
+            "description": "IPV6 address of TACACS+ server"
+          },
+          "secret": {
+            "type": "object",
+            "properties": {
+              "secret-value": {
+                "type": "string",
+                "description": "The TACACS+ server's secret",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) help-val The ENCRYPTED secret string",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "source-ipv6": {
+                "type": "string",
+                "description": "IPV6 address"
+              },
+              "source-loopback": {
+                "type": "number",
+                "description": "Loopback interface (Port number)"
+              },
+              "source-eth": {
+                "type": "number",
+                "description": "Ethernet interface (Port number)",
+                "minimum": 6,
+                "maximum": 103
+              },
+              "source-ve": {
+                "type": "number",
+                "description": "Virtual ethernet interface (Virtual ethernet interface number)"
+              },
+              "source-trunk": {
+                "type": "number",
+                "description": "Trunk interface (Trunk interface number)"
+              },
+              "source-lif": {
+                "type": "number",
+                "description": "Logical interface (Lif interface number)",
+                "minimum": 1,
+                "maximum": 128
+              },
+              "port-cfg": {
+                "type": "object",
+                "properties": {
+                  "port": {
+                    "type": "number",
+                    "description": "Specify the port number used by TACACS+ server.( default port is 49) (Port number (default 49))",
+                    "default": 49,
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "timeout": {
+                    "type": "number",
+                    "description": "Specify the maximum time allowed for setting up a connection with the TACACS+ server. (default timeout is 12 seconds) (Maximum time allowed for setting up a connection with the TACACS+ server, in seconds (default 12))",
+                    "default": 12,
+                    "minimum": 1,
+                    "maximum": 12
+                  },
+                  "monitor": {
+                    "type": "number",
+                    "description": "Specify monitor TACACS+ server",
+                    "default": 0
+                  },
+                  "username": {
+                    "type": "string",
+                    "description": "Specify the username",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "password": {
+                    "type": "number",
+                    "description": "Specify the user password",
+                    "default": 0
+                  },
+                  "password-value": {
+                    "type": "string",
+                    "description": "The user password",
+                    "minLength": 1,
+                    "maxLength": 31
+                  },
+                  "encrypted": {
+                    "type": "encrypted",
+                    "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)",
+                    "minLength": 1,
+                    "maxLength": 255
+                  }
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "tacacs-server-host-tacacs-hostname": {
+        "type": "object",
+        "properties": {
+          "hostname": {
+            "type": "string",
+            "description": "Hostname of TACACS+ server",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "secret": {
+            "type": "object",
+            "properties": {
+              "secret-value": {
+                "type": "string",
+                "description": "The TACACS+ server's secret",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) help-val The ENCRYPTED secret string",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "source-ip": {
+                "type": "string",
+                "description": "IP address"
+              },
+              "source-ipv6": {
+                "type": "string",
+                "description": "IPV6 address"
+              },
+              "source-loopback": {
+                "type": "number",
+                "description": "Loopback interface (Port number)"
+              },
+              "source-eth": {
+                "type": "number",
+                "description": "Ethernet interface (Port number)",
+                "minimum": 6,
+                "maximum": 103
+              },
+              "source-ve": {
+                "type": "number",
+                "description": "Virtual ethernet interface (Virtual ethernet interface number)"
+              },
+              "source-trunk": {
+                "type": "number",
+                "description": "Trunk interface (Trunk interface number)"
+              },
+              "source-lif": {
+                "type": "number",
+                "description": "Logical interface (Lif interface number)",
+                "minimum": 1,
+                "maximum": 128
+              },
+              "port-cfg": {
+                "type": "object",
+                "properties": {
+                  "port": {
+                    "type": "number",
+                    "description": "Specify the port number used by TACACS+ server.( default port is 49) (Port number (default 49))",
+                    "default": 49,
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "timeout": {
+                    "type": "number",
+                    "description": "Specify the maximum time allowed for setting up a connection with the TACACS+ server. (default timeout is 12 seconds) (Maximum time allowed for setting up a connection with the TACACS+ server, in seconds (default 12))",
+                    "default": 12,
+                    "minimum": 1,
+                    "maximum": 12
+                  },
+                  "monitor": {
+                    "type": "number",
+                    "description": "Specify monitor TACACS+ server",
+                    "default": 0
+                  },
+                  "username": {
+                    "type": "string",
+                    "description": "Specify the username",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "password": {
+                    "type": "number",
+                    "description": "Specify the user password",
+                    "default": 0
+                  },
+                  "password-value": {
+                    "type": "string",
+                    "description": "The user password",
+                    "minLength": 1,
+                    "maxLength": 31
+                  },
+                  "encrypted": {
+                    "type": "encrypted",
+                    "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)",
+                    "minLength": 1,
+                    "maxLength": 255
+                  }
+                }
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "tacacs-server-host": {
+        "type": "object",
+        "properties": {
+          "ipv4-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv4"
+            }
+          },
+          "ipv6-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv6"
+            }
+          },
+          "tacacs-hostname-list": {
+            "type": "array",
+            "items": {
+              "type": "tacacs-hostname"
+            }
+          }
+        }
+      },
+      "tacacs-server": {
+        "type": "object",
+        "properties": {
+          "monitor": {
+            "type": "number",
+            "description": "Configure TACACS+ servers",
+            "default": 0
+          },
+          "interval": {
+            "type": "number",
+            "description": "The moniter interval in seconds (default 60)",
+            "default": 60,
+            "minimum": 1,
+            "maximum": 120
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "host": {
+            "type": "object",
+            "properties": {
+              "ipv4-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv4"
+                }
+              },
+              "ipv6-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv6"
+                }
+              },
+              "tacacs-hostname-list": {
+                "type": "array",
+                "items": {
+                  "type": "tacacs-hostname"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

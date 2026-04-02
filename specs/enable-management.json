@@ -1,0 +1,5417 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ENABLE-MANAGEMENT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the enable-management category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/enable-management/acl-ipv4/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object acl-ipv4",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv4-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/acl-ipv4": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv4",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv4",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-acl-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv4",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-acl-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv4",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/acl-ipv6/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object acl-ipv6",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv6-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/acl-ipv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv6",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv6",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-acl-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv6",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-acl-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/acl-ipv6",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-acl-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/http/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object http",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-http-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/http": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/http",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-http"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/http",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-http"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/http",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-http"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/http",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-http"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/https/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object https",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-https-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/https": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/https",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-https"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/https",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-https"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-https"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/https",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-https"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-https"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/https",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-https"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/ntp/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object ntp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ntp-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/ntp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ntp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ntp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ntp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ntp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-ntp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ntp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ntp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-ntp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ntp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ntp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/ping/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object ping",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ping-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/ping": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ping",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ping"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ping",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ping"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-ping"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ping",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ping"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-ping"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ping",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ping"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/http/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-http-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-http-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/http/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-http-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-http-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/http": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-http"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "HTTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-http"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-http"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/https/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-https-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-https-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/https/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-https-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-https-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/https": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-https"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "HTTPS service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-https"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-https"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ntp/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ntp-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ntp-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ntp/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ntp-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ntp-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ntp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ntp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "NTP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ntp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ntp"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ping/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ping-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ping-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ping/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ping-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ping-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ping": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ping"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Ping service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ping"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ping"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/snmp/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-snmp-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-snmp-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/snmp/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-snmp-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-snmp-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/snmp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-snmp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "SNMP service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-snmp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-snmp"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ssh/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ssh-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ssh-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ssh/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ssh-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ssh-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/ssh": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ssh"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "SSH service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-ssh"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-ssh"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/telnet/acl-v4/{acl-id}": {
+      "parameters": [
+        {
+          "name": "acl-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-telnet-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-telnet-acl-v4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv4 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/telnet/acl-v6/{acl-name}": {
+      "parameters": [
+        {
+          "name": "acl-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for acl-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-telnet-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-telnet-acl-v6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "IPv6 ACL for Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet-acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service/telnet": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-telnet"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Telnet service",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service-telnet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-service-telnet"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/service": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Enable management services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-service"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/snmp/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object snmp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-snmp-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/snmp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/snmp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-snmp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/snmp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-snmp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-snmp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/snmp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-snmp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-snmp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/snmp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-snmp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/ssh/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object ssh",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ssh-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/ssh": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ssh",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ssh"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ssh",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ssh"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-ssh"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ssh",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ssh"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-ssh"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/ssh",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-ssh"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/telnet/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Operational Status for the object telnet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-telnet-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management/telnet": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/telnet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-telnet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/telnet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-telnet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-telnet"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/telnet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-telnet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/enable-management-telnet"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Endpoint for /axapi/v3/enable-management/telnet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management-telnet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/enable-management": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ENABLE-MANAGEMENT"
+        ],
+        "description": "Enable management services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/enable-management"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "enable-management-acl-ipv4-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-acl-ipv4": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-acl-ipv6-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-acl-ipv6": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-http-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-http": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-https-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-https": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-ntp-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-ntp": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-ping-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-ping": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-service-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "priority": {
+            "type": "number",
+            "description": "High Priority",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "priority": {
+            "type": "number",
+            "description": "High Priority",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-http-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-http-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-http": {
+        "type": "object",
+        "properties": {
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-service-https-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-https-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-https": {
+        "type": "object",
+        "properties": {
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-service-ntp-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "tunnel-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-ntp-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "tunnel-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-ntp": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-service-ping-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-ping-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-ping": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-service-snmp-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-snmp-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-snmp": {
+        "type": "object",
+        "properties": {
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-service-ssh-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-ssh-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-ssh": {
+        "type": "object",
+        "properties": {
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-service-telnet-acl-v4": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-telnet-acl-v6": {
+        "type": "object",
+        "properties": {
+          "acl-name": {
+            "type": "string",
+            "description": "ACL name",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "enable-management-service-telnet": {
+        "type": "object",
+        "properties": {
+          "management": {
+            "type": "number",
+            "description": "Management Interface",
+            "default": 0
+          },
+          "eth-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lif-cfg": {
+            "type": "object",
+            "properties": {
+              "lif": {
+                "type": "string",
+                "description": "Lif name (Lif interface name)",
+                "minLength": 1,
+                "maxLength": 15
+              }
+            }
+          },
+          "all-data-intf": {
+            "type": "number",
+            "description": "All Data Interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-service": {
+        "type": "object",
+        "properties": {
+          "ssh": {
+            "type": "object",
+            "properties": {
+              "eth-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ve-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "lif-cfg": {
+                "type": "object",
+                "properties": {
+                  "lif": {
+                    "type": "string",
+                    "description": "Lif name (Lif interface name)",
+                    "minLength": 1,
+                    "maxLength": 15
+                  }
+                }
+              },
+              "all-data-intf": {
+                "type": "number",
+                "description": "All Data Interfaces",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "acl-v4-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v4"
+                }
+              },
+              "acl-v6-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v6"
+                }
+              }
+            }
+          },
+          "telnet": {
+            "type": "object",
+            "properties": {
+              "management": {
+                "type": "number",
+                "description": "Management Interface",
+                "default": 0
+              },
+              "eth-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ve-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "lif-cfg": {
+                "type": "object",
+                "properties": {
+                  "lif": {
+                    "type": "string",
+                    "description": "Lif name (Lif interface name)",
+                    "minLength": 1,
+                    "maxLength": 15
+                  }
+                }
+              },
+              "all-data-intf": {
+                "type": "number",
+                "description": "All Data Interfaces",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "acl-v4-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v4"
+                }
+              },
+              "acl-v6-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v6"
+                }
+              }
+            }
+          },
+          "http": {
+            "type": "object",
+            "properties": {
+              "eth-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ve-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "lif-cfg": {
+                "type": "object",
+                "properties": {
+                  "lif": {
+                    "type": "string",
+                    "description": "Lif name (Lif interface name)",
+                    "minLength": 1,
+                    "maxLength": 15
+                  }
+                }
+              },
+              "all-data-intf": {
+                "type": "number",
+                "description": "All Data Interfaces",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "acl-v4-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v4"
+                }
+              },
+              "acl-v6-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v6"
+                }
+              }
+            }
+          },
+          "https": {
+            "type": "object",
+            "properties": {
+              "eth-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ve-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "lif-cfg": {
+                "type": "object",
+                "properties": {
+                  "lif": {
+                    "type": "string",
+                    "description": "Lif name (Lif interface name)",
+                    "minLength": 1,
+                    "maxLength": 15
+                  }
+                }
+              },
+              "all-data-intf": {
+                "type": "number",
+                "description": "All Data Interfaces",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "acl-v4-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v4"
+                }
+              },
+              "acl-v6-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v6"
+                }
+              }
+            }
+          },
+          "snmp": {
+            "type": "object",
+            "properties": {
+              "eth-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ve-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "lif-cfg": {
+                "type": "object",
+                "properties": {
+                  "lif": {
+                    "type": "string",
+                    "description": "Lif name (Lif interface name)",
+                    "minLength": 1,
+                    "maxLength": 15
+                  }
+                }
+              },
+              "all-data-intf": {
+                "type": "number",
+                "description": "All Data Interfaces",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "acl-v4-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v4"
+                }
+              },
+              "acl-v6-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v6"
+                }
+              }
+            }
+          },
+          "ping": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "acl-v4-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v4"
+                }
+              },
+              "acl-v6-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v6"
+                }
+              }
+            }
+          },
+          "acl-v4-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v4"
+            }
+          },
+          "acl-v6-list": {
+            "type": "array",
+            "items": {
+              "type": "acl-v6"
+            }
+          }
+        }
+      },
+      "enable-management-snmp-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-snmp": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-ssh-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-ssh": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management-telnet-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "port-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "enable-management-telnet": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "enable-management": {
+        "type": "object",
+        "properties": {
+          "ping": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ssh": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "telnet": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "http": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "https": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "snmp": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "acl-ipv4": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "acl-ipv6": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "service": {
+            "type": "object",
+            "properties": {
+              "ssh": {
+                "type": "object",
+                "properties": {
+                  "eth-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ve-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "lif-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "lif": {
+                        "type": "string",
+                        "description": "Lif name (Lif interface name)",
+                        "minLength": 1,
+                        "maxLength": 15
+                      }
+                    }
+                  },
+                  "all-data-intf": {
+                    "type": "number",
+                    "description": "All Data Interfaces",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "acl-v4-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v4"
+                    }
+                  },
+                  "acl-v6-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v6"
+                    }
+                  }
+                }
+              },
+              "telnet": {
+                "type": "object",
+                "properties": {
+                  "management": {
+                    "type": "number",
+                    "description": "Management Interface",
+                    "default": 0
+                  },
+                  "eth-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ve-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "lif-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "lif": {
+                        "type": "string",
+                        "description": "Lif name (Lif interface name)",
+                        "minLength": 1,
+                        "maxLength": 15
+                      }
+                    }
+                  },
+                  "all-data-intf": {
+                    "type": "number",
+                    "description": "All Data Interfaces",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "acl-v4-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v4"
+                    }
+                  },
+                  "acl-v6-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v6"
+                    }
+                  }
+                }
+              },
+              "http": {
+                "type": "object",
+                "properties": {
+                  "eth-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ve-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "lif-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "lif": {
+                        "type": "string",
+                        "description": "Lif name (Lif interface name)",
+                        "minLength": 1,
+                        "maxLength": 15
+                      }
+                    }
+                  },
+                  "all-data-intf": {
+                    "type": "number",
+                    "description": "All Data Interfaces",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "acl-v4-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v4"
+                    }
+                  },
+                  "acl-v6-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v6"
+                    }
+                  }
+                }
+              },
+              "https": {
+                "type": "object",
+                "properties": {
+                  "eth-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ve-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "lif-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "lif": {
+                        "type": "string",
+                        "description": "Lif name (Lif interface name)",
+                        "minLength": 1,
+                        "maxLength": 15
+                      }
+                    }
+                  },
+                  "all-data-intf": {
+                    "type": "number",
+                    "description": "All Data Interfaces",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "acl-v4-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v4"
+                    }
+                  },
+                  "acl-v6-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v6"
+                    }
+                  }
+                }
+              },
+              "snmp": {
+                "type": "object",
+                "properties": {
+                  "eth-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "ve-cfg": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "lif-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "lif": {
+                        "type": "string",
+                        "description": "Lif name (Lif interface name)",
+                        "minLength": 1,
+                        "maxLength": 15
+                      }
+                    }
+                  },
+                  "all-data-intf": {
+                    "type": "number",
+                    "description": "All Data Interfaces",
+                    "default": 0
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "acl-v4-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v4"
+                    }
+                  },
+                  "acl-v6-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v6"
+                    }
+                  }
+                }
+              },
+              "ping": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "acl-v4-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v4"
+                    }
+                  },
+                  "acl-v6-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "acl-v6"
+                    }
+                  }
+                }
+              },
+              "acl-v4-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v4"
+                }
+              },
+              "acl-v6-list": {
+                "type": "array",
+                "items": {
+                  "type": "acl-v6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

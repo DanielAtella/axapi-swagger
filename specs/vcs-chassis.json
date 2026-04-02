@@ -1,0 +1,448 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - VCS-CHASSIS",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the vcs-chassis category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/vcs-chassis/debug": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "VCS debug",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis-debug"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "VCS debug",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis-debug"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vcs-chassis-debug"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "VCS debug",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis-debug"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vcs-chassis/slot-summary/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "Operational Status for the object slot-summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis-slot-summary-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vcs-chassis/slot-summary": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "Chassis Summary Information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis-slot-summary"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "Chassis Summary Information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis-slot-summary"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vcs-chassis-slot-summary"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "Chassis Summary Information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis-slot-summary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/vcs-chassis": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "VCS-CHASSIS"
+        ],
+        "description": "Virtual Chassis System",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vcs-chassis"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "vcs-chassis-debug": {
+        "type": "object",
+        "properties": {
+          "daemon": {
+            "type": "number",
+            "description": "Daemon component",
+            "default": 0
+          },
+          "election": {
+            "type": "number",
+            "description": "Election component",
+            "default": 0
+          },
+          "info": {
+            "type": "number",
+            "description": "Information component",
+            "default": 0
+          },
+          "daemon_msg": {
+            "type": "number",
+            "description": "Daemon message component",
+            "default": 0
+          },
+          "election_pdu": {
+            "type": "number",
+            "description": "Election pdu component",
+            "default": 0
+          },
+          "lib": {
+            "type": "number",
+            "description": "Lib component",
+            "default": 0
+          },
+          "util": {
+            "type": "number",
+            "description": "Utility component",
+            "default": 0
+          },
+          "ssl": {
+            "type": "number",
+            "description": "SSL component",
+            "default": 0
+          },
+          "net": {
+            "type": "number",
+            "description": "Net component",
+            "default": 0
+          },
+          "vmaster_msg": {
+            "type": "number",
+            "description": "vMaster Message component",
+            "default": 0
+          },
+          "vblade_msg": {
+            "type": "number",
+            "description": "vBlade Message component",
+            "default": 0
+          },
+          "encoder": {
+            "type": "number",
+            "description": "Encoder component",
+            "default": 0
+          },
+          "handler": {
+            "type": "number",
+            "description": "Handler component",
+            "default": 0
+          },
+          "vmaster": {
+            "type": "number",
+            "description": "vMaster component",
+            "default": 0
+          },
+          "vblade": {
+            "type": "number",
+            "description": "vBlade component",
+            "default": 0
+          }
+        }
+      },
+      "vcs-chassis-slot-summary-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "vcs-enabled": {
+                "type": "string"
+              },
+              "chassis-id": {
+                "type": "number"
+              },
+              "multicast-addr": {
+                "type": "string"
+              },
+              "multicast-port": {
+                "type": "number"
+              },
+              "version": {
+                "type": "string"
+              },
+              "vmaster-maintenance-interval": {
+                "type": "number"
+              },
+              "vmaster-maintenance-left": {
+                "type": "number"
+              },
+              "floating-ipv4-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "floating-ipv6-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "member-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "vcs-chassis-slot-summary": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "vcs-chassis": {
+        "type": "object",
+        "properties": {
+          "slot-summary": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "debug": {
+            "type": "object",
+            "properties": {
+              "daemon": {
+                "type": "number",
+                "description": "Daemon component",
+                "default": 0
+              },
+              "election": {
+                "type": "number",
+                "description": "Election component",
+                "default": 0
+              },
+              "info": {
+                "type": "number",
+                "description": "Information component",
+                "default": 0
+              },
+              "daemon_msg": {
+                "type": "number",
+                "description": "Daemon message component",
+                "default": 0
+              },
+              "election_pdu": {
+                "type": "number",
+                "description": "Election pdu component",
+                "default": 0
+              },
+              "lib": {
+                "type": "number",
+                "description": "Lib component",
+                "default": 0
+              },
+              "util": {
+                "type": "number",
+                "description": "Utility component",
+                "default": 0
+              },
+              "ssl": {
+                "type": "number",
+                "description": "SSL component",
+                "default": 0
+              },
+              "net": {
+                "type": "number",
+                "description": "Net component",
+                "default": 0
+              },
+              "vmaster_msg": {
+                "type": "number",
+                "description": "vMaster Message component",
+                "default": 0
+              },
+              "vblade_msg": {
+                "type": "number",
+                "description": "vBlade Message component",
+                "default": 0
+              },
+              "encoder": {
+                "type": "number",
+                "description": "Encoder component",
+                "default": 0
+              },
+              "handler": {
+                "type": "number",
+                "description": "Handler component",
+                "default": 0
+              },
+              "vmaster": {
+                "type": "number",
+                "description": "vMaster component",
+                "default": 0
+              },
+              "vblade": {
+                "type": "number",
+                "description": "vBlade component",
+                "default": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

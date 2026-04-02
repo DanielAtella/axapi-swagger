@@ -1,0 +1,3582 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - NETFLOW",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the netflow category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/netflow/collector/template-detail/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Operational Status for the object template-detail",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template-detail-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/collector/template-detail": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Netflow/IPFIX collector templates in detail",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template-detail"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Netflow/IPFIX collector templates in detail",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template-detail"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-collector-template-detail"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Netflow/IPFIX collector templates in detail",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template-detail"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-collector-template-detail"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Netflow/IPFIX collector templates in detail",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template-detail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/collector/template/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Operational Status for the object template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/collector/template/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Statistics for the object template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/collector/template": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow/IPFIX collector templates",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow/IPFIX collector templates",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-collector-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow/IPFIX collector templates",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-collector-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow/IPFIX collector templates",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/collector": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow/IPFIX collector",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-collector"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/common/selector-algorithm/{algorithm-name}": {
+      "parameters": [
+        {
+          "name": "algorithm-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for algorithm-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX Selector Algorithm Setting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common-selector-algorithm"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX Selector Algorithm Setting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common-selector-algorithm"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-common-selector-algorithm"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX Selector Algorithm Setting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common-selector-algorithm"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-common-selector-algorithm"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX Selector Algorithm Setting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common-selector-algorithm"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/common": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX common settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX common settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-common"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX common settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-common"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "NetFlow/IPFIX common settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-common"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/custom-record": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure custom record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-custom-record"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure custom record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-custom-record"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-custom-record"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure custom record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-custom-record"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-custom-record"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure custom record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-custom-record"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/destination": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure destination where netflow records will be sent",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-destination"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure destination where netflow records will be sent",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-destination"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-destination"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure destination where netflow records will be sent",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-destination"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-destination"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure destination where netflow records will be sent",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-destination"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/disable-log-by-destination/ip/{ipv4-addr}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "ipv4-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv4-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/disable-log-by-destination/ip6/{ipv6-addr}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "ipv6-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure a filter IP enrty",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination-ip6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/disable-log-by-destination": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Disable logging by destination ip address protocol and port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Disable logging by destination ip address protocol and port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Disable logging by destination ip address protocol and port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Disable logging by destination ip address protocol and port",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-disable-log-by-destination"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/oper": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Operational Status for the object monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/protocol": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure netflow protocol version to use, default is netflow v9",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-protocol"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure netflow protocol version to use, default is netflow v9",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-protocol"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-protocol"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure netflow protocol version to use, default is netflow v9",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-protocol"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-protocol"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure netflow protocol version to use, default is netflow v9",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-protocol"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/record": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-record"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-record"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-record"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-record"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-record"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure record types to be exported",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-record"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/resend-template": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure when to resend netflow template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-resend-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure when to resend netflow template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-resend-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-resend-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure when to resend netflow template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-resend-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-resend-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure when to resend netflow template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-resend-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/sample/ethernet/{ifindex}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "ifindex",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ifindex"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select ethernet interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ethernet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select ethernet interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-sample-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select ethernet interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-sample-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select ethernet interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ethernet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/sample/nat-pool/{pool-name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "pool-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for pool-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Select nat pool to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-nat-pool"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Select nat pool to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-nat-pool"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-sample-nat-pool"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Select nat pool to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-nat-pool"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-sample-nat-pool"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Select nat pool to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-nat-pool"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/sample/ve/{ve-num}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        },
+        {
+          "name": "ve-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ve-num"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select VE interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ve"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select VE interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ve"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-sample-ve"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select VE interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ve"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-sample-ve"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "select VE interface to monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample-ve"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/sample": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure filters for monitoring traffic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-sample"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/source-address": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Specify source address of Netflow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-source-address"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Specify source address of Netflow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-source-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-source-address"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Specify source address of Netflow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-source-address"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor-source-address"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Specify source address of Netflow packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-source-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Statistics for the object monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/monitor/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow Monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow Monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow Monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-monitor"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow Monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-monitor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/template/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "IPFIX Custom Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "IPFIX Custom Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "IPFIX Custom Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "IPFIX Custom Template",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow/use-partition": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Use NetFlow configuration on a dedicated partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-use-partition"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Use NetFlow configuration on a dedicated partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-use-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-use-partition"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Use NetFlow configuration on a dedicated partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-use-partition"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/netflow-use-partition"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Use NetFlow configuration on a dedicated partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow-use-partition"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/netflow": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETFLOW"
+        ],
+        "description": "Configure NetFlow/IPFIX",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/netflow"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "netflow-collector-template-detail-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "nf-template-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "netflow-collector-template-detail": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-collector-template-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "nf-template-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "netflow-collector-template-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "v9-templates-created": {
+                "type": "number",
+                "description": "Netflow v9 Templates Created"
+              },
+              "v9-templates-deleted": {
+                "type": "number",
+                "description": "Netflow v9 Templates Deleted"
+              },
+              "v10-templates-created": {
+                "type": "number",
+                "description": "Netflow v10(IPFIX) Templates Created"
+              },
+              "v10-templates-deleted": {
+                "type": "number",
+                "description": "Netflow v10(IPFIX) Templates Deleted"
+              },
+              "template-drop-exceeded": {
+                "type": "number",
+                "description": "Netflow Templates Dropped Maximum Limit Reached"
+              },
+              "template-drop-out-of-memory": {
+                "type": "number",
+                "description": "Netflow Templates Dropped OOM"
+              }
+            }
+          }
+        }
+      },
+      "netflow-collector-template": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "netflow-collector": {
+        "type": "object",
+        "properties": {}
+      },
+      "netflow-common-selector-algorithm": {
+        "type": "object",
+        "properties": {
+          "algorithm-name": {
+            "type": "string",
+            "description": "'random': random; ",
+            "enum": [
+              "random"
+            ]
+          },
+          "sampling-population": {
+            "type": "number",
+            "description": "Configure sampling population for random algorithm",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 1000000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "netflow-common": {
+        "type": "object",
+        "properties": {
+          "max-packet-queue-time": {
+            "type": "number",
+            "description": "Configure netflow packet queue time (Max packet queue time(*20ms). Default:50( *20ms = 1s)))",
+            "default": 50,
+            "minimum": 0,
+            "maximum": 50
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "selector-algorithm-list": {
+            "type": "array",
+            "items": {
+              "type": "selector-algorithm"
+            }
+          }
+        }
+      },
+      "netflow-monitor-custom-record": {
+        "type": "object",
+        "properties": {
+          "custom-cfg": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-destination": {
+        "type": "object",
+        "properties": {
+          "ip-cfg": {
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "string",
+                "description": "IP address of netflow collector"
+              },
+              "port4": {
+                "type": "number",
+                "description": "Port number, default is 9996",
+                "default": 9996,
+                "minimum": 1,
+                "maximum": 65535
+              }
+            }
+          },
+          "ipv6-cfg": {
+            "type": "object",
+            "properties": {
+              "ipv6": {
+                "type": "string",
+                "description": "IPv6 address of netflow collector"
+              },
+              "port6": {
+                "type": "number",
+                "description": "Port number, default is 9996",
+                "default": 9996,
+                "minimum": 1,
+                "maximum": 65535
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-disable-log-by-destination-ip": {
+        "type": "object",
+        "properties": {
+          "ipv4-addr": {
+            "type": "string",
+            "description": "Configure an IP subnet"
+          },
+          "tcp-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "udp-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "icmp": {
+            "type": "number",
+            "description": "Disable logging for icmp traffic",
+            "default": 0
+          },
+          "others": {
+            "type": "number",
+            "description": "Disable logging for other L4 protocols",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "netflow-monitor-disable-log-by-destination-ip6": {
+        "type": "object",
+        "properties": {
+          "ipv6-addr": {
+            "type": "string",
+            "description": "Configure an IPv6 subnet"
+          },
+          "tcp-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "udp-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "icmp": {
+            "type": "number",
+            "description": "Disable logging for icmp traffic",
+            "default": 0
+          },
+          "others": {
+            "type": "number",
+            "description": "Disable logging for other L4 protocols",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "netflow-monitor-disable-log-by-destination": {
+        "type": "object",
+        "properties": {
+          "tcp-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "udp-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "icmp": {
+            "type": "number",
+            "description": "Disable logging for icmp traffic",
+            "default": 0
+          },
+          "others": {
+            "type": "number",
+            "description": "Disable logging for other L4 protocols",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "ip-list": {
+            "type": "array",
+            "items": {
+              "type": "ip"
+            }
+          },
+          "ip6-list": {
+            "type": "array",
+            "items": {
+              "type": "ip6"
+            }
+          }
+        }
+      },
+      "netflow-monitor-oper": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of netflow monitor",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "protocol": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "filter": {
+                "type": "string"
+              },
+              "destination": {
+                "type": "string"
+              },
+              "source-ip-use-mgmt": {
+                "type": "string"
+              },
+              "source-ip-addr": {
+                "type": "string"
+              },
+              "flow-timeout": {
+                "type": "string"
+              },
+              "counter-polling-interval": {
+                "type": "string"
+              },
+              "resend-template-per-records": {
+                "type": "string"
+              },
+              "resend-template-timeout": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "netflow-monitor-protocol": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "type": "string",
+            "description": "'v9': Netflow version 9; 'v10': Netflow version 10 (IPFIX); ",
+            "default": "v9",
+            "enum": [
+              "v9",
+              "v10"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-record": {
+        "type": "object",
+        "properties": {
+          "netflow-v5": {
+            "type": "number",
+            "description": "NetFlow V5 Flow Record Template",
+            "default": 0
+          },
+          "netflow-v5-ext": {
+            "type": "number",
+            "description": "Extended NetFlow V5 Flow Record Template, supports ipv6",
+            "default": 0
+          },
+          "ddos-general-stat": {
+            "type": "number",
+            "description": "General DDOS statistics",
+            "default": 0
+          },
+          "ddos-http-stat": {
+            "type": "number",
+            "description": "HTTP DDOS statistics",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-resend-template": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "description": "To set time interval to resend template (number of seconds: default is 1800, 0 means disable template resend based on timeout)",
+            "default": 1800,
+            "minimum": 0,
+            "maximum": 86400
+          },
+          "records": {
+            "type": "number",
+            "description": "To resend template once for each number of records (Number of records: default is 1000, 0 means disable template resend based on record-count)",
+            "default": 1000,
+            "minimum": 0,
+            "maximum": 1000000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-sample-ethernet": {
+        "type": "object",
+        "properties": {
+          "ifindex": {
+            "type": "number",
+            "description": "Ethernet interface number",
+            "minimum": 4,
+            "maximum": 103
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-sample-nat-pool": {
+        "type": "object",
+        "properties": {
+          "pool-name": {
+            "type": "string",
+            "description": "Name of nat pool",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-sample-ve": {
+        "type": "object",
+        "properties": {
+          "ve-num": {
+            "type": "number",
+            "description": "VE interface number",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-sample": {
+        "type": "object",
+        "properties": {
+          "ethernet-list": {
+            "type": "array",
+            "items": {
+              "type": "ethernet"
+            }
+          },
+          "ve-list": {
+            "type": "array",
+            "items": {
+              "type": "ve"
+            }
+          }
+        }
+      },
+      "netflow-monitor-source-address": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "description": "Specify source IP address"
+          },
+          "ipv6": {
+            "type": "string",
+            "description": "Specify source IPv6 address"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow-monitor-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of netflow monitor",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "packets-sent": {
+                "type": "number",
+                "description": "Sent Packets Count"
+              },
+              "bytes-sent": {
+                "type": "number",
+                "description": "Sent Bytes Count"
+              },
+              "nat44-records-sent": {
+                "type": "number",
+                "description": "NAT44 Flow Records Sent"
+              },
+              "nat44-records-sent-failure": {
+                "type": "number",
+                "description": "NAT44 Flow Records Failed"
+              },
+              "nat64-records-sent": {
+                "type": "number",
+                "description": "NAT64 Flow Records Sent"
+              },
+              "nat64-records-sent-failure": {
+                "type": "number",
+                "description": "NAT64 Flow Records Failed"
+              },
+              "dslite-records-sent": {
+                "type": "number",
+                "description": "Dslite Flow Records Sent"
+              },
+              "dslite-records-sent-failure": {
+                "type": "number",
+                "description": "Dslite Flow Records Failed"
+              },
+              "session-event-nat44-records-sent": {
+                "type": "number",
+                "description": "Nat44 Session Event Records Sent"
+              },
+              "session-event-nat44-records-sent-failure": {
+                "type": "number",
+                "description": "Nat44 Session Event Records Failed"
+              },
+              "session-event-nat64-records-sent": {
+                "type": "number",
+                "description": "Nat64 Session Event Records Sent"
+              },
+              "session-event-nat64-records-sent-failure": {
+                "type": "number",
+                "description": "Nat64 Session Event Records Falied"
+              },
+              "session-event-dslite-records-sent": {
+                "type": "number",
+                "description": "Dslite Session Event Records Sent"
+              },
+              "session-event-dslite-records-sent-failure": {
+                "type": "number",
+                "description": "Dslite Session Event Records Failed"
+              },
+              "session-event-fw4-records-sent": {
+                "type": "number",
+                "description": "FW4 Session Event Records Sent"
+              },
+              "session-event-fw4-records-sent-failure": {
+                "type": "number",
+                "description": "FW4 Session Event Records Failed"
+              },
+              "session-event-fw6-records-sent": {
+                "type": "number",
+                "description": "FW6 Session Event Records Sent"
+              },
+              "session-event-fw6-records-sent-failure": {
+                "type": "number",
+                "description": "FW6 Session Event Records Failed"
+              },
+              "port-mapping-nat44-records-sent": {
+                "type": "number",
+                "description": "Port Mapping Nat44 Event Records Sent"
+              },
+              "port-mapping-nat44-records-sent-failure": {
+                "type": "number",
+                "description": "Port Mapping Nat44 Event Records Failed"
+              },
+              "port-mapping-nat64-records-sent": {
+                "type": "number",
+                "description": "Port Mapping Nat64 Event Records Sent"
+              },
+              "port-mapping-nat64-records-sent-failure": {
+                "type": "number",
+                "description": "Port Mapping Nat64 Event Records Failed"
+              },
+              "port-mapping-dslite-records-sent": {
+                "type": "number",
+                "description": "Port Mapping Dslite Event Records Sent"
+              },
+              "port-mapping-dslite-records-sent-failure": {
+                "type": "number",
+                "description": "Port Mapping Dslite Event Records failed"
+              },
+              "netflow-v5-records-sent": {
+                "type": "number",
+                "description": "Netflow v5 Records Sent"
+              },
+              "netflow-v5-records-sent-failure": {
+                "type": "number",
+                "description": "Netflow v5 Records Failed"
+              },
+              "netflow-v5-ext-records-sent": {
+                "type": "number",
+                "description": "Netflow v5 Ext Records Sent"
+              },
+              "netflow-v5-ext-records-sent-failure": {
+                "type": "number",
+                "description": "Netflow v5 Ext Records Failed"
+              },
+              "port-batching-nat44-records-sent": {
+                "type": "number",
+                "description": "Port Batching Nat44 Records Sent"
+              },
+              "port-batching-nat44-records-sent-failure": {
+                "type": "number",
+                "description": "Port Batching Nat44 Records Failed"
+              },
+              "port-batching-nat64-records-sent": {
+                "type": "number",
+                "description": "Port Batching Nat64 Records Sent"
+              },
+              "port-batching-nat64-records-sent-failure": {
+                "type": "number",
+                "description": "Port Batching Nat64 Records Failed"
+              },
+              "port-batching-dslite-records-sent": {
+                "type": "number",
+                "description": "Port Batching Dslite Records Sent"
+              },
+              "port-batching-dslite-records-sent-failure": {
+                "type": "number",
+                "description": "Port Batching Dslite Records Failed"
+              },
+              "port-batching-v2-nat44-records-sent": {
+                "type": "number",
+                "description": "Port Batching V2 Nat44 Records Sent"
+              },
+              "port-batching-v2-nat44-records-sent-failure": {
+                "type": "number",
+                "description": "Port Batching V2 Nat44 Records Failed"
+              },
+              "port-batching-v2-nat64-records-sent": {
+                "type": "number",
+                "description": "Port Batching V2 Nat64 Records Sent"
+              },
+              "port-batching-v2-nat64-records-sent-failure": {
+                "type": "number",
+                "description": "Port Batching V2 Nat64 Records Failed"
+              },
+              "port-batching-v2-dslite-records-sent": {
+                "type": "number",
+                "description": "Port Batching V2 Dslite Records Sent"
+              },
+              "port-batching-v2-dslite-records-sent-failure": {
+                "type": "number",
+                "description": "Port Batching V2 Dslite Records Falied"
+              },
+              "custom-session-event-nat44-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Session Creation Records Sent"
+              },
+              "custom-session-event-nat44-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Session Creation Records Failed"
+              },
+              "custom-session-event-nat64-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Session Creation Records Sent"
+              },
+              "custom-session-event-nat64-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Session Creation Records Failed"
+              },
+              "custom-session-event-dslite-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Session Creation Records Sent"
+              },
+              "custom-session-event-dslite-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Session Creation Records Failed"
+              },
+              "custom-session-event-nat44-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Session Deletion Records Sent"
+              },
+              "custom-session-event-nat44-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Session Deletion Records Failed"
+              },
+              "custom-session-event-nat64-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Session Deletion Records Sent"
+              },
+              "custom-session-event-nat64-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Session Deletion Records Failed"
+              },
+              "custom-session-event-dslite-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Session Deletion Records Sent"
+              },
+              "custom-session-event-dslite-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Session Deletion Records Failed"
+              },
+              "custom-session-event-fw4-creation-records-sent": {
+                "type": "number",
+                "description": "Custom FW4 Session Creation Records Sent"
+              },
+              "custom-session-event-fw4-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom FW4 Session Creation Records Failed"
+              },
+              "custom-session-event-fw6-creation-records-sent": {
+                "type": "number",
+                "description": "Custom FW6 Session Creation Records Sent"
+              },
+              "custom-session-event-fw6-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom FW6 Session Creation Records Failed"
+              },
+              "custom-session-event-fw4-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom FW4 Session Deletion Records Sent"
+              },
+              "custom-session-event-fw4-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom FW4 Session Deletion Records Failed"
+              },
+              "custom-session-event-fw6-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom FW6 Session Deletion Records Sent"
+              },
+              "custom-session-event-fw6-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom FW6 Session Deletion Records Failed"
+              },
+              "custom-deny-reset-event-fw4-records-sent": {
+                "type": "number",
+                "description": "Custom FW4 Deny/Reset Event Records Sent"
+              },
+              "custom-deny-reset-event-fw4-records-sent-failure": {
+                "type": "number",
+                "description": "Custom FW4 Deny/Reset Event Records Failed"
+              },
+              "custom-deny-reset-event-fw6-records-sent": {
+                "type": "number",
+                "description": "Custom FW6 Deny/Reset Event Records Sent"
+              },
+              "custom-deny-reset-event-fw6-records-sent-failure": {
+                "type": "number",
+                "description": "Custom FW6 Deny/Reset Event Records Failed"
+              },
+              "custom-port-mapping-nat44-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Port Map Creation Records Sent"
+              },
+              "custom-port-mapping-nat44-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Port Map Creation Records Failed"
+              },
+              "custom-port-mapping-nat64-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Port Map Creation Records Sent"
+              },
+              "custom-port-mapping-nat64-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Port Map Creation Records Failed"
+              },
+              "custom-port-mapping-dslite-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Port Map Creation Records Sent"
+              },
+              "custom-port-mapping-dslite-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Port Map Creation Records Failed"
+              },
+              "custom-port-mapping-nat44-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Port Map Deletion Records Sent"
+              },
+              "custom-port-mapping-nat44-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Port Map Deletion Records Failed"
+              },
+              "custom-port-mapping-nat64-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Port Map Deletion Records Sent"
+              },
+              "custom-port-mapping-nat64-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Port Map Deletion Records Failed"
+              },
+              "custom-port-mapping-dslite-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Port Map Deletion Records Sent"
+              },
+              "custom-port-mapping-dslite-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Port Map Deletion Records Failed"
+              },
+              "custom-port-batching-nat44-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch Creation Records Sent"
+              },
+              "custom-port-batching-nat44-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch Creation Records Failed"
+              },
+              "custom-port-batching-nat64-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch Creation Records Sent"
+              },
+              "custom-port-batching-nat64-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch Creation Records Failed"
+              },
+              "custom-port-batching-dslite-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch Creation Records Sent"
+              },
+              "custom-port-batching-dslite-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch Creation Records Failed"
+              },
+              "custom-port-batching-nat44-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch Deletion Records Sent"
+              },
+              "custom-port-batching-nat44-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch Deletion Records Failed"
+              },
+              "custom-port-batching-nat64-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch Deletion Records Sent"
+              },
+              "custom-port-batching-nat64-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch Deletion Records Failed"
+              },
+              "custom-port-batching-dslite-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch Deletion Records Sent"
+              },
+              "custom-port-batching-dslite-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch Deletion Records Failed"
+              },
+              "custom-port-batching-v2-nat44-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch V2 Creation Records Sent"
+              },
+              "custom-port-batching-v2-nat44-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch V2 Creation Records Failed"
+              },
+              "custom-port-batching-v2-nat64-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch V2 Creation Records Sent"
+              },
+              "custom-port-batching-v2-nat64-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch V2 Creation Records Failed"
+              },
+              "custom-port-batching-v2-dslite-creation-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch V2 Creation Records Sent"
+              },
+              "custom-port-batching-v2-dslite-creation-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch V2 Creation Records Failed"
+              },
+              "custom-port-batching-v2-nat44-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch V2 Deletion Records Sent"
+              },
+              "custom-port-batching-v2-nat44-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat44 Port Batch V2 Deletion Records Failed"
+              },
+              "custom-port-batching-v2-nat64-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch V2 Deletion Records Sent"
+              },
+              "custom-port-batching-v2-nat64-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Nat64 Port Batch V2 Deletion Records Failed"
+              },
+              "custom-port-batching-v2-dslite-deletion-records-sent": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch V2 Deletion Records Sent"
+              },
+              "custom-port-batching-v2-dslite-deletion-records-sent-failure": {
+                "type": "number",
+                "description": "Custom Dslite Port Batch V2 Deletion Records Failed"
+              },
+              "reduced-logs-by-destination": {
+                "type": "number",
+                "description": "Reduced Logs by Destination Protocol and Port"
+              },
+              "custom-gtp-c-tunnel-event-records-sent": {
+                "type": "number",
+                "description": "Custom GTP C Tunnel Records Sent"
+              },
+              "custom-gtp-c-tunnel-event-records-sent-failure": {
+                "type": "number",
+                "description": "Custom GTP C Tunnel Records Sent Failure"
+              },
+              "custom-gtp-u-tunnel-event-records-sent": {
+                "type": "number",
+                "description": "Custom GTP U Tunnel Records Sent"
+              },
+              "custom-gtp-u-tunnel-event-records-sent-failure": {
+                "type": "number",
+                "description": "Custom GTP U Tunnel Records Sent Failure"
+              },
+              "custom-gtp-deny-event-records-sent": {
+                "type": "number",
+                "description": "Custom GTP Deny Records Sent"
+              },
+              "custom-gtp-deny-event-records-sent-failure": {
+                "type": "number",
+                "description": "Custom GTP Deny Records Sent Failure"
+              },
+              "custom-gtp-info-event-records-sent": {
+                "type": "number",
+                "description": "Custom GTP Info Records Sent"
+              },
+              "custom-gtp-info-event-records-sent-failure": {
+                "type": "number",
+                "description": "Custom GTP Info Records Sent Failure"
+              },
+              "ddos-general-stat-records-sent": {
+                "type": "number"
+              },
+              "ddos-general-stat-records-sent-failure": {
+                "type": "number"
+              },
+              "ddos-http-stat-records-sent": {
+                "type": "number"
+              },
+              "ddos-http-stat-records-sent-failure": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "netflow-monitor": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of netflow monitor",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "disable": {
+            "type": "number",
+            "description": "Disable this netflow monitor",
+            "default": 0
+          },
+          "source-ip-use-mgmt": {
+            "type": "number",
+            "description": "Use management interface's IP address for source ip of netflow packets",
+            "default": 0
+          },
+          "flow-timeout": {
+            "type": "number",
+            "description": "Configure timeout value to export flow records periodically for long-live session ( Number of minutes: default is 10, 0 means only send flow record when session is deleted)",
+            "default": 10,
+            "minimum": 0,
+            "maximum": 1440
+          },
+          "protocol": {
+            "type": "string",
+            "description": "'v9': Netflow version 9; 'v10': Netflow version 10 (IPFIX); ",
+            "default": "v9",
+            "enum": [
+              "v9",
+              "v10"
+            ]
+          },
+          "counter-polling-interval": {
+            "type": "number",
+            "description": "Configure the interval to export global counters (Number of seconds: default is 60)",
+            "default": 60,
+            "minimum": 1,
+            "maximum": 3600
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "disable-log-by-destination": {
+            "type": "object",
+            "properties": {
+              "tcp-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "udp-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "icmp": {
+                "type": "number",
+                "description": "Disable logging for icmp traffic",
+                "default": 0
+              },
+              "others": {
+                "type": "number",
+                "description": "Disable logging for other L4 protocols",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "ip-list": {
+                "type": "array",
+                "items": {
+                  "type": "ip"
+                }
+              },
+              "ip6-list": {
+                "type": "array",
+                "items": {
+                  "type": "ip6"
+                }
+              }
+            }
+          },
+          "record": {
+            "type": "object",
+            "properties": {
+              "netflow-v5": {
+                "type": "number",
+                "description": "NetFlow V5 Flow Record Template",
+                "default": 0
+              },
+              "netflow-v5-ext": {
+                "type": "number",
+                "description": "Extended NetFlow V5 Flow Record Template, supports ipv6",
+                "default": 0
+              },
+              "ddos-general-stat": {
+                "type": "number",
+                "description": "General DDOS statistics",
+                "default": 0
+              },
+              "ddos-http-stat": {
+                "type": "number",
+                "description": "HTTP DDOS statistics",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "custom-record": {
+            "type": "object",
+            "properties": {
+              "custom-cfg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "destination": {
+            "type": "object",
+            "properties": {
+              "ip-cfg": {
+                "type": "object",
+                "properties": {
+                  "ip": {
+                    "type": "string",
+                    "description": "IP address of netflow collector"
+                  },
+                  "port4": {
+                    "type": "number",
+                    "description": "Port number, default is 9996",
+                    "default": 9996,
+                    "minimum": 1,
+                    "maximum": 65535
+                  }
+                }
+              },
+              "ipv6-cfg": {
+                "type": "object",
+                "properties": {
+                  "ipv6": {
+                    "type": "string",
+                    "description": "IPv6 address of netflow collector"
+                  },
+                  "port6": {
+                    "type": "number",
+                    "description": "Port number, default is 9996",
+                    "default": 9996,
+                    "minimum": 1,
+                    "maximum": 65535
+                  }
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "source-address": {
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "string",
+                "description": "Specify source IP address"
+              },
+              "ipv6": {
+                "type": "string",
+                "description": "Specify source IPv6 address"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "resend-template": {
+            "type": "object",
+            "properties": {
+              "timeout": {
+                "type": "number",
+                "description": "To set time interval to resend template (number of seconds: default is 1800, 0 means disable template resend based on timeout)",
+                "default": 1800,
+                "minimum": 0,
+                "maximum": 86400
+              },
+              "records": {
+                "type": "number",
+                "description": "To resend template once for each number of records (Number of records: default is 1000, 0 means disable template resend based on record-count)",
+                "default": 1000,
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "sample": {
+            "type": "object",
+            "properties": {
+              "ethernet-list": {
+                "type": "array",
+                "items": {
+                  "type": "ethernet"
+                }
+              },
+              "ve-list": {
+                "type": "array",
+                "items": {
+                  "type": "ve"
+                }
+              }
+            }
+          }
+        }
+      },
+      "netflow-template": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "IPFIX CUSTOM Template Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "information-element-blk": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ipfix-template-id": {
+            "type": "number",
+            "description": "Custom IPFIX Template ID",
+            "minimum": 2001,
+            "maximum": 3000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "netflow-use-partition": {
+        "type": "object",
+        "properties": {
+          "part-name": {
+            "type": "string",
+            "description": "Dedicated partition name",
+            "minLength": 1,
+            "maxLength": 14
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "netflow": {
+        "type": "object",
+        "properties": {
+          "common": {
+            "type": "object",
+            "properties": {
+              "max-packet-queue-time": {
+                "type": "number",
+                "description": "Configure netflow packet queue time (Max packet queue time(*20ms). Default:50( *20ms = 1s)))",
+                "default": 50,
+                "minimum": 0,
+                "maximum": 50
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "selector-algorithm-list": {
+                "type": "array",
+                "items": {
+                  "type": "selector-algorithm"
+                }
+              }
+            }
+          },
+          "monitor-list": {
+            "type": "array",
+            "items": {
+              "type": "monitor"
+            }
+          },
+          "collector": {
+            "type": "object",
+            "properties": {
+              "template": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "template-detail": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

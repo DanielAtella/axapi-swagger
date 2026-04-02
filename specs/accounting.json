@@ -1,0 +1,312 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ACCOUNTING",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the accounting category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/accounting/exec": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for EXEC <shell> accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting-exec"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for EXEC <shell> accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting-exec"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/accounting-exec"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for EXEC <shell> accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting-exec"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/accounting-exec"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for EXEC <shell> accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting-exec"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/accounting": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/accounting"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/accounting"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACCOUNTING"
+        ],
+        "description": "Configuration for accounting",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accounting"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "accounting-exec": {
+        "type": "object",
+        "properties": {
+          "accounting-exec-type": {
+            "type": "string",
+            "description": "'start-stop': Record start and stop without waiting; 'stop-only': Record stop when service terminates; ",
+            "enum": [
+              "start-stop",
+              "stop-only"
+            ]
+          },
+          "accounting-exec-method": {
+            "type": "string",
+            "description": "'tacplus': Use TACACS+ servers for accounting; 'radius': Use radius servers for accounting; ",
+            "enum": [
+              "tacplus",
+              "radius"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "accounting": {
+        "type": "object",
+        "properties": {
+          "commands": {
+            "type": "number",
+            "description": "Enable level for commands accounting",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 15
+          },
+          "debug": {
+            "type": "number",
+            "description": "Specify the debug level for accounting (Debug level for command accounting. bitwise OR of the following: 1(common), 2(packet),4(packet detail), 8(md5))",
+            "minimum": 1,
+            "maximum": 15
+          },
+          "stop-only": {
+            "type": "number",
+            "description": "Record stop when service terminates",
+            "default": 0
+          },
+          "tacplus": {
+            "type": "number",
+            "description": "Use TACACS+ servers for accounting",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "exec": {
+            "type": "object",
+            "properties": {
+              "accounting-exec-type": {
+                "type": "string",
+                "description": "'start-stop': Record start and stop without waiting; 'stop-only': Record stop when service terminates; ",
+                "enum": [
+                  "start-stop",
+                  "stop-only"
+                ]
+              },
+              "accounting-exec-method": {
+                "type": "string",
+                "description": "'tacplus': Use TACACS+ servers for accounting; 'radius': Use radius servers for accounting; ",
+                "enum": [
+                  "tacplus",
+                  "radius"
+                ]
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

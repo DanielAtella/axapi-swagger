@@ -1,0 +1,123 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - CONFIG-FILTER",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the config-filter category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/config-filter": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "CONFIG-FILTER"
+        ],
+        "description": "Filter for config-replace-{start/end}",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/config-filter"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CONFIG-FILTER"
+        ],
+        "description": "Filter for config-replace-{start/end}",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/config-filter"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/config-filter"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CONFIG-FILTER"
+        ],
+        "description": "Filter for config-replace-{start/end}",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/config-filter"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "config-filter": {
+        "type": "object",
+        "properties": {
+          "lineage": {
+            "type": "string",
+            "description": "lineage to filter",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "action": {
+            "type": "string",
+            "description": "'skip': Skip current lineage during replace; 'accept': Skip other lineages during replace; ",
+            "enum": [
+              "skip",
+              "accept"
+            ]
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

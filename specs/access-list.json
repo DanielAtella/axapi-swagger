@@ -1,0 +1,757 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ACCESS-LIST",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the access-list category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/access-list/extended/{extd}": {
+      "parameters": [
+        {
+          "name": "extd",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for extd"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Extended Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-extended"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Extended Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-extended"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-extended"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Extended Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-extended"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-extended"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Extended Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-extended"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list/ipv4/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Operational Status for the object ipv4",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv4-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list/ipv4": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv4 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv4 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv4 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv4 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list/ipv6/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Operational Status for the object ipv6",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv6-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list/ipv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv6 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv6 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv6 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Display IPv6 ACLs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list/standard/{std}": {
+      "parameters": [
+        {
+          "name": "std",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for std"
+        }
+      ],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Standard Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-standard"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Standard Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-standard"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-standard"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Standard Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-standard"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-standard"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Standard Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-standard"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list/summary/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Operational Status for the object summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-summary-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list/summary": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Endpoint for /axapi/v3/access-list/summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-summary"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Endpoint for /axapi/v3/access-list/summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-summary"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/access-list-summary"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Endpoint for /axapi/v3/access-list/summary",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list-summary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/access-list": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ACCESS-LIST"
+        ],
+        "description": "Configure Access List",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/access-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "access-list-extended": {
+        "type": "object",
+        "properties": {
+          "extd": {
+            "type": "number",
+            "description": "IP extended access list",
+            "minimum": 100,
+            "maximum": 199
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "access-list-ipv4-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "acl-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "access-list-ipv4": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "access-list-ipv6-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "acl-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "access-list-ipv6": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "access-list-standard": {
+        "type": "object",
+        "properties": {
+          "std": {
+            "type": "number",
+            "description": "IP standard access list",
+            "minimum": 1,
+            "maximum": 99
+          },
+          "stdrules": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "access-list-summary-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "acl-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "access-list-summary": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "access-list": {
+        "type": "object",
+        "properties": {
+          "ipv4": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ipv6": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "standard-list": {
+            "type": "array",
+            "items": {
+              "type": "standard"
+            }
+          },
+          "extended-list": {
+            "type": "array",
+            "items": {
+              "type": "extended"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

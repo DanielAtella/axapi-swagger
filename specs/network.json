@@ -1,0 +1,6746 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - NETWORK",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the network category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/network/arp/dynamic/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object dynamic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-dynamic-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/arp/dynamic": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Dynamic ARP commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-dynamic"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Dynamic ARP commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-dynamic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-arp-dynamic"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Dynamic ARP commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-dynamic"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/arp/static/{ip-addr}+{vlan}": {
+      "parameters": [
+        {
+          "name": "ip-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ip-addr"
+        },
+        {
+          "name": "vlan",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "static ARP Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-static"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "static ARP Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-static"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-arp-static"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "static ARP Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-static"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-arp-static"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "static ARP Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-static"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/arp-timeout": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "ARP entry timeout",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-timeout"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "ARP entry timeout",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-timeout"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-arp-timeout"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "ARP entry timeout",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-timeout"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-arp-timeout"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "ARP entry timeout",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp-timeout"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/arp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure ARP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-arp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/available-trunk-list/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object available-trunk-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-available-trunk-list-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/available-trunk-list": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "List of ethernet interfaces available in a partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-available-trunk-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "List of ethernet interfaces available in a partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-available-trunk-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-available-trunk-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "List of ethernet interfaces available in a partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-available-trunk-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-available-trunk-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "List of ethernet interfaces available in a partition",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-available-trunk-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/bfd": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure BFD (Bidirectional Forwarding Detection)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bfd"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure BFD (Bidirectional Forwarding Detection)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bfd"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-bfd"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure BFD (Bidirectional Forwarding Detection)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bfd"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-bfd"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure BFD (Bidirectional Forwarding Detection)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bfd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/bpdu-fwd-group/{bpdu-fwd-group-number}": {
+      "parameters": [
+        {
+          "name": "bpdu-fwd-group-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for bpdu-fwd-group-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "STP BPDU forward Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bpdu-fwd-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "STP BPDU forward Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bpdu-fwd-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-bpdu-fwd-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "STP BPDU forward Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bpdu-fwd-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-bpdu-fwd-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "STP BPDU forward Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bpdu-fwd-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/bridge-vlan-group/{bridge-vlan-group-number}": {
+      "parameters": [
+        {
+          "name": "bridge-vlan-group-number",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for bridge-vlan-group-number"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Bridge VLAN Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bridge-vlan-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Bridge VLAN Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bridge-vlan-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-bridge-vlan-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Bridge VLAN Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bridge-vlan-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-bridge-vlan-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Bridge VLAN Group Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-bridge-vlan-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/icmp-rate-limit": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMP packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmp-rate-limit"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMP packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmp-rate-limit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-icmp-rate-limit"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMP packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmp-rate-limit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-icmp-rate-limit"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMP packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmp-rate-limit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/icmpv6-rate-limit": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMPv6 packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmpv6-rate-limit"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMPv6 packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmpv6-rate-limit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-icmpv6-rate-limit"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMPv6 packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmpv6-rate-limit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-icmpv6-rate-limit"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Limit the rate of ICMPv6 packet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-icmpv6-rate-limit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/l2-bfd": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Layer-2 BFD global configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-l2-bfd"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Layer-2 BFD global configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-l2-bfd"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-l2-bfd"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Layer-2 BFD global configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-l2-bfd"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-l2-bfd"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Layer-2 BFD global configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-l2-bfd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lacp-passthrough/{peer-from}+{peer-to}": {
+      "parameters": [
+        {
+          "name": "peer-from",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for peer-from"
+        },
+        {
+          "name": "peer-to",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for peer-to"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Peer ports to forward received lacp packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp-passthrough"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Peer ports to forward received lacp packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp-passthrough"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lacp-passthrough"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Peer ports to forward received lacp packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp-passthrough"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lacp-passthrough"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Peer ports to forward received lacp packets",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp-passthrough"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lacp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "LACP commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "LACP commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lacp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "LACP commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lacp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "LACP commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lacp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lif-stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables LIF interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lif-stats"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables LIF interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lif-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lif-stats"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables LIF interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lif-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lif-stats"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables LIF interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lif-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lldp/management-address/dns/{dns}": {
+      "parameters": [
+        {
+          "name": "dns",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for dns"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address dns address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-dns"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address dns address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-dns"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp-management-address-dns"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address dns address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-dns"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp-management-address-dns"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address dns address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-dns"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lldp/management-address/ipv4-addr/{ipv4}": {
+      "parameters": [
+        {
+          "name": "ipv4",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv4"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv4 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv4-addr"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv4 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv4-addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp-management-address-ipv4-addr"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv4 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv4-addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp-management-address-ipv4-addr"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv4 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv4-addr"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lldp/management-address/ipv6-addr/{ipv6}": {
+      "parameters": [
+        {
+          "name": "ipv6",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv6-addr"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv6-addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp-management-address-ipv6-addr"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv6-addr"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp-management-address-ipv6-addr"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management-address ipv6 address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address-ipv6-addr"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lldp/management-address": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure lldp management address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp-management-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/lldp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure LLDP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure LLDP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure LLDP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-lldp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure LLDP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-lldp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/mac-address/dynamic/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object dynamic",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-dynamic-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/mac-address/dynamic": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "dynamic MAC commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-dynamic"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "dynamic MAC commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-dynamic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-mac-address-dynamic"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "dynamic MAC commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-dynamic"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/mac-address/static/{mac}+{vlan}": {
+      "parameters": [
+        {
+          "name": "mac",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for mac"
+        },
+        {
+          "name": "vlan",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Static MAC commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-static"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Static MAC commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-static"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-mac-address-static"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Static MAC commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-static"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-mac-address-static"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Static MAC commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address-static"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/mac-address": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure a MAC address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/mac-age-time": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Set Aging period for all MAC Interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-age-time"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Set Aging period for all MAC Interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-age-time"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-mac-age-time"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Set Aging period for all MAC Interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-age-time"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-mac-age-time"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Set Aging period for all MAC Interfaces",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-mac-age-time"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/info/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-info-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/info": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-info"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-info"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-info"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-info"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-info"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-info"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/interface/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object interface",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-interface-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/interface": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-interface"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-interface"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-interface"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-interface"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-interface"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Spanning tree mode info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-interface"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/mstp/instance/{instance-start}": {
+      "parameters": [
+        {
+          "name": "instance-start",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for instance-start"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enable spanning tree instance ID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp-instance"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enable spanning tree instance ID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp-instance"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-mstp-instance"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enable spanning tree instance ID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp-instance"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-mstp-instance"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enable spanning tree instance ID",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp-instance"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/mstp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol MST",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol MST",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-mstp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol MST",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-mstp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol MST",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-mstp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/rstp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol RSTP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-rstp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol RSTP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-rstp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-rstp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol RSTP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-rstp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-rstp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol RSTP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-rstp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode/stp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol STP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-stp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol STP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-stp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-stp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol STP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-stp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-spanning-tree-mode-stp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree protocol STP",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode-stp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree/mode": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure spanning tree mode",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree-mode"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/spanning-tree": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "spanning tree protocol config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-spanning-tree"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/trunk/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object trunk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-trunk-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/trunk": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Trunk Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-trunk"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Trunk Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-trunk"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Trunk Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-trunk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-trunk"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Trunk Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-trunk"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/twamp/responder/ip/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Statistics for the object ip",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ip-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/twamp/responder/ip": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ip"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-twamp-responder-ip"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ip"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-twamp-responder-ip"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ip"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/twamp/responder/ipv6/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Statistics for the object ipv6",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ipv6-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/twamp/responder/ipv6": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-twamp-responder-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-twamp-responder-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/twamp/responder": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-twamp-responder"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-twamp-responder"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure TWAMP responder",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp-responder"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/twamp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure twamp",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-twamp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/ve-stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables vlan ve interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-ve-stats"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables vlan ve interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-ve-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-ve-stats"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables vlan ve interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-ve-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-ve-stats"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Enables/Disables vlan ve interface stats generation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-ve-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/virtual-wire-ethernet-group/{group-id}/oper": {
+      "parameters": [
+        {
+          "name": "group-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for group-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object virtual-wire-ethernet-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-ethernet-group-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/virtual-wire-ethernet-group/{group-id}": {
+      "parameters": [
+        {
+          "name": "group-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for group-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Endpoint for /axapi/v3/network/virtual-wire-ethernet-group/{group-id}",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-ethernet-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Endpoint for /axapi/v3/network/virtual-wire-ethernet-group/{group-id}",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-ethernet-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-virtual-wire-ethernet-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Endpoint for /axapi/v3/network/virtual-wire-ethernet-group/{group-id}",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-ethernet-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-virtual-wire-ethernet-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Endpoint for /axapi/v3/network/virtual-wire-ethernet-group/{group-id}",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-ethernet-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/virtual-wire-global/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object virtual-wire-global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-global-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/virtual-wire-global/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Statistics for the object virtual-wire-global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-global-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/virtual-wire-global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Virtual Wire Global Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Virtual Wire Global Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-virtual-wire-global"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Virtual Wire Global Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-virtual-wire-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Virtual Wire Global Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/virtual-wire/{virtual-wire-id}/oper": {
+      "parameters": [
+        {
+          "name": "virtual-wire-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for virtual-wire-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object virtual-wire",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/virtual-wire/{virtual-wire-id}": {
+      "parameters": [
+        {
+          "name": "virtual-wire-id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for virtual-wire-id"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Virtual Wire",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Virtual Wire",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-virtual-wire"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Virtual Wire",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-virtual-wire"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Virtual Wire",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-virtual-wire"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/vlan-global/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object vlan-global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-global-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/vlan-global/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Statistics for the object vlan-global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-global-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/vlan-global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure global options for vlan",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure global options for vlan",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-vlan-global"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure global options for vlan",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-vlan-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure global options for vlan",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/vlan-group/{vlan-num-start}+{vlan-num-end}": {
+      "parameters": [
+        {
+          "name": "vlan-num-start",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan-num-start"
+        },
+        {
+          "name": "vlan-num-end",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan-num-end"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure group of VLANs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure group of VLANs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-vlan-group"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure group of VLANs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-vlan-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure group of VLANs",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/vlan/{vlan-num}/oper": {
+      "parameters": [
+        {
+          "name": "vlan-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan-num"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Operational Status for the object vlan",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/vlan/{vlan-num}/stats": {
+      "parameters": [
+        {
+          "name": "vlan-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan-num"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Statistics for the object vlan",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network/vlan/{vlan-num}": {
+      "parameters": [
+        {
+          "name": "vlan-num",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for vlan-num"
+        }
+      ],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure VLAN",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure VLAN",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-vlan"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure VLAN",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/network-vlan"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure VLAN",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network-vlan"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/network": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "NETWORK"
+        ],
+        "description": "Configure Network Command",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/network"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "network-arp-dynamic-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "arp-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-arp-dynamic": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-arp-static": {
+        "type": "object",
+        "properties": {
+          "ip-addr": {
+            "type": "string",
+            "description": "IP address"
+          },
+          "mac-addr": {
+            "type": "string",
+            "description": "MAC address"
+          },
+          "ethernet": {
+            "type": "number",
+            "description": "Ethernet port (Port Value)",
+            "minimum": 7,
+            "maximum": 103
+          },
+          "trunk": {
+            "type": "number",
+            "description": "Trunk group",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "vlan": {
+            "type": "number",
+            "description": "VLAN ID",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-arp-timeout": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "description": "ARP entry timeout",
+            "default": 300,
+            "minimum": 60,
+            "maximum": 86400
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-arp": {
+        "type": "object",
+        "properties": {
+          "static-list": {
+            "type": "array",
+            "items": {
+              "type": "static"
+            }
+          },
+          "dynamic": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "network-available-trunk-list-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "if-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-available-trunk-list": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-bfd": {
+        "type": "object",
+        "properties": {
+          "echo": {
+            "type": "number",
+            "description": "Enable BFD Echo",
+            "default": 0
+          },
+          "enable": {
+            "type": "number",
+            "description": "Enable BFD",
+            "default": 0
+          },
+          "interval-cfg": {
+            "type": "object",
+            "properties": {
+              "interval": {
+                "type": "number",
+                "description": "Transmit interval between BFD packets (Milliseconds (default: 800))",
+                "default": 800,
+                "minimum": 48,
+                "maximum": 1000
+              },
+              "min-rx": {
+                "type": "number",
+                "description": "Minimum receive interval capability (Milliseconds (default: 800))",
+                "default": 800,
+                "minimum": 48,
+                "maximum": 1000
+              },
+              "multiplier": {
+                "type": "number",
+                "description": "Multiplier value used to compute holddown (value used to multiply the interval (default: 4))",
+                "default": 4,
+                "minimum": 3,
+                "maximum": 50
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-bpdu-fwd-group": {
+        "type": "object",
+        "properties": {
+          "bpdu-fwd-group-number": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "ethernet-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "network-bridge-vlan-group": {
+        "type": "object",
+        "properties": {
+          "bridge-vlan-group-number": {
+            "type": "number",
+            "description": "Bridge VLAN Group Number",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "vlan-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "name": {
+            "type": "string",
+            "description": "Bridge Group Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "forward-traffic": {
+            "type": "string",
+            "description": "'forward-all-traffic': Forward all traffic between bridge members; 'forward-ip-traffic': Forward only IP traffic between bridge members (default); ",
+            "default": "forward-ip-traffic",
+            "enum": [
+              "forward-all-traffic",
+              "forward-ip-traffic"
+            ]
+          },
+          "ve": {
+            "type": "number",
+            "description": "Virtual Ethernet Port (Virtual Ethernet Port number)",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "network-icmp-rate-limit": {
+        "type": "object",
+        "properties": {
+          "icmp-normal-rate-limit": {
+            "type": "number",
+            "description": "Normal rate limit. If exceeds this limit, drop the ICMP packet that goes over the limit",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "icmp-lockup": {
+            "type": "number",
+            "description": "Enter lockup state when ICMP rate exceeds lockup rate limit (Maximum rate limit. If exceeds this limit, drop all ICMP packet for a time period)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "icmp-lockup-period": {
+            "type": "number",
+            "description": "Lockup period (second)",
+            "minimum": 1,
+            "maximum": 16383
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-icmpv6-rate-limit": {
+        "type": "object",
+        "properties": {
+          "icmpv6-normal-rate-limit": {
+            "type": "number",
+            "description": "Normal rate limit. If exceeds this limit, drop the ICMP packet that goes over the limit",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "icmpv6-lockup": {
+            "type": "number",
+            "description": "Enter lockup state when ICMP rate exceeds lockup rate limit (Maximum rate limit. If exceeds this limit, drop all ICMP packet for a time period)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "icmpv6-lockup-period": {
+            "type": "number",
+            "description": "Lockup period (second)",
+            "minimum": 1,
+            "maximum": 16383
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-l2-bfd": {
+        "type": "object",
+        "properties": {
+          "ether-type": {
+            "type": "string",
+            "description": "Ethernet paylaod type for L2BFD packets, help-val 16 bit hex value, default is hex 88B6",
+            "minLength": 1,
+            "maxLength": 4
+          },
+          "tx-interval": {
+            "type": "number",
+            "description": "Transmit interval between BFD packets (Milliseconds (default: 800))",
+            "default": 800,
+            "minimum": 48,
+            "maximum": 1000
+          },
+          "rx-interval": {
+            "type": "number",
+            "description": "Minimum receive interval capability (Milliseconds (default: 800))",
+            "default": 800,
+            "minimum": 48,
+            "maximum": 1000
+          },
+          "multiplier": {
+            "type": "number",
+            "description": "Multiplier value used to compute holddown (value used to multiply the interval (default: 4))",
+            "default": 4,
+            "minimum": 3,
+            "maximum": 50
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-lacp-passthrough": {
+        "type": "object",
+        "properties": {
+          "peer-from": {
+            "type": "number",
+            "description": "Peer member to forward received LACP packets",
+            "minimum": 0,
+            "maximum": 103
+          },
+          "peer-to": {
+            "type": "number",
+            "description": "Peer member to forward received LACP packets",
+            "minimum": 0,
+            "maximum": 103
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-lacp": {
+        "type": "object",
+        "properties": {
+          "system-priority": {
+            "type": "number",
+            "description": "LACP system priority (LACP system priority, 1-65535, default 32768)",
+            "default": 32768,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-lif-stats": {
+        "type": "object",
+        "properties": {
+          "enable": {
+            "type": "number",
+            "description": "Enable LIF interface stats generation",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-lldp-management-address-dns": {
+        "type": "object",
+        "properties": {
+          "dns": {
+            "type": "string",
+            "description": "Configure lldp management-address, subtype is dns (lldp management-address dns address)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "interface": {
+            "type": "object",
+            "properties": {
+              "ethernet": {
+                "type": "number",
+                "description": "configure lldp management-address interface ethernet (lldp management-address interface port number)",
+                "minimum": 7,
+                "maximum": 192
+              },
+              "ve": {
+                "type": "number",
+                "description": "configure lldp management-address interface management (lldp management-address interface port number)",
+                "minimum": 2,
+                "maximum": 4094
+              },
+              "management": {
+                "type": "number",
+                "description": "configure lldp management-address interface management",
+                "default": 0
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-lldp-management-address-ipv4-addr": {
+        "type": "object",
+        "properties": {
+          "ipv4": {
+            "type": "string",
+            "description": "Configure lldp management-address, subtype is ipv4 (lldp management-address ipv4 address)"
+          },
+          "interface-ipv4": {
+            "type": "object",
+            "properties": {
+              "ipv4-eth": {
+                "type": "number",
+                "description": "configure lldp management-address interface ethernet (lldp management-address interface port number)",
+                "minimum": 7,
+                "maximum": 14
+              },
+              "ipv4-ve": {
+                "type": "number",
+                "description": "configure lldp management-address interface ve (lldp management-address interface port number)",
+                "minimum": 2,
+                "maximum": 4094
+              },
+              "ipv4-mgmt": {
+                "type": "number",
+                "description": "configure lldp management-address interface management",
+                "default": 0
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-lldp-management-address-ipv6-addr": {
+        "type": "object",
+        "properties": {
+          "ipv6": {
+            "type": "string",
+            "description": "Configure lldp management-address, subtype is ipv6 (lldp management-address ipv6 address)"
+          },
+          "interface-ipv6": {
+            "type": "object",
+            "properties": {
+              "ipv6-eth": {
+                "type": "number",
+                "description": "configure lldp management-address interface ethernet (lldp management-address interface port number)",
+                "minimum": 7,
+                "maximum": 139
+              },
+              "ipv6-ve": {
+                "type": "number",
+                "description": "configure lldp management-address interface ve (lldp management-address interface port number)",
+                "minimum": 2,
+                "maximum": 4094
+              },
+              "ipv6-mgmt": {
+                "type": "number",
+                "description": "configure lldp management-address interface management",
+                "default": 0
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-lldp-management-address": {
+        "type": "object",
+        "properties": {
+          "dns-list": {
+            "type": "array",
+            "items": {
+              "type": "dns"
+            }
+          },
+          "ipv4-addr-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv4-addr"
+            }
+          },
+          "ipv6-addr-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv6-addr"
+            }
+          }
+        }
+      },
+      "network-lldp": {
+        "type": "object",
+        "properties": {
+          "system-name": {
+            "type": "string",
+            "description": "Configure lldp system name",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "system-description": {
+            "type": "string",
+            "description": "Configure lldp system description",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "enable-cfg": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "number",
+                "description": "Enable lldp",
+                "default": 0
+              },
+              "rx": {
+                "type": "number",
+                "description": "Enable lldp rx",
+                "default": 0
+              },
+              "tx": {
+                "type": "number",
+                "description": "Enable lldp tx",
+                "default": 0
+              }
+            }
+          },
+          "notification-cfg": {
+            "type": "object",
+            "properties": {
+              "notification": {
+                "type": "number",
+                "description": "Enable lldp notification",
+                "default": 0
+              },
+              "interval": {
+                "type": "number",
+                "description": "Configure lldp notification interval, default is 30 (The lldp notification interval value, default is 30)",
+                "default": 30,
+                "minimum": 5,
+                "maximum": 3600
+              }
+            }
+          },
+          "tx-set": {
+            "type": "object",
+            "properties": {
+              "fast-count": {
+                "type": "number",
+                "description": "Configure lldp tx fast count value (The lldp tx fast count value, default is 4)",
+                "default": 4,
+                "minimum": 1,
+                "maximum": 8
+              },
+              "fast-interval": {
+                "type": "number",
+                "description": "Configure lldp tx fast interval value (The lldp tx fast interval value, default is 1)",
+                "default": 1,
+                "minimum": 1,
+                "maximum": 3600
+              },
+              "hold": {
+                "type": "number",
+                "description": "Configure lldp tx hold multiplier (The lldp tx hold value, default is 4)",
+                "default": 4,
+                "minimum": 1,
+                "maximum": 10
+              },
+              "tx-interval": {
+                "type": "number",
+                "description": "Configure lldp tx interval (The lldp tx interval value, default is 30)",
+                "default": 30,
+                "minimum": 1,
+                "maximum": 3600
+              },
+              "reinit-delay": {
+                "type": "number",
+                "description": "Configure lldp tx reinit delay (The lldp tx reinit_delay value, default is 2)",
+                "default": 2,
+                "minimum": 1,
+                "maximum": 10
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "management-address": {
+            "type": "object",
+            "properties": {
+              "dns-list": {
+                "type": "array",
+                "items": {
+                  "type": "dns"
+                }
+              },
+              "ipv4-addr-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv4-addr"
+                }
+              },
+              "ipv6-addr-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv6-addr"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-mac-address-dynamic-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "Age-time": {
+                "type": "number"
+              },
+              "macoper": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-mac-address-dynamic": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-mac-address-static": {
+        "type": "object",
+        "properties": {
+          "mac": {
+            "type": "string",
+            "description": "Configure a Static MAC address"
+          },
+          "port": {
+            "type": "number",
+            "description": "Ethernet Port on which the Address is applicable (Port Value)",
+            "minimum": 7,
+            "maximum": 103
+          },
+          "vlan": {
+            "type": "number",
+            "description": "VLAN Id",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "dest": {
+            "type": "number",
+            "description": "Trap MAC with this DA to CPU",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-mac-address": {
+        "type": "object",
+        "properties": {
+          "static-list": {
+            "type": "array",
+            "items": {
+              "type": "static"
+            }
+          },
+          "dynamic": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "network-mac-age-time": {
+        "type": "object",
+        "properties": {
+          "aging-time": {
+            "type": "number",
+            "description": "Set aging period in seconds for all MAC interfaces (default 300 seconds)",
+            "default": 300,
+            "minimum": 10,
+            "maximum": 600
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-spanning-tree-mode-info-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string"
+              },
+              "packets_input": {
+                "type": "number"
+              },
+              "packets_output": {
+                "type": "number"
+              },
+              "instances": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-spanning-tree-mode-info": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-spanning-tree-mode-interface-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "ports": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-spanning-tree-mode-interface": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-spanning-tree-mode-mstp-instance": {
+        "type": "object",
+        "properties": {
+          "instance-start": {
+            "type": "number",
+            "description": "Instance ID",
+            "minimum": 1,
+            "maximum": 4094
+          },
+          "vlan-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "priority": {
+            "type": "number",
+            "description": "Set instance priority",
+            "default": 32768,
+            "minimum": 0,
+            "maximum": 2147483647
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "network-spanning-tree-mode-mstp": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "number",
+            "description": "Enable spanning tree MSTP mode",
+            "default": 0
+          },
+          "priority": {
+            "type": "number",
+            "description": "Set bridge priority",
+            "default": 32768,
+            "minimum": 0,
+            "maximum": 61440
+          },
+          "revision-cfg": {
+            "type": "object",
+            "properties": {
+              "revision": {
+                "type": "number",
+                "description": "Set MSTP revision level and name",
+                "minimum": 0,
+                "maximum": 65535
+              },
+              "name": {
+                "type": "string",
+                "description": "Set MSTP revision name",
+                "minLength": 1,
+                "maxLength": 31
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "instance-list": {
+            "type": "array",
+            "items": {
+              "type": "instance"
+            }
+          }
+        }
+      },
+      "network-spanning-tree-mode-rstp": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "number",
+            "description": "enable spanning tree RSTP mode",
+            "default": 0
+          },
+          "priority": {
+            "type": "number",
+            "description": "set bridge priority",
+            "default": 32768,
+            "minimum": 0,
+            "maximum": 61440
+          },
+          "vlan-start": {
+            "type": "number",
+            "description": "VLAN ID",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-spanning-tree-mode-stp": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "number",
+            "description": "enable spanning tree RSTP mode",
+            "default": 0
+          },
+          "priority": {
+            "type": "number",
+            "description": "set bridge priority",
+            "default": 32768,
+            "minimum": 0,
+            "maximum": 61440
+          },
+          "vlan-start": {
+            "type": "number",
+            "description": "VLAN ID",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-spanning-tree-mode": {
+        "type": "object",
+        "properties": {
+          "info": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "interface": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "stp": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "number",
+                "description": "enable spanning tree RSTP mode",
+                "default": 0
+              },
+              "priority": {
+                "type": "number",
+                "description": "set bridge priority",
+                "default": 32768,
+                "minimum": 0,
+                "maximum": 61440
+              },
+              "vlan-start": {
+                "type": "number",
+                "description": "VLAN ID",
+                "minimum": 2,
+                "maximum": 4094
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "rstp": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "number",
+                "description": "enable spanning tree RSTP mode",
+                "default": 0
+              },
+              "priority": {
+                "type": "number",
+                "description": "set bridge priority",
+                "default": 32768,
+                "minimum": 0,
+                "maximum": 61440
+              },
+              "vlan-start": {
+                "type": "number",
+                "description": "VLAN ID",
+                "minimum": 2,
+                "maximum": 4094
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "mstp": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "number",
+                "description": "Enable spanning tree MSTP mode",
+                "default": 0
+              },
+              "priority": {
+                "type": "number",
+                "description": "Set bridge priority",
+                "default": 32768,
+                "minimum": 0,
+                "maximum": 61440
+              },
+              "revision-cfg": {
+                "type": "object",
+                "properties": {
+                  "revision": {
+                    "type": "number",
+                    "description": "Set MSTP revision level and name",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "Set MSTP revision name",
+                    "minLength": 1,
+                    "maxLength": 31
+                  }
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "instance-list": {
+                "type": "array",
+                "items": {
+                  "type": "instance"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-spanning-tree": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "object",
+            "properties": {
+              "info": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "interface": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "stp": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "number",
+                    "description": "enable spanning tree RSTP mode",
+                    "default": 0
+                  },
+                  "priority": {
+                    "type": "number",
+                    "description": "set bridge priority",
+                    "default": 32768,
+                    "minimum": 0,
+                    "maximum": 61440
+                  },
+                  "vlan-start": {
+                    "type": "number",
+                    "description": "VLAN ID",
+                    "minimum": 2,
+                    "maximum": 4094
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "rstp": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "number",
+                    "description": "enable spanning tree RSTP mode",
+                    "default": 0
+                  },
+                  "priority": {
+                    "type": "number",
+                    "description": "set bridge priority",
+                    "default": 32768,
+                    "minimum": 0,
+                    "maximum": 61440
+                  },
+                  "vlan-start": {
+                    "type": "number",
+                    "description": "VLAN ID",
+                    "minimum": 2,
+                    "maximum": 4094
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "mstp": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "number",
+                    "description": "Enable spanning tree MSTP mode",
+                    "default": 0
+                  },
+                  "priority": {
+                    "type": "number",
+                    "description": "Set bridge priority",
+                    "default": 32768,
+                    "minimum": 0,
+                    "maximum": 61440
+                  },
+                  "revision-cfg": {
+                    "type": "object",
+                    "properties": {
+                      "revision": {
+                        "type": "number",
+                        "description": "Set MSTP revision level and name",
+                        "minimum": 0,
+                        "maximum": 65535
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "Set MSTP revision name",
+                        "minLength": 1,
+                        "maxLength": 31
+                      }
+                    }
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "instance-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "instance"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-trunk-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "trunk": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-trunk": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-twamp-responder-ip-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "rx_pkts": {
+                "type": "number",
+                "description": "Rx IP TWAMP test packets"
+              },
+              "tx_pkts": {
+                "type": "number",
+                "description": "Tx IP TWAMP test packets"
+              },
+              "rx_drop_not_enabled_v4": {
+                "type": "number",
+                "description": "Rx IP disabled drop"
+              },
+              "rx_acl_drop": {
+                "type": "number",
+                "description": "Rx IP client-list drop"
+              },
+              "twamp_hdr_len_err": {
+                "type": "number",
+                "description": "Rx TWAMP hdr length error drop"
+              },
+              "no_route_err": {
+                "type": "number",
+                "description": "Tx IP no route error drop"
+              },
+              "other_err": {
+                "type": "number",
+                "description": "IP other error drop"
+              }
+            }
+          }
+        }
+      },
+      "network-twamp-responder-ip": {
+        "type": "object",
+        "properties": {
+          "acl-id": {
+            "type": "number",
+            "description": "ACL id",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "acl-name": {
+            "type": "string",
+            "description": "Apply a named access list (Access List name)",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-twamp-responder-ipv6-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "rx_pkts_v6": {
+                "type": "number",
+                "description": "Rx IPv6 TWAMP test packets"
+              },
+              "tx_pkts_v6": {
+                "type": "number",
+                "description": "Tx IPv6 TWAMP test packets"
+              },
+              "rx_drop_not_enabled_v6": {
+                "type": "number",
+                "description": "Rx IPv6 disabled drop"
+              },
+              "rx_acl_drop_v6": {
+                "type": "number",
+                "description": "Rx IPv6 client-list drop"
+              },
+              "twamp_hdr_len_err_v6": {
+                "type": "number",
+                "description": "Rx IPv6 TWAMP hdr length error drop"
+              },
+              "no_route_err_v6": {
+                "type": "number",
+                "description": "Tx IPv6 no route error drop"
+              },
+              "other_err_v6": {
+                "type": "number",
+                "description": "IPv6 Other error drop"
+              }
+            }
+          }
+        }
+      },
+      "network-twamp-responder-ipv6": {
+        "type": "object",
+        "properties": {
+          "v6-acl-name": {
+            "type": "string",
+            "description": "Apply an access list (Named Access List)",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-twamp-responder": {
+        "type": "object",
+        "properties": {
+          "enable-ip": {
+            "type": "number",
+            "description": "Enable IP TWAMP packets",
+            "default": 0
+          },
+          "enable-ipv6": {
+            "type": "number",
+            "description": "Enable IPv6 TWAMP packets",
+            "default": 0
+          },
+          "enable-both-ip-ipv6": {
+            "type": "number",
+            "description": "Enable both IP and IPv6 TWAMP packets",
+            "default": 0
+          },
+          "port": {
+            "type": "number",
+            "description": "Port number",
+            "minimum": 1024,
+            "maximum": 65535
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "ip": {
+            "type": "object",
+            "properties": {
+              "acl-id": {
+                "type": "number",
+                "description": "ACL id",
+                "minimum": 1,
+                "maximum": 199
+              },
+              "acl-name": {
+                "type": "string",
+                "description": "Apply a named access list (Access List name)",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ipv6": {
+            "type": "object",
+            "properties": {
+              "v6-acl-name": {
+                "type": "string",
+                "description": "Apply an access list (Named Access List)",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "network-twamp": {
+        "type": "object",
+        "properties": {
+          "responder": {
+            "type": "object",
+            "properties": {
+              "enable-ip": {
+                "type": "number",
+                "description": "Enable IP TWAMP packets",
+                "default": 0
+              },
+              "enable-ipv6": {
+                "type": "number",
+                "description": "Enable IPv6 TWAMP packets",
+                "default": 0
+              },
+              "enable-both-ip-ipv6": {
+                "type": "number",
+                "description": "Enable both IP and IPv6 TWAMP packets",
+                "default": 0
+              },
+              "port": {
+                "type": "number",
+                "description": "Port number",
+                "minimum": 1024,
+                "maximum": 65535
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "ip": {
+                "type": "object",
+                "properties": {
+                  "acl-id": {
+                    "type": "number",
+                    "description": "ACL id",
+                    "minimum": 1,
+                    "maximum": 199
+                  },
+                  "acl-name": {
+                    "type": "string",
+                    "description": "Apply a named access list (Access List name)",
+                    "minLength": 1,
+                    "maxLength": 16
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "ipv6": {
+                "type": "object",
+                "properties": {
+                  "v6-acl-name": {
+                    "type": "string",
+                    "description": "Apply an access list (Named Access List)",
+                    "minLength": 1,
+                    "maxLength": 16
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-ve-stats": {
+        "type": "object",
+        "properties": {
+          "enable": {
+            "type": "number",
+            "description": "Enable vlan ve interface stats generation",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-virtual-wire-ethernet-group-oper": {
+        "type": "object",
+        "properties": {
+          "group-id": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 16
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "eth_member_status": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "trunk_member_status": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "lead_port": {
+                "type": "number"
+              },
+              "group_status": {
+                "type": "string",
+                "enum": [
+                  "Up",
+                  "Down"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "network-virtual-wire-ethernet-group": {
+        "type": "object",
+        "properties": {
+          "group-id": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 16
+          },
+          "eth-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "trunk-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "network-virtual-wire-global-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "vlan_group": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-virtual-wire-global-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "vlan-update": {
+                "type": "number",
+                "description": "VLAN update"
+              },
+              "mac-update": {
+                "type": "number",
+                "description": "MAC update"
+              }
+            }
+          }
+        }
+      },
+      "network-virtual-wire-global": {
+        "type": "object",
+        "properties": {
+          "vlan-update-period": {
+            "type": "number",
+            "description": "Update period in second (default is 30)",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "update-active-vlan": {
+            "type": "string",
+            "description": "'all': all; 'l3-packet': l3-packet(default); ",
+            "enum": [
+              "all",
+              "l3-packet"
+            ]
+          },
+          "src-mac-learning": {
+            "type": "number",
+            "description": "Update source mac information for all interfaces",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "network-virtual-wire-oper": {
+        "type": "object",
+        "properties": {
+          "virtual-wire-id": {
+            "type": "number",
+            "description": "virtual wire id",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "endpoints": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "virtual_wire_status": {
+                "type": "string",
+                "enum": [
+                  "Up",
+                  "Down"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "network-virtual-wire": {
+        "type": "object",
+        "properties": {
+          "virtual-wire-id": {
+            "type": "number",
+            "description": "virtual wire id",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "eth1": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 49
+          },
+          "eth2": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 49
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "network-vlan-global-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "vlan-trans-list": {
+                "type": "object",
+                "properties": {
+                  "vlan": {
+                    "type": "number",
+                    "description": "VLAN id",
+                    "minimum": 2,
+                    "maximum": 4094
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "network-vlan-global-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "xparent_vlan_list_err": {
+                "type": "number",
+                "description": "Transparent Mode VLAN List Errors"
+              }
+            }
+          }
+        }
+      },
+      "network-vlan-global": {
+        "type": "object",
+        "properties": {
+          "enable-def-vlan-l2-forwarding": {
+            "type": "number",
+            "description": "Enable layer 2 forwarding on default vlan",
+            "default": 0
+          },
+          "l3-vlan-fwd-disable": {
+            "type": "number",
+            "description": "Disable L3 forwarding between VLANs",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "network-vlan-group": {
+        "type": "object",
+        "properties": {
+          "vlan-num-start": {
+            "type": "number",
+            "description": "Start of VLAN range",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "vlan-num-end": {
+            "type": "number",
+            "description": "End of VLAN range",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "eth-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "trunk-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "network-vlan-oper": {
+        "type": "object",
+        "properties": {
+          "vlan-num": {
+            "type": "number",
+            "description": "VLAN number",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "oper": {
+            "type": "object",
+            "properties": {
+              "vlan_name": {
+                "type": "string"
+              },
+              "ve_num": {
+                "type": "number"
+              },
+              "is_shared_vlan": {
+                "type": "string"
+              },
+              "un_tagg_eth_ports": {
+                "type": "object",
+                "properties": {
+                  "ports": {
+                    "type": "number"
+                  }
+                }
+              },
+              "tagg_eth_ports": {
+                "type": "object",
+                "properties": {
+                  "ports": {
+                    "type": "number"
+                  }
+                }
+              },
+              "un_tagg_logical_ports": {
+                "type": "object",
+                "properties": {
+                  "ports": {
+                    "type": "number"
+                  }
+                }
+              },
+              "tagg_logical_ports": {
+                "type": "object",
+                "properties": {
+                  "ports": {
+                    "type": "number"
+                  }
+                }
+              },
+              "span-tree": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "network-vlan-stats": {
+        "type": "object",
+        "properties": {
+          "vlan-num": {
+            "type": "number",
+            "description": "VLAN number",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "broadcast_count": {
+                "type": "number",
+                "description": "Broadcast counter"
+              },
+              "multicast_count": {
+                "type": "number",
+                "description": "Multicast counter"
+              },
+              "ip_multicast_count": {
+                "type": "number",
+                "description": "IP Multicast counter"
+              },
+              "unknown_unicast_count": {
+                "type": "number",
+                "description": "Unknown Unicast counter"
+              },
+              "mac_movement_count": {
+                "type": "number",
+                "description": "Mac Movement counter"
+              },
+              "shared_vlan_partition_switched_counter": {
+                "type": "number",
+                "description": "SVLAN Partition switched counter"
+              }
+            }
+          }
+        }
+      },
+      "network-vlan": {
+        "type": "object",
+        "properties": {
+          "vlan-num": {
+            "type": "number",
+            "description": "VLAN number",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "untagged-eth-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "untagged-trunk-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "untagged-lif": {
+            "type": "string",
+            "description": "Logical tunnel interface (Logical tunnel interface name)",
+            "minLength": 1,
+            "maxLength": 15
+          },
+          "tagged-eth-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "tagged-trunk-list": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "ve": {
+            "type": "number",
+            "description": "ve number",
+            "minimum": 2,
+            "maximum": 4094
+          },
+          "name": {
+            "type": "string",
+            "description": "VLAN name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "traffic-distribution-mode": {
+            "type": "string",
+            "description": "'sip': sip; 'dip': dip; 'primary': primary; 'blade': blade; 'l4-src-port': l4-src-port; 'l4-dst-port': l4-dst-port; ",
+            "enum": [
+              "sip",
+              "dip",
+              "primary",
+              "blade",
+              "l4-src-port",
+              "l4-dst-port"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "network": {
+        "type": "object",
+        "properties": {
+          "icmp-rate-limit": {
+            "type": "object",
+            "properties": {
+              "icmp-normal-rate-limit": {
+                "type": "number",
+                "description": "Normal rate limit. If exceeds this limit, drop the ICMP packet that goes over the limit",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "icmp-lockup": {
+                "type": "number",
+                "description": "Enter lockup state when ICMP rate exceeds lockup rate limit (Maximum rate limit. If exceeds this limit, drop all ICMP packet for a time period)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "icmp-lockup-period": {
+                "type": "number",
+                "description": "Lockup period (second)",
+                "minimum": 1,
+                "maximum": 16383
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "icmpv6-rate-limit": {
+            "type": "object",
+            "properties": {
+              "icmpv6-normal-rate-limit": {
+                "type": "number",
+                "description": "Normal rate limit. If exceeds this limit, drop the ICMP packet that goes over the limit",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "icmpv6-lockup": {
+                "type": "number",
+                "description": "Enter lockup state when ICMP rate exceeds lockup rate limit (Maximum rate limit. If exceeds this limit, drop all ICMP packet for a time period)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "icmpv6-lockup-period": {
+                "type": "number",
+                "description": "Lockup period (second)",
+                "minimum": 1,
+                "maximum": 16383
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "trunk": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "vlan-list": {
+            "type": "array",
+            "items": {
+              "type": "vlan"
+            }
+          },
+          "bridge-vlan-group-list": {
+            "type": "array",
+            "items": {
+              "type": "bridge-vlan-group"
+            }
+          },
+          "vlan-group-list": {
+            "type": "array",
+            "items": {
+              "type": "vlan-group"
+            }
+          },
+          "bpdu-fwd-group-list": {
+            "type": "array",
+            "items": {
+              "type": "bpdu-fwd-group"
+            }
+          },
+          "lacp": {
+            "type": "object",
+            "properties": {
+              "system-priority": {
+                "type": "number",
+                "description": "LACP system priority (LACP system priority, 1-65535, default 32768)",
+                "default": 32768,
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "lacp-passthrough-list": {
+            "type": "array",
+            "items": {
+              "type": "lacp-passthrough"
+            }
+          },
+          "vlan-global": {
+            "type": "object",
+            "properties": {
+              "enable-def-vlan-l2-forwarding": {
+                "type": "number",
+                "description": "Enable layer 2 forwarding on default vlan",
+                "default": 0
+              },
+              "l3-vlan-fwd-disable": {
+                "type": "number",
+                "description": "Disable L3 forwarding between VLANs",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ve-stats": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "number",
+                "description": "Enable vlan ve interface stats generation",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "available-trunk-list": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "lif-stats": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "number",
+                "description": "Enable LIF interface stats generation",
+                "default": 0
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "virtual-wire-list": {
+            "type": "array",
+            "items": {
+              "type": "virtual-wire"
+            }
+          },
+          "arp": {
+            "type": "object",
+            "properties": {
+              "static-list": {
+                "type": "array",
+                "items": {
+                  "type": "static"
+                }
+              },
+              "dynamic": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "mac-age-time": {
+            "type": "object",
+            "properties": {
+              "aging-time": {
+                "type": "number",
+                "description": "Set aging period in seconds for all MAC interfaces (default 300 seconds)",
+                "default": 300,
+                "minimum": 10,
+                "maximum": 600
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "mac-address": {
+            "type": "object",
+            "properties": {
+              "static-list": {
+                "type": "array",
+                "items": {
+                  "type": "static"
+                }
+              },
+              "dynamic": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          },
+          "arp-timeout": {
+            "type": "object",
+            "properties": {
+              "timeout": {
+                "type": "number",
+                "description": "ARP entry timeout",
+                "default": 300,
+                "minimum": 60,
+                "maximum": 86400
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "lldp": {
+            "type": "object",
+            "properties": {
+              "system-name": {
+                "type": "string",
+                "description": "Configure lldp system name",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "system-description": {
+                "type": "string",
+                "description": "Configure lldp system description",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "enable-cfg": {
+                "type": "object",
+                "properties": {
+                  "enable": {
+                    "type": "number",
+                    "description": "Enable lldp",
+                    "default": 0
+                  },
+                  "rx": {
+                    "type": "number",
+                    "description": "Enable lldp rx",
+                    "default": 0
+                  },
+                  "tx": {
+                    "type": "number",
+                    "description": "Enable lldp tx",
+                    "default": 0
+                  }
+                }
+              },
+              "notification-cfg": {
+                "type": "object",
+                "properties": {
+                  "notification": {
+                    "type": "number",
+                    "description": "Enable lldp notification",
+                    "default": 0
+                  },
+                  "interval": {
+                    "type": "number",
+                    "description": "Configure lldp notification interval, default is 30 (The lldp notification interval value, default is 30)",
+                    "default": 30,
+                    "minimum": 5,
+                    "maximum": 3600
+                  }
+                }
+              },
+              "tx-set": {
+                "type": "object",
+                "properties": {
+                  "fast-count": {
+                    "type": "number",
+                    "description": "Configure lldp tx fast count value (The lldp tx fast count value, default is 4)",
+                    "default": 4,
+                    "minimum": 1,
+                    "maximum": 8
+                  },
+                  "fast-interval": {
+                    "type": "number",
+                    "description": "Configure lldp tx fast interval value (The lldp tx fast interval value, default is 1)",
+                    "default": 1,
+                    "minimum": 1,
+                    "maximum": 3600
+                  },
+                  "hold": {
+                    "type": "number",
+                    "description": "Configure lldp tx hold multiplier (The lldp tx hold value, default is 4)",
+                    "default": 4,
+                    "minimum": 1,
+                    "maximum": 10
+                  },
+                  "tx-interval": {
+                    "type": "number",
+                    "description": "Configure lldp tx interval (The lldp tx interval value, default is 30)",
+                    "default": 30,
+                    "minimum": 1,
+                    "maximum": 3600
+                  },
+                  "reinit-delay": {
+                    "type": "number",
+                    "description": "Configure lldp tx reinit delay (The lldp tx reinit_delay value, default is 2)",
+                    "default": 2,
+                    "minimum": 1,
+                    "maximum": 10
+                  }
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "management-address": {
+                "type": "object",
+                "properties": {
+                  "dns-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "dns"
+                    }
+                  },
+                  "ipv4-addr-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "ipv4-addr"
+                    }
+                  },
+                  "ipv6-addr-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "ipv6-addr"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "bfd": {
+            "type": "object",
+            "properties": {
+              "echo": {
+                "type": "number",
+                "description": "Enable BFD Echo",
+                "default": 0
+              },
+              "enable": {
+                "type": "number",
+                "description": "Enable BFD",
+                "default": 0
+              },
+              "interval-cfg": {
+                "type": "object",
+                "properties": {
+                  "interval": {
+                    "type": "number",
+                    "description": "Transmit interval between BFD packets (Milliseconds (default: 800))",
+                    "default": 800,
+                    "minimum": 48,
+                    "maximum": 1000
+                  },
+                  "min-rx": {
+                    "type": "number",
+                    "description": "Minimum receive interval capability (Milliseconds (default: 800))",
+                    "default": 800,
+                    "minimum": 48,
+                    "maximum": 1000
+                  },
+                  "multiplier": {
+                    "type": "number",
+                    "description": "Multiplier value used to compute holddown (value used to multiply the interval (default: 4))",
+                    "default": 4,
+                    "minimum": 3,
+                    "maximum": 50
+                  }
+                }
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "twamp": {
+            "type": "object",
+            "properties": {
+              "responder": {
+                "type": "object",
+                "properties": {
+                  "enable-ip": {
+                    "type": "number",
+                    "description": "Enable IP TWAMP packets",
+                    "default": 0
+                  },
+                  "enable-ipv6": {
+                    "type": "number",
+                    "description": "Enable IPv6 TWAMP packets",
+                    "default": 0
+                  },
+                  "enable-both-ip-ipv6": {
+                    "type": "number",
+                    "description": "Enable both IP and IPv6 TWAMP packets",
+                    "default": 0
+                  },
+                  "port": {
+                    "type": "number",
+                    "description": "Port number",
+                    "minimum": 1024,
+                    "maximum": 65535
+                  },
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "ip": {
+                    "type": "object",
+                    "properties": {
+                      "acl-id": {
+                        "type": "number",
+                        "description": "ACL id",
+                        "minimum": 1,
+                        "maximum": 199
+                      },
+                      "acl-name": {
+                        "type": "string",
+                        "description": "Apply a named access list (Access List name)",
+                        "minLength": 1,
+                        "maxLength": 16
+                      },
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  },
+                  "ipv6": {
+                    "type": "object",
+                    "properties": {
+                      "v6-acl-name": {
+                        "type": "string",
+                        "description": "Apply an access list (Named Access List)",
+                        "minLength": 1,
+                        "maxLength": 16
+                      },
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "spanning-tree": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "object",
+                "properties": {
+                  "info": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  },
+                  "interface": {
+                    "type": "object",
+                    "properties": {
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  },
+                  "stp": {
+                    "type": "object",
+                    "properties": {
+                      "action": {
+                        "type": "number",
+                        "description": "enable spanning tree RSTP mode",
+                        "default": 0
+                      },
+                      "priority": {
+                        "type": "number",
+                        "description": "set bridge priority, default 32768",
+                        "minimum": 0,
+                        "maximum": 61440
+                      },
+                      "vlan-start": {
+                        "type": "number",
+                        "description": "VLAN ID",
+                        "minimum": 2,
+                        "maximum": 4094
+                      },
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  },
+                  "rstp": {
+                    "type": "object",
+                    "properties": {
+                      "action": {
+                        "type": "number",
+                        "description": "enable spanning tree RSTP mode",
+                        "default": 0
+                      },
+                      "priority": {
+                        "type": "number",
+                        "description": "set bridge priority, default 32768",
+                        "minimum": 0,
+                        "maximum": 61440
+                      },
+                      "vlan-start": {
+                        "type": "number",
+                        "description": "VLAN ID",
+                        "minimum": 2,
+                        "maximum": 4094
+                      },
+                      "uuid": {
+                        "type": "string",
+                        "description": "uuid of the object",
+                        "minLength": 1,
+                        "maxLength": 64
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

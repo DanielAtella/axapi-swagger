@@ -1,0 +1,999 @@
+{
+  "categories": [
+    {
+      "name": "DDOS",
+      "fileName": "ddos.json",
+      "count": 587
+    },
+    {
+      "name": "VISIBILITY",
+      "fileName": "visibility.json",
+      "count": 501
+    },
+    {
+      "name": "CGNV6",
+      "fileName": "cgnv6.json",
+      "count": 387
+    },
+    {
+      "name": "SLB",
+      "fileName": "slb.json",
+      "count": 350
+    },
+    {
+      "name": "SYSTEM",
+      "fileName": "system.json",
+      "count": 253
+    },
+    {
+      "name": "INTERFACE",
+      "fileName": "interface.json",
+      "count": 152
+    },
+    {
+      "name": "AAM",
+      "fileName": "aam.json",
+      "count": 123
+    },
+    {
+      "name": "DEBUG",
+      "fileName": "debug.json",
+      "count": 119
+    },
+    {
+      "name": "GSLB",
+      "fileName": "gslb.json",
+      "count": 111
+    },
+    {
+      "name": "IP",
+      "fileName": "ip.json",
+      "count": 96
+    },
+    {
+      "name": "FW",
+      "fileName": "fw.json",
+      "count": 95
+    },
+    {
+      "name": "FILE",
+      "fileName": "file.json",
+      "count": 86
+    },
+    {
+      "name": "SCALEOUT",
+      "fileName": "scaleout.json",
+      "count": 70
+    },
+    {
+      "name": "ROUTER",
+      "fileName": "router.json",
+      "count": 66
+    },
+    {
+      "name": "NETWORK",
+      "fileName": "network.json",
+      "count": 60
+    },
+    {
+      "name": "LOGGING",
+      "fileName": "logging.json",
+      "count": 47
+    },
+    {
+      "name": "SNMP-SERVER",
+      "fileName": "snmp-server.json",
+      "count": 47
+    },
+    {
+      "name": "IPV6",
+      "fileName": "ipv6.json",
+      "count": 46
+    },
+    {
+      "name": "VRRP-A",
+      "fileName": "vrrp-a.json",
+      "count": 46
+    },
+    {
+      "name": "VPN",
+      "fileName": "vpn.json",
+      "count": 45
+    },
+    {
+      "name": "ENABLE-MANAGEMENT",
+      "fileName": "enable-management.json",
+      "count": 43
+    },
+    {
+      "name": "SYS-UT",
+      "fileName": "sys-ut.json",
+      "count": 41
+    },
+    {
+      "name": "ACOS-EVENTS",
+      "fileName": "acos-events.json",
+      "count": 34
+    },
+    {
+      "name": "HEALTH",
+      "fileName": "health.json",
+      "count": 34
+    },
+    {
+      "name": "DELETE",
+      "fileName": "delete.json",
+      "count": 27
+    },
+    {
+      "name": "NETFLOW",
+      "fileName": "netflow.json",
+      "count": 27
+    },
+    {
+      "name": "IMPORT-PERIODIC",
+      "fileName": "import-periodic.json",
+      "count": 26
+    },
+    {
+      "name": "SFLOW",
+      "fileName": "sflow.json",
+      "count": 26
+    },
+    {
+      "name": "TEMPLATE",
+      "fileName": "template.json",
+      "count": 26
+    },
+    {
+      "name": "WEB-CATEGORY",
+      "fileName": "web-category.json",
+      "count": 26
+    },
+    {
+      "name": "RRD",
+      "fileName": "rrd.json",
+      "count": 25
+    },
+    {
+      "name": "PKI",
+      "fileName": "pki.json",
+      "count": 21
+    },
+    {
+      "name": "RULE-SET",
+      "fileName": "rule-set.json",
+      "count": 20
+    },
+    {
+      "name": "WAF",
+      "fileName": "waf.json",
+      "count": 20
+    },
+    {
+      "name": "VCS",
+      "fileName": "vcs.json",
+      "count": 19
+    },
+    {
+      "name": "OVERLAY-TUNNEL",
+      "fileName": "overlay-tunnel.json",
+      "count": 17
+    },
+    {
+      "name": "SYSTEM-VIEW",
+      "fileName": "system-view.json",
+      "count": 16
+    },
+    {
+      "name": "IMPORT",
+      "fileName": "import.json",
+      "count": 13
+    },
+    {
+      "name": "AUTOMATIC-UPDATE",
+      "fileName": "automatic-update.json",
+      "count": 12
+    },
+    {
+      "name": "FLOWSPEC",
+      "fileName": "flowspec.json",
+      "count": 12
+    },
+    {
+      "name": "HARMONY-CONTROLLER",
+      "fileName": "harmony-controller.json",
+      "count": 12
+    },
+    {
+      "name": "THREAT-INTEL",
+      "fileName": "threat-intel.json",
+      "count": 12
+    },
+    {
+      "name": "SYSTEM-CPU",
+      "fileName": "system-cpu.json",
+      "count": 11
+    },
+    {
+      "name": "EXPORT-PERIODIC",
+      "fileName": "export-periodic.json",
+      "count": 10
+    },
+    {
+      "name": "NG-WAF",
+      "fileName": "ng-waf.json",
+      "count": 10
+    },
+    {
+      "name": "ACCESS-LIST",
+      "fileName": "access-list.json",
+      "count": 9
+    },
+    {
+      "name": "AXDEBUG",
+      "fileName": "axdebug.json",
+      "count": 9
+    },
+    {
+      "name": "IPS",
+      "fileName": "ips.json",
+      "count": 9
+    },
+    {
+      "name": "SCM",
+      "fileName": "scm.json",
+      "count": 9
+    },
+    {
+      "name": "TRAFFIC-CONTROL",
+      "fileName": "traffic-control.json",
+      "count": 9
+    },
+    {
+      "name": "DISABLE-MANAGEMENT",
+      "fileName": "disable-management.json",
+      "count": 8
+    },
+    {
+      "name": "SESSIONS",
+      "fileName": "sessions.json",
+      "count": 8
+    },
+    {
+      "name": "DNSSEC",
+      "fileName": "dnssec.json",
+      "count": 7
+    },
+    {
+      "name": "ADMIN",
+      "fileName": "admin.json",
+      "count": 6
+    },
+    {
+      "name": "BACKUP",
+      "fileName": "backup.json",
+      "count": 6
+    },
+    {
+      "name": "LICENSE-MANAGER",
+      "fileName": "license-manager.json",
+      "count": 6
+    },
+    {
+      "name": "NET-MGMT",
+      "fileName": "net-mgmt.json",
+      "count": 6
+    },
+    {
+      "name": "NTP",
+      "fileName": "ntp.json",
+      "count": 6
+    },
+    {
+      "name": "RBA",
+      "fileName": "rba.json",
+      "count": 6
+    },
+    {
+      "name": "WEB-SERVICE",
+      "fileName": "web-service.json",
+      "count": 6
+    },
+    {
+      "name": "ACOS-CLOUD-INTEGRATION",
+      "fileName": "acos-cloud-integration.json",
+      "count": 5
+    },
+    {
+      "name": "EVENT-NOTIFICATION",
+      "fileName": "event-notification.json",
+      "count": 5
+    },
+    {
+      "name": "FAIL-SAFE",
+      "fileName": "fail-safe.json",
+      "count": 5
+    },
+    {
+      "name": "GLM",
+      "fileName": "glm.json",
+      "count": 5
+    },
+    {
+      "name": "LDAP-SERVER",
+      "fileName": "ldap-server.json",
+      "count": 5
+    },
+    {
+      "name": "RADIUS-SERVER",
+      "fileName": "radius-server.json",
+      "count": 5
+    },
+    {
+      "name": "TACACS-SERVER",
+      "fileName": "tacacs-server.json",
+      "count": 5
+    },
+    {
+      "name": "TECHREPORT",
+      "fileName": "techreport.json",
+      "count": 5
+    },
+    {
+      "name": "CLOCK",
+      "fileName": "clock.json",
+      "count": 4
+    },
+    {
+      "name": "COUNTER",
+      "fileName": "counter.json",
+      "count": 4
+    },
+    {
+      "name": "OBJECT-GROUP",
+      "fileName": "object-group.json",
+      "count": 4
+    },
+    {
+      "name": "PARTITION",
+      "fileName": "partition.json",
+      "count": 4
+    },
+    {
+      "name": "UPGRADE",
+      "fileName": "upgrade.json",
+      "count": 4
+    },
+    {
+      "name": "VCS-CHASSIS",
+      "fileName": "vcs-chassis.json",
+      "count": 4
+    },
+    {
+      "name": "ZONE",
+      "fileName": "zone.json",
+      "count": 4
+    },
+    {
+      "name": "DOMAIN-GROUP",
+      "fileName": "domain-group.json",
+      "count": 3
+    },
+    {
+      "name": "EXPORT",
+      "fileName": "export.json",
+      "count": 3
+    },
+    {
+      "name": "HSM",
+      "fileName": "hsm.json",
+      "count": 3
+    },
+    {
+      "name": "IPV4-IN-IPV6",
+      "fileName": "ipv4-in-ipv6.json",
+      "count": 3
+    },
+    {
+      "name": "IPV6-IN-IPV4",
+      "fileName": "ipv6-in-ipv4.json",
+      "count": 3
+    },
+    {
+      "name": "REPORT",
+      "fileName": "report.json",
+      "count": 3
+    },
+    {
+      "name": "ROUTE-MAP",
+      "fileName": "route-map.json",
+      "count": 3
+    },
+    {
+      "name": "SCTP",
+      "fileName": "sctp.json",
+      "count": 3
+    },
+    {
+      "name": "SSL",
+      "fileName": "ssl.json",
+      "count": 3
+    },
+    {
+      "name": "VCS-VBLADES",
+      "fileName": "vcs-vblades.json",
+      "count": 3
+    },
+    {
+      "name": "WEB-GUI",
+      "fileName": "web-gui.json",
+      "count": 3
+    },
+    {
+      "name": "ACCOUNTING",
+      "fileName": "accounting.json",
+      "count": 2
+    },
+    {
+      "name": "ADMIN-DETAIL",
+      "fileName": "admin-detail.json",
+      "count": 2
+    },
+    {
+      "name": "ADMIN-SESSION",
+      "fileName": "admin-session.json",
+      "count": 2
+    },
+    {
+      "name": "AUTHENTICATION",
+      "fileName": "authentication.json",
+      "count": 2
+    },
+    {
+      "name": "BOOTIMAGE",
+      "fileName": "bootimage.json",
+      "count": 2
+    },
+    {
+      "name": "CALL-HOME",
+      "fileName": "call-home.json",
+      "count": 2
+    },
+    {
+      "name": "CAPTURE-CONFIG-OPER",
+      "fileName": "capture-config-oper.json",
+      "count": 2
+    },
+    {
+      "name": "CLASS-LIST",
+      "fileName": "class-list.json",
+      "count": 2
+    },
+    {
+      "name": "CLOUD-SERVICES",
+      "fileName": "cloud-services.json",
+      "count": 2
+    },
+    {
+      "name": "CONFIG-SYNC-STATUS",
+      "fileName": "config-sync-status.json",
+      "count": 2
+    },
+    {
+      "name": "CONFIGURE",
+      "fileName": "configure.json",
+      "count": 2
+    },
+    {
+      "name": "DEBUG-TRAFFIC-CAPTURE",
+      "fileName": "debug-traffic-capture.json",
+      "count": 2
+    },
+    {
+      "name": "DOMAIN-GROUP-OPER",
+      "fileName": "domain-group-oper.json",
+      "count": 2
+    },
+    {
+      "name": "DOMAIN-LIST",
+      "fileName": "domain-list.json",
+      "count": 2
+    },
+    {
+      "name": "EVENT",
+      "fileName": "event.json",
+      "count": 2
+    },
+    {
+      "name": "HOTFIX",
+      "fileName": "hotfix.json",
+      "count": 2
+    },
+    {
+      "name": "KEY",
+      "fileName": "key.json",
+      "count": 2
+    },
+    {
+      "name": "LINK",
+      "fileName": "link.json",
+      "count": 2
+    },
+    {
+      "name": "LOCALE",
+      "fileName": "locale.json",
+      "count": 2
+    },
+    {
+      "name": "MERGE-MODE-ADD",
+      "fileName": "merge-mode-add.json",
+      "count": 2
+    },
+    {
+      "name": "MISC",
+      "fileName": "misc.json",
+      "count": 2
+    },
+    {
+      "name": "MISCELLENIOUS-ALB",
+      "fileName": "miscellenious-alb.json",
+      "count": 2
+    },
+    {
+      "name": "NTP-STATUS",
+      "fileName": "ntp-status.json",
+      "count": 2
+    },
+    {
+      "name": "OBJECT",
+      "fileName": "object.json",
+      "count": 2
+    },
+    {
+      "name": "PARTITION-ADMIN",
+      "fileName": "partition-admin.json",
+      "count": 2
+    },
+    {
+      "name": "PARTITION-ALL",
+      "fileName": "partition-all.json",
+      "count": 2
+    },
+    {
+      "name": "PARTITION-AVAILABLE-ID",
+      "fileName": "partition-available-id.json",
+      "count": 2
+    },
+    {
+      "name": "PLAT-BUFF-STATS",
+      "fileName": "plat-buff-stats.json",
+      "count": 2
+    },
+    {
+      "name": "PLAT-CPU-DROP",
+      "fileName": "plat-cpu-drop.json",
+      "count": 2
+    },
+    {
+      "name": "PLAT-CPU-PACKET",
+      "fileName": "plat-cpu-packet.json",
+      "count": 2
+    },
+    {
+      "name": "SO-COUNTERS",
+      "fileName": "so-counters.json",
+      "count": 2
+    },
+    {
+      "name": "SYS-AUDIT-LOG",
+      "fileName": "sys-audit-log.json",
+      "count": 2
+    },
+    {
+      "name": "SYSLOG",
+      "fileName": "syslog.json",
+      "count": 2
+    },
+    {
+      "name": "TECHSUPPORT",
+      "fileName": "techsupport.json",
+      "count": 2
+    },
+    {
+      "name": "TIMEZONE",
+      "fileName": "timezone.json",
+      "count": 2
+    },
+    {
+      "name": "TUPLE-FILTER",
+      "fileName": "tuple-filter.json",
+      "count": 2
+    },
+    {
+      "name": "VERSION",
+      "fileName": "version.json",
+      "count": 2
+    },
+    {
+      "name": "WRITE",
+      "fileName": "write.json",
+      "count": 2
+    },
+    {
+      "name": "ACTIVE-PARTITION",
+      "fileName": "active-partition.json",
+      "count": 1
+    },
+    {
+      "name": "ADMIN-LOCKOUT",
+      "fileName": "admin-lockout.json",
+      "count": 1
+    },
+    {
+      "name": "ALLOW-SLB-CFG",
+      "fileName": "allow-slb-cfg.json",
+      "count": 1
+    },
+    {
+      "name": "APPLICATION-TYPE",
+      "fileName": "application-type.json",
+      "count": 1
+    },
+    {
+      "name": "AUDIT",
+      "fileName": "audit.json",
+      "count": 1
+    },
+    {
+      "name": "AUTHORIZATION",
+      "fileName": "authorization.json",
+      "count": 1
+    },
+    {
+      "name": "BACKUP-PERIODIC",
+      "fileName": "backup-periodic.json",
+      "count": 1
+    },
+    {
+      "name": "BANNER",
+      "fileName": "banner.json",
+      "count": 1
+    },
+    {
+      "name": "BGP",
+      "fileName": "bgp.json",
+      "count": 1
+    },
+    {
+      "name": "BIOS-PROG",
+      "fileName": "bios-prog.json",
+      "count": 1
+    },
+    {
+      "name": "BOOT-BLOCK-FIX",
+      "fileName": "boot-block-fix.json",
+      "count": 1
+    },
+    {
+      "name": "CAPTURE-CONFIG",
+      "fileName": "capture-config.json",
+      "count": 1
+    },
+    {
+      "name": "CHASSIS-APPLICATION-TYPE",
+      "fileName": "chassis-application-type.json",
+      "count": 1
+    },
+    {
+      "name": "CHASSIS-INFO",
+      "fileName": "chassis-info.json",
+      "count": 1
+    },
+    {
+      "name": "CHASSIS-INFRA",
+      "fileName": "chassis-infra.json",
+      "count": 1
+    },
+    {
+      "name": "CMCOV",
+      "fileName": "cmcov.json",
+      "count": 1
+    },
+    {
+      "name": "CONFIG-FILTER",
+      "fileName": "config-filter.json",
+      "count": 1
+    },
+    {
+      "name": "CONVERT-STARTUP-CONFIG",
+      "fileName": "convert-startup-config.json",
+      "count": 1
+    },
+    {
+      "name": "COPY",
+      "fileName": "copy.json",
+      "count": 1
+    },
+    {
+      "name": "DEVICE-CONTEXT",
+      "fileName": "device-context.json",
+      "count": 1
+    },
+    {
+      "name": "DISABLE-FAILSAFE",
+      "fileName": "disable-failsafe.json",
+      "count": 1
+    },
+    {
+      "name": "DOMAIN-LIST-OPER",
+      "fileName": "domain-list-oper.json",
+      "count": 1
+    },
+    {
+      "name": "ENABLE-BGP-ADVERTISEMENT",
+      "fileName": "enable-bgp-advertisement.json",
+      "count": 1
+    },
+    {
+      "name": "ENABLE-CORE",
+      "fileName": "enable-core.json",
+      "count": 1
+    },
+    {
+      "name": "ENABLE-PASSWORD",
+      "fileName": "enable-password.json",
+      "count": 1
+    },
+    {
+      "name": "ENABLE-SITE-LICENSE",
+      "fileName": "enable-site-license.json",
+      "count": 1
+    },
+    {
+      "name": "ENVIRONMENT",
+      "fileName": "environment.json",
+      "count": 1
+    },
+    {
+      "name": "ERASE",
+      "fileName": "erase.json",
+      "count": 1
+    },
+    {
+      "name": "FAN-SPEED",
+      "fileName": "fan-speed.json",
+      "count": 1
+    },
+    {
+      "name": "GLID",
+      "fileName": "glid.json",
+      "count": 1
+    },
+    {
+      "name": "HD-MONITOR",
+      "fileName": "hd-monitor.json",
+      "count": 1
+    },
+    {
+      "name": "HOSTNAME",
+      "fileName": "hostname.json",
+      "count": 1
+    },
+    {
+      "name": "IP-LIST",
+      "fileName": "ip-list.json",
+      "count": 1
+    },
+    {
+      "name": "MAXIMUM-PATHS",
+      "fileName": "maximum-paths.json",
+      "count": 1
+    },
+    {
+      "name": "MIRROR-PORT",
+      "fileName": "mirror-port.json",
+      "count": 1
+    },
+    {
+      "name": "MONITOR",
+      "fileName": "monitor.json",
+      "count": 1
+    },
+    {
+      "name": "MULTI-CONFIG",
+      "fileName": "multi-config.json",
+      "count": 1
+    },
+    {
+      "name": "MULTI-CTRL-CPU",
+      "fileName": "multi-ctrl-cpu.json",
+      "count": 1
+    },
+    {
+      "name": "OFFLOAD-CPUS",
+      "fileName": "offload-cpus.json",
+      "count": 1
+    },
+    {
+      "name": "OVERLAY-MGMT-INFO",
+      "fileName": "overlay-mgmt-info.json",
+      "count": 1
+    },
+    {
+      "name": "PARTITION-GROUP",
+      "fileName": "partition-group.json",
+      "count": 1
+    },
+    {
+      "name": "POAP",
+      "fileName": "poap.json",
+      "count": 1
+    },
+    {
+      "name": "RATE-LIMIT",
+      "fileName": "rate-limit.json",
+      "count": 1
+    },
+    {
+      "name": "REBOOT",
+      "fileName": "reboot.json",
+      "count": 1
+    },
+    {
+      "name": "RELOAD",
+      "fileName": "reload.json",
+      "count": 1
+    },
+    {
+      "name": "REMOVE-UPGRADE-LOCK",
+      "fileName": "remove-upgrade-lock.json",
+      "count": 1
+    },
+    {
+      "name": "RENAME",
+      "fileName": "rename.json",
+      "count": 1
+    },
+    {
+      "name": "RESOURCE-TRACK",
+      "fileName": "resource-track.json",
+      "count": 1
+    },
+    {
+      "name": "RESTORE",
+      "fileName": "restore.json",
+      "count": 1
+    },
+    {
+      "name": "RUNNING-CONFIG",
+      "fileName": "running-config.json",
+      "count": 1
+    },
+    {
+      "name": "SCALEOUT-CGN",
+      "fileName": "scaleout-cgn.json",
+      "count": 1
+    },
+    {
+      "name": "SERVICE-PARTITION",
+      "fileName": "service-partition.json",
+      "count": 1
+    },
+    {
+      "name": "SESSION-FILTER-EXTENDED",
+      "fileName": "session-filter-extended.json",
+      "count": 1
+    },
+    {
+      "name": "SESSION-FILTER",
+      "fileName": "session-filter.json",
+      "count": 1
+    },
+    {
+      "name": "SET-PRODUCT-ID",
+      "fileName": "set-product-id.json",
+      "count": 1
+    },
+    {
+      "name": "SHOW-BACKUP",
+      "fileName": "show-backup.json",
+      "count": 1
+    },
+    {
+      "name": "SHOW-MONITOR",
+      "fileName": "show-monitor.json",
+      "count": 1
+    },
+    {
+      "name": "SHOW-PROCESS",
+      "fileName": "show-process.json",
+      "count": 1
+    },
+    {
+      "name": "SHUTDOWN",
+      "fileName": "shutdown.json",
+      "count": 1
+    },
+    {
+      "name": "SINGLE-BOARD-MODE",
+      "fileName": "single-board-mode.json",
+      "count": 1
+    },
+    {
+      "name": "SLOT-CONTEXT",
+      "fileName": "slot-context.json",
+      "count": 1
+    },
+    {
+      "name": "SMTP",
+      "fileName": "smtp.json",
+      "count": 1
+    },
+    {
+      "name": "SSH-LOGIN-GRACE-TIME",
+      "fileName": "ssh-login-grace-time.json",
+      "count": 1
+    },
+    {
+      "name": "SSHD",
+      "fileName": "sshd.json",
+      "count": 1
+    },
+    {
+      "name": "SYN-COOKIE",
+      "fileName": "syn-cookie.json",
+      "count": 1
+    },
+    {
+      "name": "SYSTEM-2X40G-MODE",
+      "fileName": "system-2x40g-mode.json",
+      "count": 1
+    },
+    {
+      "name": "SYSTEM-4X10G-MODE",
+      "fileName": "system-4x10g-mode.json",
+      "count": 1
+    },
+    {
+      "name": "SYSTEM-BIG-BUFF-POOL",
+      "fileName": "system-big-buff-pool.json",
+      "count": 1
+    },
+    {
+      "name": "SYSTEM-BUFF-DEBUG",
+      "fileName": "system-buff-debug.json",
+      "count": 1
+    },
+    {
+      "name": "SYSTEM-JUMBO-GLOBAL",
+      "fileName": "system-jumbo-global.json",
+      "count": 1
+    },
+    {
+      "name": "SYSTEM-POLL-MODE",
+      "fileName": "system-poll-mode.json",
+      "count": 1
+    },
+    {
+      "name": "SYSTEM-RESET",
+      "fileName": "system-reset.json",
+      "count": 1
+    },
+    {
+      "name": "TERMINAL",
+      "fileName": "terminal.json",
+      "count": 1
+    },
+    {
+      "name": "TFTP",
+      "fileName": "tftp.json",
+      "count": 1
+    },
+    {
+      "name": "UPGRADE-STATUS",
+      "fileName": "upgrade-status.json",
+      "count": 1
+    }
+  ]
+}

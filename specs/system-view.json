@@ -1,0 +1,1191 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - SYSTEM-VIEW",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the system-view category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/system-view/chassis-detail/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Operational Status for the object chassis-detail",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-chassis-detail-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/chassis-detail": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Info regarding the chassis state from axapi",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-chassis-detail"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Info regarding the chassis state from axapi",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-chassis-detail"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-chassis-detail"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Info regarding the chassis state from axapi",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-chassis-detail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/hardware-view/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Operational Status for the object hardware-view",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hardware-view-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/hardware-view": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Endpoint for /axapi/v3/system-view/hardware-view",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hardware-view"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Endpoint for /axapi/v3/system-view/hardware-view",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hardware-view"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-hardware-view"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Endpoint for /axapi/v3/system-view/hardware-view",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hardware-view"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/hotfix/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Operational Status for the object hotfix",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hotfix-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/hotfix": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Get hotfix info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hotfix"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Get hotfix info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hotfix"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-hotfix"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Get hotfix info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-hotfix"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/memory-view/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Operational Status for the object memory-view",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-memory-view-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/memory-view/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Statistics for the object memory-view",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-memory-view-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/memory-view": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Configure System Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-memory-view"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Configure System Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-memory-view"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-memory-view"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Configure System Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-memory-view"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-memory-view"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Configure System Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-memory-view"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/show-backup/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Operational Status for the object show-backup",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-backup-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/show-backup": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Display backup information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-backup"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Display backup information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-backup"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-show-backup"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Display backup information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-backup"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/show-monitor/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Operational Status for the object show-monitor",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-monitor-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/show-monitor": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Show monitor threshold configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-monitor"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Show monitor threshold configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-monitor"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-show-monitor"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Show monitor threshold configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-monitor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/show-process/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Operational Status for the object show-process",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-process-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view/show-process": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Display backup information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-process"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Display backup information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-process"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-view-show-process"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "Display backup information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view-show-process"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/system-view": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-VIEW"
+        ],
+        "description": "View System Parameters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-view"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "system-view-chassis-detail-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "platform-name": {
+                "type": "string"
+              },
+              "single-brd-mode-forced": {
+                "type": "string"
+              },
+              "single-brd-mode-fallback": {
+                "type": "string"
+              },
+              "is_now_single_board": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "system-view-chassis-detail": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "system-view-hardware-view-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "platform-description": {
+                "type": "string"
+              },
+              "serial": {
+                "type": "string"
+              },
+              "cpu": {
+                "type": "string"
+              },
+              "cpu-cores": {
+                "type": "number"
+              },
+              "cpu-stepping": {
+                "type": "number"
+              },
+              "storage": {
+                "type": "string"
+              },
+              "memory": {
+                "type": "string"
+              },
+              "ssl-cards": {
+                "type": "object",
+                "properties": {
+                  "ssl-devices": {
+                    "type": "number"
+                  },
+                  "nitroxpx": {
+                    "type": "number"
+                  },
+                  "nitrox3": {
+                    "type": "number"
+                  },
+                  "nitrox3-cores": {
+                    "type": "number"
+                  },
+                  "nitrox5": {
+                    "type": "number"
+                  },
+                  "nitrox5-cores": {
+                    "type": "number"
+                  },
+                  "nitrox2": {
+                    "type": "number"
+                  },
+                  "nitrox1": {
+                    "type": "number"
+                  },
+                  "hsm": {
+                    "type": "number"
+                  },
+                  "unknown-ssl-cards": {
+                    "type": "number"
+                  },
+                  "coleto-ssl-cards": {
+                    "type": "number"
+                  }
+                }
+              },
+              "octeon": {
+                "type": "number"
+              },
+              "compression-cards": {
+                "type": "object",
+                "properties": {
+                  "gzip-devices": {
+                    "type": "number"
+                  },
+                  "aha363": {
+                    "type": "number"
+                  },
+                  "unknown-compression": {
+                    "type": "number"
+                  }
+                }
+              },
+              "l23-asic": {
+                "type": "string"
+              },
+              "ipmi": {
+                "type": "string"
+              },
+              "ports": {
+                "type": "string"
+              },
+              "plat-flag": {
+                "type": "string"
+              },
+              "bios-version": {
+                "type": "string"
+              },
+              "bios-release-date": {
+                "type": "string"
+              },
+              "nvm-firmware-versoin": {
+                "type": "string"
+              },
+              "fpga-summary": {
+                "type": "string"
+              },
+              "fpga-date": {
+                "type": "string"
+              },
+              "disk-total": {
+                "type": "number"
+              },
+              "disk-used": {
+                "type": "number"
+              },
+              "disk-free": {
+                "type": "number"
+              },
+              "disk-percentage": {
+                "type": "number"
+              },
+              "disk1-status": {
+                "type": "string"
+              },
+              "disk2-status": {
+                "type": "string"
+              },
+              "num-disks": {
+                "type": "number"
+              },
+              "raid_present": {
+                "type": "number"
+              },
+              "raid-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "psu1_np15": {
+                "type": "string"
+              },
+              "psu2_np15": {
+                "type": "string"
+              },
+              "spe_present": {
+                "type": "string"
+              },
+              "bypass-pr": {
+                "type": "number"
+              },
+              "bypass-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "alldynamic": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "system-view-hardware-view": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "system-view-hotfix-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "applied": {
+                "type": "string"
+              },
+              "copied": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "system-view-hotfix": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "system-view-memory-view-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "Total": {
+                "type": "number"
+              },
+              "System-memory": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "system-memory-counts": {
+                "type": "number"
+              },
+              "aFleX-memory": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "aflex-memory-counts": {
+                "type": "number"
+              },
+              "N2-memory": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "n2-memory-counts": {
+                "type": "number"
+              },
+              "SSL-memory": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "ssl-memory-counts": {
+                "type": "number"
+              },
+              "TCP-memory": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "tcp-memory-counts": {
+                "type": "number"
+              },
+              "Usage": {
+                "type": "string"
+              },
+              "Used": {
+                "type": "number"
+              },
+              "Free": {
+                "type": "number"
+              },
+              "Shared": {
+                "type": "number"
+              },
+              "Buffers": {
+                "type": "number"
+              },
+              "Cached": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "system-view-memory-view-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "usage-percentage": {
+                "type": "number",
+                "description": "Usage percentage"
+              }
+            }
+          }
+        }
+      },
+      "system-view-memory-view": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "system-view-show-backup-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "backup-show-1": {
+                "type": "string"
+              },
+              "backup-show-2": {
+                "type": "string"
+              },
+              "backup-show-3": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "system-view-show-backup": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "system-view-show-monitor-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "disk-value": {
+                "type": "number"
+              },
+              "mem-value": {
+                "type": "number"
+              },
+              "ctrl-cpu": {
+                "type": "number"
+              },
+              "data-cpu": {
+                "type": "number"
+              },
+              "buff-value": {
+                "type": "number"
+              },
+              "buff-drop": {
+                "type": "number"
+              },
+              "warn-temp": {
+                "type": "number"
+              },
+              "spm0": {
+                "type": "number"
+              },
+              "spm1": {
+                "type": "number"
+              },
+              "spm2": {
+                "type": "number"
+              },
+              "spm3": {
+                "type": "number"
+              },
+              "spm4": {
+                "type": "number"
+              },
+              "smp0": {
+                "type": "number"
+              },
+              "smp1": {
+                "type": "number"
+              },
+              "smp2": {
+                "type": "number"
+              },
+              "smp3": {
+                "type": "number"
+              },
+              "smp4": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "system-view-show-monitor": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "system-view-show-process-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "proc-info": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "system-view-show-process": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "system-view": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

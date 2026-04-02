@@ -1,0 +1,1175 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - AUTOMATIC-UPDATE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the automatic-update category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/automatic-update/check-now": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually check for update now",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-check-now"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually check for update now",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-check-now"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-check-now"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually check for update now",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-check-now"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/checknow/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Operational Status for the object checknow",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-checknow-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/checknow/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Statistics for the object checknow",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-checknow-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/checknow": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually check for update from axapi",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-checknow"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually check for update from axapi",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-checknow"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-checknow"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually check for update from axapi",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-checknow"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/config/{feature-name}": {
+      "parameters": [
+        {
+          "name": "feature-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for feature-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Configure software update schedule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Configure software update schedule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-config"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Configure software update schedule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Configure software update schedule",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/info/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Operational Status for the object info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-info-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/info/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Statistics for the object info",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-info-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/info": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "automatic-update information opers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-info"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "automatic-update information opers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-info"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-info"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "automatic-update information opers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-info"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/proxy-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Connect through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-proxy-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Connect through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-proxy-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-proxy-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Connect through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-proxy-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-proxy-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Connect through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-proxy-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/reset": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually reset to default software version",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-reset"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually reset to default software version",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-reset"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-reset"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually reset to default software version",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-reset"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update/revert": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually revert to previous software version",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-revert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually revert to previous software version",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-revert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update-revert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Manually revert to previous software version",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update-revert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/automatic-update": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Automatic update configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Automatic update configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Automatic update configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/automatic-update"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUTOMATIC-UPDATE"
+        ],
+        "description": "Automatic update configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/automatic-update"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "automatic-update-check-now": {
+        "type": "object",
+        "properties": {
+          "feature-name": {
+            "type": "string",
+            "description": "'app-fw': Application Firewall; 'ca-bundle': CA Certificate Bundle; 'a10-threat-intel': A10 Threat intel class list; 'central-cert-pin-list': Central updated cert pinning list; ",
+            "enum": [
+              "app-fw",
+              "ca-bundle",
+              "a10-threat-intel",
+              "central-cert-pin-list"
+            ]
+          },
+          "prod-ver": {
+            "type": "string",
+            "description": "update to this specific version, if this option is not configured, update to the latest version",
+            "minLength": 1,
+            "maxLength": 70
+          },
+          "from-staging-server": {
+            "type": "number",
+            "description": "Get files from GLM Staging storage",
+            "default": 0
+          },
+          "stage-ver": {
+            "type": "string",
+            "description": "update this specific version",
+            "minLength": 1,
+            "maxLength": 70
+          }
+        }
+      },
+      "automatic-update-checknow-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "feature-name": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "automatic-update-checknow-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "dummy": {
+                "type": "number",
+                "description": "Entry for a10countergen"
+              }
+            }
+          }
+        }
+      },
+      "automatic-update-checknow": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "automatic-update-config": {
+        "type": "object",
+        "properties": {
+          "feature-name": {
+            "type": "string",
+            "description": "'app-fw': Application Firewall Configuration; 'ca-bundle': CA Certificate Bundle; 'a10-threat-intel': A10 Threat intel class list; 'central-cert-pin-list': Central updated cert pinning list; ",
+            "enum": [
+              "app-fw",
+              "ca-bundle",
+              "a10-threat-intel",
+              "central-cert-pin-list"
+            ]
+          },
+          "debug": {
+            "type": "number",
+            "description": "Enable libcurl debug option",
+            "default": 0
+          },
+          "disable-ssl-verify": {
+            "type": "number",
+            "description": "Disable peer server certificate verification",
+            "default": 0
+          },
+          "schedule": {
+            "type": "number",
+            "default": 0
+          },
+          "weekly": {
+            "type": "number",
+            "description": "Every week",
+            "default": 0
+          },
+          "week-day": {
+            "type": "string",
+            "description": "'Monday': Monday; 'Tuesday': Tuesday; 'Wednesday': Wednesday; 'Thursday': Thursday; 'Friday': Friday; 'Saturday': Saturday; 'Sunday': Sunday; ",
+            "enum": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ]
+          },
+          "week-time": {
+            "type": "string",
+            "description": "Time of day to update (hh:mm) in 24 hour local time"
+          },
+          "daily": {
+            "type": "number",
+            "description": "Every day",
+            "default": 0
+          },
+          "day-time": {
+            "type": "string",
+            "description": "Time of day to update (hh:mm) in 24 hour local time"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "automatic-update-info-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "feature-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "automatic-update-info-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "dummy": {
+                "type": "number",
+                "description": "Entry for a10countergen"
+              }
+            }
+          }
+        }
+      },
+      "automatic-update-info": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "automatic-update-proxy-server": {
+        "type": "object",
+        "properties": {
+          "proxy-host": {
+            "type": "string",
+            "description": "Proxy server hostname or IP address",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "https-port": {
+            "type": "number",
+            "description": "Proxy server HTTPs port",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "auth-type": {
+            "type": "string",
+            "description": "'ntlm': NTLM authentication(default); 'basic': Basic authentication; ",
+            "default": "ntlm",
+            "enum": [
+              "ntlm",
+              "basic"
+            ]
+          },
+          "domain": {
+            "type": "string",
+            "description": "Realm for NTLM authentication",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "username": {
+            "type": "string",
+            "description": "Username for proxy authentication",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "password": {
+            "type": "number",
+            "description": "Password for proxy authentication",
+            "default": 0
+          },
+          "secret-string": {
+            "type": "string",
+            "description": "password value",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "automatic-update-reset": {
+        "type": "object",
+        "properties": {
+          "feature-name": {
+            "type": "string",
+            "description": "'app-fw': Application Firewall; 'ca-bundle': CA Certificate Bundle; ",
+            "enum": [
+              "app-fw",
+              "ca-bundle"
+            ]
+          }
+        }
+      },
+      "automatic-update-revert": {
+        "type": "object",
+        "properties": {
+          "feature-name": {
+            "type": "string",
+            "description": "'app-fw': Application Firewall; 'a10-threat-intel': A10 Threat intel class list; 'central-cert-pin-list': Central updated cert pinning list; ",
+            "enum": [
+              "app-fw",
+              "a10-threat-intel",
+              "central-cert-pin-list"
+            ]
+          }
+        }
+      },
+      "automatic-update": {
+        "type": "object",
+        "properties": {
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port to connect",
+            "default": 0
+          },
+          "glm-source-url": {
+            "type": "string",
+            "description": "Change GLM source url",
+            "minLength": 1,
+            "maxLength": 1024
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "proxy-server": {
+            "type": "object",
+            "properties": {
+              "proxy-host": {
+                "type": "string",
+                "description": "Proxy server hostname or IP address",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "https-port": {
+                "type": "number",
+                "description": "Proxy server HTTPs port",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "auth-type": {
+                "type": "string",
+                "description": "'ntlm': NTLM authentication(default); 'basic': Basic authentication; ",
+                "default": "ntlm",
+                "enum": [
+                  "ntlm",
+                  "basic"
+                ]
+              },
+              "domain": {
+                "type": "string",
+                "description": "Realm for NTLM authentication",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "username": {
+                "type": "string",
+                "description": "Username for proxy authentication",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "password": {
+                "type": "number",
+                "description": "Password for proxy authentication",
+                "default": 0
+              },
+              "secret-string": {
+                "type": "string",
+                "description": "password value",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "info": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "config-list": {
+            "type": "array",
+            "items": {
+              "type": "config"
+            }
+          },
+          "check-now": {
+            "type": "object",
+            "properties": {
+              "feature-name": {
+                "type": "string",
+                "description": "'app-fw': Application Firewall; 'ca-bundle': CA Certificate Bundle; 'a10-threat-intel': A10 Threat intel class list; 'central-cert-pin-list': Central updated cert pinning list; ",
+                "enum": [
+                  "app-fw",
+                  "ca-bundle",
+                  "a10-threat-intel",
+                  "central-cert-pin-list"
+                ]
+              },
+              "prod-ver": {
+                "type": "string",
+                "description": "update to this specific version, if this option is not configured, update to the latest version",
+                "minLength": 1,
+                "maxLength": 70
+              },
+              "from-staging-server": {
+                "type": "number",
+                "description": "Get files from GLM Staging storage",
+                "default": 0
+              },
+              "stage-ver": {
+                "type": "string",
+                "description": "update this specific version",
+                "minLength": 1,
+                "maxLength": 70
+              }
+            }
+          },
+          "checknow": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "revert": {
+            "type": "object",
+            "properties": {
+              "feature-name": {
+                "type": "string",
+                "description": "'app-fw': Application Firewall; 'a10-threat-intel': A10 Threat intel class list; 'central-cert-pin-list': Central updated cert pinning list; ",
+                "enum": [
+                  "app-fw",
+                  "a10-threat-intel",
+                  "central-cert-pin-list"
+                ]
+              }
+            }
+          },
+          "reset": {
+            "type": "object",
+            "properties": {
+              "feature-name": {
+                "type": "string",
+                "description": "'app-fw': Application Firewall; 'ca-bundle': CA Certificate Bundle; ",
+                "enum": [
+                  "app-fw",
+                  "ca-bundle"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

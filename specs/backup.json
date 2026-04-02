@@ -1,0 +1,665 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - BACKUP",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the backup category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/backup/log": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Backup log files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-log"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Backup log files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-log"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/backup-log"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Backup log files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-log"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/backup/status/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Operational Status for the object status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-status-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/backup/status": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Get backup system or backup log status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-status"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Get backup system or backup log status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-status"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/backup-status"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Get backup system or backup log status",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-status"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/backup/store": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Save backup store information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-store"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Save backup store information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-store"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/backup-store"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Save backup store information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-store"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/backup/system": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Backup system files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-system"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Backup system files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-system"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/backup-system"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Backup system files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-system"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/backup": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BACKUP"
+        ],
+        "description": "Backup system files",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "backup-log": {
+        "type": "object",
+        "properties": {
+          "expedite": {
+            "type": "number",
+            "description": "Expedite the Backup",
+            "default": 0
+          },
+          "period": {
+            "type": "number",
+            "description": "Specify backup period",
+            "default": 0
+          },
+          "date": {
+            "type": "number",
+            "description": "specify number of days",
+            "minimum": 1,
+            "maximum": 31
+          },
+          "day": {
+            "type": "number",
+            "description": "Most recent day",
+            "default": 0
+          },
+          "month": {
+            "type": "number",
+            "description": " Most recent month",
+            "default": 0
+          },
+          "week": {
+            "type": "number",
+            "description": "Most recent week",
+            "default": 0
+          },
+          "all": {
+            "type": "number",
+            "description": "all log",
+            "default": 0
+          },
+          "stats-data": {
+            "type": "number",
+            "description": "Backup web statistical data",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "store-name": {
+            "type": "string",
+            "description": "Save backup store information",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "backup-status-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "number"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "backup-status": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "backup-store": {
+        "type": "object",
+        "properties": {
+          "creat-cfg": {
+            "type": "object",
+            "properties": {
+              "create": {
+                "type": "number",
+                "description": "Create store",
+                "default": 0
+              },
+              "store-name": {
+                "type": "string",
+                "description": "profile name to store remote url",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "profile name for remote url"
+              }
+            }
+          },
+          "delete-cfg": {
+            "type": "object",
+            "properties": {
+              "delete": {
+                "type": "number",
+                "description": "Delete store",
+                "default": 0
+              },
+              "store-name-del": {
+                "type": "string",
+                "description": "profile name for deleting",
+                "minLength": 1,
+                "maxLength": 31
+              }
+            }
+          }
+        }
+      },
+      "backup-system": {
+        "type": "object",
+        "properties": {
+          "encrypt": {
+            "type": "number",
+            "description": "Encrypt the backup file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "password": {
+            "type": "string",
+            "description": "password for the remote site",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "store-name": {
+            "type": "string",
+            "description": "Save backup store information",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "backup": {
+        "type": "object",
+        "properties": {
+          "system": {
+            "type": "object",
+            "properties": {
+              "encrypt": {
+                "type": "number",
+                "description": "Encrypt the backup file",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "profile name for remote url"
+              },
+              "password": {
+                "type": "string",
+                "description": "password for the remote site",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "store-name": {
+                "type": "string",
+                "description": "Save backup store information",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "status": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "log": {
+            "type": "object",
+            "properties": {
+              "expedite": {
+                "type": "number",
+                "description": "Expedite the Backup",
+                "default": 0
+              },
+              "period": {
+                "type": "number",
+                "description": "Specify backup period",
+                "default": 0
+              },
+              "date": {
+                "type": "number",
+                "description": "specify number of days",
+                "minimum": 1,
+                "maximum": 31
+              },
+              "day": {
+                "type": "number",
+                "description": "Most recent day",
+                "default": 0
+              },
+              "month": {
+                "type": "number",
+                "description": " Most recent month",
+                "default": 0
+              },
+              "week": {
+                "type": "number",
+                "description": "Most recent week",
+                "default": 0
+              },
+              "all": {
+                "type": "number",
+                "description": "all log",
+                "default": 0
+              },
+              "stats-data": {
+                "type": "number",
+                "description": "Backup web statistical data",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "remote-file": {
+                "type": "string",
+                "description": "profile name for remote url"
+              },
+              "password": {
+                "type": "string",
+                "description": "password for the remote site",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "store-name": {
+                "type": "string",
+                "description": "Save backup store information",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "store": {
+            "type": "object",
+            "properties": {
+              "creat-cfg": {
+                "type": "object",
+                "properties": {
+                  "create": {
+                    "type": "number",
+                    "description": "Create store",
+                    "default": 0
+                  },
+                  "store-name": {
+                    "type": "string",
+                    "description": "profile name to store remote url",
+                    "minLength": 1,
+                    "maxLength": 31
+                  },
+                  "remote-file": {
+                    "type": "string",
+                    "description": "profile name for remote url"
+                  }
+                }
+              },
+              "delete-cfg": {
+                "type": "object",
+                "properties": {
+                  "delete": {
+                    "type": "number",
+                    "description": "Delete store",
+                    "default": 0
+                  },
+                  "store-name-del": {
+                    "type": "string",
+                    "description": "profile name for deleting",
+                    "minLength": 1,
+                    "maxLength": 31
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

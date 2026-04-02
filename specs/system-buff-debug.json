@@ -1,0 +1,151 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - SYSTEM-BUFF-DEBUG",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the system-buff-debug category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/system-buff-debug": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SYSTEM-BUFF-DEBUG"
+        ],
+        "description": "System buff debug config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-buff-debug"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SYSTEM-BUFF-DEBUG"
+        ],
+        "description": "System buff debug config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-buff-debug"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-buff-debug"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SYSTEM-BUFF-DEBUG"
+        ],
+        "description": "System buff debug config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-buff-debug"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/system-buff-debug"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SYSTEM-BUFF-DEBUG"
+        ],
+        "description": "System buff debug config",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/system-buff-debug"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "system-buff-debug": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "'enable-buff-debug': Enable fpga buffer debugging; 'disable-buff-debug': Disable fpga buffer debugging; ",
+            "default": "disable-buff-debug",
+            "enum": [
+              "enable-buff-debug",
+              "disable-buff-debug"
+            ]
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

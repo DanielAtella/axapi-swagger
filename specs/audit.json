@@ -1,0 +1,158 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - AUDIT",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the audit category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/audit": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "AUDIT"
+        ],
+        "description": "Configure audit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/audit"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AUDIT"
+        ],
+        "description": "Configure audit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/audit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/audit"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AUDIT"
+        ],
+        "description": "Configure audit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/audit"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/audit"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AUDIT"
+        ],
+        "description": "Configure audit",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/audit"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "audit": {
+        "type": "object",
+        "properties": {
+          "enable": {
+            "type": "number",
+            "description": "Enable audit service",
+            "default": 1
+          },
+          "size": {
+            "type": "number",
+            "description": "Config audit buffer size, default is 20,000 (Audit buffer size(in items), default is 20,000)",
+            "minimum": 1000,
+            "maximum": 30000
+          },
+          "privilege": {
+            "type": "number",
+            "description": "Enable privilege command for audit service",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

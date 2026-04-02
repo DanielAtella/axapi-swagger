@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A10 aXAPI v3 Documentation Explorer</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css" />
+    <style>
+        html { box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
+        body { margin: 0; background: #fafafa; display: flex; flex-direction: column; height: 100vh; overflow: hidden; font-family: sans-serif; }
+
+        /* Connection Bar */
+        #connection-bar {
+            background: #1a1a2e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            z-index: 200;
+            border-bottom: 2px solid #16213e;
+        }
+        #connection-bar label { font-size: 0.8rem; opacity: 0.7; }
+        #connection-bar input {
+            padding: 6px 10px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background: #16213e;
+            color: white;
+            font-size: 0.85rem;
+        }
+        #connection-bar input::placeholder { color: #777; }
+        #connection-bar input:focus { outline: none; border-color: #0072bc; }
+        .conn-field { display: flex; flex-direction: column; gap: 2px; }
+        #btn-connect, #btn-disconnect {
+            padding: 6px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        #btn-connect { background: #0072bc; color: white; }
+        #btn-connect:disabled { background: #444; cursor: not-allowed; }
+        #btn-connect:not(:disabled):hover { background: #005f9e; }
+        #btn-disconnect { background: #c0392b; color: white; display: none; }
+        #btn-disconnect:hover { background: #a93226; }
+        #conn-status {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-left: 10px;
+            font-size: 0.85rem;
+        }
+        #conn-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #c0392b;
+        }
+        #conn-indicator.connected { background: #27ae60; }
+
+        /* Re-auth banner */
+        #reauth-banner {
+            display: none;
+            background: #f39c12;
+            color: #1a1a2e;
+            padding: 8px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+        #reauth-banner:hover { background: #e67e22; }
+
+        /* Layout */
+        #app-body { display: flex; flex: 1; overflow: hidden; }
+
+        /* Sidebar Styles */
+        #sidebar {
+            width: 300px;
+            background: #003057;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar-header { padding: 20px; background: #001f38; }
+        .sidebar-header h1 { margin: 0; font-size: 1.2rem; }
+        .sidebar-header p { margin: 5px 0 0; font-size: 0.8rem; opacity: 0.7; }
+
+        /* Global Search */
+        #global-search-container { padding: 10px 15px; background: #002040; }
+        #global-search {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #004070;
+            border-radius: 4px;
+            background: #001530;
+            color: white;
+            font-size: 0.85rem;
+        }
+        #global-search::placeholder { color: #6699bb; }
+        #global-search:focus { outline: none; border-color: #0072bc; }
+        #search-results {
+            display: none;
+            max-height: 60vh;
+            overflow-y: auto;
+            background: #001530;
+            border-top: 1px solid #004070;
+        }
+        .search-category-group { padding: 4px 0; }
+        .search-category-label {
+            padding: 4px 15px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: #6699bb;
+            font-weight: bold;
+        }
+        .search-result-item {
+            padding: 6px 15px 6px 25px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            color: #aaccee;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .search-result-item:hover { background: #004070; color: white; }
+        .search-no-results { padding: 12px 15px; color: #6699bb; font-size: 0.85rem; }
+
+        #category-list {
+            flex: 1;
+            overflow-y: auto;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .category-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #004070;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+        .category-item:hover { background: #004a80; }
+        .category-item.active { background: #0072bc; font-weight: bold; }
+        .category-item .count { font-size: 0.75rem; background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 10px; }
+
+        /* Main Content */
+        #main-content {
+            flex: 1;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .topbar { background-color: #f7f7f7; padding: 10px 20px; border-bottom: 1px solid #ddd; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; gap: 10px; }
+        .topbar h2 { margin: 0; font-size: 1rem; color: #333; white-space: nowrap; }
+        #category-filter {
+            padding: 6px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            width: 250px;
+        }
+        #category-filter:focus { outline: none; border-color: #0072bc; }
+
+        #swagger-ui { padding-bottom: 50px; }
+    </style>
+</head>
+<body>
+    <!-- Connection Bar -->
+    <div id="connection-bar">
+        <div class="conn-field">
+            <label>Thunder IP/Hostname</label>
+            <input type="text" id="thunder-host" placeholder="192.168.1.100" />
+        </div>
+        <div class="conn-field">
+            <label>Username</label>
+            <input type="text" id="thunder-user" placeholder="admin" />
+        </div>
+        <div class="conn-field">
+            <label>Password</label>
+            <input type="password" id="thunder-pass" placeholder="password" />
+        </div>
+        <button id="btn-connect" disabled>Connect</button>
+        <button id="btn-disconnect">Disconnect</button>
+        <div id="conn-status">
+            <div id="conn-indicator"></div>
+            <span id="conn-label">Disconnected</span>
+        </div>
+    </div>
+
+    <!-- Re-auth Banner -->
+    <div id="reauth-banner" onclick="focusReauth()">
+        Session expired. Click here or re-enter credentials above to reconnect.
+    </div>
+
+    <div id="app-body">
+        <div id="sidebar">
+            <div class="sidebar-header">
+                <h1>aXAPI Explorer</h1>
+                <p>Advanced Documentation v3</p>
+            </div>
+            <div id="global-search-container">
+                <input type="text" id="global-search" placeholder="Search all endpoints..." />
+            </div>
+            <div id="search-results"></div>
+            <ul id="category-list">
+                <li style="padding: 20px; opacity: 0.5;">Loading categories...</li>
+            </ul>
+        </div>
+
+        <div id="main-content">
+            <div class="topbar">
+                <h2 id="current-category">Select a category</h2>
+                <input type="text" id="category-filter" placeholder="Filter endpoints..." />
+            </div>
+            <div id="swagger-ui"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js" charset="UTF-8"></script>
+    <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-standalone-preset.js" charset="UTF-8"></script>
+    <script>
+    // --- State ---
+    let ui;
+    let authToken = null;
+    let connectedHost = null;
+    let manifestData = null;
+    let searchIndex = [];
+    let searchDebounceTimer = null;
+    let reauthShowing = false;
+    let currentCategory = null;
+    let categoryElements = {};
+
+    // --- Connection Bar ---
+    const hostInput = document.getElementById('thunder-host');
+    const userInput = document.getElementById('thunder-user');
+    const passInput = document.getElementById('thunder-pass');
+    const btnConnect = document.getElementById('btn-connect');
+    const btnDisconnect = document.getElementById('btn-disconnect');
+    const connIndicator = document.getElementById('conn-indicator');
+    const connLabel = document.getElementById('conn-label');
+    const reauthBanner = document.getElementById('reauth-banner');
+
+    function updateConnectButton() {
+        btnConnect.disabled = !(hostInput.value.trim() && userInput.value.trim() && passInput.value.trim());
+    }
+    hostInput.addEventListener('input', updateConnectButton);
+    userInput.addEventListener('input', updateConnectButton);
+    passInput.addEventListener('input', updateConnectButton);
+
+    async function doConnect() {
+        btnConnect.disabled = true;
+        btnConnect.textContent = 'Connecting...';
+
+        try {
+            const res = await fetch('/api/auth', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    host: hostInput.value.trim(),
+                    username: userInput.value.trim(),
+                    password: passInput.value.trim(),
+                }),
+            });
+            const data = await res.json();
+
+            if (!res.ok) {
+                alert('Authentication failed: ' + (data.error || 'Unknown error'));
+                btnConnect.textContent = 'Connect';
+                updateConnectButton();
+                return;
+            }
+
+            authToken = data.token;
+            connectedHost = data.host;
+            setConnectedUI(true);
+            hideReauth();
+
+            // Re-render current category to pick up the requestInterceptor
+            if (currentCategory) {
+                selectCategory(currentCategory, categoryElements[currentCategory.name]);
+            }
+        } catch (err) {
+            alert('Connection error: ' + err.message);
+            btnConnect.textContent = 'Connect';
+            updateConnectButton();
+        }
+    }
+
+    function doDisconnect() {
+        fetch('/api/disconnect', { method: 'POST' }).catch(() => {});
+        authToken = null;
+        connectedHost = null;
+        setConnectedUI(false);
+        hideReauth();
+
+        if (currentCategory) {
+            selectCategory(currentCategory, categoryElements[currentCategory.name]);
+        }
+    }
+
+    function setConnectedUI(connected) {
+        if (connected) {
+            connIndicator.classList.add('connected');
+            connLabel.textContent = connectedHost;
+            btnConnect.style.display = 'none';
+            btnDisconnect.style.display = 'inline-block';
+        } else {
+            connIndicator.classList.remove('connected');
+            connLabel.textContent = 'Disconnected';
+            btnConnect.style.display = 'inline-block';
+            btnDisconnect.style.display = 'none';
+            btnConnect.textContent = 'Connect';
+            updateConnectButton();
+        }
+    }
+
+    btnConnect.addEventListener('click', doConnect);
+    btnDisconnect.addEventListener('click', doDisconnect);
+
+    // --- Re-auth ---
+    function showReauth() {
+        if (reauthShowing) return;
+        reauthShowing = true;
+        reauthBanner.style.display = 'block';
+        setConnectedUI(false);
+    }
+
+    function hideReauth() {
+        reauthShowing = false;
+        reauthBanner.style.display = 'none';
+    }
+
+    function focusReauth() {
+        passInput.value = '';
+        passInput.focus();
+        hideReauth();
+    }
+
+    // --- Swagger UI ---
+    async function loadCategories() {
+        try {
+            const response = await fetch('./specs/manifest.json');
+            manifestData = await response.json();
+            const list = document.getElementById('category-list');
+            list.innerHTML = '';
+
+            manifestData.categories.forEach((cat, index) => {
+                const li = document.createElement('li');
+                li.className = 'category-item';
+                li.innerHTML = `<span>${escapeHtml(cat.name)}</span> <span class="count">${cat.count}</span>`;
+                li.onclick = () => selectCategory(cat, li);
+                list.appendChild(li);
+                categoryElements[cat.name] = li;
+
+                if (index === 0) selectCategory(cat, li);
+            });
+
+            // Build search index
+            buildSearchIndex();
+        } catch (err) {
+            console.error('Failed to load manifest:', err);
+            document.getElementById('category-list').innerHTML = '<li style="padding:20px; color: #ff9999;">Error loading categories</li>';
+        }
+    }
+
+    function selectCategory(cat, element) {
+        currentCategory = cat;
+        document.querySelectorAll('.category-item').forEach(el => el.classList.remove('active'));
+        if (element) element.classList.add('active');
+        document.getElementById('current-category').innerText = `Category: ${cat.name}`;
+        document.getElementById('category-filter').value = '';
+
+        const url = `./specs/${cat.fileName}`;
+        document.getElementById('swagger-ui').innerHTML = '<div style="padding: 40px; text-align: center; font-size: 1.2rem; color: #666;">Loading documentation for ' + escapeHtml(cat.name) + '...</div>';
+
+        const swaggerConfig = {
+            url: url,
+            dom_id: '#swagger-ui',
+            deepLinking: true,
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            plugins: [
+                SwaggerUIBundle.plugins.DownloadUrl
+            ],
+            layout: "BaseLayout",
+        };
+
+        if (authToken) {
+            swaggerConfig.requestInterceptor = (req) => {
+                // Rewrite Swagger UI "Try it out" requests to go through proxy
+                const url = new URL(req.url);
+                const axapiPath = url.pathname.replace(/^\/axapi\/v3/, '');
+
+                const proxyBody = {
+                    method: req.method || 'GET',
+                    path: axapiPath || '/',
+                };
+
+                if (req.body) {
+                    try {
+                        proxyBody.body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+                    } catch {
+                        proxyBody.body = req.body;
+                    }
+                }
+
+                req.url = window.location.origin + '/api/proxy';
+                req.method = 'POST';
+                req.headers['Content-Type'] = 'application/json';
+                req.body = JSON.stringify(proxyBody);
+                return req;
+            };
+
+            swaggerConfig.responseInterceptor = (res) => {
+                // Detect 401 with X-Auth-Expired header
+                if (res.status === 401) {
+                    const headers = res.headers || {};
+                    const expired = headers['x-auth-expired'] || headers['X-Auth-Expired'];
+                    if (expired === 'true') {
+                        authToken = null;
+                        showReauth();
+                    }
+                }
+                return res;
+            };
+        }
+
+        ui = SwaggerUIBundle(swaggerConfig);
+        document.getElementById('main-content').scrollTop = 0;
+    }
+
+    // --- Category Filter ---
+    let filterDebounceTimer = null;
+    document.getElementById('category-filter').addEventListener('input', (e) => {
+        const filterVal = e.target.value;
+        clearTimeout(filterDebounceTimer);
+        filterDebounceTimer = setTimeout(() => {
+            if (ui && ui.getSystem) {
+                const system = ui.getSystem();
+                if (system && system.layoutActions) {
+                    // Update the filter without re-initializing the entire UI
+                    system.layoutActions.updateFilter(filterVal || '');
+                }
+            }
+        }, 300);
+    });
+
+    // --- Global Search ---
+    async function buildSearchIndex() {
+        try {
+            const res = await fetch('./specs/search-index.json');
+            searchIndex = await res.json();
+        } catch (err) {
+            console.error('Failed to load search index:', err);
+            // Fallback to empty index
+            searchIndex = [];
+        }
+    }
+
+    const globalSearch = document.getElementById('global-search');
+    const searchResultsEl = document.getElementById('search-results');
+
+    globalSearch.addEventListener('input', () => {
+        clearTimeout(searchDebounceTimer);
+        searchDebounceTimer = setTimeout(performGlobalSearch, 300);
+    });
+
+    function performGlobalSearch() {
+        const query = globalSearch.value.trim();
+        if (!query) {
+            searchResultsEl.style.display = 'none';
+            searchResultsEl.innerHTML = '';
+            document.getElementById('category-list').style.display = '';
+            return;
+        }
+
+        const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        let regex;
+        try {
+            regex = new RegExp(escaped, 'i');
+        } catch {
+            return;
+        }
+
+        const matches = searchIndex.filter(item =>
+            regex.test(item.path) || regex.test(item.description)
+        );
+
+        document.getElementById('category-list').style.display = 'none';
+        searchResultsEl.style.display = 'block';
+
+        if (matches.length === 0) {
+            searchResultsEl.innerHTML = '<div class="search-no-results">No endpoints found</div>';
+            return;
+        }
+
+        // Group by category
+        const grouped = {};
+        for (const m of matches) {
+            if (!grouped[m.category]) grouped[m.category] = [];
+            grouped[m.category].push(m);
+        }
+
+        let html = '';
+        for (const [cat, items] of Object.entries(grouped)) {
+            html += `<div class="search-category-group">`;
+            html += `<div class="search-category-label">${escapeHtml(cat)} (${items.length})</div>`;
+            for (const item of items.slice(0, 20)) {
+                html += `<div class="search-result-item" data-category="${escapeHtml(item.category)}" data-filename="${escapeHtml(item.fileName)}" data-path="${escapeHtml(item.path)}" onclick="navigateToResult(this)">${escapeHtml(item.path)}</div>`;
+            }
+            if (items.length > 20) {
+                html += `<div class="search-result-item" style="color: #557799; font-style: italic;">...and ${items.length - 20} more</div>`;
+            }
+            html += `</div>`;
+        }
+        searchResultsEl.innerHTML = html;
+    }
+
+    function navigateToResult(el) {
+        const categoryName = el.dataset.category;
+        const fileName = el.dataset.filename;
+        const path = el.dataset.path;
+
+        // Find the category object
+        const cat = manifestData.categories.find(c => c.name === categoryName);
+        if (!cat) return;
+
+        // Clear search
+        globalSearch.value = '';
+        searchResultsEl.style.display = 'none';
+        searchResultsEl.innerHTML = '';
+        document.getElementById('category-list').style.display = '';
+
+        // Load category
+        selectCategory(cat, categoryElements[cat.name]);
+
+        // Scroll to endpoint after a short delay for Swagger UI to render
+        setTimeout(() => {
+            const encodedPath = CSS.escape(path);
+            // Try to find the endpoint in the rendered Swagger UI
+            const el = document.querySelector(`[id*="${path}"]`) || document.querySelector(`[data-path="${encodedPath}"]`);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 500);
+    }
+
+    globalSearch.addEventListener('blur', () => {
+        // Delay hiding so clicks on results register
+        setTimeout(() => {
+            if (!globalSearch.value.trim()) {
+                searchResultsEl.style.display = 'none';
+                document.getElementById('category-list').style.display = '';
+            }
+        }, 200);
+    });
+
+    // --- Utilities ---
+    function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    window.onload = loadCategories;
+    </script>
+</body>
+</html>

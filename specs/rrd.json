@@ -1,0 +1,1521 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - RRD",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the rrd category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/rrd/cgn/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object cgn",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cgn-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/cgn": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "cgn data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cgn"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "cgn data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cgn"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-cgn"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "cgn data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cgn"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/cpu/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object cpu",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpu-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/cpu": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "CPU usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpu"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "CPU usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpu"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-cpu"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "CPU usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpu"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/cpuavg/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object cpuavg",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpuavg-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/cpuavg": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "CPU average usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpuavg"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "CPU average usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpuavg"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-cpuavg"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "CPU average usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-cpuavg"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/disk/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object disk",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-disk-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/disk": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Disk usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-disk"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Disk usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-disk"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-disk"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Disk usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-disk"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/ethernet-all/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object ethernet-all",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet-all-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/ethernet-all": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "all ethernet statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet-all"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "all ethernet statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet-all"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-ethernet-all"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "all ethernet statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet-all"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/ethernet/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object ethernet",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/ethernet": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "ethernet statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "ethernet statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-ethernet"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "ethernet statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-ethernet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/global/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object global",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-global-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/global": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "global session data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-global"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "global session data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-global"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-global"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "global session data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-global"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/memory/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object memory",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-memory-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/memory": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Memory usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-memory"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Memory usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-memory"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-memory"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Memory usage in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-memory"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/performance/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object performance",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-performance-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/performance": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "performance data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-performance"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "performance data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-performance"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-performance"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "performance data in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-performance"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/slb-server/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object slb-server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-server-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/slb-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb server statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb server statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-slb-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb server statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/slb-service-group/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object slb-service-group",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-service-group-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/slb-service-group": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb service group statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-service-group"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb service group statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-service-group"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-slb-service-group"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb service group statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-service-group"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/slb-virtual-server/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "Operational Status for the object slb-virtual-server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-virtual-server-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd/slb-virtual-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb virtual server statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-virtual-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb virtual server statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-virtual-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rrd-slb-virtual-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "slb virtual server statistics in RRD",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd-slb-virtual-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/rrd": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "RRD"
+        ],
+        "description": "RRD statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rrd"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "rrd-cgn-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "cgn-data": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-cgn": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-cpu-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "cpu-usage": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-cpu": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-cpuavg-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "cpu-usage": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-cpuavg": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-disk-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "total-disk": {
+                "type": "string"
+              },
+              "disk-usage": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "alldynamic": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "rrd-disk": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-ethernet-all-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "ethernet-statistics": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-ethernet-all": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-ethernet-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "ethernet-index": {
+                "type": "number"
+              },
+              "ethernet-statistics": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-ethernet": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-global-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "global-data": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-global": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-memory-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "mem-usage": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-memory": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-performance-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "performance-data": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-performance": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-slb-server-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "slb-server-name": {
+                "type": "string"
+              },
+              "slb-server-statistics": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-slb-server": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-slb-service-group-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "slb-service-group-name": {
+                "type": "string"
+              },
+              "slb-server-statistics": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-slb-service-group": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd-slb-virtual-server-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "start-time": {
+                "type": "number"
+              },
+              "end-time": {
+                "type": "number"
+              },
+              "slb-virtual-server-name": {
+                "type": "string"
+              },
+              "slb-server-statistics": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rrd-slb-virtual-server": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "rrd": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - PLAT-CPU-DROP",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the plat-cpu-drop category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/plat-cpu-drop/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PLAT-CPU-DROP"
+        ],
+        "description": "Operational Status for the object plat-cpu-drop",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/plat-cpu-drop-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/plat-cpu-drop": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PLAT-CPU-DROP"
+        ],
+        "description": "Miscellenious Information Used for CLI rendering",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/plat-cpu-drop"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PLAT-CPU-DROP"
+        ],
+        "description": "Miscellenious Information Used for CLI rendering",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/plat-cpu-drop"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/plat-cpu-drop"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PLAT-CPU-DROP"
+        ],
+        "description": "Miscellenious Information Used for CLI rendering",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/plat-cpu-drop"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "plat-cpu-drop-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "fpga-seg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "drop-seg": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "rate-limit": {
+                "type": "number"
+              },
+              "rate-limit-drp": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "plat-cpu-drop": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

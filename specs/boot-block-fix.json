@@ -1,0 +1,119 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - BOOT-BLOCK-FIX",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the boot-block-fix category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/boot-block-fix": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BOOT-BLOCK-FIX"
+        ],
+        "description": "Fix booting problem",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/boot-block-fix"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BOOT-BLOCK-FIX"
+        ],
+        "description": "Fix booting problem",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/boot-block-fix"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/boot-block-fix"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BOOT-BLOCK-FIX"
+        ],
+        "description": "Fix booting problem",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/boot-block-fix"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "boot-block-fix": {
+        "type": "object",
+        "properties": {
+          "hd": {
+            "type": "number",
+            "description": "Hard disk",
+            "default": 0
+          },
+          "cf": {
+            "type": "number",
+            "description": "Compact flash",
+            "default": 0
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

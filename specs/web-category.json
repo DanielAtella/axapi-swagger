@@ -1,0 +1,3640 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - WEB-CATEGORY",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the web-category category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/web-category/bypassed-urls/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object bypassed-urls",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-bypassed-urls-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/bypassed-urls": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-bypassed-urls"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-bypassed-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-bypassed-urls"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-bypassed-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-bypassed-urls"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-bypassed-urls"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/category-list/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Statistics for the object category-list",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-category-list-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/category-list/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "List of web categories",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-category-list"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "List of web categories",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-category-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-category-list"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "List of web categories",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-category-list"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-category-list"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "List of web categories",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-category-list"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/intercepted-urls/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object intercepted-urls",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-intercepted-urls-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/intercepted-urls": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-intercepted-urls"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-intercepted-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-intercepted-urls"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-intercepted-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-intercepted-urls"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-intercepted-urls"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/license/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object license",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-license-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/license": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "License information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-license"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "License information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-license"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-license"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "License information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-license"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-license"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "License information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-license"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object web-category",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/proxy-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Commands to connect web-category through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-proxy-server"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Commands to connect web-category through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-proxy-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-proxy-server"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Commands to connect web-category through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-proxy-server"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-proxy-server"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Commands to connect web-category through proxy server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-proxy-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/reputation-scope/{name}/stats": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Statistics for the object reputation-scope",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-reputation-scope-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/reputation-scope/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Configure the scope of reputation score",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-reputation-scope"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Configure the scope of reputation score",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-reputation-scope"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-reputation-scope"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Configure the scope of reputation score",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-reputation-scope"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-reputation-scope"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Configure the scope of reputation score",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-reputation-scope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/statistics/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-statistics-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/statistics/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Statistics for the object statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-statistics-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/statistics": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-statistics"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-statistics"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-statistics"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-statistics"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-statistics"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-statistics"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/url/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-url-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/url": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Category",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-url"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Category",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-url"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-url"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Category",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-url"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-url"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Category",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-url"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation/bypassed-urls/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object bypassed-urls",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-bypassed-urls-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation/bypassed-urls": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-bypassed-urls"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-bypassed-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation-bypassed-urls"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-bypassed-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation-bypassed-urls"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Bypassed URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-bypassed-urls"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation/intercepted-urls/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object intercepted-urls",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-intercepted-urls-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation/intercepted-urls": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-intercepted-urls"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-intercepted-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation-intercepted-urls"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-intercepted-urls"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation-intercepted-urls"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Intercepted URLS",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-intercepted-urls"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object web-reputation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation/url/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Operational Status for the object url",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-url-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation/url": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Reputation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-url"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Reputation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-url"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation-url"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Reputation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-url"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation-url"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "URL Reputation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation-url"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category/web-reputation": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Used for Web-Reputation Show Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Used for Web-Reputation Show Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Used for Web-Reputation Show Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category-web-reputation"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Used for Web-Reputation Show Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category-web-reputation"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-category": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Web-Category Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Web-Category Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Web-Category Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-category"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-CATEGORY"
+        ],
+        "description": "Web-Category Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-category"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "web-category-bypassed-urls-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "url-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "number-of-urls": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 8000
+              },
+              "all-urls": {
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              },
+              "url-name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "web-category-bypassed-urls": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-category-list-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Web Category List name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "uncategorized": {
+                "type": "number",
+                "description": "uncategorized category"
+              },
+              "real-estate": {
+                "type": "number",
+                "description": "real estate category"
+              },
+              "computer-and-internet-security": {
+                "type": "number",
+                "description": "computer and internet security category"
+              },
+              "financial-services": {
+                "type": "number",
+                "description": "financial services category"
+              },
+              "business-and-economy": {
+                "type": "number",
+                "description": "business and economy category"
+              },
+              "computer-and-internet-info": {
+                "type": "number",
+                "description": "computer and internet info category"
+              },
+              "auctions": {
+                "type": "number",
+                "description": "auctions category"
+              },
+              "shopping": {
+                "type": "number",
+                "description": "shopping category"
+              },
+              "cult-and-occult": {
+                "type": "number",
+                "description": "cult and occult category"
+              },
+              "travel": {
+                "type": "number",
+                "description": "travel category"
+              },
+              "drugs": {
+                "type": "number",
+                "description": "drugs category"
+              },
+              "adult-and-pornography": {
+                "type": "number",
+                "description": "adult and pornography category"
+              },
+              "home-and-garden": {
+                "type": "number",
+                "description": "home and garden category"
+              },
+              "military": {
+                "type": "number",
+                "description": "military category"
+              },
+              "social-network": {
+                "type": "number",
+                "description": "social network category"
+              },
+              "dead-sites": {
+                "type": "number",
+                "description": "dead sites category"
+              },
+              "stock-advice-and-tools": {
+                "type": "number",
+                "description": "stock advice and tools category"
+              },
+              "training-and-tools": {
+                "type": "number",
+                "description": "training and tools category"
+              },
+              "dating": {
+                "type": "number",
+                "description": "dating category"
+              },
+              "sex-education": {
+                "type": "number",
+                "description": "sex education category"
+              },
+              "religion": {
+                "type": "number",
+                "description": "religion category"
+              },
+              "entertainment-and-arts": {
+                "type": "number",
+                "description": "entertainment and arts category"
+              },
+              "personal-sites-and-blogs": {
+                "type": "number",
+                "description": "personal sites and blogs category"
+              },
+              "legal": {
+                "type": "number",
+                "description": "legal category"
+              },
+              "local-information": {
+                "type": "number",
+                "description": "local information category"
+              },
+              "streaming-media": {
+                "type": "number",
+                "description": "streaming media category"
+              },
+              "job-search": {
+                "type": "number",
+                "description": "job search category"
+              },
+              "gambling": {
+                "type": "number",
+                "description": "gambling category"
+              },
+              "translation": {
+                "type": "number",
+                "description": "translation category"
+              },
+              "reference-and-research": {
+                "type": "number",
+                "description": "reference and research category"
+              },
+              "shareware-and-freeware": {
+                "type": "number",
+                "description": "shareware and freeware category"
+              },
+              "peer-to-peer": {
+                "type": "number",
+                "description": "peer to peer category"
+              },
+              "marijuana": {
+                "type": "number",
+                "description": "marijuana category"
+              },
+              "hacking": {
+                "type": "number",
+                "description": "hacking category"
+              },
+              "games": {
+                "type": "number",
+                "description": "games category"
+              },
+              "philosophy-and-politics": {
+                "type": "number",
+                "description": "philosophy and politics category"
+              },
+              "weapons": {
+                "type": "number",
+                "description": "weapons category"
+              },
+              "pay-to-surf": {
+                "type": "number",
+                "description": "pay to surf category"
+              },
+              "hunting-and-fishing": {
+                "type": "number",
+                "description": "hunting and fishing category"
+              },
+              "society": {
+                "type": "number",
+                "description": "society category"
+              },
+              "educational-institutions": {
+                "type": "number",
+                "description": "educational institutions category"
+              },
+              "online-greeting-cards": {
+                "type": "number",
+                "description": "online greeting cards category"
+              },
+              "sports": {
+                "type": "number",
+                "description": "sports category"
+              },
+              "swimsuits-and-intimate-apparel": {
+                "type": "number",
+                "description": "swimsuits and intimate apparel category"
+              },
+              "questionable": {
+                "type": "number",
+                "description": "questionable category"
+              },
+              "kids": {
+                "type": "number",
+                "description": "kids category"
+              },
+              "hate-and-racism": {
+                "type": "number",
+                "description": "hate and racism category"
+              },
+              "personal-storage": {
+                "type": "number",
+                "description": "personal storage category"
+              },
+              "violence": {
+                "type": "number",
+                "description": "violence category"
+              },
+              "keyloggers-and-monitoring": {
+                "type": "number",
+                "description": "keyloggers and monitoring category"
+              },
+              "search-engines": {
+                "type": "number",
+                "description": "search engines category"
+              },
+              "internet-portals": {
+                "type": "number",
+                "description": "internet portals category"
+              },
+              "web-advertisements": {
+                "type": "number",
+                "description": "web advertisements category"
+              },
+              "cheating": {
+                "type": "number",
+                "description": "cheating category"
+              },
+              "gross": {
+                "type": "number",
+                "description": "gross category"
+              },
+              "web-based-email": {
+                "type": "number",
+                "description": "web based email category"
+              },
+              "malware-sites": {
+                "type": "number",
+                "description": "malware sites category"
+              },
+              "phishing-and-other-fraud": {
+                "type": "number",
+                "description": "phishing and other fraud category"
+              },
+              "proxy-avoid-and-anonymizers": {
+                "type": "number",
+                "description": "proxy avoid and anonymizers category"
+              },
+              "spyware-and-adware": {
+                "type": "number",
+                "description": "spyware and adware category"
+              },
+              "music": {
+                "type": "number",
+                "description": "music category"
+              },
+              "government": {
+                "type": "number",
+                "description": "government category"
+              },
+              "nudity": {
+                "type": "number",
+                "description": "nudity category"
+              },
+              "news-and-media": {
+                "type": "number",
+                "description": "news and media category"
+              },
+              "illegal": {
+                "type": "number",
+                "description": "illegal category"
+              },
+              "CDNs": {
+                "type": "number",
+                "description": "content delivery networks category"
+              },
+              "internet-communications": {
+                "type": "number",
+                "description": "internet communications category"
+              },
+              "bot-nets": {
+                "type": "number",
+                "description": "bot nets category"
+              },
+              "abortion": {
+                "type": "number",
+                "description": "abortion category"
+              },
+              "health-and-medicine": {
+                "type": "number",
+                "description": "health and medicine category"
+              },
+              "confirmed-SPAM-sources": {
+                "type": "number",
+                "description": "confirmed SPAM sources category"
+              },
+              "SPAM-URLs": {
+                "type": "number",
+                "description": "SPAM URLs category"
+              },
+              "unconfirmed-SPAM-sources": {
+                "type": "number",
+                "description": "unconfirmed SPAM sources category"
+              },
+              "open-HTTP-proxies": {
+                "type": "number",
+                "description": "open HTTP proxies category"
+              },
+              "dynamically-generated-content": {
+                "type": "number",
+                "description": "dynamically generated content category"
+              },
+              "parked-domains": {
+                "type": "number",
+                "description": "parked domains category"
+              },
+              "alcohol-and-tobacco": {
+                "type": "number",
+                "description": "alcohol and tobacco category"
+              },
+              "private-IP-addresses": {
+                "type": "number",
+                "description": "private IP addresses category"
+              },
+              "image-and-video-search": {
+                "type": "number",
+                "description": "image and video search category"
+              },
+              "fashion-and-beauty": {
+                "type": "number",
+                "description": "fashion and beauty category"
+              },
+              "recreation-and-hobbies": {
+                "type": "number",
+                "description": "recreation and hobbies category"
+              },
+              "motor-vehicles": {
+                "type": "number",
+                "description": "motor vehicles category"
+              },
+              "web-hosting-sites": {
+                "type": "number",
+                "description": "web hosting sites category"
+              },
+              "food-and-dining": {
+                "type": "number",
+                "description": "food and dining category"
+              },
+              "nudity-artistic": {
+                "type": "number",
+                "description": "nudity join entertainment and arts"
+              },
+              "illegal-pornography": {
+                "type": "number",
+                "description": "illegal join adult and pornography"
+              }
+            }
+          }
+        }
+      },
+      "web-category-category-list": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Web Category List name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "uncategorized": {
+            "type": "number",
+            "description": "Uncategorized URLs",
+            "default": 0
+          },
+          "real-estate": {
+            "type": "number",
+            "description": "Category Real Estate",
+            "default": 0
+          },
+          "computer-and-internet-security": {
+            "type": "number",
+            "description": "Category Computer and Internet Security",
+            "default": 0
+          },
+          "financial-services": {
+            "type": "number",
+            "description": "Category Financial Services",
+            "default": 0
+          },
+          "business-and-economy": {
+            "type": "number",
+            "description": "Category Business and Economy",
+            "default": 0
+          },
+          "computer-and-internet-info": {
+            "type": "number",
+            "description": "Category Computer and Internet Info",
+            "default": 0
+          },
+          "auctions": {
+            "type": "number",
+            "description": "Category Auctions",
+            "default": 0
+          },
+          "shopping": {
+            "type": "number",
+            "description": "Category Shopping",
+            "default": 0
+          },
+          "cult-and-occult": {
+            "type": "number",
+            "description": "Category Cult and Occult",
+            "default": 0
+          },
+          "travel": {
+            "type": "number",
+            "description": "Category Travel",
+            "default": 0
+          },
+          "drugs": {
+            "type": "number",
+            "description": "Category Abused Drugs",
+            "default": 0
+          },
+          "adult-and-pornography": {
+            "type": "number",
+            "description": "Category Adult and Pornography",
+            "default": 0
+          },
+          "home-and-garden": {
+            "type": "number",
+            "description": "Category Home and Garden",
+            "default": 0
+          },
+          "military": {
+            "type": "number",
+            "description": "Category Military",
+            "default": 0
+          },
+          "social-network": {
+            "type": "number",
+            "description": "Category Social Network",
+            "default": 0
+          },
+          "dead-sites": {
+            "type": "number",
+            "description": "Category Dead Sites (db Ops only)",
+            "default": 0
+          },
+          "stock-advice-and-tools": {
+            "type": "number",
+            "description": "Category Stock Advice and Tools",
+            "default": 0
+          },
+          "training-and-tools": {
+            "type": "number",
+            "description": "Category Training and Tools",
+            "default": 0
+          },
+          "dating": {
+            "type": "number",
+            "description": "Category Dating",
+            "default": 0
+          },
+          "sex-education": {
+            "type": "number",
+            "description": "Category Sex Education",
+            "default": 0
+          },
+          "religion": {
+            "type": "number",
+            "description": "Category Religion",
+            "default": 0
+          },
+          "entertainment-and-arts": {
+            "type": "number",
+            "description": "Category Entertainment and Arts",
+            "default": 0
+          },
+          "personal-sites-and-blogs": {
+            "type": "number",
+            "description": "Category Personal sites and Blogs",
+            "default": 0
+          },
+          "legal": {
+            "type": "number",
+            "description": "Category Legal",
+            "default": 0
+          },
+          "local-information": {
+            "type": "number",
+            "description": "Category Local Information",
+            "default": 0
+          },
+          "streaming-media": {
+            "type": "number",
+            "description": "Category Streaming Media",
+            "default": 0
+          },
+          "job-search": {
+            "type": "number",
+            "description": "Category Job Search",
+            "default": 0
+          },
+          "gambling": {
+            "type": "number",
+            "description": "Category Gambling",
+            "default": 0
+          },
+          "translation": {
+            "type": "number",
+            "description": "Category Translation",
+            "default": 0
+          },
+          "reference-and-research": {
+            "type": "number",
+            "description": "Category Reference and Research",
+            "default": 0
+          },
+          "shareware-and-freeware": {
+            "type": "number",
+            "description": "Category Shareware and Freeware",
+            "default": 0
+          },
+          "peer-to-peer": {
+            "type": "number",
+            "description": "Category Peer to Peer",
+            "default": 0
+          },
+          "marijuana": {
+            "type": "number",
+            "description": "Category Marijuana",
+            "default": 0
+          },
+          "hacking": {
+            "type": "number",
+            "description": "Category Hacking",
+            "default": 0
+          },
+          "games": {
+            "type": "number",
+            "description": "Category Games",
+            "default": 0
+          },
+          "philosophy-and-politics": {
+            "type": "number",
+            "description": "Category Philosophy and Political Advocacy",
+            "default": 0
+          },
+          "weapons": {
+            "type": "number",
+            "description": "Category Weapons",
+            "default": 0
+          },
+          "pay-to-surf": {
+            "type": "number",
+            "description": "Category Pay to Surf",
+            "default": 0
+          },
+          "hunting-and-fishing": {
+            "type": "number",
+            "description": "Category Hunting and Fishing",
+            "default": 0
+          },
+          "society": {
+            "type": "number",
+            "description": "Category Society",
+            "default": 0
+          },
+          "educational-institutions": {
+            "type": "number",
+            "description": "Category Educational Institutions",
+            "default": 0
+          },
+          "online-greeting-cards": {
+            "type": "number",
+            "description": "Category Online Greeting cards",
+            "default": 0
+          },
+          "sports": {
+            "type": "number",
+            "description": "Category Sports",
+            "default": 0
+          },
+          "swimsuits-and-intimate-apparel": {
+            "type": "number",
+            "description": "Category Swimsuits and Intimate Apparel",
+            "default": 0
+          },
+          "questionable": {
+            "type": "number",
+            "description": "Category Questionable",
+            "default": 0
+          },
+          "kids": {
+            "type": "number",
+            "description": "Category Kids",
+            "default": 0
+          },
+          "hate-and-racism": {
+            "type": "number",
+            "description": "Category Hate and Racism",
+            "default": 0
+          },
+          "personal-storage": {
+            "type": "number",
+            "description": "Category Personal Storage",
+            "default": 0
+          },
+          "violence": {
+            "type": "number",
+            "description": "Category Violence",
+            "default": 0
+          },
+          "keyloggers-and-monitoring": {
+            "type": "number",
+            "description": "Category Keyloggers and Monitoring",
+            "default": 0
+          },
+          "search-engines": {
+            "type": "number",
+            "description": "Category Search Engines",
+            "default": 0
+          },
+          "internet-portals": {
+            "type": "number",
+            "description": "Category Internet Portals",
+            "default": 0
+          },
+          "web-advertisements": {
+            "type": "number",
+            "description": "Category Web Advertisements",
+            "default": 0
+          },
+          "cheating": {
+            "type": "number",
+            "description": "Category Cheating",
+            "default": 0
+          },
+          "gross": {
+            "type": "number",
+            "description": "Category Gross",
+            "default": 0
+          },
+          "web-based-email": {
+            "type": "number",
+            "description": "Category Web based email",
+            "default": 0
+          },
+          "malware-sites": {
+            "type": "number",
+            "description": "Category Malware Sites",
+            "default": 0
+          },
+          "phishing-and-other-fraud": {
+            "type": "number",
+            "description": "Category Phishing and Other Frauds",
+            "default": 0
+          },
+          "proxy-avoid-and-anonymizers": {
+            "type": "number",
+            "description": "Category Proxy Avoid and Anonymizers",
+            "default": 0
+          },
+          "spyware-and-adware": {
+            "type": "number",
+            "description": "Category Spyware and Adware",
+            "default": 0
+          },
+          "music": {
+            "type": "number",
+            "description": "Category Music",
+            "default": 0
+          },
+          "government": {
+            "type": "number",
+            "description": "Category Government",
+            "default": 0
+          },
+          "nudity": {
+            "type": "number",
+            "description": "Category Nudity",
+            "default": 0
+          },
+          "news-and-media": {
+            "type": "number",
+            "description": "Category News and Media",
+            "default": 0
+          },
+          "illegal": {
+            "type": "number",
+            "description": "Category Illegal",
+            "default": 0
+          },
+          "cdns": {
+            "type": "number",
+            "description": "Category CDNs",
+            "default": 0
+          },
+          "internet-communications": {
+            "type": "number",
+            "description": "Category Internet Communications",
+            "default": 0
+          },
+          "bot-nets": {
+            "type": "number",
+            "description": "Category Bot Nets",
+            "default": 0
+          },
+          "abortion": {
+            "type": "number",
+            "description": "Category Abortion",
+            "default": 0
+          },
+          "health-and-medicine": {
+            "type": "number",
+            "description": "Category Health and Medicine",
+            "default": 0
+          },
+          "spam-urls": {
+            "type": "number",
+            "description": "Category SPAM URLs",
+            "default": 0
+          },
+          "dynamically-generated-content": {
+            "type": "number",
+            "description": "Dynamically Generated Content",
+            "default": 0
+          },
+          "parked-domains": {
+            "type": "number",
+            "description": "Category Parked Domains",
+            "default": 0
+          },
+          "alcohol-and-tobacco": {
+            "type": "number",
+            "description": "Category Alcohol and Tobacco",
+            "default": 0
+          },
+          "image-and-video-search": {
+            "type": "number",
+            "description": "Category Image and Video Search",
+            "default": 0
+          },
+          "fashion-and-beauty": {
+            "type": "number",
+            "description": "Category Fashion and Beauty",
+            "default": 0
+          },
+          "recreation-and-hobbies": {
+            "type": "number",
+            "description": "Category Recreation and Hobbies",
+            "default": 0
+          },
+          "motor-vehicles": {
+            "type": "number",
+            "description": "Category Motor Vehicles",
+            "default": 0
+          },
+          "web-hosting-sites": {
+            "type": "number",
+            "description": "Category Web Hosting Sites",
+            "default": 0
+          },
+          "nudity-artistic": {
+            "type": "number",
+            "description": "Category Nudity join Entertainment and Arts",
+            "default": 0
+          },
+          "illegal-pornography": {
+            "type": "number",
+            "description": "Category Illegal join Adult and Pornography",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "web-category-intercepted-urls-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "url-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "number-of-urls": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 8000
+              },
+              "all-urls": {
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              },
+              "url-name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "web-category-intercepted-urls": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-license-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "module-status": {
+                "type": "string"
+              },
+              "license-status": {
+                "type": "string"
+              },
+              "license-type": {
+                "type": "string"
+              },
+              "license-expiry": {
+                "type": "string"
+              },
+              "remaining-period": {
+                "type": "string"
+              },
+              "is-grace": {
+                "type": "string"
+              },
+              "grace-period": {
+                "type": "string"
+              },
+              "serial-number": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "web-category-license": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "web-cat-version": {
+                "type": "string"
+              },
+              "web-cat-database-name": {
+                "type": "string"
+              },
+              "web-cat-database-status": {
+                "type": "string"
+              },
+              "web-cat-database-size": {
+                "type": "string"
+              },
+              "web-cat-database-version": {
+                "type": "number"
+              },
+              "web-cat-last-update-time": {
+                "type": "string"
+              },
+              "web-cat-next-update-time": {
+                "type": "string"
+              },
+              "web-cat-connection-status": {
+                "type": "string"
+              },
+              "web-cat-failure-reason": {
+                "type": "string"
+              },
+              "web-cat-last-successful-connection": {
+                "type": "string"
+              }
+            }
+          },
+          "intercepted-urls": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "url-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "number-of-urls": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 8000
+                  },
+                  "all-urls": {
+                    "type": "string",
+                    "enum": [
+                      "true"
+                    ]
+                  },
+                  "url-name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "bypassed-urls": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "url-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "number-of-urls": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 8000
+                  },
+                  "all-urls": {
+                    "type": "string",
+                    "enum": [
+                      "true"
+                    ]
+                  },
+                  "url-name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "url": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "category-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "local-db-only": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "license": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "module-status": {
+                    "type": "string"
+                  },
+                  "license-status": {
+                    "type": "string"
+                  },
+                  "license-type": {
+                    "type": "string"
+                  },
+                  "license-expiry": {
+                    "type": "string"
+                  },
+                  "remaining-period": {
+                    "type": "string"
+                  },
+                  "is-grace": {
+                    "type": "string"
+                  },
+                  "grace-period": {
+                    "type": "string"
+                  },
+                  "serial-number": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "statistics": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "num-dplane-threads": {
+                    "type": "number"
+                  },
+                  "num-lookup-threads": {
+                    "type": "number"
+                  },
+                  "per-cpu-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "total-req-queue": {
+                    "type": "number"
+                  },
+                  "total-req-dropped": {
+                    "type": "number"
+                  },
+                  "total-req-processed": {
+                    "type": "number"
+                  },
+                  "total-req-lookup-processed": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "web-reputation": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "url-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "number-of-urls": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 8000
+                  },
+                  "all-urls": {
+                    "type": "string",
+                    "enum": [
+                      "true"
+                    ]
+                  },
+                  "url-name": {
+                    "type": "string"
+                  }
+                }
+              },
+              "intercepted-urls": {
+                "type": "object",
+                "properties": {
+                  "oper": {
+                    "type": "object",
+                    "properties": {
+                      "url-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      },
+                      "number-of-urls": {
+                        "type": "number",
+                        "minimum": 1,
+                        "maximum": 8000
+                      },
+                      "all-urls": {
+                        "type": "string",
+                        "enum": [
+                          "true"
+                        ]
+                      },
+                      "url-name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "bypassed-urls": {
+                "type": "object",
+                "properties": {
+                  "oper": {
+                    "type": "object",
+                    "properties": {
+                      "url-list": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      },
+                      "number-of-urls": {
+                        "type": "number",
+                        "minimum": 1,
+                        "maximum": 8000
+                      },
+                      "all-urls": {
+                        "type": "string",
+                        "enum": [
+                          "true"
+                        ]
+                      },
+                      "url-name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "url": {
+                "type": "object",
+                "properties": {
+                  "oper": {
+                    "type": "object",
+                    "properties": {
+                      "reputation-score": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "local-db-only": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "web-category-proxy-server": {
+        "type": "object",
+        "properties": {
+          "proxy-host": {
+            "type": "string",
+            "description": "Proxy server hostname or IP address",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "http-port": {
+            "type": "number",
+            "description": "Proxy server HTTP port",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "https-port": {
+            "type": "number",
+            "description": "Proxy server HTTPS port(HTTP port will be used if not configured)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "auth-type": {
+            "type": "string",
+            "description": "'ntlm': NTLM authentication(default); 'basic': Basic authentication; ",
+            "default": "ntlm",
+            "enum": [
+              "ntlm",
+              "basic"
+            ]
+          },
+          "domain": {
+            "type": "string",
+            "description": "Realm for NTLM authentication",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "username": {
+            "type": "string",
+            "description": "Username for proxy authentication",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "password": {
+            "type": "number",
+            "description": "Password for proxy authentication",
+            "default": 0
+          },
+          "secret-string": {
+            "type": "string",
+            "description": "password value",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-reputation-scope-stats": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Reputation Scope name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "trustworthy": {
+                "type": "number",
+                "description": "Trustworthy level(81-100)"
+              },
+              "low-risk": {
+                "type": "number",
+                "description": "Low-risk level(61-80)"
+              },
+              "moderate-risk": {
+                "type": "number",
+                "description": "Moderate-risk level(41-60)"
+              },
+              "suspicious": {
+                "type": "number",
+                "description": "Suspicious level(21-40)"
+              },
+              "malicious": {
+                "type": "number",
+                "description": "Malicious level(1-20)"
+              }
+            }
+          }
+        }
+      },
+      "web-category-reputation-scope": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Reputation Scope name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "greater-than": {
+            "type": "object",
+            "properties": {
+              "greater-trustworthy": {
+                "type": "number",
+                "description": "Reputation score is greater than or equal to 81",
+                "default": 0
+              },
+              "greater-low-risk": {
+                "type": "number",
+                "description": "Reputation score is greater than or equal to 61",
+                "default": 0
+              },
+              "greater-moderate-risk": {
+                "type": "number",
+                "description": "Reputation score is greater than or equal to 41",
+                "default": 0
+              },
+              "greater-suspicious": {
+                "type": "number",
+                "description": "Reputation score is greater than or equal to 21",
+                "default": 0
+              },
+              "greater-malicious": {
+                "type": "number",
+                "description": "Reputation score is greater than or equal to 1",
+                "default": 0
+              },
+              "greater-threshold": {
+                "type": "number",
+                "description": "Reputation score is greater than or equal to the customized score (1-100)",
+                "minimum": 1,
+                "maximum": 100
+              }
+            }
+          },
+          "less-than": {
+            "type": "object",
+            "properties": {
+              "less-trustworthy": {
+                "type": "number",
+                "description": "Reputation score is less than or equal to 100",
+                "default": 0
+              },
+              "less-low-risk": {
+                "type": "number",
+                "description": "Reputation score is less than or equal to 80",
+                "default": 0
+              },
+              "less-moderate-risk": {
+                "type": "number",
+                "description": "Reputation score is less than or equal to 60",
+                "default": 0
+              },
+              "less-suspicious": {
+                "type": "number",
+                "description": "Reputation score is less than or equal to 40",
+                "default": 0
+              },
+              "less-malicious": {
+                "type": "number",
+                "description": "Reputation score is less than or equal to 20",
+                "default": 0
+              },
+              "less-threshold": {
+                "type": "number",
+                "description": "Reputation score is less than or equal to a customized value (1-100)",
+                "minimum": 1,
+                "maximum": 100
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "web-category-statistics-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "num-dplane-threads": {
+                "type": "number"
+              },
+              "num-lookup-threads": {
+                "type": "number"
+              },
+              "per-cpu-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "total-req-queue": {
+                "type": "number"
+              },
+              "total-req-dropped": {
+                "type": "number"
+              },
+              "total-req-processed": {
+                "type": "number"
+              },
+              "total-req-lookup-processed": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "web-category-statistics-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "db-lookup": {
+                "type": "number"
+              },
+              "cloud-cache-lookup": {
+                "type": "number"
+              },
+              "cloud-lookup": {
+                "type": "number"
+              },
+              "rtu-lookup": {
+                "type": "number"
+              },
+              "lookup-latency": {
+                "type": "number"
+              },
+              "db-mem": {
+                "type": "number"
+              },
+              "rtu-cache-mem": {
+                "type": "number"
+              },
+              "lookup-cache-mem": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "web-category-statistics": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "web-category-url-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "category-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "local-db-only": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "web-category-url": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-web-reputation-bypassed-urls-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "url-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "number-of-urls": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 8000
+              },
+              "all-urls": {
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              },
+              "url-name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "web-category-web-reputation-bypassed-urls": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-web-reputation-intercepted-urls-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "url-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "number-of-urls": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 8000
+              },
+              "all-urls": {
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              },
+              "url-name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "web-category-web-reputation-intercepted-urls": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-web-reputation-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "url-list": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "number-of-urls": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 8000
+              },
+              "all-urls": {
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              },
+              "url-name": {
+                "type": "string"
+              }
+            }
+          },
+          "intercepted-urls": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "url-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "number-of-urls": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 8000
+                  },
+                  "all-urls": {
+                    "type": "string",
+                    "enum": [
+                      "true"
+                    ]
+                  },
+                  "url-name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "bypassed-urls": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "url-list": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "number-of-urls": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 8000
+                  },
+                  "all-urls": {
+                    "type": "string",
+                    "enum": [
+                      "true"
+                    ]
+                  },
+                  "url-name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "url": {
+            "type": "object",
+            "properties": {
+              "oper": {
+                "type": "object",
+                "properties": {
+                  "reputation-score": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "local-db-only": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "web-category-web-reputation-url-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "reputation-score": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "local-db-only": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "web-category-web-reputation-url": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "web-category-web-reputation": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "intercepted-urls": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "bypassed-urls": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "url": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      },
+      "web-category": {
+        "type": "object",
+        "properties": {
+          "server": {
+            "type": "string",
+            "description": "BrightCloud Query Server",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "database-server": {
+            "type": "string",
+            "description": "BrightCloud Database Server",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "port": {
+            "type": "number",
+            "description": "BrightCloud Query Server Listening Port(default 80)",
+            "default": 80,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "ssl-port": {
+            "type": "number",
+            "description": "BrightCloud Servers SSL Port(default 443)",
+            "default": 443,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "server-timeout": {
+            "type": "number",
+            "description": "BrightCloud Servers Timeout in seconds (default: 15s)",
+            "default": 15,
+            "minimum": 1,
+            "maximum": 30
+          },
+          "cloud-query-disable": {
+            "type": "number",
+            "description": "Disables cloud queries for URL's not present in local database(default enable)",
+            "default": 0
+          },
+          "cloud-query-cache-size": {
+            "type": "number",
+            "description": "Maximum cache size for storing cloud query results"
+          },
+          "db-update-time": {
+            "type": "string",
+            "description": "Time of day to update database (default: 00:00)"
+          },
+          "rtu-update-disable": {
+            "type": "number",
+            "description": "Disables real time updates(default enable)",
+            "default": 0
+          },
+          "rtu-update-interval": {
+            "type": "number",
+            "description": "Interval to check for real time updates if enabled in mins(default 60)",
+            "default": 60,
+            "minimum": 10,
+            "maximum": 14400
+          },
+          "rtu-cache-size": {
+            "type": "number",
+            "description": "Maximum cache size for storing RTU updates"
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management interface for all communication with BrightCloud",
+            "default": 0
+          },
+          "remote-syslog-enable": {
+            "type": "number",
+            "description": "Enable data plane logging to a remote syslog server",
+            "default": 0
+          },
+          "enable": {
+            "type": "number",
+            "description": "Enable BrightCloud SDK",
+            "default": 0
+          },
+          "online-check-disable": {
+            "type": "number",
+            "description": "Disables online queries for license. By default it is enabled.",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "proxy-server": {
+            "type": "object",
+            "properties": {
+              "proxy-host": {
+                "type": "string",
+                "description": "Proxy server hostname or IP address",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "http-port": {
+                "type": "number",
+                "description": "Proxy server HTTP port",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "https-port": {
+                "type": "number",
+                "description": "Proxy server HTTPS port(HTTP port will be used if not configured)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "auth-type": {
+                "type": "string",
+                "description": "'ntlm': NTLM authentication(default); 'basic': Basic authentication; ",
+                "default": "ntlm",
+                "enum": [
+                  "ntlm",
+                  "basic"
+                ]
+              },
+              "domain": {
+                "type": "string",
+                "description": "Realm for NTLM authentication",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "username": {
+                "type": "string",
+                "description": "Username for proxy authentication",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "password": {
+                "type": "number",
+                "description": "Password for proxy authentication",
+                "default": 0
+              },
+              "secret-string": {
+                "type": "string",
+                "description": "password value",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "encrypted": {
+                "type": "encrypted",
+                "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "intercepted-urls": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "bypassed-urls": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "url": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "license": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "category-list-list": {
+            "type": "array",
+            "items": {
+              "type": "category-list"
+            }
+          },
+          "statistics": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "sampling-enable": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "reputation-scope-list": {
+            "type": "array",
+            "items": {
+              "type": "reputation-scope"
+            }
+          },
+          "web-reputation": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "intercepted-urls": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "bypassed-urls": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              },
+              "url": {
+                "type": "object",
+                "properties": {
+                  "uuid": {
+                    "type": "string",
+                    "description": "uuid of the object",
+                    "minLength": 1,
+                    "maxLength": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

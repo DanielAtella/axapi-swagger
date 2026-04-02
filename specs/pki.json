@@ -1,0 +1,2416 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - PKI",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the pki category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/pki/acme-cert/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "ACME Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-acme-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "ACME Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-acme-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-acme-cert"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "ACME Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-acme-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-acme-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "ACME Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-acme-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ca-cert/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Operational Status for the object ca-cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ca-cert-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ca-cert": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/ca-cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ca-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/ca-cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ca-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-ca-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/ca-cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ca-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/cert/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Operational Status for the object cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/cert-stats/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Operational Status for the object cert-stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert-stats-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/cert-stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/cert-stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert-stats"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/cert-stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert-stats"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-cert-stats"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/cert-stats",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/cert": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/cmp-cert/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "CMP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cmp-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "CMP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cmp-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-cmp-cert"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "CMP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cmp-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-cmp-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "CMP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-cmp-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/copy-cert": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Copy SSL certificate to another file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-copy-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Copy SSL certificate to another file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-copy-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-copy-cert"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/copy-key": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Copy SSL key to another file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-copy-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Copy SSL key to another file",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-copy-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-copy-key"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/create-oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/create-oper",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-create-oper"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/create-oper",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-create-oper"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-create-oper"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/create-oper",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-create-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/delete-oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/delete-oper",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-delete-oper"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/delete-oper",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-delete-oper"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-delete-oper"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Endpoint for /axapi/v3/pki/delete-oper",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-delete-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/delete": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Delete SSL cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-delete"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Delete SSL cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-delete"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-delete"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/scep-cert/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "SCEP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-scep-cert"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "SCEP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-scep-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-scep-cert"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "SCEP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-scep-cert"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-scep-cert"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "SCEP Certificate enrollment object",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-scep-cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ssl-ca-cert/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Operational Status for the object ssl-ca-cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssl-ca-cert-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ssl-cert/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Operational Status for the object ssl-cert",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssl-cert-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ssli/generate/crl": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Generate a CRL for for a vport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssli-generate-crl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Generate a CRL for for a vport",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssli-generate-crl"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-ssli-generate-crl"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ssli/generate": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "SSLi PKI generation commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssli-generate"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ssli/revoke": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Revoke an SSLi certificate",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssli-revoke"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "Revoke an SSLi certificate",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssli-revoke"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/pki-ssli-revoke"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki/ssli": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "SSLi Specific Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki-ssli"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/pki": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "PKI"
+        ],
+        "description": "PKI Commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/pki"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "pki-acme-cert": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify Certificate name to be enrolled",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "url": {
+            "type": "string",
+            "description": "ACME directory URL. By default, use Let's encrypt as CA server",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "staging-url": {
+            "type": "string",
+            "description": "ACME staging directory URL. By default, use Let's encrypt as CA server",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "domain": {
+            "type": "string",
+            "description": "Main domain you want to issue the cert for. CA will verify whether you control this domain",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "san-domain": {
+            "type": "string",
+            "description": "Subject-alternate-name dns(s) for your cert, sperated by /",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "enroll": {
+            "type": "number",
+            "description": "Initiates enrollment with CA. Due to CA rate limit, A10 strongly recommend you set \"run-with-staging-server\" during test",
+            "default": 0
+          },
+          "force": {
+            "type": "number",
+            "description": "Ignore the next renewal time and force to renew cert",
+            "default": 0
+          },
+          "staging": {
+            "type": "number",
+            "description": "Run ACME operation with staging server. Due to CA rate limit, A10 strongly recommends you set this during test",
+            "default": 0
+          },
+          "log-level": {
+            "type": "number",
+            "description": "Level for logging output of ACME commands(default 1 and detailed 2, including debug messages)",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 2
+          },
+          "renew-before": {
+            "type": "number",
+            "description": "Specify interval before certificate expiry to renew the certificate",
+            "default": 0
+          },
+          "renew-before-type": {
+            "type": "string",
+            "description": "'hour': Number of hours before cert expiry; 'day': Number of days before cert expiry; 'week': Number of weeks before cert expiry; 'month': Number of months before cert expiry(1 month=30 days); ",
+            "enum": [
+              "hour",
+              "day",
+              "week",
+              "month"
+            ]
+          },
+          "renew-before-value": {
+            "type": "number",
+            "description": "Value of renewal period",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "renew-every": {
+            "type": "number",
+            "description": "Specify periodic interval in which to renew the certificate",
+            "default": 0
+          },
+          "minute": {
+            "type": "number",
+            "description": "Periodic interval in minutes",
+            "minimum": 2,
+            "maximum": 255
+          },
+          "renew-every-type": {
+            "type": "string",
+            "description": "'hour': Periodic interval in hours; 'day': Periodic interval in days; 'week': Periodic interval in weeks; 'month': Periodic interval in months(1 month=30 days); ",
+            "enum": [
+              "hour",
+              "day",
+              "week",
+              "month"
+            ]
+          },
+          "renew-every-value": {
+            "type": "number",
+            "description": "Value of renewal period",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "cert-type": {
+            "type": "number",
+            "description": "Specify the type of certificate",
+            "default": 0
+          },
+          "rsa-type": {
+            "type": "number",
+            "description": "RSA certificate (default)",
+            "default": 0
+          },
+          "ecdsa-type": {
+            "type": "number",
+            "description": "ECDSA certificate",
+            "default": 0
+          },
+          "rsa-key-length": {
+            "type": "string",
+            "description": "'2048': Key size 2048 bits(default); '3072': Key size 3072 bits; '4096': Key size 4096 bits; '8192': Key size 8192 bits; ",
+            "default": "2048",
+            "enum": [
+              "2048",
+              "3072",
+              "4096",
+              "8192"
+            ]
+          },
+          "ec-key-length": {
+            "type": "string",
+            "description": "'256': Key size 256 bits; '384': Key size 384 bits(default); ",
+            "default": "384",
+            "enum": [
+              "256",
+              "384"
+            ]
+          },
+          "email": {
+            "type": "string",
+            "description": "A valid email address for your ACME account. CA uses this email to send you expiration or other notices",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "vrid": {
+            "type": "number",
+            "description": "Specify ha VRRP-A vrid. It is used to sync http-01 challenge token",
+            "minimum": 0,
+            "maximum": 31
+          },
+          "eab-key-id": {
+            "type": "string",
+            "description": "The key identifier for ACME External Account Binding",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "eab-hmac-key": {
+            "type": "number",
+            "description": "The HMAC key for ACME External Account Binding",
+            "default": 0
+          },
+          "secret-string": {
+            "type": "string",
+            "description": "The HMAC key for ACME External Account Binding",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "pki-ca-cert-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "sortby-name": {
+                "type": "number"
+              },
+              "sortby-exp": {
+                "type": "number"
+              },
+              "certs": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "partition": {
+                "type": "string"
+              },
+              "exact-match": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "pki-ca-cert": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "pki-cert-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "sortby-name": {
+                "type": "number"
+              },
+              "sortby-exp": {
+                "type": "number"
+              },
+              "certs": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "partition": {
+                "type": "string"
+              },
+              "exact-match": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "pki-cert-stats-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "cert-count": {
+                "type": "number"
+              },
+              "key-count": {
+                "type": "number"
+              },
+              "ca-cert-count": {
+                "type": "number"
+              },
+              "partition": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "pki-cert-stats": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "pki-cert": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "pki-cmp-cert": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify Certificate name to be enrolled",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "url": {
+            "type": "string",
+            "description": "CMP server's absolute URL(http(s)://host:[port]/path), path is the location to use for the CMP server(aka CMP alias)",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "subject-dn": {
+            "type": "string",
+            "description": "Distinguished Name to use while enrolling the certificate(For EJBCA CA, this is the subject DN of an End Entity) (DN OID is case sensitive)",
+            "minLength": 2,
+            "maxLength": 127
+          },
+          "recipient-dn": {
+            "type": "string",
+            "description": "Distinguished Name of the CMP message recipient, i.e., the CMP server (usually a CA or RA entity)) (DN OIDis case sensitive)",
+            "minLength": 2,
+            "maxLength": 127
+          },
+          "subject-alternate-name": {
+            "type": "object",
+            "properties": {
+              "san-type": {
+                "type": "string",
+                "description": "'email': Enter e-mail address of the subject; 'dns': Enter hostname of the subject; 'ip': Enter IP address of the subject; ",
+                "enum": [
+                  "email",
+                  "dns",
+                  "ip"
+                ]
+              },
+              "san-value": {
+                "type": "string",
+                "description": "Value of subject-alternate-name",
+                "minLength": 1,
+                "maxLength": 127
+              }
+            }
+          },
+          "enroll": {
+            "type": "number",
+            "description": "Initiates enrollment of device with the CA",
+            "default": 0
+          },
+          "log-level": {
+            "type": "number",
+            "description": "Level for logging output of CMP commands(default 1 and detailed 2)",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 2
+          },
+          "secret": {
+            "type": "number",
+            "description": "Specify the pre-shared secret used to enroll the device's certificate",
+            "default": 0
+          },
+          "secret-string": {
+            "type": "string",
+            "description": "pre-shared secret",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "renew-before": {
+            "type": "number",
+            "description": "Specify interval before certificate expiry to renew the certificate",
+            "default": 0
+          },
+          "renew-before-type": {
+            "type": "string",
+            "description": "'hour': Number of hours before cert expiry; 'day': Number of days before cert expiry; 'week': Number of weeks before cert expiry; 'month': Number of months before cert expiry(1 month=30 days); ",
+            "enum": [
+              "hour",
+              "day",
+              "week",
+              "month"
+            ]
+          },
+          "renew-before-value": {
+            "type": "number",
+            "description": "Value of renewal period",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "renew-every": {
+            "type": "number",
+            "description": "Specify periodic interval in which to renew the certificate",
+            "default": 0
+          },
+          "minute": {
+            "type": "number",
+            "description": "Periodic interval in minutes",
+            "minimum": 2,
+            "maximum": 255
+          },
+          "renew-every-type": {
+            "type": "string",
+            "description": "'hour': Periodic interval in hours; 'day': Periodic interval in days; 'week': Periodic interval in weeks; 'month': Periodic interval in months(1 month=30 days); ",
+            "enum": [
+              "hour",
+              "day",
+              "week",
+              "month"
+            ]
+          },
+          "renew-every-value": {
+            "type": "number",
+            "description": "Value of renewal period",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "cert-type": {
+            "type": "number",
+            "description": "Specify the type of certificate",
+            "default": 0
+          },
+          "rsa-type": {
+            "type": "number",
+            "description": "RSA certificate (default)",
+            "default": 0
+          },
+          "ecdsa-type": {
+            "type": "number",
+            "description": "ECDSA certificate",
+            "default": 0
+          },
+          "rsa-key-length": {
+            "type": "string",
+            "description": "'1024': Key size 1024 bits; '2048': Key size 2048 bits(default); '4096': Key size 4096 bits; '8192': Key size 8192 bits; ",
+            "default": "2048",
+            "enum": [
+              "1024",
+              "2048",
+              "4096",
+              "8192"
+            ]
+          },
+          "ec-key-length": {
+            "type": "string",
+            "description": "'256': Key size 256 bits; '384': Key size 384 bits(default); ",
+            "default": "384",
+            "enum": [
+              "256",
+              "384"
+            ]
+          },
+          "max-polltime": {
+            "type": "number",
+            "description": "Maximum time in seconds a(n) enrollment/key update may take (default 120)",
+            "default": 120,
+            "minimum": 5,
+            "maximum": 1024
+          },
+          "cmp-trusted-ca": {
+            "type": "string",
+            "description": "The specific CA to trust while verifying signature of CMP response message",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "cmp-trusted-cert": {
+            "type": "string",
+            "description": "The specific CMP server certificate to use and directly trust when verifying signature of CMP response message",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "allow-unprotected-errors": {
+            "type": "number",
+            "description": "Accept missing or invalid protection of negative responses(CA likes EJCBA tends to not protect negative responses)",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "pki-copy-cert": {
+        "type": "object",
+        "properties": {
+          "src-cert": {
+            "type": "string",
+            "description": "Source certificate file",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "rotation": {
+            "type": "number",
+            "description": "Specify rotation number of SCEP/CMP generated certificate file",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "dest-cert": {
+            "type": "string",
+            "description": "Destination certificate file",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite the destination file if already present",
+            "default": 0
+          }
+        }
+      },
+      "pki-copy-key": {
+        "type": "object",
+        "properties": {
+          "src-key": {
+            "type": "string",
+            "description": "Source key file",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "rotation": {
+            "type": "number",
+            "description": "Specify rotation number of SCEP/CMP generated key file",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "dest-key": {
+            "type": "string",
+            "description": "Destination key file",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "overwrite": {
+            "type": "number",
+            "description": "Overwrite the destination file if already present",
+            "default": 0
+          }
+        }
+      },
+      "pki-create-oper": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "secured": {
+            "type": "number",
+            "default": 0
+          },
+          "bits": {
+            "type": "string",
+            "description": "'256': 256; '384': 384; '1024': 1024; '2048': 2048; '4096': 4096; ",
+            "default": "1024",
+            "enum": [
+              "256",
+              "384",
+              "1024",
+              "2048",
+              "4096"
+            ]
+          },
+          "common-name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "valid-days": {
+            "type": "number",
+            "default": 730,
+            "minimum": 30,
+            "maximum": 3650
+          },
+          "division": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "organization": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "locality": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "state-province": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "country": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 3
+          },
+          "email": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "rootca": {
+            "type": "number",
+            "default": 0
+          },
+          "cert-type": {
+            "type": "string",
+            "description": "'rsa': rsa; 'ecdsa': ecdsa; ",
+            "default": "rsa",
+            "enum": [
+              "rsa",
+              "ecdsa"
+            ]
+          },
+          "digest": {
+            "type": "string",
+            "description": "'sha1': sha1; 'sha256': sha256; 'sha384': sha384; 'sha512': sha512; ",
+            "default": "sha1",
+            "enum": [
+              "sha1",
+              "sha256",
+              "sha384",
+              "sha512"
+            ]
+          },
+          "csr-generate": {
+            "type": "number",
+            "default": 0
+          },
+          "v3-request": {
+            "type": "number",
+            "default": 0
+          }
+        }
+      },
+      "pki-delete-oper": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 245
+          }
+        }
+      },
+      "pki-delete": {
+        "type": "object",
+        "properties": {
+          "cert-name": {
+            "type": "string",
+            "description": "Certificate file name",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "ca": {
+            "type": "string",
+            "description": "CA certificate file name",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "private-key": {
+            "type": "string",
+            "description": "Private key file name",
+            "minLength": 1,
+            "maxLength": 245
+          },
+          "crl": {
+            "type": "string",
+            "description": "CRL file name",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "csr": {
+            "type": "string",
+            "description": "CSR file name",
+            "minLength": 1,
+            "maxLength": 245
+          }
+        }
+      },
+      "pki-scep-cert": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Specify Certificate name to be enrolled",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "url": {
+            "type": "string",
+            "description": "Specify the Enrollment Agent's absolute URL (Format: http://host/path)",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "dn": {
+            "type": "string",
+            "description": "Specify the Distinguished-Name to use while enrolling the certificate (Format: \"cn=user, dc=example, dc=com\")",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "subject-alternate-name": {
+            "type": "object",
+            "properties": {
+              "san-type": {
+                "type": "string",
+                "description": "'email': Enter e-mail address of the subject; 'dns': Enter hostname of the subject; 'ip': Enter IP address of the subject; ",
+                "enum": [
+                  "email",
+                  "dns",
+                  "ip"
+                ]
+              },
+              "san-value": {
+                "type": "string",
+                "description": "Value of subject-alternate-name",
+                "minLength": 1,
+                "maxLength": 127
+              }
+            }
+          },
+          "enroll": {
+            "type": "number",
+            "description": "Initiates enrollment of device with the CA",
+            "default": 0
+          },
+          "log-level": {
+            "type": "number",
+            "description": "level for logging output of scepclient commands(default 1 and detailed 4)",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 4
+          },
+          "password": {
+            "type": "number",
+            "description": "Specify the password used to enroll the device's certificate",
+            "default": 0
+          },
+          "secret-string": {
+            "type": "string",
+            "description": "secret password",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "encrypted": {
+            "type": "encrypted",
+            "description": "Do NOT use this option manually. (This is an A10 reserved keyword.) (The ENCRYPTED secret string)"
+          },
+          "renew-before": {
+            "type": "number",
+            "description": "Specify interval before certificate expiry to renew the certificate",
+            "default": 0
+          },
+          "renew-before-type": {
+            "type": "string",
+            "description": "'hour': Number of hours before cert expiry; 'day': Number of days before cert expiry; 'week': Number of weeks before cert expiry; 'month': Number of months before cert expiry(1 month=30 days); ",
+            "enum": [
+              "hour",
+              "day",
+              "week",
+              "month"
+            ]
+          },
+          "renew-before-value": {
+            "type": "number",
+            "description": "Value of renewal period",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "renew-every": {
+            "type": "number",
+            "description": "Specify periodic interval in which to renew the certificate",
+            "default": 0
+          },
+          "minute": {
+            "type": "number",
+            "description": "Periodic interval in minutes",
+            "minimum": 2,
+            "maximum": 255
+          },
+          "renew-every-type": {
+            "type": "string",
+            "description": "'hour': Periodic interval in hours; 'day': Periodic interval in days; 'week': Periodic interval in weeks; 'month': Periodic interval in months(1 month=30 days); ",
+            "enum": [
+              "hour",
+              "day",
+              "week",
+              "month"
+            ]
+          },
+          "renew-every-value": {
+            "type": "number",
+            "description": "Value of renewal period",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "key-length": {
+            "type": "string",
+            "description": "'1024': Key size 1024 bits; '2048': Key size 2048 bits(default); '4096': Key size 4096 bits; '8192': Key size 8192 bits; ",
+            "default": "2048",
+            "enum": [
+              "1024",
+              "2048",
+              "4096",
+              "8192"
+            ]
+          },
+          "days": {
+            "type": "number",
+            "description": "Validity of self-signed certificate (default 1825)",
+            "default": 1825,
+            "minimum": 1,
+            "maximum": 3650
+          },
+          "start-date": {
+            "type": "string",
+            "description": "Start date of self-signed certificate in YYMMDDHHMMSS format specified in UTC time",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "end-date": {
+            "type": "string",
+            "description": "End date of self-signed certificate in YYMMDDHHMMSS format specified in UTC time",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "method": {
+            "type": "string",
+            "description": "'GET': GET request; 'POST': POST request; ",
+            "default": "GET",
+            "enum": [
+              "GET",
+              "POST"
+            ]
+          },
+          "interval": {
+            "type": "number",
+            "description": "Interval time in seconds to poll when SCEP response is PENDING (default 5)",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 3600
+          },
+          "max-polltime": {
+            "type": "number",
+            "description": "Maximum time in seconds to poll when SCEP response is PENDING (default 180)",
+            "default": 180,
+            "minimum": 15,
+            "maximum": 432000
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "pki-ssl-ca-cert-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "sortby-name": {
+                "type": "number"
+              },
+              "sortby-exp": {
+                "type": "number"
+              },
+              "ssl-certs": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "partition": {
+                "type": "string"
+              },
+              "exact-match": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "pki-ssl-cert-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "sortby-name": {
+                "type": "number"
+              },
+              "sortby-exp": {
+                "type": "number"
+              },
+              "ssl-certs": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "partition": {
+                "type": "string"
+              },
+              "exact-match": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "pki-ssli-generate-crl": {
+        "type": "object",
+        "properties": {
+          "vip-name": {
+            "type": "string",
+            "description": "VIP name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "port": {
+            "type": "number",
+            "description": "port number",
+            "minimum": 0,
+            "maximum": 65534
+          }
+        }
+      },
+      "pki-ssli-generate": {
+        "type": "object",
+        "properties": {
+          "crl": {
+            "type": "object",
+            "properties": {
+              "vip-name": {
+                "type": "string",
+                "description": "VIP name",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "port": {
+                "type": "number",
+                "description": "port number",
+                "minimum": 0,
+                "maximum": 65534
+              }
+            }
+          }
+        }
+      },
+      "pki-ssli-revoke": {
+        "type": "object",
+        "properties": {
+          "vip-name": {
+            "type": "string",
+            "description": "VIP name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "port": {
+            "type": "number",
+            "description": "port number",
+            "minimum": 0,
+            "maximum": 65534
+          },
+          "serial": {
+            "type": "string",
+            "description": "Serial number in hex",
+            "minLength": 1,
+            "maxLength": 63
+          }
+        }
+      },
+      "pki-ssli": {
+        "type": "object",
+        "properties": {
+          "revoke": {
+            "type": "object",
+            "properties": {
+              "vip-name": {
+                "type": "string",
+                "description": "VIP name",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "port": {
+                "type": "number",
+                "description": "port number",
+                "minimum": 0,
+                "maximum": 65534
+              },
+              "serial": {
+                "type": "string",
+                "description": "Serial number in hex",
+                "minLength": 1,
+                "maxLength": 63
+              }
+            }
+          },
+          "generate": {
+            "type": "object",
+            "properties": {
+              "crl": {
+                "type": "object",
+                "properties": {
+                  "vip-name": {
+                    "type": "string",
+                    "description": "VIP name",
+                    "minLength": 1,
+                    "maxLength": 63
+                  },
+                  "port": {
+                    "type": "number",
+                    "description": "port number",
+                    "minimum": 0,
+                    "maximum": 65534
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pki": {
+        "type": "object",
+        "properties": {
+          "scep-cert-list": {
+            "type": "array",
+            "items": {
+              "type": "scep-cert"
+            }
+          },
+          "cmp-cert-list": {
+            "type": "array",
+            "items": {
+              "type": "cmp-cert"
+            }
+          },
+          "copy-cert": {
+            "type": "object",
+            "properties": {
+              "src-cert": {
+                "type": "string",
+                "description": "Source certificate file",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "rotation": {
+                "type": "number",
+                "description": "Specify rotation number of SCEP/CMP generated certificate file",
+                "minimum": 1,
+                "maximum": 4
+              },
+              "dest-cert": {
+                "type": "string",
+                "description": "Destination certificate file",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "overwrite": {
+                "type": "number",
+                "description": "Overwrite the destination file if already present",
+                "default": 0
+              }
+            }
+          },
+          "copy-key": {
+            "type": "object",
+            "properties": {
+              "src-key": {
+                "type": "string",
+                "description": "Source key file",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "rotation": {
+                "type": "number",
+                "description": "Specify rotation number of SCEP/CMP generated key file",
+                "minimum": 1,
+                "maximum": 4
+              },
+              "dest-key": {
+                "type": "string",
+                "description": "Destination key file",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "overwrite": {
+                "type": "number",
+                "description": "Overwrite the destination file if already present",
+                "default": 0
+              }
+            }
+          },
+          "delete": {
+            "type": "object",
+            "properties": {
+              "cert-name": {
+                "type": "string",
+                "description": "Certificate file name",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "ca": {
+                "type": "string",
+                "description": "CA certificate file name",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "private-key": {
+                "type": "string",
+                "description": "Private key file name",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "crl": {
+                "type": "string",
+                "description": "CRL file name",
+                "minLength": 1,
+                "maxLength": 255
+              },
+              "csr": {
+                "type": "string",
+                "description": "CSR file name",
+                "minLength": 1,
+                "maxLength": 245
+              }
+            }
+          },
+          "ssli": {
+            "type": "object",
+            "properties": {
+              "revoke": {
+                "type": "object",
+                "properties": {
+                  "vip-name": {
+                    "type": "string",
+                    "description": "VIP name",
+                    "minLength": 1,
+                    "maxLength": 63
+                  },
+                  "port": {
+                    "type": "number",
+                    "description": "port number",
+                    "minimum": 0,
+                    "maximum": 65534
+                  },
+                  "serial": {
+                    "type": "string",
+                    "description": "Serial number in hex",
+                    "minLength": 1,
+                    "maxLength": 63
+                  }
+                }
+              },
+              "generate": {
+                "type": "object",
+                "properties": {
+                  "crl": {
+                    "type": "object",
+                    "properties": {
+                      "vip-name": {
+                        "type": "string",
+                        "description": "VIP name",
+                        "minLength": 1,
+                        "maxLength": 63
+                      },
+                      "port": {
+                        "type": "number",
+                        "description": "port number",
+                        "minimum": 0,
+                        "maximum": 65534
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "create-oper": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 245
+              },
+              "secured": {
+                "type": "number",
+                "default": 0
+              },
+              "bits": {
+                "type": "string",
+                "description": "'256': 256; '384': 384; '1024': 1024; '2048': 2048; '4096': 4096; ",
+                "default": "1024",
+                "enum": [
+                  "256",
+                  "384",
+                  "1024",
+                  "2048",
+                  "4096"
+                ]
+              },
+              "common-name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "valid-days": {
+                "type": "number",
+                "default": 730,
+                "minimum": 30,
+                "maximum": 3650
+              },
+              "division": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "organization": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "locality": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "state-province": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 31
+              },
+              "country": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 3
+              },
+              "email": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "rootca": {
+                "type": "number",
+                "default": 0
+              },
+              "cert-type": {
+                "type": "string",
+                "description": "'rsa': rsa; 'ecdsa': ecdsa; ",
+                "default": "rsa",
+                "enum": [
+                  "rsa",
+                  "ecdsa"
+                ]
+              },
+              "digest": {
+                "type": "string",
+                "description": "'sha1': sha1; 'sha256': sha256; 'sha384': sha384; 'sha512': sha512; ",
+                "default": "sha1",
+                "enum": [
+                  "sha1",
+                  "sha256",
+                  "sha384",
+                  "sha512"
+                ]
+              },
+              "csr-generate": {
+                "type": "number",
+                "default": 0
+              },
+              "v3-request": {
+                "type": "number",
+                "default": 0
+              }
+            }
+          },
+          "delete-oper": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 245
+              }
+            }
+          },
+          "ssl-cert": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "ssl-ca-cert": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "description": "uuid of the object",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

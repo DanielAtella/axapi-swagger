@@ -1,0 +1,709 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - LDAP-SERVER",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the ldap-server category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/ldap-server/host/ipv4/{ipv4-addr}": {
+      "parameters": [
+        {
+          "name": "ipv4-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv4-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv4"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ldap-server-host-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv4"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ldap-server-host-ipv4"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv4"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ldap-server/host/ipv6/{ipv6-addr}": {
+      "parameters": [
+        {
+          "name": "ipv6-addr",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for ipv6-addr"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv6"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ldap-server-host-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv6"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ldap-server-host-ipv6"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of ldap server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ipv6"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ldap-server/host/ldap-hostname/{hostname}": {
+      "parameters": [
+        {
+          "name": "hostname",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for hostname"
+        }
+      ],
+      "get": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of LDAP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ldap-hostname"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of LDAP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ldap-hostname"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ldap-server-host-ldap-hostname"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of LDAP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ldap-hostname"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ldap-server-host-ldap-hostname"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the hostname of LDAP server",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host-ldap-hostname"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ldap-server/host": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Specify the LDAP server's hostname or IP address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server-host"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/ldap-server": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "LDAP-SERVER"
+        ],
+        "description": "Configure LDAP server information",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ldap-server"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ldap-server-host-ipv4": {
+        "type": "object",
+        "properties": {
+          "ipv4-addr": {
+            "type": "string",
+            "description": "IPV4 address of ldap server"
+          },
+          "domain": {
+            "type": "string",
+            "description": "Configure AD domain name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "cn-value": {
+            "type": "string",
+            "description": "LDAP common name identifier (i.e.: cn, uid)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "group": {
+            "type": "string",
+            "description": "Configure the group DN which user belongs to",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "base": {
+            "type": "string",
+            "description": "Configure the group DN which user belongs to",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "dn-value": {
+            "type": "string",
+            "description": "LDAP distinguished name (dn)",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "domain-cfg": {
+            "type": "object",
+            "properties": {
+              "port": {
+                "type": "number",
+                "description": "Specify the LDAP server's port (default 389 without ssl or 636 with ssl)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "ssl": {
+                "type": "number",
+                "description": "Use SSL",
+                "default": 0
+              },
+              "timeout": {
+                "type": "number",
+                "description": "Specify the LDAP server's timeout (default 3)",
+                "minimum": 1,
+                "maximum": 60
+              }
+            }
+          },
+          "port-cfg": {
+            "type": "object",
+            "properties": {
+              "port": {
+                "type": "number",
+                "description": "Specify the LDAP server's port (default 389 without ssl or 636 with ssl)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "ssl": {
+                "type": "number",
+                "description": "Use SSL",
+                "default": 0
+              },
+              "timeout": {
+                "type": "number",
+                "description": "Specify the LDAP server's timeout (default 3)",
+                "minimum": 1,
+                "maximum": 60
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ldap-server-host-ipv6": {
+        "type": "object",
+        "properties": {
+          "ipv6-addr": {
+            "type": "string",
+            "description": "IPV6 address of ldap server"
+          },
+          "domain": {
+            "type": "string",
+            "description": "Configure AD domain name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "cn-value": {
+            "type": "string",
+            "description": "LDAP common name identifier (i.e.: cn, uid)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "group": {
+            "type": "string",
+            "description": "Configure the group DN which user belongs to",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "base": {
+            "type": "string",
+            "description": "Configure the group DN which user belongs to",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "dn-value": {
+            "type": "string",
+            "description": "LDAP distinguished name (dn)",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "domain-cfg": {
+            "type": "object",
+            "properties": {
+              "port": {
+                "type": "number",
+                "description": "Specify the LDAP server's port (default 389 without ssl or 636 with ssl)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "ssl": {
+                "type": "number",
+                "description": "Use SSL",
+                "default": 0
+              },
+              "timeout": {
+                "type": "number",
+                "description": "Specify the LDAP server's timeout (default 3)",
+                "minimum": 1,
+                "maximum": 60
+              }
+            }
+          },
+          "port-cfg": {
+            "type": "object",
+            "properties": {
+              "port": {
+                "type": "number",
+                "description": "Specify the LDAP server's port (default 389 without ssl or 636 with ssl)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "ssl": {
+                "type": "number",
+                "description": "Use SSL",
+                "default": 0
+              },
+              "timeout": {
+                "type": "number",
+                "description": "Specify the LDAP server's timeout (default 3)",
+                "minimum": 1,
+                "maximum": 60
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ldap-server-host-ldap-hostname": {
+        "type": "object",
+        "properties": {
+          "hostname": {
+            "type": "string",
+            "description": "Hostname of LDAP server",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "domain": {
+            "type": "string",
+            "description": "Configure AD domain name",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "cn-value": {
+            "type": "string",
+            "description": "LDAP common name identifier (i.e.: cn, uid)",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "group": {
+            "type": "string",
+            "description": "Configure the group DN which user belongs to",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "base": {
+            "type": "string",
+            "description": "Configure the group DN which user belongs to",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "dn-value": {
+            "type": "string",
+            "description": "LDAP distinguished name (dn)",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "domain-cfg": {
+            "type": "object",
+            "properties": {
+              "port": {
+                "type": "number",
+                "description": "Specify the LDAP server's port (default 389 without ssl or 636 with ssl)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "ssl": {
+                "type": "number",
+                "description": "Use SSL",
+                "default": 0
+              },
+              "timeout": {
+                "type": "number",
+                "description": "Specify the LDAP server's timeout (default 3)",
+                "minimum": 1,
+                "maximum": 60
+              }
+            }
+          },
+          "port-cfg": {
+            "type": "object",
+            "properties": {
+              "port": {
+                "type": "number",
+                "description": "Specify the LDAP server's port (default 389 without ssl or 636 with ssl)",
+                "minimum": 1,
+                "maximum": 65535
+              },
+              "ssl": {
+                "type": "number",
+                "description": "Use SSL",
+                "default": 0
+              },
+              "timeout": {
+                "type": "number",
+                "description": "Specify the LDAP server's timeout (default 3)",
+                "minimum": 1,
+                "maximum": 60
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      },
+      "ldap-server-host": {
+        "type": "object",
+        "properties": {
+          "ipv4-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv4"
+            }
+          },
+          "ipv6-list": {
+            "type": "array",
+            "items": {
+              "type": "ipv6"
+            }
+          },
+          "ldap-hostname-list": {
+            "type": "array",
+            "items": {
+              "type": "ldap-hostname"
+            }
+          }
+        }
+      },
+      "ldap-server": {
+        "type": "object",
+        "properties": {
+          "host": {
+            "type": "object",
+            "properties": {
+              "ipv4-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv4"
+                }
+              },
+              "ipv6-list": {
+                "type": "array",
+                "items": {
+                  "type": "ipv6"
+                }
+              },
+              "ldap-hostname-list": {
+                "type": "array",
+                "items": {
+                  "type": "ldap-hostname"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,994 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - DNSSEC",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the dnssec category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/dnssec/dnskey": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "DNSKEY Resource Records of child zones",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-dnskey"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "DNSKEY Resource Records of child zones",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-dnskey"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec-dnskey"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "DNSKEY Resource Records of child zones",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-dnskey"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/dnssec/ds": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Delegation Signer(DS) Resource Records of child zones",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-ds"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Delegation Signer(DS) Resource Records of child zones",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-ds"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec-ds"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Delegation Signer(DS) Resource Records of child zones",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-ds"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/dnssec/key-rollover": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "DNSSEC Key rollover",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-key-rollover"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "DNSSEC Key rollover",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-key-rollover"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec-key-rollover"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "DNSSEC Key rollover",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-key-rollover"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/dnssec/oper": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Operational Status for the object dnssec",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-oper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/dnssec/sign-zone-now": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "sign zone right now",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-sign-zone-now"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "sign zone right now",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-sign-zone-now"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec-sign-zone-now"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "sign zone right now",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-sign-zone-now"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/dnssec/template/{dnssec-temp-name}": {
+      "parameters": [
+        {
+          "name": "dnssec-temp-name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for dnssec-temp-name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "template Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-template"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "template Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec-template"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "template Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-template"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec-template"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "template Settings",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec-template"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/dnssec": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Domain Name System Security Extensions commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Domain Name System Security Extensions commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Domain Name System Security Extensions commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/dnssec"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DNSSEC"
+        ],
+        "description": "Domain Name System Security Extensions commands",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dnssec"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "dnssec-dnskey": {
+        "type": "object",
+        "properties": {
+          "key-delete": {
+            "type": "number",
+            "description": "Delete the DNSKEY file",
+            "default": 0
+          },
+          "zone-name": {
+            "type": "string",
+            "description": "DNS zone name of the child zone",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "dnssec-ds": {
+        "type": "object",
+        "properties": {
+          "ds-delete": {
+            "type": "number",
+            "description": "Delete the DS file",
+            "default": 0
+          },
+          "zone-name": {
+            "type": "string",
+            "description": "DNS zone name of the child zone",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "dnssec-key-rollover": {
+        "type": "object",
+        "properties": {
+          "zone-name": {
+            "type": "string",
+            "description": "Specify the name for the DNS zone",
+            "minLength": 1,
+            "maxLength": 127
+          },
+          "dnssec-key-type": {
+            "type": "string",
+            "description": "'ZSK': Zone Signing Key; 'KSK': Key Signing Key; ",
+            "enum": [
+              "ZSK",
+              "KSK"
+            ]
+          },
+          "zsk-start": {
+            "type": "number",
+            "description": "start ZSK rollover in emergency mode",
+            "default": 0
+          },
+          "ksk-start": {
+            "type": "number",
+            "description": "start KSK rollover in emergency mode",
+            "default": 0
+          },
+          "ds-ready-in-parent-zone": {
+            "type": "number",
+            "description": "DS RR is already ready in the parent zone",
+            "default": 0
+          }
+        }
+      },
+      "dnssec-oper": {
+        "type": "object",
+        "properties": {
+          "oper": {
+            "type": "object",
+            "properties": {
+              "soa_memory": {
+                "type": "number"
+              },
+              "soa_objects": {
+                "type": "number"
+              },
+              "dnskey_memory": {
+                "type": "number"
+              },
+              "dnskey_objects": {
+                "type": "number"
+              },
+              "ds_memory": {
+                "type": "number"
+              },
+              "ds_objects": {
+                "type": "number"
+              },
+              "nsec3param_memory": {
+                "type": "number"
+              },
+              "nsec3param_objects": {
+                "type": "number"
+              },
+              "nsec_memory": {
+                "type": "number"
+              },
+              "nsec_objects": {
+                "type": "number"
+              },
+              "nsec3_memory": {
+                "type": "number"
+              },
+              "nsec3_objects": {
+                "type": "number"
+              },
+              "rrsig_memory": {
+                "type": "number"
+              },
+              "rrsig_objects": {
+                "type": "number"
+              },
+              "a_memory": {
+                "type": "number"
+              },
+              "a_objects": {
+                "type": "number"
+              },
+              "aaaa_memory": {
+                "type": "number"
+              },
+              "aaaa_objects": {
+                "type": "number"
+              },
+              "ptr_memory": {
+                "type": "number"
+              },
+              "ptr_objects": {
+                "type": "number"
+              },
+              "cname_memory": {
+                "type": "number"
+              },
+              "cname_objects": {
+                "type": "number"
+              },
+              "ns_memory": {
+                "type": "number"
+              },
+              "ns_objects": {
+                "type": "number"
+              },
+              "mx_memory": {
+                "type": "number"
+              },
+              "mx_objects": {
+                "type": "number"
+              },
+              "srv_memory": {
+                "type": "number"
+              },
+              "srv_objects": {
+                "type": "number"
+              },
+              "txt_memory": {
+                "type": "number"
+              },
+              "txt_objects": {
+                "type": "number"
+              },
+              "zone_memory": {
+                "type": "number"
+              },
+              "zone_objects": {
+                "type": "number"
+              },
+              "domain_memory": {
+                "type": "number"
+              },
+              "domain_objects": {
+                "type": "number"
+              },
+              "table_memory": {
+                "type": "number"
+              },
+              "table_objects": {
+                "type": "number"
+              },
+              "reference_memory": {
+                "type": "number"
+              },
+              "reference_objects": {
+                "type": "number"
+              },
+              "array_memory": {
+                "type": "number"
+              },
+              "array_objects": {
+                "type": "number"
+              },
+              "rrsig2_memory": {
+                "type": "number"
+              },
+              "rrsig2_objects": {
+                "type": "number"
+              },
+              "total_memory": {
+                "type": "number"
+              },
+              "total_objects": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "dnssec-sign-zone-now": {
+        "type": "object",
+        "properties": {
+          "zone-name": {
+            "type": "string",
+            "description": "Specify the name for the DNS zone, empty means sign all zones",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "dnssec-template": {
+        "type": "object",
+        "properties": {
+          "dnssec-temp-name": {
+            "type": "string",
+            "description": "DNSSEC Template Name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "algorithm": {
+            "type": "string",
+            "description": "'RSASHA1': RSASHA1 algorithm; 'RSASHA256': RSASHA256 algorithm; 'RSASHA512': RSASHA512 algorithm; ",
+            "enum": [
+              "RSASHA1",
+              "RSASHA256",
+              "RSASHA512"
+            ]
+          },
+          "combinations-limit": {
+            "type": "number",
+            "description": "the max number of combinations per RRset (Default value is 31)",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "dnskey-ttl-k": {
+            "type": "number",
+            "description": "The TTL value of DNSKEY RR",
+            "default": 0
+          },
+          "dnskey-ttl-v": {
+            "type": "number",
+            "description": "in seconds, 14400 seconds by default",
+            "default": 14400,
+            "minimum": 1,
+            "maximum": 864000
+          },
+          "enable-nsec3": {
+            "type": "number",
+            "description": "enable NSEC3 support. disabled by default",
+            "default": 0
+          },
+          "return-nsec-on-failure": {
+            "type": "number",
+            "description": "return NSEC/NSEC3 or not on failure case. return by default",
+            "default": 1
+          },
+          "signature-validity-period-k": {
+            "type": "number",
+            "description": "The period that a signature is valid",
+            "default": 0
+          },
+          "signature-validity-period-v": {
+            "type": "number",
+            "description": "in days, 10 days by default",
+            "default": 10,
+            "minimum": 5,
+            "maximum": 30
+          },
+          "hsm": {
+            "type": "string",
+            "description": "specify the HSM template",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "dnssec-template-zsk": {
+            "type": "object",
+            "properties": {
+              "zsk-keysize-k": {
+                "type": "number",
+                "description": "Specify the number of bits in the DNSSEC ZSK keys",
+                "default": 0
+              },
+              "zsk-keysize-v": {
+                "type": "number",
+                "description": "Default size is 2048 and must be an exact multiple of 64",
+                "minimum": 1024,
+                "maximum": 4096
+              },
+              "zsk-lifetime-k": {
+                "type": "number",
+                "description": "Set the lifetime for DNSSEC ZSK keys in days",
+                "default": 0
+              },
+              "zsk-lifetime-v": {
+                "type": "number",
+                "description": "Default value is 90 days",
+                "default": 90,
+                "minimum": 2,
+                "maximum": 3650
+              },
+              "zsk-rollover-time-k": {
+                "type": "number",
+                "description": "Set the rollover time in days",
+                "default": 0
+              },
+              "zsk-rollover-time-v": {
+                "type": "number",
+                "description": "7 days less than the lifetime by default",
+                "default": 83,
+                "minimum": 1,
+                "maximum": 3650
+              }
+            }
+          },
+          "dnssec-template-ksk": {
+            "type": "object",
+            "properties": {
+              "ksk-keysize-k": {
+                "type": "number",
+                "description": "Specify the number of bits in the DNSSEC KSK keys",
+                "default": 0
+              },
+              "ksk-keysize-v": {
+                "type": "number",
+                "description": "Default size is 2048 and must be an exact multiple of 64",
+                "minimum": 1024,
+                "maximum": 4096
+              },
+              "ksk-lifetime-k": {
+                "type": "number",
+                "description": "Set the lifetime for DNSSEC KSK keys in days",
+                "default": 0
+              },
+              "ksk-lifetime-v": {
+                "type": "number",
+                "description": "Default value is 365 days",
+                "minimum": 2,
+                "maximum": 3650
+              },
+              "ksk-rollover-time-k": {
+                "type": "number",
+                "description": "Set the rollover time in days",
+                "default": 0
+              },
+              "zsk-rollover-time-v": {
+                "type": "number",
+                "description": "7 days less than the lifetime by default",
+                "default": 358,
+                "minimum": 1,
+                "maximum": 3650
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      },
+      "dnssec": {
+        "type": "object",
+        "properties": {
+          "standalone": {
+            "type": "number",
+            "description": "Run DNSSEC in standalone mode, in GSLB group mode by default",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "dnskey": {
+            "type": "object",
+            "properties": {
+              "key-delete": {
+                "type": "number",
+                "description": "Delete the DNSKEY file",
+                "default": 0
+              },
+              "zone-name": {
+                "type": "string",
+                "description": "DNS zone name of the child zone",
+                "minLength": 1,
+                "maxLength": 127
+              }
+            }
+          },
+          "ds": {
+            "type": "object",
+            "properties": {
+              "ds-delete": {
+                "type": "number",
+                "description": "Delete the DS file",
+                "default": 0
+              },
+              "zone-name": {
+                "type": "string",
+                "description": "DNS zone name of the child zone",
+                "minLength": 1,
+                "maxLength": 127
+              }
+            }
+          },
+          "sign-zone-now": {
+            "type": "object",
+            "properties": {
+              "zone-name": {
+                "type": "string",
+                "description": "Specify the name for the DNS zone, empty means sign all zones",
+                "minLength": 1,
+                "maxLength": 127
+              }
+            }
+          },
+          "key-rollover": {
+            "type": "object",
+            "properties": {
+              "zone-name": {
+                "type": "string",
+                "description": "Specify the name for the DNS zone",
+                "minLength": 1,
+                "maxLength": 127
+              },
+              "dnssec-key-type": {
+                "type": "string",
+                "description": "'ZSK': Zone Signing Key; 'KSK': Key Signing Key; ",
+                "enum": [
+                  "ZSK",
+                  "KSK"
+                ]
+              },
+              "zsk-start": {
+                "type": "number",
+                "description": "start ZSK rollover in emergency mode",
+                "default": 0
+              },
+              "ksk-start": {
+                "type": "number",
+                "description": "start KSK rollover in emergency mode",
+                "default": 0
+              },
+              "ds-ready-in-parent-zone": {
+                "type": "number",
+                "description": "DS RR is already ready in the parent zone",
+                "default": 0
+              }
+            }
+          },
+          "template-list": {
+            "type": "array",
+            "items": {
+              "type": "template"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

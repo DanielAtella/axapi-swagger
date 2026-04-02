@@ -1,0 +1,173 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - BGP",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the bgp category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/bgp": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BGP"
+        ],
+        "description": "Border Gateway Protocol (BGP)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bgp"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BGP"
+        ],
+        "description": "Border Gateway Protocol (BGP)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bgp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bgp"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BGP"
+        ],
+        "description": "Border Gateway Protocol (BGP)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bgp"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bgp"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BGP"
+        ],
+        "description": "Border Gateway Protocol (BGP)",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bgp"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "bgp": {
+        "type": "object",
+        "properties": {
+          "extended-asn-cap": {
+            "type": "number",
+            "description": "Enable the router to send 4-octet ASN capabilities",
+            "default": 0
+          },
+          "disable-advertisement": {
+            "type": "object",
+            "properties": {
+              "on-boot": {
+                "type": "number",
+                "description": "Upon boot-up",
+                "default": 0
+              }
+            }
+          },
+          "nexthop-trigger": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "number",
+                "description": "Enable the nexthop tracking functionality",
+                "default": 0
+              },
+              "delay": {
+                "type": "number",
+                "description": "Configure nexthop trigger delay time interval (Nexthop Trigger Delay time interval between 1 and 100)",
+                "minimum": 1,
+                "maximum": 100
+              }
+            }
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

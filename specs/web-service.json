@@ -1,0 +1,727 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - WEB-SERVICE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the web-service category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/web-service/secure/certificate": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure certificate operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-certificate"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure certificate operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-certificate"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-service-secure-certificate"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-service/secure/generate": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure generate operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-generate"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure generate operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-generate"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-service-secure-generate"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-service/secure/private-key": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure private-key operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-private-key"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure private-key operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-private-key"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-service-secure-private-key"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-service/secure/regenerate": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure regenerate operation ",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-regenerate"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure regenerate operation ",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure-regenerate"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-service-secure-regenerate"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-service/secure": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Web-service secure operation",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service-secure"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-service-secure"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/web-service": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Configure Web Services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Configure Web Services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-service"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Configure Web Services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/web-service"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "WEB-SERVICE"
+        ],
+        "description": "Configure Web Services",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/web-service"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "web-service-secure-certificate": {
+        "type": "object",
+        "properties": {
+          "load": {
+            "type": "number",
+            "description": "Load WEB certificate",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          }
+        }
+      },
+      "web-service-secure-generate": {
+        "type": "object",
+        "properties": {
+          "domain-name": {
+            "type": "string",
+            "description": "The domain name",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "country": {
+            "type": "string",
+            "description": "The country name",
+            "minLength": 2,
+            "maxLength": 2
+          },
+          "state": {
+            "type": "string",
+            "description": "The location",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "web-service-secure-private-key": {
+        "type": "object",
+        "properties": {
+          "load": {
+            "type": "number",
+            "description": "Load WEB private-key",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "file-url": {
+            "type": "string",
+            "description": "File URL"
+          }
+        }
+      },
+      "web-service-secure-regenerate": {
+        "type": "object",
+        "properties": {
+          "domain-name": {
+            "type": "string",
+            "description": "The domain name",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "country": {
+            "type": "string",
+            "description": "The country name",
+            "minLength": 2,
+            "maxLength": 2
+          },
+          "state": {
+            "type": "string",
+            "description": "The location",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        }
+      },
+      "web-service-secure": {
+        "type": "object",
+        "properties": {
+          "restart": {
+            "type": "number",
+            "description": "Restart WEB service",
+            "default": 0
+          },
+          "wipe": {
+            "type": "number",
+            "description": "Wipe WEB private-key and certificate",
+            "default": 0
+          },
+          "generate": {
+            "type": "object",
+            "properties": {
+              "domain-name": {
+                "type": "string",
+                "description": "The domain name",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "country": {
+                "type": "string",
+                "description": "The country name",
+                "minLength": 2,
+                "maxLength": 2
+              },
+              "state": {
+                "type": "string",
+                "description": "The location",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "regenerate": {
+            "type": "object",
+            "properties": {
+              "domain-name": {
+                "type": "string",
+                "description": "The domain name",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "country": {
+                "type": "string",
+                "description": "The country name",
+                "minLength": 2,
+                "maxLength": 2
+              },
+              "state": {
+                "type": "string",
+                "description": "The location",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            }
+          },
+          "certificate": {
+            "type": "object",
+            "properties": {
+              "load": {
+                "type": "number",
+                "description": "Load WEB certificate",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              }
+            }
+          },
+          "private-key": {
+            "type": "object",
+            "properties": {
+              "load": {
+                "type": "number",
+                "description": "Load WEB private-key",
+                "default": 0
+              },
+              "use-mgmt-port": {
+                "type": "number",
+                "description": "Use management port as source port",
+                "default": 0
+              },
+              "file-url": {
+                "type": "string",
+                "description": "File URL"
+              }
+            }
+          }
+        }
+      },
+      "web-service": {
+        "type": "object",
+        "properties": {
+          "auto-redirt-disable": {
+            "type": "number",
+            "description": "Diable",
+            "default": 0
+          },
+          "axapi-idle": {
+            "type": "number",
+            "description": "Idle timeout of a xml service connection in minutes (Connection idle timeout value in minutes, default 10, 0 means never timeout)",
+            "default": 10,
+            "minimum": 0,
+            "maximum": 60
+          },
+          "axapi-session-limit": {
+            "type": "number",
+            "description": "Set the max allowed aXAPI sessions (Session limit (default 30))",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 100
+          },
+          "gui-idle": {
+            "type": "number",
+            "description": "Idle timeout of a connection in minutes (Connection idle timeout value in minutes, default 10, 0 means never timeout)",
+            "default": 10,
+            "minimum": 0,
+            "maximum": 60
+          },
+          "gui-session-limit": {
+            "type": "number",
+            "description": "Set the max allowed GUI sessions (Session limit (default 30))",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 100
+          },
+          "port": {
+            "type": "number",
+            "description": "Set Web Server Port (Port number(default 80))",
+            "default": 80,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "secure-port": {
+            "type": "number",
+            "description": "Set web secure server port number for listening (Secure Port Number(default 443))",
+            "default": 443,
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "login-message": {
+            "type": "string",
+            "description": "Set GUI login message",
+            "minLength": 1,
+            "maxLength": 2047
+          },
+          "secure-server-disable": {
+            "type": "number",
+            "description": "Disable",
+            "default": 0
+          },
+          "server-disable": {
+            "type": "number",
+            "description": "Disable",
+            "default": 0
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "secure": {
+            "type": "object",
+            "properties": {
+              "restart": {
+                "type": "number",
+                "description": "Restart WEB service",
+                "default": 0
+              },
+              "wipe": {
+                "type": "number",
+                "description": "Wipe WEB private-key and certificate",
+                "default": 0
+              },
+              "generate": {
+                "type": "object",
+                "properties": {
+                  "domain-name": {
+                    "type": "string",
+                    "description": "The domain name",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "country": {
+                    "type": "string",
+                    "description": "The country name",
+                    "minLength": 2,
+                    "maxLength": 2
+                  },
+                  "state": {
+                    "type": "string",
+                    "description": "The location",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                }
+              },
+              "regenerate": {
+                "type": "object",
+                "properties": {
+                  "domain-name": {
+                    "type": "string",
+                    "description": "The domain name",
+                    "minLength": 1,
+                    "maxLength": 64
+                  },
+                  "country": {
+                    "type": "string",
+                    "description": "The country name",
+                    "minLength": 2,
+                    "maxLength": 2
+                  },
+                  "state": {
+                    "type": "string",
+                    "description": "The location",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                }
+              },
+              "certificate": {
+                "type": "object",
+                "properties": {
+                  "load": {
+                    "type": "number",
+                    "description": "Load WEB certificate",
+                    "default": 0
+                  },
+                  "use-mgmt-port": {
+                    "type": "number",
+                    "description": "Use management port as source port",
+                    "default": 0
+                  },
+                  "file-url": {
+                    "type": "string",
+                    "description": "File URL"
+                  }
+                }
+              },
+              "private-key": {
+                "type": "object",
+                "properties": {
+                  "load": {
+                    "type": "number",
+                    "description": "Load WEB private-key",
+                    "default": 0
+                  },
+                  "use-mgmt-port": {
+                    "type": "number",
+                    "description": "Use management port as source port",
+                    "default": 0
+                  },
+                  "file-url": {
+                    "type": "string",
+                    "description": "File URL"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

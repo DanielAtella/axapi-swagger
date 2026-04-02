@@ -1,0 +1,190 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - BACKUP-PERIODIC",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the backup-periodic category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/backup-periodic": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "BACKUP-PERIODIC"
+        ],
+        "description": "Configure backup periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-periodic"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BACKUP-PERIODIC"
+        ],
+        "description": "Configure backup periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-periodic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/backup-periodic"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BACKUP-PERIODIC"
+        ],
+        "description": "Configure backup periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-periodic"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/backup-periodic"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BACKUP-PERIODIC"
+        ],
+        "description": "Configure backup periodically",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backup-periodic"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "backup-periodic": {
+        "type": "object",
+        "properties": {
+          "system": {
+            "type": "number",
+            "description": "Backup system files",
+            "default": 0
+          },
+          "log": {
+            "type": "number",
+            "description": "Backup log files",
+            "default": 0
+          },
+          "day": {
+            "type": "number",
+            "description": "Specify interval days",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "hour": {
+            "type": "number",
+            "description": "Specify interval hours",
+            "minimum": 1,
+            "maximum": 65534
+          },
+          "week": {
+            "type": "number",
+            "description": "Specify interval weeks",
+            "minimum": 1,
+            "maximum": 199
+          },
+          "encrypt": {
+            "type": "number",
+            "description": "Encrypt the backup file",
+            "default": 0
+          },
+          "use-mgmt-port": {
+            "type": "number",
+            "description": "Use management port as source port",
+            "default": 0
+          },
+          "remote-file": {
+            "type": "string",
+            "description": "profile name for remote url"
+          },
+          "store-name": {
+            "type": "string",
+            "description": "profile name to store remote url",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

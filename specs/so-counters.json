@@ -1,0 +1,355 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - SO-COUNTERS",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the so-counters category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/so-counters/stats": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SO-COUNTERS"
+        ],
+        "description": "Statistics for the object so-counters",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/so-counters-stats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axapi/v3/so-counters": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "SO-COUNTERS"
+        ],
+        "description": "Show scaleout statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/so-counters"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SO-COUNTERS"
+        ],
+        "description": "Show scaleout statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/so-counters"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/so-counters"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SO-COUNTERS"
+        ],
+        "description": "Show scaleout statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/so-counters"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/so-counters"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SO-COUNTERS"
+        ],
+        "description": "Show scaleout statistics",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/so-counters"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "so-counters-stats": {
+        "type": "object",
+        "properties": {
+          "stats": {
+            "type": "object",
+            "properties": {
+              "so_pkts_conn_in": {
+                "type": "number",
+                "description": "Total packets processed for an established connection"
+              },
+              "so_pkts_conn_redirect": {
+                "type": "number",
+                "description": "Total packets redirected for an established connection"
+              },
+              "so_pkts_dropped": {
+                "type": "number",
+                "description": "Total packets dropped"
+              },
+              "so_pkts_errors": {
+                "type": "number",
+                "description": "Total packet errors"
+              },
+              "so_pkts_in": {
+                "type": "number",
+                "description": "Total packets in-coming"
+              },
+              "so_pkts_new_conn_in": {
+                "type": "number",
+                "description": "Total packets processed for a new connection"
+              },
+              "so_pkts_new_conn_redirect": {
+                "type": "number",
+                "description": "Total packets redirected for a new connection"
+              },
+              "so_pkts_out": {
+                "type": "number",
+                "description": "Total packets sent out"
+              },
+              "so_pkts_redirect": {
+                "type": "number",
+                "description": "Total packets redirected"
+              },
+              "so_pkts_conn_sync_fail": {
+                "type": "number",
+                "description": "Total connection sync failures"
+              },
+              "so_pkts_nat_reserve_fail": {
+                "type": "number",
+                "description": "Total NAT reserve failures"
+              },
+              "so_pkts_nat_release_fail": {
+                "type": "number",
+                "description": "Total NAT release failures"
+              },
+              "so_pkts_conn_l7_sync": {
+                "type": "number",
+                "description": "Total L7 connection syncs"
+              },
+              "so_pkts_conn_l4_sync": {
+                "type": "number",
+                "description": "Total L4 connection syncs"
+              },
+              "so_pkts_conn_nat_sync": {
+                "type": "number",
+                "description": "Total NAT connection syncs"
+              },
+              "so_pkts_conn_xparent_fw_sync": {
+                "type": "number",
+                "description": "Total Xparent FW connection syncs"
+              },
+              "so_pkts_redirect_conn_aged_out": {
+                "type": "number",
+                "description": "Total redirect conns aged out"
+              },
+              "so_pkts_traffic_map_not_found_drop": {
+                "type": "number",
+                "description": "Traffic MAP Not Found Drop"
+              },
+              "so_pkts_scaleout_not_active_drop": {
+                "type": "number",
+                "description": "Scaleout Not Active Drop"
+              },
+              "so_pkts_dest_mac_mistmatch_drop": {
+                "type": "number",
+                "description": "Destination MAC Mistmatch Drop"
+              },
+              "so_pkts_l2redirect_interface_not_up": {
+                "type": "number",
+                "description": "L2redirect Intf is not UP"
+              },
+              "so_pkts_redirect_table_error": {
+                "type": "number",
+                "description": "Redirect Table Error"
+              },
+              "so_pkts_mac_zero_drop": {
+                "type": "number",
+                "description": "MAC Address zero Drop"
+              },
+              "so_pkts_l3_redirect_encap_error_drop": {
+                "type": "number",
+                "description": "L3 Redirect encap error Drop"
+              },
+              "so_pkts_l3_redirect_inner_mac_zero_drop": {
+                "type": "number",
+                "description": "L3 Redirect inner mac zero Drop"
+              },
+              "so_pkts_l3_redirect_decap_vlan_sanity_drop": {
+                "type": "number",
+                "description": "L3 Redirect Decap VLAN Sanity Drop"
+              },
+              "so_pkts_l3_redirect_inner_ip_frag_req": {
+                "type": "number",
+                "description": "L3 Redirect Inner ipv4 fragmentation, punt slowpath"
+              },
+              "so_pkts_l3_redirect_inner_ipv6_frag_req": {
+                "type": "number",
+                "description": "L3 Redirect Inner ipv6 fragmentation, punt slowpath"
+              },
+              "so_pkts_l3_redirect_rx_pkts_in": {
+                "type": "number",
+                "description": "Total number of L3 Redirected packets received"
+              },
+              "so_pkts_l3_redirect_decap_non_ipv4_vxlan_drop": {
+                "type": "number",
+                "description": "L3 Redirect received non ipv4 VXLAN packet"
+              },
+              "so_pkts_l3_redirect_decap_rx_encap_params_drop": {
+                "type": "number",
+                "description": "L3 Redirect decap Rx encap params error Drop"
+              },
+              "so_pkts_l3_redirect_table_error": {
+                "type": "number",
+                "description": "L3 Redirect Table error Drop"
+              },
+              "so_pkts_l3_redirect_rcvd_in_l2_mode_drop": {
+                "type": "number",
+                "description": "Recevied l3 redirect packets in L2 mode Drop"
+              },
+              "so_pkts_l3_redirect_encap_df_bit_set": {
+                "type": "number",
+                "description": "L3 redirect encap DF bit set"
+              },
+              "so_pkts_l3_redirect_fragmentation_error": {
+                "type": "number",
+                "description": "L3 redirect encap Fragmentation error"
+              },
+              "so_pkts_l3_redirect_internal_buffer_alloc_error": {
+                "type": "number",
+                "description": "L3 redirect encap Internal buffer allocation error"
+              },
+              "so_pkts_l3_redirect_table_no_entry_found": {
+                "type": "number",
+                "description": "L3 redirect Table no redirect entry found error"
+              },
+              "so_pkts_l3_redirect_follow_shared_table_error": {
+                "type": "number",
+                "description": "L3 Redirect Follow Shared Table error Drop"
+              },
+              "so_pkts_l3_redirect_invalid_dev_dir": {
+                "type": "number",
+                "description": "L3 Redirect Invalid Device direction"
+              },
+              "so_pkts_l3_redirect_chassis_dest_mac_error": {
+                "type": "number",
+                "description": "L3 Redirect Chassis Destination Mac Error"
+              },
+              "so_pkts_fw_internal_rule_update_error": {
+                "type": "number",
+                "description": "FW internal rule update Error"
+              },
+              "so_pkts_l3_redirect_encap_ip_jumbo_frag_drop": {
+                "type": "number",
+                "description": "L3 Redirect ipv4 packet after encap more than max jumbo size"
+              },
+              "so_pkts_l3_redirect_encap_ipv6_jumbo_frag_drop": {
+                "type": "number",
+                "description": "L3 Redirect ipv6 packet after encap more than max jumbo size"
+              },
+              "so_pkts_l3_redirect_too_large_pkts_in_drop": {
+                "type": "number",
+                "description": "Received L3 Redirected fragmented packets too large"
+              }
+            }
+          }
+        }
+      },
+      "so-counters": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "sampling-enable": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

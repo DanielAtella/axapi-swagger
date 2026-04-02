@@ -1,0 +1,129 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - ERASE",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the erase category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/erase": {
+      "parameters": [],
+      "get": {
+        "tags": [
+          "ERASE"
+        ],
+        "description": "Erase Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/erase"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ERASE"
+        ],
+        "description": "Erase Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/erase"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/erase"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ERASE"
+        ],
+        "description": "Erase Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/erase"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "erase": {
+        "type": "object",
+        "properties": {
+          "all-partitions": {
+            "type": "number",
+            "description": "Wipe out all service config for all partitions",
+            "default": 0
+          },
+          "preserve-management": {
+            "type": "number",
+            "description": "preserve managememt ip and default gateway",
+            "default": 0
+          },
+          "preserve-accounts": {
+            "type": "number",
+            "description": "preserve admin accounts",
+            "default": 0
+          },
+          "reload": {
+            "type": "number",
+            "description": "reload after erase",
+            "default": 0
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "A10 aXAPI v3 Documentation - CAPTURE-CONFIG",
+    "version": "3.0.0",
+    "description": "Auto-generated documentation for the capture-config category."
+  },
+  "servers": [
+    {
+      "url": "https://{thunder_ip}/axapi/v3",
+      "variables": {
+        "thunder_ip": {
+          "default": "thunder.example.com",
+          "description": "IP address or hostname of the Thunder device"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/axapi/v3/capture-config/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "ID for name"
+        }
+      ],
+      "get": {
+        "tags": [
+          "CAPTURE-CONFIG"
+        ],
+        "description": "Packet Capture-Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/capture-config"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CAPTURE-CONFIG"
+        ],
+        "description": "Packet Capture-Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/capture-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/capture-config"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CAPTURE-CONFIG"
+        ],
+        "description": "Packet Capture-Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/capture-config"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/capture-config"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CAPTURE-CONFIG"
+        ],
+        "description": "Packet Capture-Configuration",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/capture-config"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "capture-config": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "capture-config name",
+            "minLength": 1,
+            "maxLength": 63
+          },
+          "enable": {
+            "type": "number",
+            "description": "Enable capture-config",
+            "default": 0
+          },
+          "file-history-size": {
+            "type": "number",
+            "description": "(Default) Specify pcapng file history size in MB (default 10)",
+            "minimum": 1,
+            "maximum": 6144
+          },
+          "file-size": {
+            "type": "number",
+            "description": "Specify pcapng filesize in MB (default 10)",
+            "minimum": 1,
+            "maximum": 6144
+          },
+          "count": {
+            "type": "number",
+            "description": "Specify maximum packet number. (default 0 for unlimited)",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 65535
+          },
+          "length": {
+            "type": "number",
+            "description": "Packet length Bytes to capture (Default 128)",
+            "minimum": 64,
+            "maximum": 1518
+          },
+          "filter": {
+            "type": "string",
+            "description": "Filter packets to save using Berkeley Packet Filter syntax",
+            "minLength": 1,
+            "maxLength": 1024
+          },
+          "uuid": {
+            "type": "string",
+            "description": "uuid of the object",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "user-tag": {
+            "type": "string",
+            "description": "Customized tag",
+            "minLength": 1,
+            "maxLength": 127
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "SessionToken": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "description": "ACOS Session Token (e.g., A10 {token})"
+      }
+    }
+  },
+  "security": [
+    {
+      "SessionToken": []
+    }
+  ]
+}
