@@ -1,0 +1,56 @@
+# --- aXAPI Documentation Explorer (K8s Deployment) ---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: axapi-swagger
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axapi-swagger
+  namespace: axapi-swagger
+  labels:
+    app: axapi-swagger
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: axapi-swagger
+  template:
+    metadata:
+      labels:
+        app: axapi-swagger
+    spec:
+      containers:
+      - name: explorer
+        image: localhost/axapi-explorer:latest
+        imagePullPolicy: Never # Using the local build on the master node
+        ports:
+        - containerPort: 3000
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: axapi-swagger-service
+  namespace: axapi-swagger
+spec:
+  type: NodePort
+  selector:
+    app: axapi-swagger
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+      nodePort: 30180 # This will expose the explorer at http://192.168.1.96:30180

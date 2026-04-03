@@ -1,0 +1,21 @@
+# --- Docker Build Exclusion ---
+
+# Heavy folders to skip (reduces build context size)
+node_modules/
+.git/
+.gemini/
+dist/
+
+# Artifacts & Archives
+openspec/changes/archive/
+openspec/.spec_cache/
+
+# Local Dev Files
+.DS_Store
+.env
+npm-debug.log*
+
+
+# Documentation Explorer metadata
+Dockerfile
+docker-compose.yml
