@@ -251,6 +251,7 @@
     const connIndicator = document.getElementById('conn-indicator');
     const connLabel = document.getElementById('conn-label');
     const reauthBanner = document.getElementById('reauth-banner');
+    // certHelp removed (handled by gateway)
 
     function updateConnectButton() {
         btnConnect.disabled = !(hostInput.value.trim() && userInput.value.trim() && passInput.value.trim());
@@ -268,17 +269,17 @@
         const password = passInput.value.trim();
 
         try {
-            // Direct Authentication to Device
-            const res = await fetch(`https://${host}/axapi/v3/auth`, {
+            // Authenticate via Gateway (Local Bridge)
+            const res = await fetch('/api/auth', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ credentials: { username, password } }),
+                body: JSON.stringify({ host, username, password }),
             });
             const data = await res.json();
 
             if (!res.ok) {
-                const errMsg = data?.authresponse?.err?.msg || data?.response?.err?.msg || 'Authentication failed';
-                alert('Authentication failed: ' + errMsg);
+                const errMsg = data?.authresponse?.err?.msg || data?.response?.err?.msg || data?.error || 'Authentication failed';
+                alert('Connection failure: ' + errMsg);
                 btnConnect.textContent = 'Connect';
                 updateConnectButton();
                 return;
@@ -289,13 +290,10 @@
             setConnectedUI(true);
             hideReauth();
 
-            // Re-render current category
-            if (currentCategory) {
-                selectCategory(currentCategory, categoryElements[currentCategory.name]);
-            }
+            if (currentCategory) selectCategory(currentCategory, categoryElements[currentCategory.name]);
         } catch (err) {
-            console.error('Direct Auth Error:', err);
-            alert('Connection error: ' + err.message + '\n\nEnsure you have bypassed the TLS certificate warning for the device IP by visiting it in a new tab.');
+            console.error('Gateway Auth Error:', err);
+            alert('Critial Gateway Error: ' + err.message + '\n\nEnsure your local node server is running.');
             btnConnect.textContent = 'Connect';
             updateConnectButton();
         }
@@ -444,10 +442,11 @@
                     normalizedPath = normalizedPath.replace('/axapi/v3/axapi/v3', '/axapi/v3');
                 }
                 
-                // Direct Mode: Always point to the device IP via HTTPS
-                req.url = `https://${connectedHost}${normalizedPath}${url.search}`;
-                
-                // Note: Browser-level timeouts and TLS verification are handled at the fetch layer.
+                // Unified Gateway Path (Handles TLS & CORS)
+                req.url = window.location.origin + '/api/proxy';
+                req.headers['x-target-host'] = connectedHost;
+                req.headers['x-target-path'] = normalizedPath;
+                req.headers['x-auth-token'] = authToken;
                 
                 return req;
             };
@@ -464,13 +463,9 @@
                     }
                 }
                 
-                // Handle potential Direct Mode network errors (TLS/CORS/Timeout)
+                // Gateway Mode: Status 0 is unlikely but we'll log it if it happens
                 if (res.status === 0) {
-                    console.error('Direct Mode Connectivity Error: Browser blocked connection to ' + connectedHost);
-                    if (!window.sessionStorage.getItem('tls_warned')) {
-                        alert('Direct Connection Failed: This may be due to a self-signed TLS certificate or CORS policy. \n\n1. Open https://' + connectedHost + '/axapi/v3/ in a new tab.\n2. Bypass the security warning.\n3. Return here and Try it out again.');
-                        window.sessionStorage.setItem('tls_warned', 'true');
-                    }
+                    console.error('Gateway Connectivity Error: Local bridge unreachable.');
                 }
                 return res;
             };
